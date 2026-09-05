@@ -10,5 +10,5 @@ while true; do
   sleep 60
 done
 echo "[run_after_pilot] pilot finished, starting pilot_base.sh at $(date -Is)"
-bash "$SCRIPTS/pilot_base.sh"
+bash "$SCRIPTS/pilot/pilot_base.sh"
 echo "[run_after_pilot] done at $(date -Is)"

@@ -14,7 +14,7 @@ run_stage () {  # name, then env assignments as KEY=VAL ...
   local skipvar="SKIP_${stage}"
   if [ "${!skipvar:-0}" = "1" ]; then echo "[skip] $stage" | tee -a "$MASTER"; return 0; fi
   echo "--- stage $stage start $(date -Is) ---" | tee -a "$MASTER"
-  env "$@" bash "$SCRIPTS/record_config.sh" 2>&1 | tee -a "$MASTER"
+  env "$@" bash "$SCRIPTS/record/record_config.sh" 2>&1 | tee -a "$MASTER"
   echo "--- stage $stage end $(date -Is) rc=${PIPESTATUS[0]} ---" | tee -a "$MASTER"
 }
 
@@ -46,4 +46,4 @@ run_stage A_object_1step \
   NOTES="pilot degraded: fine-tuned MolmoAct2-LIBERO with num_inference_steps=1"
 
 echo "=== pilot end $(date -Is) ===" | tee -a "$MASTER"
-cd "$PROJ/lerobot" && .venv/bin/python "$SCRIPTS/summarize_datasets.py" pilot_A_object_std pilot_A_goal_std pilot_C_object_shift pilot_B_libero90_std pilot_A_object_1step 2>/dev/null | tee -a "$MASTER"
+cd "$PROJ/lerobot" && .venv/bin/python "$SCRIPTS/analysis/summarize_datasets.py" pilot_A_object_std pilot_A_goal_std pilot_C_object_shift pilot_B_libero90_std pilot_A_object_1step 2>/dev/null | tee -a "$MASTER"

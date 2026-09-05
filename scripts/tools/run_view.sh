@@ -7,6 +7,6 @@ TID=${2:-0}
 SECS=${3:-12}
 cd "$PROJ/lerobot"
 echo "DISPLAY=$DISPLAY WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"
-timeout 180 .venv/bin/python "$SCRIPTS/view_libero.py" "$SUITE" "$TID" "$SECS" 2>&1 \
+timeout 180 .venv/bin/python "$SCRIPTS/tools/view_libero.py" "$SUITE" "$TID" "$SECS" 2>&1 \
   | grep -vE 'robosuite WARNING|macro|OpenGL_accelerate|Fetching|^[[:space:]]*$' | tail -20
 echo "EXIT=${PIPESTATUS[0]}"

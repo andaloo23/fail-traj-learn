@@ -50,7 +50,7 @@ for TID in $TASK_LIST; do
 DSNAME="${NAME}__t${TID}"
 LOG="$PROJ/logs/record_${DSNAME}.log"
 echo "[record_config] NAME=$DSNAME SOURCE=$SOURCE CKPT=$CKPT SUITE=$SUITE TASK=$TID N_EP=$N_EP INIT=$INIT SXY=$SXY SYAW=$SYAW NOISE=$NOISE EXTRA=$EXTRA" | tee -a "$LOG"
-.venv/bin/python "$SCRIPTS/record_rollouts.py" \
+.venv/bin/python "$SCRIPTS/record/record_rollouts.py" \
   --policy.type=molmoact2 \
   --policy.checkpoint_path="$CKPT" \
   --policy.norm_tag="$NORM_TAG" \
