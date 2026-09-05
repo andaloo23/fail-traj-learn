@@ -1,0 +1,4 @@
+# Scripts are executed by bash/python inside WSL; CRLF would break them. Keep LF everywhere.
+* text=auto eol=lf
+*.png binary
+*.mp4 binary
