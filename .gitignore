@@ -1,0 +1,25 @@
+# Generated artifacts (regenerable from the datasets on the WSL side)
+outputs/
+*.log
+logs/
+
+# Data and models never live in this repo (they are under ~/projects/fail-traj-learn on WSL and ~/.cache)
+data/
+*.parquet
+*.mp4
+*.npz
+*.safetensors
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Editors / tooling
+.claude/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
