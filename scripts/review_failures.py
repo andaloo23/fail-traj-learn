@@ -11,6 +11,7 @@ Outputs go to C:\\Users\\LocalPC\\dev\\fail-traj-learn\\outputs\\review\\<datase
 """
 import argparse
 import json
+import os
 import subprocess
 from pathlib import Path
 
@@ -20,8 +21,8 @@ from PIL import Image, ImageDraw
 
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
-PROJ = Path("/home/aliu/projects/fail-traj-learn")
-WIN_OUT = Path("/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/review")
+PROJ = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn"))
+WIN_OUT = Path(os.environ.get("FTL_WIN_OUT", "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs")) / "review"
 
 
 def to_uint8(img):

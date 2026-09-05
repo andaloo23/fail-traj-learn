@@ -2,7 +2,7 @@
 # Smoke test: MolmoAct2-LIBERO on one LIBERO task. Optionally recorded to a LeRobotDataset (RECORD=true).
 # All paths are absolute on purpose. Never call this through wsl.exe with inline variables.
 set -euo pipefail
-PROJ=/home/aliu/projects/fail-traj-learn
+PROJ=${PROJ:-/home/aliu/projects/fail-traj-learn}
 cd "$PROJ/lerobot"
 export MUJOCO_GL=egl
 export PYOPENGL_PLATFORM=egl

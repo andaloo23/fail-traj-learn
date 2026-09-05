@@ -3,8 +3,8 @@
 # Runs sequentially (one GPU). Each stage is one recorder invocation -> one dataset under data/.
 # Skip a stage by exporting SKIP_<stage>=1. Re-running a stage appends to its dataset (resume).
 set -uo pipefail
-SCRIPTS=/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts
-PROJ=/home/aliu/projects/fail-traj-learn
+SCRIPTS=${SCRIPTS:-/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts}
+PROJ=${PROJ:-/home/aliu/projects/fail-traj-learn}
 mkdir -p "$PROJ/logs"
 MASTER="$PROJ/logs/pilot_molmoact2.log"
 echo "=== pilot start $(date -Is) ===" | tee -a "$MASTER"

@@ -2,8 +2,8 @@
 # Pilot stage D: base MolmoAct2 weights (no LIBERO fine-tune) driven with the LIBERO normalization stats
 # taken from the MolmoAct2-LIBERO checkpoint. Run after pilot_molmoact2.sh (needs the GPU).
 set -uo pipefail
-SCRIPTS=/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts
-PROJ=/home/aliu/projects/fail-traj-learn
+SCRIPTS=${SCRIPTS:-/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts}
+PROJ=${PROJ:-/home/aliu/projects/fail-traj-learn}
 mkdir -p "$PROJ/logs"
 MASTER="$PROJ/logs/pilot_base.log"
 

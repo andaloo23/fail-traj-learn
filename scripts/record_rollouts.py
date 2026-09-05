@@ -62,7 +62,7 @@ class RecordConfig:
     rename_map: dict[str, str] = field(default_factory=dict)
     seed: int = 1000
     n_episodes: int = 10  # per task
-    output_root: Path = Path("/home/aliu/projects/fail-traj-learn/data")
+    output_root: Path = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn")) / "data"
     dataset_name: str = "pilot"
     # provenance tags (mirror OOPSIE's robot/policy metadata)
     source: str = "unknown_policy"  # policy family, e.g. molmoact2_libero, molmoact2_base, dp_ckpt20k
@@ -77,6 +77,7 @@ class RecordConfig:
     # bookkeeping
     save_sim_state: bool = True
     max_obj_slots: int = 12
+    max_fixture_joints: int = 16
     max_steps_override: int | None = None
     trust_remote_code: bool = False
 
@@ -123,7 +124,10 @@ def quat_mul_wxyz(q1: np.ndarray, q2: np.ndarray) -> np.ndarray:
     )
 
 
-def build_features(h: int, w: int, n_slots: int) -> dict[str, dict]:
+SCHEMA_VERSION = 2
+
+
+def build_features(h: int, w: int, n_slots: int, n_fixture_joints: int) -> dict[str, dict]:
     f32 = lambda n: {"dtype": "float32", "shape": (n,), "names": None}  # noqa: E731
     i64 = lambda n: {"dtype": "int64", "shape": (n,), "names": None}  # noqa: E731
     b = lambda n: {"dtype": "bool", "shape": (n,), "names": None}  # noqa: E731
@@ -152,11 +156,18 @@ def build_features(h: int, w: int, n_slots: int) -> dict[str, dict]:
         "priv.obj_pos": f32(n_slots * 3),
         "priv.obj_quat": f32(n_slots * 4),
         "priv.obj_gripper_contact": f32(n_slots),
-        "priv.obj_grasped": f32(n_slots),
-        "priv.obj_support_contact": f32(n_slots),  # object touching floor/table/fixtures (any static geom)
+        "priv.obj_left_finger_contact": f32(n_slots),  # any geom of the left finger touches the object
+        "priv.obj_right_finger_contact": f32(n_slots),
+        "priv.obj_grasped": f32(n_slots),  # both fingers (any finger geom) in contact  [schema v2 definition]
+        "priv.obj_grasped_pads": f32(n_slots),  # both finger PADS in contact (stricter; the schema v1 rule)
+        "priv.obj_support_contact": f32(n_slots),  # object touching static scene (floor/table/walls/fixtures)
         "priv.obj_obj_contact": f32(n_slots),  # object touching another movable object
+        "priv.obj_resting": f32(n_slots),  # support OR obj-obj contact: not airborne
         "priv.arm_contacts": f32(1),  # robot arm links (not gripper) touching anything: collision signal
-        "priv.gripper_static_contacts": f32(1),  # gripper touching static scene (table, fixtures): collision signal
+        "priv.gripper_static_contacts": f32(1),  # gripper touching any static geom (fixtures included)
+        "priv.gripper_fixture_contacts": f32(1),  # subset: gripper touching an articulated/named fixture (handle, knob)
+        "priv.fixture_valid": f32(n_fixture_joints),
+        "priv.fixture_qpos": f32(n_fixture_joints),  # 1-DoF fixture joints (drawers, knobs, doors); names in sidecar
     }
     return feats
 
@@ -164,11 +175,32 @@ def build_features(h: int, w: int, n_slots: int) -> dict[str, dict]:
 class PrivilegedReader:
     """Extracts object poses and gripper/object contact flags from the robosuite/LIBERO env."""
 
-    def __init__(self, rs_env, n_slots: int):
+    def __init__(self, rs_env, n_slots: int, n_fixture_joints: int = 16):
         self.rs_env = rs_env
         self.sim = rs_env.sim
         self.n_slots = n_slots
+        self.n_fixture_joints = n_fixture_joints
         objs = getattr(rs_env, "objects_dict", {}) or {}
+        fixtures = getattr(rs_env, "fixtures_dict", {}) or {}
+        self.fixture_names: list[str] = list(fixtures.keys())
+        # 1-DoF joints of fixtures and objects (drawers, knobs, doors); free joints are covered by obj poses.
+        self.fixture_joint_names: list[str] = []
+        self.fixture_joint_addr: list[int] = []
+        for owner in list(fixtures.values()) + list(objs.values()):
+            for jn in getattr(owner, "joints", []) or []:
+                try:
+                    addr = self.sim.model.get_joint_qpos_addr(jn)
+                except Exception:
+                    continue
+                if isinstance(addr, (tuple, list)):
+                    continue  # free/ball joint: pose already logged via obj_pos/quat
+                if len(self.fixture_joint_names) < n_fixture_joints:
+                    self.fixture_joint_names.append(jn)
+                    self.fixture_joint_addr.append(int(addr))
+        try:
+            self.goal_state = [list(map(str, g)) for g in rs_env.parsed_problem["goal_state"]]
+        except Exception:
+            self.goal_state = []
         self.obj_names: list[str] = list(objs.keys())[:n_slots]
         if len(objs) > n_slots:
             logger.warning(f"{len(objs)} objects but only {n_slots} slots; dropping {list(objs.keys())[n_slots:]}")
@@ -199,17 +231,37 @@ class PrivilegedReader:
         self.gripper_geom_ids: set[int] = set()
         self.left_pad: set[int] = set()
         self.right_pad: set[int] = set()
+        self.left_finger: set[int] = set()
+        self.right_finger: set[int] = set()
         try:
             ig = gripper.important_geoms
             for g in ig.get("left_fingerpad", []):
                 self.left_pad.add(m.geom_name2id(g))
             for g in ig.get("right_fingerpad", []):
                 self.right_pad.add(m.geom_name2id(g))
-            for key in ("left_finger", "right_finger", "left_fingerpad", "right_fingerpad"):
-                for g in ig.get(key, []):
-                    self.gripper_geom_ids.add(m.geom_name2id(g))
+            for g in ig.get("left_finger", []) + ig.get("left_fingerpad", []):
+                self.left_finger.add(m.geom_name2id(g))
+            for g in ig.get("right_finger", []) + ig.get("right_fingerpad", []):
+                self.right_finger.add(m.geom_name2id(g))
+            self.gripper_geom_ids = set(self.left_finger) | set(self.right_finger)
         except Exception as e:  # pragma: no cover
             logger.warning(f"Could not resolve gripper geoms from important_geoms: {e}")
+        if not self.left_finger or not self.right_finger:
+            # fallback: classify finger geoms by body name
+            for gid in range(n_geom):
+                bname = (body_names[int(m.geom_bodyid[gid])] or "").lower()
+                if "leftfinger" in bname or "finger1" in bname:
+                    self.left_finger.add(gid)
+                if "rightfinger" in bname or "finger2" in bname:
+                    self.right_finger.add(gid)
+        # fixture geoms (articulated / named fixtures such as cabinets, stoves, caddies)
+        self.fixture_geom_ids: set[int] = set()
+        for gid in range(n_geom):
+            bname = body_names[int(m.geom_bodyid[gid])] or ""
+            for fn in self.fixture_names:
+                if bname == fn or bname.startswith(fn + "_"):
+                    self.fixture_geom_ids.add(gid)
+                    break
         if not self.gripper_geom_ids:
             for gid in range(n_geom):
                 bname = body_names[int(m.geom_bodyid[gid])] or ""
@@ -255,12 +307,15 @@ class PrivilegedReader:
                 obj_quat[slot] = np.array([q[1], q[2], q[3], q[0]], np.float32)
         # contacts
         grip_contact = np.zeros(n, np.float32)
-        left = np.zeros(n, bool)
+        left = np.zeros(n, bool)  # pads
         right = np.zeros(n, bool)
+        lfin = np.zeros(n, bool)  # any finger geom
+        rfin = np.zeros(n, bool)
         support_contact = np.zeros(n, np.float32)
         obj_obj_contact = np.zeros(n, np.float32)
         arm_contacts = 0
         gripper_static = 0
+        gripper_fixture = 0
         ncon = int(d.ncon)
         for i in range(ncon):
             c = d.contact[i]
@@ -275,19 +330,32 @@ class PrivilegedReader:
                 g2 in self.all_gripper_geom_ids and g1 in self.static_geom_ids
             ):
                 gripper_static += 1
+                if g1 in self.fixture_geom_ids or g2 in self.fixture_geom_ids:
+                    gripper_fixture += 1
             for ga, gb in ((g1, g2), (g2, g1)):
                 slot = int(self.geom_to_slot[gb])
                 if slot < 0:
                     continue
-                if ga in self.gripper_geom_ids:
+                if ga in self.all_gripper_geom_ids:
                     grip_contact[slot] = 1.0
                     if ga in self.left_pad:
                         left[slot] = True
                     if ga in self.right_pad:
                         right[slot] = True
+                    if ga in self.left_finger:
+                        lfin[slot] = True
+                    if ga in self.right_finger:
+                        rfin[slot] = True
                 if ga in self.static_geom_ids:
                     support_contact[slot] = 1.0
-        grasped = (left & right).astype(np.float32)
+        grasped_pads = (left & right).astype(np.float32)
+        grasped = (lfin & rfin).astype(np.float32)
+        resting = np.maximum(support_contact, obj_obj_contact)
+        fq = np.zeros(self.n_fixture_joints, np.float32)
+        fv = np.zeros(self.n_fixture_joints, np.float32)
+        for i, addr in enumerate(self.fixture_joint_addr):
+            fq[i] = float(d.qpos[addr])
+            fv[i] = 1.0
         eef_quat = raw_obs.get("robot0_eef_quat", np.zeros(4))
         return {
             "priv.sim_time": np.array([d.time], np.float32),
@@ -303,11 +371,18 @@ class PrivilegedReader:
             "priv.obj_pos": obj_pos.reshape(-1),
             "priv.obj_quat": obj_quat.reshape(-1),
             "priv.obj_gripper_contact": grip_contact,
+            "priv.obj_left_finger_contact": lfin.astype(np.float32),
+            "priv.obj_right_finger_contact": rfin.astype(np.float32),
             "priv.obj_grasped": grasped,
+            "priv.obj_grasped_pads": grasped_pads,
             "priv.obj_support_contact": support_contact,
             "priv.obj_obj_contact": obj_obj_contact,
+            "priv.obj_resting": resting,
             "priv.arm_contacts": np.array([arm_contacts], np.float32),
             "priv.gripper_static_contacts": np.array([gripper_static], np.float32),
+            "priv.gripper_fixture_contacts": np.array([gripper_fixture], np.float32),
+            "priv.fixture_valid": fv,
+            "priv.fixture_qpos": fq,
         }
 
 
@@ -350,7 +425,7 @@ def main(cfg: RecordConfig):
     sidecar_dir = root / "sidecar"
     repo_id = f"fail_traj/{cfg.dataset_name}"
     h, w = cfg.env.observation_height, cfg.env.observation_width
-    features = build_features(h, w, cfg.max_obj_slots)
+    features = build_features(h, w, cfg.max_obj_slots, cfg.max_fixture_joints)
 
     # ---- dataset (create or resume)
     if (root / "meta" / "info.json").exists():
@@ -388,6 +463,7 @@ def main(cfg: RecordConfig):
     }
 
     run_manifest = {
+        "schema_version": SCHEMA_VERSION,
         "created": dt.datetime.now().isoformat(timespec="seconds"),
         "config": json.loads(json.dumps(asdict(cfg), default=str)),
         "policy_summary": policy_summary,
@@ -424,7 +500,7 @@ def main(cfg: RecordConfig):
                         for _ in range(env.num_steps_wait):
                             raw, _, _, _ = ctrl.step(get_libero_dummy_action())
                         obs = env._format_raw_obs(raw)
-                    priv = PrivilegedReader(rs_env, cfg.max_obj_slots)
+                    priv = PrivilegedReader(rs_env, cfg.max_obj_slots, cfg.max_fixture_joints)
                     init_sim_state = ctrl.get_sim_state()
 
                     sim_states: list[np.ndarray] = []
@@ -489,6 +565,7 @@ def main(cfg: RecordConfig):
                     n_success += int(success)
                     ep_counter += 1
                     meta = {
+                        "schema_version": SCHEMA_VERSION,
                         "episode_index": ep_index,
                         "dataset": cfg.dataset_name,
                         "source": cfg.source,
@@ -513,6 +590,9 @@ def main(cfg: RecordConfig):
                         "n_chunks": len(chunk_start_frames),
                         "object_slots": priv.obj_names,
                         "target_objects": priv.target_names,
+                        "fixtures": priv.fixture_names,
+                        "fixture_joint_names": priv.fixture_joint_names,
+                        "goal_state": priv.goal_state,
                         "fps": int(cfg.env.fps),
                         "image_hw": [h, w],
                         "wall_time_s": round(time.time() - t0, 2),

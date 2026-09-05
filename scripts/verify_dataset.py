@@ -5,6 +5,7 @@ Writes a comparison PNG (recorded frame vs lerobot/libero demo frame) to the Win
 """
 import glob
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -14,8 +15,8 @@ from PIL import Image
 
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
-PROJ = Path("/home/aliu/projects/fail-traj-learn")
-WIN_OUT = Path("/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs")
+PROJ = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn"))
+WIN_OUT = Path(os.environ.get("FTL_WIN_OUT", "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs"))
 
 name = sys.argv[1] if len(sys.argv) > 1 else "smoke_rec"
 ep = int(sys.argv[2]) if len(sys.argv) > 2 else 0
@@ -63,7 +64,7 @@ pos = col("priv.obj_pos").reshape(n, -1, 3)
 tslot = int(np.flatnonzero(target)[0]) if target.any() else 0
 print(f"\ntarget slot {tslot} ({slots[tslot] if tslot < len(slots) else '?'}):")
 print(f"  gripper contact frames: {np.flatnonzero(gcon[:, tslot]).tolist()[:5]} ... total {int(gcon[:, tslot].sum())}")
-print(f"  grasped frames (both pads): first {int(np.argmax(grasp[:, tslot])) if grasp[:, tslot].any() else -1}, total {int(grasp[:, tslot].sum())}")
+print(f"  grasped frames (priv.obj_grasped; fingers in schema v2, pads in v1): first {int(np.argmax(grasp[:, tslot])) if grasp[:, tslot].any() else -1}, total {int(grasp[:, tslot].sum())}")
 lifted = np.flatnonzero(tcon[:, tslot] == 0)
 print(f"  support contact: frames with support {int(tcon[:, tslot].sum())}/{n}; first airborne frame {int(lifted[0]) if len(lifted) else -1}, last airborne frame {int(lifted[-1]) if len(lifted) else -1}")
 print(f"  obj-obj contact frames for target: {int(oocon[:, tslot].sum())}; any-slot obj-obj frames: {int((oocon.sum(1) > 0).sum())}")
@@ -74,6 +75,20 @@ xy_start, xy_end = pos[0, tslot, :2], pos[-1, tslot, :2]
 print(f"  target xy: start {np.round(xy_start, 3)} end {np.round(xy_end, 3)}  moved {np.linalg.norm(xy_end - xy_start):.3f} m")
 ncon = col("priv.n_contacts").reshape(-1)
 print(f"  n_contacts: min {ncon.min():.0f} max {ncon.max():.0f}")
+if "priv.obj_grasped_pads" in ds.features:
+    gp = col("priv.obj_grasped_pads")[:, tslot]
+    lf = col("priv.obj_left_finger_contact")[:, tslot]
+    rf = col("priv.obj_right_finger_contact")[:, tslot]
+    rest = col("priv.obj_resting")[:, tslot]
+    gfix = col("priv.gripper_fixture_contacts").reshape(-1)
+    print(f"  schema v2: grasp(fingers) frames {int(grasp[:, tslot].sum())} vs grasp(pads) {int(gp.sum())}; left-finger {int(lf.sum())} right-finger {int(rf.sum())}; resting frames {int(rest.sum())}/{n}; gripper-fixture contact frames {int((gfix > 0).sum())}")
+    fq = col("priv.fixture_qpos")
+    fvalid = col("priv.fixture_valid")[0]
+    names = meta.get("fixture_joint_names", [])
+    for j in range(int(fvalid.sum())):
+        nm = names[j] if j < len(names) else f"joint{j}"
+        print(f"  fixture joint {nm}: start {fq[0, j]:+.3f} min {fq[:, j].min():+.3f} max {fq[:, j].max():+.3f} end {fq[-1, j]:+.3f}")
+    print(f"  goal_state: {meta.get('goal_state')}")
 eef = col("priv.eef_pos")
 print(f"  eef z range: {eef[:, 2].min():.3f} .. {eef[:, 2].max():.3f}")
 

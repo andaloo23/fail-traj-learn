@@ -11,8 +11,8 @@
 #   EXTRA     extra CLI flags, e.g. '--policy.num_inference_steps=2'
 #   NOTES     free text stored in every sidecar
 set -uo pipefail
-PROJ=/home/aliu/projects/fail-traj-learn
-SCRIPTS=/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts
+PROJ=${PROJ:-/home/aliu/projects/fail-traj-learn}
+SCRIPTS=${SCRIPTS:-/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts}
 
 NAME=${NAME:-smoke_rec}
 SOURCE=${SOURCE:-molmoact2_libero}

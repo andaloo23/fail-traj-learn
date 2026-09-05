@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Test / launch the interactive LIBERO viewer via WSLg. Args: suite task_id seconds
-PROJ=/home/aliu/projects/fail-traj-learn
-SCRIPTS=/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts
+PROJ=${PROJ:-/home/aliu/projects/fail-traj-learn}
+SCRIPTS=${SCRIPTS:-/mnt/c/Users/LocalPC/dev/fail-traj-learn/scripts}
 SUITE=${1:-libero_object}
 TID=${2:-0}
 SECS=${3:-12}

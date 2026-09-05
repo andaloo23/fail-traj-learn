@@ -18,6 +18,7 @@ usefulness u in [-1, 1] (diagnostic only, NOT a training reward):
 Usage: episode_progress.py [name_or_prefix ...]   (default: all datasets)   add --episodes to list every episode
 """
 import json
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -26,7 +27,7 @@ import numpy as np
 
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
-DATA = Path("/home/aliu/projects/fail-traj-learn/data")
+DATA = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn")) / "data"
 LIST_EPISODES = "--episodes" in sys.argv
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 all_names = sorted(p.name for p in DATA.iterdir() if (p / "meta" / "info.json").exists() and (p / "episodes.jsonl").exists())

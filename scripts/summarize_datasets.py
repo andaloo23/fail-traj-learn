@@ -4,11 +4,12 @@ Usage: summarize_datasets.py [name_or_prefix ...]   (default: all under data/)
 Per-task datasets named <prefix>__t<k> are grouped under <prefix>.
 """
 import json
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
 
-DATA = Path("/home/aliu/projects/fail-traj-learn/data")
+DATA = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn")) / "data"
 all_names = sorted(p.name for p in DATA.iterdir() if (p / "episodes.jsonl").exists())
 args = sys.argv[1:]
 if args:

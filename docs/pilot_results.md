@@ -59,15 +59,18 @@ is layout-brittle, which is exactly why unseen scenes must be selected per task.
    needed for the cross-policy experiment; base MolmoAct2 does not fill that role.
 6. Dropped levers: single-step inference (no effect), base checkpoint (no task grounding).
 
-## Recorder fixes exposed by the pilot (apply before the full run)
+## Recorder fixes exposed by the pilot (applied 2026-09-04 late evening, schema v2)
 
-- Grasp flag requires both finger *pads*; a wide bottle was carried for 180 frames with the flag at zero.
-  Log per-finger contact (any finger geom) and define grasp = both fingers.
-- Log articulated fixture joint positions (drawers, knobs, microwave) so the oracle can tell whether a fixture moved
-  and can separate intended fixture contact (handle) from collisions.
-- "Resting" must combine support contact with object-to-object contact: an object inside the basket has support
-  contact 0 because the basket is an object slot, not static scenery.
-- Re-record the anchor and shifted stages with the final schema; the pilot datasets keep the old one.
+- Grasp flag required both finger *pads*; a wide bottle was carried for 180 frames with the flag at zero.
+  Now: per-finger contact columns (any finger geom) and `priv.obj_grasped` = both fingers; the pad rule is kept as
+  `priv.obj_grasped_pads`. On a drawer episode the finger rule fires on 61 frames vs 37 for pads.
+- Articulated fixture joints (drawers, knobs) are logged in `priv.fixture_qpos`, names in the sidecar; verified on
+  libero_goal task 3 (top drawer slide 0 -> -0.16 m while the other three joints stay at 0). Gripper contact with a
+  named fixture is separated out as `priv.gripper_fixture_contacts`.
+- `priv.obj_resting` = support contact OR object-to-object contact (an object inside the basket has support 0
+  because the basket is an object slot, not static scenery).
+- The parsed BDDL goal state is stored per episode.
+- Pilot datasets remain schema v1; the anchor and shifted stages will be re-recorded in the full run.
 
 ## Operational lessons
 

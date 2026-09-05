@@ -3,6 +3,7 @@
 Usage: episode_end_state.py <dataset_name> <episode_index> [n_last_frames]
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -10,7 +11,7 @@ import numpy as np
 
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
-PROJ = Path("/home/aliu/projects/fail-traj-learn")
+PROJ = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn"))
 name, ep = sys.argv[1], int(sys.argv[2])
 n_last = int(sys.argv[3]) if len(sys.argv) > 3 else 3
 root = PROJ / "data" / name
