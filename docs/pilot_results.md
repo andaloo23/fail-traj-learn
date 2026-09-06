@@ -6,7 +6,7 @@ generator, so the learner (SmolVLA) never sees data from its own family.
 
 All rollouts were recorded with `scripts/record/record_rollouts.py` (one process per task, 10-step chunks, privileged
 state and MuJoCo snapshots in sidecars) and analyzed with `scripts/analysis/summarize_datasets.py` and
-`scripts/analysis/episode_progress.py`. Datasets live on the WSL side under `data/pilot_*__t<k>`.
+`scripts/analysis/episode_progress.py`. Datasets live under `data/pilot_*__t<k>` in the project root.
 
 ## Results
 
@@ -76,8 +76,8 @@ is layout-brittle, which is exactly why unseen scenes must be selected per task.
 
 - One recorder process per task. Many offscreen MuJoCo/EGL renderers in one process corrupted the heap after nine
   tasks and the abort skipped dataset finalization (45 episodes lost, re-recorded).
-- A Microsoft Store auto-update of WSL restarted the VM mid-run (18:04). Stages are resumable with `SKIP_<stage>=1` (scripts/pilot/pilot_molmoact2.sh).
-- Jobs launched inside WSL survive a Claude Code session restart; monitors do not and must be re-armed.
+- A system update restarted the machine mid-run (18:04). Stages are resumable with `SKIP_<stage>=1` (scripts/pilot/pilot_molmoact2.sh).
+- Recorder jobs are detached from the launching terminal session; log monitors are not and must be re-armed after a restart.
 
 ## Validation pass, 2026-09-05 (schema v2 recordings, snapshot restore, predicate audit)
 
