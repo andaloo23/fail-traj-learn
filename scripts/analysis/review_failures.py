@@ -85,6 +85,12 @@ def main():
         arm = col("priv.arm_contacts").reshape(-1)
         gstat = col("priv.gripper_static_contacts").reshape(-1)
         grip = col("observation.state")[:, 6]  # gripper finger qpos (open ~0.04, closed ~0.0)
+        gcon_all = col("priv.obj_gripper_contact")
+        pos_all = col("priv.obj_pos").reshape(n, -1, 3)
+        slots = meta["object_slots"]
+        touched = [slots[s] for s in range(min(len(slots), gcon_all.shape[1])) if gcon_all[:, s].any()]
+        moved = [slots[s] for s in range(min(len(slots), pos_all.shape[1])) if np.linalg.norm(pos_all[-1, s] - pos_all[0, s]) > 0.03]
+        wrong = [o for o in touched if o not in meta["target_objects"]]
 
         idxs = np.linspace(0, n - 1, args.frames).round().astype(int)
         tiles = []
@@ -103,19 +109,26 @@ def main():
             d.text((3, 1), tag, fill=(255, 255, 0))
             tiles.append(tile)
         sheet_w = 256 * len(tiles)
-        sheet = Image.new("RGB", (sheet_w, 512 + 22 + 70), (0, 0, 0))
+        sheet = Image.new("RGB", (sheet_w, 512 + 24 + 70), (0, 0, 0))
         d = ImageDraw.Draw(sheet)
         hdr = (f"ep {ep} | {meta['source']} | {meta['suite']}[{meta['task_id']}] '{meta['task_language']}' | "
                f"init={meta['init_mode']} | success={meta['success']} len={n} | target={meta['object_slots'][tslot] if tslot < len(meta['object_slots']) else '?'}")
-        d.text((4, 4), hdr[:sheet_w // 6], fill=(255, 255, 255))
+        d.text((4, 2), hdr[:sheet_w // 6], fill=(255, 255, 255))
+        line2 = f"touched: {', '.join(touched) or 'none'} | moved>3cm: {', '.join(moved) or 'none'}" + ("  << WRONG OBJECT" if wrong and not grasp.any() else "")
+        d.text((4, 13), line2[:sheet_w // 6], fill=(255, 120, 120) if wrong else (180, 180, 180))
         for k, t in enumerate(tiles):
-            sheet.paste(t, (k * 256, 22))
+            sheet.paste(t, (k * 256, 24))
         strip = signal_strip(sheet_w, 70,
                              [z, eefz, grasp, support, grip, np.minimum(arm + gstat, 1)],
                              [(255, 80, 80), (80, 160, 255), (80, 255, 80), (200, 200, 200), (255, 200, 0), (255, 0, 255)],
                              ["target_z", "eef_z", "grasp", "support", "gripper", "collision"])
-        sheet.paste(strip, (0, 512 + 22))
-        sheet.save(out_dir / f"ep{ep:04d}_{'ok' if e['success'] else 'FAIL'}_{meta['suite']}_{meta['task_id']}.png")
+        sheet.paste(strip, (0, 512 + 24))
+        stem = f"ep{ep:04d}_{'ok' if e['success'] else 'FAIL'}_{meta['suite']}_{meta['task_id']}"
+        sheet.save(out_dir / f"{stem}.png")
+        json.dump({"episode": ep, "success": bool(e["success"]), "length": int(n), "targets": meta["target_objects"], "touched": touched,
+                   "moved": moved, "wrong_object": wrong, "grasp_frames": int(grasp.sum()), "target_grasped": bool(grasp.any()),
+                   "arm_contact_frames": int((arm > 0).sum()), "gripper_static_frames": int((gstat > 0).sum())},
+                  open(out_dir / f"{stem}.json", "w"), indent=1)
 
         if args.video:
             frames_dir = out_dir / f"_frames_ep{ep:04d}"
