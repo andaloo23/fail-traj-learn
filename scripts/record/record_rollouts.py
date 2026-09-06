@@ -7,8 +7,9 @@ and writes:
     fields plus per-frame privileged columns (object poses, gripper-object contacts, ...) and
     chunk bookkeeping (chunk.index / chunk.step) so 10-step decisions can be rebuilt;
   * per-episode sidecars at <output_root>/<dataset_name>/sidecar/episode_XXXXXX.{json,npz} holding
-    episode metadata (source policy, task, init mode, outcome, object slot names) and MuJoCo state
-    snapshots at every chunk boundary (for recovery-branching oracles);
+    episode metadata (source policy, task, init mode, outcome, object slot names), MuJoCo state
+    snapshots at every chunk boundary and the gripper controller's hidden command state (together they
+    give bit-exact restore + replay, see analysis/check_snapshot_restore.py) for recovery-branching oracles;
   * an append-only <output_root>/<dataset_name>/episodes.jsonl summary.
 
 Example:
@@ -72,6 +73,7 @@ class RecordConfig:
     init_mode: str = "standard"  # standard | shifted
     shift_xy: float = 0.0  # meters, uniform +- per object (shifted mode)
     shift_yaw_deg: float = 0.0  # degrees, uniform +- per object (shifted mode)
+    shift_max_tries: int = 30  # rejection-sampling attempts for a physically clean shifted layout
     # synthetic perturbation (tagged; off by default)
     action_noise_std: float = 0.0
     # bookkeeping
@@ -124,7 +126,10 @@ def quat_mul_wxyz(q1: np.ndarray, q2: np.ndarray) -> np.ndarray:
     )
 
 
-SCHEMA_VERSION = 2
+# v3 (2026-09-05): priv poses/joints read from sim.data (no observable lag), sidecar npz gains `gripper_cmd`
+# (robosuite PandaGripper.current_action per chunk, needed for exact snapshot restore), shifted init keeps the yaw
+# of goal-region containers (LIBERO in_box predicate is not rotation-correct).
+SCHEMA_VERSION = 3
 
 
 def build_features(h: int, w: int, n_slots: int, n_fixture_joints: int) -> dict[str, dict]:
@@ -207,6 +212,7 @@ class PrivilegedReader:
         self.objs = [objs[n] for n in self.obj_names]
         self.target_names = list(getattr(rs_env, "obj_of_interest", []) or [])
         m = self.sim.model
+        self.eef_body_id = m.body_name2id(rs_env.robots[0].robot_model.eef_name)
         # root body id per object (for pose fallback + contact attribution)
         self.obj_body_ids: list[int] = []
         for o in self.objs:
@@ -288,6 +294,9 @@ class PrivilegedReader:
         n = self.n_slots
         d = self.sim.data
         m = self.sim.model
+        # After mj_step the derived quantities (xpos, site_xpos, contacts) belong to the pre-integration qpos.
+        # robosuite calls forward() at the start of every substep anyway, so this changes nothing dynamically.
+        self.sim.forward()
         obj_pos = np.zeros((n, 3), np.float32)
         obj_quat = np.zeros((n, 4), np.float32)
         valid = np.zeros(n, np.float32)
@@ -296,8 +305,10 @@ class PrivilegedReader:
             valid[slot] = 1.0
             if name in self.target_names:
                 target[slot] = 1.0
+            # Poses come from sim.data, not raw_obs: robosuite observables are sampled at the first substep of a
+            # control step, so raw_obs lags the true state by up to one control step while the arm moves.
             pk, qk = f"{name}_pos", f"{name}_quat"
-            if pk in raw_obs and qk in raw_obs:
+            if self.obj_body_ids[slot] < 0 and pk in raw_obs and qk in raw_obs:
                 obj_pos[slot] = raw_obs[pk]
                 obj_quat[slot] = raw_obs[qk]  # xyzw (robosuite convention)
             elif self.obj_body_ids[slot] >= 0:
@@ -356,15 +367,19 @@ class PrivilegedReader:
         for i, addr in enumerate(self.fixture_joint_addr):
             fq[i] = float(d.qpos[addr])
             fv[i] = 1.0
-        eef_quat = raw_obs.get("robot0_eef_quat", np.zeros(4))
+        # Robot state straight from sim.data (same quantities as robosuite's robot0_* observables, without the lag).
+        robot = self.rs_env.robots[0]
+        eef_pos = np.asarray(d.site_xpos[robot.eef_site_id], np.float32)
+        eq = d.body_xquat[self.eef_body_id]  # wxyz
+        eef_quat = np.array([eq[1], eq[2], eq[3], eq[0]], np.float32)  # xyzw
         return {
             "priv.sim_time": np.array([d.time], np.float32),
-            "priv.eef_pos": np.asarray(raw_obs.get("robot0_eef_pos", np.zeros(3)), np.float32),
-            "priv.eef_quat": np.asarray(eef_quat, np.float32),
-            "priv.gripper_qpos": np.asarray(raw_obs.get("robot0_gripper_qpos", np.zeros(2)), np.float32),
-            "priv.gripper_qvel": np.asarray(raw_obs.get("robot0_gripper_qvel", np.zeros(2)), np.float32),
-            "priv.joint_pos": np.asarray(raw_obs.get("robot0_joint_pos", np.zeros(7)), np.float32),
-            "priv.joint_vel": np.asarray(raw_obs.get("robot0_joint_vel", np.zeros(7)), np.float32),
+            "priv.eef_pos": eef_pos,
+            "priv.eef_quat": eef_quat,
+            "priv.gripper_qpos": np.asarray(d.qpos[robot._ref_gripper_joint_pos_indexes], np.float32),
+            "priv.gripper_qvel": np.asarray(d.qvel[robot._ref_gripper_joint_vel_indexes], np.float32),
+            "priv.joint_pos": np.asarray(d.qpos[robot._ref_joint_pos_indexes], np.float32),
+            "priv.joint_vel": np.asarray(d.qvel[robot._ref_joint_vel_indexes], np.float32),
             "priv.n_contacts": np.array([ncon], np.float32),
             "priv.obj_valid": valid,
             "priv.target_mask": target,
@@ -392,7 +407,20 @@ def shift_object_layout(rs_env, rng: np.random.Generator, shift_xy: float, shift
     state = sim.get_state()
     qpos = np.array(state.qpos, copy=True)
     applied: dict[str, dict] = {}
-    for name, obj in (getattr(rs_env, "objects_dict", {}) or {}).items():
+    objects = getattr(rs_env, "objects_dict", {}) or {}
+    # Objects that own a region named in the goal (basket_1 -> basket_1_contain_region) keep their yaw: LIBERO's
+    # SiteObject.in_box uses abs(R @ size) for the region extents, so a container yawed near 45 degrees gets a
+    # region that collapses in x or y and correct placements are scored as failures (see predicate_artifacts.py).
+    keep_yaw: set[str] = set()
+    try:
+        for atom in rs_env.parsed_problem["goal_state"]:
+            for arg in atom[1:]:
+                for on in objects:
+                    if str(arg) != on and str(arg).startswith(on + "_"):
+                        keep_yaw.add(on)
+    except Exception:
+        pass
+    for name, obj in objects.items():
         for jn in getattr(obj, "joints", []) or []:
             addr = sim.model.get_joint_qpos_addr(jn)
             if not (isinstance(addr, (tuple, list)) and addr[1] - addr[0] == 7):
@@ -401,13 +429,84 @@ def shift_object_layout(rs_env, rng: np.random.Generator, shift_xy: float, shift
             dxy = rng.uniform(-shift_xy, shift_xy, size=2) if shift_xy > 0 else np.zeros(2)
             qpos[s : s + 2] += dxy
             yaw = float(np.deg2rad(rng.uniform(-shift_yaw_deg, shift_yaw_deg))) if shift_yaw_deg > 0 else 0.0
+            if name in keep_yaw:
+                yaw = 0.0
             if yaw != 0.0:
                 qz = np.array([np.cos(yaw / 2), 0.0, 0.0, np.sin(yaw / 2)])
                 qpos[s + 3 : s + 7] = quat_mul_wxyz(qz, qpos[s + 3 : s + 7])
-            applied[name] = {"dxy": dxy.tolist(), "yaw_rad": yaw}
+            applied[name] = {"dxy": dxy.tolist(), "yaw_rad": yaw, "yaw_locked": name in keep_yaw}
     state.qpos[:] = qpos
     state.qvel[:] = 0.0
     return state.flatten(), applied
+
+
+def object_positions(rs_env) -> dict[str, np.ndarray]:
+    sim = rs_env.sim
+    out: dict[str, np.ndarray] = {}
+    for name, obj in (getattr(rs_env, "objects_dict", {}) or {}).items():
+        try:
+            out[name] = np.array(sim.data.body_xpos[sim.model.body_name2id(obj.root_body)], copy=True)
+        except Exception:
+            pass
+    return out
+
+
+def object_contact_pairs(rs_env) -> set[tuple[str, str]]:
+    """Unordered pairs of distinct movable objects currently in contact (needs a fresh sim.forward)."""
+    sim = rs_env.sim
+    m, d = sim.model, sim.data
+    objs = list((getattr(rs_env, "objects_dict", {}) or {}).keys())
+    body_names = [m.body_id2name(i) for i in range(m.nbody)]
+
+    def owner(gid: int):
+        b = body_names[int(m.geom_bodyid[gid])] or ""
+        for on in objs:
+            if b == on or b.startswith(on + "_"):
+                return on
+        return None
+
+    pairs: set[tuple[str, str]] = set()
+    for i in range(int(d.ncon)):
+        c = d.contact[i]
+        a, b = owner(int(c.geom1)), owner(int(c.geom2))
+        if a and b and a != b:
+            pairs.add(tuple(sorted((a, b))))  # type: ignore[arg-type]
+    return pairs
+
+
+def sample_shifted_init(ctrl, rs_env, rng, shift_xy, shift_yaw_deg, n_wait, max_tries=30, max_drift=0.02, max_dz=0.01):
+    """Rejection-sample a shifted layout that is physically clean.
+
+    A blind shift can place two objects interpenetrating; MuJoCo then resolves that with a violent push during the
+    settle steps and launches objects metres off the table (seen in 2-13 percent of episodes at 4-8 cm). A candidate
+    is rejected if placing it creates an object-object contact that the base layout did not have, or if any object
+    drifts more than max_drift in xy, or changes height by more than max_dz (tipping), during the settle steps.
+    Returns (raw_obs, shift_applied, tries, valid). After max_tries the unshifted layout is used and valid=False.
+    """
+    base_flat = np.array(ctrl.get_sim_state(), copy=True)
+    base_pairs = object_contact_pairs(rs_env)
+    for attempt in range(1, max_tries + 1):
+        ctrl.set_init_state(base_flat)
+        flat, info = shift_object_layout(rs_env, rng, shift_xy, shift_yaw_deg)
+        raw = ctrl.set_init_state(flat)  # runs sim.forward, so contacts are current
+        placed = object_positions(rs_env)
+        if object_contact_pairs(rs_env) - base_pairs:
+            continue
+        for _ in range(n_wait):
+            raw, _, _, _ = ctrl.step(get_libero_dummy_action())
+        settled = object_positions(rs_env)
+        moved = any(
+            np.linalg.norm(settled[n][:2] - p[:2]) > max_drift or abs(settled[n][2] - p[2]) > max_dz
+            for n, p in placed.items() if n in settled
+        )
+        if moved or (object_contact_pairs(rs_env) - base_pairs):
+            continue
+        return raw, info, attempt, True
+    logger.warning(f"shifted init: no clean layout in {max_tries} tries; using the unshifted layout for this episode")
+    ctrl.set_init_state(base_flat)
+    for _ in range(n_wait):
+        raw, _, _, _ = ctrl.step(get_libero_dummy_action())
+    return raw, {}, max_tries, False
 
 
 # --------------------------------------------------------------------------------------
@@ -479,6 +578,9 @@ def main(cfg: RecordConfig):
     try:
         for suite_name, task_map in env_dict.items():
             for task_id, vec_env in task_map.items():
+                # Per-task stream: the wrapper runs one process per task with the same seed, and a shared stream
+                # gave every task the identical sequence of shift offsets (found on full_shift16, 2026-09-06).
+                rng = np.random.default_rng(cfg.seed + 7919 + 1000 * int(task_id))
                 env = vec_env.envs[0]  # LiberoEnv (single, we bypass the vector wrapper)
                 max_steps = int(cfg.max_steps_override or env._max_episode_steps)
                 # Policy-specific camera mapping may rename cameras (e.g. wrist_image); the dataset always
@@ -494,16 +596,17 @@ def main(cfg: RecordConfig):
                     rs_env = ctrl.env  # robosuite / LIBERO problem env
                     init_state_id_used = env.init_state_id - env._reset_stride
                     shift_info: dict = {}
+                    shift_tries, shift_valid = 0, True
                     if cfg.init_mode == "shifted":
-                        flat, shift_info = shift_object_layout(rs_env, rng, cfg.shift_xy, cfg.shift_yaw_deg)
-                        raw = ctrl.set_init_state(flat)
-                        for _ in range(env.num_steps_wait):
-                            raw, _, _, _ = ctrl.step(get_libero_dummy_action())
+                        raw, shift_info, shift_tries, shift_valid = sample_shifted_init(
+                            ctrl, rs_env, rng, cfg.shift_xy, cfg.shift_yaw_deg, env.num_steps_wait, cfg.shift_max_tries
+                        )
                         obs = env._format_raw_obs(raw)
                     priv = PrivilegedReader(rs_env, cfg.max_obj_slots, cfg.max_fixture_joints)
                     init_sim_state = ctrl.get_sim_state()
 
                     sim_states: list[np.ndarray] = []
+                    gripper_cmds: list[np.ndarray] = []  # PandaGripper.current_action: hidden controller state
                     chunk_start_frames: list[int] = []
                     step = 0
                     success = False
@@ -529,6 +632,7 @@ def main(cfg: RecordConfig):
                         chunk_index = step // n_action_steps
                         if chunk_step == 0 and cfg.save_sim_state:
                             sim_states.append(np.asarray(ctrl.get_sim_state(), dtype=np.float64))
+                            gripper_cmds.append(np.array(rs_env.robots[0].gripper.current_action, dtype=np.float64))
                             chunk_start_frames.append(step)
 
                         # --- privileged read for the pre-step observation
@@ -580,6 +684,8 @@ def main(cfg: RecordConfig):
                         "shift_xy": cfg.shift_xy,
                         "shift_yaw_deg": cfg.shift_yaw_deg,
                         "shift_applied": shift_info,
+                        "shift_tries": int(shift_tries),  # rejection-sampling attempts (schema v3.1)
+                        "shift_valid": bool(shift_valid),  # False = no clean layout found, unshifted layout used
                         "action_noise_std": cfg.action_noise_std,
                         "seed": ep_seed,
                         "success": bool(success),
@@ -605,6 +711,7 @@ def main(cfg: RecordConfig):
                         np.savez_compressed(
                             sidecar_dir / f"episode_{ep_index:06d}.npz",
                             sim_states=np.stack(sim_states) if sim_states else np.zeros((0,)),
+                            gripper_cmd=np.stack(gripper_cmds) if gripper_cmds else np.zeros((0, 2)),
                             chunk_start_frames=np.asarray(chunk_start_frames, np.int64),
                             init_sim_state=np.asarray(init_sim_state, np.float64),
                             object_slots=np.array(priv.obj_names),
