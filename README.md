@@ -5,6 +5,8 @@ advantage constraints for an offline-RL critic, and train a small actor that nev
 data. Simulation is LIBERO (MuJoCo / robosuite) through LeRobot; real-data validation is planned on
 OOPSIE. Method overview: [docs/proposal_overview.md](docs/proposal_overview.md).
 Pilot results and data-collection decisions: [docs/pilot_results.md](docs/pilot_results.md).
+GPT-6 annotation experiments, observed capabilities, limitations and next steps:
+[docs/gpt6_annotation_experiments.md](docs/gpt6_annotation_experiments.md).
 
 ## Layout
 
@@ -77,6 +79,26 @@ interrupted machine loses at most the task in progress; the run scripts are resu
 | `init_state_check.py`, `initcheck.sh` | Frame-0 audit of shifted stages: airborne, far, object-object contact (bad initial states). Args: anchor prefix then shifted prefixes. |
 | `accept_run.sh` | Acceptance checks for a finished full run: success rates, progress, artifact count (must be 0), restore spot check, init-state audit, contact sheets. Prints `ACCEPT_OK`. |
 
+
+### `scripts/annotate/` — VLM segmentation of episodes (proposal section 4)
+
+Zero-shot Qwen3-VL-8B (local, bf16) labels every 10-step chunk of an episode as progress / failure_inducing /
+recovery / neutral / aftermath, localises the decisive error, and names an OOPSIE-aligned cause; confidence `q_t` is
+the agreement of K sampled diagnoses. The model sees only the two camera views, the instruction, the outcome and a
+table of proprioceptive signals, never `priv.*`. Details and design decisions: `docs/annotation_pipeline.md`.
+
+| Script | Purpose |
+|---|---|
+| `annotate.sh`, `annotate.py` | Resumable driver: route -> render -> K samples -> aggregate -> `annot/<tag>/<dataset>/episode_XXXXXX.json` (WSL side). `--dry-run` renders only, `--refine` adds a dense second pass around t*. |
+| `render.py`, `prompt.py`, `schema.py` | Chunk tiles + signal table, the prompt (with a render-verified LIBERO object glossary, `PROMPT_VERSION`), pydantic output schema and parsing. |
+| `backend_qwen.py` | Qwen3-VL backend: one prefill per decode round, KV cache repeated K times (fits the 3090 without quantization). |
+| `aggregate.py`, `route.py` | Self-consistency voting; oracle-based routing of successes (clean successes get default labels without a model call). |
+| `to_labels.py` | Per-frame `labels.parquet` for the learner. |
+| `eval_vs_oracle.py` | Chunk accuracy / F1, t* error, cause accuracy, calibration of q, false-alarm rate on successes, against a reference tag in the same format. |
+| `event_experiment.py` | Blinded local event recognition and overlapping-window scan using native camera frames; exports exact inputs, raw responses and an HTML review. See `docs/event_experiment.md`. |
+| `inspect_records.py`, `zoom_episode.py`, `probe_vlm.py`, `object_gallery.py`, `montage.py`, `collect_objects.py` | Inspection: readable record dumps, dense frame zooms, free-form VLM questions about tiles, object appearance gallery. |
+| `py.sh`, `download_model.sh`, `env_probe.sh` | Venv runner, model download into the HF cache, environment probe. |
+
 ### `scripts/tools/` — probes and utilities
 
 | Script | Purpose |
@@ -109,6 +131,7 @@ fixture joints: drawers, knobs; names in the sidecar), `priv.n_contacts`, `priv.
 
 Sidecar `episode_XXXXXX.json` carries `schema_version`, source policy, task, init protocol, per-object shift
 applied (with `yaw_locked` for goal containers, `shift_tries`, `shift_valid`), outcome, object slots, fixtures,
-fixture joint names, and the parsed BDDL `goal_state`; `episode_XXXXXX.npz` carries `sim_states` and the
+fixture joint names, `fixture_body_pose` (model-level placement of every fixture, which LIBERO re-samples at each
+reset and a qpos/qvel snapshot cannot restore; v3.2), and the parsed BDDL `goal_state`; `episode_XXXXXX.npz` carries `sim_states` and the
 gripper command state `gripper_cmd` at every chunk boundary, enough to restore and branch the simulator.
 Archived pilot datasets are schema v1 (no finger/fixture columns, pad-rule grasp) or v2.
