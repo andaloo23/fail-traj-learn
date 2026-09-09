@@ -4,6 +4,12 @@ recorded actions for a few chunks, and check the simulator lands on the next sto
 Usage: check_snapshot_restore.py <dataset_name> [episode_index ...] [--chunks k,k,...] [--replay N]
 Defaults: first failed and first successful episode; chunks 0, middle, second-to-last; replay 20 steps.
 Prints one line per (episode, chunk) and a final RESTORE_OK / RESTORE_FAIL.
+
+Two pass modes. "exact": the scene has no sampled fixtures, or the sidecar carries `fixture_body_pose` (schema
+v3.2), so a restored episode must replay onto the next stored snapshot (float accumulation only). "approx": the
+scene has fixtures (cabinet, rack, stove...) whose model placement LIBERO re-samples at every reset and the sidecar
+predates v3.2, so the fixtures sit up to ~1.5 cm from the recording; the restore itself must still match every
+logged column exactly, and the replay drift is reported but not judged (a grasp beside a displaced cabinet can slip).
 """
 import argparse
 import json
@@ -22,34 +28,9 @@ from lerobot.envs.libero import LiberoEnv, _get_suite
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "record"))
 from record_rollouts import PrivilegedReader  # noqa: E402
+from check_snapshot_restore_lib import gripper_cmd_history, restore  # noqa: E402
 
 PROJ = Path(os.environ.get("FTL_PROJ", "/home/aliu/projects/fail-traj-learn"))
-
-
-def gripper_cmd_history(actions: np.ndarray, n_sub: int, speed: float, n_wait: int) -> np.ndarray:
-    """robosuite PandaGripper.format_action keeps `current_action` (not part of the MuJoCo state): every
-    simulator substep it moves by [-1, 1] * speed * sign(gripper_action) and is clipped to [-1, 1]. Rebuild it
-    for every frame from the LIBERO dummy wait steps (gripper -1) followed by the recorded actions.
-    Returns (len(actions) + 1, 2): row f is the value in effect right before the action at frame f."""
-    step = np.array([-1.0, 1.0]) * speed
-    ca = np.zeros(2)
-    for _ in range(n_wait * n_sub):
-        ca = np.clip(ca + step * np.sign(-1.0), -1.0, 1.0)
-    out = np.zeros((len(actions) + 1, 2))
-    out[0] = ca
-    for i, a in enumerate(actions[:, -1]):
-        s = np.sign(float(a))
-        for _ in range(n_sub):
-            ca = np.clip(ca + step * s, -1.0, 1.0)
-        out[i + 1] = ca
-    return out
-
-
-def restore(ctrl, rs_env, state: np.ndarray, gripper_cmd: np.ndarray | None):
-    raw = ctrl.set_init_state(state)
-    if gripper_cmd is not None:
-        rs_env.robots[0].gripper.current_action = np.array(gripper_cmd, dtype=np.float64)
-    return raw
 
 ap = argparse.ArgumentParser()
 ap.add_argument("dataset")
@@ -57,8 +38,9 @@ ap.add_argument("episodes", nargs="*", type=int)
 ap.add_argument("--chunks", default="")
 ap.add_argument("--replay", type=int, default=20)
 ap.add_argument("--no-gripper-fix", action="store_true", help="restore only the MuJoCo state (shows the failure mode)")
-ap.add_argument("--tol-restore", type=float, default=2e-3, help="informational: pose diff right after restore (m)")
-ap.add_argument("--tol-replay", type=float, default=1e-2, help="informational: pose diff during replay (m)")
+ap.add_argument("--tol-restore", type=float, default=1e-6, help="pose diff allowed right after restore (m)")
+ap.add_argument("--tol-state", type=float, default=1e-3, help="exact mode: allowed next-snapshot state diff")
+ap.add_argument("--tol-approx", type=float, default=5e-2, help="approx mode: allowed object/eef drift during replay (m)")
 args = ap.parse_args()
 
 root = PROJ / "data" / args.dataset
@@ -79,10 +61,14 @@ print(f"dataset {args.dataset}: {ds.num_episodes} episodes, checking {eps}")
 env = None
 cur_task = None
 all_ok = True
+n_approx = 0
 for ep in eps:
     meta = json.load(open(root / "sidecar" / f"episode_{ep:06d}.json"))
     npz = np.load(root / "sidecar" / f"episode_{ep:06d}.npz")
     states, starts = npz["sim_states"], npz["chunk_start_frames"]
+    fbp = meta.get("fixture_body_pose") or None
+    mode = "exact" if (not meta.get("fixtures") or fbp) else "approx"
+    n_approx += mode == "approx"
     f0 = int(ds.meta.episodes["dataset_from_index"][ep])
     f1 = int(ds.meta.episodes["dataset_to_index"][ep])
     n = f1 - f0
@@ -95,7 +81,8 @@ for ep in eps:
     rec_sup = col("priv.obj_support_contact")
     actions = col("action")
     valid = col("priv.obj_valid")[0].astype(bool)
-    tslot = int(np.flatnonzero(col("priv.target_mask")[0])[0])
+    tm = np.flatnonzero(col("priv.target_mask")[0])
+    tslot = int(tm[0]) if len(tm) else None  # fixture-only goals (open a drawer, turn on the stove) have no target object
 
     key = (meta["suite"], meta["task_id"])
     if key != cur_task:
@@ -122,17 +109,18 @@ for ep in eps:
     n_chunks = len(starts)
     chunks = [c for c in ([int(c) for c in args.chunks.split(",") if c] or sorted({0, n_chunks // 2, max(0, n_chunks - 2)})) if c < n_chunks]
     print(f"\nepisode {ep}: task={meta['task_id']} success={meta['success']} len={n} chunks={n_chunks} "
-          f"state_dim={states.shape[1]} target={meta['object_slots'][tslot]}")
+          f"state_dim={states.shape[1]} target={meta['object_slots'][tslot] if tslot is not None else None} "
+          f"mode={mode}" + (f" (fixtures {meta.get('fixtures')} placed by LIBERO's sampler; pose not recorded)" if mode == "approx" else ""))
     for k in chunks:
         f = int(starts[k])
-        raw = restore(ctrl, rs_env, states[k], None if gcmd is None else gcmd[f])
+        raw = restore(ctrl, rs_env, states[k], None if gcmd is None else gcmd[f], fbp)
         p = priv.read(raw)
         pos = p["priv.obj_pos"].reshape(-1, 3)
         d_obj = np.abs(pos[valid] - rec_pos[f][valid]).max()
         d_eef = np.abs(p["priv.eef_pos"] - rec_eef[f]).max()
         d_jp = np.abs(p["priv.joint_pos"] - rec_jp[f]).max()
-        flag_ok = (int(p[GRASP_KEY][tslot]) == int(rec_grasp[f, tslot])) and (
-            int(p["priv.obj_support_contact"][tslot]) == int(rec_sup[f, tslot]))
+        flag_ok = tslot is None or ((int(p[GRASP_KEY][tslot]) == int(rec_grasp[f, tslot])) and (
+            int(p["priv.obj_support_contact"][tslot]) == int(rec_sup[f, tslot])))
         # image check: raw agentview rotated 180 vs decoded recorded frame
         img = np.ascontiguousarray(raw["agentview_image"][::-1, ::-1]).astype(np.float32)
         rec_img = ds[f0 + f]["observation.images.image"]
@@ -149,29 +137,35 @@ for ep in eps:
             pos = p["priv.obj_pos"].reshape(-1, 3)
             d_obj_replay = max(d_obj_replay, float(np.abs(pos[valid] - rec_pos[f + i + 1][valid]).max()))
             d_eef_replay = max(d_eef_replay, float(np.abs(p["priv.eef_pos"] - rec_eef[f + i + 1]).max()))
-            flag_mismatch += int(int(p[GRASP_KEY][tslot]) != int(rec_grasp[f + i + 1, tslot]))
+            if tslot is not None:
+                flag_mismatch += int(int(p[GRASP_KEY][tslot]) != int(rec_grasp[f + i + 1, tslot]))
         # after exactly one chunk of replay the sim should sit on the next stored snapshot
         d_state = float("nan")
         if k + 1 < n_chunks and m >= int(starts[k + 1]) - f:
-            # replay covered the next boundary; re-run exactly to it for the state comparison
-            restore(ctrl, rs_env, states[k], None if gcmd is None else gcmd[f])
+            restore(ctrl, rs_env, states[k], None if gcmd is None else gcmd[f], fbp)
             for i in range(int(starts[k + 1]) - f):
                 ctrl.step(actions[f + i])
             d_state = float(np.abs(np.asarray(ctrl.get_sim_state()) - states[k + 1]).max())
 
-        # Pass criterion: the simulator must be reproducible (replay reaches the next stored snapshot within float
-        # accumulation) and the contact flags must agree. Pose columns are informational: robosuite observables are
-        # sampled at the first substep of a control step, so logged poses lag the true state by up to one control
-        # step while the arm is moving.
-        sim_ok = bool(np.isnan(d_state) or d_state <= 1e-6)
-        pose_ok = d_obj <= args.tol_restore and d_eef <= args.tol_restore and \
-            d_obj_replay <= args.tol_replay and d_eef_replay <= args.tol_replay
-        ok = sim_ok and flag_ok and flag_mismatch == 0
+        restore_ok = d_obj <= args.tol_restore and d_eef <= args.tol_restore and d_jp <= args.tol_restore and flag_ok
+        if mode == "exact":
+            # reproducible up to float accumulation (stiff contacts can amplify 1e-13 to ~1e-5 in qvel)
+            sim_ok = bool(np.isnan(d_state) or d_state <= args.tol_state)
+            ok = restore_ok and sim_ok and flag_mismatch == 0
+            verdict = "ok" if ok else "FAIL"
+        else:
+            # pre-v3.2 fixture scene: the snapshot guarantees the state, not the replay (the fixture may sit ~1 cm off, so a
+            # grasp beside a cabinet can slip within a few steps). Judge the restore; report the drift.
+            ok = restore_ok
+            drift_note = "" if (d_obj_replay <= args.tol_approx and d_eef_replay <= args.tol_approx) else " [replay drift > tol: fixture interaction]"
+            verdict = ("ok (approx)" if ok else "FAIL (approx)") + drift_note
         all_ok &= ok
         print(f"  chunk {k:3d} frame {f:3d}: restore obj {d_obj:.1e} eef {d_eef:.1e} joints {d_jp:.1e} flags {'ok' if flag_ok else 'MISMATCH'} "
               f"img_mad {d_img:.1f} | replay {m} steps: obj {d_obj_replay:.1e} eef {d_eef_replay:.1e} grasp_flag_mismatches {flag_mismatch} "
-              f"| next-snapshot diff {d_state:.1e} -> {'ok' if ok else 'FAIL'}{'' if pose_ok else ' (pose cols beyond tol: obs lag)'}")
+              f"| next-snapshot diff {d_state:.1e} -> {verdict}")
 
 if env is not None:
     env.close()
+if n_approx:
+    print(f"\n{n_approx} episode(s) judged in approx mode (fixture placement not recorded; sidecars predate schema v3.2)")
 print("\nRESTORE_OK" if all_ok else "\nRESTORE_FAIL")

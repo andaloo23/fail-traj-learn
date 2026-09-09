@@ -53,7 +53,11 @@ for a in sys.argv[1:]:
     hits = sorted(glob.glob(str(PROJ / "data" / f"{a}__t*")))
     names += [Path(h).name for h in hits] if hits else [a]
 
-tot = {"fail": 0, "inside_correct": 0, "inside_libero": 0, "yaw45_container": 0}
+tot = {"fail": 0, "inside_correct": 0, "inside_libero": 0, "yaw45_container": 0, "excluded": 0}
+EXCL_PATH = Path(__file__).resolve().parent / "exclusions.json"
+EXCL = {}
+if EXCL_PATH.exists():
+    EXCL = {k: {e["episode_index"] for e in v} for k, v in json.load(open(EXCL_PATH)).items() if not k.startswith("_")}
 for name in names:
     root = PROJ / "data" / name
     ds = LeRobotDataset(f"fail_traj/{name}", root=root)
@@ -77,6 +81,9 @@ for name in names:
                 if owners and objs:
                     pairs.append((objs[0], owners[0], kind))
         if not pairs:
+            continue
+        if ep in EXCL.get(name, ()):
+            tot["excluded"] += 1
             continue
         f1 = int(ds.meta.episodes["dataset_to_index"][ep])
         # Only failures are judged: the last frame of a successful episode is the pre-step state of the frame in which
@@ -103,4 +110,4 @@ for name in names:
                 if corr or lib:
                     print(f"{name} ep {ep}: FAIL but {obj} inside {owner} (correct={corr} libero={lib}) | container yaw {yaw:+.0f} deg, effective half-size xy {eff[0]:.3f},{eff[1]:.3f} | obj z {pos[o][2]:.3f}")
 print(f"\nfailed episodes with an `in` goal: {tot['fail']}; ending inside the container by the rotation-correct test: {tot['inside_correct']}; "
-      f"by LIBERO's own test: {tot['inside_libero']}; container yawed so that LIBERO's region collapsed (<3 cm half-size): {tot['yaw45_container']}")
+      f"by LIBERO's own test: {tot['inside_libero']}; container yawed so that LIBERO's region collapsed (<3 cm half-size): {tot['yaw45_container']}; excluded by exclusions.json: {tot['excluded']}")

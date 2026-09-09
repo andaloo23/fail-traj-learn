@@ -129,7 +129,23 @@ def quat_mul_wxyz(q1: np.ndarray, q2: np.ndarray) -> np.ndarray:
 # v3 (2026-09-05): priv poses/joints read from sim.data (no observable lag), sidecar npz gains `gripper_cmd`
 # (robosuite PandaGripper.current_action per chunk, needed for exact snapshot restore), shifted init keeps the yaw
 # of goal-region containers (LIBERO in_box predicate is not rotation-correct).
+# v3.2 (2026-09-06): sidecar gains `fixture_body_pose` (model-level pos/quat of every fixture root body): LIBERO
+# re-samples fixture placement into the MuJoCo MODEL at each reset, so qpos/qvel snapshots alone cannot rebuild the
+# recording env in cabinet / rack / stove scenes. Restore with check_snapshot_restore_lib.restore(..., fixture_body_pose).
 SCHEMA_VERSION = 3
+
+
+def fixture_body_poses(rs_env) -> dict[str, dict]:
+    """Body pos/quat (wxyz, MuJoCo model frame) of every fixture root body, as placed by LIBERO at this reset."""
+    out: dict[str, dict] = {}
+    m = rs_env.sim.model
+    for name, obj in (getattr(rs_env, "fixtures_dict", {}) or {}).items():
+        try:
+            bid = m.body_name2id(obj.root_body)
+        except Exception:
+            continue
+        out[name] = {"body": obj.root_body, "pos": [float(x) for x in m.body_pos[bid]], "quat_wxyz": [float(x) for x in m.body_quat[bid]]}
+    return out
 
 
 def build_features(h: int, w: int, n_slots: int, n_fixture_joints: int) -> dict[str, dict]:
@@ -697,6 +713,9 @@ def main(cfg: RecordConfig):
                         "object_slots": priv.obj_names,
                         "target_objects": priv.target_names,
                         "fixtures": priv.fixture_names,
+                        # model-level fixture placement (schema v3.2): LIBERO samples fixture body pos/quat into the MuJoCo
+                        # MODEL at every reset (not reproducible from the seed), and qpos/qvel snapshots cannot restore it.
+                        "fixture_body_pose": fixture_body_poses(rs_env),
                         "fixture_joint_names": priv.fixture_joint_names,
                         "goal_state": priv.goal_state,
                         "fps": int(cfg.env.fps),

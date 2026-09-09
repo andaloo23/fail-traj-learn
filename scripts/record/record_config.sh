@@ -49,6 +49,12 @@ FINAL_RC=0
 for TID in $TASK_LIST; do
 DSNAME="${NAME}__t${TID}"
 LOG="$PROJ/logs/record_${DSNAME}.log"
+# Idempotent resume: a dataset that was finalized by an earlier run is skipped, so any stage script can simply be
+# re-run after a crash. A dataset that was moved away (archived) or never finalized is re-recorded. FORCE=1 overrides.
+if [ "${FORCE:-0}" != "1" ] && [ -f "$PROJ/data/$DSNAME/meta/info.json" ] && grep -aq "Finalized dataset .*/${DSNAME}: " "$LOG" 2>/dev/null; then
+  echo "[record_config] $DSNAME already finalized, skipping (FORCE=1 to re-record)" | tee -a "$LOG"
+  continue
+fi
 echo "[record_config] NAME=$DSNAME SOURCE=$SOURCE CKPT=$CKPT SUITE=$SUITE TASK=$TID N_EP=$N_EP INIT=$INIT SXY=$SXY SYAW=$SYAW NOISE=$NOISE EXTRA=$EXTRA" | tee -a "$LOG"
 .venv/bin/python "$SCRIPTS/record/record_rollouts.py" \
   --policy.type=molmoact2 \

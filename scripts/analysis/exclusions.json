@@ -1,0 +1,24 @@
+{
+  "_doc": "Episodes to drop or relabel before training. Keyed by dataset name; each entry lists episode_index, the action, and why. Found by predicate_artifacts.py / init_state_check.py during acceptance (2026-09-06).",
+  "full_shift16__t3": [
+    {
+      "episode_index": 28,
+      "action": "relabel_success",
+      "reason": "bbq sauce ends geometrically inside the basket (rotation-correct test) but LIBERO's in_box failed because the arm bumped the basket to +52 deg yaw during the episode, collapsing LIBERO's region to 1.1 cm half-width. Placement was correct; not a policy failure."
+    }
+  ],
+  "full_l10s8__t0": [
+    {
+      "episode_index": 2,
+      "action": "keep",
+      "reason": "LIBERO base init state 2 of libero_10 task 0 places the distractor cream_cheese_1 on the floor (44 cm below the table, 46 cm from its usual spot). Same in full_l10s12__t0 ep 2, so it is LIBERO's init file, not the shift sampler. Target objects unaffected; episode succeeded. Kept, but whitelisted for the init audit."
+    }
+  ],
+  "full_l10s12__t0": [
+    {
+      "episode_index": 2,
+      "action": "keep",
+      "reason": "See full_l10s8__t0 ep 2: LIBERO base init state puts cream_cheese_1 on the floor."
+    }
+  ]
+}
