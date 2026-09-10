@@ -18,6 +18,7 @@ in a separate project root outside the repository.
 | `scripts/record/` | Rollout recorder and its wrapper |
 | `scripts/pilot/` | Failure-induction pilot stages |
 | `scripts/analysis/` | Dataset checks, progress analysis, failure review |
+| `scripts/rl/` | Offline-RL pipeline: transitions, critic/actor training, closed-loop LIBERO evaluation |
 | `scripts/tools/` | Probes, viewer, task lister, plain eval |
 | `docs/` | Proposal and pilot write-up |
 | `outputs/` | Generated artifacts (videos, montages, contact sheets, review gallery); not tracked |
@@ -98,6 +99,41 @@ table of proprioceptive signals, never `priv.*`. Details and design decisions: `
 | `event_experiment.py` | Blinded local event recognition and overlapping-window scan using native camera frames; exports exact inputs, raw responses and an HTML review. See `docs/event_experiment.md`. |
 | `inspect_records.py`, `zoom_episode.py`, `probe_vlm.py`, `object_gallery.py`, `montage.py`, `collect_objects.py` | Inspection: readable record dumps, dense frame zooms, free-form VLM questions about tiles, object appearance gallery. |
 | `py.sh`, `download_model.sh`, `env_probe.sh` | Venv runner, model download into the HF cache, environment probe. |
+
+### `scripts/rl/` — offline RL and closed-loop evaluation (proposal sections 5, 10, 14)
+
+The recorded corpus becomes flat transitions, a small critic and actor train on them, and the actor is
+evaluated back in LIBERO. Stage 4 uses a strictly episode-level reward (1.0 on a successful terminal
+transition, 0 elsewhere); stage 5 adds oracle segment supervision through five hook points. Design,
+results, and the audit of both: [docs/rl_pipeline.md](docs/rl_pipeline.md),
+[docs/rl_results.md](docs/rl_results.md), [docs/rl_verification.md](docs/rl_verification.md).
+
+Two observation specs exist. `obs_v1` (90-dim) feeds the policy privileged simulator state — object
+poses, contact and grasp flags, fixture joints — and is kept only for reference: a policy that reads it
+cannot be deployed. `obs_v2` is the deployable one, built from what a robot can actually observe:
+proprioception, frozen visual features from both cameras, and an embedding of the task instruction.
+**The oracle segment labels stay privileged under both** — they shape the training loss and never enter
+the network, so a trained checkpoint runs on cameras alone.
+
+| Script | Purpose |
+|---|---|
+| `py.sh` | Run any script here in the LeRobot venv (GPU visible); logs to `logs/rl_<script>.log`. |
+| `common.py` | Paths, corpus families, per-family init protocols, goal-slot resolution, acceptance-audit success corrections. |
+| `obs.py` | Both observation specs, each with one definition used identically offline (parquet columns) and online (live env): `obs_v1` privileged, `obs_v2` observable. |
+| `encode_frames.py`, `encode_all.sh` | `obs_v2` only: re-render every recorded frame from its MuJoCo snapshot and cache frozen SigLIP features plus the instruction embeddings. Re-renders rather than decoding the stored AV1 video, so offline and online features are the same function of the world. |
+| `build_dataset.py` | Corpus parquets + sidecars to flat transition arrays under `$FTL_PROJ/rl/datasets/<tag>/`; `--obs-spec v1\|v2`. |
+| `replay.py` | GPU-resident transition buffer with an episode-level train/val split. |
+| `nets.py`, `agents.py` | Twin Q, value net, tanh-Gaussian and deterministic actors; BC and IQL sharing one implementation plus the `SegmentHooks` entry points (reward, done, expectile, critic loss, actor weight). |
+| `labels.py` | Oracle `r6` segment labels joined per frame onto a built dataset (label, `q`, chunk, `t*`, cause, event). |
+| `segments.py` | Eight segment-supervision modes: `pm1`, `sign`, `expectile`, `decisive`, `potential`, `events`, `awr`, `mask`; composable. |
+| `train.py` | Training loop, CSV logging, periodic and final closed-loop evaluation, checkpointing. |
+| `eval_env.py` | Closed-loop LIBERO evaluation of a learned actor; rebuilds the env and the shifted-init sampler exactly as the recorder did, from a separate seed block. |
+| `check_obs_consistency.py` | Restores a recorded episode from its snapshot, replays it, and proves the online observation equals the recorded one, under either spec (`--obs-spec`). Prints `OBS_CONSISTENCY_OK`. |
+| `eval_critic.py`, `collect_results.py` | Held-out critic diagnostics (outcome AUC, advantage-sign agreement per class, decisive margin); one comparison table over every finished run. |
+| `verify_results.py` | Read-only audit of the built corpus and saved runs; the checks behind `docs/rl_verification.md`. |
+| `baselines.sh`, `segment_sweep.sh`, `seeds.sh`, `seed_replication.sh`, `rebaseline.sh` | The four stage-4 baselines; every segment mode; seed replication; the whole sweep into a separate artifact root. |
+| `segment_smoke.sh` | A short CPU run of every segment mode, to catch shape and NaN bugs before a GPU sweep. |
+| `test_rl.py`, `run_tests.sh` | CPU unit tests (goal resolution, rotation encoding, offline/online agreement for both specs, expectile, agents, label semantics, AUC ties, event rewards, potential shaping, normalisation split). |
 
 ### `scripts/tools/` — probes and utilities
 

@@ -12,6 +12,10 @@ learner's labels come from the simulator oracle. One row per FRAME (same layout 
   visible_failure_chunk  = decisive (for now)
   recoverable_until_chunk= null (to be filled by the recovery-branching oracle)
   event_type_in_chunk    = grasp | drop | release | none (first event of the chunk)
+  event_at_frame         = grasp | drop | release | none, on the event's OWN frame (see event_frames)
+  event_target           = that event acts on the episode's target object
+  event_hold_frames      = length of the hold the event starts (grasp) or ends (drop/release), -1 if none
+  event_missed_release   = the release did not leave the target at the goal
   held             = the target is held in this frame (held_runs state "held")
   success, source = "oracle_r6"
 
@@ -57,6 +61,43 @@ def event_type_by_chunk(ref):
     return out
 
 
+def event_frames(ref):
+    """Per-frame event localisation: what happens AT this frame, not merely somewhere in its chunk.
+
+    `event_type_in_chunk` names the chunk's first event but not when inside the chunk it happened, so a
+    reward built from it lands on an arbitrary frame of the chunk - and disagrees with `held`, which is
+    per frame. These four columns put each event on its own frame:
+
+      event_at_frame        grasp | drop | release | none, at exactly the event's frame index
+      event_target          the object of that event is the episode's target object
+      event_hold_frames     length of the hold this event starts (grasp) or ends (drop/release), -1 if none
+      event_missed_release  a release of the target that did not leave it at the goal
+
+    A release is "missed" unless it is the last target event of a SUCCESSFUL episode: that one is the
+    placement the task asked for, and every other release put the target down somewhere it did not
+    belong (in a failed episode no release achieved the goal, by definition of the episode outcome).
+    """
+    n = int(ref["n_frames"])
+    kind = np.full(n, "none", object)
+    is_target = np.zeros(n, bool)
+    hold = np.full(n, -1, int)
+    missed = np.zeros(n, bool)
+    target = ref.get("target_slot")
+    evs = [e for e in ref.get("events", []) if e["type"] in EVENT_TYPES and 0 <= int(e["index"]) < n]
+    tgt = [e for e in evs if target is not None and e["object"] == target]
+    placed = tgt[-1] if (bool(ref["success"]) and tgt and tgt[-1]["type"] == "release") else None
+    for e in evs:
+        i = int(e["index"])
+        if kind[i] != "none":  # two events on one frame (they sort grasp-first): keep the first
+            continue
+        on_target = target is not None and e["object"] == target
+        kind[i] = e["type"]
+        is_target[i] = on_target
+        hold[i] = int(e.get("hold_frames", -1))
+        missed[i] = e["type"] == "release" and on_target and e is not placed
+    return kind, is_target, hold, missed
+
+
 def held_by_frame(ref):
     """bool per frame: inside a held run (state 'held'); ambiguous and empty frames are False."""
     n = int(ref["n_frames"])
@@ -86,6 +127,7 @@ def frame_table(ref, g0):
     if sizes.sum() != n or (sizes <= 0).any():
         raise ValueError(f"{ref['dataset']} ep{ref['episode_index']}: chunks do not tile {n} frames")
     ev_type = event_type_by_chunk(ref)
+    ev_kind, ev_target, ev_hold, ev_missed = event_frames(ref)
     rep = lambda vals: np.repeat(np.asarray(vals, object), sizes)  # noqa: E731
     dec = ref.get("decisive_chunk")
     onset = failure_onset_chunk(ref)
@@ -100,6 +142,8 @@ def frame_table(ref, g0):
         "cause": ref.get("cause"), "failure_mode": ref["failure_mode"],
         "decisive_error_chunk": dec, "failure_onset_chunk": onset, "visible_failure_chunk": dec, "recoverable_until_chunk": None,
         "event_type_in_chunk": rep([ev_type.get(c, "none") for c in range(len(chunks))]),
+        "event_at_frame": ev_kind, "event_target": ev_target,
+        "event_hold_frames": ev_hold, "event_missed_release": ev_missed,
         "held": held_by_frame(ref),
         "success": bool(ref["success"]), "source": SOURCE,
     })
@@ -170,6 +214,12 @@ def report(df, eps):
         print(f"  rules present in success chunks: {sorted(rc)}")
     ev = df.drop_duplicates(["dataset", "episode_index", "chunk"])["event_type_in_chunk"].value_counts()
     print("  event_type_in_chunk (chunks): " + ", ".join(f"{k}={v}" for k, v in ev.items()))
+    at = df.loc[df["event_at_frame"] != "none"]
+    print("  event_at_frame (frames): " + ", ".join(f"{k}={v}" for k, v in at["event_at_frame"].value_counts().items())
+          + f"; on the target {int(at['event_target'].sum())}"
+          + f"; missed releases {int(df['event_missed_release'].sum())}"
+          + f"; target grasps holding >= 8 frames "
+            f"{int(((df['event_at_frame'] == 'grasp') & df['event_target'] & (df['event_hold_frames'] >= 8)).sum())}")
     print(f"  held frames: {df['held'].mean():.1%}")
 
 

@@ -79,8 +79,36 @@ class FrameExpansionTests(unittest.TestCase):
         self.assertTrue((df["cause"] == "grasp").all()); self.assertTrue((df["failure_mode"] == "drop_transport").all())
         for k in ("dataset", "episode_index", "frame_index", "global_index", "chunk", "label", "allowed", "q", "cause", "failure_mode",
                   "decisive_error_chunk", "failure_onset_chunk", "visible_failure_chunk", "recoverable_until_chunk",
-                  "event_type_in_chunk", "held", "success", "source"):
+                  "event_type_in_chunk", "event_at_frame", "event_target", "event_hold_frames",
+                  "event_missed_release", "held", "success", "source"):
             self.assertIn(k, df.columns)
+
+    def test_events_land_on_their_own_frame(self):
+        """The RL `events` reward reads these columns; `event_type_in_chunk` spans a whole chunk and
+        cannot say when inside it the grasp happened (docs/rl_verification.md finding 1)."""
+        ref = stub_reference(target_slot="bowl_1")
+        for ev, hold in zip(ref["events"], (18, 18, 4, 4)):
+            ev["hold_frames"] = hold
+        df = frame_table(ref, 0)
+        at = df["event_at_frame"].tolist()
+        self.assertEqual({i: at[i] for i in (20, 40, 52, 56)},
+                         {20: "grasp", 40: "drop", 52: "grasp", 56: "release"})
+        self.assertEqual([i for i, k in enumerate(at) if k != "none"], [20, 40, 52, 56])
+        self.assertEqual(df["event_hold_frames"].tolist()[20], 18)
+        self.assertTrue(df["event_target"].iloc[[20, 40, 52, 56]].all())
+        # the episode failed, so its one release did not put the bowl where the task wanted it
+        self.assertEqual(df.index[df["event_missed_release"]].tolist(), [56])
+
+    def test_the_release_that_completes_a_successful_episode_is_not_missed(self):
+        ref = stub_reference(target_slot="bowl_1", success=True)
+        df = frame_table(ref, 0)
+        self.assertFalse(df["event_missed_release"].any())
+
+    def test_events_on_other_objects_are_not_on_the_target(self):
+        ref = stub_reference(target_slot="plate_1")
+        df = frame_table(ref, 0)
+        self.assertFalse(df["event_target"].any())
+        self.assertFalse(df["event_missed_release"].any())
 
     def test_landmarks(self):
         ref = stub_reference()
