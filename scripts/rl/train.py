@@ -1,14 +1,15 @@
 """Train an offline learner on the recorded corpus and evaluate it closed-loop in LIBERO.
 
-Stage 4 baselines (`docs/proposal_overview.md` section 14) with a strictly episode-level reward:
+BC/IQL baselines (`docs/rl_pipeline.md`), with terminal task reward by default:
 
   --algo bc   --data success            success-only behaviour cloning
   --algo bc   --data all                behaviour cloning on everything
   --algo bc   --data all --bc-weight outcome    outcome-weighted behaviour cloning
   --algo iql  --data all                IQL with the sparse terminal success reward
 
-Nothing in this file reads a segment label. `--segments <mode>` (see `segments.py`) adds the ordinal
-advantage supervision on top of the same critic once the baseline is trusted.
+Reward-only ablations use `--reward-mode`; labels only change replay rewards.
+`--segments <mode>` enables historical annotation hooks (see `segments.py`).
+The separate representation learner runs through `train_failure_model.py`.
 
   train.py --algo iql --tag iql_base --steps 200000 --eval-every 50000
 """
@@ -62,6 +63,12 @@ def build_argparser():
     ap.add_argument("--grad-clip", type=float, default=1.0)
     ap.add_argument("--bc-weight", default="none", choices=["none", "outcome"])
     ap.add_argument("--bc-failure-weight", type=float, default=0.1)
+    from rewards import MODES
+    ap.add_argument("--reward-mode", choices=MODES, default=None,
+                    help="matched observable IQL: terminal; +failure penalty; +productive bonus")
+    ap.add_argument("--reward-success-scale", type=float, default=1.0)
+    ap.add_argument("--reward-failure-scale", type=float, default=0.01)
+    ap.add_argument("--reward-productive-scale", type=float, default=0.01)
     # segments (phase 2; inert unless a mode is given)
     ap.add_argument("--segments", default=None, help="segment-supervision mode, see segments.py --help-modes")
     ap.add_argument("--labels", default="oracle_labels.parquet", help="label parquet under $FTL_PROJ/bench")
@@ -168,6 +175,12 @@ def main():
     print(f"data: {data.summary()}  (obs spec {args.obs_spec}"
           + (f", encoder {args.encoder}" if args.encoder else "") + ")")
 
+    reward_audit = None
+    if args.reward_mode:
+        from rewards import apply_rewards
+        reward_audit = apply_rewards(args, data)
+        print(f"rewards: {reward_audit}")
+
     cfg = AgentConfig(
         obs_dim=data.obs_dim, act_dim=data.act_dim, hidden=args.hidden, n_layers=args.n_layers,
         actor_dist=args.actor_dist, lr=args.lr, lr_actor=args.lr, gamma=args.gamma,
@@ -191,6 +204,8 @@ def main():
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "config.json").write_text(json.dumps({"args": vars(args), "agent": asdict(cfg)}, indent=1,
                                                     default=str))
+    if reward_audit is not None:
+        (run_dir / "reward_audit.json").write_text(json.dumps(reward_audit, indent=2))
     logger = CsvLogger(run_dir / "train_log.csv")
 
     gen = torch.Generator(device=device).manual_seed(args.seed)

@@ -1,13 +1,19 @@
-# Offline-RL pipeline (proposal stages 4 and 5)
+# Offline-RL infrastructure and historical baselines
 
-Built 2026-09-09. Code: [`scripts/rl/`](../scripts/rl/). This is the closed-loop learning half of the
-project: the recorded corpus becomes offline transitions, a small critic and actor train on them, and the
-actor is evaluated back in LIBERO. Stage 4 (episode-level reward only) is the control; stage 5 (oracle
-segments) is the method.
+Code: [`scripts/rl/`](../scripts/rl/). This guide covers existing frame-based BC/IQL and segment/reward
+baselines. The historical proposal called them stages 4 and 5. The current failure-attention learner
+has its own [training guide](failure_training.md); its prospective scorer and RL cost integration
+are not implemented. Saved results and timings below describe the historical experiments unless
+explicitly stated otherwise.
 
 ## 1. What the learner sees
 
-**Observation.** A 90-dimensional state vector, `obs_v1`, defined once in
+**Main observation (`obs_v2`).** Proprioception, frozen features from two cameras, task-language
+features and time; the current cached build is 2525-dimensional. Use `--obs-spec v2` when building
+data for the main observable-model experiment. The encoders are frozen; semantic annotations are
+training targets, not inputs. See [data verification](failure_data_verification.md) for coverage.
+
+**Historical diagnostic observation (`obs_v1`).** A 90-dimensional privileged vector, defined in
 [`obs.py`](../scripts/rl/obs.py) and built two ways from the same code:
 
 | block | width | contents |
@@ -22,12 +28,9 @@ segments) is the method.
 
 Two decisions worth stating plainly:
 
-- **The vector is built from `priv.*`.** The "privileged, never fed to a policy" rule in the README
-  governs the *VLM annotator*, whose whole claim is that it diagnoses failures from what a camera can
-  see. The learner is a different experiment: this is the standard low-dimensional state setup of
-  robomimic and the LIBERO state benchmarks, and it is what the proposal means by "begin with state
-  observations, add frozen image embeddings only after the state-based method works". Swapping in frozen
-  visual features later means replacing the target/goal/distractor blocks behind the same interface.
+- **The v1 vector includes privileged object/contact/fixture state.** It is a simulation diagnostic,
+  not the main deployment observation. Both observation specs are implemented in `obs.py`; the
+  observable v2 path excludes those privileged blocks.
 - **Rotations are 6D, not quaternions.** `q` and `-q` are the same rotation, which makes a raw quaternion
   a discontinuous network input.
 
@@ -39,10 +42,10 @@ clips before `atanh`.
 everywhere else. Running out of steps counts as termination, not truncation, because the step budget is
 part of the task — `--bootstrap-timeout` flips that if it ever needs testing.
 
-### The consistency guarantee
+### Recorded observation-consistency check
 
 `ObsBuilder.from_columns` (offline, parquet) and `ObsBuilder.from_priv` (online, live simulator) share
-one `_assemble`. [`check_obs_consistency.py`](../scripts/rl/check_obs_consistency.py) proves they agree
+one `_assemble`. [`check_obs_consistency.py`](../scripts/rl/check_obs_consistency.py) checks agreement
 on real data: it restores a recorded episode from its chunk-boundary MuJoCo snapshot, replays the
 recorded actions, and compares the live observation to the recorded one at every step.
 
@@ -52,8 +55,9 @@ full_shift8__t0 ep1: 30 steps  max|err|=0.00e+00
 OBS_CONSISTENCY_OK
 ```
 
-Bit-exact. Closed-loop success is therefore measuring the same MDP the critic was fit on. Without this
-check, a silent feature skew would look exactly like a bad algorithm.
+These sampled v1 checks were bit-exact. They verify observation construction on those replayed
+episodes, not all scene resets or distribution shifts. Fixture-pose omissions and longer replay drift
+remain possible; see the current data verification before claiming exact reproducibility.
 
 ## 2. The corpus
 
@@ -134,12 +138,10 @@ five, so every idea below is a few lines against one shared IQL implementation.
 
 #### Implemented
 
-**1. `pm1` — fixed segment reward (the straw man).**
+**1. `pm1` — fixed segment reward baseline.**
 `r_t <- r_t + c * y_t`, with `y_t = +1` progress/recovery, `-1` failure-inducing, `0` otherwise.
-This is what "use a VLM to generate robot rewards" actually means, and the proposal exists to argue
-against it (H3, ablation 15.2). Its weakness is visible in the formula: `c` is a free scale competing
-with a terminal reward of 1, and nothing ties it to the actual value of the action. It is here to be
-beaten, and it is the run to check first if the ordinal method fails to separate from it.
+The scale `c` competes with the terminal reward of 1 and is not an estimate of action value.
+This baseline tests a fixed mapping from the same annotations to rewards.
 
 **2. `sign` — the ordinal advantage constraint (the proposal method, section 5.5).**
 The label constrains only the *sign* of the advantage, never its magnitude:
@@ -168,8 +170,8 @@ reason, the most interesting if it works.
 **4. `decisive` — relocate the failure in time.**
 Instead of a zero terminal reward when the clock runs out, put `-1` at the end of the decisive chunk
 `t*` and cut bootstrapping there (optionally stop sampling the aftermath entirely,
-`--seg-drop-post-decisive`). This tests H4 in the MDP itself rather than in a loss: the credit-assignment
-problem disappears if the terminal is simply moved to where the error was. It is the most aggressive use
+`--seg-drop-post-decisive`). This changes the objective and bootstrap horizon by moving the terminal
+to the suspected error. It is the most aggressive use
 of the labels and the most sensitive to `t*` being wrong, which makes it the natural probe for the
 annotation-noise experiment.
 
@@ -275,5 +277,55 @@ transitions, `runs/<tag>/` for `config.json`, `train_log.csv`, `final.pt` and `e
 | `segments.py` | the eight segment-supervision modes |
 | `train.py` | training loop, CSV logging, periodic and final closed-loop evaluation |
 | `eval_env.py` | closed-loop LIBERO evaluation of a learned actor |
-| `check_obs_consistency.py` | snapshot-replay proof that offline and online observations agree |
+| `check_obs_consistency.py` | snapshot-replay check of offline/online observation agreement |
 | `test_rl.py`, `run_tests.sh` | CPU unit tests |
+
+## 6. Matched reward-only experiments (observable inputs)
+
+Run from WSL in the repository:
+
+```bash
+bash scripts/rl/reward_experiments.sh
+# Configurable magnitudes and matched training seeds:
+PREFIX=reward_scale2 SEEDS="0 1 2" SUCCESS_SCALE=1 FAILURE_SCALE=0.02 PRODUCTIVE_SCALE=0.02 \
+  STEPS=100000 bash scripts/rl/reward_experiments.sh
+```
+
+Requires an existing `object_v2` dataset and `oracle_labels_r6_object.parquet` under
+`$FTL_PROJ/bench`. Override `DATASET`, `LABELS`, `PROJ`, `PY`, or `FTL_RL` as needed.
+To build observable data, first cache features with `encode_frames.py` / `encode_all.sh`,
+then run `build_dataset.py --corpus object --tag object_v2 --obs-spec v2` via `py.sh`.
+The runner never rebuilds data between arms and refuses existing output directories.
+
+| `--reward-mode` | Default reward per recorded transition |
+|---|---|
+| `terminal` | +1 only on successful terminal action, otherwise 0 |
+| `failure` | terminal reward minus 0.01 on every `failure_inducing` action |
+| `productive` | failure-arm reward plus 0.01 on every `progress` or `recovery` action |
+
+Scales are nonnegative magnitudes, configured directly with `--reward-success-scale`,
+`--reward-failure-scale`, and `--reward-productive-scale`. Bonuses/penalties also apply to
+terminal actions: a successful productive terminal action receives 1.01. Neutral, aftermath,
+and missing labels add zero. These are per-frame rewards, not per-chunk payments; there is no
+q/rho weighting, episode-length normalisation, or reward for failure merely because an episode
+failed. Partial label coverage is reported; an entirely unmatched label file is rejected.
+Labels supply offline rewards only; their oracle provenance does not make them observable labels.
+The label-quality caveat in section 4 still applies.
+
+All arms use the existing IQL actor loss `-mean(w * log_prob(action | obs))`, with its existing
+advantage normalisation, temperature and clipping. No actor masks, label inputs, extra critic
+losses or segment hooks are enabled. The trainer requires `obs_v2`, all data, terminal timeouts,
+and validates base rewards against episode outcomes and final frame indices before shaping.
+The default trainer behavior outside `--reward-mode` remains unchanged.
+
+Within each seed, data, episode split, normalisation, model initialization and minibatch RNG
+are matched. The runner uses seeds 0/1/2, the same evaluation seed 90000, held-out base-layout
+offset 30, and shift8/12/16 evaluation families. `EVAL_SEED`, `EVAL_OFFSET`, `EVAL_EPISODES`,
+`EVAL_WORKERS`, `BATCH_SIZE`, and `DEVICE` can be overridden for the whole sweep.
+Keep the dataset and label export fixed during the sweep. Run config/checkpoints store scales
+and seeds; `reward_audit.json` records label coverage/source and reward totals/extrema per arm.
+These checks do not imply bitwise determinism across GPU platforms.
+
+Verification: `python -m unittest discover -s scripts/rl -p 'test_*.py'` includes cumulative
+reward semantics, custom scales, missing labels, terminal additions, rejection of privileged
+inputs / mixed segment losses / pre-shaped rewards, and a CPU IQL update with shaped rewards.

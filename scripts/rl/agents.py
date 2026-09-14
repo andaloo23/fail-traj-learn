@@ -1,9 +1,8 @@
-"""Offline learners: behaviour cloning baselines and IQL with a sparse terminal reward.
+"""Frame-based BC and IQL baselines with optional SegmentHooks.
 
-Stage 4 of the proposal (`docs/proposal_overview.md`, section 14): the data-use and offline-RL baselines
-that the segment-aware method has to beat. Nothing here reads a segment label; the only reward is
-1.0 on a successful terminal transition. `segments.py` plugs the annotation losses into `IQL` through
-`seg_loss`, so the baseline and the method share one critic implementation.
+The default reward is terminal task success. Hooks can modify rewards, bootstrap masks,
+expectiles, critic losses and actor weights for historical annotation baselines. See
+`docs/rl_pipeline.md`. The separate failure-attention learner is not connected here yet.
 """
 from __future__ import annotations
 
