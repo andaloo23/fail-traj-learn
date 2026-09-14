@@ -1,5 +1,9 @@
 # Cause-Aware Ordinal Advantage Learning from Failed Robot Trajectories
 
+> Historical proposal. The current direction (2026-09-13) is documented in [Failure-conditioned temporal learning](failure_attention_design.md): test the value of failure semantics, temporal localization, and transfer for policy improvement. The ordinal-advantage method below remains a baseline; the new representation learner is implemented and smoke-tested, while real-data training, prospective scoring and policy improvement remain unvalidated. See [the training guide](failure_training.md).
+
+> Scope: dataset descriptions and research claims below are historical assumptions, not a current availability or novelty audit. Original non-resolving chat citation tokens have been removed.
+
 ## Abstract
 
 Real-world robot datasets increasingly contain failed and suboptimal policy rollouts, but these trajectories are usually labeled only with an episode-level outcome. Treating an entire failed trajectory as undesirable discards productive behavior before the mistake, while behavior-cloning the complete trajectory risks imitating the actions that caused the failure.
@@ -18,7 +22,7 @@ The method would be evaluated using closed-loop policy training in simulation an
 
 # 1. Motivation
 
-OopsieData collects real robot-manipulation rollouts containing successes, failures, and suboptimal behavior. Its intended uses explicitly include offline RL, reward modeling, failure prediction, and policy steering. genui{"citation":{"refs":["turn0view0","turn0view3"]}}
+OopsieData collects real robot-manipulation rollouts containing successes, failures, and suboptimal behavior. Its intended uses explicitly include offline RL, reward modeling, failure prediction, and policy steering.
 
 Each episode can contain:
 
@@ -27,7 +31,7 @@ Each episode can contain:
 - Joint, Cartesian, and gripper states.
 - Absolute robot actions.
 - Robot and policy metadata.
-- One or more human annotations. genui{"citation":{"ref":"turn1view0"}}
+- One or more human annotations.
 
 The current annotation schema distinguishes:
 
@@ -36,7 +40,7 @@ The current annotation schema distinguishes:
 - Success with an unwanted side effect.
 - Failure.
 
-Failures and side effects can also be categorized as reaching, grasp, manipulation, sequencing/semantic, collision, hardware, or other, with low, medium, or catastrophic severity. These are episode-level annotations, not per-timestep labels. genui{"citation":{"refs":["turn1view0","turn1view1"]}}
+Failures and side effects can also be categorized as reaching, grasp, manipulation, sequencing/semantic, collision, hardware, or other, with low, medium, or catastrophic severity. These are episode-level annotations, not per-timestep labels.
 
 That creates a credit-assignment problem.
 
@@ -650,7 +654,7 @@ Use OopsieData for real-world validation:
 - Measure how much productive data is recovered from failed episodes.
 - Test generalization across tasks, robots, policies, or labs.
 
-The public statistics page currently shows zero released annotated episodes, so internal dataset access and usable episode counts must be confirmed before committing. genui{"citation":{"ref":"turn1view2"}}
+Real-data access and usable temporal annotations were unconfirmed in this historical proposal. This document does not establish current dataset availability.
 
 # 13. Human-annotated reference set
 
@@ -980,11 +984,3 @@ The proposed method uses a VLM to reveal this structure but does not trust it to
 This creates a publishable algorithmic question while remaining computationally practical:
 
 > Can semantic failure diagnosis solve offline-RL credit assignment more effectively than terminal rewards or manually designed VLM reward mappings?
-
----
-
-If you want, I can:
-
-- Design VLM prompts for failure cause identification
-- Develop evaluation strategy for VLM annotation quality
-- Plan implementation of ordinal advantage learning losses

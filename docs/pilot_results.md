@@ -1,5 +1,7 @@
 # Failure-induction pilot, 2026-09-04
 
+> Historical pilot report. Pilot/validation datasets are archived outside this repository; the proposed SmolVLA learner below was an early plan. Current code uses a small BC/IQL actor and a separate failure-representation model; see [current status](../README.md).
+
 Goal: find rollout sources that fail 30 to 70 percent of the time with failures that contain task structure
 (a productive prefix and a localizable decisive error), using the LIBERO-fine-tuned MolmoAct2 as the frozen
 generator, so the learner (SmolVLA) never sees data from its own family.

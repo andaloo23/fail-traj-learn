@@ -1,5 +1,7 @@
 # Offline-RL results (2026-09-09)
 
+> Historical baseline results, not results for the new attention architecture. Current implementation status is in [the training guide](failure_training.md); the verification caveats below remain in force.
+
 > **Verification update, 2026-09-09.** [The audit](rl_verification.md) reproduces every saved table
 > from the artifacts, and found four implementation defects plus two misstatements. The defects are now
 > **fixed in the code** (`oracle_labels.py`, `segments.py`, `eval_critic.py`, `replay.py`, `eval_env.py`);

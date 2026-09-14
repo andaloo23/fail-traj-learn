@@ -1,5 +1,7 @@
 # Segmentation benchmark: 50 failure episodes, strict per-episode correctness
 
+> Historical benchmark against versioned rule-derived references, not human semantic ground truth. Read the [r6 audit](oracle_r6_audit.md) and [current data verification](failure_data_verification.md) alongside these scores.
+
 Goal: decide which VLM annotation method produces fully correct segment annotations, measured on a fixed set
 of 50 failure episodes against references derived from the simulator's privileged state. "Correct" is defined
 per level below; an episode passes a method only if every applicable level passes. The scoreboard reports the
@@ -8,7 +10,7 @@ fraction of episodes that pass, per level and overall, per failure mode.
 Everything under `scripts/annotate/bench/`. Benchmark data under `$FTL_PROJ/bench/` (WSL side), reports
 mirrored to `outputs/bench/` (Windows side).
 
-## 1. Reference (ground truth) per episode: `bench/references/<dataset>/episode_XXXXXX.json`
+## 1. Rule-derived reference per episode: `bench/references/<dataset>/episode_XXXXXX.json`
 
 Built by `bench/oracle_reference.py` from `priv.*` columns only (never shown to any model). Version `r3`
 (r2: annotation granularity, a hold has to be visible at the 10-frame chunk scale to count; r3: short holds that

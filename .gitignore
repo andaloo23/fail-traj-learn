@@ -9,12 +9,16 @@ data/
 *.mp4
 *.npz
 *.safetensors
+*.pt
+*.pth
 
 # Python
 __pycache__/
 *.pyc
 .venv/
 *.egg-info/
+.pytest_cache/
+.ruff_cache/
 
 # Editors / tooling
 .claude/

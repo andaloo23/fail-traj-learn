@@ -1,11 +1,13 @@
 # VLM segmentation pipeline (scripts/annotate/)
 
+> Experimental Qwen annotation workflow retained for reproducibility. It is not the default source of trusted labels; see [the current oracle contract](oracle_segmentation.md) and [training guide](failure_training.md).
+
 Implements proposal section 4: a zero-shot vision-language model labels every action chunk of an episode with
 `progress | failure_inducing | recovery | neutral | aftermath`, estimates the landmarks `failure_onset`,
 `decisive_error` (t*), `visible_failure`, `recoverable_until`, and names an OOPSIE-aligned cause. Confidence `q_t`
 comes from self-consistency over K sampled diagnoses, not from the model's own confidence field.
 
-## Current revision: p8 / annot_v2
+## Documented revision: p8 / annot_v2
 
 The separate [observable-event experiment](event_experiment.md) tests local visual recognition and an
 overlapping-window episode scan before further segmentation changes. It leaves production annotations intact.
