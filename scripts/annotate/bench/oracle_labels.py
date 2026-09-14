@@ -1,7 +1,8 @@
 """Export training labels from the oracle references (docs/segmentation_benchmark.md section 1, reference r6).
 
-The VLM annotators were benchmarked and are not reliable enough (docs/segmentation_benchmark.md, Status), so the
-learner's labels come from the simulator oracle. One row per FRAME (same layout as to_labels.py for VLM records):
+These are weak labels for historical RL baselines and review, not verified semantic ground truth.
+See docs/oracle_segmentation.md before converting them for failure-attention training.
+One row per FRAME (same layout as to_labels.py for VLM records):
 
   dataset, episode_index, frame_index, global_index (dataset_from_index + frame_index), chunk,
   label            = the chunk's primary label (progress | failure_inducing | recovery | neutral | aftermath)
