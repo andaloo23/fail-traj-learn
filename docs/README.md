@@ -22,6 +22,7 @@ sets matter; they are not current training instructions or independent confirmat
 | [RL verification](rl_verification.md) | Audit of those runs and the resulting fixes |
 | [Segmentation benchmark](segmentation_benchmark.md) | VLM methods compared against versioned rule-derived references |
 | [GPT-6 annotation experiments](gpt6_annotation_experiments.md) | Assistant-assisted annotation evidence and limitations |
+| [GPT-6 observable-label pilot v1](gpt6_pilot_v1.md) | Fixed multi-head taxonomy, 30-episode blind pilot and privileged fact-check results |
 | [VLM pipeline](annotation_pipeline.md) | Experimental Qwen annotation workflow |
 | [Observable-event experiment](event_experiment.md) | Local event-recognition experiment |
 | [Segmentation iterations](segmentation_iteration_results.md) | Development on one reviewed episode, not held-out evidence |

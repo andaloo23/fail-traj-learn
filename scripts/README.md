@@ -22,6 +22,7 @@ in their existing locations so historical runs and tests stay reproducible.
 | Record new data | `record/record_config.sh`, `record/record_rollouts.py` | Choose a new dataset name and explicit task/init settings |
 | Build rule-derived annotations | `annotate/bench/oracle_reference.py`, `annotate/bench/oracle_labels.py` | Versioned weak supervision; review before using as new manifest labels |
 | Run annotation benchmarks | `annotate/bench/run_method.py` | Historical VLM and rule baselines |
+| Build and verify GPT-6 pilot labels | `annotate/bench/gpt6_pilot.py` | Observable-only sparse labels, hash freeze, privileged fact checks, masked training candidates |
 | Local simulation utilities | `tools/list_tasks.py`, `tools/probe_libero.py`, `tools/view_libero.py` | Task inspection, rendering and viewer |
 
 ## Historical collection schedules

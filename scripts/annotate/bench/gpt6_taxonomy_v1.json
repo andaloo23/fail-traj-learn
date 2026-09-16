@@ -1,0 +1,66 @@
+{
+  "version": "gpt6_observable_taxonomy_v1",
+  "frame_bounds": "zero-based, end-exclusive",
+  "missing_means": "unknown, never negative",
+  "roles": {
+    "task_progress": "Observable advancement toward the task goal.",
+    "failed_attempt": "An attempted task operation that did not establish its intended state.",
+    "physical_failure": "An observed adverse physical event, such as target loss or collision.",
+    "correction_attempt": "Behavior responding to an earlier problem; success is not implied.",
+    "recovery_success": "Control or task progress is demonstrably restored after a problem.",
+    "aftermath": "Behavior after a failure without a new attempt or restored progress.",
+    "inactive": "No material task-directed behavior is visible."
+  },
+  "events": {
+    "target_contact": "The gripper visibly contacts or engages the target.",
+    "grasp_acquisition": "The target comes under controlled gripper possession.",
+    "failed_grasp": "A closing/pickup attempt does not establish target possession.",
+    "controlled_transport": "The held target moves with the gripper.",
+    "release": "The gripper relinquishes the target.",
+    "slip_drop": "The target is unintentionally lost while controlled or lifted.",
+    "collision": "The robot or carried target visibly collides with the scene.",
+    "wrong_object_interaction": "The gripper engages a non-target object.",
+    "stall": "Task-directed motion stops for a sustained interval before completion.",
+    "placement": "The target is deposited in the intended goal region."
+  },
+  "failure_families": {
+    "reaching": "Failure before establishing a usable target interaction.",
+    "grasping": "Failure to establish or retain a stable grasp during acquisition.",
+    "transport": "Failure while carrying the target toward the destination.",
+    "placement_release": "Failure while depositing or releasing the target.",
+    "manipulation": "Failure in insertion, articulation, rotation, or another post-grasp operation.",
+    "sequencing_semantic": "Wrong object, destination, or task ordering.",
+    "collision": "A harmful collision contributes to the observed failed attempt.",
+    "hardware_control": "Controller, sensor, safety, or mechanical malfunction.",
+    "other": "A supported failure does not fit the mapped families.",
+    "unknown": "Available observations do not support a family assignment."
+  },
+  "failure_subtypes": {
+    "reaching.no_contact": "No target contact is established.",
+    "reaching.bad_approach": "Approach geometry visibly prevents the intended interaction.",
+    "grasping.close_on_nothing": "The gripper closes without acquiring the target.",
+    "grasping.unstable_acquisition": "An apparent acquisition is visibly unstable.",
+    "grasping.slip": "The target is lost at or shortly after acquisition.",
+    "transport.drop": "The target is lost during transport.",
+    "transport.collision_with_drop": "A collision is followed closely by loss of the carried target.",
+    "placement_release.outside_goal": "The target is released outside the valid goal.",
+    "placement_release.unstable": "The deposited target does not remain stably placed.",
+    "placement_release.no_release": "The target remains held until termination.",
+    "manipulation.stall": "The required manipulation stops without completion.",
+    "sequencing_semantic.wrong_object": "A non-target object is engaged.",
+    "collision.robot_scene": "The robot makes sustained unintended scene contact.",
+    "other.unmapped": "Observed failure outside the current subtype vocabulary."
+  },
+  "task_stages": ["reached", "grasped", "lifted", "transported", "placed"],
+  "task_stage_semantics": "The stage was achieved or observably active in the segment; placed requires the placement transition in the segment.",
+  "object_relations": ["target", "wrong_object", "multiple", "none", "unknown"],
+  "recovery_states": ["none", "attempted", "successful", "unknown"],
+  "annotation_rules": [
+    "Labels are multi-label; concurrent progress and failure may both be present.",
+    "Annotate only observable claims. Causal contribution and counterfactual advantage are outside this taxonomy.",
+    "Use unknown rather than forcing a failure family.",
+    "Omitted classes are unknown, not negatives.",
+    "Keep attempt, observed-event, and suspected-contribution intervals separate.",
+    "Free-text novel_candidate preserves recurring phenomena for later taxonomy revisions."
+  ]
+}
