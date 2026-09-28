@@ -6,6 +6,7 @@
 |---|---|
 | [Failure training](failure_training.md) | Implemented representation learner and manifest contract |
 | [Failure attention design](failure_attention_design.md) | Research plan; separates implemented pretraining from future scoring/control |
+| [Joint failure process model](joint_failure_process_model.md) | Proposed multi-task causal architecture for segment recognition, future failure risk and recovery |
 | [Data verification](failure_data_verification.md) | 2026-09-13 inventory, structural checks, fresh reference comparison and replay limits |
 | [Oracle segmentation](oracle_segmentation.md) | Current label semantics, uncertainty and conversion requirements |
 | [RL pipeline](rl_pipeline.md) | Existing BC/IQL and historical segment/reward baselines |
@@ -23,6 +24,7 @@ sets matter; they are not current training instructions or independent confirmat
 | [Segmentation benchmark](segmentation_benchmark.md) | VLM methods compared against versioned rule-derived references |
 | [GPT-6 annotation experiments](gpt6_annotation_experiments.md) | Assistant-assisted annotation evidence and limitations |
 | [GPT-6 observable-label pilot v1](gpt6_pilot_v1.md) | Fixed multi-head taxonomy, 30-episode blind pilot and privileged fact-check results |
+| [GPT-6 conversation labels with human review](gpt6_human_review_v1.md) | Frozen zero-shot and human-demonstration in-context Codex protocols, with candidate-assisted review |
 | [VLM pipeline](annotation_pipeline.md) | Experimental Qwen annotation workflow |
 | [Observable-event experiment](event_experiment.md) | Local event-recognition experiment |
 | [Segmentation iterations](segmentation_iteration_results.md) | Development on one reviewed episode, not held-out evidence |

@@ -23,6 +23,8 @@ in their existing locations so historical runs and tests stay reproducible.
 | Build rule-derived annotations | `annotate/bench/oracle_reference.py`, `annotate/bench/oracle_labels.py` | Versioned weak supervision; review before using as new manifest labels |
 | Run annotation benchmarks | `annotate/bench/run_method.py` | Historical VLM and rule baselines |
 | Build and verify GPT-6 pilot labels | `annotate/bench/gpt6_pilot.py` | Observable-only sparse labels, hash freeze, privileged fact checks, masked training candidates |
+| Prepare GPT-6 labels for human review | `annotate/bench/gpt6_human_review_v1.py`, `annotate/bench/gpt6_human_review_fewshot_v1.py` | New disjoint target pack plus zero-shot and human-demonstration prompts, candidate and review freezes |
+| Review trajectories or GPT candidates | `annotate/human_annotator.py` | Independent annotation by default; separate candidate-assisted output with `--seed-name` and `--annotation-name` |
 | Local simulation utilities | `tools/list_tasks.py`, `tools/probe_libero.py`, `tools/view_libero.py` | Task inspection, rendering and viewer |
 
 ## Historical collection schedules

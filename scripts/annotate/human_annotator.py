@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import mimetypes
 import re
@@ -40,13 +41,14 @@ button.active{background:#18794e;border-color:#5ee0a0}.danger{background:#713c46
 .event{background:#ea796b}.state{background:#63b3ed}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
 label{display:block;margin:4px 0}.panel{background:#202d3c;padding:12px;border-radius:6px;margin-top:12px}
 textarea{width:100%;min-height:74px;background:#111a24;color:#edf2f7;border:1px solid #52667d;border-radius:4px;padding:7px}
-.segmentText{min-height:58px}.reviewPanel{border-left:5px solid #8996a5}.reviewPanel.progress{border-color:#2fb171}.reviewPanel.failure{border-color:#e05d55}.reviewPanel.recovery{border-color:#5b8def}.reviewPanel.neutral{border-color:#8996a5}.reviewHeadline{font-size:1.15em;margin:5px 0}.segmentRow{padding:6px;border-radius:4px;cursor:pointer}.segmentRow.active{background:#354b62;outline:1px solid #8299b3}
+.segmentText{min-height:58px}.reviewPanel{border-left:5px solid #8996a5}.reviewPanel.progress{border-color:#2fb171}.reviewPanel.failure{border-color:#e05d55}.reviewPanel.recovery{border-color:#5b8def}.reviewPanel.neutral{border-color:#8996a5}.reviewHeadline{font-size:1.15em;margin:5px 0}.segmentRow{padding:6px;border-radius:4px;cursor:pointer}.segmentRow.active{background:#354b62;outline:1px solid #8299b3}.segmentRow.editing{outline:2px solid #ffcf5c}
 .privilegedPanel{border:2px solid #d5a83f;background:#302a1d}.privilegedBadge{display:inline-block;background:#d5a83f;color:#17120a;font-weight:700;padding:3px 7px;border-radius:4px}.privilegedStatus{font-size:1.12em;font-weight:700;margin:9px 0}.privilegedStatus.correct{color:#62dda0}.privilegedStatus.wrong{color:#ff857d}.privilegedStatus.contact{color:#ffcf5c}.contactGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.contactValue{display:block;margin-top:3px;color:#fff}
 @media(max-width:800px){#views{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
 </style><main>
 <h1 id="title">Trajectory annotation</h1><div id="meta" class="muted"></div>
 <div class="toolbar episodeNav"><button id="prevEpisode">◀ Previous episode</button><label>Episode <select id="episodeSelect"></select></label><span id="episodeProgress" class="muted"></span><button id="nextEpisode">Save &amp; next episode ▶</button></div>
 <div class="panel" style="font-size:1.25em"><b>Task:</b> <span id="task"></span></div>
+<div id="candidatePanel" class="panel" style="display:none;border-left:5px solid #b388ff"><b>GPT candidate review</b><div class="muted">The editor was seeded from an immutable model candidate. Verify every range and claim against the cameras, edit unsupported content, and save the human review separately. This is candidate-assisted review, not an independent human annotation.</div><div id="candidateSource"></div><label>Review decision <select id="candidateDecision"><option value="unreviewed">review not complete</option><option value="accepted">accept candidate as-is</option><option value="corrected">candidate corrected</option></select></label><label>Reviewer note<textarea id="candidateReviewNote" placeholder="Required for a corrected candidate; summarize the important changes"></textarea></label></div>
 <div id="privilegedPanel" class="panel privilegedPanel" style="display:none"><span class="privilegedBadge">PRIVILEGED SIMULATOR STATE</span> <span class="muted">Use as annotation ground truth; this is not visual/model input.</span><div><b>Task target:</b> <span id="privilegedTarget"></span></div><div id="privilegedStatus" class="privilegedStatus"></div><div class="contactGrid"><div><b>Any gripper contact</b><span id="privilegedContact" class="contactValue"></span></div><div><b>Bilateral grasp</b><span id="privilegedGrasp" class="contactValue"></span></div><div><b>External support</b><span id="privilegedSupport" class="contactValue"></span></div></div></div>
 <div class="toolbar"><button id="back">◀</button><button id="play">Play</button><button id="forward">▶</button>
 <input id="frame" type="range" min="0" value="0"><span id="frameNo"></span><label>Speed <select id="speed"><option>.25</option><option>.5</option><option selected>1</option><option>2</option><option>4</option></select>x</label>
@@ -55,17 +57,18 @@ textarea{width:100%;min-height:74px;background:#111a24;color:#edf2f7;border:1px 
 <div id="timeline" title="Click to seek"><div id="cursor"></div></div>
 <div id="reviewPanel" class="panel reviewPanel"><b>Annotation replay</b><div id="reviewHeadline" class="reviewHeadline"></div><div id="reviewDetails" class="muted"></div></div>
 <div class="panel"><b>Semantic segments</b><p class="muted">The first segment starts at frame 0. Scrub to the last frame in the segment, describe observable facts, then finish it. The classification describes the segment's task-level effect, not every fact in the text. For example, a failure segment may say that the gripper still holds the object while the placement misses. The next segment starts automatically at the following frame. Saved ranges use an exclusive end frame.</p>
-<div class="toolbar"><span>Current segment: <strong id="segmentRange"></strong></span><select id="segmentClass"><option value="progress">progress</option><option value="failure">failure</option><option value="recovery">recovery</option><option value="neutral">neutral</option></select><select id="failureType" style="display:none"><option value="unknown">failure type: choose</option><option value="missed_target">missed target</option><option value="lost_control">lost control</option><option value="wrong_action">wrong action</option><option value="collision">collision or obstruction</option><option value="timeout">timeout or stalled</option><option value="other">other</option></select></div>
-<textarea id="segmentText" class="segmentText" placeholder="Describe observable facts, e.g. Gripper remains closed around the object, but the placement misses."></textarea><textarea id="segmentNote" placeholder="Optional note — use this for visual evidence or uncertainty"></textarea><div class="toolbar"><button id="finishSegment">Finish segment at current frame</button></div>
+<div class="toolbar"><span>Current segment: <strong id="segmentRange"></strong></span><label id="segmentEndEditWrap" style="display:none">End frame (inclusive) <input id="segmentEndEdit" type="number" min="0"></label><select id="segmentClass"><option value="progress">progress</option><option value="failure">failure</option><option value="recovery">recovery</option><option value="neutral">neutral</option></select><select id="failureType" style="display:none"><option value="unknown">failure type: choose</option><option value="missed_target">missed target</option><option value="lost_control">lost control</option><option value="wrong_action">wrong action</option><option value="collision">collision or obstruction</option><option value="timeout">timeout or stalled</option><option value="other">other</option></select></div>
+<textarea id="segmentText" class="segmentText" placeholder="Describe observable facts, e.g. Gripper remains closed around the object, but the placement misses."></textarea><textarea id="segmentNote" placeholder="Optional note — use this for visual evidence or uncertainty"></textarea><div class="toolbar"><button id="finishSegment">Finish segment at current frame</button><button id="cancelSegmentEdit" style="display:none">Cancel edit</button></div>
 <div id="segmentList" class="muted"></div></div>
 <div class="panel"><b>Episode outcome</b><select id="episodeOutcome"><option value="unknown">unknown</option><option value="success">success</option><option value="failure">failure</option></select><p class="muted">Task-level result for the whole trajectory.</p></div>
 <details class="panel"><summary><b>Detailed mode (optional)</b> — event, per-frame state, and notes</summary><div class="panel"><b>Event at current frame</b><div class="toolbar" id="events"></div><span id="eventHint" class="muted">Select an event type, then move to its frame and click again to remove it.</span></div>
 <div class="panel"><b>State at current frame</b><div class="grid" id="states"></div><label>Frame note<textarea id="note" placeholder="What is visible, and what is uncertain?"></textarea></label></div>
 <div class="panel"><b>Trajectory note</b><textarea id="trajectoryNote" placeholder="Overall target identity, task outcome, or unresolved ambiguity"></textarea></div></details>
 </main><script>
-const DATA=__DATA__, EPISODES=__EPISODES__, CURRENT_EPISODE=__EPISODE_INDEX__; let ann=__ANNOT__; let playing=false,timer=null,selectedEvent='grasp';
+const DATA=__DATA__, EPISODES=__EPISODES__, CURRENT_EPISODE=__EPISODE_INDEX__; let ann=__ANNOT__; let playing=false,timer=null,selectedEvent='grasp',editingSegment=null;
 const $=id=>document.getElementById(id), n=DATA.n_frames;
 document.title=`${DATA.id} — trajectory annotation`;$('meta').textContent=`Trajectory ${DATA.id} · ${n} frames · ${DATA.fps} Hz`;$('task').textContent=DATA.task||'Task not supplied';
+if(DATA.review_of){$('candidatePanel').style.display='block';$('candidateSource').textContent=`Candidate: ${DATA.review_of.file} · SHA-256 ${DATA.review_of.sha256}`;$('candidateDecision').value=ann.candidate_decision||'unreviewed';$('candidateReviewNote').value=ann.candidate_review_note||'';$('candidateDecision').onchange=()=>ann.candidate_decision=$('candidateDecision').value;$('candidateReviewNote').oninput=()=>ann.candidate_review_note=$('candidateReviewNote').value}
 ann.segments=(Array.isArray(ann.segments)?ann.segments:[]).map(s=>({...s,text:s.text||s.note||s.label||'',label:s.label||'',tags:Array.isArray(s.tags)?s.tags:[],classification:s.classification||(s.valence==='negative'?'failure':s.valence==='positive'?'progress':s.valence==='neutral'?'neutral':'progress'),failure_type:s.failure_type||'unknown'}));let segmentStart=ann.segments.length?ann.segments[ann.segments.length-1].end:0;
 if(DATA.privileged){ann.annotation_aids=Array.isArray(ann.annotation_aids)?ann.annotation_aids:[];if(!ann.annotation_aids.includes('privileged_simulator_contacts'))ann.annotation_aids.push('privileged_simulator_contacts')}
 const eventTypes=['grasp','bilateral_loss','release','loss_closed','loss_unknown','settled'];
@@ -75,27 +78,34 @@ function stateKey(t){return `${t}:${frame()}`}
 function renderPrivileged(t){let p=DATA.privileged;if(!p)return;$('privilegedPanel').style.display='block';$('privilegedTarget').textContent=p.target;let f=p.frames[t]||{contact:[],grasped:[],supported:[]},targetGrasped=f.grasped.includes(p.target),targetContact=f.contact.includes(p.target),targetSupported=f.supported.includes(p.target),wrongGrasped=f.grasped.filter(x=>x!==p.target),wrongContact=f.contact.filter(x=>x!==p.target);let status=$('privilegedStatus');status.className='privilegedStatus';if(wrongGrasped.length){status.classList.add('wrong');status.textContent=`WRONG OBJECT GRASPED: ${wrongGrasped.join(', ')}`}else if(targetGrasped){status.classList.add('correct');status.textContent=targetSupported?'CORRECT TARGET GRASPED (still externally supported)':'CORRECT TARGET GRASPED (unsupported)'}else if(targetContact){status.classList.add('contact');status.textContent='Correct target contact, but no bilateral grasp'}else if(wrongContact.length){status.classList.add('wrong');status.textContent=`Non-target contact: ${wrongContact.join(', ')}`}else{status.textContent='No object contact'}$('privilegedContact').textContent=f.contact.length?f.contact.join(', '):'—';$('privilegedGrasp').textContent=f.grasped.length?f.grasped.join(', '):'—';$('privilegedSupport').textContent=f.supported.length?f.supported.join(', '):'—'}
 function segmentAt(t){return ann.segments.findIndex(s=>Number(s.start)<=t&&t<Number(s.end))}
 function segmentClass(s){return ['progress','failure','recovery','neutral'].includes(s?.classification)?s.classification:'neutral'}
-function render(){let t=frame(),activeSegment=segmentAt(t);$('frameNo').textContent=`frame ${t} / ${n-1} (${(t/(DATA.fps||20)).toFixed(2)}s)`;$('agent').src=`${DATA.base_url}/frames/agent_${String(t).padStart(6,'0')}.jpg`;$('wrist').src=`${DATA.base_url}/frames/wrist_${String(t).padStart(6,'0')}.jpg`;$('cursor').style.left=`${n<2?0:t/(n-1)*100}%`;$('segmentRange').textContent=segmentStart>=n?'complete':`${segmentStart}–${Math.max(segmentStart,t)} (stop on ${t})`;$('finishSegment').disabled=segmentStart>=n||t<segmentStart;renderPrivileged(t);
- $('segmentList').innerHTML=ann.segments.map((s,i)=>`<div class="segmentRow${i===activeSegment?' active':''}" onclick="seekSegment(${i})"><button class="danger" onclick="event.stopPropagation();removeSegment(${i})">×</button> <b>${escapeHtml(s.text||s.label||'(no description)')}</b>${s.label?` <span class="muted">[${escapeHtml(s.label)}]</span>`:''}: frames ${s.start}–${s.end-1} · ${escapeHtml(s.classification||'progress')}${s.classification==='failure'&&s.failure_type&&s.failure_type!=='unknown'?` (${escapeHtml(s.failure_type)})`:''}${Array.isArray(s.tags)&&s.tags.length?` · #${escapeHtml(s.tags.join(' #'))}`:''}${s.note?` — ${escapeHtml(s.note)}`:''}</div>`).join('');
+function render(){let t=frame(),activeSegment=segmentAt(t),editing=editingSegment===null?null:ann.segments[editingSegment];$('frameNo').textContent=`frame ${t} / ${n-1} (${(t/(DATA.fps||20)).toFixed(2)}s)`;$('agent').src=`${DATA.base_url}/frames/agent_${String(t).padStart(6,'0')}.jpg`;$('wrist').src=`${DATA.base_url}/frames/wrist_${String(t).padStart(6,'0')}.jpg`;$('cursor').style.left=`${n<2?0:t/(n-1)*100}%`;$('segmentRange').textContent=editing?`${editing.start}–${editing.end-1} (editing saved segment)`:segmentStart>=n?'complete':`${segmentStart}–${Math.max(segmentStart,t)} (stop on ${t})`;$('finishSegment').disabled=editing?false:segmentStart>=n||t<segmentStart;renderPrivileged(t);
+ $('segmentList').innerHTML=ann.segments.map((s,i)=>`<div class="segmentRow${i===activeSegment?' active':''}${i===editingSegment?' editing':''}" onclick="seekSegment(${i})"><button onclick="event.stopPropagation();editSegment(${i})">Edit</button> <button class="danger" onclick="event.stopPropagation();removeSegment(${i})">×</button> <b>${escapeHtml(s.text||s.label||'(no description)')}</b>${s.label?` <span class="muted">[${escapeHtml(s.label)}]</span>`:''}: frames ${s.start}–${s.end-1} · ${escapeHtml(s.classification||'progress')}${s.classification==='failure'&&s.failure_type&&s.failure_type!=='unknown'?` (${escapeHtml(s.failure_type)})`:''}${Array.isArray(s.tags)&&s.tags.length?` · #${escapeHtml(s.tags.join(' #'))}`:''}${s.note?` — ${escapeHtml(s.note)}`:''}</div>`).join('');
  let review=$('reviewPanel');review.className='panel reviewPanel';if(activeSegment>=0){let s=ann.segments[activeSegment],kind=segmentClass(s);review.classList.add(kind);$('reviewHeadline').innerHTML=`Segment ${activeSegment+1} / ${ann.segments.length} · <b>${escapeHtml(kind)}</b> · frames ${s.start}–${s.end-1}`;$('reviewDetails').innerHTML=`<b>${escapeHtml(s.text||s.label||'(no description)')}</b>${kind==='failure'&&s.failure_type&&s.failure_type!=='unknown'?`<br>Failure type: ${escapeHtml(s.failure_type)}`:''}${s.note?`<br>Note: ${escapeHtml(s.note)}`:''}`}else{$('reviewHeadline').textContent=ann.segments.length?'No segment covers this frame':'No completed annotations yet';$('reviewDetails').textContent=ann.segments.length?'Use the segment list to inspect a labeled range.':'Complete or load segments to replay their labels.'}
  $('note').value=ann.frame_notes[t]||''; stateTypes.forEach(x=>{let v=ann.states[x]?.[t]??null; document.querySelectorAll(`[data-state="${x}"]`).forEach(b=>b.classList.toggle('active',b.dataset.value===(v===null?'unknown':String(v))))});
  document.querySelectorAll('.mark,.segmentBar').forEach(x=>x.remove());ann.segments.forEach((s,i)=>{let m=document.createElement('i');m.className=`segmentBar ${segmentClass(s)}${i===activeSegment?' active':''}`;m.title=`${s.classification||'segment'}: frames ${s.start}–${s.end-1}`;m.style.left=`${Math.max(0,s.start)/n*100}%`;m.style.width=`${Math.max(1,s.end-s.start)/n*100}%`;m.onclick=e=>{e.stopPropagation();seekSegment(i)};$('timeline').append(m)});ann.events.forEach((e,i)=>{let m=document.createElement('i');m.className='mark event';m.title=`${e.type} @ ${e.frame}`;m.style.left=`${e.frame/(n-1)*100}%`;m.onclick=()=>{ann.events.splice(i,1);render()};$('timeline').append(m)});
-} function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))} function seekSegment(i){$('frame').value=Math.max(0,Math.min(n-1,Number(ann.segments[i].start)||0));render()} function removeSegment(i){ann.segments.splice(i);segmentStart=ann.segments.length?ann.segments[ann.segments.length-1].end:0;render()}
-function finishSegment(){let t=frame(),text=$('segmentText').value.trim(),classification=$('segmentClass').value,failureType=classification==='failure'?$('failureType').value:'unknown';if(!text){alert('Describe what happens in this segment first.');return}if(t<segmentStart){alert('Move to a frame at or after the segment start.');return}ann.segments.push({start:segmentStart,end:t+1,text,classification,failure_type:failureType,valence:classification==='failure'?'negative':classification==='progress'?'positive':classification==='neutral'?'neutral':'unknown',note:$('segmentNote').value.trim(),confidence:1});delete ann.draft;segmentStart=t+1;$('segmentText').value='';$('segmentClass').value='progress';$('failureType').value='unknown';$('failureType').style.display='none';$('segmentNote').value='';if(segmentStart<n)$('frame').value=segmentStart;render()}
+} function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))} function seekSegment(i){$('frame').value=Math.max(0,Math.min(n-1,Number(ann.segments[i].start)||0));render()}
+function resetSegmentEditor(){editingSegment=null;$('segmentText').value='';$('segmentClass').value='progress';$('failureType').value='unknown';$('failureType').style.display='none';$('segmentNote').value='';$('segmentEndEditWrap').style.display='none';$('finishSegment').textContent='Finish segment at current frame';$('cancelSegmentEdit').style.display='none'}
+function editSegment(i){let s=ann.segments[i];if(!s)return;editingSegment=i;$('frame').value=Math.max(0,Math.min(n-1,Number(s.start)||0));$('segmentText').value=s.text||s.label||'';$('segmentClass').value=segmentClass(s);$('failureType').value=s.failure_type||'unknown';$('failureType').style.display=s.classification==='failure'?'inline-block':'none';$('segmentNote').value=s.note||'';$('segmentEndEdit').value=Number(s.end)-1;$('segmentEndEdit').max=n-1;$('segmentEndEditWrap').style.display='block';$('finishSegment').textContent='Update segment';$('cancelSegmentEdit').style.display='inline-block';render()}
+function cancelSegmentEdit(){let i=editingSegment;resetSegmentEditor();if(i!==null)seekSegment(i);else render()}
+function removeSegment(i){resetSegmentEditor();ann.segments.splice(i);segmentStart=ann.segments.length?ann.segments[ann.segments.length-1].end:0;render()}
+function finishSegment(){let t=frame(),text=$('segmentText').value.trim(),classification=$('segmentClass').value,failureType=classification==='failure'?$('failureType').value:'unknown',values={text,classification,failure_type:failureType,valence:classification==='failure'?'negative':classification==='progress'?'positive':classification==='neutral'?'neutral':'unknown',note:$('segmentNote').value.trim(),confidence:1};if(!text){alert('Describe what happens in this segment first.');return}if(editingSegment!==null){let i=editingSegment,s=ann.segments[i],endFrame=Number($('segmentEndEdit').value),end=endFrame+1,next=ann.segments[i+1];if(!Number.isInteger(endFrame)||endFrame<Number(s.start)||endFrame>=n){alert(`End frame must be an integer from ${s.start} to ${n-1}.`);return}if(next&&end!==Number(next.start)){alert(`End frame must remain ${Number(next.start)-1} so this segment stays contiguous with the next segment.`);return}ann.segments[i]={...s,...values,start:s.start,end};segmentStart=ann.segments.length?Number(ann.segments[ann.segments.length-1].end):0;delete ann.draft;resetSegmentEditor();$('saved').textContent='Unsaved changes';$('frame').value=Math.max(0,Math.min(n-1,Number(s.start)||0));render();return}if(t<segmentStart){alert('Move to a frame at or after the segment start.');return}ann.segments.push({start:segmentStart,end:t+1,...values});delete ann.draft;segmentStart=t+1;resetSegmentEditor();$('saved').textContent='Unsaved changes';if(segmentStart<n)$('frame').value=segmentStart;render()}
 $('segmentClass').onchange=()=>{$('failureType').style.display=$('segmentClass').value==='failure'?'inline-block':'none'};
 function setState(type,value){ann.states[type][frame()]=value==='unknown'?null:value==='true'}
 function addEvent(){let t=frame(),i=ann.events.findIndex(e=>e.frame===t&&e.type===selectedEvent);if(i>=0)ann.events.splice(i,1);else ann.events.push({frame:t,type:selectedEvent,confidence:1,reason:'Human visual annotation',evidence_frames:[t]});render()}
 eventTypes.forEach((x,i)=>{let b=document.createElement('button');b.textContent=x;b.onclick=()=>{selectedEvent=x;document.querySelectorAll('#events button').forEach(z=>z.classList.remove('active'));b.classList.add('active');addEvent()};if(i===0)b.classList.add('active');$('events').append(b)});
 $('finishSegment').onclick=finishSegment;
+$('cancelSegmentEdit').onclick=cancelSegmentEdit;
 stateTypes.forEach(x=>{let box=document.createElement('div');box.innerHTML=`<label>${x}</label>`;['true','false','unknown'].forEach(v=>{let b=document.createElement('button');b.textContent=v;b.dataset.state=x;b.dataset.value=v;b.onclick=()=>{setState(x,v);render()};box.append(b)});$('states').append(box)});
 $('frame').max=n-1;$('frame').oninput=render;$('back').onclick=()=>{$('frame').value=Math.max(0,frame()-1);render()};$('forward').onclick=()=>{$('frame').value=Math.min(n-1,frame()+1);render()};
 $('timeline').onclick=e=>{let r=e.currentTarget.getBoundingClientRect();$('frame').value=Math.round((e.clientX-r.left)/r.width*(n-1));render()};$('note').oninput=()=>{ann.frame_notes[frame()]=$('note').value};$('trajectoryNote').value=ann.trajectory_note||'';$('trajectoryNote').oninput=()=>ann.trajectory_note=$('trajectoryNote').value;
 function tick(){if(!playing)return;let t=frame()+1;if(t>=n){playing=false;$('play').textContent='Play';return} $('frame').value=t;render();timer=setTimeout(tick,1000/(DATA.fps*Number($('speed').value)))}$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play';if(playing)tick()};$('replayAnnotations').onclick=()=>{clearTimeout(timer);$('frame').value=0;render();playing=true;$('play').textContent='Pause';timer=setTimeout(tick,1000/(DATA.fps*Number($('speed').value)))};$('episodeOutcome').value=ann.episode_outcome||'unknown';$('episodeOutcome').onchange=()=>ann.episode_outcome=$('episodeOutcome').value;
-function captureDraft(){let text=$('segmentText').value,note=$('segmentNote').value;if(segmentStart<n&&(text.trim()||note.trim()))ann.draft={start:segmentStart,frame:frame(),text,classification:$('segmentClass').value,failure_type:$('failureType').value,note};else delete ann.draft}
-async function saveAnnotation(){captureDraft();ann.updated_at=new Date().toISOString();let r=await fetch(`${DATA.base_url}/save`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(ann)});$('saved').textContent=r.ok?'Saved '+new Date().toLocaleTimeString():'Save failed';if(r.ok){EPISODES[CURRENT_EPISODE].annotated=true;fillEpisodes()}return r.ok}
-function fillEpisodes(){let selected=$('episodeSelect').value;$('episodeSelect').innerHTML='';EPISODES.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${e.id}${e.annotated?' ✓':''}`;$('episodeSelect').append(o)});$('episodeSelect').value=selected||String(CURRENT_EPISODE);$('episodeProgress').textContent=`${CURRENT_EPISODE+1} / ${EPISODES.length}`;$('prevEpisode').disabled=CURRENT_EPISODE===0;$('nextEpisode').disabled=CURRENT_EPISODE===EPISODES.length-1}
+function captureDraft(){if(editingSegment!==null){delete ann.draft;return}let text=$('segmentText').value,note=$('segmentNote').value;if(segmentStart<n&&(text.trim()||note.trim()))ann.draft={start:segmentStart,frame:frame(),text,classification:$('segmentClass').value,failure_type:$('failureType').value,note};else delete ann.draft}
+function annotationComplete(){let expected=0;if(!['success','failure'].includes(ann.episode_outcome)||!ann.segments.length)return false;if(ann.review_of&&!['accepted','corrected'].includes(ann.candidate_decision))return false;if(ann.candidate_decision==='corrected'&&!String(ann.candidate_review_note||'').trim())return false;for(let s of ann.segments){if(Number(s.start)!==expected||Number(s.end)<=expected||!['progress','failure','recovery','neutral'].includes(s.classification)||!String(s.text||'').trim())return false;if(s.classification==='failure'&&(!s.failure_type||s.failure_type==='unknown'))return false;expected=Number(s.end)}return expected===n}
+async function saveAnnotation(){captureDraft();ann.updated_at=new Date().toISOString();let r=await fetch(`${DATA.base_url}/save`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(ann)});$('saved').textContent=r.ok?'Saved '+new Date().toLocaleTimeString():'Save failed';if(r.ok){EPISODES[CURRENT_EPISODE].annotated=annotationComplete();fillEpisodes()}return r.ok}
+function fillEpisodes(){let selected=$('episodeSelect').value,last=CURRENT_EPISODE===EPISODES.length-1;$('episodeSelect').innerHTML='';EPISODES.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${e.id}${e.annotated?' ✓':''}`;$('episodeSelect').append(o)});$('episodeSelect').value=selected||String(CURRENT_EPISODE);$('episodeProgress').textContent=`${CURRENT_EPISODE+1} / ${EPISODES.length}`;$('prevEpisode').disabled=CURRENT_EPISODE===0;$('nextEpisode').textContent=last?'Save annotation':'Save & next episode ▶'}
 async function goEpisode(i){i=Number(i);if(i<0||i>=EPISODES.length||i===CURRENT_EPISODE)return;if(await saveAnnotation())window.location=`/episode/${i}/`}
-$('save').onclick=saveAnnotation;$('prevEpisode').onclick=()=>goEpisode(CURRENT_EPISODE-1);$('nextEpisode').onclick=()=>goEpisode(CURRENT_EPISODE+1);$('episodeSelect').onchange=()=>goEpisode($('episodeSelect').value);fillEpisodes();
+async function saveAndNext(){if(CURRENT_EPISODE===EPISODES.length-1){await saveAnnotation();return}await goEpisode(CURRENT_EPISODE+1)}
+$('save').onclick=saveAnnotation;$('prevEpisode').onclick=()=>goEpisode(CURRENT_EPISODE-1);$('nextEpisode').onclick=saveAndNext;$('episodeSelect').onchange=()=>goEpisode($('episodeSelect').value);fillEpisodes();
 if(ann.draft&&ann.draft.start===segmentStart){$('frame').value=Math.min(n-1,Math.max(segmentStart,Number(ann.draft.frame)||segmentStart));$('segmentText').value=ann.draft.text||'';$('segmentNote').value=ann.draft.note||'';$('segmentClass').value=ann.draft.classification||'progress';$('failureType').value=ann.draft.failure_type||'unknown';$('failureType').style.display=$('segmentClass').value==='failure'?'inline-block':'none'}
 render();
 </script>'''
@@ -130,7 +140,43 @@ def natural_key(path: Path) -> tuple:
     return tuple(int(part) if part.isdigit() else part.lower() for part in re.split(r"(\d+)", path.name))
 
 
-def discover_sources(source: Path, single: bool = False) -> tuple[list[Path], int]:
+def annotation_complete(source: Path, annotation_name: str = "human_annotation.json") -> bool:
+    """Whether the semantic annotation covers the episode and all required choices."""
+    path = source / annotation_name
+    try:
+        annotation = json.loads(path.read_text())
+        with np.load(source / "cameras.npz", mmap_mode="r") as arrays:
+            n_frames = len(arrays["agent"])
+    except (OSError, ValueError, KeyError, json.JSONDecodeError):
+        return False
+    if annotation.get("episode_outcome") not in ("success", "failure"):
+        return False
+    if annotation.get("review_of") and annotation.get("candidate_decision") not in ("accepted", "corrected"):
+        return False
+    if annotation.get("candidate_decision") == "corrected" and not str(annotation.get("candidate_review_note", "")).strip():
+        return False
+    segments = annotation.get("segments")
+    if not isinstance(segments, list) or not segments:
+        return False
+    expected = 0
+    for segment in segments:
+        try:
+            start, end = int(segment["start"]), int(segment["end"])
+        except (KeyError, TypeError, ValueError):
+            return False
+        classification = segment.get("classification")
+        if start != expected or end <= start or classification not in ("progress", "failure", "recovery", "neutral"):
+            return False
+        if not str(segment.get("text", "")).strip():
+            return False
+        if classification == "failure" and segment.get("failure_type") in (None, "", "unknown"):
+            return False
+        expected = end
+    return expected == n_frames
+
+
+def discover_sources(source: Path, single: bool = False,
+                     annotation_name: str = "human_annotation.json") -> tuple[list[Path], int]:
     """Return annotation folders and the initially requested/unfinished index."""
     source = source.resolve()
     if (source / "cameras.npz").is_file():
@@ -149,7 +195,7 @@ def discover_sources(source: Path, single: bool = False) -> tuple[list[Path], in
         raise ValueError(f"no episode folders containing cameras.npz under {source}")
     if single:
         raise ValueError("--single requires an episode folder, not a collection folder")
-    first_unfinished = next((i for i, p in enumerate(sources) if not (p / "human_annotation.json").exists()), 0)
+    first_unfinished = next((i for i, p in enumerate(sources) if not annotation_complete(p, annotation_name)), 0)
     return sources, first_unfinished
 
 
@@ -158,13 +204,13 @@ def episode_meta(source: Path) -> dict:
     return json.loads(observable.read_text()) if observable.exists() else {}
 
 
-def episode_records(sources: list[Path]) -> list[dict]:
+def episode_records(sources: list[Path], annotation_name: str = "human_annotation.json") -> list[dict]:
     records = []
     for source in sources:
         meta = episode_meta(source)
         records.append({
             "id": meta.get("id", source.name),
-            "annotated": (source / "human_annotation.json").exists(),
+            "annotated": annotation_complete(source, annotation_name),
         })
     return records
 
@@ -284,28 +330,49 @@ def normalize_annotation(annotation: dict, data: dict) -> dict:
     return annotation
 
 
-def prepare_episode(sources: list[Path], index: int, privileged: dict[Path, dict] | None = None) -> tuple[bytes, Path]:
+def prepare_episode(sources: list[Path], index: int, privileged: dict[Path, dict] | None = None,
+                    annotation_name: str = "human_annotation.json",
+                    seed_name: str | None = None) -> tuple[bytes, Path]:
     source = sources[index]
     meta = episode_meta(source)
     generated = source / ".human_annotator"
     info = render_frames(source, generated / "frames")
+    out = source / annotation_name
+    seed = source / seed_name if seed_name else None
+    review_of = None
+    if seed is not None:
+        if not seed.is_file():
+            raise ValueError(f"candidate seed does not exist: {seed}")
+        review_of = {"file": seed.name, "sha256": hashlib.sha256(seed.read_bytes()).hexdigest()}
     data = {
         **info, "task": meta.get("task", ""), "id": meta.get("id", source.name),
         "telemetry": meta.get("telemetry", []), "base_url": f"/episode/{index}",
         "privileged": (privileged or {}).get(source.resolve()),
+        "review_of": review_of,
     }
-    out = source / "human_annotation.json"
-    annotation = json.loads(out.read_text()) if out.exists() else default_annotation(data)
+    if out.exists():
+        annotation = json.loads(out.read_text())
+    elif seed is not None:
+        annotation = json.loads(seed.read_text())
+        annotation["review_of"] = review_of
+        annotation["candidate_decision"] = "unreviewed"
+        annotation["candidate_review_note"] = ""
+        annotation["annotation_aids"] = list(dict.fromkeys([
+            *annotation.get("annotation_aids", []), "gpt6_candidate",
+        ]))
+    else:
+        annotation = default_annotation(data)
     annotation = normalize_annotation(annotation, data)
     page = (PAGE.replace("__DATA__", json.dumps(data, default=json_default))
-                .replace("__EPISODES__", json.dumps(episode_records(sources), default=json_default))
+                .replace("__EPISODES__", json.dumps(episode_records(sources, annotation_name), default=json_default))
                 .replace("__EPISODE_INDEX__", str(index))
                 .replace("__ANNOT__", json.dumps(annotation, default=json_default)))
     (generated / "index.html").write_text(page)
     return page.encode(), out
 
 
-def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, dict] | None = None):
+def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, dict] | None = None,
+                annotation_name: str = "human_annotation.json", seed_name: str | None = None):
     class Handler(BaseHTTPRequestHandler):
         def send_body(self, body: bytes, content_type: str, status: int = 200) -> None:
             self.send_response(status)
@@ -333,7 +400,11 @@ def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, di
                 self.send_error(404)
                 return
             if tail in ("", "index.html"):
-                body, _ = prepare_episode(sources, index, privileged)
+                try:
+                    body, _ = prepare_episode(sources, index, privileged, annotation_name, seed_name)
+                except ValueError as exc:
+                    self.send_error(400, str(exc))
+                    return
                 self.send_body(body, "text/html; charset=utf-8")
                 return
             if not tail.startswith("frames/"):
@@ -366,7 +437,7 @@ def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, di
                 return
             source = sources[index]
             value["source"] = str(source)
-            out = source / "human_annotation.json"
+            out = source / annotation_name
             out.write_text(json.dumps(value, indent=2, default=json_default) + "\n")
             self.send_body(b"saved", "text/plain; charset=utf-8")
 
@@ -388,9 +459,16 @@ def main() -> None:
                         help="Private manifest mapping displayed IDs to source dataset episodes")
     parser.add_argument("--data-root", type=Path,
                         help="Recorded dataset root; normally inferred from the private manifest")
+    parser.add_argument("--annotation-name", default="human_annotation.json",
+                        help="Output filename inside each episode folder")
+    parser.add_argument("--seed-name",
+                        help="Immutable candidate JSON used only when the output file does not exist")
     args = parser.parse_args()
+    for option, name in (("--annotation-name", args.annotation_name), ("--seed-name", args.seed_name)):
+        if name is not None and (Path(name).name != name or not name.endswith(".json")):
+            parser.error(f"{option} must be a JSON filename without directories")
     try:
-        sources, start_index = discover_sources(args.source, args.single)
+        sources, start_index = discover_sources(args.source, args.single, args.annotation_name)
     except ValueError as exc:
         parser.error(str(exc))
     privileged = None
@@ -401,12 +479,20 @@ def main() -> None:
             privileged = load_privileged_contacts(sources, manifest, args.data_root)
         except (ValueError, RuntimeError, KeyError) as exc:
             parser.error(str(exc))
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_for(sources, start_index, privileged))
+    if args.seed_name:
+        missing = [source / args.seed_name for source in sources if not (source / args.seed_name).is_file()]
+        if missing:
+            parser.error(f"candidate seed is missing for {len(missing)} episode(s), first: {missing[0]}")
+    server = ThreadingHTTPServer(("127.0.0.1", args.port),
+                                 handler_for(sources, start_index, privileged,
+                                             args.annotation_name, args.seed_name))
     port = server.server_address[1]
     url = f"http://127.0.0.1:{port}/episode/{start_index}/"
-    records = episode_records(sources)
+    records = episode_records(sources, args.annotation_name)
     print(f"Annotating {len(sources)} episode(s), starting at {records[start_index]['id']}: {url}")
-    print("Each episode saves human_annotation.json in its own source folder.")
+    print(f"Each episode saves {args.annotation_name} in its own source folder.")
+    if args.seed_name:
+        print(f"Candidate-assisted review enabled from immutable {args.seed_name} files.")
     if privileged is not None:
         print("Privileged simulator contact overlay enabled (annotation aid only; not visual/model input).")
     if not args.no_browser: threading.Timer(.25, lambda: webbrowser.open(url)).start()

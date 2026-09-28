@@ -18,19 +18,26 @@ contain `cameras.npz` with `agent` and `wrist` frame arrays. An
 exists. The tool renders JPEGs into a hidden `.human_annotator/` directory, opens a
 browser page, and saves `human_annotation.json` beside the source files.
 
-The navigation bar shows the current position, marks saved episodes with `✓`, and
+The navigation bar shows the current position, marks complete episodes with `✓`, and
 provides **Previous episode**, an episode picker, and **Save & next episode**. Moving
 between episodes saves the current annotation first. Unfinished segment text is
 stored as a draft and restored when the episode is opened again. Starting from a
-collection folder opens the first episode without a saved annotation.
+collection folder opens the first incomplete episode. On the final episode, the
+navigation button becomes **Save annotation** and saves without trying to move past
+the collection. Partial saves remain available, but receive a checkmark only after
+segments cover the episode and the required outcome and failure-type choices are set.
 
 To verify an annotation, open its episode and press **Replay annotations from
 start**. The demonstration plays at the selected speed while a live card shows the
 segment covering the current frame, including its classification, description,
 failure type, and note. Colored bands show all labeled ranges on the timeline and
 the current range is outlined; click a band or a row in the segment list to jump to
-that segment. Progress is green, failure is red, recovery is blue, and neutral is
-gray.
+that segment. Use **Edit** beside a saved segment to load its description,
+classification, failure type, and note into the editor. **Update segment** changes
+those fields and can change its inclusive ending frame; then save the annotation
+normally. An edited ending must remain contiguous with the next segment, when one
+exists, and stay within the episode.
+Progress is green, failure is red, recovery is blue, and neutral is gray.
 
 For this holdout collection, `--privileged-contacts` adds a live, prominently
 marked **PRIVILEGED SIMULATOR STATE** panel. It names the task target and updates
@@ -70,6 +77,36 @@ The event and per-frame state controls are optional under **Detailed mode**.
 
 Press **Save annotation** whenever you want a durable copy; saving writes only to the
 selected trajectory folder.
+
+## Reviewing a model candidate
+
+Keep the model output immutable and save the assisted human decision under a different
+name:
+
+```bash
+/home/aliu/projects/fail-traj-learn/lerobot/.venv/bin/python \
+  scripts/annotate/human_annotator.py \
+  outputs/gpt6_human_review_v1/episodes \
+  --seed-name gpt6_annotation.json \
+  --annotation-name human_review.json
+```
+
+When `human_review.json` does not exist, the editor starts from the GPT candidate and
+records its filename and SHA-256 hash in `review_of`. Saving never changes
+`gpt6_annotation.json`. This workflow measures candidate-assisted human review; it is
+not an independent human-label condition. Run the tool without `--seed-name` for an
+independent annotation. Before an assisted review is marked complete, explicitly choose
+**accept candidate as-is** or **candidate corrected**. A corrected candidate requires a
+short reviewer note describing the important changes.
+
+For the human-demonstration GPT-6 condition, keep its review separate as well:
+
+```bash
+python scripts/annotate/human_annotator.py \
+  outputs/gpt6_human_review_v1/episodes \
+  --seed-name gpt6_fewshot_annotation.json \
+  --annotation-name human_fewshot_review.json
+```
 
 Use `--no-browser` on a remote machine, then open the printed localhost URL through
 your local port forwarding. Stop the server with Ctrl-C.
