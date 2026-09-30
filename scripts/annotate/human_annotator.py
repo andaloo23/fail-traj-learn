@@ -144,7 +144,7 @@ def annotation_complete(source: Path, annotation_name: str = "human_annotation.j
     """Whether the semantic annotation covers the episode and all required choices."""
     path = source / annotation_name
     try:
-        annotation = json.loads(path.read_text())
+        annotation = json.loads(path.read_text(encoding="utf-8"))
         with np.load(source / "cameras.npz", mmap_mode="r") as arrays:
             n_frames = len(arrays["agent"])
     except (OSError, ValueError, KeyError, json.JSONDecodeError):
@@ -201,7 +201,7 @@ def discover_sources(source: Path, single: bool = False,
 
 def episode_meta(source: Path) -> dict:
     observable = source / "observable.json"
-    return json.loads(observable.read_text()) if observable.exists() else {}
+    return json.loads(observable.read_text(encoding="utf-8")) if observable.exists() else {}
 
 
 def episode_records(sources: list[Path], annotation_name: str = "human_annotation.json") -> list[dict]:
@@ -260,7 +260,7 @@ def load_privileged_contacts(sources: list[Path], manifest_path: Path, data_root
     manifest_path = manifest_path.resolve()
     if not manifest_path.is_file():
         raise ValueError(f"privileged manifest does not exist: {manifest_path}")
-    values = json.loads(manifest_path.read_text())
+    values = json.loads(manifest_path.read_text(encoding="utf-8"))
     if not isinstance(values, list):
         raise ValueError("privileged manifest must contain a list of episode records")
     by_id = {str(value.get("id")): value for value in values if isinstance(value, dict)}
@@ -279,7 +279,7 @@ def load_privileged_contacts(sources: list[Path], manifest_path: Path, data_root
         sidecar_path = dataset_root / "sidecar" / f"episode_{episode_index:06d}.json"
         if not sidecar_path.is_file():
             raise ValueError(f"missing source sidecar for {source_id}: {sidecar_path}")
-        sidecar = json.loads(sidecar_path.read_text())
+        sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
         object_slots = list(sidecar.get("object_slots", []))
         target = item.get("facts", {}).get("target_name")
         if not target:
@@ -351,9 +351,9 @@ def prepare_episode(sources: list[Path], index: int, privileged: dict[Path, dict
         "review_of": review_of,
     }
     if out.exists():
-        annotation = json.loads(out.read_text())
+        annotation = json.loads(out.read_text(encoding="utf-8"))
     elif seed is not None:
-        annotation = json.loads(seed.read_text())
+        annotation = json.loads(seed.read_text(encoding="utf-8"))
         annotation["review_of"] = review_of
         annotation["candidate_decision"] = "unreviewed"
         annotation["candidate_review_note"] = ""
@@ -367,8 +367,10 @@ def prepare_episode(sources: list[Path], index: int, privileged: dict[Path, dict
                 .replace("__EPISODES__", json.dumps(episode_records(sources, annotation_name), default=json_default))
                 .replace("__EPISODE_INDEX__", str(index))
                 .replace("__ANNOT__", json.dumps(annotation, default=json_default)))
-    (generated / "index.html").write_text(page)
-    return page.encode(), out
+    # The review UI contains Unicode controls (for example, ◀/▶).  Use UTF-8
+    # explicitly so the local server works under Windows' cp1252 locale.
+    (generated / "index.html").write_text(page, encoding="utf-8")
+    return page.encode("utf-8"), out
 
 
 def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, dict] | None = None,
@@ -438,7 +440,7 @@ def handler_for(sources: list[Path], start_index: int, privileged: dict[Path, di
             source = sources[index]
             value["source"] = str(source)
             out = source / annotation_name
-            out.write_text(json.dumps(value, indent=2, default=json_default) + "\n")
+            out.write_text(json.dumps(value, indent=2, default=json_default) + "\n", encoding="utf-8")
             self.send_body(b"saved", "text/plain; charset=utf-8")
 
         def log_message(self, *_):
