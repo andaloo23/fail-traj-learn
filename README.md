@@ -14,6 +14,7 @@ The earlier ordinal-advantage methods remain available as baselines.
 | Document | Purpose |
 |---|---|
 | [Training guide](docs/failure_training.md) | Implemented model, annotation manifest, commands, checkpoints |
+| [GPT-6 review guide](REVIEW.md) | Download the review pack and launch the local browser reviewer on Windows, macOS, or Linux |
 | [Data verification](docs/failure_data_verification.md) | Current simulation/oracle inventory, checks and limitations |
 | [Method design](docs/failure_attention_design.md) | Research direction, planned scorer/RL interface and experiments |
 | [Oracle annotation contract](docs/oracle_segmentation.md) | Meaning and limitations of the existing r6 labels |
