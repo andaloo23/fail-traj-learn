@@ -1,0 +1,413 @@
+{
+  "O001": [
+    {
+      "action": "Grasp the cup.",
+      "grading": [
+        {
+          "label": "No successful grasp is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Grasp succeeds after retries or visibly unstable handling.",
+          "points": 0.25
+        },
+        {
+          "label": "Grasp succeeds cleanly.",
+          "points": 0.5
+        }
+      ]
+    },
+    {
+      "action": "Lift and hold the cup clear of its support surface.",
+      "grading": [
+        {
+          "label": "No successful lift and hold is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Lift and hold succeeds after retries or visibly unstable handling.",
+          "points": 0.25
+        },
+        {
+          "label": "Lift and hold succeeds cleanly.",
+          "points": 0.5
+        }
+      ]
+    }
+  ],
+  "O002": [
+    {
+      "action": "Grasp the spoon.",
+      "grading": [
+        {
+          "label": "No successful grasp is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Grasp succeeds after retries or visibly unstable handling.",
+          "points": 0.2
+        },
+        {
+          "label": "Grasp succeeds cleanly.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Place and release the spoon inside a drawer.",
+      "grading": [
+        {
+          "label": "No successful placement inside a drawer is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Placement succeeds after retries, collisions, or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "Placement succeeds cleanly.",
+          "points": 0.6
+        }
+      ]
+    }
+  ],
+  "O003": [
+    {
+      "action": "Make the bag opening accessible for packing.",
+      "grading": [
+        {
+          "label": "No accessible bag opening is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "The opening becomes accessible after retries or imprecise handling.",
+          "points": 0.05
+        },
+        {
+          "label": "The opening is accessible with clean handling, or already accessible.",
+          "points": 0.1
+        }
+      ]
+    },
+    {
+      "action": "Place and release the first distinct grocery object inside the bag.",
+      "grading": [
+        {
+          "label": "No successful placement is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Placement succeeds after retries, drops, or visibly unstable handling.",
+          "points": 0.15
+        },
+        {
+          "label": "Placement succeeds cleanly.",
+          "points": 0.3
+        }
+      ]
+    },
+    {
+      "action": "Place and release a second distinct grocery object inside the bag.",
+      "grading": [
+        {
+          "label": "No successful placement is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Placement succeeds after retries, drops, or visibly unstable handling.",
+          "points": 0.15
+        },
+        {
+          "label": "Placement succeeds cleanly.",
+          "points": 0.3
+        }
+      ]
+    },
+    {
+      "action": "Place and release a third distinct grocery object inside the bag.",
+      "grading": [
+        {
+          "label": "No successful placement is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Placement succeeds after retries, drops, or visibly unstable handling.",
+          "points": 0.15
+        },
+        {
+          "label": "Placement succeeds cleanly.",
+          "points": 0.3
+        }
+      ]
+    }
+  ],
+  "O004": [
+    {
+      "action": "Grasp and control the DisplayPort cable.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.15
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.3
+        }
+      ]
+    },
+    {
+      "action": "Align the cable with the cable holder on the white block.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.15
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.3
+        }
+      ]
+    },
+    {
+      "action": "Push the cable into the holder so it remains seated there.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    }
+  ],
+  "O005": [
+    {
+      "action": "Grasp the corn.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Place and release the corn inside the pot.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.6
+        }
+      ]
+    }
+  ],
+  "O006": [
+    {
+      "action": "Grasp the spoon.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Place and release the spoon inside the box.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.6
+        }
+      ]
+    }
+  ],
+  "O007": [
+    {
+      "action": "Bring the robot hand into controlled contact with the computer mouse wheel.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Roll the mouse wheel downward. Judge visible wheel interaction; do not assume any unseen computer response.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.6
+        }
+      ]
+    }
+  ],
+  "O008": [
+    {
+      "action": "Place the food objects together in one bowl.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.25
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.5
+        }
+      ]
+    },
+    {
+      "action": "Place the toy objects together in the other bowl, separated from the food.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.25
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.5
+        }
+      ]
+    }
+  ],
+  "O009": [
+    {
+      "action": "Grasp and control the spoon.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Place and release the spoon next to the knife.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.6
+        }
+      ]
+    }
+  ],
+  "O010": [
+    {
+      "action": "Grasp the block.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.2
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.4
+        }
+      ]
+    },
+    {
+      "action": "Place and release the block on the cardboard.",
+      "grading": [
+        {
+          "label": "No successful completion of this step is visible.",
+          "points": 0.0
+        },
+        {
+          "label": "Substantial partial progress is visible, or the step succeeds after retries or visibly imprecise handling.",
+          "points": 0.3
+        },
+        {
+          "label": "The step succeeds cleanly based on visible evidence.",
+          "points": 0.6
+        }
+      ]
+    }
+  ]
+}

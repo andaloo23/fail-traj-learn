@@ -10,6 +10,8 @@ Current portable annotation commands and retained prompts are documented in
 
 | Task | Entry point | Notes |
 |---|---|---|
+| Run/review FLORA on real OopsieData | `tacc/prepare_oopsiedata.py`, `tacc/run_flora.py`, `tacc/reference_flora_oopsie_ten.sbatch` | [TACC guide](../docs/flora_tacc.md); [results and next experiments](../docs/flora_results.md) |
+| Read preserved FLORA predictions | `tacc/summarize_flora_results.py` | Derived Markdown with native intervals/rationales, retained rubric reasoning and source hashes; no GPU needed |
 | Download the Sol V8 distillation dataset | `annotate/download_distillation_v8.py` | Pinned public release with size/SHA-256 verification; [training and reproduction guide](../docs/sol_v8_distillation_500.md) |
 | Audit failure-training data | `analysis/audit_failure_corpus.py` | Read-only corpus checks; only writes the requested report |
 | Compare references against current oracle | `analysis/recompute_failure_references.py` | Recomputes from telemetry in memory; does not replace references |

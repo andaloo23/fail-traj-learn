@@ -1,0 +1,1238 @@
+{
+  "created_utc": "2026-10-23T07:41:06.883280+00:00",
+  "repo": "OopsieData-Submissions/oopsiedata-v0.1",
+  "revision": "da4b16512b77f7324296a66da7c0067a40539895",
+  "selection_method": "Retain original O001-O003. For O004-O010 use first manifest entry with complete media, 80..1200 recorded frames, and at most four cameras in each of Armnet, Berkeley_RAIL, Enatic_OpenArm, Princeton_VLL, Princeton_PRPL, UdeM_REAL, UofT_TISL. Three initial candidates were excluded solely for clock/state-frame mismatch, before reading source outcome annotations. Ten-lab structural pilot, not a representative benchmark.",
+  "episodes": [
+    {
+      "id": "O001",
+      "release_path": "labs/UT_RobIn/20260730_013301.h5",
+      "hdf5_sha256": "e2c8fe7cee6dfd6ff49d473ce9d5c207eeddd1bb028fb0595c29e42a9637773c",
+      "task": "pick cup",
+      "robot_profile": {
+        "policy_name": "pi0.5",
+        "robot_name": "franka_research_3",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 20,
+        "camera_names": [
+          "left",
+          "right",
+          "wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "base_joint",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6",
+          "wrist_joint"
+        ],
+        "action_space": [
+          "joint_velocity",
+          "gripper_binary"
+        ],
+        "action_joint_names": [
+          "base_joint",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6",
+          "wrist_joint"
+        ],
+        "orientation_representation": null,
+        "robot_state_orientation_representation": "euler_xyz",
+        "controller": null,
+        "gains": {
+          "joint_position": {
+            "kp": null,
+            "kd": null
+          },
+          "joint_velocity": {
+            "kv": null
+          },
+          "osc": {
+            "kp_pos": null,
+            "kd_pos": null,
+            "kp_ori": null,
+            "kd_ori": null
+          }
+        },
+        "intrinsic_calibration_matrix": {
+          "<str>": [
+            null
+          ]
+        },
+        "extrinsic_calibration_matrix": {
+          "<str>": [
+            null
+          ]
+        }
+      },
+      "cameras": [
+        {
+          "camera": "left",
+          "path": "labs/UT_RobIn/20260730_013301_left.mp4",
+          "sha256": "b20527d779fc5c4783e5f38a4e583abf0c3ca6b518814a94860f6fe67a44a9f2",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45
+        },
+        {
+          "camera": "right",
+          "path": "labs/UT_RobIn/20260730_013301_right.mp4",
+          "sha256": "b20527d779fc5c4783e5f38a4e583abf0c3ca6b518814a94860f6fe67a44a9f2",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45,
+          "excluded_duplicate_of": "left"
+        },
+        {
+          "camera": "wrist",
+          "path": "labs/UT_RobIn/20260730_013301_wrist.mp4",
+          "sha256": "94f0adda1aa0ee57c0f7803f308b1c73e0c2aaf2e536222884d359931e854c48",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O001_cameras.jpg. left is an exterior scene view; wrist moves with the gripper. This follows NVIDIA's exterior-then-wrist two-view example. right has identical SHA256 to left. No extrinsic calibration is available.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "left"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist"
+          }
+        ],
+        "dense_excluded": {
+          "right": "Byte-identical duplicate of left; do not duplicate the same view."
+        },
+        "rubric": [
+          {
+            "camera": "left",
+            "description": "an exterior scene camera overlooking the table and robot"
+          },
+          {
+            "camera": "wrist",
+            "description": "a gripper-mounted wrist camera"
+          }
+        ],
+        "rubric_excluded": {
+          "right": "Byte-identical duplicate of left."
+        }
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O002",
+      "release_path": "labs/Araya/dit_spoon_drawer/20260803_202227_2.h5",
+      "hdf5_sha256": "ab883ed2475662a5facef7feef9654d655d37bd5d99b3344a63921a54faaf729",
+      "task": "Put the spoon in the drawer",
+      "robot_profile": {
+        "policy_name": "dit",
+        "robot_name": "franka_panda",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 12,
+        "camera_names": [
+          "left_ego_image",
+          "wrist_image",
+          "image"
+        ],
+        "robot_state_keys": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": null,
+        "orientation_representation": "rotvec",
+        "robot_state_orientation_representation": "rotvec",
+        "controller": "joint_position",
+        "gains": {
+          "joint_position": {
+            "kp": [
+              60.0,
+              45.0,
+              75.0,
+              37.5,
+              52.5,
+              37.5,
+              15.0
+            ],
+            "kd": [
+              6.0,
+              9.0,
+              7.5,
+              7.5,
+              4.5,
+              3.0,
+              1.5
+            ]
+          },
+          "joint_velocity": {
+            "kv": null
+          },
+          "osc": {
+            "kp_pos": null,
+            "kd_pos": null,
+            "kp_ori": null,
+            "kd_ori": null
+          }
+        },
+        "intrinsic_calibration_matrix": {
+          "wrist_image": [
+            [
+              303.317291259766,
+              0,
+              213.494430541992
+            ],
+            [
+              0,
+              303.091979980469,
+              126.208251953125
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "left_ego_image": [
+            [
+              303.748931884766,
+              0,
+              211.100891113281
+            ],
+            [
+              0,
+              302.986785888672,
+              119.37606048584
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "image": [
+            [
+              301.738128662109,
+              0,
+              210.798538208008
+            ],
+            [
+              0,
+              301.576873779297,
+              118.296272277832
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_image.mp4",
+          "sha256": "fc9e9afd55537a34aedba0b5b0daf26ff91fa0e43e1973c8bab7e79feef2e801",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        },
+        {
+          "camera": "left_ego_image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_left_ego_image.mp4",
+          "sha256": "99aee34ef81e6af5a700f1b23d5d52fd302bb6041a657aa15017d17c7e8a8c37",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        },
+        {
+          "camera": "wrist_image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_wrist_image.mp4",
+          "sha256": "4393069aaa755e46f38b53d69491f940677487fb596be74f1642fcb5470cbb50",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O002_cameras.jpg. image is a fixed exterior view of the table and drawers; wrist_image moves with the gripper; left_ego_image is another fixed oblique scene view. Extrinsics are absent, so a left/center/right physical mapping of all three cannot be certified. Dense uses NVIDIA's documented exterior-then-wrist two-view example; rubric keeps all three separately described videos.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "image"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist_image"
+          }
+        ],
+        "dense_excluded": {
+          "left_ego_image": "Additional oblique exterior view omitted from the reference dense input because the physical three-view ordering is unverified. Retained for rubric inference."
+        },
+        "rubric": [
+          {
+            "camera": "image",
+            "description": "a fixed exterior scene camera showing the table and drawers"
+          },
+          {
+            "camera": "left_ego_image",
+            "description": "a second fixed oblique scene camera, named left_ego_image in the dataset"
+          },
+          {
+            "camera": "wrist_image",
+            "description": "a gripper-mounted wrist camera"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O003",
+      "release_path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000.h5",
+      "hdf5_sha256": "fc5ec4a08c2828aed05dcf7cc48fcc34cc87c261154ae45927900c9cd333101c",
+      "task": "pack three grocery objects into a seven eleven bag",
+      "robot_profile": {
+        "policy_name": "bag_grocery_cotrain",
+        "robot_name": "egoverse_bimanual",
+        "is_biarm": true,
+        "uses_mobile_base": false,
+        "gripper_name": "finray gripper",
+        "control_freq": 30,
+        "camera_names": [
+          "aria",
+          "left_wrist",
+          "right_wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position",
+          "cartesian_position"
+        ],
+        "robot_state_joint_names": [
+          "left_joint_0",
+          "left_joint_1",
+          "left_joint_2",
+          "left_joint_3",
+          "left_joint_4",
+          "left_joint_5",
+          "right_joint_0",
+          "right_joint_1",
+          "right_joint_2",
+          "right_joint_3",
+          "right_joint_4",
+          "right_joint_5"
+        ],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": null,
+        "orientation_representation": "quat",
+        "robot_state_orientation_representation": "quat",
+        "controller": null,
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "aria",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_aria.mp4",
+          "sha256": "79e5d37671e701ebd20a12431d8b2d17bcf42b934539f216fd457d24b84f016f",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        },
+        {
+          "camera": "left_wrist",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_left_wrist.mp4",
+          "sha256": "3d4437a7b516690008a156663e39a7ba5e5e0ccab4e05582b33a68c284cf5585",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        },
+        {
+          "camera": "right_wrist",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_right_wrist.mp4",
+          "sha256": "f8304649ed8869dee9babf1d084d962d9ed4dff2c1a6c8cbd72de1f8922effbe",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O003_cameras.jpg. aria is the downward scene/ego view; left_wrist and right_wrist show the respective grippers, with identities supplied by the dataset. Dense is ordered left wrist, scene, right wrist as NVIDIA documents. Fisheye wrist views are preserved without rectification; no extrinsic calibration is available.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "left_wrist"
+          },
+          {
+            "slot": "center",
+            "camera": "aria"
+          },
+          {
+            "slot": "right",
+            "camera": "right_wrist"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "aria",
+            "description": "a downward-facing egocentric scene camera showing the bag and grocery objects"
+          },
+          {
+            "camera": "left_wrist",
+            "description": "the left-arm wrist camera, with a fisheye view"
+          },
+          {
+            "camera": "right_wrist",
+            "description": "the right-arm wrist camera, with a fisheye view"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O004",
+      "release_path": "labs/Armnet/episode_000000.h5",
+      "hdf5_sha256": "34f4a3cb508b1e894d4f41e992bebb670f48d593d5b67b79382ab447e18b84e8",
+      "task": "Push the Displayport cable into the cable holder on the white block",
+      "robot_profile": {
+        "policy_name": "act",
+        "robot_name": "so-101",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "so-101_gripper",
+        "control_freq": 20,
+        "camera_names": [
+          "front",
+          "top",
+          "wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "shoulder_pan.pos",
+          "shoulder_lift.pos",
+          "elbow_flex.pos",
+          "wrist_flex.pos",
+          "wrist_roll.pos"
+        ],
+        "action_space": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "action_joint_names": [
+          "shoulder_pan.pos",
+          "shoulder_lift.pos",
+          "elbow_flex.pos",
+          "wrist_flex.pos",
+          "wrist_roll.pos"
+        ],
+        "orientation_representation": null,
+        "robot_state_orientation_representation": null,
+        "controller": null,
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "front",
+          "path": "labs/Armnet/episode_000000_front.mp4",
+          "sha256": "caeff2da7964d1e695d6612935c961d78793b15ee0dad097d7c324aa42ca7f7c",
+          "frames": 977,
+          "fps": 20.0,
+          "width": 1024,
+          "height": 576,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 48.8
+        },
+        {
+          "camera": "top",
+          "path": "labs/Armnet/episode_000000_top.mp4",
+          "sha256": "1e1e69093f0fc7f69d085bd4300532bbae1be8a2908cf69af1761948ab77273e",
+          "frames": 977,
+          "fps": 20.0,
+          "width": 1024,
+          "height": 576,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 48.8
+        },
+        {
+          "camera": "wrist",
+          "path": "labs/Armnet/episode_000000_wrist.mp4",
+          "sha256": "55033a60222301c74f7e55d6a42580bcb217d11f54b58cf7dc4eb5ea55182a72",
+          "frames": 977,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 48.8
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O004_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "front"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist"
+          }
+        ],
+        "dense_excluded": {
+          "top": "Additional exterior view omitted from dense; use documented exterior-then-wrist two-view arrangement."
+        },
+        "rubric": [
+          {
+            "camera": "front",
+            "description": "a fixed exterior scene camera showing the cable and holder"
+          },
+          {
+            "camera": "top",
+            "description": "a second elevated exterior scene camera"
+          },
+          {
+            "camera": "wrist",
+            "description": "a gripper-mounted wrist camera"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O005",
+      "release_path": "labs/Berkeley_RAIL/07a27f5d1cb4.h5",
+      "hdf5_sha256": "77ec3b229d81ab251a195fcca3d3feeae0facb6f448bb1a6001ef71692faae7e",
+      "task": "put the corn in the pot",
+      "robot_profile": {
+        "policy_name": "diffusion_policy_custom",
+        "robot_name": "widow_x",
+        "gripper_name": "widow_x_gripper",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "control_freq": 5,
+        "camera_names": [
+          "right_shoulder_cam"
+        ],
+        "robot_state_keys": [
+          "cartesian_position",
+          "gripper_position",
+          "joint_position"
+        ],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "orientation_representation": "euler_xyz",
+        "robot_state_orientation_representation": "euler_xyz",
+        "robot_state_joint_names": [
+          "waist",
+          "shoulder",
+          "elbow",
+          "forearm_roll",
+          "wrist_angle",
+          "wrist_rotate"
+        ],
+        "action_joint_names": [
+          "waist",
+          "shoulder",
+          "elbow",
+          "forearm_roll",
+          "wrist_angle",
+          "wrist_rotate"
+        ]
+      },
+      "cameras": [
+        {
+          "camera": "right_shoulder_cam",
+          "path": "labs/Berkeley_RAIL/07a27f5d1cb4_right_shoulder_cam.mp4",
+          "sha256": "46be726a780c2ceb1e3f229256ed53f5c76ff25158f3672858c6fd7e9b818e58",
+          "frames": 83,
+          "fps": 5.0,
+          "width": 640,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 16.4
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O005_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "single",
+            "camera": "right_shoulder_cam"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "right_shoulder_cam",
+            "description": "a single fixed exterior scene camera showing the table, robot, corn and pot"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O006",
+      "release_path": "labs/Enatic_OpenArm/100.h5",
+      "hdf5_sha256": "1303bbb406516ded29776a62cd7f8073dde1157f2f96cfb8a79a5edee054136c",
+      "task": "Pick up the spoon and place it into the box.",
+      "robot_profile": {
+        "policy_name": "pi0.5",
+        "robot_name": "OpenArm_2.0_beta",
+        "gripper_name": "openarm_posforce_gripper_2.0_beta",
+        "is_biarm": true,
+        "uses_mobile_base": false,
+        "control_freq": 10,
+        "camera_names": [
+          "ceiling",
+          "wrist_left",
+          "wrist_right"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "right_joint1.pos",
+          "right_joint2.pos",
+          "right_joint3.pos",
+          "right_joint4.pos",
+          "right_joint5.pos",
+          "right_joint6.pos",
+          "right_joint7.pos",
+          "right_gripper.pos",
+          "left_joint1.pos",
+          "left_joint2.pos",
+          "left_joint3.pos",
+          "left_joint4.pos",
+          "left_joint5.pos",
+          "left_joint6.pos",
+          "left_joint7.pos",
+          "left_gripper.pos"
+        ],
+        "action_space": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "action_joint_names": [
+          "right_joint1.pos",
+          "right_joint2.pos",
+          "right_joint3.pos",
+          "right_joint4.pos",
+          "right_joint5.pos",
+          "right_joint6.pos",
+          "right_joint7.pos",
+          "right_gripper.pos",
+          "left_joint1.pos",
+          "left_joint2.pos",
+          "left_joint3.pos",
+          "left_joint4.pos",
+          "left_joint5.pos",
+          "left_joint6.pos",
+          "left_joint7.pos",
+          "left_gripper.pos"
+        ],
+        "controller": "joint_position",
+        "gains": {
+          "joint_position": {
+            "kp": [
+              230.0,
+              230.0,
+              190.0,
+              190.0,
+              30.0,
+              30.0,
+              30.0
+            ],
+            "kd": [
+              2.7,
+              2.7,
+              2.2,
+              2.2,
+              1.5,
+              1.5,
+              1.5
+            ]
+          }
+        },
+        "gripper_control_params": {
+          "gripper_force_limit_nm": 1.0,
+          "gripper_speed_limit_rads": 50.0
+        },
+        "cameras_used_in_policy": [
+          "ceiling",
+          "wrist_left",
+          "wrist_right"
+        ],
+        "orientation_representation": null,
+        "robot_state_orientation_representation": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "ceiling",
+          "path": "labs/Enatic_OpenArm/100_ceiling.mp4",
+          "sha256": "ce62152285fd3b1c0322f120b8cdc265fc95d58a93cf417c4e53afb1ebe095fa",
+          "frames": 93,
+          "fps": 10.0,
+          "width": 960,
+          "height": 600,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 9.2
+        },
+        {
+          "camera": "wrist_left",
+          "path": "labs/Enatic_OpenArm/100_wrist_left.mp4",
+          "sha256": "5174cd4d34debd17f668e5db82d0228a8ed13bc05386af6ce94d5fce8db04c20",
+          "frames": 93,
+          "fps": 10.0,
+          "width": 960,
+          "height": 600,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 9.2
+        },
+        {
+          "camera": "wrist_right",
+          "path": "labs/Enatic_OpenArm/100_wrist_right.mp4",
+          "sha256": "1911b5c81e1c30502d85037f4c4bacc5c7d93499f323e5a1a27e268000f6c8d6",
+          "frames": 93,
+          "fps": 10.0,
+          "width": 960,
+          "height": 600,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 9.2
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O006_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "wrist_left"
+          },
+          {
+            "slot": "center",
+            "camera": "ceiling"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist_right"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "ceiling",
+            "description": "an overhead scene camera showing both arms and the workspace"
+          },
+          {
+            "camera": "wrist_left",
+            "description": "the left-arm wrist camera"
+          },
+          {
+            "camera": "wrist_right",
+            "description": "the right-arm wrist camera"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O007",
+      "release_path": "labs/Princeton_VLL/000000.h5",
+      "hdf5_sha256": "bb222cf450e33da75b4bc09fc87bba8ea581fd51849dc1a166931d67b157a3c5",
+      "task": "roll down the computer mouse wheel",
+      "robot_profile": {
+        "policy_name": "mouse_dexhand_mouse_franka_v6_vision_v0_ckpt:2026-06-05_13-06-25_dexhand_mouse_franka_dapg_v6_step20.0_contact4.0_model:4175_noise:0.4_model_800.pt_2026-06-10-18:45:16",
+        "robot_name": "franka_xhand",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "xhand",
+        "control_freq": 10,
+        "camera_names": [
+          "exterior"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "panda_joint1",
+          "panda_joint2",
+          "panda_joint3",
+          "panda_joint4",
+          "panda_joint5",
+          "panda_joint6",
+          "panda_joint7",
+          "right_hand_thumb_bend_joint",
+          "right_hand_thumb_rota_joint1",
+          "right_hand_thumb_rota_joint2",
+          "right_hand_index_bend_joint",
+          "right_hand_index_joint1",
+          "right_hand_index_joint2",
+          "right_hand_mid_joint1",
+          "right_hand_mid_joint2",
+          "right_hand_ring_joint1",
+          "right_hand_ring_joint2",
+          "right_hand_pinky_joint1",
+          "right_hand_pinky_joint2"
+        ],
+        "action_space": [
+          "joint_position",
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": [
+          "right_hand_thumb_bend_joint",
+          "right_hand_thumb_rota_joint1",
+          "right_hand_thumb_rota_joint2",
+          "right_hand_index_bend_joint",
+          "right_hand_index_joint1",
+          "right_hand_index_joint2",
+          "right_hand_mid_joint1",
+          "right_hand_mid_joint2",
+          "right_hand_ring_joint1",
+          "right_hand_ring_joint2",
+          "right_hand_pinky_joint1",
+          "right_hand_pinky_joint2"
+        ],
+        "orientation_representation": "quat",
+        "robot_state_orientation_representation": "quat",
+        "controller": null,
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "exterior",
+          "path": "labs/Princeton_VLL/000000_exterior.mp4",
+          "sha256": "41e7ff26f6a85c4ca401d68b67698358a424cc1b5734d60df939d70765cc86e7",
+          "frames": 90,
+          "fps": 10.0,
+          "width": 640,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 8.9
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O007_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "single",
+            "camera": "exterior"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "exterior",
+            "description": "a single fixed exterior scene camera showing the robot hand and computer mouse"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O008",
+      "release_path": "labs/Princeton_PRPL/Princeton_PRPL_prpl_eval_2026-08-14/prpl-eval-pi05-droid-toys_fruit-2026-08-14_01-34-25.h5",
+      "hdf5_sha256": "f6ef7958679fa956e43b63e1462a4801bbc27c19c49ccc537ef700e9fd7cd1a7",
+      "task": "Separate the food and the toys into the two bowls",
+      "robot_profile": {
+        "policy_name": "pi0.5",
+        "robot_name": "franka_research_3",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 15,
+        "camera_names": [
+          "overhead_cam",
+          "wrist_cam"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "panda_joint1",
+          "panda_joint2",
+          "panda_joint3",
+          "panda_joint4",
+          "panda_joint5",
+          "panda_joint6",
+          "panda_joint7"
+        ],
+        "action_space": [
+          "joint_velocity",
+          "gripper_binary"
+        ],
+        "action_joint_names": [
+          "panda_joint1",
+          "panda_joint2",
+          "panda_joint3",
+          "panda_joint4",
+          "panda_joint5",
+          "panda_joint6",
+          "panda_joint7"
+        ],
+        "orientation_representation": null,
+        "robot_state_orientation_representation": null,
+        "controller": "joint_velocity",
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "overhead_cam",
+          "path": "labs/Princeton_PRPL/Princeton_PRPL_prpl_eval_2026-08-14/videos/prpl-eval-pi05-droid-toys_fruit-2026-08-14_01-34-25_overhead_cam.mp4",
+          "sha256": "1245a2d32c4d021702f6c63034b057264eb7395f51e58b51d967104019802896",
+          "frames": 900,
+          "fps": 15.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 59.93333333333333
+        },
+        {
+          "camera": "wrist_cam",
+          "path": "labs/Princeton_PRPL/Princeton_PRPL_prpl_eval_2026-08-14/videos/prpl-eval-pi05-droid-toys_fruit-2026-08-14_01-34-25_wrist_cam.mp4",
+          "sha256": "13a88c9ba5684ed1502c9ac55a5ec2e01a2d0b4379eeda4de1af3d4eabfff34b",
+          "frames": 900,
+          "fps": 15.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 59.93333333333333
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O008_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "overhead_cam"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist_cam"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "overhead_cam",
+            "description": "a fixed oblique exterior scene camera showing the robot and both bowls"
+          },
+          {
+            "camera": "wrist_cam",
+            "description": "a gripper-mounted wrist camera"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O009",
+      "release_path": "labs/UdeM_REAL/000000_trajectory.h5",
+      "hdf5_sha256": "4b43d3dfef580677650a2efc1417f1923fb49f2bb172621c925c4dd340f1282a",
+      "task": "move the spoon next to the knife",
+      "robot_profile": {
+        "policy_name": "lap",
+        "robot_name": "franka_research_3",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 15,
+        "camera_names": [
+          "left",
+          "wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "base_joint",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6",
+          "wrist_joint"
+        ],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": null,
+        "orientation_representation": "euler_xyz",
+        "robot_state_orientation_representation": "rot6d",
+        "controller": null,
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "left",
+          "path": "labs/UdeM_REAL/videos/000000_left.mp4",
+          "sha256": "3c6921cc60c4cd8d1cfb5b1b6156811b5408177ac0d8c53e6ddbfb410d21833c",
+          "frames": 1200,
+          "fps": 15.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 79.93333333333334
+        },
+        {
+          "camera": "wrist",
+          "path": "labs/UdeM_REAL/videos/000000_wrist.mp4",
+          "sha256": "3324aec11ba447120f4c5b85c2c067a9ebbecf873e5a9f5f6b6079c102cac6b9",
+          "frames": 1200,
+          "fps": 15.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 79.93333333333334
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O009_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "left"
+          },
+          {
+            "slot": "right",
+            "camera": "wrist"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "left",
+            "description": "a fixed exterior scene camera showing the workspace; source video contains black letterboxing"
+          },
+          {
+            "camera": "wrist",
+            "description": "a gripper-mounted wrist camera; source video contains black letterboxing"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O010",
+      "release_path": "labs/UofT_TISL/20260608_134806_episode_0.h5",
+      "hdf5_sha256": "fe37af3b06935732252bec6d15d96de91492d781233ce110f1bc53cbdaf9e529",
+      "task": "Pick up the block and place it on the cardboard",
+      "robot_profile": {
+        "policy_name": "pi0.5_lora_sft",
+        "robot_name": "viperx_300",
+        "gripper_name": "viperx_300_gripper",
+        "is_biarm": true,
+        "uses_mobile_base": false,
+        "control_freq": 50,
+        "camera_names": [
+          "camera_high",
+          "camera_wrist_left",
+          "camera_wrist_right"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "waist_left",
+          "shoulder_left",
+          "elbow_left",
+          "forearm_roll_left",
+          "wrist_angle_left",
+          "wrist_rotate_left",
+          "waist_right",
+          "shoulder_right",
+          "elbow_right",
+          "forearm_roll_right",
+          "wrist_angle_right",
+          "wrist_rotate_right"
+        ],
+        "action_space": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "action_joint_names": [
+          "waist_left",
+          "shoulder_left",
+          "elbow_left",
+          "forearm_roll_left",
+          "wrist_angle_left",
+          "wrist_rotate_left",
+          "waist_right",
+          "shoulder_right",
+          "elbow_right",
+          "forearm_roll_right",
+          "wrist_angle_right",
+          "wrist_rotate_right"
+        ]
+      },
+      "cameras": [
+        {
+          "camera": "camera_high",
+          "path": "labs/UofT_TISL/20260608_134806_episode_0_camera_high.mp4",
+          "sha256": "e397199f52b930aea41e63ab7c0d9a6a9655f46010ac5d301e838f1606c90ca8",
+          "frames": 750,
+          "fps": 50.0,
+          "width": 848,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 14.98
+        },
+        {
+          "camera": "camera_wrist_left",
+          "path": "labs/UofT_TISL/20260608_134806_episode_0_camera_wrist_left.mp4",
+          "sha256": "111548bafeb2c74ff90723812a8a1b776ffed94b6446739ec624b1eb50a68091",
+          "frames": 750,
+          "fps": 50.0,
+          "width": 848,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 14.98
+        },
+        {
+          "camera": "camera_wrist_right",
+          "path": "labs/UofT_TISL/20260608_134806_episode_0_camera_wrist_right.mp4",
+          "sha256": "5b4d9101393f9c34cd2b2af143148a4c5d36aa1b593f19df6f5523aa2ba3eb3e",
+          "frames": 750,
+          "fps": 50.0,
+          "width": 848,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 14.98
+        }
+      ],
+      "reviewed_camera_mapping": {
+        "visually_reviewed": true,
+        "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O010_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+        "dense": [
+          {
+            "slot": "left",
+            "camera": "camera_wrist_left"
+          },
+          {
+            "slot": "center",
+            "camera": "camera_high"
+          },
+          {
+            "slot": "right",
+            "camera": "camera_wrist_right"
+          }
+        ],
+        "dense_excluded": {},
+        "rubric": [
+          {
+            "camera": "camera_high",
+            "description": "an elevated scene camera showing both arms and the workspace"
+          },
+          {
+            "camera": "camera_wrist_left",
+            "description": "the left-arm wrist camera"
+          },
+          {
+            "camera": "camera_wrist_right",
+            "description": "the right-arm wrist camera"
+          }
+        ],
+        "rubric_excluded": {}
+      },
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    }
+  ],
+  "rubric_origin": "Researcher-defined task-specific steps; not an NVIDIA benchmark rubric",
+  "camera_map_sha256": "b0c1c971a70d7bbaf9dee50ecb237635eadead20d2b1e56d7757e6a4248eb15c",
+  "rubrics_sha256": "265dfffc2118d08e370a316fbd15b95c87192998e3d831cb00580642a311b098",
+  "source_annotations_used_as_model_input": false,
+  "human_verified": false,
+  "training_ready": false
+}

@@ -1,0 +1,13 @@
+{
+  "compilation_passed": true,
+  "gpu_sampling_passed": false,
+  "compile_only": true,
+  "cuda_home": "/opt/apps/cuda/12.8",
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Jan_15_19:20:09_PST_2025\nCuda compilation tools, release 12.8, V12.8.61\nBuild cuda_12.8.r12.8/compiler.35404655_0\n",
+  "cc": "/scratch/tacc/apps/gcc/13.2.0/bin/gcc",
+  "cxx": "/scratch/tacc/apps/gcc/13.2.0/bin/g++",
+  "python": "/scratch/11388/al62479/ftl-flora/venv-reference/bin/python",
+  "torch": "2.11.0+cu129",
+  "torch_cuda": "12.9",
+  "sampling_library": "/scratch/11388/al62479/ftl-flora/.cache/flashinfer/0.6.12/90a/cached_ops/sampling/sampling.so"
+}

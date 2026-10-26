@@ -13,6 +13,8 @@ The earlier ordinal-advantage methods remain available as baselines.
 
 | Document | Purpose |
 |---|---|
+| [FLORA experiments and results](docs/flora_results.md) | TACC run ledger, preserved real-data predictions, confirmed limitations and planned evaluations |
+| [FLORA TACC runbook](docs/flora_tacc.md) | Pinned models, OopsieData inputs, CUDA checks, Slurm submission and video review |
 | [Sol V8 distillation dataset](docs/sol_v8_distillation_500.md) | Download the public 500-episode release, apply training masks, and reproduce the dataset pipeline |
 | [Atomic annotation runbook (V8)](docs/annotation_runbook_v8.md) | Frozen Sol/Astra protocol, annotation and viewer commands, fixed scoring, and next steps |
 | [Training guide](docs/failure_training.md) | Implemented model, annotation manifest, commands, checkpoints |

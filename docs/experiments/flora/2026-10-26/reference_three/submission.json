@@ -1,0 +1,11 @@
+{
+  "audit_job": "3530162",
+  "reference_job": "3530163",
+  "status": "reference_waits_for_successful_audit",
+  "account": "IRI26045",
+  "reference_partition": "gpu-h100",
+  "reference_time_limit": "04:00:00",
+  "reference_max_su": 24,
+  "audit_time_limit": "00:30:00",
+  "audit_max_su": 0.5
+}
