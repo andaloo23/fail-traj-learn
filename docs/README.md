@@ -9,7 +9,6 @@ state; local artifacts linked under `../outputs/` are absent from a fresh clone.
 | Workflow | Documents |
 | --- | --- |
 | OopsieData teacher/student pipeline | [Setup and commands](oopsie_distillation.md) |
-| Teacher identity and presentation labels | [Sol/Astra attribution audit](teacher_provenance_audit.md) |
 | Latest prepared rich pilot | [Corral Astra V8.2](corral_astra_rich_failure_v8_2.md) |
 | Rich failure prompt lineage | [V8.1](oopsie_rich_failure_v8_1.md), [500-episode batch](oopsie_rich_failure_v8_1_500_batch.md), [additional batch](oopsie_rich_failure_v8_1_additional_500_batch_v2.md) |
 | Binary failure labeling | [Sol V8/V9 comparison](oopsie_sol_v8_v9_twelve.md), [V9.1 pilot](oopsie_binary_v9_1_twelve.md), [distillation experiment plan](oopsie_binary_distillation_experiments.md) |
