@@ -6,7 +6,7 @@ OopsieData**. Teacher annotations are proposals for human review, not ground tru
 
 Start with the [OopsieData pipeline](docs/oopsie_distillation.md). The
 [documentation index](docs/README.md) separates versioned labeling protocols,
-distillation recipes, evaluation, and historical release reproduction.
+distillation recipes and evaluation.
 
 | Task | Guide |
 | --- | --- |
@@ -16,7 +16,6 @@ distillation recipes, evaluation, and historical release reproduction.
 | Review binary segmentation protocols | [V9.1 twelve-episode pilot](docs/oopsie_binary_v9_1_twelve.md) |
 | Inspect student recipes and evaluation | [Recipe study](docs/oopsie_distillation_recipe_study_v1.md), [local execution](docs/oopsie_distillation_local_sequential_v1.md), [TACC copies](docs/oopsie_distillation_tacc_replicates_v2.md) |
 | Run the FLORA labeling/evaluation baseline | [FLORA runbook](docs/flora_tacc.md) |
-| Use the historical Sol V8 release | [Download and reproduction](docs/sol_v8_distillation_500.md) |
 | Review historical prompt comparisons | [Atomic annotation guide](scripts/annotate/README.md), [review pack](REVIEW.md) |
 
 Existing run documents are dated records. Their statements about queued jobs,
@@ -38,7 +37,6 @@ make outputs from two different teachers interchangeable.
 | `scripts/tacc/` | OopsieData staging, FLORA baseline, and distillation job templates |
 | `configs/` | Versioned labeling and distillation recipes |
 | `annotations/` | Markdown human reference notes |
-| `datasets/sol_v8_distillation_500/` | Small provenance snapshots for the historical simulator-derived release |
 | `docs/` | Workflow guides and preserved labeling/evaluation evidence |
 | `outputs/` | Ignored local frozen runs, reviews, reports, media, and checkpoints |
 
@@ -46,7 +44,7 @@ Source, configurations, prompts, small provenance records, and human notes are
 committed. Credentials, environments, recordings, generated videos, model weights,
 and bulk run artifacts stay outside Git. A fresh clone needs the datasets and
 frozen runs named by its chosen guide; links into `outputs/` refer to local evidence.
-Historical release snapshots retain their original bytes and paths.
+Retired release files and existing generated runs are preserved locally.
 
 Create a Python environment and install dependencies for the workflow you need:
 

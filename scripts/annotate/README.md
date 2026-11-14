@@ -9,12 +9,11 @@ Start with the [V8 runbook and next steps](../../docs/annotation_runbook_v8.md).
 It contains environment setup, exact prepare/run/review commands, handling failed
 calls, combining batches, fixed scoring, and the R005 review priorities.
 
-The published **500-episode Sol V8 distillation dataset** has a separate
-[download, training, and reproduction guide](../../docs/sol_v8_distillation_500.md).
-It covers `prepare_distillation_v8.py`, `batch_trajectories.py`,
+Recorded-dataset preparation, Batch collection, review, and export helpers remain
+available in `prepare_distillation_v8.py`, `batch_trajectories.py`,
 `queue_batch_trajectories.py`, `resume_distillation_v8.py`,
-`review_distillation_sample.py`, `export_distillation_v8.py`,
-`download_distillation_v8.py`, and `publish_distillation_v8.py`.
+`review_distillation_sample.py`, and `export_distillation_v8.py`.
+The retired release package and its download/publication tools are archived locally.
 
 ## Supported entry points
 

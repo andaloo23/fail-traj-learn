@@ -2,8 +2,8 @@
 
 This repository covers labeling, distillation, and evaluation. See the
 [cleanup scope and verification](repository_scope.md) for what was retained. New work uses
-real OopsieData. The historical Sol V8 release and earlier prompt experiments
-remain for provenance and reproduction. Dated run reports describe their original
+real OopsieData. Earlier prompt experiments remain for provenance and
+reproduction. Dated run reports describe their original
 state; local artifacts linked under `../outputs/` are absent from a fresh clone.
 
 | Workflow | Documents |
@@ -14,7 +14,6 @@ state; local artifacts linked under `../outputs/` are absent from a fresh clone.
 | Binary failure labeling | [Sol V8/V9 comparison](oopsie_sol_v8_v9_twelve.md), [V9.1 pilot](oopsie_binary_v9_1_twelve.md), [distillation experiment plan](oopsie_binary_distillation_experiments.md) |
 | Distillation recipes | [Study](oopsie_distillation_recipe_study_v1.md), [local sequential run](oopsie_distillation_local_sequential_v1.md), [TACC replicates](oopsie_distillation_tacc_replicates_v2.md) |
 | FLORA baseline | [TACC setup](flora_tacc.md), [dated results](flora_results.md), [preserved native evidence](experiments/flora/2026-10-26/README.md) |
-| Historical simulator-derived distillation release | [Sol V8 download, masks, and reproduction](sol_v8_distillation_500.md) |
 | Atomic annotation and human review | [V8 runbook](annotation_runbook_v8.md), [annotation guide](../scripts/annotate/README.md), [review pack](../REVIEW.md) |
 | Offline annotation evaluation | [Metrics and references](annotation_evaluation.md), [H pipeline comparison](h_pipeline_evaluation_v1.md) |
 

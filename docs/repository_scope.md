@@ -13,9 +13,9 @@ Retained material includes:
 
 - OopsieData collection, versioned prompts/configurations, trace validation,
   Markdown review, SFT exports, Qwen recipes, job planning, and evaluation.
-- Historical Gemma distillation and Sol V8 release reproduction. That release is
-  simulator-derived; it is not the current real OopsieData corpus. Its small
-  committed snapshots describe the external public release, not raw recordings.
+- Historical Gemma distillation and reusable recorded-dataset export helpers.
+  The retired simulator-derived release package, its guide, and release-specific
+  download/publication tools are archived locally rather than shared in this tree.
 - Earlier prompt/labeling comparisons and native FLORA baseline evidence, including
   historical simulator integration outputs. These preserve provenance rather than
   authorize new simulator labeling or make the old corpus current.
@@ -23,7 +23,7 @@ Retained material includes:
 
 The historical release's recorded-video decoder now lives in
 `../scripts/annotate/decode_recorded_episode.py`; the export no longer imports
-simulator benchmark code. Published frozen source fingerprints, release snapshots,
+simulator benchmark code. Frozen source fingerprints, archived release snapshots,
 native evidence, and human notes are preserved. Git attributes preserve prompt,
 configuration, and human-note bytes across clones as well.
 

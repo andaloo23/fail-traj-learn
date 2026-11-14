@@ -16,7 +16,7 @@ by each workflow guide. New work uses real OopsieData.
 | Evaluate and render student/teacher comparisons | `analysis/audit_completed_distillation_v1.py`, `analysis/export_qwen_development_review.py`, `analysis/export_teacher_joint_side_by_side.py` |
 | Stage OopsieData/run FLORA | `tacc/prepare_oopsiedata.py`, `tacc/run_flora.py`, `tacc/*.sbatch` |
 | Atomic annotation and human review | [Annotation tools](annotate/README.md), `annotate/human_annotator.py` |
-| Historical Sol V8 release | `annotate/download_distillation_v8.py`, `annotate/prepare_distillation_v8.py`, `annotate/export_distillation_v8.py` |
+| Recorded-dataset export helpers | `annotate/prepare_distillation_v8.py`, `annotate/export_distillation_v8.py` |
 
 The historical V8 exporter retains recorded-video decoding in
 `annotate/decode_recorded_episode.py` and original sampling corrections in
