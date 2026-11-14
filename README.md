@@ -28,7 +28,9 @@ teacher calls.
 Record the actual generating model from frozen requests and responses. Keep
 model identity, prompt versions, and source hashes with each dataset. A display
 name or video title does not change teacher provenance. Model agreement does not
-make outputs from two different teachers interchangeable.
+make outputs from two different teachers interchangeable. See the
+[Sol/Astra attribution audit](docs/teacher_provenance_audit.md) before sharing
+the earlier Astra-titled presentation videos; their preserved teacher is Sol.
 
 | Location | Contents |
 | --- | --- |
