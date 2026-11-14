@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-23T04:48:55.319504+00:00",
+  "episode": "O001",
+  "task": "pick cup",
+  "video": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/flora_oopsie_review_3529640/exports/O001/O001_annotated.mp4",
+  "video_sha256": "ce7dec8529af8a6f6cc633dc6901de8c35a6d1e41fedd7fdf6603c0228259d9a",
+  "width": 1920,
+  "height": 1080,
+  "fps": 20.0,
+  "frames": 50,
+  "duration_seconds": 2.5,
+  "native_segments": 1,
+  "camera_count": 2,
+  "dense_sha256": "817ba8fcdbc656d6a7742364d5fcee421f748983f0468f1eeee156141549852d",
+  "rubric_sha256": "9cda3854345444ce66c5f1b0d077a5c382b364fbd158dde447a1132223ac815b",
+  "source_videos": [
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/UT_RobIn/20260730_013301_left.mp4",
+      "sha256": "b20527d779fc5c4783e5f38a4e583abf0c3ca6b518814a94860f6fe67a44a9f2"
+    },
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/UT_RobIn/20260730_013301_wrist.mp4",
+      "sha256": "94f0adda1aa0ee57c0f7803f308b1c73e0c2aaf2e536222884d359931e854c48"
+    }
+  ],
+  "timing": "Original camera frame i and native label for frame i, at original FPS; no temporal smoothing",
+  "rationale": "Unmodified native dense rationale; normal spans have no native rationale",
+  "episode_excerpt_timing": "Display alignment of explicit timestamps in the separate episode explanation",
+  "validation": {
+    "decoded_output_frames": 50,
+    "all_frame_pts_verified": true,
+    "all_encoded_label_colors_verified": true,
+    "all_camera_pts_verified": true
+  },
+  "human_verified": false,
+  "training_ready": false
+}

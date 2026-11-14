@@ -1,0 +1,60 @@
+{
+  "format": "oopsie_distillation_v1",
+  "annotation_format": "markdown",
+  "repo": "OopsieData-Submissions/oopsiedata-v0.1",
+  "revision": "da4b16512b77f7324296a66da7c0067a40539895",
+  "source": "outputs/oopsiedata_ten_v1",
+  "audited_inputs": "outputs/oopsiedata_ten_reference_v1",
+  "camera_map": "scripts/tacc/oopsie_ten_camera_mapping.json",
+  "prompt": "scripts/distill/oopsie_annotation_v3.md",
+  "out": "outputs/oopsie_distillation_md_v3",
+  "sample_hz": 4,
+  "max_frames_per_camera": 48,
+  "max_image_side": 280,
+  "development_labs": [
+    "Princeton_VLL",
+    "Princeton_PRPL"
+  ],
+  "test_labs": [
+    "UdeM_REAL",
+    "UofT_TISL"
+  ],
+  "teachers": {
+    "sol": "gpt-6.1-sol",
+    "astra": "gpt-6-astra"
+  },
+  "reasoning": "low",
+  "max_input_tokens": 80000,
+  "max_output_tokens": 8192,
+  "rates_checked": "2026-10-23",
+  "rates_per_million": {
+    "sol": {
+      "input": 2,
+      "cached": 0.1,
+      "cache_write": 2.5,
+      "output": 10
+    },
+    "astra": {
+      "input": 10,
+      "cached": 1,
+      "cache_write": 12.5,
+      "output": 50
+    }
+  },
+  "student": {
+    "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "min_pixels": 3136,
+    "max_pixels": 78400,
+    "max_length": 24576,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "learning_rate": 0.0001,
+    "gradient_accumulation": 8,
+    "epochs": 2,
+    "seed": 20261023
+  },
+  "annotation_schema": "field_review_v3",
+  "window_seconds": 10,
+  "window_overlap_seconds": 1
+}

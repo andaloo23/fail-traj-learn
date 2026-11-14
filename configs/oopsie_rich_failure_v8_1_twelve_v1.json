@@ -1,0 +1,19 @@
+{
+  "protocol": "sol_rich_failure_v8_1_comparison_v1",
+  "annotation_schema": "binary_failure_enrichment_v8_1",
+  "prompt_revision": "v8.1",
+  "source_run": "outputs/oopsie_binary_v9_1_twelve_v1",
+  "prompt": "scripts/annotate/prompts/rich_failure_v8_1.md",
+  "out": "outputs/oopsie_rich_failure_v8_1_twelve_v1",
+  "teachers": {"sol": "gpt-6.1-sol"},
+  "repeats": 3,
+  "reasoning": "low",
+  "max_input_tokens": 600000,
+  "max_output_tokens": 8192,
+  "camera_layout": "synchronized_camera_strip",
+  "evidence": "all_recorded_frames_full_episode",
+  "rates_checked": "2026-10-27",
+  "rates_per_million": {"sol": {"input": 2, "cached": 0.1, "cache_write": 2.5, "output": 10}},
+  "long_context_pricing": {"threshold_input_tokens": 272000, "input_multiplier": 2, "output_multiplier": 1.5},
+  "pricing_sources": ["https://developers.openai.com/api/docs/models/gpt-6.1-sol"]
+}

@@ -1,0 +1,63 @@
+{
+  "started_utc": "2026-10-22T20:04:26.811062+00:00",
+  "code": {
+    "repo": "nvidia/Flora-Rewarder",
+    "revision": "7de68d22c4a9decec5ddb7f86ddcaee8f82d3367"
+  },
+  "jobs_sha256": "977391e3092865216674b16a241e5fbccbd6769133a28009f5492b3340ecad74",
+  "video_sha256": {
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R001/agent.mp4": "552e00d212190993e8b80eb59055d6381ae1ea5c43b195d81c38fc887fe45aa5",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R001/wrist.mp4": "d560c5efd5046fa1c6f64564430a6e18f78e60aa7a737499c607152585ace8bf",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R002/agent.mp4": "990ba77a38b1b77c5e798715c044789494a9eed745d9cb1a6c8419838dde9738",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R002/wrist.mp4": "ef460a6600086a7db0ab09ff6eb1b47ffadd94f5f03828f59d28fe4c94a29011",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R003/agent.mp4": "b145c6b195b5a926f7d4cdbef372d6261bef7b6d6fb3bde1429a0f97de7b3490",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R003/wrist.mp4": "4357525a127f0b01b9811f8937401fb06d6022f68008746c9b3c08579df721b0",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R004/agent.mp4": "72f6aac86cfbf531c983a4e8dbe6064985612b5c9aa31eff7719690cd9ad5727",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R004/wrist.mp4": "5a30128869fe1944f4de0e8c7e869f211d43b878aad1c677b641a0da0214db26",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R005/agent.mp4": "ebfac501f73f197a3d90fffde41c9440e4b4239bc28c9362daf0e5854eb7b3fa",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R005/wrist.mp4": "90dbbb8bd039f7e892a03f4be0f01831ff56bc57099010f91f5c771f2b709708",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R006/agent.mp4": "b6a4466bbfdfe067ba9dc05f7f8ca2e93e0c379302e3fd335945932414870108",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R006/wrist.mp4": "7943d08e0ac6e80925369df5dd7590ffda84ca7948db5fe55565de3cd8159404",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R007/agent.mp4": "bc32c07369ad2c8176f057c8f7e299b7afc29739f8fd3a056f8a9382c959d5e5",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R007/wrist.mp4": "ae72c9e2b6813e64a75b613aae7ea9e7bc3c8d9c1f8ed5b240703132a2023525",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R008/agent.mp4": "5fd8dca4e3b253ffdeada1a3d729cc5c0b3964344d2acf227574c869e0d36c5d",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R008/wrist.mp4": "a113e45a260f61eb185a68d04cfd4704f7d9a7d7f00b24472b2966f576599db3",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R009/agent.mp4": "a48f0b46ffe01e5ff3f9e334c8a8a2ed7ef61e15ef854d8d24c27b1d7135b1ca",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R009/wrist.mp4": "c5873c60c54187fe9bd5911b2388d65ddad83c0d578040d9deb74a101a587f05",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R010/agent.mp4": "912f8f84f8d5afd8e158d2f051afd9a14d030931a6d748c61845872987423468",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R010/wrist.mp4": "3da3ad3078a016851a117c2e81c049ac21743cc7a174bb1fce844a1a5cf810f2",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R011/agent.mp4": "c7971cc77fbf318350ac1d7f4eff8eaa41fa5ac18d492d206ce1b4017ea0cc83",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R011/wrist.mp4": "7fd9c9a98ff9dc6c06258f3ea1965bc36ad9d10b94da8edc6efc993622fffd58",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R012/agent.mp4": "f7643d66508a8f0bd3798d49357ece3c0e4a6f2a1988f76e15f1b4f0348697d5",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/videos/R012/wrist.mp4": "580568648a2d51d01dafb4754f191cc08db360cdb2ae5cb87ae38f4a6d932bd1"
+  },
+  "command": [
+    "/scratch/11388/al62479/ftl-flora/venv-rewarder/bin/python",
+    "-m",
+    "batch_utils.dense_reward",
+    "--jobs",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_pilot_v1/reward_jobs.jsonl",
+    "--output",
+    "/scratch/11388/al62479/ftl-flora-pilot-v1/outputs/flora_dense_pilot_a100_3528860/dense.jsonl",
+    "--model",
+    "nvidia/Flora-Rewarder",
+    "--revision",
+    "7de68d22c4a9decec5ddb7f86ddcaee8f82d3367",
+    "--max-num-seqs",
+    "1",
+    "--tensor-parallel-size",
+    "2",
+    "--frame-scores"
+  ],
+  "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+  "packages": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.8.1",
+    "vllm": "0.24.0+cu129",
+    "av": "19.0.2"
+  },
+  "status": "completed",
+  "human_verified": false,
+  "exit_code": 0,
+  "finished_utc": "2026-10-22T20:09:18.112126+00:00"
+}

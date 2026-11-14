@@ -1,0 +1,5 @@
+# Keep the VM-compatible NumPy baseline; NumPy >=2.4 requires x86-64-v2.
+-r requirements-recipes.txt
+numpy==2.3.5
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128

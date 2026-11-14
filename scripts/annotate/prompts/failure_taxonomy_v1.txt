@@ -1,0 +1,85 @@
+Annotate all observable failure intervals in this robot episode using only the
+supplied task, synchronized camera images and ordinary robot telemetry.
+Failure means an unsuccessful task-directed attempt, task-inconsistent action,
+or harmful side effect. Lack of immediate progress alone is insufficient: safe
+pauses, necessary preparation and productive recovery are not automatically
+failures. Progress and a harmful side effect can occur together. A successful
+episode can contain failures. Do not infer hidden perception/planning causes.
+
+Use these eight interval categories (multiple may co-occur):
+reaching: pre-contact failure to reach the target/location; a narrowly missed
+  attempted grasp belongs to grasp instead.
+grasp: failure to establish or maintain object control: missed/improper grasp,
+  slip or drop.
+manipulation: after successful acquisition/contact, failure to achieve the
+  intended effect, e.g. holding a handle but failing to open the door.
+sequencing_semantic: observable wrong object, wrong action or wrong order.
+collision: unintended obstructive or harmful contact; exclude normal contact
+  required by the task.
+task_not_attempted: sustained absence of a discernible task attempt; brief pauses
+  and necessary preparation are insufficient.
+visible_hardware_issue: visible mechanical abnormality, not just unexplained
+  stopping. Do not infer real hardware damage from a simulated scene.
+other: failure not covered above; explain specifically.
+
+A failure bout is a maximal uninterrupted failure interval. Within a bout,
+split typed segments whenever the active category SET changes. Adjacent segments
+with the same set must be merged; adjacent segments with different sets belong
+to the same bout. Bouts will be derived from your segments. A gap means failure
+has stopped, not merely that there was no supplied frame. Recovery ends failure
+when acceptable behavior begins, even before recovery succeeds.
+
+Boundary start: earliest observable evidence of failure; do not backdate an
+initially plausible action using hindsight. End: acceptable behavior resumes,
+category set changes, or episode ends. Use half-open [start_frame,end_frame).
+Images are supplied every 5 source frames (4 Hz at 20 Hz source) plus final frame.
+Choose boundary estimates from supplied frames (end may also be n_frames).
+For each boundary supply [earliest,latest] plausible source-frame indices that
+contain the estimate. This is uncertainty, not a claim of frame-exact detection.
+Commands follow their observation; finger position/commands do not prove contact.
+
+Severity describes OBSERVED consequences:
+low: no meaningful observed damage/disruption; current attempt fails.
+medium: damage/disruption, but environment remains usable and task feasible.
+catastrophic: significant damage preventing safe/practical use without repair
+  or replacement.
+unknown: consequences cannot be assessed. Describe potential damage separately
+in potential_risk; do not inflate observed severity based on speculation.
+Resetability assumes the same robot/task setup:
+immediate: robot can autonomously reattempt without human intervention.
+minor_reset: quick, straightforward human/environment reset.
+hard_reset: substantial human intervention, time or multiple reset steps.
+unresettable: requires repair/replacement beyond normal reset.
+unknown: cannot determine. A difficult autonomous action alone is not hard reset.
+
+Sudden episode termination is a separate endpoint event, not an interval category.
+Use termination status observed only if evidence supports abrupt interruption;
+ordinary recording end alone is insufficient. Use not_observed or unknown
+otherwise. Do not infer e-stop/time-limit cause without evidence.
+
+Return ONLY an unfenced JSON object with exactly:
+episode_id: supplied ID
+segments: chronological nonoverlapping array, each object with exactly:
+  start_frame: integer
+  end_frame: integer exclusive
+  start_window: [earliest,latest] integers, 0 <= earliest <= start_frame <= latest < n_frames
+  end_window: [earliest,latest] integers, 0 <= earliest <= end_frame <= latest <= n_frames
+  categories: nonempty unique array of allowed interval categories
+  what_happened: concise observable account and why it conflicts with the task
+  recovery: suggested next action, or explicitly state cannot assess
+  evidence_frames: nonempty unique array of supplied frames inside this segment
+  severity: low|medium|catastrophic|unknown
+  potential_risk: short supported risk description, or unknown/none
+  resetability: immediate|minor_reset|hard_reset|unresettable|unknown
+  uncertainty: string; empty if none
+uncertain_intervals: chronological nonoverlapping array of objects with exactly:
+  start_frame, end_frame: integer bounds as above
+  reason: nonempty string explaining uncertain failure presence
+  These intervals must not overlap positive failure segments. Do not silently
+  convert insufficient evidence into a confident no-failure judgment.
+termination: object with exactly status (observed|not_observed|unknown),
+  frame (n_frames if observed, null otherwise), evidence (string)
+notes: limitations string
+Empty segment arrays are valid. Your annotations are provisional model judgments,
+not verified ground truth. Keep descriptions concise but include every supported
+failure; do not impose a segment quota.

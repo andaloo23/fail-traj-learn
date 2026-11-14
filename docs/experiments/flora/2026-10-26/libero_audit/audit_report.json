@@ -1,0 +1,62 @@
+{
+  "audited_utc": "2026-10-22T20:56:05.381068+00:00",
+  "job_id": "3528860",
+  "model": "nvidia/Flora-Rewarder",
+  "revision": "7de68d22c4a9decec5ddb7f86ddcaee8f82d3367",
+  "genuine_published_weights": true,
+  "weight_shards_verified": 11,
+  "snapshot_supporting_files_verified": 28,
+  "official_runtime_code_files_verified": 12,
+  "original_input_cameras_verified": 24,
+  "original_camera_frames_verified": 6142,
+  "episodes": 12,
+  "source_frames": 3071,
+  "clips": 22,
+  "invalid_clips": 0,
+  "missing_rationales": 0,
+  "unmatched_rationales": 0,
+  "native_postprocessing_reproduced_exactly": true,
+  "download_matches_remote": true,
+  "viewer_predictions_match_native_output": true,
+  "inference": {
+    "mode": "dense",
+    "precision": "BF16",
+    "quantization": null,
+    "temperature": 0.0,
+    "max_tokens": 640,
+    "frames_per_clip": 64,
+    "sampling_fps": 4.0,
+    "groups_per_clip": 32,
+    "tail_trim_s": 4.0,
+    "tensor_parallel_size": 2,
+    "max_num_seqs": 1,
+    "gdn_prefill_backend": "triton",
+    "camera_order": [
+      "agent/exterior",
+      "wrist"
+    ]
+  },
+  "adaptations": [
+    "Two 40 GB A100 GPUs rather than upstream example one 80 GB H100; same BF16 weights and native inference code",
+    "Concurrency reduced to one request for pilot memory use",
+    "Removed unused decord package; dense path decodes using native PyAV implementation",
+    "Runtime PATH and compiler setup changed to permit kernel compilation; no upstream prompt or postprocessing edits"
+  ],
+  "timing_caveat": {
+    "native_segments": 309,
+    "segments_shorter_than_half_second": 284,
+    "label_boundaries": 297,
+    "boundaries_switching_source_clip": 292,
+    "example": "R001 has 48 native segments over 14 seconds; 46 last less than 0.5 seconds",
+    "interpretation": "Rapid switching is reproducible in official nearest-group stitching across overlapping windows; it does not establish independent frame-level model judgments"
+  },
+  "limitations": [
+    "Genuine model output does not establish annotation accuracy",
+    "No bitwise comparison against the upstream H100 hardware configuration has been performed",
+    "Only dense Rewarder was run; TempSeg and Captioner were not run",
+    "Scores and rationales use future context and are offline annotations",
+    "No human video correctness assessment or training-label adapter has been completed"
+  ],
+  "human_verified": false,
+  "training_ready": false
+}

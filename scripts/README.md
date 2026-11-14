@@ -1,49 +1,44 @@
-# Script entry points
+# Labeling and distillation entry points
 
-Run from the repository root using the external LeRobot `.venv/bin/python`. See the
-[main README](../README.md) for environment variables and the [documentation index](../docs/README.md)
-for experiment status. This index lists entry points; imported helpers and benchmark methods remain
-in their existing locations so historical runs and tests stay reproducible.
+Run from the repository root. Use the dependency file and environment described
+by each workflow guide. New work uses real OopsieData.
 
-Current portable annotation commands and retained prompts are documented in
-[the annotation guide](annotate/README.md).
+| Task | Entry point |
+| --- | --- |
+| Prepare/collect/review teacher traces | `distill/oopsie_pipeline.py`, `distill/oopsie.ps1` |
+| Rich V8.1 collection | `distill/oopsie_bulk_v8_1.py`, `distill/oopsie_bulk_batch.py` |
+| Fresh Corral Astra V8.2 pilot | `distill/corral_astra_v8_2.py` |
+| Binary failure collection and review | `distill/binary_segments_v9.py` |
+| Serve original-video review | `distill/review_oopsie_video.py`, `distill/serve_oopsie_review.py` |
+| Train/evaluate Qwen students | `distill/qwen_oopsie_sft.py`, `distill/qwen_recipe_runner.py`, `distill/score_recipe_suite.py` |
+| Prepare recipe/job plans | `distill/recipe_job_plan.py`, `distill/oopsie_full_jobs.py` |
+| Historical Gemma distillation | `distill/data.py`, `distill/model.py`, `distill/train.py`, `distill/eval.py` |
+| Evaluate and render student/teacher comparisons | `analysis/audit_completed_distillation_v1.py`, `analysis/export_qwen_development_review.py`, `analysis/export_teacher_joint_side_by_side.py` |
+| Stage OopsieData/run FLORA | `tacc/prepare_oopsiedata.py`, `tacc/run_flora.py`, `tacc/*.sbatch` |
+| Atomic annotation and human review | [Annotation tools](annotate/README.md), `annotate/human_annotator.py` |
+| Historical Sol V8 release | `annotate/download_distillation_v8.py`, `annotate/prepare_distillation_v8.py`, `annotate/export_distillation_v8.py` |
 
-| Task | Entry point | Notes |
-|---|---|---|
-| Download the Sol V8 distillation dataset | `annotate/download_distillation_v8.py` | Pinned public release with size/SHA-256 verification; [training and reproduction guide](../docs/sol_v8_distillation_500.md) |
-| Audit failure-training data | `analysis/audit_failure_corpus.py` | Read-only corpus checks; only writes the requested report |
-| Compare references against current oracle | `analysis/recompute_failure_references.py` | Recomputes from telemetry in memory; does not replace references |
-| Verify simulator snapshots | `analysis/check_snapshot_restore.py` | Restore/replay spot checks, with exact/approximate modes |
-| Review episode evidence | `analysis/review_failures.py`, `analysis/build_review_index.py` | Generate camera/telemetry reports |
-| Check collection outcomes/inits | `analysis/summarize_datasets.py`, `analysis/predicate_artifacts.py`, `analysis/init_state_check.py` | Recorded outcomes, geometric artifacts and initial-state diagnostics |
-| Train failure representations | `rl/train_failure_model.py` | `--audit-only` checks manifest coverage first |
-| Test RL and failure modules | `rl/run_tests.sh` | CPU unittest discovery; failures propagate to the exit status |
-| Cache observable features | `rl/encode_frames.py` | Re-renders snapshots; fixture replay limits still apply |
-| Build RL transitions | `rl/build_dataset.py` | Explicitly choose `--obs-spec v2` for observable features |
-| Train BC/IQL baselines | `rl/train.py` | Frame-based actors; not yet connected to the learned failure scorer |
-| Evaluate baseline policies/critics | `rl/eval_env.py`, `rl/eval_critic.py` | Closed-loop outcomes and offline diagnostics |
-| Run reward comparisons | `rl/reward_experiments.sh` | Retained independent reward experiments; see RL pipeline |
-| Record new data | `record/record_config.sh`, `record/record_rollouts.py` | Choose a new dataset name and explicit task/init settings |
-| Build rule-derived annotations | `annotate/bench/oracle_reference.py`, `annotate/bench/oracle_labels.py` | Versioned weak supervision; review before using as new manifest labels |
-| Run annotation benchmarks | `annotate/bench/run_method.py` | Historical VLM and rule baselines |
-| Build and verify GPT-6 pilot labels | `annotate/bench/gpt6_pilot.py` | Observable-only sparse labels, hash freeze, privileged fact checks, masked training candidates |
-| Prepare GPT-6 labels for human review | `annotate/bench/gpt6_human_review_v1.py`, `annotate/bench/gpt6_human_review_fewshot_v1.py` | New disjoint target pack plus zero-shot and human-demonstration prompts, candidate and review freezes |
-| Review trajectories or GPT candidates | `annotate/human_annotator.py` | Independent annotation by default; separate candidate-assisted output with `--seed-name` and `--annotation-name` |
-| Local simulation utilities | `tools/list_tasks.py`, `tools/probe_libero.py`, `tools/view_libero.py` | Task inspection, rendering and viewer |
+The historical V8 exporter retains recorded-video decoding in
+`annotate/decode_recorded_episode.py` and original sampling corrections in
+`analysis/exclusions.json`. These support release reproduction. New OopsieData
+work uses `distill/oopsie_common.py`.
 
-## Historical collection schedules
+Use Linux/WSL with the recipe environment (including CPU PyTorch, NumPy,
+Pillow, and PyAV) for the full offline suite. Some annotation evaluation tests
+also need their optional runtime dependencies. Windows supports the annotation
+and TACC scopes; Linux queue tests require Unix file locking (`fcntl`). No GPU benchmark, training, paid generation, publication,
+or cluster job is launched by these commands:
 
-`pilot/*.sh` and `record/full_run*.sh` preserve the original collection settings and seeds. They are
-not the default entry point for a new collection. In particular, `full_run_ext2.sh` is a historical
-migration that moves existing shifted datasets; `full_run_ext*.sh` wait on earlier log markers.
-Use `record_config.sh` with a fresh name for new data.
+```bash
+python -m compileall -q scripts
+python scripts/check_offline.py
+```
 
-The one-time `full_run_resume_goals8.sh` crash recovery was removed after the verified completed
-collection. The redundant `annotate/bench/kill_review.sh` was removed; the existing
-`review_oracle_stop.sh` targets the oracle renderer instead of killing every ffmpeg process.
-Both removed scripts remain available in Git history.
+Job templates and recovery helpers are explicit entry points. Confirm the concrete
+recipe/job plan before starting new training or submitting jobs. Preserve native
+requests, answers, and notes; new prompts and format changes use new run versions.
 
-Baseline sweep defaults can target privileged `object_v1` and historical oracle exports. Inspect
-or override `DATASET`, `LABELS`, seeds and run tags before launching a new comparison. The new
-failure learner instead requires explicit dataset/manifest paths and rejects privileged observations
-unless a diagnostic override is given.
+`scripts/check_offline.py` excludes the real Qwen processor/model integration
+tests, disables model downloads and GPU visibility, and isolates each test scope
+in a fresh interpreter. The legacy Gemma integration check is explicit-only in
+`distill/check_legacy_eval_cpu.py`; use a scratch output tree for that check.

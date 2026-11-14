@@ -1,0 +1,289 @@
+{
+  "reference": "nvidia/Flora-Rewarder@7de68d22c4a9decec5ddb7f86ddcaee8f82d3367/batch_utils/README.md#inputs",
+  "episodes": {
+    "O001": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O001_cameras.jpg. left is an exterior scene view; wrist moves with the gripper. This follows NVIDIA's exterior-then-wrist two-view example. right has identical SHA256 to left. No extrinsic calibration is available.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "left"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist"
+        }
+      ],
+      "dense_excluded": {
+        "right": "Byte-identical duplicate of left; do not duplicate the same view."
+      },
+      "rubric": [
+        {
+          "camera": "left",
+          "description": "an exterior scene camera overlooking the table and robot"
+        },
+        {
+          "camera": "wrist",
+          "description": "a gripper-mounted wrist camera"
+        }
+      ],
+      "rubric_excluded": {
+        "right": "Byte-identical duplicate of left."
+      }
+    },
+    "O002": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O002_cameras.jpg. image is a fixed exterior view of the table and drawers; wrist_image moves with the gripper; left_ego_image is another fixed oblique scene view. Extrinsics are absent, so a left/center/right physical mapping of all three cannot be certified. Dense uses NVIDIA's documented exterior-then-wrist two-view example; rubric keeps all three separately described videos.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "image"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist_image"
+        }
+      ],
+      "dense_excluded": {
+        "left_ego_image": "Additional oblique exterior view omitted from the reference dense input because the physical three-view ordering is unverified. Retained for rubric inference."
+      },
+      "rubric": [
+        {
+          "camera": "image",
+          "description": "a fixed exterior scene camera showing the table and drawers"
+        },
+        {
+          "camera": "left_ego_image",
+          "description": "a second fixed oblique scene camera, named left_ego_image in the dataset"
+        },
+        {
+          "camera": "wrist_image",
+          "description": "a gripper-mounted wrist camera"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O003": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/flora_oopsie_reference_audit_v1/O003_cameras.jpg. aria is the downward scene/ego view; left_wrist and right_wrist show the respective grippers, with identities supplied by the dataset. Dense is ordered left wrist, scene, right wrist as NVIDIA documents. Fisheye wrist views are preserved without rectification; no extrinsic calibration is available.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "left_wrist"
+        },
+        {
+          "slot": "center",
+          "camera": "aria"
+        },
+        {
+          "slot": "right",
+          "camera": "right_wrist"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "aria",
+          "description": "a downward-facing egocentric scene camera showing the bag and grocery objects"
+        },
+        {
+          "camera": "left_wrist",
+          "description": "the left-arm wrist camera, with a fisheye view"
+        },
+        {
+          "camera": "right_wrist",
+          "description": "the right-arm wrist camera, with a fisheye view"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O004": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O004_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "front"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist"
+        }
+      ],
+      "dense_excluded": {
+        "top": "Additional exterior view omitted from dense; use documented exterior-then-wrist two-view arrangement."
+      },
+      "rubric": [
+        {
+          "camera": "front",
+          "description": "a fixed exterior scene camera showing the cable and holder"
+        },
+        {
+          "camera": "top",
+          "description": "a second elevated exterior scene camera"
+        },
+        {
+          "camera": "wrist",
+          "description": "a gripper-mounted wrist camera"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O005": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O005_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "single",
+          "camera": "right_shoulder_cam"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "right_shoulder_cam",
+          "description": "a single fixed exterior scene camera showing the table, robot, corn and pot"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O006": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O006_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "wrist_left"
+        },
+        {
+          "slot": "center",
+          "camera": "ceiling"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist_right"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "ceiling",
+          "description": "an overhead scene camera showing both arms and the workspace"
+        },
+        {
+          "camera": "wrist_left",
+          "description": "the left-arm wrist camera"
+        },
+        {
+          "camera": "wrist_right",
+          "description": "the right-arm wrist camera"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O007": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O007_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "single",
+          "camera": "exterior"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "exterior",
+          "description": "a single fixed exterior scene camera showing the robot hand and computer mouse"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O008": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O008_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "overhead_cam"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist_cam"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "overhead_cam",
+          "description": "a fixed oblique exterior scene camera showing the robot and both bowls"
+        },
+        {
+          "camera": "wrist_cam",
+          "description": "a gripper-mounted wrist camera"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O009": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O009_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "left"
+        },
+        {
+          "slot": "right",
+          "camera": "wrist"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "left",
+          "description": "a fixed exterior scene camera showing the workspace; source video contains black letterboxing"
+        },
+        {
+          "camera": "wrist",
+          "description": "a gripper-mounted wrist camera; source video contains black letterboxing"
+        }
+      ],
+      "rubric_excluded": {}
+    },
+    "O010": {
+      "visually_reviewed": true,
+      "evidence": "Original first/middle/last frames inspected in outputs/oopsiedata_ten_v1/O010_cameras.jpg. Scene versus wrist roles visually reviewed; left/right wrist identities rely on dataset identifiers. No camera extrinsic calibration assumed; original orientations, letterboxing and pixel bytes are preserved.",
+      "dense": [
+        {
+          "slot": "left",
+          "camera": "camera_wrist_left"
+        },
+        {
+          "slot": "center",
+          "camera": "camera_high"
+        },
+        {
+          "slot": "right",
+          "camera": "camera_wrist_right"
+        }
+      ],
+      "dense_excluded": {},
+      "rubric": [
+        {
+          "camera": "camera_high",
+          "description": "an elevated scene camera showing both arms and the workspace"
+        },
+        {
+          "camera": "camera_wrist_left",
+          "description": "the left-arm wrist camera"
+        },
+        {
+          "camera": "camera_wrist_right",
+          "description": "the right-arm wrist camera"
+        }
+      ],
+      "rubric_excluded": {}
+    }
+  }
+}

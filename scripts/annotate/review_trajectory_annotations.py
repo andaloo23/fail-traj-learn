@@ -18,9 +18,11 @@ def build(run_dir, source, left='sol', right='astra', right_run=None):
     folders, manifests = common.comparison_sources(run_dir, left, right, right_run)
     manifest, right_manifest = manifests
     runner.configure(run_dir, scheme=manifest['settings'].get('scheme', 'atomic'))
-    models = {left: manifest['settings']['models'][left], right: right_manifest['settings']['models'][right]}
-    if left == right:
-        raise ValueError('Choose two distinct model keys from the run manifest')
+    left_model = manifest['settings']['models'][left]
+    right_model = right_manifest['settings']['models'][right]
+    repeated_model = left == right
+    if repeated_model and folders[0] == folders[1]:
+        raise ValueError('Same-model comparisons require two distinct source runs')
     # Verify the saved inputs even when inspecting an older runner version.
     for name, digest in manifest['files'].items():
         path = (run_dir / name).resolve()
@@ -67,7 +69,7 @@ def build(run_dir, source, left='sol', right='astra', right_run=None):
                 else:
                     runner.validate(value, ep)
             answer = folder / (stem + '_answer.txt')
-            link = stem + '_answer.txt' if answer.exists() else None
+            link = ((column + '_') if repeated_model else '') + stem + '_answer.txt' if answer.exists() else None
             if link:
                 shutil.copyfile(answer, target / link)
             annotations[column] = value
@@ -82,15 +84,20 @@ def build(run_dir, source, left='sol', right='astra', right_run=None):
                              statuses={'atomic_actions': statuses},
                              evidence_versions={'atomic_actions': evidence}))
     choice = dict(id='atomic_actions', label=f'Failure/non-failure ({run_dir.name})',
-                  heading=f'{models[left]} vs {models[right]}',
-                  columns={'openai': models[left], 'gemini': models[right]},
+                  heading=f'{left_model} vs {right_model}',
+                  columns={'openai': left_model, 'gemini': right_model},
                   prompt_file='annotation_prompt.txt')
     if right_run:
         same_prompt = common.digest(folders[0] / 'prompt.txt') == common.digest(folders[1] / 'prompt.txt')
-        choice.update(heading=(f'{models[left]} vs {models[right]} (same frozen prompt)' if same_prompt
-                               else f'{models[left]} (new) vs {models[right]} (saved baseline)'),
+        choice.update(heading=(f'{left_model} vs {right_model} (same frozen prompt)' if same_prompt
+                               else f'{left_model} (new) vs {right_model} (saved baseline)'),
                       prompt_label=f'Read {left.title()} prompt', right_prompt_file='right_annotation_prompt.txt',
                       right_prompt_label=f'Read {right.title()} prompt' if same_prompt else f'Read saved {right.title()} prompt')
+        if repeated_model:
+            choice.update(label=f'{left_model} / two independent runs',
+                          heading=f'{left_model}: run 1 vs run 2' + (' (identical prompt and evidence)' if same_prompt else ''),
+                          columns={'openai': left_model + ' / run 1', 'gemini': right_model + ' / run 2'},
+                          prompt_label='Read run 1 prompt', right_prompt_label='Read run 2 prompt')
     if runner.SCHEME == 'atomic':
         from compare_action_groups import run as compare_actions
         agreement = compare_actions(run_dir, left, right, target / 'action_group_agreement.json', right_run)
@@ -103,7 +110,9 @@ def build(run_dir, source, left='sol', right='astra', right_run=None):
                     scores=row['scores'], counts=row['counts'])}
     common.write_json(target / 'data.json', dict(episodes=episodes, runs=[choice], default_run='atomic_actions',
                                                display_label_mode='failure_binary',
-                                               annotation_manifest_sha256=common.digest(run_dir / 'manifest.json'),
+                                               annotation_manifest_sha256=(hashlib.sha256(json.dumps([
+                                                   common.digest(folder / 'manifest.json') for folder in folders
+                                               ]).encode()).hexdigest() if right_run else common.digest(run_dir / 'manifest.json')),
                                                annotation_sources={column: dict(run=str(folder),
                                                    manifest_sha256=common.digest(folder / 'manifest.json'),
                                                    prompt_sha256=common.digest(folder / 'prompt.txt'))

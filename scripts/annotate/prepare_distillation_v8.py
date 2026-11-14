@@ -10,11 +10,9 @@ import hashlib
 import json
 from pathlib import Path
 import random
-import sys
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-sys.path.insert(0, str(HERE / "bench"))
 
 
 def load(path):
@@ -150,7 +148,7 @@ def select(data, out, count, seed):
 def export(data, out, selection, worker_index=0, workers=1):
     import numpy as np
     import common
-    from review_oracle import decode_episode
+    from decode_recorded_episode import decode_episode
     common.DATA = data
     packs = out / "source"
     packs.mkdir(exist_ok=True)

@@ -110,7 +110,7 @@ frequencies or verify local failure labels.
 | Stage | Source |
 | --- | --- |
 | Select 500 train / 50 development / 50 test identities | `scripts/annotate/prepare_distillation_v8.py` |
-| Decode original cameras and observable telemetry | `scripts/annotate/common.py`, `scripts/annotate/bench/review_oracle.py` (`decode_episode` only) |
+| Decode original cameras and observable telemetry | `scripts/annotate/common.py`, `scripts/annotate/decode_recorded_episode.py` |
 | Sampling corrections | `scripts/analysis/exclusions.json` |
 | Freeze sampled inputs, prompt, and validate labels | `scripts/annotate/annotate_trajectories.py`, `annotation_runtime.py`, `annotation_states.py` |
 | Frozen instruction and output schema | `scripts/annotate/prompts/atomic_actions/annotation.txt` |

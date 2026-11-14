@@ -36,3 +36,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .venv-distill/
+.venv-oopsie-distill/
+
+# Task-specific environments and local tool caches
+.venv-*/

@@ -1,0 +1,18 @@
+# Copy the matching block into C:\Users\LocalPC\.ssh\config and replace YOUR_USERNAME.
+# Keep password + keyboard-interactive enabled for TACC MFA. Keys are optional.
+Host tacc-vista
+    HostName vista.tacc.utexas.edu
+    User YOUR_USERNAME
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+
+Host tacc-ls6
+    HostName ls6.tacc.utexas.edu
+    User YOUR_USERNAME
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+
+# Optional, only after registering the PUBLIC key on TACC:
+#     IdentityFile ~/.ssh/id_ed25519_tacc
+#     IdentitiesOnly yes
+# Never disable host-key checking. SSH keys do not eliminate TACC MFA.

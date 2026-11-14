@@ -1,0 +1,212 @@
+{
+  "snapshot_date": "2026-10-26",
+  "kind": "byte-preserved historical outputs and operational receipts",
+  "human_verified": false,
+  "training_ready": false,
+  "files": [
+    {
+      "path": "oopsie_dense_3529899/dense.jsonl",
+      "source": "outputs/flora_oopsie_dense_3529899/dense.jsonl",
+      "bytes": 26376,
+      "sha256": "817ba8fcdbc656d6a7742364d5fcee421f748983f0468f1eeee156141549852d"
+    },
+    {
+      "path": "oopsie_dense_3529899/jobs.jsonl",
+      "source": "outputs/flora_oopsie_dense_3529899/jobs.jsonl",
+      "bytes": 762,
+      "sha256": "8dffe696992f84b5dfabb47d2f3e3f15f5b48f886890589998675ceb72d4b1bd"
+    },
+    {
+      "path": "oopsie_dense_3529899/run.json",
+      "source": "outputs/flora_oopsie_dense_3529899/run.json",
+      "bytes": 3008,
+      "sha256": "a212572758a4a3f6d48b53cd4674898094dbcec58ee0ff155724f9cefa6209db"
+    },
+    {
+      "path": "oopsie_dense_3529899/validation.json",
+      "source": "outputs/flora_oopsie_dense_3529899/validation.json",
+      "bytes": 292,
+      "sha256": "00e26ec0a9cdfbfbe6149505564222ce0f21fbde74aceb14c50ac91cab67d6ba"
+    },
+    {
+      "path": "oopsie_rubric_3529640/rubric.jsonl",
+      "source": "outputs/flora_oopsie_rubric_3529640/rubric.jsonl",
+      "bytes": 24138,
+      "sha256": "9cda3854345444ce66c5f1b0d077a5c382b364fbd158dde447a1132223ac815b"
+    },
+    {
+      "path": "oopsie_rubric_3529640/run.json",
+      "source": "outputs/flora_oopsie_rubric_3529640/run.json",
+      "bytes": 3159,
+      "sha256": "6e82b68f77e296b993d53404a4eb1c64921ae0c9a52070ccc1a689d38e2ca240"
+    },
+    {
+      "path": "oopsie_rubric_3529640/validation.json",
+      "source": "outputs/flora_oopsie_rubric_3529640/validation.json",
+      "bytes": 296,
+      "sha256": "d07bfb80188e4261b19afd9a4a1c0333abc884a757d6a1736b4747455d85ff5c"
+    },
+    {
+      "path": "libero_dense_3528860/dense.jsonl",
+      "source": "outputs/flora_dense_pilot_a100_3528860/dense.jsonl",
+      "bytes": 69131,
+      "sha256": "777f91e69140c0207b9ed02c5e9fb0435deab7ea107d193122f44e20b47de3d3"
+    },
+    {
+      "path": "libero_dense_3528860/run.json",
+      "source": "outputs/flora_dense_pilot_a100_3528860/run.json",
+      "bytes": 5033,
+      "sha256": "de67cc9934ee241bf57d140ed520c367c33b1bd115c8f3982aee9df30d0f2217"
+    },
+    {
+      "path": "libero_dense_3528860/validation.json",
+      "source": "outputs/flora_dense_pilot_a100_3528860/validation.json",
+      "bytes": 293,
+      "sha256": "af66afa4be671e32943e4b3e825db05535cb18cbaabac3d40eec7aee41d321ca"
+    },
+    {
+      "path": "libero_dense_3528860/summary.json",
+      "source": "outputs/flora_dense_pilot_a100_3528860/summary.json",
+      "bytes": 523,
+      "sha256": "1320e1d9f6771803941efee9cd90e8d3a8d77ff9caf4dd5e6a287f4ce93f3849"
+    },
+    {
+      "path": "libero_audit/audit_report.json",
+      "source": "outputs/flora_provenance_audit_3528860/audit_report.json",
+      "bytes": 2491,
+      "sha256": "870c418486e4ff4925909ae7a0542c7c8861b8c10fa99ff56bf76f9f6e3849a3"
+    },
+    {
+      "path": "libero_audit/input_and_postprocessing_audit.json",
+      "source": "outputs/flora_provenance_audit_3528860/input_and_postprocessing_audit.json",
+      "bytes": 3567,
+      "sha256": "c4e547a0cee19c7ffd41f767ecef3593c795c52b54a4c297aa1f753d4bd2ab4b"
+    },
+    {
+      "path": "reference_three/native_preflight/preflight.json",
+      "source": "outputs/flora_oopsie_reference_audit_v1/native_preflight/preflight.json",
+      "bytes": 39640,
+      "sha256": "6bac08358cdb4011d249b65b21e43fe41513e4476616aed25975227f9102ca5b"
+    },
+    {
+      "path": "reference_three/published_code.json",
+      "source": "outputs/flora_oopsie_reference_audit_v1/published_code.json",
+      "bytes": 1467,
+      "sha256": "70f7efd6363876912d2320375f7aee1a47da19cdf9011c9c3dcb902492ad51f0"
+    },
+    {
+      "path": "reference_three/submission.json",
+      "source": "outputs/flora_oopsie_reference_audit_v1/submission.json",
+      "bytes": 294,
+      "sha256": "aa06289491e15c391bcd2f5d68cdd21038ea2efa32096a7193bbd7fdbdc99f09"
+    },
+    {
+      "path": "reference_three/viewer_validation.json",
+      "source": "outputs/flora_oopsie_reference_audit_v1/viewer_validation.json",
+      "bytes": 131,
+      "sha256": "a98339162a7d0e9d1c2c61f9514b3ecf79eaf13bec6e7d170b197f9a7179b2c2"
+    },
+    {
+      "path": "reference_ten/submission.json",
+      "source": "outputs/flora_oopsie_ten_audit_v1/submission.json",
+      "bytes": 361,
+      "sha256": "ebdbaeb37746caf5bba063afbf4a170fc77ebf1b676fc7237d7d062e8404b0b2"
+    },
+    {
+      "path": "reference_ten/staging_manifest.json",
+      "source": "outputs/flora_oopsie_ten_audit_v1/staging_manifest.json",
+      "bytes": 7482,
+      "sha256": "965f38908da9ad3673905f3cda33f547b667926d6541005028b3f6421613282c"
+    },
+    {
+      "path": "cuda_repair/submission.json",
+      "source": "outputs/flora_oopsie_ten_cuda_repair_v2/submission.json",
+      "bytes": 1090,
+      "sha256": "b93a41a8d258750aed752a7cb9908c2b2edc078bee2afcc349a526dcabe53b32"
+    },
+    {
+      "path": "cuda_repair/cuda_compile_3533751.json",
+      "source": "outputs/flora_oopsie_ten_cuda_repair_v2/cuda_compile_3533751.json",
+      "bytes": 705,
+      "sha256": "6aa0a66747f75b2147efa032d574f622ef902151c711e056a5a197119928ef09"
+    },
+    {
+      "path": "oopsie_original_inputs/selection.json",
+      "source": "outputs/oopsiedata_pilot_v1/selection.json",
+      "bytes": 3757,
+      "sha256": "e98108f7c1d15a771754bdd936bf1de3986fa76f78069ac7f3a0fc3a4ede489f"
+    },
+    {
+      "path": "ten_corrected_inputs/selection.json",
+      "source": "outputs/oopsiedata_ten_v1/selection.json",
+      "bytes": 11986,
+      "sha256": "daacc9cf3aa97ee4ca70a7b8e9c5cf953c034c240ddc35a0570b35d943206c01"
+    },
+    {
+      "path": "oopsie_original_inputs/provenance.json",
+      "source": "outputs/oopsiedata_pilot_v1/provenance.json",
+      "bytes": 10700,
+      "sha256": "9fc66e1df49197754ab8119ac563a653f56646f03332c0176b52b19ca6b45ab1"
+    },
+    {
+      "path": "ten_corrected_inputs/provenance.json",
+      "source": "outputs/oopsiedata_ten_reference_v1/provenance.json",
+      "bytes": 41253,
+      "sha256": "c0374f54312e86423dc109c685f73e0930906d9a666e56e741be95893e72668a"
+    },
+    {
+      "path": "oopsie_original_inputs/rubric_jobs.jsonl",
+      "source": "outputs/oopsiedata_pilot_v1/rubric_jobs.jsonl",
+      "bytes": 3709,
+      "sha256": "0c8350f23c9c2f2363352558e4b7daa62620bb4c836b8f8ec66ec9b9d3eca51f"
+    },
+    {
+      "path": "ten_corrected_inputs/rubric_jobs.jsonl",
+      "source": "outputs/oopsiedata_ten_reference_v1/rubric_jobs.jsonl",
+      "bytes": 12872,
+      "sha256": "2a3927ed5bd5dcaf41f2a2b4c9453bb3ff2da17356eefffbea909ff8aa3b85a8"
+    },
+    {
+      "path": "oopsie_original_inputs/dense_jobs.jsonl",
+      "source": "outputs/oopsiedata_pilot_v1/dense_jobs.jsonl",
+      "bytes": 761,
+      "sha256": "1877495f9c787fa98f4e36ec944c7916e1b1c3093ebc93d4e66cf9a6bcb39bd0"
+    },
+    {
+      "path": "ten_corrected_inputs/dense_jobs.jsonl",
+      "source": "outputs/oopsiedata_ten_reference_v1/dense_jobs.jsonl",
+      "bytes": 2641,
+      "sha256": "6a85253892160d3048b138d8966defeed223b6262a5d382bf06e6d7634b277c3"
+    },
+    {
+      "path": "libero_dense_3528860/jobs.jsonl",
+      "source": "outputs/flora_pilot_v1/reward_jobs.jsonl",
+      "bytes": 1667,
+      "sha256": "977391e3092865216674b16a241e5fbccbd6769133a28009f5492b3340ecad74"
+    },
+    {
+      "path": "reference_ten/native_preflight/preflight.json",
+      "source": "outputs/flora_publish_20261026/ten_preflight.json",
+      "bytes": 145183,
+      "sha256": "6efa1900af732426174b98c7438e7424573d55a273e61d11fe7c13dd1e349c5a"
+    },
+    {
+      "path": "video_export_manifests/O001.json",
+      "source": "outputs/flora_oopsie_review_3529640/exports/O001/manifest.json",
+      "bytes": 1637,
+      "sha256": "917076e11fe628672c610144636ec382da0257a5892c0a5af475e7defe856142"
+    },
+    {
+      "path": "video_export_manifests/O002.json",
+      "source": "outputs/flora_oopsie_review_3529640/exports/O002/manifest.json",
+      "bytes": 1954,
+      "sha256": "aa6a3e67e5533938b483b8071102f52ed90df91c293fda0d67a0d6691163a508"
+    },
+    {
+      "path": "video_export_manifests/O003.json",
+      "source": "outputs/flora_oopsie_review_3529640/exports/O003/manifest.json",
+      "bytes": 2004,
+      "sha256": "2e0f1396e18c1df9d0a7db0656e51cb18d1e51dbdf3db29fe8a18a398dab90bf"
+    }
+  ]
+}

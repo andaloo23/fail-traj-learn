@@ -9,3 +9,10 @@ scripts/annotate/annotate_trajectories.py -text whitespace=cr-at-eol
 scripts/annotate/annotation_runtime.py -text whitespace=cr-at-eol
 scripts/annotate/annotation_states.py -text whitespace=cr-at-eol
 datasets/sol_v8_distillation_500/*.json -text whitespace=cr-at-eol
+
+# Versioned prompts/configurations and human notes are provenance too.
+# Keep their original line endings so frozen input hashes survive a clone.
+scripts/annotate/prompts/** -text whitespace=cr-at-eol
+configs/*.json -text whitespace=cr-at-eol
+# Blank reviewer fields intentionally end in a space in the original notes.
+annotations/human_reference_v1/*.md -text whitespace=cr-at-eol,-blank-at-eol

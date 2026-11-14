@@ -1,0 +1,20 @@
+{
+  "protocol": "binary_failure_v9",
+  "prompt_revision": "v9.1",
+  "source_run": "outputs/oopsie_distillation_md_v2",
+  "prompt": "scripts/annotate/prompts/binary_failure_v9_1.md",
+  "out": "outputs/oopsie_binary_v9_1",
+  "episodes": ["O001", "O002", "O005", "O006", "O007"],
+  "evidence": "all_recorded_frames_full_episode",
+  "max_image_side": 280,
+  "teachers": {"sol": "gpt-6.1-sol", "astra": "gpt-6-astra"},
+  "repeats": 3,
+  "reasoning": "low",
+  "max_input_tokens": 80000,
+  "max_output_tokens": 2048,
+  "rates_checked": "2026-10-23",
+  "rates_per_million": {
+    "sol": {"input": 2, "cached": 0.1, "cache_write": 2.5, "output": 10},
+    "astra": {"input": 10, "cached": 1, "cache_write": 12.5, "output": 50}
+  }
+}

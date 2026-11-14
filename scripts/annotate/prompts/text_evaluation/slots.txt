@@ -1,0 +1,22 @@
+Compare anonymized robot-action descriptions as text assertions, not video correctness. The supplied task and identity descriptions are context or model assertions, not independently verified ground truth. Do not infer observed results from commands, intent, or the requested goal.
+
+Use this fixed set of dimensions, exactly once each:
+operation: the actions attempted or performed, excluding their results.
+participant_roles: who acts on whom; compare roles independently of the lexical names for the participants.
+object_identity: the physical referents used in the action. Resolve aliases only when context establishes a common referent. A more specific product name for a contextually bound physical referent does not change that referent; differing identification confidence belongs in uncertainty. Without a binding, correspondence is unresolved.
+destination: the target location or spatial destination relation asserted.
+physical_result: control, retention, separation, placement, or other achieved physical states. Preserve polarity and temporal scope. Attempting an operation does not establish its result.
+task_match: explicit assertions about whether the acted-on object or result satisfies the requested task. Do not manufacture this assertion from the task alone.
+environmental_effect: asserted contact, collision, displacement, tilt, or other effects on surroundings.
+event_order: explicit relative ordering of events, excluding mere prose sentence order.
+uncertainty: provisional versus established commitments, uncertainty sources, and explicit identification confidence. Preserve uncertainty in the dimension where the underlying assertion occurs as well.
+
+For each dimension provide a concise summary of assertions from A and B, or null on a side that asserts nothing in that dimension. Include only assertions from that side. Context may resolve the referent of an identifier but must not add new asserted action/results. Combine synonyms and repetitions. Preserve multiple assertions within a dimension; do not omit inconvenient facts to obtain agreement.
+
+Assign one dimension relation: equivalent (same assertions; wording and context-supported aliases may differ), compatible_difference (different scope, extra/missing assertion, or partial shared content, without an explicit incompatibility), contradiction (explicit incompatible assertions about the same fact), unresolved (material correspondence cannot be decided from text/context), or not_applicable (neither side asserts anything in this dimension). Both sides must be null for not_applicable. Equivalent, contradiction, and unresolved require an assertion on both sides. A missing assertion is not a negation. Different participants or reversed roles alone need not be logically contradictory unless exclusive claims or event context make them incompatible.
+
+Identical texts and genuine paraphrases must have equivalent applicable dimensions. There is no numeric score to invent: code computes the fraction of applicable dimensions that are equivalent, with contradictions and unresolved correspondences separately visible. Every dimension has equal weight. Partial overlap is exposed in the text/relation and does not receive an invented fractional credit.
+
+Also give overall_relation: equivalent, compatible_difference, contradiction, unrelated, or unresolved. Use contradiction only for explicit incompatible assertions; unrelated for no meaningful shared action assertions; unresolved when a material correspondence cannot be decided. Harmless rewording is equivalent. Extra/missing details without explicit contradiction are compatible_difference.
+
+Return only JSON with a single key pairs, containing exactly one object per supplied pair_id. Each object has exactly pair_id, dimensions, overall_relation, and rationale. dimensions contains exactly the nine named keys; every dimension value has exactly a, b, and relation. rationale states the decisive shared or differing assertion. Do not include expected labels, model identities, numeric scores, or commentary.

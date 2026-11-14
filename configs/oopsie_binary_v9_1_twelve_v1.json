@@ -1,0 +1,57 @@
+{
+  "protocol": "binary_failure_v9",
+  "prompt_revision": "v9.1",
+  "source_run": "outputs/oopsie_source_twelve_md_v1",
+  "prompt": "scripts/annotate/prompts/binary_failure_v9_1.md",
+  "out": "outputs/oopsie_binary_v9_1_twelve_v1",
+  "episodes": [
+    "O001",
+    "O002",
+    "O003",
+    "O004",
+    "O005",
+    "O006",
+    "O007",
+    "O008",
+    "O009",
+    "O010",
+    "O011",
+    "O012"
+  ],
+  "evidence": "all_recorded_frames_full_episode",
+  "max_image_side": 280,
+  "teachers": {
+    "sol": "gpt-6.1-sol",
+    "astra": "gpt-6-astra"
+  },
+  "repeats": 3,
+  "reasoning": "low",
+  "max_input_tokens": 600000,
+  "max_output_tokens": 2048,
+  "rates_checked": "2026-10-26",
+  "rates_per_million": {
+    "sol": {
+      "input": 2,
+      "cached": 0.1,
+      "cache_write": 2.5,
+      "output": 10
+    },
+    "astra": {
+      "input": 10,
+      "cached": 1,
+      "cache_write": 12.5,
+      "output": 50
+    }
+  },
+  "camera_layout": "synchronized_camera_strip",
+  "long_context_pricing": {
+    "threshold_input_tokens": 272000,
+    "input_multiplier": 2,
+    "output_multiplier": 1.5
+  },
+  "presentation_revision": "v9.1-synchronized-views-v1",
+  "pricing_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
+  ]
+}

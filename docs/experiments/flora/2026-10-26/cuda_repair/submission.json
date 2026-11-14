@@ -1,0 +1,24 @@
+{
+  "cancelled_job": "3530286",
+  "three_episode_job_not_resubmitted": "3530163",
+  "cuda_audit_job": "3533751",
+  "workspace": "/scratch/11388/al62479/ftl-flora-oopsie-ten-cuda-v2",
+  "created_utc": "2026-10-25T19:56:46.443385+00:00",
+  "source_sha256": {
+    "flora_cuda_env.sh": "ab35f0a5aa22f66576b7acc77a5bfd1dde5e46f0335bc5ff8aff93a0f837164e",
+    "check_flora_cuda.py": "d22d26f8791c77678ff1f9061dd1a54f737223272f4227d7714c98dca6421117",
+    "reference_flora_oopsie.sbatch": "f7a2d5187b367b150f23b75499745e97c7463b8fbe6f5f5ad96014bcd90e9c55",
+    "preflight_flora_cuda.sbatch": "bb7221f8af79d350821f612873eab75e4560d6929dd127ae580c0d454543dd7d"
+  },
+  "prior_cuda_audit_job": "3533746",
+  "prior_cancelled_replacement": "3533747",
+  "updated_utc": "2026-10-25T20:00:55.696105+00:00",
+  "reference_job": "3533752",
+  "dependency": "afterok:3533751",
+  "account": "IRI26045",
+  "partition": "gpu-h100",
+  "time_limit": "08:00:00",
+  "max_gpu_su": 48,
+  "status": "submitted_with_cuda_compile_dependency",
+  "submitted_utc": "2026-10-25T20:01:24.585210+00:00"
+}

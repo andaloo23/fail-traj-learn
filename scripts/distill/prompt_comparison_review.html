@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V9 binary failure review</title><style>
+:root{color-scheme:dark;--bg:#10151e;--panel:#192330;--border:#344559;--muted:#a9b9cb;--text:#eff4fb;--red:#e98998;--green:#91d5b5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}main{max-width:1600px;margin:auto;padding:24px}h1{font-size:25px;margin:0}h2{margin:0;font-size:21px}p{margin:8px 0}.muted{color:var(--muted)}.panel{padding:18px;background:var(--panel);border:1px solid var(--border);border-radius:12px;margin:16px 0}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}button,input,select,textarea{font:inherit;color:inherit;background:#233146;border:1px solid #50647d;border-radius:7px;padding:7px 10px}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid #9ecaff;outline-offset:3px}button:disabled{opacity:.45;cursor:default}button.primary{color:#14243c;background:#a9cfff}a{color:#a9cfff}.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}figure{margin:0;min-width:0}figcaption{font-size:13px;color:var(--muted);margin-bottom:6px}video{display:block;width:100%;height:220px;background:#05090e;object-fit:contain;border-radius:7px}.controls{margin-top:12px}#episode{max-width:100%}#scrub{width:100%;padding:0;margin:12px 0}.clock{font-variant-numeric:tabular-nums}#teachers{display:grid;grid-template-columns:1fr 1fr;gap:20px}.teacher{min-width:0;margin-top:0;border-top:3px solid #8bbcff}.teacher.v9{border-top-color:#c4abf5}.teacher header{justify-content:space-between}.current-label{font-size:25px;font-weight:650;margin:12px 0 0}.failure{color:var(--red)}.nonfailure{color:var(--green)}.timeline{display:flex;position:relative;height:36px;background:#28364a;border-radius:5px;overflow:hidden;margin:16px 0}.timeline button{min-width:0;padding:0;border:0;border-radius:0;background:#438878;color:white;overflow:hidden}.timeline button.fail{background:#a6465b}.timeline button.active{box-shadow:inset 0 0 0 2px white}.cursor{position:absolute;height:100%;width:2px;background:white;pointer-events:none}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--border)}th{font-size:13px;color:var(--muted)}tbody tr{cursor:pointer}tbody tr.active{background:#26374c}tr:focus-visible{outline:2px solid #9ecaff}textarea{width:100%;min-height:110px;resize:vertical}.badge{font-size:12px;border:1px solid var(--border);border-radius:20px;padding:4px 10px}#saveStatus{min-height:24px}#mediaError{color:var(--red)}.download{font-size:13px}.teacher header label{font-size:13px}
+@media(max-width:700px){main{padding:14px}#teachers{grid-template-columns:1fr}.videos{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}video{height:160px}.panel{padding:14px}h1{font-size:22px}}
+.rich-current{padding:14px;background:#111b28;border-radius:8px;margin:12px 0}.rich-current h3{margin:0 0 10px}.native-markdown{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.5 ui-monospace,monospace}summary{cursor:pointer;padding:10px 0}.action-list{gap:6px;margin:10px 0}.action-list button{font-size:12px;padding:5px 8px}.action-list button.active{border-color:white;background:#31465e}
+.timeline.with-actions{height:82px}.timeline.with-actions>button{padding:36px 0 0}.action-overlay{position:absolute;left:0;right:0;top:5px;height:30px;pointer-events:none}.timeline .action-box{position:absolute;top:0;height:30px;background:rgba(12,19,28,.65);border:2px solid #dceaff;border-radius:4px;padding:2px 3px;font-size:12px;white-space:nowrap;text-overflow:ellipsis;pointer-events:auto}.timeline .action-box.active{border-color:#ffdf97;box-shadow:none}.current-action{font-size:19px;font-weight:650;margin:10px 0}.action-jumps{gap:5px;margin:10px 0}.action-jumps button{font-size:12px;padding:5px 8px}.action-source{font-size:12px}.annotation-card{border:1px solid #53677f;border-radius:8px;padding:12px;margin:10px 0}.annotation-card.active{border-color:#ffdf97}.annotation-categories{font-weight:650}.failure-annotations h3{margin-bottom:8px}
+</style></head><body><main>
+<h1>V9 · Failure or non-failure</h1><p class="muted">Whole episodes. Every recorded frame. Sol on both sides: rich failure annotations versus approved binary V9.1. Identical visual inputs; no Astra calls.</p>
+<p class="muted" id="richDescription">V8 uses the existing visual-only OopsieData Markdown adaptation of the rich atomic-action prompt. <a id="richPrompt" href="prompt.md">Frozen V8 prompt</a> · <a href="review_annotations/v9/prompt.md">Frozen V9.1 prompt</a></p>
+<p id="runStatus" class="badge" role="status"></p>
+<div class="row"><label for="episode">Episode</label><select id="episode"></select><span id="split" class="badge"></span><span id="lab" class="muted"></span></div><h2 id="task" style="margin-top:16px"></h2>
+<section class="panel"><div id="videos" class="videos"></div><div class="row controls"><button id="restart">Restart</button><button id="back">−1 frame</button><button id="play" class="primary">Play</button><button id="forward">+1 frame</button><label for="speed">Speed</label><select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select><button id="previousBoundary">Previous boundary</button><button id="nextBoundary">Next boundary</button></div><input id="scrub" type="range" min="0" step="1" value="0" aria-label="Video frame"><div class="row"><strong id="clock" class="clock"></strong><span class="badge">Same frames and cameras for both prompts</span></div><p id="mediaError" role="status"></p></section>
+<button id="reveal" class="primary" aria-pressed="true">Hide labels (blind review)</button><div id="teachers" aria-label="V8 and V9.1 Sol comparison"></div>
+<section class="panel"><h2>Video review notes</h2><p class="muted">Record missed failures, false alarms or boundary corrections. Teacher agreement and repeatability do not establish correctness.</p><label for="reviewer">Reviewer</label> <input id="reviewer" autocomplete="name" placeholder="Your name"><p><label for="notes">Observations and corrections</label></p><textarea id="notes"></textarea><div class="row controls"><button id="timestamp">Insert current time</button><button id="saveNotes" class="primary">Save Markdown notes</button><button id="downloadNotes">Download Markdown</button></div><p id="saveStatus" class="muted" role="status"></p><a href="report.md">Read the experiment report</a></section>
+</main><script>
+'use strict';
+const data=__DATA__, $=id=>document.getElementById(id), storageKey='binary-v9-'+data.manifest_sha256;
+const revision=(data.prompt_revision||'v9').toUpperCase();document.title=revision+' Sol comparison';document.querySelector('h1').textContent=revision+' · Sol annotations';
+if(data.rich_prompt_description){$('richDescription').firstChild.textContent=data.rich_prompt_description+' ';$('richPrompt').textContent='Frozen V8.1 prompt'}
+let current,frame=0,videos=[],playing=false,revealed=true,notes={},selected={v8:1,v9:1},pendingSeek=0;
+function paintRunStatus(){
+    const completed=data.episodes.reduce((n,e)=>n+Object.values(e.teachers).reduce((v,t)=>v+t.length,0),0);
+    const planned=data.planned_responses||data.episodes.length*2*(data.repeats||3);
+    $('runStatus').textContent=data.episodes.length+' episodes · '+completed+'/'+planned+' labels ready'+
+        (current?' · '+current.id+': '+(data.side_labels?.v8||'V8')+' '+current.teachers.v8.length+'/'+(data.side_repeats?.v8||1)+', V9.1 '+current.teachers.v9.length+'/'+(data.side_repeats?.v9||3):'')+
+        (revealed?' · Labels shown':' · Blind review')+(data.status_message?' · '+data.status_message:'');
+    $('reveal').hidden=false;
+    $('reveal').textContent=revealed?'Hide labels (blind review)':'Show labels for all episodes';
+    $('reveal').setAttribute('aria-pressed',String(revealed));
+}
+async function refreshLabels(){
+    try{
+        const response=await fetch('review_data.json',{cache:'no-store'});
+        if(!response.ok)return;
+        const updated=await response.json();
+        if(updated.manifest_sha256!==data.manifest_sha256)return;
+        if(updated.review_ui_version&&updated.review_ui_version!==data.review_ui_version){
+            reloadReview();
+            return;
+        }
+        if(JSON.stringify(updated.episodes)!==JSON.stringify(data.episodes)){
+            const id=current.id;
+            Object.assign(data,updated);
+            current=data.episodes.find(e=>e.id===id)||current;
+            render();
+            position(frame);
+        }
+        paintRunStatus();
+    }catch(_){}
+}
+const visibilityKey=storageKey+'-labels-visible';
+try{
+    notes=JSON.parse(localStorage.getItem(storageKey)||'{}');
+    const savedVisibility=localStorage.getItem(visibilityKey);
+    if(savedVisibility==='false')revealed=false;
+}catch(_){}
+function setLabelVisibility(show){
+    persist();
+    revealed=Boolean(show);
+    try{localStorage.setItem(visibilityKey,String(revealed))}catch(_){}
+    render();
+    position(frame);
+    paintRunStatus();
+    persist();
+}
+function reloadReview(){
+    persist();
+    const url=new URL(location.href);
+    url.searchParams.set('episode',current.id);
+    url.searchParams.delete('frame');
+    url.searchParams.delete('labels');
+    location.replace(url.href);
+}
+window.addEventListener('pagehide',persist);
+const el=(tag,text,cls)=>{const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x};
+const time=f=>(f/current.fps).toFixed(2)+' s',name=t=>data.side_labels?.[t]||(t==='v8'?'V8 - Sol':'V9.1 - Sol');
+function trace(t){return current.teachers[t].find(x=>x.repeat===selected[t])}
+function pause(){playing=false;videos.forEach(v=>v.pause());$('play').textContent='Play'}
+function actionBoxes(value,side){
+    if(side==='v9')return null;
+    const actions=current.action_segments||value.rich_segments||[];
+    if(!actions.length)return null;
+    const overlay=el('div',undefined,'action-overlay');
+    for(const s of actions){
+        const box=el('button',s.action,'action-box');
+        box.dataset.start=s.start_frame;box.dataset.end=s.end_frame;box.dataset.action=s.action;
+        box.style.left=(s.start_frame/current.n_frames*100)+'%';
+        box.style.width=((s.end_frame-s.start_frame)/current.n_frames*100)+'%';
+        box.title=s.action+' / '+time(s.start_frame)+'–'+time(s.end_frame);
+        box.setAttribute('aria-label','Action '+box.title);box.onclick=()=>seek(s.start_frame);overlay.append(box);
+    }
+    return overlay;
+}
+function actionReadout(panel,value){
+    if(panel.classList.contains('v9'))return;
+    const actions=current.action_segments||value.rich_segments||[];
+    if(!actions.length)return;
+    panel.append(el('p','','current-action'));
+    const list=el('div',undefined,'row action-jumps');
+    for(const s of actions){
+        const button=el('button',time(s.start_frame)+' '+s.action);
+        button.dataset.start=s.start_frame;button.dataset.end=s.end_frame;
+        button.onclick=()=>seek(s.start_frame);list.append(button);
+    }
+    if(current.action_source)panel.append(el('p','Action outlines: saved V8 Sol repeat 1. Failure colors: '+name(panel.classList.contains('v8')?'v8':'v9')+'.','muted action-source'));
+    panel.append(list);
+}
+function failureAnnotationList(value){
+    const host=el('section',undefined,'failure-annotations');
+    host.append(el('h3','Failure categories and explanations'));
+    if(!value.failure_annotations.length)host.append(el('p','No failure annotations for this episode and repeat.','muted'));
+    for(const s of value.failure_annotations){
+        const card=el('article',undefined,'annotation-card');card.dataset.start=s.start_frame;card.dataset.end=s.end_frame;
+        const jump=el('button',time(s.start_frame)+'–'+time(s.end_frame)+' / frames '+s.start_frame+'–'+s.end_frame);
+        jump.onclick=()=>seek(s.start_frame);
+        card.append(jump,el('p','Categories: '+s.categories.join(', '),'annotation-categories'),el('p',s.explanation,'annotation-explanation'));host.append(card);
+    }
+    return host;
+}
+function updateAction(panel,value,at){
+    const label=panel.querySelector('.current-action');if(!label)return;
+    const s=(current.action_segments||value.rich_segments||[]).find(s=>s.start_frame<=at&&at<s.end_frame);
+    label.textContent='Action: '+s.action;label.dataset.action=s.action;label.dataset.start=s.start_frame;label.dataset.end=s.end_frame;
+}
+function actionTimeline(value){
+    const host=el('div'),bar=el('div',undefined,'timeline action-timeline'),list=el('div',undefined,'row action-list');
+    host.append(el('p','Original V8 actions (click to seek)','muted'));
+    for(const s of value.rich_segments){
+        const button=el('button',s.action,s.failure?'fail':'');
+        button.style.width=((s.end_frame-s.start_frame)/current.n_frames*100)+'%';
+        button.dataset.start=s.start_frame;button.dataset.end=s.end_frame;
+        button.title=s.action+' / '+time(s.start_frame)+'–'+time(s.end_frame)+(s.review_required?' / Review required':'');
+        button.setAttribute('aria-label','V8 action '+button.title);
+        button.onclick=()=>seek(s.start_frame);bar.append(button);
+        const item=el('button',time(s.start_frame)+' '+s.action);
+        item.dataset.start=s.start_frame;item.dataset.end=s.end_frame;
+        item.title=button.title;item.setAttribute('aria-label',button.getAttribute('aria-label'));
+        item.onclick=()=>seek(s.start_frame);list.append(item);
+    }
+    host.append(bar,list);return host;
+}
+function updateRich(panel,value,at){
+    const host=panel.querySelector('.rich-current');
+    if(!host||!Array.isArray(value.rich_segments))return;
+    const s=value.rich_segments.find(s=>s.start_frame<=at&&at<s.end_frame);
+    if(!s||host.dataset.start===String(s.start_frame))return;
+    host.dataset.start=s.start_frame;host.dataset.end=s.end_frame;
+    host.replaceChildren(el('h3','Current V8 action: '+s.action));
+    const fields=[['Frames',s.start_frame+'–'+s.end_frame+' (end exclusive)'],
+        ['Object',s.object_id||'None'],['Destination',s.destination_id||'None'],
+        ['Observed result',s.observed_result],['What happened',s.what_happened],
+        ['Categories',s.categories.join(', ')||'None'],['Recovery',s.recovery||'None'],
+        ['Review required',s.review_required?'Yes':'No'],['Uncertainty',s.uncertainty||'None']];
+    for(const [label,text]of fields){const p=el('p');p.append(el('strong',label+': '),document.createTextNode(text));host.append(p)}
+    for(const item of s.evidence)host.append(el('p','Frame '+item.frame+' / '+item.camera+': '+item.observation,'muted'));
+}
+function updateEnrichment(panel,value,at){
+    const host=panel.querySelector('.failure-detail');
+    if(host){
+        const segment=value.segments.find(s=>s.start_frame<=at&&at<s.end_frame);
+        host.dataset.start=segment.start_frame;host.dataset.end=segment.end_frame;
+        host.replaceChildren();
+        if(segment.failure){
+            const s=value.failure_annotations.find(s=>s.start_frame===segment.start_frame&&s.end_frame===segment.end_frame);
+            host.append(el('h3','Failure annotation'),el('p','Categories: '+s.categories.join(', '),'categories'),el('p',s.explanation,'explanation'));
+        }else host.append(el('p','No failure is established in this interval.','muted'));
+    }
+    const label=panel.querySelector('.repeat-consensus');
+    if(label){
+        const available=current.teachers.v8, expected=data.side_repeats?.v8||3;
+        if(available.length<expected)label.textContent='Repeat agreement pending: '+available.length+'/'+expected+' responses.';
+        else{
+            const positives=available.filter(t=>t.segments.find(s=>s.start_frame<=at&&at<s.end_frame).failure).length;
+            label.textContent=positives===0?'3/3 non-failure at this frame':positives===3?'3/3 failure at this frame':'Repeat disagreement: '+positives+'/3 failure at this frame';
+            const agreement=current.repeatability;
+            if(agreement?.complete){label.dataset.episodeExact=String(agreement.binary_exact_3_of_3);label.textContent+=' · Whole episode: '+(agreement.binary_exact_3_of_3?'3/3 identical':'repeats differ')}
+        }
+    }
+}
+function position(f){frame=Math.max(0,Math.min(current.n_frames-1,Math.round(f)));$('scrub').value=frame;$('clock').textContent=time(frame)+' / '+time(current.n_frames)+' · Frame '+frame+' of '+(current.n_frames-1);for(const t of ['v8','v9']){const panel=$('teachers').querySelector('.'+t),value=trace(t);if(!panel||!value)continue;panel.dataset.frame=frame;const segment=value.segments.find(s=>frame>=s.start_frame&&frame<s.end_frame),label=panel.querySelector('.current-label');label.textContent=segment.failure?'Failure':'Non-failure';label.className='current-label '+(segment.failure?'failure':'nonfailure');panel.querySelector('.interval').textContent=time(segment.start_frame)+'–'+time(segment.end_frame)+' · Frames '+segment.start_frame+'–'+segment.end_frame;panel.querySelectorAll('[data-start]').forEach(x=>x.classList.toggle('active',frame>=Number(x.dataset.start)&&frame<Number(x.dataset.end)));updateAction(panel,value,frame);updateRich(panel,value,frame);updateEnrichment(panel,value,frame);panel.querySelector('.cursor').style.left=(frame/current.n_frames*100)+'%'}$('previousBoundary').disabled=!revealed||frame===0;$('nextBoundary').disabled=!revealed||frame===current.n_frames-1}
+function seek(f){pause();position(f);pendingSeek=frame/current.fps;for(const v of videos)if(v.readyState>=1)v.currentTime=Math.min(pendingSeek,Math.max(0,v.duration-0.001))}
+async function play(){if(playing){pause();return}if(frame>=current.n_frames-1)seek(0);playing=true;$('play').textContent='Pause';for(const v of videos)v.playbackRate=Number($('speed').value);try{await Promise.all(videos.map(v=>v.play()))}catch(_){pause();$('mediaError').textContent='Playback could not start. Try Play after the cameras load.'}}
+function render(){const host=$('teachers');host.replaceChildren();if(!revealed){host.append(el('section','Blind review is enabled. Choose “Show labels for all episodes” to compare V8 and V9.1 Sol annotations.','panel muted'));return}for(const t of ['v8','v9']){const panel=el('section',undefined,'panel teacher '+t),header=el('header',undefined,'row');header.append(el('h2',name(t)));const label=el('label','Repeat '),select=el('select');select.id=t+'Repeat';select.setAttribute('aria-label',name(t)+' repeat');for(const r of current.teachers[t]){const option=el('option',String(r.repeat));option.value=r.repeat;select.append(option)}if(!trace(t)&&current.teachers[t].length)selected[t]=current.teachers[t][0].repeat;select.value=selected[t];select.disabled=!current.teachers[t].length;select.onchange=()=>{selected[t]=Number(select.value);render();position(frame)};label.append(select);header.append(label);panel.append(header);const value=trace(t);if(!value){panel.append(el('p','No validated response yet.','muted'));host.append(panel);continue}panel.append(el('p','','current-label'),el('p','','interval muted'));const bar=el('div',undefined,'timeline');for(const s of value.segments){const button=el('button',s.failure?'Failure':'Non-failure',s.failure?'fail':'');button.style.width=((s.end_frame-s.start_frame)/current.n_frames*100)+'%';button.dataset.start=s.start_frame;button.dataset.end=s.end_frame;button.title=(s.failure?'Failure':'Non-failure')+' · '+time(s.start_frame)+'–'+time(s.end_frame);button.setAttribute('aria-label',name(t)+' '+button.title);button.onclick=()=>seek(s.start_frame);bar.append(button)}bar.append(el('span',undefined,'cursor'));const boxes=actionBoxes(value,t);if(boxes){bar.classList.add('with-actions');bar.append(boxes)}panel.append(bar);actionReadout(panel,value);if(Array.isArray(value.failure_annotations)){panel.append(el('p','','badge repeat-consensus'),el('div',undefined,'rich-current failure-detail'),failureAnnotationList(value))}if(value.rich_segments){panel.append(el('p','Binary timeline derived from V8; original action boundaries and review flags are preserved below.','muted'),actionTimeline(value),el('div',undefined,'rich-current'))}const table=el('table'),thead=el('thead'),head=el('tr');for(const title of ['Start','End','Label'])head.append(el('th',title));thead.append(head);table.append(thead);const body=el('tbody');for(const s of value.segments){const row=el('tr');row.dataset.start=s.start_frame;row.dataset.end=s.end_frame;row.tabIndex=0;row.setAttribute('aria-label','Jump to '+time(s.start_frame));row.onclick=()=>seek(s.start_frame);row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();seek(s.start_frame)}};row.append(el('td',time(s.start_frame)),el('td',time(s.end_frame)),el('td',s.failure?'Failure':'Non-failure',s.failure?'failure':'nonfailure'));body.append(row)}table.append(body);panel.append(table);if(value.native_markdown){const full=el('details'),summary=el('summary','Complete native Markdown'),pre=el('pre',value.native_markdown,'native-markdown');full.append(summary,pre);panel.append(full)}const link=el('a','Download native Markdown','download');link.href=value.markdown;link.download='';const download=el('p');download.append(link);panel.append(download);host.append(panel)}}
+function persist(){if(!current)return;notes[current.id]={exposed:Boolean(notes[current.id]?.exposed||revealed),reviewer:$('reviewer').value,text:$('notes').value,frame,v8:selected.v8,v9:selected.v9};try{localStorage.setItem(storageKey,JSON.stringify(notes))}catch(_){}}
+function choose(id){
+    persist();
+    pause();
+    current=data.episodes.find(e=>e.id===id)||data.episodes[0];
+    const url=new URL(location.href);
+    url.searchParams.set('episode',current.id);
+    url.searchParams.delete('frame');
+    history.replaceState(null,'',url);
+    $('episode').value=current.id;
+    $('task').textContent=current.task;
+    $('split').textContent=current.split;
+    $('lab').textContent=current.lab;
+    $('scrub').max=current.n_frames-1;
+    $('mediaError').textContent='';
+    $('videos').replaceChildren();
+    videos=[];
+    const n=notes[current.id]||{};
+    frame=Math.max(0,Math.min(current.n_frames-1,n.frame||0));
+    pendingSeek=frame/current.fps;
+    $('reviewer').value=n.reviewer||'';
+    $('notes').value=n.text||'';
+    $('saveStatus').textContent='';
+    selected={v8:n.v8||1,v9:n.v9||1};
+    for(const [index,info]of current.videos.entries()){
+        const figure=el('figure'),video=el('video');
+        figure.append(el('figcaption',info.camera+' · '+info.description));
+        video.src=info.url;
+        video.muted=true;
+        video.playsInline=true;
+        video.preload='metadata';
+        video.setAttribute('aria-label',info.camera+' video');
+        video.onloadedmetadata=()=>video.currentTime=Math.min(pendingSeek,Math.max(0,video.duration-0.001));
+        video.onerror=()=>{$('mediaError').textContent='Could not decode '+info.camera};
+        if(index===0)video.onended=()=>{pause();position(current.n_frames-1)};
+        figure.append(video);
+        $('videos').append(figure);
+        videos.push(video);
+    }
+    render();
+    position(frame);
+    paintRunStatus();
+}
+function boundaries(){if(!revealed)return [0,current.n_frames-1];return [...new Set([0,current.n_frames-1,...['v8','v9'].flatMap(t=>[...(trace(t)?.segments||[]),...(trace(t)?.rich_segments||[])].map(s=>s.start_frame))])].sort((a,b)=>a-b)}
+function markdown(){persist();let result='# Sol prompt comparison review\n\n- Recorded: '+new Date().toISOString()+'\n- Review primary manifest: '+data.manifest_sha256+'\n- Review type: original-video review; teacher exposure recorded per episode\n\n';for(const e of data.episodes){const n=notes[e.id];if(!n)continue;result+='## '+e.id+'\n\n- Reviewer: '+(n.reviewer||'Not supplied')+'\n- Teacher labels viewed: '+(n.exposed?'Yes; teacher-assisted':'Not revealed in this browser')+'\n- V8 Sol repeat: '+n.v8+'\n- V9.1 - Sol repeat: '+n.v9+'\n- Label source run: '+(e.source_run||'Current run')+'\n- Label source manifest: '+(e.source_manifest_sha256||data.manifest_sha256)+'\n- Original source frame: '+n.frame+'\n\n'+(n.text||'No notes recorded.')+'\n\n'}return result}
+function animate(){if(playing&&videos.length&&!videos[0].paused){const master=videos[0];position(Math.floor(master.currentTime*current.fps+0.001));for(const v of videos.slice(1))if(v.readyState>=2&&Math.abs(v.currentTime-master.currentTime)>0.10)v.currentTime=master.currentTime}requestAnimationFrame(animate)}
+for(const e of data.episodes){const option=el('option',e.id+' · '+e.task);option.value=e.id;$('episode').append(option)}$('reveal').onclick=()=>setLabelVisibility(!revealed);$('episode').onchange=()=>choose($('episode').value);$('play').onclick=play;$('restart').onclick=()=>seek(0);$('back').onclick=()=>seek(frame-1);$('forward').onclick=()=>seek(frame+1);$('scrub').oninput=()=>seek(Number($('scrub').value));$('speed').onchange=()=>videos.forEach(v=>v.playbackRate=Number($('speed').value));$('previousBoundary').onclick=()=>seek(boundaries().filter(f=>f<frame).at(-1)??0);$('nextBoundary').onclick=()=>seek(boundaries().find(f=>f>frame)??current.n_frames-1);for(const id of ['notes','reviewer'])$(id).addEventListener('input',persist);$('timestamp').onclick=()=>{$('notes').value+=($('notes').value?'\n':'')+'At '+time(frame)+' (frame '+frame+'): ';persist()};$('saveNotes').onclick=async()=>{try{const response=await fetch('review-notes',{method:'POST',headers:{'Content-Type':'text/markdown;charset=utf-8'},body:markdown()});if(!response.ok)throw new Error();$('saveStatus').textContent='Saved Markdown: '+await response.text()}catch(_){$('saveStatus').textContent='Could not save. Download Markdown to keep these notes.'}};$('downloadNotes').onclick=()=>{const url=URL.createObjectURL(new Blob([markdown()],{type:'text/markdown;charset=utf-8'})),a=el('a');a.href=url;a.download='sol-v8-v9-review.md';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT','BUTTON'].includes(document.activeElement.tagName))return;if(e.code==='Space'){e.preventDefault();play()}else if(e.code==='ArrowRight'){e.preventDefault();seek(frame+1)}else if(e.code==='ArrowLeft'){e.preventDefault();seek(frame-1)}});const params=new URLSearchParams(location.search);choose(params.get('episode')||data.episodes[0].id);if(/^\d+$/.test(params.get('frame')||''))seek(Number(params.get('frame')));requestAnimationFrame(animate);
+if(params.get('labels')==='show'||params.get('labels')==='hide'){
+    setLabelVisibility(params.get('labels')==='show');
+    const url=new URL(location.href);
+    url.searchParams.delete('labels');
+    history.replaceState(null,'',url);
+}
+paintRunStatus();$('episode').addEventListener('change',paintRunStatus);setInterval(refreshLabels,10000);
+</script></body></html>

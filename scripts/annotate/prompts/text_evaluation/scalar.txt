@@ -1,0 +1,14 @@
+Compare the semantic assertions in two robot-action descriptions. Evaluate text agreement, not video correctness or writing quality. The descriptions are anonymized. Treat the supplied task and identity descriptions as context or model assertions, not independently verified ground truth.
+
+Preserve operation, actor/object roles, object identity, destination, physical result, task mismatch, environmental effects, negation, event order, and uncertainty. An attempted operation does not establish its physical result. Do not infer success from a command or from the requested task. Do not penalize harmless wording, grammatical changes, or verbosity that preserves the same assertions. Resolve identifier aliases only when context supports the mapping. Without a mapping, different local identifiers may remain unresolved.
+
+For each pair, choose one relation:
+- equivalent: both descriptions assert the same material facts and uncertainty.
+- compatible_difference: no direct contradiction, but asserted facts, scope, referents, or detail differ.
+- contradiction: the descriptions make incompatible assertions about the same fact, including conflicting physical outcomes, spatial relations, event order, or certainty.
+- unrelated: no meaningful shared action assertions.
+- unresolved: material identity or semantic correspondence cannot be determined from the supplied text/context.
+
+Give an integer semantic agreement score from 0 to 100. Zero means no meaningful shared assertions; 100 means complete semantic equivalence. Identical text must score 100. Intermediate values reflect the amount of shared asserted meaning, not a probability that a description is correct. A high overlap score does not erase a contradiction; report the relation separately. Explain the decisive matched or differing assertion concisely.
+
+Return only JSON with one key pairs, an array containing exactly one object per supplied pair_id. Each object has exactly pair_id, relation, score, and rationale. Do not include expected labels, extra commentary, or model identities.

@@ -1,0 +1,88 @@
+Annotate the ENTIRE episode as consecutive segments with two independent labels:
+progress and failure. Every source frame must belong to exactly one segment.
+Progress means actions that you think make progress towards the language task.
+Failure means the failures described in the taxonomy below. Progress and failure
+are NOT mutually exclusive: a robot can advance the task while also causing a
+failure or side effect. Assign both labels explicitly to EVERY segment:
+- progress=true, failure=false: progress without failure
+- progress=false, failure=true: failure without progress
+- progress=true, failure=true: simultaneous progress and failure
+- progress=false, failure=false: neither progress nor failure
+Neither is an explicit label combination, not an unlabeled gap. Do not equate
+lack of progress alone with failure; use the failure definitions below.
+
+Identify all progress and failure periods, including successful episodes. A
+fully successful episode may have no failure, but still needs complete labeled
+coverage. Continuous bad actions form the same failure segment; bad actions
+separated by good actions form separate failure segments. Split the full timeline
+when either label changes or another kind of failure starts. Label both=true when
+progress occurs alongside a failure; do not force an exclusive choice.
+
+The following failure taxonomy and consequence definitions apply to segments
+where failure=true. Their wording is retained from the supplied taxonomy; the
+independent progress/failure and complete-coverage instructions above take
+precedence over any implication that progress and failure must be exclusive.
+
+Each segment should have the following annotations
+
+1. Segment failure description: a free-form language to specify why the robot failed, consisting of two separate fields:
+   1. What happened during the failure and why the robot failed
+   2. What the robot should do to recover
+2. Failure taxonomy: a categorical label, choose from one or more of the following
+   1. Reaching (pre-contact): The robot did not reach the target object or location, so no contact was made. If a grasp just barely misses the object, count this as grasp instead.
+   2. Grasp (at contact): The target object was not grasped properly. Includes slipping, dropping, or an incorrect grasp.
+   3. Manipulation (post contact): The object was grasped but not manipulated as intended. For example, successfully grasping a door handle but failing to open the door.
+   4. Sequencing or semantic: Error in planning or sequencing of actions. This includes executing a related but wrong action, such as pick-and-place of the wrong object.
+   5. Collision: Collision with an obstacle or the environment. This can co-occur with other categories; please select all that apply.
+   6. Task not attempted: The robot made no discernible attempt at the task, e.g. by stalling
+   7. Sudden episode termination: when the episode terminated suddenly, e.g. due to e-step or a maximum episode length cutoff during rollout
+   8. Visible hardware/mechanical issue: Hardware or mechanical problem with the robot (e.g. when the robot arm suddenly falls down or stops).
+   9. Other: A side-effect or failure mode not covered by the categories above. Please describe it in the free-text field.
+3. Start of segment: earliest moment you think the failure is observable
+4. End of this segment: can be when
+   1. You think the robot is recovering from the failure and starting to do “good” actions
+   2. You think another kind of failure is starting
+   3. The end of the episode
+5. Severity: How serious are the consequences of the failure? Consider actual damage and potential damage.
+   1. Low: No meaningful damage or risk of damage. The failure only prevents the current attempt from succeeding.
+      E.g., robot attempts to grasp an object but misses it; robot grasps an empty cup and it topples over but remains safely on the table.
+   2. Medium: Causes some damage, disruption, or meaningful risk of damage, but the environment remains usable and the task can still be completed.
+      E.g., the robot grasps a paper cup too forcefully, leaving visible crush marks on the cup; robot spills water on the table and cleanup is required.
+   3. Catastrophic: Causes significant damage or creates a level of damage that prevents the task/environment from being safely or practically used without repair or replacement.
+      E.g., spilled water damages a laptop; a robot breaks an object or damages the robot itself.
+6. Resetability: How difficult is it to return the environment to a valid state in which the task can be attempted again?
+   1. Immediately reattempt: No intervention is needed; the task can be attempted again immediately.
+      E.g., the robot misses the object and makes a grasp attempt in empty space.
+   2. Needs some resetting, doable: Minor intervention is needed to restore the environment, but it is quick and straightforward.
+      E.g., the robot knocks a cup over but it remains on the table; a person needs to place the cup upright before retrying.
+   3. Hard reset: Substantial intervention is needed to restore the environment, requiring significant time, effort, or multiple recovery steps.
+      E.g., the robot knocks an object behind a cabinet, requiring a person to move furniture or manually recover the object before retrying.
+   4. Unresettable: The environment cannot be restored to a valid state without repair, replacement, or other intervention beyond a normal reset.
+      E.g., the robot breaks an object that is required for the task.
+
+Input and response format:
+The episode task, source frame rate, and source frame indices follow. Images are
+chronological synchronized pairs: external camera then wrist camera, with ordinary
+robot telemetry for each supplied frame. They are sampled every 5 source frames
+plus the final frame. Use source frame indices for timing.
+
+Return only an unfenced JSON object with exactly episode_id and segments.
+Use the supplied episode_id exactly (do not rename the key to id).
+segments must be a nonempty chronological partition of [0,n_frames): first
+start_frame=0, each next start_frame equals the previous end_frame, and the final
+end_frame=n_frames. No gaps, overlaps, omitted pauses, or unlabeled frames.
+Every segment must have exactly these fields:
+start_frame: integer inclusive
+end_frame: integer exclusive
+progress: JSON boolean true or false
+failure: JSON boolean true or false
+what_happened: describe the behavior and why it is progress, failure, both, or neither
+recovery: what the robot should do to recover if failure=true; null otherwise
+categories: one or more identifiers below if failure=true; [] otherwise:
+  reaching, grasp, manipulation, sequencing_semantic, collision,
+  task_not_attempted, sudden_episode_termination, visible_hardware_issue, other
+severity: low, medium, or catastrophic if failure=true; null otherwise
+resetability: immediate, minor_reset, hard_reset, or unresettable if failure=true; null otherwise
+Use 0 <= start_frame < end_frame <= n_frames. A no-failure episode still requires
+progress/neither segments covering its entire duration. These are separate
+judgments: failure=false does not automatically mean progress=true.

@@ -1,5 +1,65 @@
 # Human trajectory annotator
 
+The current [annotation scheme](../../docs/annotation_scheme.md) requires complete
+episode coverage with explicit progress and failure yes/no for each segment.
+The review viewer supports all four combinations: gray neither, green progress
+only, red failure only, and green/red striped both. Confidence and review flags
+remain separate. Earlier A–F responses use the sparse format; their blank
+gaps are unreviewed and are not automatically assigned negative labels.
+The new prompt is `prompts/full_coverage_v1/progress_failure.md`; the separate
+full-coverage rerun preserves earlier frozen experiment runners and responses.
+
+The next-run prompt, `prompts/semantic_coverage_v2/progress_failure.md`, keeps those
+four states and explicitly separates changes in action phase or failure reason,
+even when binary labels remain identical. It restores R-style failure types,
+specific explanations, episode summaries and evidence-backed physical events.
+The viewer shows phase, categories, failure types/reasons and boundary explanations
+when supplied; full event descriptions remain in the Markdown answer. This prompt
+revision runs separately as `frame_selection_semantic_v2` and does not rewrite
+existing responses. It appears as **Failure reasons** and opens by default.
+
+The newer [point/window comparison](../../docs/frame_selection_windows_v1.md)
+opens as **Points vs windows** and supersedes that default. U is uniform GPT, SP/P
+are Gemini point selection and GPT annotation, and SW/W are Gemini window selection
+and GPT annotation. GPT receives equal pair counts and common overview frames in
+all three annotation conditions. The selectors have no semantic segment labels.
+Inspect their Markdown selections and each annotation's model-frame playback.
+
+## A–F API experiment review
+
+For the current Markdown experiment, run from the repository root:
+
+```powershell
+.\.venv-review\Scripts\python.exe scripts\annotate\review_api_experiment.py
+```
+
+The viewer opens **H human-reference evaluation** by default when available, with
+H001-H012 and conditions U, SP, P, SW, W, and H. **H** shows the original human
+reference; its legacy progress/failure/neutral labels are exclusive. U/P/W
+answers link to timestamped human-reference differences and boundary errors.
+See the [H protocol](../../docs/h_pipeline_evaluation_v1.md) for the projection
+used in scoring and the reference limitations. The **Run** selector retains all
+previous experiments. Use `--run outputs/frame_selection_v3` for the original
+A-F run. Review notes remain separate for each run.
+
+The viewer supports all six
+conditions. Playback defaults to **Only frames sent to this model**, using the exact
+input JPEGs and source timestamps. Play, step and seek stay within that condition's
+supplied frame list; omitted frames are skipped and timestamp gaps are preserved by
+holding the preceding sample. Switch to **Full original episode** to inspect all
+source frames. Unrun conditions have no model-input playback. It displays the original Markdown
+answers and costs, and marks timed-out and unrun cells explicitly. Click interval
+boundaries or E's selected frame numbers to seek. Green progress, red failure and
+amber uncertain bars below playback show the selected condition's explicit intervals;
+click a bar to seek, and the active segment updates during playback. Separate rows
+preserve overlapping labels and gaps remain unlabeled. Frame-selection comparisons
+are under **Frames supplied to the models**. Review notes save in browser
+storage per episode/condition; download them as Markdown for a durable copy.
+The viewer makes no API calls and does not change model outputs. Stop with Ctrl+C.
+Use `--port 8767` if needed, or `--prepare-only` to build static review files only.
+
+## Original trajectory editor
+
 `human_annotator.py` is a local browser tool for reviewing a folder of trajectories.
 It works with the observable packs produced by the preprocessing experiments:
 
@@ -74,6 +134,9 @@ ranges use an exclusive end frame, so a segment finished on frame 19 is saved as
 `[start, 20)`. The episode outcome is recorded separately from the segment text.
 Add a note only when a segment is visually uncertain or needs supporting detail.
 The event and per-frame state controls are optional under **Detailed mode**.
+`unknown` is a valid terminal outcome when the recording ends or remains occluded before
+success versus failure can be resolved. It requires a trajectory note explaining that
+terminal uncertainty; do not use it merely because the robot could have succeeded later.
 
 Press **Save annotation** whenever you want a durable copy; saving writes only to the
 selected trajectory folder.

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-23T04:49:01.002406+00:00",
+  "episode": "O002",
+  "task": "Put the spoon in the drawer",
+  "video": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/flora_oopsie_review_3529640/exports/O002/O002_annotated.mp4",
+  "video_sha256": "a18e8211b83dafdf4e40fb6d88c6c48c7a926ccac64446be6a9fab4e87b0dafa",
+  "width": 1920,
+  "height": 1080,
+  "fps": 12.0,
+  "frames": 267,
+  "duration_seconds": 22.25,
+  "native_segments": 55,
+  "camera_count": 3,
+  "dense_sha256": "817ba8fcdbc656d6a7742364d5fcee421f748983f0468f1eeee156141549852d",
+  "rubric_sha256": "9cda3854345444ce66c5f1b0d077a5c382b364fbd158dde447a1132223ac815b",
+  "source_videos": [
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Araya/dit_spoon_drawer/20260803_202227_2_image.mp4",
+      "sha256": "fc9e9afd55537a34aedba0b5b0daf26ff91fa0e43e1973c8bab7e79feef2e801"
+    },
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Araya/dit_spoon_drawer/20260803_202227_2_left_ego_image.mp4",
+      "sha256": "99aee34ef81e6af5a700f1b23d5d52fd302bb6041a657aa15017d17c7e8a8c37"
+    },
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Araya/dit_spoon_drawer/20260803_202227_2_wrist_image.mp4",
+      "sha256": "4393069aaa755e46f38b53d69491f940677487fb596be74f1642fcb5470cbb50"
+    }
+  ],
+  "timing": "Original camera frame i and native label for frame i, at original FPS; no temporal smoothing",
+  "rationale": "Unmodified native dense rationale; normal spans have no native rationale",
+  "episode_excerpt_timing": "Display alignment of explicit timestamps in the separate episode explanation",
+  "validation": {
+    "decoded_output_frames": 267,
+    "all_frame_pts_verified": true,
+    "all_encoded_label_colors_verified": true,
+    "all_camera_pts_verified": true
+  },
+  "human_verified": false,
+  "training_ready": false
+}

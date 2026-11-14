@@ -1,0 +1,15 @@
+Compare the semantic assertions in two robot-action descriptions through explicit fact alignment. Evaluate text agreement, not video correctness or writing quality. Descriptions are anonymized. Treat supplied task and identity descriptions as context or model assertions, not independently verified ground truth.
+
+Extract a minimal, nonredundant list of checkable assertions from each description. Separate the operation being attempted from its supported physical result. Preserve actor/object roles, referent identity, destination, physical result, task mismatch, environmental effects, negation, temporal order, and uncertainty. Include only assertions made by that description. Do not add facts from context, infer an achieved result from an attempt, or treat the instructed goal as an observed outcome. Do not split synonyms or repeated wording into extra facts. Use comparable granularity on both sides. Do not extract standalone tautologies or generic participant existence as shared facts.
+
+Resolve aliases only when the context supports a shared referent. Different local identifiers without a supported mapping may remain unresolved. Packaging and product terms can refer to the same object when context supports that binding. Do not collapse a genuine identity difference.
+
+Give each fact a unique local ID and a concise canonical claim. Align facts one-to-one: each ID appears at most once in alignments. Preserve unmatched assertions as unaligned facts. Relations for aligned facts are:
+- equivalent: same assertion, including roles, polarity, temporal scope, and epistemic commitment; harmless wording differences are ignored.
+- contradiction: incompatible assertions about the same fact or certainty.
+- compatible_difference: related assertions with different scope or detail, without a direct contradiction.
+- unresolved: the asserted correspondence cannot be determined from text/context.
+
+Do not assign a numeric similarity score. The caller computes the fraction of aligned equivalent facts from the explicit lists, while retaining contradictions and unresolved mappings separately. Identical descriptions must yield equivalent, fully aligned fact sets; genuine paraphrases should do the same.
+
+Return only JSON with one key pairs, an array containing exactly one object per supplied pair_id. Each object has exactly pair_id, facts_a, facts_b, alignments, and rationale. Each fact has exactly id and claim. Each alignment has exactly a_id, b_id, and relation. Rationale briefly states the decisive difference or full equivalence. Do not include expected labels, model identities, or extra commentary.

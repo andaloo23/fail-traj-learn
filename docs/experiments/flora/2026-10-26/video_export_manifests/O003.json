@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-23T04:43:55.233822+00:00",
+  "episode": "O003",
+  "task": "pack three grocery objects into a seven eleven bag",
+  "video": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/flora_oopsie_review_3529640/exports/O003/O003_annotated.mp4",
+  "video_sha256": "e0adf80e219d8f3609735e4fc6c2ce48c8920b879a22d1391315f79ab2bb4b0e",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30.0,
+  "frames": 1022,
+  "duration_seconds": 34.06666666666667,
+  "native_segments": 40,
+  "dense_sha256": "817ba8fcdbc656d6a7742364d5fcee421f748983f0468f1eeee156141549852d",
+  "rubric_sha256": "9cda3854345444ce66c5f1b0d077a5c382b364fbd158dde447a1132223ac815b",
+  "source_videos": [
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_aria.mp4",
+      "sha256": "79e5d37671e701ebd20a12431d8b2d17bcf42b934539f216fd457d24b84f016f"
+    },
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_left_wrist.mp4",
+      "sha256": "3d4437a7b516690008a156663e39a7ba5e5e0ccab4e05582b33a68c284cf5585"
+    },
+    {
+      "path": "/mnt/c/Users/LocalPC/dev/fail-traj-learn/outputs/oopsiedata_pilot_v1/source/labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_right_wrist.mp4",
+      "sha256": "f8304649ed8869dee9babf1d084d962d9ed4dff2c1a6c8cbd72de1f8922effbe"
+    }
+  ],
+  "timing": "Original camera frame i and native label for frame i, at original FPS; no temporal smoothing",
+  "rationale": "Unmodified native dense rationale; normal spans have no native rationale",
+  "episode_excerpt_timing": "Display alignment of explicit timestamps in the separate episode explanation",
+  "validation": {
+    "decoded_output_frames": 1022,
+    "all_frame_pts_verified": true,
+    "all_encoded_label_colors_verified": true,
+    "all_camera_pts_verified": true
+  },
+  "human_verified": false,
+  "training_ready": false
+}

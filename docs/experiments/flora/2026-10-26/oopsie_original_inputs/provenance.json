@@ -1,0 +1,360 @@
+{
+  "created_utc": "2026-10-22T23:10:00.273569+00:00",
+  "repo": "OopsieData-Submissions/oopsiedata-v0.1",
+  "revision": "da4b16512b77f7324296a66da7c0067a40539895",
+  "selection_method": "First manifest entry in each of UT_RobIn, Araya/dit_spoon_drawer, Stanford_REAL; structural pilot, not a representative evaluation sample; selected without reading existing annotations.",
+  "episodes": [
+    {
+      "id": "O001",
+      "release_path": "labs/UT_RobIn/20260730_013301.h5",
+      "hdf5_sha256": "e2c8fe7cee6dfd6ff49d473ce9d5c207eeddd1bb028fb0595c29e42a9637773c",
+      "task": "pick cup",
+      "robot_profile": {
+        "policy_name": "pi0.5",
+        "robot_name": "franka_research_3",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 20,
+        "camera_names": [
+          "left",
+          "right",
+          "wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [
+          "base_joint",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6",
+          "wrist_joint"
+        ],
+        "action_space": [
+          "joint_velocity",
+          "gripper_binary"
+        ],
+        "action_joint_names": [
+          "base_joint",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6",
+          "wrist_joint"
+        ],
+        "orientation_representation": null,
+        "robot_state_orientation_representation": "euler_xyz",
+        "controller": null,
+        "gains": {
+          "joint_position": {
+            "kp": null,
+            "kd": null
+          },
+          "joint_velocity": {
+            "kv": null
+          },
+          "osc": {
+            "kp_pos": null,
+            "kd_pos": null,
+            "kp_ori": null,
+            "kd_ori": null
+          }
+        },
+        "intrinsic_calibration_matrix": {
+          "<str>": [
+            null
+          ]
+        },
+        "extrinsic_calibration_matrix": {
+          "<str>": [
+            null
+          ]
+        }
+      },
+      "cameras": [
+        {
+          "camera": "left",
+          "path": "labs/UT_RobIn/20260730_013301_left.mp4",
+          "sha256": "b20527d779fc5c4783e5f38a4e583abf0c3ca6b518814a94860f6fe67a44a9f2",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45
+        },
+        {
+          "camera": "right",
+          "path": "labs/UT_RobIn/20260730_013301_right.mp4",
+          "sha256": "b20527d779fc5c4783e5f38a4e583abf0c3ca6b518814a94860f6fe67a44a9f2",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45,
+          "excluded_duplicate_of": "left"
+        },
+        {
+          "camera": "wrist",
+          "path": "labs/UT_RobIn/20260730_013301_wrist.mp4",
+          "sha256": "94f0adda1aa0ee57c0f7803f308b1c73e0c2aaf2e536222884d359931e854c48",
+          "frames": 50,
+          "fps": 20.0,
+          "width": 1280,
+          "height": 720,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 2.45
+        }
+      ],
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O002",
+      "release_path": "labs/Araya/dit_spoon_drawer/20260803_202227_2.h5",
+      "hdf5_sha256": "ab883ed2475662a5facef7feef9654d655d37bd5d99b3344a63921a54faaf729",
+      "task": "Put the spoon in the drawer",
+      "robot_profile": {
+        "policy_name": "dit",
+        "robot_name": "franka_panda",
+        "is_biarm": false,
+        "uses_mobile_base": false,
+        "gripper_name": "robotiq_2f_85",
+        "control_freq": 12,
+        "camera_names": [
+          "left_ego_image",
+          "wrist_image",
+          "image"
+        ],
+        "robot_state_keys": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "robot_state_joint_names": [],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": null,
+        "orientation_representation": "rotvec",
+        "robot_state_orientation_representation": "rotvec",
+        "controller": "joint_position",
+        "gains": {
+          "joint_position": {
+            "kp": [
+              60.0,
+              45.0,
+              75.0,
+              37.5,
+              52.5,
+              37.5,
+              15.0
+            ],
+            "kd": [
+              6.0,
+              9.0,
+              7.5,
+              7.5,
+              4.5,
+              3.0,
+              1.5
+            ]
+          },
+          "joint_velocity": {
+            "kv": null
+          },
+          "osc": {
+            "kp_pos": null,
+            "kd_pos": null,
+            "kp_ori": null,
+            "kd_ori": null
+          }
+        },
+        "intrinsic_calibration_matrix": {
+          "wrist_image": [
+            [
+              303.317291259766,
+              0,
+              213.494430541992
+            ],
+            [
+              0,
+              303.091979980469,
+              126.208251953125
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "left_ego_image": [
+            [
+              303.748931884766,
+              0,
+              211.100891113281
+            ],
+            [
+              0,
+              302.986785888672,
+              119.37606048584
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "image": [
+            [
+              301.738128662109,
+              0,
+              210.798538208008
+            ],
+            [
+              0,
+              301.576873779297,
+              118.296272277832
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_image.mp4",
+          "sha256": "fc9e9afd55537a34aedba0b5b0daf26ff91fa0e43e1973c8bab7e79feef2e801",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        },
+        {
+          "camera": "left_ego_image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_left_ego_image.mp4",
+          "sha256": "99aee34ef81e6af5a700f1b23d5d52fd302bb6041a657aa15017d17c7e8a8c37",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        },
+        {
+          "camera": "wrist_image",
+          "path": "labs/Araya/dit_spoon_drawer/20260803_202227_2_wrist_image.mp4",
+          "sha256": "4393069aaa755e46f38b53d69491f940677487fb596be74f1642fcb5470cbb50",
+          "frames": 267,
+          "fps": 12.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 22.166666666666668
+        }
+      ],
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    },
+    {
+      "id": "O003",
+      "release_path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000.h5",
+      "hdf5_sha256": "fc5ec4a08c2828aed05dcf7cc48fcc34cc87c261154ae45927900c9cd333101c",
+      "task": "pack three grocery objects into a seven eleven bag",
+      "robot_profile": {
+        "policy_name": "bag_grocery_cotrain",
+        "robot_name": "egoverse_bimanual",
+        "is_biarm": true,
+        "uses_mobile_base": false,
+        "gripper_name": "finray gripper",
+        "control_freq": 30,
+        "camera_names": [
+          "aria",
+          "left_wrist",
+          "right_wrist"
+        ],
+        "robot_state_keys": [
+          "joint_position",
+          "gripper_position",
+          "cartesian_position"
+        ],
+        "robot_state_joint_names": [
+          "left_joint_0",
+          "left_joint_1",
+          "left_joint_2",
+          "left_joint_3",
+          "left_joint_4",
+          "left_joint_5",
+          "right_joint_0",
+          "right_joint_1",
+          "right_joint_2",
+          "right_joint_3",
+          "right_joint_4",
+          "right_joint_5"
+        ],
+        "action_space": [
+          "cartesian_position",
+          "gripper_position"
+        ],
+        "action_joint_names": null,
+        "orientation_representation": "quat",
+        "robot_state_orientation_representation": "quat",
+        "controller": null,
+        "gains": null,
+        "intrinsic_calibration_matrix": null,
+        "extrinsic_calibration_matrix": null
+      },
+      "cameras": [
+        {
+          "camera": "aria",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_aria.mp4",
+          "sha256": "79e5d37671e701ebd20a12431d8b2d17bcf42b934539f216fd457d24b84f016f",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        },
+        {
+          "camera": "left_wrist",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_left_wrist.mp4",
+          "sha256": "3d4437a7b516690008a156663e39a7ba5e5e0ccab4e05582b33a68c284cf5585",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        },
+        {
+          "camera": "right_wrist",
+          "path": "labs/Stanford_REAL/bag_grocery_cotrain_zarr_episode_000000_right_wrist.mp4",
+          "sha256": "f8304649ed8869dee9babf1d084d962d9ed4dff2c1a6c8cbd72de1f8922effbe",
+          "frames": 1022,
+          "fps": 30.0,
+          "width": 224,
+          "height": 224,
+          "first_pts_seconds": 0.0,
+          "last_pts_seconds": 34.03333333333333
+        }
+      ],
+      "video_clock_check": "matching zero-based constant-rate PTS; physical capture synchronization not independently verified"
+    }
+  ],
+  "rubric_origin": "Researcher-defined generic criterion, not an NVIDIA benchmark rubric",
+  "source_annotations_used_as_model_input": false,
+  "human_verified": false,
+  "training_ready": false
+}

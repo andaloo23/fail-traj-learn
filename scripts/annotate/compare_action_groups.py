@@ -98,12 +98,12 @@ def compare(left_value, right_value):
 def run(run_dir, left_key, right_key, destination, right_run=None):
     folders, manifests = io.comparison_sources(run_dir, left_key, right_key, right_run)
     manifest, right_manifest = manifests
-    if left_key == right_key:
-        raise ValueError('Choose two distinct model keys in the source manifest')
+    if left_key == right_key and folders[0] == folders[1]:
+        raise ValueError('Same-model comparisons require two distinct source runs')
     episodes, unavailable, artifacts = [], [], {}
     for ep in manifest['episodes']:
         values = []
-        for model, folder, saved in zip((left_key, right_key), folders, manifests):
+        for side, model, folder, saved in zip(('left', 'right'), (left_key, right_key), folders, manifests):
             stem = ep['id'] + '_' + model
             slot = folder / 'attempts' / (stem+'.json')
             path = folder / (stem+'_annotation.json')
@@ -114,7 +114,8 @@ def run(run_dir, left_key, right_key, destination, right_run=None):
             value = io.load(path)
             validate_atomic(value, ep, label_mode=saved['settings'].get('label_mode', 'progress_failure'))
             values.append(value)
-            artifacts[path.name] = io.digest(path)
+            artifact_key = side + '/' + path.name if left_key == right_key else path.name
+            artifacts[artifact_key] = io.digest(path)
         if len(values) == 2:
             episodes.append(dict(id=ep['id'], task=ep['task'], fps=ep['fps'],
                                  n_frames=ep['n_frames'], **compare(*values)))

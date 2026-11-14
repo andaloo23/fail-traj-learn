@@ -1,0 +1,3 @@
+# Preserve frozen evidence bytes, including original line endings and hashes.
+*.json -text whitespace=cr-at-eol
+*.jsonl -text whitespace=-blank-at-eof,cr-at-eol

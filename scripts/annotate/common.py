@@ -1,9 +1,8 @@
-"""Shared helpers for the VLM annotation pipeline: dataset access, episode views, chunking, paths.
+"""Recorded-dataset helpers for rebuilding the historical Sol V8 distillation release.
 
-Conventions (see docs/proposal_overview.md section 4):
-  * the annotation unit is the recorder's 10-step action chunk (`chunk.index` column, 0.5 s at 20 fps);
-  * the VLM only ever sees observation.images.*, observation.state, action and the episode outcome.
-    priv.* columns are the ORACLE and are used only for routing (route.py) and evaluation (eval_vs_oracle.py).
+New labeling uses real OopsieData through scripts/distill/oopsie_common.py.
+These helpers preserve camera decoding and the release's original sampling
+corrections; they do not run simulation or train a policy.
 """
 import json
 import os
