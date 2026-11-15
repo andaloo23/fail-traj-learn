@@ -40,9 +40,14 @@ def main():
 
         def at_frame(episode,frame):
             page.evaluate("f=>{const s=document.getElementById('scrub');s.value=f;s.dispatchEvent(new Event('input'))}",frame)
-            page.wait_for_function('''p=>Array.from(document.querySelectorAll('video')).every(
-                v=>v.readyState>=2&&!v.seeking&&!v.error&&Math.abs(v.currentTime-p.time)<p.tolerance)''',
-                arg=dict(time=frame/episode['fps'],tolerance=max(.02,.2/episode['fps'])))
+            target=episode['frame_times'][frame] if episode.get('frame_times') else frame/episode['fps']
+            try:
+                page.wait_for_function('''p=>Array.from(document.querySelectorAll('video')).every(
+                    v=>v.readyState>=2&&!v.seeking&&!v.error&&Math.abs(v.currentTime-p.time)<p.tolerance)''',
+                    arg=dict(time=target,tolerance=max(.02,.2/episode['fps'])))
+            except Exception as error:
+                state=page.evaluate("()=>({episode:current.id,frame,actualTarget:typeof frameSeconds==='function'?frameSeconds(frame):frame/current.fps,videos:videos.map(v=>({time:v.currentTime,duration:v.duration,ready:v.readyState,seeking:v.seeking,error:v.error?.message}))})")
+                raise AssertionError(f"Seek failed for {episode['id']} frame {frame}, expected {target}: {state}") from error
             assert page.locator('#scrub').input_value()==str(frame)
 
         # Plain URL, fresh browser: all splits show every available teacher/repeat.

@@ -1,10 +1,16 @@
 # Fresh Corral sample and Astra rich failure pilot
 
-Status on 2026-11-12: the user reauthenticated TACC. The 1,000-episode sample is
-frozen, collected from Corral, and all source checksums match. All 10 pilot episodes
-are prepared. Portkey rejected token preflight with HTTP 401, Invalid API Key;
-the user has been asked to update `.env.portkey`. No model generation has been
-submitted. Runtime details are in the run's `sample.md` and preserved receipts.
+Status on 2026-11-14: the replacement Portkey key authenticated and all ten
+prepared Astra pilot requests completed using the frozen rich V8.2 prompt. Every
+native response records `gpt-6-astra` and passed schema validation. Browser checks
+on the actual pilot passed all ten episodes, 44 frame positions and 50 judgment
+field checks with zero JavaScript errors. Recorded-usage inference estimate: $4.18
+at checked public rates; label correctness awaits human review. The 1,000-episode
+Corral sample remains frozen and checksum verified. The approved full-dataset
+Batch expansion is running as documented below. Pilot review is at
+`http://127.0.0.1:8808/review.html`; full-run progress is at
+`http://127.0.0.1:8809/review.html`. Runtime details are in each run's `report.md`
+and preserved receipts. Historical authentication failures remain preserved.
 
 Verified source: `/corral/utexas/IRI26024/oopsiedata/OopsieData-Submissions/oopsiedata-v0.1`.
 Its episode inventory checksum matches the local released corpus exactly, with
@@ -133,3 +139,90 @@ recovery, severity and resetability, plus native Markdown downloads and notes.
 
 Receipts: `outputs/corral_astra_v8_2_ui_fixture_v1/binary_checks/browser_check.json`
 and `outputs/corral_astra_v8_2_ui_fixture_v1/judgment_checks/severity_resetability_check.json`.
+
+## Approved full-dataset expansion, 2026-11-14
+
+After viewing the ten-episode pilot, the user approved generating the full frozen
+1,000-episode dataset. The versioned expansion is
+`outputs/corral_astra_rich_failure_v8_2_1000_batch_v2`, driven by
+`scripts/distill/corral_astra_v8_2_batch.py`. The original selection, pilot prompt,
+requests, native responses and human review notes remain preserved. The ten pilot
+responses are reused with recorded source request/response hashes; only the other
+990 episodes need new teacher responses. All labels retain actual native model
+identity. This approval does not authorize training or another sample.
+
+The rich V8.2 prompt text, low reasoning effort, 12,000-token output allowance,
+per-camera JPEG95 preprocessing and 280-pixel maximum camera side are unchanged.
+New requests use the Portkey Responses Batch endpoint with explicit-only caching:
+the exact shared prompt ends at a cache breakpoint; changing episode metadata and
+images follow it without cache writes. The first three new dataset episodes
+successfully returned native `gpt-6-astra` Markdown. Actual usage confirmed a
+1,912-token shared cache prefix, with no cache writes for episode images.
+
+The operational ceiling is USD 800 in conservative committed Batch generation
+cost. It assumes no cache hits and the full output allowance; it is a submission
+guard, not an invoice. Queue occupancy is capped at 2.5 million input tokens.
+Requests and batch files are frozen and hashed before submission. Batch creation
+and model generation are never automatically resent after an uncertain outcome.
+Token counting, read-only polling and immutable staging uploads may retry with
+retained attempt records; staging retries reuse the same idempotency key and exact
+file bytes. JSON request bodies above a conservative 75 MB transport threshold
+use uploaded images referenced by file ID, targeting a 50 MB body. The threshold
+is operational: requests up to 71 MB succeeded while bodies over 120 MB repeatedly
+failed at the gateway. It is not a claimed provider specification. If provider
+MIME detection rejects a valid WEBP, a lossless PNG staging copy is allowed only
+after verifying identical decoded RGB bytes; both source and transport hashes
+are retained. No frame is silently dropped, sampled or replaced.
+
+Robot state counts and native video observations are retained separately. For
+video-only annotation, camera-agreed counts differing by one observation from
+robot states are supported. Nonuniform native presentation timestamps are retained
+and supplied to the teacher and viewer rather than rejected against average FPS.
+Earlier technical preparation attempts remain archived. This preserves all actual
+video observations without inventing a missing observation.
+
+Sixty-three episodes exceed the 1,500-image request limit in the reviewed per-frame
+format; the user has been asked whether to package these as pixel-preserving
+chronological contact sheets. They remain held pending that choice. Any episode
+still above Astra's 922,000-input-token limit also remains held; no truncation or
+silent multi-call synthesis is allowed. A pixel-verified packaging preview is in
+the expansion's `packaging_preview/` directory.
+
+Full-run review: `http://127.0.0.1:8809/review.html`. The established reviewer keeps
+labels visible by default, persistent blind mode, original camera video playback,
+source-frame stepping, per-segment severity/resetability and Markdown notes.
+The native-timestamp viewer and shared browser checker support explicit frame
+times, with the former FPS behavior as a fallback for historical runs. Browser
+checks must be rerun on all available labels after collection stabilizes.
+
+The runner exports currently validated native Markdown assistant targets inside an
+operational `dataset.jsonl`, with request/response hashes and native teacher model
+identity. `dataset_manifest.json` explicitly reports whether all 1,000 targets
+are complete; neither schema checks nor successful export establishes human label
+correctness. No training is launched.
+
+Resume and inspect using the existing environment:
+
+```powershell
+.venv-oopsie-distill/Scripts/python.exe scripts/distill/corral_astra_v8_2_batch.py run
+.venv-oopsie-distill/Scripts/python.exe scripts/distill/corral_astra_v8_2_batch.py review
+.venv-oopsie-distill/Scripts/python.exe scripts/distill/corral_astra_v8_2_batch.py repair-transport
+.venv-oopsie-distill/Scripts/python.exe scripts/distill/corral_astra_v8_2_batch.py finalize-review
+```
+
+Check `queue_worker.lock` and its PID before resuming; an existing live worker
+owns the queue. `queue_status.json`, `preparation_audit.json`, `dataset_manifest.json`
+and the append-only native trace artifacts describe actual progress. An unresolved
+batch submission journal requires inspection before any resend. Reviewable progress
+is also in `report.md` and the ordinary viewer URL.
+
+The transport repair helper only handles nongenerating staging/preflight failures;
+the queue remains the sole batch-submission owner. The review finalizer waits for
+runnable batch results to stabilize, checks the ordinary viewer across all 1,000
+episodes and available repeats, and records both full browser and judgment-field
+check results. Initial live checks covered playback readiness in all 1,000 episodes
+and 70 judgment fields with zero JavaScript errors; an initial frame-seek check
+timed out while preparation metadata was still changing. Full checks are therefore
+pending stabilization, not reported as generally passing. Sixteen local tests
+passed for schema, source clocks, exact-pixel transport, cache boundaries, cost
+guards, frozen-request integrity, teacher identity and submission journals.
