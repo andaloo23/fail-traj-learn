@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0915",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in left_ego_image and remains lowered at frame 163 in left_ego_image and image. The robot approaches the door, but its gripper lifts away without closing it around frames 100\u2013105. It subsequently approaches again during frames 106\u2013163; completion of this renewed attempt is unconfirmed, rather than visibly established as another failed acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 100,
+      "failure": false
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 106,
+      "failure": true
+    },
+    {
+      "start_frame": 106,
+      "end_frame": 164,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 100,
+      "end_frame": 106,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following positioning at the oven door, the gripper lifts away empty during frames 100\u2013105 in left_ego_image while the door remains lowered; image also shows the unchanged open door. This establishes unsuccessful acquisition for the closing attempt, although the precise contact or reason for the miss is not visible.",
+      "recovery": "Reposition the gripper at the door handle or a suitable accessible edge, establish secure contact, and follow the door\u2019s hinge motion upward to close it; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The door remains open, with no visible damage, displaced unrelated objects, or meaningful damage risk from the failed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in place, so another acquisition attempt can proceed without an environmental reset or human intervention."
+    }
+  ]
+}

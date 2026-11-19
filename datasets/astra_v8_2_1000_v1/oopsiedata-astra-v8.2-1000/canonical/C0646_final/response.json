@@ -1,0 +1,109 @@
+{
+  "id": "resp_035b79241a77a473016afbe60b485c87d1b9a35009e42f5e2c",
+  "object": "response",
+  "created_at": 1794893323,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893328,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_035b79241a77a473016afbe60e066487d1bec18ebb7dcf1711",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0646\n\n## Episode annotation\n\n- Language task: align one of the two cubes to the top right corner of the box\n- Success label: failure\n- Outcome evidence: Frames 0, 350, 700, 1050, 1400, 1750 and 1999 in top show the cubes remaining in the same arrangement, with no cube moved into the requested corner. In left and right, the grippers remain outside the box without discernible acquisition or alignment. Completion is not confirmed; the observed failure is sustained lack of task-directed action, not a visibly failed grasp.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 2000 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-2000\n- Categories: task_not_attempted\n- Explanation: Across the approximately 66.6-second episode, no discernible approach, contact or cube manipulation advances the task. Frames 0, 350, 700, 1050, 1400, 1750 and 1999 in top show an unchanged cube arrangement and grippers outside the box; left and right likewise show no acquisition. This is one continuous period of unproductive behavior, without an intervening recovery. Its cause is not visible, and the recording ending does not establish abnormal termination.\n- Recovery: Identify the requested corner, approach an accessible cube with clearance from the box walls, then grasp or controllably push it into alignment and verify its position; no environmental human intervention is visibly needed.\n- Severity: low\n- Severity evidence: No collision, damage or disruptive object displacement is visible; the consequence is failure to make task progress.\n- Resetability: immediate\n- Resetability evidence: The cubes and box remain undisturbed and available for an attempt, so no physical scene reset is needed."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20182,
+    "input_tokens_details": {
+      "cache_write_tokens": 2174,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 2174
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 393,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20575
+  },
+  "user": null,
+  "metadata": {}
+}

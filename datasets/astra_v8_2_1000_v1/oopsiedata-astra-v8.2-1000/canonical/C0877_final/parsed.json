@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0877",
+  "language_task": "Move the hammer to the plate. Then, grasp the mushroom.",
+  "success_label": "success",
+  "outcome_evidence": "In image_primary, the robot lifts and carries the hammer toward the plate in frames 30\u201339, then releases it; frames 63\u201383 show the hammer resting on the plate as the empty gripper withdraws. The robot subsequently approaches the mushroom in frames 84\u201396, closes around it in frames 97\u201399, and visibly lifts it in frames 100\u2013101. No failed acquisition, harmful side effect, or clearly sustained unproductive behavior is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 102,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

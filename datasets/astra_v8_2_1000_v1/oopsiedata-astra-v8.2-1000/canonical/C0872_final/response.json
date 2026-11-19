@@ -1,0 +1,109 @@
+{
+  "id": "resp_0610118cde55a1e0016af92dc3b01887d28e690b195d8375bc",
+  "object": "response",
+  "created_at": 1794715075,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715081,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0610118cde55a1e0016af92dc4f4c487d2acae5ac4d5b82906",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0872\n\n## Episode annotation\n\n- Language task: pick up the corn\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the corn remains on the tabletop throughout frames 0\u201349, while the gripper repeatedly opens and closes over the separate bowl behind it (for example, frames 2\u201310, 29\u201336 and 43\u201349). The robot never visibly approaches or lifts the corn; this is sustained non-task-directed behavior, not merely an unconfirmed lift at recording end.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 50 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-50\n- Categories: task_not_attempted\n- Explanation: In right_shoulder_cam, the gripper stays over the bowl and repeatedly cycles its fingers throughout frames 0\u201349, rather than moving toward the clearly separate corn on the table. This continuous unproductive behavior makes no visible progress toward picking up the corn. The images do not establish possession of a bowl object or a mechanical malfunction.\n- Recovery: Stop cycling the gripper, move clear of the bowl, align the open fingers around the corn, then close and lift while checking retention; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The corn remains undisturbed and no damage, spill or other meaningful harmful consequence is visible in right_shoulder_cam through frame 49.\n- Resetability: immediate\n- Resetability evidence: The corn remains accessible in its original tabletop position, so another task-directed attempt requires no visible environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 6324,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6672
+  },
+  "user": null,
+  "metadata": {}
+}

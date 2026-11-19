@@ -1,0 +1,109 @@
+{
+  "id": "resp_00bb1e342be9a575016afcb91b774c87d18b9942711861c024",
+  "object": "response",
+  "created_at": 1794947355,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947360,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_00bb1e342be9a575016afcb91e055887d1abe29b80d6b912bc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0789_W05\n\n## Episode annotation\n\n- Language task: Pick up the stuffed animal and place it in the box.\n- Success label: success\n- Outcome evidence: In external and wrist frames 1400\u20131571, the stuffed animal remains supported in the box, with parts protruding above its rim, while the empty gripper stays nearby without visibly disturbing it. Frames 1400, 1480, 1500 and 1571 show the maintained goal state and no observed side effects. Stationary behavior with the animal already placed does not establish task failure. This is a provisional window outcome: the earlier pickup and release are not directly supplied, so their execution cannot be independently assessed here.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1400 | 1572 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 23426,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 186,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 23612
+  },
+  "user": null,
+  "metadata": {}
+}

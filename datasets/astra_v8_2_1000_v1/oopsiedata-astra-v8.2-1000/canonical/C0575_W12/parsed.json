@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0575_W12",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image frames 3850\u20133918, the gripper finishes releasing the pink bowl above the other bowl in the right tray. By frames 3921\u20133940, it withdraws empty while the bowls remain nested in that tray, confirming independently supported placement. Frames 4050\u20134199 show the cans in the upper blue tray, the bowls in the right red tray, and no remaining loose task objects on the visible table. No local failure or side effect is visible. This success label is provisional for the supplied window; earlier execution beyond frames 3848\u20133849 and later execution are not supplied.",
+  "segments": [
+    {
+      "start_frame": 3850,
+      "end_frame": 4200,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

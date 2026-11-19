@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0401_W03",
+  "language_task": "stack the bowls",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not a visibly failed stacking attempt. In left at frames 700, 775 and 875, the turquoise bowl overlaps pale/pink bowl rims beside the gripper; top at frames 775, 925 and 1000 shows the bowl assembly changing position with the arm. At frame 1049 in left and top, the gripper remains at the bowls, without a clearly completed placement and withdrawal establishing a finished stack. The bowls already overlap at the window's start, so the initial stacking state is ambiguous. Earlier execution beyond context frames 698\u2013699 and later execution are unavailable; this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

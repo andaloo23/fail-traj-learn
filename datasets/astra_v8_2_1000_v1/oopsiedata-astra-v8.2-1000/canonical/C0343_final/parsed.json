@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0343",
+  "language_task": "Pack the coffee pods onto the wooden tray.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot clears the banana from the tray (frames 87\u2013200, overhead_cam and wrist_cam), then transfers three coffee pods onto it, visible after releases at frames 375, 625 and 765. The fourth acquisition fails: the pod remains on the table while the gripper withdraws empty (frames 839\u2013855, both cameras). The robot subsequently moves over the tray and opens its empty gripper (frames 902\u2013908, wrist_cam). At frame 1019, overhead_cam still shows three pods on the tray and one on the table; this is a visibly incomplete task following a failed attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 836,
+      "failure": false
+    },
+    {
+      "start_frame": 836,
+      "end_frame": 909,
+      "failure": true
+    },
+    {
+      "start_frame": 909,
+      "end_frame": 1020,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 836,
+      "end_frame": 909,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During closure, the fourth pod shifts out of the grasp (frames 836\u2013839, wrist_cam). The gripper then lifts and moves away empty while the pod remains on the tabletop (frames 840\u2013855, overhead_cam and wrist_cam). It continues to the tray and opens without delivering a pod (frames 902\u2013908, wrist_cam), so this acquisition-and-transfer attempt does not advance packing.",
+      "recovery": "Return to the remaining pod, realign the open fingers around its body, and verify a secure lift before transporting and releasing it onto the tray; no human intervention is needed on the visible evidence.",
+      "severity": "low",
+      "severity_evidence": "The pod remains on the usable tabletop; no damage, spill or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The remaining pod is accessible for another grasp, and the three packed pods can stay on the tray; no environmental reset or human assistance is required."
+    }
+  ]
+}

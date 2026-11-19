@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0850_W04",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Sorting is not completed in this window. wrist_cam at frames 1050\u20131074 shows the blue animal toy being released into the purple bowl alongside a carrot and a pink animal toy, leaving food and toys mixed. overhead_cam and wrist_cam at frames 1274\u20131291 and 1349\u20131399 show unsuccessful finger-closing cycles around the orange fruit-shaped object, which remains on the table beside the brown object. This is a provisional window outcome with visible failed sorting/acquisition behavior, not merely unconfirmed completion. Earlier context beyond frames 1048\u20131049 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1069,
+      "failure": true
+    },
+    {
+      "start_frame": 1069,
+      "end_frame": 1231,
+      "failure": false
+    },
+    {
+      "start_frame": 1231,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1069,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "wrist_cam at frames 1050\u20131068 shows the robot lowering and releasing the blue animal toy into the purple bowl containing both a carrot and a pink animal toy; overhead_cam confirms placement into that bowl. The physical release succeeds, but adds a toy to a mixed-category bowl rather than establishing separation. Which bowl was originally designated for each category is unknown. The placement approach began before this window, so its earlier semantic-failure onset cannot be established here.",
+      "recovery": "Establish one bowl for food and the other for toys, then transfer the mismatched contents accordingly before continuing; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The consequence is incorrect sorting; the objects stay contained and neither camera shows damage or a meaningful damage hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowls remain upright and their contents accessible for corrective transfers without cleanup, repair, or a human reset."
+    },
+    {
+      "start_frame": 1231,
+      "end_frame": 1400,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "wrist_cam shows an ineffective partial closing/reopening cycle at frames 1231\u20131241, followed by fuller closures at frames 1263\u20131277 and 1339\u20131353 and reopening at frames 1278\u20131291 and 1354\u20131368. The orange fruit-shaped object remains on the tabletop rather than being acquired, as corroborated by overhead_cam. These repeated ineffective attempts do not advance sorting; small local object shifts do not establish possession or dropping. The robot remains near the object at frame 1399, and this unsuccessful acquisition sequence may continue beyond the window.",
+      "recovery": "Open and lift clear, realign the fingers around the object's widest accessible sides at an appropriate height, then close and verify retention with a short lift before transporting it to the food bowl; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the usable tabletop with limited displacement; neither camera establishes damage or a meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and the environment requires no cleanup or repair before another properly aligned attempt."
+    }
+  ]
+}

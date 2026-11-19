@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0436",
+  "language_task": "Put the toy corn into the bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The yellow-and-green toy corn is held and transported toward the bowl in frames 0\u201340 (wrist_cam and right_base_cam). The gripper opens and releases the corn into the bowl in frames 41\u201345 (wrist_cam and right_base_cam). Frames 60\u201371 show the empty gripper withdrawing while the corn remains inside the upright bowl (left_base_cam and right_base_cam, also wrist_cam through frame 67). No failed attempt or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 72,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

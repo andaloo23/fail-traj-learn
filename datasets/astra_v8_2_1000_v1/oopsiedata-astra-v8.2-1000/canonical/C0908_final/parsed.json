@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0908",
+  "language_task": "Pick up the cube.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the gripper approaches the isolated red cube at frames 14\u201331, but the cube shifts sideways during the attempted acquisition at frames 32\u201335 and remains on the table as the empty gripper withdraws. The cube is still on the table at frame 120; this is a visibly failed acquisition, not merely unconfirmed completion. Although other cubes are visible in the right-side tray, the initial approach identifies the isolated red cube as the apparent target.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 32,
+      "failure": false
+    },
+    {
+      "start_frame": 32,
+      "end_frame": 36,
+      "failure": true
+    },
+    {
+      "start_frame": 36,
+      "end_frame": 121,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 32,
+      "end_frame": 36,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image frames 32\u201335, the gripper moves and closes while the red cube shifts to the right instead of remaining between its fingers. By frame 35 the gripper is closed and empty beside the cube, establishing failed acquisition; secure possession or a subsequent drop is not established.",
+      "recovery": "Reopen the gripper, locate the cube at its new position, align the fingers around it, and close before attempting a controlled lift; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The cube is displaced on the tabletop, but no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cube remains accessible on the table and can be approached again without an environmental reset."
+    },
+    {
+      "start_frame": 36,
+      "end_frame": 121,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the failed acquisition, base_image frames 36\u201349 show the empty gripper withdrawing toward the right-side tray rather than returning to the red cube. It then remains near that area with small movements through frame 120 while the target stays stationary on the table, establishing sustained lack of task-directed progress.",
+      "recovery": "Return attention to the visible red cube, move clear of the tray, and perform a newly aligned grasp and verified lift; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced tray contents, or harmful collision is established by the images.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and the scene requires no visible cleanup or physical resetting before another attempt."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0517_W08",
+  "language_task": "fold the shorts",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: completion is unconfirmed, rather than a clearly failed folding attempt. The robot adjusts and lifts the dark shorts near the waistband and adjacent fabric at frames 2450\u20132550 (left, right and top), then repositions the fabric and grippers along the layered garment at frames 2570\u20132685 (left, right and top). Further handling brings the waistband region inward at frames 2688\u20132735 (left, right and top). At frames 2780\u20132799, the shorts remain partly raised and under active handling, without a clearly finished, laid-flat fold (left, right and top). These actions show task-directed progress; no definite failed acquisition, sustained stall or harmful side effect is established. Earlier context beyond frames 2448\u20132449 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 2450,
+      "end_frame": 2800,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

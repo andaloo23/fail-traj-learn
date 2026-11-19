@@ -1,0 +1,97 @@
+{
+  "episode_id": "C0530",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "In left_ego_image, the initially open door (frame 0) rises to an apparently closed position around frames 80\u201399, but opens again by frame 114. Subsequent lifting does not produce a lasting closure: the door lowers again during frames 218\u2013240 and remains open at frame 336. image corroborates the repeated arm movements at the oven. This is a visibly unsuccessful closing episode, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 100,
+      "failure": false
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 115,
+      "failure": true
+    },
+    {
+      "start_frame": 115,
+      "end_frame": 154,
+      "failure": false
+    },
+    {
+      "start_frame": 154,
+      "end_frame": 201,
+      "failure": true
+    },
+    {
+      "start_frame": 201,
+      "end_frame": 218,
+      "failure": false
+    },
+    {
+      "start_frame": 218,
+      "end_frame": 241,
+      "failure": true
+    },
+    {
+      "start_frame": 241,
+      "end_frame": 337,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 100,
+      "end_frame": 115,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After raising the door to an apparently closed position, the robot fails to maintain closure: left_ego_image shows the door rotating outward and downward from frame 100 until it is open at frame 114. The images establish reversed progress but do not establish whether this resulted from release, slipping, or commanded motion.",
+      "recovery": "Reposition at the handle, raise the door fully, and verify that it stays closed before withdrawing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The door reopens without visible damage, displaced contents, or damage to surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and handle remain accessible, so another closing attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 154,
+      "end_frame": 201,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following another partial lift, the robot remains nearly stationary beside the incompletely closed door for roughly four seconds; left_ego_image frames 154, 175, and 200 show no meaningful closing progress, corroborated by image.",
+      "recovery": "Resume a controlled closing motion with suitable handle contact and verify full closure; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay and incomplete closure, with no observed damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "Nothing needs to be restored or cleared before continuing the attempt."
+    },
+    {
+      "start_frame": 218,
+      "end_frame": 241,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After renewed upward movement during frames 201\u2013217, the door again rotates downward rather than completing closure. left_ego_image frames 218, 230, and 240 show the increasing opening while the robot remains at the door; image corroborates the descending arm motion.",
+      "recovery": "Re-establish effective handle contact, guide the door upward through its closing arc, and confirm that it remains shut before releasing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Closing progress is lost, but no breakage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The reopened door remains accessible and the surrounding scene requires no reset."
+    },
+    {
+      "start_frame": 241,
+      "end_frame": 337,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The robot remains at the open door with only small adjustments and no meaningful closing progress for the remainder of the episode. left_ego_image frames 241, 280, 320, and 336 show the open oven, while image and wrist_image corroborate the largely unchanged robot position.",
+      "recovery": "Reassess the handle alignment and execute a controlled upward closing motion rather than continuing to hold the same position; no human intervention is established as necessary.",
+      "severity": "low",
+      "severity_evidence": "The task remains unfinished and time is spent without progress; no physical damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains usable and accessible, with no displaced objects or cleanup needed before retrying."
+    }
+  ]
+}

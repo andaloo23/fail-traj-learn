@@ -1,0 +1,34 @@
+{
+  "episode_id": "C0479",
+  "language_task": "Pack the cups with a single arm.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the arm acquires the light-colored cup and lowers it over a blue cup (frames 43\u201378), then moves the combined cups toward the remaining blue cup (frames 79\u2013127). Packing is not completed: the handled cups topple sideways as the gripper closes and withdraws (frames 151\u2013162), while another blue cup remains separate. This is a visibly unsuccessful final handling attempt, not merely unconfirmed completion; no cups are visibly placed in the box.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 151,
+      "failure": false
+    },
+    {
+      "start_frame": 151,
+      "end_frame": 163,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 151,
+      "end_frame": 163,
+      "categories": [
+        "grasp",
+        "collision"
+      ],
+      "explanation": "In base_image frame 151, the cups begin tipping during the acquisition attempt; by frame 152, the handled cups have fallen sideways and the neighboring blue cup has been displaced leftward. Frames 153\u2013162 show the gripper withdrawing empty while the cups remain on the table, establishing unsuccessful acquisition or retention and disruptive contact with the neighboring cup.",
+      "recovery": "Reopen and withdraw clear of the cups, then reacquire and reorient the sideways cups with a secure grasp before continuing packing. Human intervention is not clearly necessary, but a person could reset their orientation if autonomous recovery cannot be performed reliably.",
+      "severity": "low",
+      "severity_evidence": "The cups topple and shift on the tabletop, but no breakage, spill, or other meaningful damage is visible in base_image frames 152\u2013162.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The sideways cups need reorientation and separation or realignment for another attempt; they remain accessible on the tabletop, so a straightforward reset appears sufficient."
+    }
+  ]
+}

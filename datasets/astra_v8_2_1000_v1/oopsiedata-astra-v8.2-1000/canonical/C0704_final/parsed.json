@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0704",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the corn initially lies beside the green cloth (frame 0). The robot acquires and lifts it (frames 27\u201333), carries it over the cloth (frames 37\u201348), and lowers it onto the cloth (frames 49\u201354). At frame 55, the gripper opens and begins withdrawing while the corn remains on the cloth. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 56,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

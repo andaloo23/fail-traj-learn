@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f7431688253df31016af92809abf487d1ac2a37526ad4c202",
+  "object": "response",
+  "created_at": 1794713609,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713617,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f7431688253df31016af9280b25b487d1a4c663a1ed022229",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SgRs-qGtU6e1zKzW1QskVqZcRidxzSVTbRBBd3Cd8bHqGMOUx48XgR3rxH3z7r0eZDcnYjd1J15alNI1y84Qy5lfX49iN9uMpbo5UtzAkiLSxdHO1Wq--tgsNeJKR782gu9zUICmy3OzImRwKoPeuFmHDwh33mmZ_8tKeLoyjFlbun3a3Cadfm--GjUUMrlIXaBQt3mISUNkONqOm43Yd8s34WvdtiYcy3wNr7BzoGtnRJKV1IdGDkxwM4tymGLkBPGsXcQIrX774G5Nosm5D2PjTEjn3IYDigQnqQ0iUYYRc-TI1W00_rPpFVrDbDh-g9mx8AC8NqrdHiWPAuaU0D8BsZkKWhIGCWENw5Vca9IqQmgBCsr9IfTWA6OYu99INN-DHgHXZpHuqmbWneJNMi2JF6VHSm4DCzDhIbDLci-4MJk1krGLcEjG44koiaakvJLSH2_uXXAYTnreS9MeZxDUf_Rq2yi1L10iWq2NkMpbcNWPgka2syMiSnLyRJHTRqx4iuwRw-Zu12A7qZztDJoHFos0JbrjKoO7OUN5W2XFXYHn_clORKiEVR1UPspYKfEa4YAZaC-wZ5y-74hUPkJCmKk4qDPeTLr8z79Cc_u6DmLaZFWR3qJdytr-K0ESHT3jklzYGFK5MFlwfhDnD7O7-KpoGAB5YpPYX9kS_c-qsYaUgvJkxpIU73va_ZnevDdf84buTb1DWFef0WogIVI0zAJ3GmCTipn2XlvqUELU2bA9KjRt-ii3MlGmScLroZ6g37KQ9snzb5bxMNe0o-wAjC6HnhqQ4IkThPRsIlMnuz9_40oFZiNNuWq0vrlbEy1TARn5F1eI6aXRjTxPlxRqQOOKIqNcnRSmJiaf6x4VDelDyRIDKSM4sCIfKDvhx6p09TiIf0Hj5GYxmuwa3ulwROYl3V1qrbrDQ6YJx415E_CWlqXeJNHtuiAenH6eApXRLMxvqIvVw9fLYkfkbEL_rpREL2n8_DYEpIynP2gGekAeJJ51qHELDsQW6RqVRd2yycJFu6PZhc1XTN8tDKvccrcy73O0zPjJNEUErZfxjhPhXk_Y3fR8kT2eEVMl-b9H69cKnwby8TBN8WZoSKO8tavnjMq6dIUFuy6BCFzJUtqmNCP5yPrsVd8lYSovj_HRYiYA50DGT4dE2QssTHiUlYeFsFtm-3sSja17eaB6VaWcI0qPQtRl1kP8qBImOl7y4IcTfe1xtpXYQrqylrkpqEMGtcOlHTxGm7KgUJUBssGwSBfTHRj6Lh5XCTl-rB8Y0ntYmOvrzpNyykuym4rec99oQRJsMYLnOtWc3xUEw8_ro0BERQasN0vS08zM9E7W9kkAmDSFbxtVrUB7w_L5_SJeQVYI6oBkq-OuEmtz6K4eWepNhRumjFc-3v1DTZIo85bSxJgoaFHKGNbae7Yu_DedCf2fpFEkYeIJQ_KEj_OF-mMoSlycO4On-W88dsWg6VUuyS29SvB___UKEs3JktrgD2z1okFhZDC3NGGyMEZgjALZKdi8CIkRCzc8WQq3L2TR3Y-CE7xNgiAzxW2xlLaNc9XrpOm-HBSB2kf3idaUhcTRkwGkuJ9TZzcuxMMjxLqIKOjR2jLHdFxw6yHFvvbHmLj286YfBR6v0_3ncuT7lBeaTwP9tevIPR_zI7Brtnd3XgntgBlkS05GLgFJvjoxEZwGzUuE0yBFhDe7V46P9ifHx3G-utRQikKUcJS_tiT-BsejfDK-v__x9mHTNAugkT0xqqXnRr0v_DVxexSA-YA2YRh9WuU7Rkb6vVE4BmEDNzhnC3l9zT0ng45fG3HKBpbftfhGH7lpts0KeVgxmxFaVxEal8WNMgjRuaGQBOkRlXYzRPXtDF8lqKmkZG8HgHAPRWs_R3cY70mF9pYjAkc0DU4FHcfHGmYCznZq8WjJknXiV0e4RsQ5Tc4J2ef4tLs-N57MxGxC5h2wSzEF9sE5O3IbfkOnCnES3BmYSpVuQdToyAUDgxkVt4-zv6qiQc047_8jHJoMCMYTM8w57aPjZQTmpgjoMzEYvD5diSVDSGvPisU5sQYLhugo9O9nvgQuG3nLJFEG5VydHfDVDuPP3Yv0DgWpOY-MIaCsiiP0MlTOR0hX6HEBwTpoCmB9Q0Tk9wqrK2coYYzp6U=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f7431688253df31016af9280c215087d1b60a367b9fc6f1f5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0766\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: success but side effects\n- Outcome evidence: In image_primary, the robot acquires the left blue-and-white stuffed toy and lifts it in frames 18\u201324, then transports it to the largest, white bowl. Frames 35\u201338 show the toy inside the bowl with the gripper open. During placement, the robot also displaces and substantially tips the bowl in frames 28\u201334; it returns upright at a shifted position by frame 35.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 28 | No |\n| 28 | 35 | Yes |\n| 35 | 39 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 28-35\n- Categories: collision\n- Explanation: In image_primary frames 28\u201334, the gripper and carried toy encounter the white bowl's rim during placement, pushing the bowl sideways and tipping it substantially rather than clearing the rim. The bowl's displacement and tilt are visible, although the exact contacting component is partly obscured.\n- Recovery: Relieve contact with the rim, allow the bowl to settle upright, then reposition the toy above the opening with sufficient clearance before lowering and releasing it; human intervention is not evidently needed.\n- Severity: low\n- Severity evidence: The bowl tips and shifts but remains on the table and returns upright by frame 35; no breakage, spill, or damage is visible.\n- Resetability: immediate\n- Resetability evidence: The bowl remains accessible on the tabletop and settles upright, so the robot can continue placement without a human environmental reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 5418,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 410,
+    "output_tokens_details": {
+      "reasoning_tokens": 42
+    },
+    "total_tokens": 5828
+  },
+  "user": null,
+  "metadata": {}
+}

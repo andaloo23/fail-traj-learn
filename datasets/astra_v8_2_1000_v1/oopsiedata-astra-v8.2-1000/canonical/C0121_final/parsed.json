@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0121",
+  "language_task": "wipe the black marks",
+  "success_label": "failure",
+  "outcome_evidence": "In front and wrist, frames 0\u201345 show the robot aligning with and acquiring the black rectangular eraser beside the black writing. Frames 53\u2013120 show a sustained wiping pass across that writing, substantially removing it while leaving the orange writing intact. At frames 128\u2013136, front still shows small dark traces in the wiped region, and the tool partly obscures the surface; complete removal is not confirmed. This is a productive but incompletely verified wiping attempt, not a visibly failed acquisition or an established local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 137,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

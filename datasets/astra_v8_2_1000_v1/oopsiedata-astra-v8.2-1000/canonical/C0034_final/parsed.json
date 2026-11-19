@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0034",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the blue cloth remains in the same draped configuration from frame 0 through frame 69; no removal is visible. The yellow block is obscured and cannot be independently identified. The gripper approaches and repositions above the cloth, with a sustained pause at frames 22\u201357, then approaches again at frames 58\u201364. Completion is unconfirmed; no completed grasp or definite failed acquisition is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 22,
+      "failure": false
+    },
+    {
+      "start_frame": 22,
+      "end_frame": 58,
+      "failure": true
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 22,
+      "end_frame": 58,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, the gripper remains above and separated from the cloth with essentially no task-directed progress across frames 22\u201357, approximately seven seconds. The cloth stays unchanged throughout this sustained stall. Renewed approach begins at frame 58.",
+      "recovery": "Resume a controlled approach to an accessible cloth edge, acquire it, verify retention, and lift it clear of the block; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The stall delays removal but causes no visible object displacement, damage, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth and surrounding scene remain unchanged, allowing another attempt without environmental resetting or human intervention."
+    }
+  ]
+}

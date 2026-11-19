@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0855",
+  "language_task": "close the drawer",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, frame 0 shows the red-fronted drawer extended with its interior exposed. The gripper approaches the drawer front during frames 1\u201310, then pushes it inward during frames 11\u201314. By frame 14, the drawer front is seated against the cabinet and the exposed interior gap has closed. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 15,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

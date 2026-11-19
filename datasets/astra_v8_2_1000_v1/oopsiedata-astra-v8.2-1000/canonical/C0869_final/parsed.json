@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0869",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "wrist_cam shows both plush toys in the purple bowl by frame 553 and the orange and brown food-shaped objects in the green bowl by frame 967. The tomato-shaped object escapes the grasp at frames 660\u2013672 and remains on the table. At frames 1043\u20131050, wrist_cam and overhead_cam confirm that it is still outside both bowls, so sorting is visibly incomplete following a failed acquisition, rather than merely unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 660,
+      "failure": false
+    },
+    {
+      "start_frame": 660,
+      "end_frame": 780,
+      "failure": true
+    },
+    {
+      "start_frame": 780,
+      "end_frame": 1051,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 660,
+      "end_frame": 780,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the fingers close against the tomato-shaped object at frames 650\u2013659, wrist_cam shows it separating from the fingers and wobbling on the table at frames 660\u2013675. overhead_cam confirms that it remains behind as the empty gripper moves away. The robot then moves over the green bowl and opens its empty fingers at frames 766\u2013775, completing an unsuccessful transfer instead of sorting the tomato.",
+      "recovery": "Reobserve the tomato's settled position, align the open fingers around its body, and verify secure possession with a short lift before transporting it to the green bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the tabletop without visible damage, and the bowls and previously sorted objects remain usable.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tomato remains accessible on the table and can be approached again without environmental resetting or human intervention."
+    }
+  ]
+}

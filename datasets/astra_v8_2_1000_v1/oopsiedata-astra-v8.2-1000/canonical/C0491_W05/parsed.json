@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0491_W05",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image frames 1400\u20131453, the right gripper releases its cup onto the central cup grouping and withdraws. In frames 1461\u20131546, the left gripper carries the remaining separate cup over that grouping and lowers it into alignment; frames 1550\u20131609 show release and withdrawal, leaving a compact nested stack. The stack remains stable with both grippers clear through frame 1727, with no visible failed attempt or side effect. This provisional window outcome interprets \u201cpack\u201d as nesting the cups together; no separate packaging destination is shown. Earlier execution beyond context frames 1398\u20131399 is unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1728,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

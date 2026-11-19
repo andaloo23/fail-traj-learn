@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0310",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The drawer remains closed in left_ego_image at frames 0, 180, 300 and 347. The robot approaches its handle, makes repeated finger-closing motions nearby (wrist_image, frames 181\u2013300), then withdraws without opening it (image and wrist_image, frames 306\u2013347). This is a visibly unsuccessful attempt, rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 181,
+      "failure": false
+    },
+    {
+      "start_frame": 181,
+      "end_frame": 306,
+      "failure": true
+    },
+    {
+      "start_frame": 306,
+      "end_frame": 348,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 181,
+      "end_frame": 306,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After approaching and aligning with the handle, the robot repeatedly closes and reopens its fingers without establishing an effective acquisition. In wrist_image, frames 181\u2013190, 210\u2013220, 255\u2013263 and 284\u2013305 show finger motions below or beside the horizontal handle; left_ego_image shows no drawer opening. The subsequent empty withdrawal in image and wrist_image, frames 306\u2013347, confirms unsuccessful acquisition. Exact contact is partly obscured, so a hidden mechanical cause is not established.",
+      "recovery": "Withdraw clear of the drawer front, realign the fingers around the handle with sufficient clearance, and verify a secure grasp before pulling along the drawer\u2019s travel direction; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the drawer closed, with no visible damage, displaced unrelated objects or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place, so another aligned grasp attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

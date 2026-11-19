@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0461",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The blue toy is deposited on the plate at frames 200\u2013207, and the pink toy at frames 695\u2013703, in overhead_cam and wrist_cam. The tan toy remains on the table after an empty grasp and transfer motion (frames 348\u2013498). At frame 771, both cameras show only the blue and pink toys on the plate, with the tan toy still outside it. Thus the task is visibly incomplete following a failed acquisition, not merely unconfirmed completion. No unwanted collision is clearly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 348,
+      "failure": false
+    },
+    {
+      "start_frame": 348,
+      "end_frame": 499,
+      "failure": true
+    },
+    {
+      "start_frame": 499,
+      "end_frame": 772,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 348,
+      "end_frame": 499,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frame 348 in wrist_cam, the fingers have closed short of the tan toy without enclosing it. At frames 353\u2013370, overhead_cam shows the gripper lifting and moving away empty while the toy stays on the table. The robot continues an empty transfer toward the plate and opens its fingers at frames 488\u2013498; wrist_cam again reveals the tan toy still on the table. This completed acquisition and empty transfer do not place the toy.",
+      "recovery": "Re-localize the tan toy, open and align the fingers around its body, descend with table clearance, and verify acquisition with a small lift before transferring it to the plate. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the tabletop, and neither camera shows damage or consequential disturbance from the missed grasp.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tan toy remains accessible in its original area; another acquisition can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

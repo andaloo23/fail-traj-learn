@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0727",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, frame 0 shows the intended left toy in blue and white and the largest bowl in white. The robot instead acquires the pink toy on the right (frames 28\u201345) and releases it into the white bowl (frames 63\u201365). The left toy remains on the table through frame 99. This is a visible wrong-object execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 20,
+      "failure": false
+    },
+    {
+      "start_frame": 20,
+      "end_frame": 100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 20,
+      "end_frame": 100,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary, the gripper moves away from the left blue-and-white toy toward the right pink toy starting at frame 20, aligns with and contacts that toy in frames 24\u201342, and lifts it in frames 43\u201345. It carries the wrong toy to the largest white bowl and releases it in frames 63\u201365, then remains above that bowl through frame 99 without returning to the intended toy. The acquisition and placement are physically successful but do not fulfill the specified object selection.",
+      "recovery": "Return the pink toy to its original tabletop location, then acquire the left blue-and-white toy and place it in the largest white bowl. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong soft toy is relocated into an upright bowl; no damage or meaningful damage risk is visible in image_primary through frame 99.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the original scene requires moving the pink toy from the accessible white bowl back to the tabletop; this is a straightforward reset with no visible repair or difficult retrieval required."
+    }
+  ]
+}

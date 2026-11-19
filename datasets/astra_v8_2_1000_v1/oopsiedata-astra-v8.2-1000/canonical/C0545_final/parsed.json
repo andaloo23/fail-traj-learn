@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0545",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot lifts and transports the spoon toward the open drawer (frames 80\u2013178, image, left_ego_image and wrist_image), but the spoon falls outside the drawer onto the tabletop (frames 182\u2013191, image and left_ego_image). At frame 230 it remains on the table, establishing a visibly failed placement rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 182,
+      "failure": false
+    },
+    {
+      "start_frame": 182,
+      "end_frame": 192,
+      "failure": true
+    },
+    {
+      "start_frame": 192,
+      "end_frame": 231,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 182,
+      "end_frame": 192,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After carrying the spoon to the drawer, the robot loses or releases it outside the drawer: it moves downward out of the gripper at frames 182\u2013184 in wrist_image and left_ego_image, falls onto the table at frames 185\u2013187, and settles there by frame 191 in image and left_ego_image. This defeats the intended placement; the images do not establish whether the release was intentional or a slip.",
+      "recovery": "Reacquire the spoon from the tabletop, verify a secure hold, and position it fully over the drawer interior before lowering and releasing it; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The spoon lands on the tabletop and remains visibly intact; no damage or disturbance to unrelated objects is apparent.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the table and the drawer remains open, allowing another attempt without environmental resetting or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0276",
+  "language_task": "Pick up the pen with the right hand and the cap with the left hand, then insert the cap onto the pen.",
+  "success_label": "success",
+  "outcome_evidence": "The supplied task ambiguously says \u201cpen cap\u201d for the right-hand object as well as \u201ccap\u201d for the left; the visible episode supports the intended pen-and-cap assembly task stated above. The right_wrist view shows acquisition of the long pen at frames 177\u2013205, and left_wrist shows acquisition of the short dark cap at frames 279\u2013307. The hands bring the pieces together and insert them during frames 454\u2013704 (left_wrist, right_wrist). After the left hand opens and withdraws, the dark cap remains attached to the pen at frames 725\u2013773 in right_wrist, confirming assembly rather than mere contact. The assembled pen is subsequently released onto the table at frames 777\u2013807 and remains there through frame 1399 (left_wrist, top). No failed acquisition, damage, or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

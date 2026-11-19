@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0124",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven begins closed (frame 0, image and left_ego_image). An initial partial opening at frames 147\u2013150 is lost when the door returns closed at frame 151. After repositioning, the robot opens the door downward at frames 238\u2013255; it remains fully open through frame 272, with the interior exposed in image and left_ego_image. No damage or displacement of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 150,
+      "failure": false
+    },
+    {
+      "start_frame": 150,
+      "end_frame": 152,
+      "failure": true
+    },
+    {
+      "start_frame": 152,
+      "end_frame": 273,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 150,
+      "end_frame": 152,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the door moves slightly outward at frames 147\u2013149, the partial opening is lost at frames 150\u2013151: the gripper moves away and the door returns flush with the oven rather than continuing downward (image and left_ego_image). This establishes unsuccessful retention of the handle during the opening attempt; the precise contact mechanics are obscured.",
+      "recovery": "Reposition the gripper around the handle, establish a secure acquisition, and pull along the door\u2019s downward opening arc while monitoring its motion; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door returns closed without visible damage, appliance displacement, or disturbance of nearby objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains upright and closed with its handle accessible, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

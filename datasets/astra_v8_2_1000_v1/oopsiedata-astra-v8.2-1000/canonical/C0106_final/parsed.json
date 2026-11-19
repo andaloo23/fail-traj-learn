@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0106",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the green can is initially placed at the upper tray (frames 260\u2013276), and the red/yellow can is released inside it (frames 454\u2013465). However, the withdrawing gripper subsequently displaces the green can out of the tray (frames 467\u2013487); it travels beyond the far table edge and disappears (frames 490\u2013505). Both bowls are successfully stacked in the right tray by frames 868\u2013889. Frame 974 shows only the red/yellow can in the upper tray, so the complete sorting task is visibly not achieved, rather than merely unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 467,
+      "failure": false
+    },
+    {
+      "start_frame": 467,
+      "end_frame": 487,
+      "failure": true
+    },
+    {
+      "start_frame": 487,
+      "end_frame": 975,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 467,
+      "end_frame": 487,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 467\u2013485, the withdrawing gripper catches or pushes the previously placed green can, carrying it upward and out of the upper tray instead of leaving it there. By frame 487 it is separated from the gripper outside the tray; it subsequently moves beyond the far table edge and disappears by frame 505. This undoes the earlier placement. The precise contact mechanism is not fully resolved.",
+      "recovery": "Stop and locate the displaced can before attempting retrieval; request human assistance if it has fallen outside the robot's safely reachable workspace, then place it securely inside the upper tray and withdraw with clearance.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is displacement of a can and loss of the correct sorted state; no spill, breakage, or damage is visible, although its landing is outside base_image.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The displaced can needs to be retrieved and returned to a reachable position, likely requiring a simple human reset; its final off-camera location is unknown, and no evidence establishes a difficult retrieval or need for repair."
+    }
+  ]
+}

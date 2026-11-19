@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0541",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the robot approaches the loose tabletop cube in frames 14\u201343 and closes its gripper around it in frames 44\u201348. In frames 54\u201358, the cube moves with the raised gripper toward the tray, leaving its original tabletop position empty, establishing successful pickup. Frames 93\u2013117 show the gripper withdrawn and the additional cube in the tray. No failed acquisition, dropping, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 118,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

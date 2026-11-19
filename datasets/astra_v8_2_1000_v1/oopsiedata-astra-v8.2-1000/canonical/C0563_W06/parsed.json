@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0563_W06",
+  "language_task": "put all the fruits and veggies into the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "At frames 1750, 1875, and 1999, top shows the green bowl empty and the produce still in the light-blue bowl; left and right show no discernible acquisition or transfer throughout the window. The task is visibly incomplete with sustained inactivity, not a demonstrated failed grasp. This outcome is provisional for the supplied window; earlier context beyond frames 1748\u20131749 and subsequent execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1750\u20131999, left and right show essentially unchanged gripper poses, while top shows no approach to the produce, acquisition, or transfer into the green bowl. This approximately 8.3-second period of sustained inactivity does not advance the task. Context frames 1748\u20131749 visibly show the same arrangement, supporting continuity across the starting boundary independently of the prior prediction. The cause is not visible, and inactivity may continue beyond the supplied window; its endpoint does not establish abnormal termination.",
+      "recovery": "Approach an accessible produce item, grasp and transfer it into the green bowl, then repeat for the remaining items. No human environmental intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of progress; frames 1750\u20131999 in left, right, and top show no damage, disruptive displacement, or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "At frame 1999, top and right show the bowls and produce still in a usable arrangement, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

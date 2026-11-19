@@ -1,0 +1,130 @@
+{
+  "episode_id": "C0371",
+  "language_task": "Stack the green cup into the purple cup.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the cups begin separately upright at frame 0. The robot repeatedly contacts the green cup but leaves it tipped on the table rather than transporting it into the purple cup (frames 80, 217, 394, and 515). At frame 599 the green cup remains on its side, separated from the upright purple cup. This is a visibly unsuccessful acquisition sequence, not merely an unconfirmed final insertion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 67,
+      "failure": false
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 87,
+      "failure": true
+    },
+    {
+      "start_frame": 87,
+      "end_frame": 198,
+      "failure": false
+    },
+    {
+      "start_frame": 198,
+      "end_frame": 237,
+      "failure": true
+    },
+    {
+      "start_frame": 237,
+      "end_frame": 385,
+      "failure": false
+    },
+    {
+      "start_frame": 385,
+      "end_frame": 428,
+      "failure": true
+    },
+    {
+      "start_frame": 428,
+      "end_frame": 505,
+      "failure": false
+    },
+    {
+      "start_frame": 505,
+      "end_frame": 523,
+      "failure": true
+    },
+    {
+      "start_frame": 523,
+      "end_frame": 583,
+      "failure": false
+    },
+    {
+      "start_frame": 583,
+      "end_frame": 593,
+      "failure": true
+    },
+    {
+      "start_frame": 593,
+      "end_frame": 600,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 67,
+      "end_frame": 87,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 67-80, the green cup tips out from beneath the fingers and settles sideways without being securely acquired; the purple cup remains untouched. The unsuccessful acquisition leaves the target needing reorientation.",
+      "recovery": "Reassess the cup's sideways pose, grasp its exposed body securely, and right it before lifting; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup tips onto the clear tabletop; no spill, breakage, or meaningful damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning to the original upright setup requires only righting the accessible green cup."
+    },
+    {
+      "start_frame": 198,
+      "end_frame": 237,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 198-217, the green cup tips and remains on the table while the gripper separates from it; frames 233-236 show the empty gripper withdrawing. This renewed acquisition does not retain the target.",
+      "recovery": "Approach the cup using its current pose and verify a secure grasp before lifting or translating; human assistance is not required by the visible state.",
+      "severity": "low",
+      "severity_evidence": "The green cup remains on the tabletop without visible damage or spilled contents.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A straightforward righting and repositioning of the cup restores the initial setup; no retrieval or repair is needed."
+    },
+    {
+      "start_frame": 385,
+      "end_frame": 428,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 385-394, the gripper pulls clear without the green cup, which rolls away across the table. By frames 420-427 it lies sideways farther from the purple cup, confirming unsuccessful acquisition rather than transport.",
+      "recovery": "Let the cup settle, reacquire its position, and grasp it without pushing it farther toward the table edge; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup rolls on the table but does not fall or visibly sustain damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The cup remains accessible and needs only repositioning and righting for a fresh upright attempt."
+    },
+    {
+      "start_frame": 505,
+      "end_frame": 523,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 505-515, the gripper moves away empty after contacting the green cup; the cup stays sideways in the same tabletop area through frame 523. The acquisition has not secured the target.",
+      "recovery": "Reopen and align the fingers around the cup body rather than withdrawing before possession is established; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the cup on the table with no visible damage or additional harmful consequence.",
+      "resetability": "immediate",
+      "resetability_evidence": "Another grasp can be attempted directly from the existing accessible sideways pose; this miss introduces no necessary environmental reset."
+    },
+    {
+      "start_frame": 583,
+      "end_frame": 593,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 583-590, the gripper again separates empty while the green cup settles on its side. It remains separate from the purple cup, so the preceding contact has not produced a retained acquisition.",
+      "recovery": "Reassess finger placement and secure the cup before lifting, then orient it upright and align it over the purple cup; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup remains on the tabletop without visible breakage, spill, or damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible for a revised grasp without a required human reset."
+    }
+  ]
+}

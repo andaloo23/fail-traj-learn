@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0661",
+  "language_task": "pick up the corn",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches the corn during frames 17\u201334 and closes its fingers around one end during frames 35\u201340, changing the corn\u2019s orientation. Frames 41\u201349 do not show a clear lift free of the tabletop; the corn\u2019s lower end remains at the table surface. Completion is therefore unconfirmed, rather than a visibly established failed acquisition: the robot does not withdraw empty or visibly drop the corn. No local failure or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 50,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0cbf0e071d7dfccf016af9314a90bc87d1be92fbf47c8626a0",
+  "object": "response",
+  "created_at": 1794715978,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715984,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0cbf0e071d7dfccf016af9314cdcdc87d1a140239d1ce580c9",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TFROU9pXwH0WoCLMhlj1wO_oWcW1RWuytVxPKECTDmXh5DhZh5QU9z6s8NEi8QQHUZohXmByvUtEyKsOxENKyd0sEXzQ6cwTS-BN5E84b93eJd44rWMcUl7uSLOx2hyX37tzeEyu1HhBl5LZT5MNBT1_Jjh-3mGZ2kyjZBkjUXQw1pe3w9pKANr7JTPy8UEVBzZrhxKAJ6Q_EfRSjfPiDwfC-gcxdCwFk9bq0hDiptZ6-Xj_3DXsxSvhAXwKBXrPgFRu6rAxyhuwpjrwcJ3k-0n1pIyTmQAYk2QRI3FeMssOrOODTFQqNr25eq61FdEGumkIFxyqG0E1P_23xbr-5ux8tdwvXJdvC6yJTgb_F0cuqHEcYBkJy_LR06mDvWdOkD20eMhyt62A5ea37PWSb_oQehLDXGpjxH86pNtmAmEl9nyROXFV7-HY0Ee-guLpW0-0KFpL5cvjWaTta7o0S47yO0_SAK1P40tavq3y5o4xHSwq_kUX8F9mLRIHSchEuMldQp7HWYt5tn-KY_Lj15Ezi-DaK1_YwwOXxPWulLkxsWgRsDjCLpPcwW4bDHvgF5xhw_8D7RA_KGY3arsDbiRn6M3RRlgCqWO18-nlBBT7J85t7bVmRUgQPJxcYZXlgjsqbUZyXPil_bcH28wECvQ9xQDibYLl5jgzbGt87PmJtXsC_CqKhuZ24OEy1QI9keDapT6LJKTilDPWZ9rzrHlIkV8PPvVMr_yiUbuattxvRTBpnHcsjlDvdAljdUz7EzpT1Wfjj02rCWoWA97aNA0Hz2L1_-aYgG-Hx6J2meeFy_tv8sByRil-1MBljETMD4cy39-JUzXM5u7pLkJZdPGrqQN_-z1z5Hw41Xz1piST9ylfpX3E3T-Jr4SLlJ46mdcpV5s6AlNXOL2AmDNHl4srS66QUMO3JldRPhKdVhOgsTSmK2FfFYFple_NCgPwE19FwWwgP0SWSQ6RjW09i6brMrnnehxQZolQgsxtPBF0TYYW0NxNL84rWb4RGnNqGkEe7CZrSiBSoMOD5fFw-fhQ1S0YKyDp5DEpUyk3yKmExsLs5syelMy3xW9lYoktLX2MChnqoYMDusIM-NX9bsWOACuzWaC1PY9CnoHuu_PVZjuXCP7W5c-KmG6bgo9cxMC770ONDE6-bDUWG05h9JIoxfuc6Lrg9QtT_sf9ZhA55MHdYbzicXIEuL74jSBOWZ5x2Y_MVNrNu-4-U_3be5LoWNWCSu0yhLTGdnYXFRAY4KStNZZtTXwFNgr-aWtQCZLaJZX6tgtJDLpgLEAaHmCyJVLJ_DdD59-Z6MjMO944CQ_r_ma7cdREZXWgF3-CDmD7QV1asAAzQEAqvhDATXC3yU3cqFjCSo60qsRKHcbUptLDMGtmFI4K1xOptRj5TunQNr6iu9IrHEUvYlgBDCUxtKGS1tPZ-3Vom1vkxgnMo1TkHvNF91a1_YammATpRil5r4U0M4f7dpJPxm_xXE7H-IJzwQLnZsLz9jQnOOiyq9EXWlq8DrYADp1cJCroxNaTDM-FyiKxFUb1QA7L_KEYDWigFwtJegIxCGLMvj5HR2SY1C_qA9RACa8F0MPm-bFFdnE3mQhYbR_JPjipSn50rt0Fif7lOgo3uVUgT7nQwVSO7cpJHhif8LSUoewGc_XQr2SvxwWv5Xy72BLp60jCAU3nd4bvU4VFQZ86oAGEcSbdiSZ3hzcVNR4Wmn2QpiJpRsF9no3DGXpXKaYSIdn36Q9gcFLU62yP9cFVgMtGGzTmrdowUMIBwuz8IVQ9INUm2EKp_sIy49lvHRaZdh5pk6BIT8Ud9ZnRCmt45eGybcUr9kTukXYGlY7lmg6oRHRu5uhyhVtp92QBFAlXIRfUgOfwHKODmf8SKZfv8EiLiaUqyQ_iHkEQ_1juiVXcGQTU-XM5ElPW5CmV3hubZoCW_mmXvaeDsKJxMzSlNYnUw1gTzOuR3mcRNF8HugG9UgyEcyL_cA1bBUJjr8UPrdIkGWBudpdqd_WOwKXnwgDsoDrCnADSJTHalqxl3fgADTA",
+      "summary": []
+    },
+    {
+      "id": "msg_0cbf0e071d7dfccf016af9314d079887d199912918aebf9a22",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0927\n\n## Episode annotation\n\n- Language task: stack the blue block on the yellow block\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the robot lifts the blue block in frames 25\u201327 and lowers it toward the yellow block in frames 41\u201345. The blue block tilts during placement and falls onto the table beside the yellow block by frame 52. Frames 60\u201369 show another approach, but no completed stack. This is a visibly failed placement followed by an unfinished recovery attempt.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 46 | No |\n| 46 | 53 | Yes |\n| 53 | 70 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 46-53\n- Categories: manipulation\n- Explanation: In right_shoulder_cam, the previously held blue block visibly tilts at the edge of the yellow block starting at frame 46. During release and withdrawal through frames 51\u201352, it falls onto the table to the left instead of remaining stacked. The placement therefore fails despite successful initial acquisition and transport.\n- Recovery: Reacquire the blue block from the table, align it fully over the yellow block, lower it into stable support, and release gently before withdrawing. No human intervention appears necessary.\n- Severity: low\n- Severity evidence: The blue block falls a short distance onto the tabletop and remains accessible; no damage or disruption to other scene objects is visible in right_shoulder_cam at frames 52\u201353.\n- Resetability: immediate\n- Resetability evidence: Both blocks remain upright and accessible on the table after the failed placement, allowing another attempt without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8048,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 405,
+    "output_tokens_details": {
+      "reasoning_tokens": 33
+    },
+    "total_tokens": 8453
+  },
+  "user": null,
+  "metadata": {}
+}

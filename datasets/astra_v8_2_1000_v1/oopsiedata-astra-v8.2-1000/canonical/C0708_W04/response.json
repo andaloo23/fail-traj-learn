@@ -1,0 +1,109 @@
+{
+  "id": "resp_0702e156e4c126ee016afbe4f339d087d2ae35fe6f09522433",
+  "object": "response",
+  "created_at": 1794893043,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893048,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0702e156e4c126ee016afbe4f5c11087d2b8b1ca19e81e83ac",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0708_W04\n\n## Episode annotation\n\n- Language task: Stack and pack the cups.\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window, not a visibly failed attempt. In base_image, frames 1050\u20131160 show the right gripper aligning around the upper cup; frames 1194\u20131280 show that cup moving upward with the gripper while the left gripper approaches the leftmost cup. Frames 1333\u20131399 show the left gripper lifting its cup while the right gripper lowers its held cup toward the remaining cup. Packing is still in progress at frame 1399, with no confirmed final release or completed arrangement. No missed acquisition, drop, or harmful collision is established. This label is provisional because earlier execution beyond the supplied context frames and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1050 | 1400 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 33164,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 215,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 33379
+  },
+  "user": null,
+  "metadata": {}
+}

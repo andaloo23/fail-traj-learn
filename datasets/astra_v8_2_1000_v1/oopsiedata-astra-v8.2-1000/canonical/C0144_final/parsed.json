@@ -1,0 +1,102 @@
+{
+  "episode_id": "C0144",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot makes three spoon acquisition attempts but never transfers the spoon to the drawer. In left_ego_image and wrist_image, the spoon falls back onto the table at frames 91\u201395, remains behind after the second attempt at frames 171\u2013174, and falls again at frames 251\u2013259. At frame 399, image and left_ego_image still show the spoon on the tabletop outside the drawer; this is a visibly unsuccessful episode, not merely unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 89,
+      "failure": false
+    },
+    {
+      "start_frame": 89,
+      "end_frame": 108,
+      "failure": true
+    },
+    {
+      "start_frame": 108,
+      "end_frame": 167,
+      "failure": false
+    },
+    {
+      "start_frame": 167,
+      "end_frame": 200,
+      "failure": true
+    },
+    {
+      "start_frame": 200,
+      "end_frame": 249,
+      "failure": false
+    },
+    {
+      "start_frame": 249,
+      "end_frame": 263,
+      "failure": true
+    },
+    {
+      "start_frame": 263,
+      "end_frame": 314,
+      "failure": false
+    },
+    {
+      "start_frame": 314,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 89,
+      "end_frame": 108,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After lifting the spoon, the handle slides out of the fingers at frames 89\u201391 in wrist_image. The spoon falls onto the table at frames 92\u201395 in left_ego_image, while the gripper continues upward empty rather than transporting it.",
+      "recovery": "Re-localize the spoon, align the fingers around a secure portion of its handle, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon lands on the tabletop without visible damage or disruption to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the table, so another grasp can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 167,
+      "end_frame": 200,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The second acquisition does not retain the spoon: at frames 167\u2013171 in wrist_image the fingers rise away from the handle, and frames 171\u2013174 in left_ego_image show the spoon remaining on the tabletop. The arm subsequently retreats empty.",
+      "recovery": "Open the gripper, correct its alignment and contact depth around the handle, and verify that the spoon follows a short test lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt leaves the spoon on the table with no visible damage or meaningful collateral disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains reachable and the scene needs no manual reset."
+    },
+    {
+      "start_frame": 249,
+      "end_frame": 263,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The third attempt initially lifts the spoon, but its handle slips downward at frames 249\u2013251 in wrist_image. In left_ego_image, frames 251\u2013259 show it falling and settling back onto the tabletop while the gripper withdraws empty.",
+      "recovery": "Re-localize the displaced spoon and use a more secure handle grasp, confirming retention before moving toward the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls only onto the table; no breakage or damage to surrounding objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Although displaced, the spoon remains on the accessible tabletop and requires no external reset."
+    },
+    {
+      "start_frame": 314,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After moving toward the drawer empty, the robot remains essentially stationary beside it from frame 314 through frame 399 in image and wrist_image. Throughout this sustained interval, left_ego_image shows the spoon still on the table, with no renewed acquisition or placement progress.",
+      "recovery": "Resume task-directed action by locating and securely acquiring the spoon, then placing it inside the open drawer; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The sustained inactivity prevents completion but causes no visible damage or additional hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable, with the spoon on the table and the drawer available; no environmental reset is necessary."
+    }
+  ]
+}

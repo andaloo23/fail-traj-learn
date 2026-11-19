@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0515",
+  "language_task": "pick up the corn",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the corn remains on the tabletop in the same position throughout frames 0\u201349. The gripper repeatedly closes and opens over the separate bowl of colorful objects instead (e.g., frames 2\u20133, 17\u201320, and 30\u201333), then remains there through frame 49. The task visibly remains undone; this is not merely an occluded or unconfirmed lift.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 2,
+      "failure": false
+    },
+    {
+      "start_frame": 2,
+      "end_frame": 50,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 2,
+      "end_frame": 50,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "Starting at frame 2 in right_shoulder_cam, the gripper closes over objects in the bowl rather than the clearly separate corn on the tabletop. It repeatedly opens and closes at that location (frames 13\u201320 and 25\u201338), then stays there through frame 49 without approaching or lifting the corn. This wrong-target operation does not advance the task; possession of any bowl object is not established.",
+      "recovery": "Open and withdraw the gripper clear of the bowl, identify the corn on the tabletop, and align for a grasp of the corn before closing and lifting. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The corn remains untouched and no damage, spillage, or meaningful damage risk is visible in right_shoulder_cam through frame 49.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn remains accessible in its original tabletop position, and no environmental restoration is visibly required before another attempt."
+    }
+  ]
+}

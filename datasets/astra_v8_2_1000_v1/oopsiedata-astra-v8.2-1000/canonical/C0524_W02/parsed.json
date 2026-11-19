@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0524_W02",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this provisional window, not a visibly failed attempt. In base_image, the right gripper acquires and lifts a green cup (frames 350\u2013460), revealing another cup on the table; the left gripper approaches and closes around the remaining cups (frames 490\u2013620), then lifts a cup while the right gripper repositions its held cup (frames 640\u2013699). These are task-directed handling actions, with no established failed acquisition, drop, or harmful collision. A completed stack and packing are not visible by frame 699. Earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

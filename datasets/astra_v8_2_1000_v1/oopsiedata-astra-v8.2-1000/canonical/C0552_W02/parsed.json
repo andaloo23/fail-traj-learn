@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0552_W02",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, not a visibly failed attempt. In base_image frames 350\u2013500, the open gripper approaches the objects near the pink bowl; through frames 550\u2013699 it continues positioning around the green object, without a confirmed pickup or empty retreat. Both bowls remain on the table and the upper blue and right red trays remain empty at frame 699. This task-directed approach does not establish a local failure. The identities of the small colored objects as cans are not fully clear from this view; the supplied sorting task is retained. Earlier context is limited to frames 348\u2013349, and later execution is not supplied, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

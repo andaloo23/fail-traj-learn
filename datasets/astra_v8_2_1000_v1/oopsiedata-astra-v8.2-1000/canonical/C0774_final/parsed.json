@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0774",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven starts closed in frame 0, left_ego_image. After approaching its handle, the robot remains nearly stationary for a sustained interval around frames 60\u2013100 in image, left_ego_image and wrist_image. It subsequently pulls the door downward; frames 150\u2013166 in image and left_ego_image show the open door and exposed oven interior. No damage or disturbance of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 101,
+      "failure": true
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 167,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 101,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach, the robot sustains a nearly unchanged position beside the oven handle without visibly opening the door during frames 60\u2013100 in image, left_ego_image and wrist_image. This prolonged pause does not advance the task; its underlying cause is not visible.",
+      "recovery": "Resume task-directed handle alignment and acquisition, then pull the door along its hinge trajectory while monitoring clearance; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay only; the oven and surrounding objects remain intact and undisturbed.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental change requires resetting, so the robot can continue from its current position without human intervention."
+    }
+  ]
+}

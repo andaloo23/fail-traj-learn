@@ -1,0 +1,116 @@
+{
+  "id": "resp_0dd606f7385f22b8016afbe7859fb487d1b346857c20ecdf44",
+  "object": "response",
+  "created_at": 1794893704,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893715,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0dd606f7385f22b8016afbe78d9b0c87d1bac3d288cd102e9d",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--eUSQ9dk0wmtVXpvQL0_x4jVN4PLoP2f2JOgE7uVI_4nSjvKh6mwIIcbIe1rBCK-WFQ8ZgfhUUPTWSDE2YlSWdvyque_RN9hTHc2Dutc_OGO0zX2-lm2EoNkB7kaLXYEUDmmg2RnBGbX-c-RgcwmcH0B5104g_jm4cTigo82MiMOCdXfdw_DRikH2RxTp21422DuYABi5Udw7yvPFuMf0GiYp4EGJgZsNrsuClZg5yxHDFpJwySAoS93gYMndkDV5Q3Cj70PB3pYt45-eqf2SGrLJkhY1XKsj9Hx8Mlf0P5OB-NyFwpnEefvV6KHbg3BUtLasl1qgouxjyjwwLM7d9zo4NckS7k9v87OjyPjDzalX3UXH-PCUQb57zCFuS5fjHv1rdWx0_a4ckTRc71TrDE4ApIKUPUsTaMh9dcMIe1JfmGaldEIH6DwKgxON1TECvO8nxN2OunAZPVTnStXGBAUrp9jd5IMkv0h4aipfKnGcPIqChD9waJxhPhjWkuxZ7vSUiIBHzQao8Nf3I4PkRDGdI1p3F7LbW0TisVhSFhNh1HfQ2k3TrtSCTzR__DR3iAqegdYD3BjH5vE6mfxefCeYEqZkqRjb88dv2e2H9VxIoj0QQr8pp5ubfK57HA_jOw80ueEYlGmqRPC_GsFSp8ybhQeFsikyuAMzupipI7w8ooPLXsSUryAlCAnZrTiC386oQltAeEqWfWB1XWNWHzDgTSK2PiSAAQm9cU3k0xoVGxtMIQFn7xZRD71VbJdtA7ID145Yk-YS5Jwv48IldjODXnB68JA_Pkf-vSYY4BMlya8Aw67YUy5yCzfmWHVGmw8gGBMnrlm1OwuFDIzBihFEnwJ-t0OcE0MSypUVufA26RkZcveDbRmHeUaMHYRT3g4lKo6Q9F9FJ_qBJxNEpB79YGlX1bNYFzRTWRuitTqqYJJhE8UAFrqH6sPq_jJJGQt-QeVm7lSasa57q7YaPViAEQoB0l966r9JZAtgKxkrhDbeIuiFILqKTXj0qUyQqDPSLBTXsDlq7fdsiK1B8YGyQkk2jGYrORY_G_uAPVSvfkyaQ--ymu44tUWcINdW6wyTnSpEqED9HES5L6sOmvvBX2q6rDtIfTKD7g4a9n8IgWa-G4TPvgY6BU_5Iqw9Kj7Eh_CJu18OlfXoTYRWjeSCNdX1MH4KcOvMTBKNxE7pJj61QbgUqtwcoD888Gej3_jyLMVDEBQoaQn6A52yfPznP2r89TbrYe-9zBYiX_4QXHqih18-xjZjSJPFoQ98L5VvWFjizWVMRI0uTpCKZMi_O_J8B1oynteYtodMyNcFFlIR-89nd4xI4uxkYsmeavwVEr5Bwp4nr8FjDce-thye-u5Usjx0FVxF-OvkXN6VyrKJigU8mbSwD3qQKHGKcKyeuc7g932SD5nNxAuEJaYCneeROXB9eeNNLujBXIE_6fGa5NmX8yhi_of1Yz8SWQ1b5B28lVpAZtowd4lU6dlIzVERSCudiQNSJzoi7KpSO0Z16gBmCRPBEgdRatvJOUOMk2FOeaTIOjRFQFHdhzPtprJo3LEiEiHghVI1IqPHqRMRLZVX0SceBROjGWgsd6zU93Zug55QXhVfwQWx_zAF3ErubMK4Qzj3R5WmRXGc3Mh5d5wrqK4FhE5V3dPBCdyRDA5qEPrKPCsMVhO2FpKQkvYdcj8xmbt6k3BULylxSnfkWAsGB07ZEJGd0w0G8UcEsGpXDsp7hrNaUVvUwObcT26b711nx6jbHrig-9fLAb00-sheNzGbZBI1HJJBd35k9y8wd1k1ssBw8Nnmo9JCSuqW8En5RAK2YlUzfI33FEMVDU7BVTiWiyVZlzBFJ1Z1hOVKpuCYLTNms6U4fSpR6vl0gqdRw-08X4usQKS_DEsRbJEO0rkaY6O8YPxELeDFG7uIZVZdGaTZ0_P56aJeYbusmNmvD4kONyutygLDkrk7nITO8mr9GTunjhO_s3EMYW-n090oE6MHu-uBddbW_P4N_KrmCO1ye6JKMUKZMgW-VlrwEd6IvmbwF4ld5qwUC8eDJjCPsO9t4bMHlL_7ncHZQ1SD1hBIZqo5_4SCCwjPNKv6zFb9wzuFmbwwX6FdhyZefSpNTOoWCH6HTJJ6Xui2uq4qqzhYzVqwyc16gd2jLtRYwsWeDZs2St49Sc3nI5SRYJFlaH3iVgXgLr3HAkk2ifJPCeVsM5jDE89MltfdgAJ_uhgCMRSRpLElcMDog_5_H3d9Dm-_jD0_pUvwCFC7sIiAwXcSRMHZ_ZReIq5Eg2yMPbhjLv0RYEAzGuIcGBvhpfi7A1eKPlw4EXoxbwSbW1U-G-ESxkTH_g3BfwUcFsEt1pC-xl62ButzBtTHV126_XVUaOGy3HkkvcJHoR-mMh74UFTGdVYruFxUuORUrTMXvokSu5jNhkBQmK6EJRvS0k6WdPjkeNnS4gON3hbUBO3jF_tCufXVaqkrBA_33Mu5DKS6prlZGpn-7mzTmKMti3JR7qcqps7RRz5AyxamngzTIoY8Ns64avzSn0c00rre6ERRfn3ae-xBmMZLoiwV3ymRS1M9eUqi-n4g5iAMzyKP07ndGS8WPNWrxcRxU2BsztwD6w8jk2hLXpQWelhvjf9kfvayK-vSoXKD_zZpF6sjsd17N7N_E9FtLT3LFP0QR6vVlTmVfyOlY3QL4OdQrmpnLotfWKpqvTZkI5tMqrPXaDW_EjIwusWnY=",
+      "summary": []
+    },
+    {
+      "id": "msg_0dd606f7385f22b8016afbe78e157087d1be0e4d197f7f9b99",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0351_W04\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window: aria at frames 1050, 1150, 1250 and 1399 shows the cup upright on the table, without pickup, handover or placement. left_wrist and right_wrist show essentially unchanged empty gripper configurations with only small positional changes across those frames. The visible local failure is sustained lack of task progress, not a demonstrated failed grasp. Earlier execution beyond the two context frames and later execution are unavailable, so the outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1050 | 1400 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 1050-1400\n- Categories: task_not_attempted\n- Explanation: Throughout this approximately 11.7-second window, the arms remain hovering away from the cup with only slight drift; no discernible cup-directed approach or acquisition occurs. aria at frames 1050, 1150, 1250 and 1399 shows the cup unchanged on the tabletop, while left_wrist and right_wrist show no held cup or productive handover action. This sustained unproductive interval supports stalling rather than a brief pause. The preceding two context frames show a similar pose but cannot establish its earlier duration; the failure may extend beyond either window edge.\n- Recovery: Resume a cup-directed approach with one arm, align and acquire the cup, verify retention, then perform the handover and saucer placement; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: Only task progress is prevented; no displaced objects, damage or concrete risk of damage is visible in aria or the wrist views.\n- Resetability: immediate\n- Resetability evidence: The cup remains upright and the visible environment is unchanged, allowing another attempt without an environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 74758,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 460,
+    "output_tokens_details": {
+      "reasoning_tokens": 24
+    },
+    "total_tokens": 75218
+  },
+  "user": null,
+  "metadata": {}
+}

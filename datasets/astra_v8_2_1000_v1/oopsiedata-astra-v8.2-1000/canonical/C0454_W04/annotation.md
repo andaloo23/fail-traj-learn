@@ -1,0 +1,26 @@
+# Episode: C0454_W04
+
+## Episode annotation
+
+- Language task: put all the toys into the bowl
+- Success label: failure
+- Outcome evidence: In top at frames 1050, 1200 and 1399, the green bowl remains empty while the toys remain in the adjacent patterned cup. left and right show no acquisition or transfer throughout the window. Small changes in right around frames 1323-1325 and 1372-1378 do not establish a task-directed approach. The provisional failure reflects sustained lack of progress, not a visibly failed grasp; whole-episode completion is unconfirmed because earlier execution beyond the supplied context and later execution are unavailable.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1050 | 1400 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 1050-1400
+- Categories: task_not_attempted
+- Explanation: Across frames 1050-1399, top shows the grippers remaining apart from the toys without acquisition or transfer, and left and right corroborate essentially stationary behavior for approximately 11.7 seconds. Minor right-view shifts at frames 1323-1325 and 1372-1378 do not produce discernible task progress or a clear recovery approach. Context frames 1048-1049 show the same configuration, supporting continuity of inactivity at the starting boundary; its earlier onset and possible continuation beyond this window are unknown. No hidden cause or abnormal termination is established.
+- Recovery: Approach an accessible toy in the patterned cup, align and securely grasp it, transfer it into the green bowl, and repeat for the remaining toys; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: Frames 1050-1399 in top, left and right show no damage, displaced objects or meaningful damage risk; the visible consequence is delayed task progress.
+- Resetability: immediate
+- Resetability evidence: The cup and bowl remain upright and the toys remain available at frame 1399 in top and right, so another attempt requires no environmental reset or human intervention.

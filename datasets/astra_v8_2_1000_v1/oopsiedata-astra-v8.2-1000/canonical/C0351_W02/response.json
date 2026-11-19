@@ -1,0 +1,116 @@
+{
+  "id": "resp_016aa43fe860567d016afbb9259b0087d29fc659c06c8dd97c",
+  "object": "response",
+  "created_at": 1794881831,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881841,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_016aa43fe860567d016afbb92c551c87d29d105879810b1f7d",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7kycJOEcxCwTOt8VHqKBgbAy7PborxPzEbk-oUxGKdqV8yzmp8_JOwctU4JkvxszPBdi4lFD_rhKyT1U1UMo8zyvm53INf-wbENkhDe-AY2qMVdMyUs4XSDKdpY6s9Ica6p5piBWKN3Durvf5Z-xNnibaxEZnuTT5_6LfiWl7edd2TPn6H5h5_QSdeT4XJrehyZvyjKQ_fhBOwmtvKPhrfMmrNTPnBw7l9bn7lEDr78LQtHUoAizvktf2lDFmZeQdfAMp_2GAnLPlzqGvJUmfkUwQNBAqYd6EVyYRjtG3I8eXR8mf4woJ-JZW8K1e_BoFva9fUuHiYrinuw1sXOtZsfcnKvFOErZq7QJvIMP2uUtFrVAqJrfgSFoR_zhkhW5KFr2ts-dhjLjLrmVEtE6jWVLA7Iys8L9lwRRpIBbQ_FeCyoMX-SFPVsR_xX_VmI_neKzVAxKgocHvVn2uK_WbeVWeHX5DaOqD8GkibYfSq7Id_VtnuCbM-vc6NahWebUAyWOsaIAzoi96n-nm_nnFhjFWGxEdxUvV8cR4czhXxqBlnRpQ4SB9y4wt2deJNM36miYa4WrRN4Oxu-DqcjFiTZJCQHNx-_mlIONHIbusCu0ohoSEsxWj64aIEhDV8S0RsFBZN8IeqArKMO04KVLSV8k7d45ANJ426SXWm-PVhZaChztl-_D7hKfz-imLBt3fqkRpWDGP-W4NF2R3L3FHn0sGYF92pq6maiaIg-NHpg4gGLadgyOh04PlbwM-Q-vembPbqs48CPq-rAUevi_S1k0aPbW0cxqUE7ONL6k_p6xrZd2UhFrtsy6Z_aSBCKx0XiShG2btHfkL5tXbfiKBs8MofXyT6mRm7-9tGgLbmnrvTCxV7ueCcItpANMuixa4XQpURrEMKvYBeaPYx65jkeXkJQusskis38sEJS5gxC7Nh0Y6MGbMtrFP7Pm63MAziYMhnsbk1pWJsLdN-heJsBy7c672NqkGEHfaG2adWDcJxhIuppDYB-ivXx_OkbAtuLelb-YE-_bNtL2WwyxTk21q0Sssx1nLpIHlR99fRsOvCN35HDe3vmBq0Vh5FrDdwWb1Cl4dPuHHxy_5avWZ_B4p_4VekFlToBoHTKvDrgIQTAcqWYfi_iFmYEH_wRCXBN-z6p8HlikFaPN88XsmLRWkyVHwaoQMuGHNzUknEIHvNfRZ1UQ_TwmTksVlhj0bcqBXD9ZPaVZ1qekgyCT9pROIcu9AaO6dRG-CnJp5hARpYsp4EhgWaPgsYe66CkN7MLbyuW5-TJr20GUv1EYl7bQPayuSrr-F29xEAk_pSMb4iIJjlce1rjtF_uy3x4m9jCYYW_3PYwrz82bBosEn2W__D3LtFt8K9xiERvkobxc3UpqxOnAP9jfJ8yXqvWH5eQk0RDACLq_1cj3jfWwJDd9X4JunKcsi49Dj8RdBFMUjMQoWwa3XMysJEWXPshzpMk4xdwGSLB2vfOMJourCC7z41EQJkxCeLWW5S50oK99teSzMCkSYTDim0V8Kk4WxYuoefA8wassUUCe9qHjqWUWgCdYc0A91E6tLeYWqidCNxlorV-l6bzjqKRraHYmONVL53uyDyYPXdz4BP8APpRvD9U4IvjmKNEhCeBmzVsK9ynDJJa48DwNUihxoMYHOZ3V3RoZGa51zjiYBepcvDb-7Eh5hFBj5KzfvtcGRHae5uxjJsv9smETO4h7lPThHqV6dVWGe86-TH26zPLIij4cnwnlqJmdpiWsnlHjxmMNyTpT898p2ZW9khwn2emEgESBmycvrlHhja2Cc1mKmpn31S_qtxKZMsQCYaYt-u3vq1du9Cy7_M1xIkBNfWZEJx1CmKeLlWesujuYw9OhOf3nE92RLbY-FuGJhzReeZGp1uV4DnkfDokQ7JplXFKc3WtaNX17_Ob9Z2U9j-v_j50Fp3iEFxOYSm93Xw5rp5_cQRpOcnPUSHOa4fUNeADHfpOFJSJY23xf-R_k5I-G7H3bJiftFrM11L84AiYABtMUjo3CtpbCdmmbY_rKjpOt3VuPQwndLKk337dSvUGmpFSWP645rS1dVIMnkXyeshPADcWqH7RsggsllQUHLt2nDCE59JX-Upf5z3WOYyhXHxTaycM1t1gbW9qhIq_XhTrMfHEsN8bHYHtUvh5axB4Y9VPheEbOxLeSRkQy64w3ocjHVyncrFuNz8nXBfW72HIIRJ7rGg0uC-kdx0u73rjXQbtZbdeV-wHivFOKKW9sSVu8v-N5cCQPrLtEhqsmrJRy-2R4o4VWFWiA9yR9rg4VmsAvWNwaxbBBi9pzrOMTX0waEvUAWq8ICMd5v9Htx1sYeFASgYHBC8DYglmXgMGU5zkCAVn0gc8k8Qai7cldfAQAiq0v2of_4ZZHl7yYxXqIZ69tuo74OeWsFZzyTyMhiGM1OOBdlDp5gS75rPm3_25wYkMPsGAJZH1-f6JGUFmTMYNQR2kcmUQFbChUhUSTM6bM-qp8_xxoKDGU51zhgL68jLXwmMW-aoeooEuJUwwR4KlMigJugraa17IC9b0V3vew8Y9u5HJnzJ38r_NW40I_kJWFIUTZfHFb3HLkWnfP33vx5m5TsFMVfbeWGXU2lXP3h03xf9lzE7Gq2-k0Atn8tDeNyMDvR8MPAXrUw2XmSKeBC_v1oza7L_WqnUzAJN9WEKYxvS0C4_7Ylnt87opWw8qfivqHOeqq0YGtKaBu0HOLCdfRMH0NqLVydVSi3X2GmIM-mW1NlmQXe2kJDh7H_-LfqvceImvFyt3G8y3bhvJVX84F5xrox0lRcyC0RoQBglOwiwJBqaggStngM8sSKH8oBHk8sbJ_6J6LMoFwSzaju-Z2i433RwiBpfM5VQ76vyBqSqvlGFV5ucsmrpnkg==",
+      "summary": []
+    },
+    {
+      "id": "msg_016aa43fe860567d016afbb92d05ec87d2afb6437a36ab1eb8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0351_W02\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window: aria at frames 350, 500 and 699 shows the cup and saucer still separate on the table. left_wrist shows gradual arm repositioning after the initial stationary interval, while right_wrist shows an empty open gripper; no acquisition, handover or placement is visible. This is not evidence of a failed grasp. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so the outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 436 | Yes |\n| 436 | 700 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 350-436\n- Categories: task_not_attempted\n- Explanation: aria, left_wrist and right_wrist at frames 350, 390 and 435 show essentially unchanged arm positions, empty open grippers and undisturbed objects, establishing sustained inactivity rather than a task-directed approach during this interval. The same pose is visible in context frames 348\u2013349, consistent with continuity across the window boundary, although the earlier onset cannot be verified here. Gradual repositioning becomes visible from frame 436 onward and is not counted as failure; the cause of the inactivity is unknown.\n- Recovery: Resume a task-directed approach to the cup, align a gripper and establish a secure grasp before attempting the handover; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The visible consequence is delayed progress only; the cup, saucer and environment remain undisturbed, with no observed damage or supported damage risk.\n- Resetability: immediate\n- Resetability evidence: Both objects remain in valid tabletop positions, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 74544,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 456,
+    "output_tokens_details": {
+      "reasoning_tokens": 35
+    },
+    "total_tokens": 75000
+  },
+  "user": null,
+  "metadata": {}
+}

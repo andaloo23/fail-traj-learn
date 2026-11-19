@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0322_W03",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisionally for this window, no toy is placed on the plate. overhead_cam shows the empty plate and toys remaining outside it at frames 700, 774, 969 and 1049; wrist_cam shows repeated unsuccessful acquisition cycles near the beige toy. These are visible failed attempts, not merely unconfirmed completion. No unwanted environmental collision is clearly established. Earlier episode context beyond frames 698\u2013699 and later completion are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 711,
+      "failure": false
+    },
+    {
+      "start_frame": 711,
+      "end_frame": 775,
+      "failure": true
+    },
+    {
+      "start_frame": 775,
+      "end_frame": 839,
+      "failure": false
+    },
+    {
+      "start_frame": 839,
+      "end_frame": 861,
+      "failure": true
+    },
+    {
+      "start_frame": 861,
+      "end_frame": 887,
+      "failure": false
+    },
+    {
+      "start_frame": 887,
+      "end_frame": 976,
+      "failure": true
+    },
+    {
+      "start_frame": 976,
+      "end_frame": 1027,
+      "failure": false
+    },
+    {
+      "start_frame": 1027,
+      "end_frame": 1046,
+      "failure": true
+    },
+    {
+      "start_frame": 1046,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 711,
+      "end_frame": 775,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the beige toy at frames 700\u2013710 in wrist_cam, the robot withdraws and moves toward the plate without carrying it at frames 711\u2013755. overhead_cam shows the toy remaining on the tabletop; reopening at frames 757\u2013774 in wrist_cam confirms the empty acquisition. The movement therefore does not transfer a toy.",
+      "recovery": "Reposition the open fingers around the toy's body, close at an appropriate height, and verify retention with a small lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible, and no environmental intervention is needed before another attempt."
+    },
+    {
+      "start_frame": 839,
+      "end_frame": 861,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure at frames 827\u2013838 in wrist_cam, the gripper withdraws without acquiring the beige toy and opens again through frame 860. wrist_cam clearly reveals the toy still on the tabletop at frames 850\u2013860, consistent with overhead_cam; no placement occurs.",
+      "recovery": "Adjust finger alignment and depth around the toy rather than repeating the same closure, then verify a retained lift before moving to the plate; human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition causes no visible damage or harmful side effect.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and plate remain available for another attempt without a manual reset."
+    },
+    {
+      "start_frame": 887,
+      "end_frame": 976,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the closure at frames 875\u2013886, the gripper moves away empty during frames 887\u2013955 while the beige toy remains beside the plate in overhead_cam. wrist_cam shows the toy outside the closed fingers and then clearly separate as the fingers reopen at frames 956\u2013975. This is failed acquisition and empty movement, not a demonstrated drop from a retained grasp.",
+      "recovery": "Return with open fingers, select a grasp enclosing the toy's body, and confirm that it rises with the gripper before transporting it clear of the plate rim; no human assistance is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only task progress is lost; neither camera shows damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains on the accessible tabletop and the scene needs no visible resetting."
+    },
+    {
+      "start_frame": 1027,
+      "end_frame": 1046,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the next closure, the beige toy moves out of the finger gap at frames 1027\u20131029 in wrist_cam and remains outside the closed gripper beside the plate. The robot then reopens through frame 1045 without lifting it; overhead_cam likewise shows no transfer. The images establish failed acquisition but not prior secure possession or a hidden mechanical cause.",
+      "recovery": "Reassess the toy's changed pose, approach with fingers spanning its body, and verify acquisition with a small lift before transport; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy shifts on the tabletop but shows no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The changed pose can be addressed by repositioning the gripper; the toy remains accessible without environmental intervention."
+    }
+  ]
+}

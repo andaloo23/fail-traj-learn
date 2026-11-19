@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0685",
+  "language_task": "pick up the cube",
+  "success_label": "failure",
+  "outcome_evidence": "Two acquisition attempts end with the gripper lifting away while the blue cube remains on the black mat: frames 25\u201334 and 76\u201380 in exterior_image_1_left, corroborated by wrist_image_left. The cube is still on the mat at frame 80; these are visibly failed attempts, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 25,
+      "failure": false
+    },
+    {
+      "start_frame": 25,
+      "end_frame": 35,
+      "failure": true
+    },
+    {
+      "start_frame": 35,
+      "end_frame": 76,
+      "failure": false
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 81,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 25,
+      "end_frame": 35,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the cube at frames 17\u201324, the gripper withdraws empty during frames 25\u201334 in exterior_image_1_left. The cube remains on the mat, also visible in wrist_image_left, establishing failed acquisition. Opening the gripper at frame 35 begins preparation for another attempt.",
+      "recovery": "Reopen the gripper, align the fingers on opposite sides of the cube, descend to a suitable grasp height, and verify acquisition with a small lift; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cube remains on the mat with no visible damage or harmful scene disturbance; the consequence is an unsuccessful pickup.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cube remains accessible and the environment needs no visible resetting before another attempt."
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 81,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the second approach and finger closure, the gripper rises away during frames 76\u201380 in exterior_image_1_left without lifting the cube. wrist_image_left likewise shows the cube remaining beside the retreating fingers on the mat; the second acquisition fails.",
+      "recovery": "Reopen and reposition the fingers to straddle the cube before closing, then use a small verification lift before further motion; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the cube on the mat, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cube remains upright and accessible, so another attempt requires robot repositioning rather than environmental or human resetting."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0563_W03",
+  "language_task": "put all the fruits and veggies into the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Frames 700, 875, and 1049 in top show the produce remaining in the light-blue bowl and the green bowl empty; left and right show unchanged gripper positions without acquisition or transfer throughout the window. The task is visibly uncompleted with sustained inactivity, rather than a failed physical grasp attempt. This outcome is provisional for the supplied window; earlier context beyond frames 698\u2013699 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 700\u20131049, top shows both grippers stationary away from the produce, while left and right confirm no discernible approach, grasp, or transfer. This approximately 11.7-second interval of sustained inactivity makes no task progress. Context frames 698\u2013699 show the same posture, supporting continuity at the starting boundary independently of the prior prediction; inactivity may continue beyond this window. Its cause is not visible.",
+      "recovery": "Begin a task-directed approach to an accessible produce item, grasp it, transfer it into the green bowl, and repeat for the remaining items; no human environmental intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of progress; no object displacement, damage, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both bowls and the produce remain in their usable arrangement, so a new attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

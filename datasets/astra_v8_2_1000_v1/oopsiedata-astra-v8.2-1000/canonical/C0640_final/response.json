@@ -1,0 +1,109 @@
+{
+  "id": "resp_0c76a3be99d01f7e016af91f7ff81c87d28d69b3ce6edecce1",
+  "object": "response",
+  "created_at": 1794711424,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711429,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0c76a3be99d01f7e016af91f81a10087d299a987fc55e1f0b5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0640\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: failure\n- Outcome evidence: In image_primary, frames 0 and 99 show the left blue-and-white stuffed toy remaining on the table and the largest, central white bowl remaining empty. After a small initial gripper movement in frames 3\u20135, the robot stays above the bowl without approaching or acquiring the toy through frame 99. The visible failure is sustained lack of task progress, not a failed grasp or an inferred abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 5 | No |\n| 5 | 100 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 5-100\n- Categories: task_not_attempted\n- Explanation: In image_primary, frames 5\u201399 show the empty gripper remaining nearly stationary above the white bowl, with only minor positional changes and no approach to the left stuffed toy. The toy remains unchanged on the table throughout this approximately 19-second interval, establishing sustained unproductive behavior rather than a brief ordinary pause.\n- Recovery: Resume task-directed motion by safely clearing the bowl, approaching and grasping the left blue-and-white toy, then transferring and releasing it into the largest white bowl; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: No object displacement, damage, or meaningful damage risk is visible in image_primary, frames 5\u201399; the consequence is lack of task completion.\n- Resetability: immediate\n- Resetability evidence: The toy and bowls remain in their original usable positions, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 10725,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 364,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11089
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0918d819636f74b4016af9050cba2c87d294d1e5d66a399c26",
+  "object": "response",
+  "created_at": 1794704654,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794704662,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0918d819636f74b4016af90513ca5487d2a75b1a6c9e703eb2",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QUY55tEOtT_NxhqLM6A1HyL634s6mAr1PXg37tq7KOeIihYB0EPv7nIIM3NcXbZQ4ORdzqzoK0saUZTaaPaA22fBEre5o5b9BFgZjWOpYYaTEp7tTtB0g6wRwvuTeJW_OIo8JQhhdS4bJnadODg-sxsAyoN1tdn3WrOu3EBiMAH9m_C7DQsDDj5iOhv6iJGG-YvIPk2YJko0c2iqeOuMrQ2Yw07LNCBCjP4HOaJyLeOCjDVA9d7OuREUV1KdvCz9hgbfVki3uqABcpjB4EkATCdyjQLenNAZJdQG6lqgtIaS5SLHZu_EY2cz5HQ0xlPkZXpLF1kvObuE3_Ol1coxG0JG0Uu3tTfaE04iYY7V9qJHi3gLEus1YeGZtNJtFLpB-QmoQLv2rkz7Llj4G3iJQeYriuQBAzrBjP9hxqoBuXsBpiill1k_4lrOo_5vdZjg-z7vTN6am5ExqA6Svg_jfNUE_IuqseY-30kd25gmqU3l_j4jrm-y8viP3L9Tq3p7hdQNIHeIHb6zCix0Z4AjNbrvd3uq7GUH97Z-LthXZEwXTkZGwnz_o6uNINfvPATqp3Oa2sOQXK9qdajYHiUCYvngI6Y2wFbJAXqyA2rqGKDb4P4Xr-X5lbKVN3Mq0Zh4BRW5Sphr8AccW72SoIfkGAC8_lwKDF5bs-G2tJ4icxfinXrWYkl5TEFATagUXMr40WHneACmvWcuG6Fs-KyLJkCqeO72YoY7krDub7HxZXopt9h3zAQsd5FUI786imVnpm20Dk5qdIMHVuLjz7hNAervimQLsIwGwcMCCgwWcICk3gNIQSVjswgGVVl7C5vpCGwG8B1edzNiWbzb1ShEMv7YZ_PK5-wkXziVv7eCUZ5YZHiK4merzGwUwakL4OEz-JoDMRN72LCxRj7peva5joK6kf_-t9T8pVPHtbsbqQGXk4Ek_LDt_EVAt5SDuH_i2u3qESxhHDIigAeoeC6IVE93Zzx4tQuX78wBy4sOLbXsKhiQLHdtsUebwF0fGZ2XuPixf_yaksfv-Z_3VlGYKehCmKFUOe1ouk-5lNsyDUb1Emqc16qqmoOxplIoA1hMfLK_C3cKxu4qcEaUveXPydRt5Nj6K8tWIYKQqCHThdu3T0MQtMSnCf6YgHtmyy8RvuNH7nFZIoegGIMeBPNxDo-mY0EkpVf3i5vDIRIvTrqrxDoxfEFFogD3ZpffmWB3hKlUgY1vJYNar30FEA3X7KpmbPcKkizpfd-VYJ6NCtW5KtnX_y_8azRYt6KVta3U0-XZd2gM2lKuhKZ73ncAX5PuQcYTzwvY5TxrCCWADHkxPSdWV4bqt7hs1Q56j283kHAEY37nz1YwUjbSlmfEXJdhaG6gUM2bwCcrf_pk5FMVRLlTWu7RPY50CDzTWoF02aYOPfysyPmGPbMyVtETqXO8ILTXahU-HglregeMsCVoTX6qRvvW-guHHyjbl9WINNfkRCMOYrhr32ljZKTZMOxI20xyS8Ze-xuMeUkd50c2PoxKmGfX2hCurYSeTnxW7xaCiJH7BHPFPPvuKlcFxj1Lz8NMUjo7yHlxMS1igLw9sR9XMwbzGfNtR2UCRCNb8vpkiKi7G9jw-PMnZ2IxOqPm6CqjWuSzFmSt9IQTGf0Yy2y5dXL2Md3fylmVfKhguZiw9fmXY9mhVdkQh9gf1Hdq65ZTWd233cCMX7i2Ia8oIwlwdL394cvxxpoLdyCP36K4gkd2RUkh90Zp5n-UZK2cSTQ9LUYedlz2VliQTkSEPXPnkwzR7iy6G_Jspm9X5BACM08UgVSS_rskUG7r_KIKXljJNO5on9xtnggOPAqdnXHcG69hoOjxFdCFH9qEiRl0jHBRc1MEFauDriwHcgf6rz1CG5HklJZrIZQJLwQgthy--_jF3ZhbZUJUGzk4CnAoittbaxCduVWvsLyOYNj3_SeXnbS82v4ddZ3HrNL7XulqdA_lf9sWARCm2OCvxlbV0Glms3Y1-BkuxuPMi9Ym1I7-3HIU4IX5etm4pLfS0lyOpdz0v4v3FNsE4967W6uQYsRrxSe5tnSB2xXCRnCQtxqNi6zHHE276v9tbUzhaybnlC3qAn7AbQ8m22ZNgaTla2ZwK9VGCRcfJA1CAtQdIXLyLjpy-7C-uAY5vTWJTDXOzuIpI-NiNrVwKn9fVOAnCzcGfw3Leqwo2LWQdqMMd033TZrbbUl8y7dUwvvXSKJurodyBobewPQQmgH-YAayKPe0fi-BQionEWoUb39QXD-iRWVZWOkYirGYpSLvDiYwyj6FX7n9iLUjhnVzH-0peNPZcbCWc90ZdQYviFz8Q==",
+      "summary": []
+    },
+    {
+      "id": "msg_0918d819636f74b4016af90514e50887d29315b5878a9d1415",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0225\n\n## Episode annotation\n\n- Language task: Pack the toys onto the wooden tray.\n- Success label: success\n- Outcome evidence: The robot clears the banana-shaped object from the tray and sets it on the tabletop (frames 80\u2013175, overhead_cam and wrist_cam), then places the beige animal toy onto the tray (frames 220\u2013317) and the pink rabbit toy beside it (frames 423\u2013538). Both animal toys remain on the tray after the gripper withdraws (frames 590\u2013608, overhead_cam and wrist_cam). The visible sequence supports interpreting \u201cthe toys\u201d as the two animal toys and the banana-shaped object as an item cleared to make room; no failed acquisition, damage, or unwanted collision is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 609 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 74511,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 48
+    },
+    "total_tokens": 74755
+  },
+  "user": null,
+  "metadata": {}
+}

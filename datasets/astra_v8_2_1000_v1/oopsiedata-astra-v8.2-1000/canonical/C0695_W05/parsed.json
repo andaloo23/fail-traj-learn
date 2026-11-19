@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0695_W05",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal remains on the table outside the box in external frames 1400, 1576, 1668 and 1749. The external and wrist views show incremental gripper repositioning near the animal, followed by an empty withdrawal at frames 1746\u20131749 rather than a successful pickup. No placement is visible. This outcome is provisional for this window; earlier context beyond frames 1398\u20131399 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1746,
+      "failure": false
+    },
+    {
+      "start_frame": 1746,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1746,
+      "end_frame": 1750,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the close interaction at frames 1734\u20131745, the gripper rises away empty at frames 1746\u20131749 while the stuffed animal remains on the table in external. The wrist view likewise shows separation between the fingers and animal. This establishes unsuccessful acquisition rather than merely an unfinished closure; the precise contact failure is unclear. The withdrawal may continue beyond the window.",
+      "recovery": "Reposition the open gripper around a graspable portion of the animal, close securely, and verify retention with a small lift before transporting it to the box; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The animal remains on the table, with no visible damage or disruption to the box or surrounding scene.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible beside the box, so another acquisition can be attempted without an environmental reset."
+    }
+  ]
+}

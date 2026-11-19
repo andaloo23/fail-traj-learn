@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0556",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon begins on the tabletop (frame 0, image and left_ego_image). The gripper closes around its handle and lifts it clear of the table (frames 64\u201383, wrist_image and left_ego_image), then carries it toward the open drawer (frames 100\u2013160, image and wrist_image). At frames 164\u2013169, wrist_image shows the fingers opening and withdrawing while the spoon remains inside the drawer; frames 170\u2013183 show it resting there independently of the gripper. No failed acquisition, unintended object displacement, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 191,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

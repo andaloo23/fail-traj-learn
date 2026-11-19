@@ -1,0 +1,109 @@
+{
+  "id": "resp_098aea03c648a5df016afcba8124d487d28f5cfe6811bc9805",
+  "object": "response",
+  "created_at": 1794947713,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947718,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_098aea03c648a5df016afcba842ec887d283c5036a0c72beea",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0764_W10\n\n## Episode annotation\n\n- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.\n- Success label: failure\n- Outcome evidence: Provisional for this window: completion remains unconfirmed, not visibly failed. In base_image, frames 3150\u20133270 show the gripper acquiring the pink bowl at its rim; frames 3297\u20133437 show the bowl moving with the gripper toward the right tray. By frames 3477\u20133499, the pink bowl is aligned over the blue bowl in that tray, but the gripper remains engaged and completed release is not visible. The cans remain in the upper tray. No failed acquisition, harmful side effect, or sustained unproductive behavior is established. Earlier context is limited to the supplied preceding frames, and later placement confirmation is unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 3150 | 3500 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 33186,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 33407
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0159",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In base_image, both cans are released into the upper blue tray by frame 2400, the blue bowl rests in the right red tray by frame 3498, and both bowls are stacked there with the gripper withdrawn by frame 4400. Frame 4771 confirms the completed arrangement. During withdrawal after the blue-bowl placement, the robot\u2019s hanging cable appears to catch and displace the still-uncollected pink bowl (frames 3400\u20133500); no damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 3400,
+      "failure": false
+    },
+    {
+      "start_frame": 3400,
+      "end_frame": 3500,
+      "failure": true
+    },
+    {
+      "start_frame": 3500,
+      "end_frame": 4772,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 3400,
+      "end_frame": 3500,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image, the hanging cable overlaps the pink bowl during the blue-bowl placement and withdrawal at frames 3300\u20133400. By frames 3498\u20133500, the pink bowl has shifted leftward and downward while the gripper withdraws from the blue bowl, rather than intentionally acquiring the pink bowl. This supports unintended contact and displacement, apparently from the cable; the precise contact onset is uncertain between the supplied checks.",
+      "recovery": "Lift and route the gripper and hanging cable clear of the bowls, then reacquire the pink bowl at its updated position and place it in the right tray. Human intervention is not visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl moves a short distance but stays upright on the table; no breakage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced bowl remains accessible and usable, so the robot can continue from its updated position without a human reset."
+    }
+  ]
+}

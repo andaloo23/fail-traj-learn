@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0892_W04",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Task completion remains unconfirmed in this provisional window, not a visibly failed attempt. In base_image, the robot lowers and releases the green can into the upper blue tray (frames 1050\u20131200); the can remains there as the empty gripper withdraws (frames 1230\u20131300). The gripper then approaches the pink can (frames 1335\u20131399), without a completed acquisition visible. At frame 1399, the pink can and both bowls remain on the table and the right red tray is empty. These actions advance the task without an established local failure. Earlier context beyond the supplied boundary frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

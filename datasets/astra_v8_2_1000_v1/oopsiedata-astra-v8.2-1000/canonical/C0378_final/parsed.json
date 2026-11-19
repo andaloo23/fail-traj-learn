@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0378",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success",
+  "outcome_evidence": "Frames 31\u201340 in wrist_left and wrist_right show the spoon retained in the gripper and lifted off the table. Frames 59\u201374 in ceiling and both wrist cameras show a controlled handoff between grippers, followed by transport toward the blue box in frames 75\u201395. Frames 101\u2013105 in wrist_right show the gripper opening and the spoon resting inside the box; ceiling confirms it remains there as the robot withdraws through frame 123. No failed acquisition, unintended collision, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 124,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

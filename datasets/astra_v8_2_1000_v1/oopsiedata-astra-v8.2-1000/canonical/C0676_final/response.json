@@ -1,0 +1,116 @@
+{
+  "id": "resp_0688e092fcaa8ac5016af920fcf16087d290702d2796d6651b",
+  "object": "response",
+  "created_at": 1794711805,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711816,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0688e092fcaa8ac5016af92100303c87d2bfd68ee8f82b1e7e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SEI0swVD0ZXU7tJWRuZRrhr9OkLF779G0fdXY0fOtlf5tN7XV9NQChYaIdjlCAJjOhdYgo4XMJaf9JJvElQ7F_SzKj_8te9a_M_MsQCZWJgETakgmn2iuoT8ZdXBdnh6XAgxjx8f1XDa1rNp0hQYCZT6N9L1HCQG9iI1C-Z81SPBb0bBd4RvMx2C6U_Qh6HTOxcTZo8mVmqMegEHLlDq7MNTUHRsX7T42fC0IDoiEflUl9H_EeJw7g6PTb1gb1OcNccJLYQIxRC92B0p-ZWNaPpYsCTbwH67A3m3dGYtXRUVQtXmnYpFGiOcg-m21IeRfF4rHj47a3thwp62myNyPcSh46CcmiK3nfjYbiC6Dy0QzVO9jE6pk8-rfoVUUHF0k-rNi-mOjFJRoCvK61jWpGOQULi38WuJrczQrZPUxAGbIi1MUwMxSf6XRfz4dt1rP5r6oPNIb7Wn7kAFF5RI8tVdT-cQ8jbfpx_4qDRHbms5a2TYL_TXb4rUKijo9cQzriooXGs6tSGJ6SkjkQvpW7aIvq_H1782KKVrwKloT_axlh6tW37kbpTCk_qwj5JFTbASDavIYr-vWNl9p9J4cVD3Zpnve_jPU_eqXv6NPuvdjDcQxjqDS6nWCV9iZbAKKS0Czd8RdkvGCtd9a2fG5XnUVk0_jHhXdlVdUKRacu6GFHzTPRqQgrL3O-kV3niYqhOZM6XgTKlYvoVy9YUCY-rJNVnJOb9_XvPA9Pw3GZv1AbPxKj9-xJCmd0hjOCKU61JVIHHLIL_FIr8SU49Dvl3LdYIiKtpctFfPh1b9OvwhcPYsiYqNB_Ez5DppJNGipWmqUwy7--b0Ueg7boA5Pu12eACNbTzF0tiYRpJgSc1QuCaUIkefpnG6V546v1X9vn2pEyp62ZS8TjtRcMXNR6nyuso9vNWzjMXvW9-6O4fnoOLpU49zbuThZaGjfYmI_gGe_KZ8nLtuNKt53mhO96Dr-PEI19XgVKDyVuVYGxYCiKH_NIHiEXdJygS8Mf3vOKmWPPu0ctFsTrEH9OBR_KuNq9mcIV9uyMJk9qKkIbVjRqk4A0CZYjrYS4Tmdm4j6OA3pxWzH45OwUFnL7M_lQNpVBOlCccWX_nJlRuduEqOzkfE-NlrzcoCgKp2NpvLYqWxGSZ04mr3MD8jpoS94O44eMOS7vnl-EMw3WA2O0DNXEBsjXCRROjvwDwYTJ_qSnZY4yQp9WdrwNSY_CnYA1mCfC34_jqKaj0fbo6v49kjfKcGNpm2Y1KNmH8_E2PeiPdm41slclxHQm2MgIQp83msZ_O_hZg7c-yXktcmdpq3Bg26gNvO9sopthSoG__Tcvtj_VYuXJH0tz_L4Tm-hWHlQMV0zp5mE3IvH5Hsf-w6HmLiIbacJhlXmHX5tyvRSwSRaUcvtab72nfba58z6luUm9wUmSuC_ejObo8sh3rPJF_3OJ94-AiloyVcFaQrSqX1LGD73PhRC6NE1JMOdTqlgmliEsK7mZSWhewfuYeBUKxhA1owQrWuyG69JVI4BZt_2V_ieFEXbiM6dE4wjwIPgS1uUJYNPLxVpYYaaPquLrBVIuEW3vUBYgjT8_lT8JqeqL-C62wWu_0Vp3W2ePdExAFLdBcEvBg4vfujiCws73wxM7u3E8uUgPH-aYRHhQ9wM7gGH523qmG2DKcWX5mAdpAvb42gdD-UGsqEba7c4vEYrq3NaK_moSkrI8zioeiesuIEbwtGk_9FBP47D8ay2XBXolSpNDC5QxujUDw86yIGNmY8AAnhI2tIhzIqguosxLG4dt4Q9GB4M_5G-OaZLDA9doILjQcZkfI4jcyCvWgioVKVVBrq2tQ6_WgozxE67ti_-TUILzBPaEJ_LMzP8-C87Yi1G4GaszSkSLJktJAeJqAT22imfR4o6l_Qj6LRi3tcx5oQL6KUOEmQj9qwI7y8wNPIoHrmbWlrITvFoCcvE2BgugcJqEV7qwh0RyTaMYLaDw9-0RRHTAWo_1XAPVOlt1exrhg4G8uOZAxcYili7Y_QZXATSvQvchka5hmmDhwRuQdgoO19ruDukWz59dvy9MpwmCDKWeT2wucUcr2QE9fZl007PqhWTK_YmMct8wWFt5ULHwGzCmJ9m95vO3fxWeYIQDF0Ei_1tSMDdeolxbqScniRXw-zoKGJYWJSwLbT-pocNTgSYvfX6R8Q6JMiROrnz2UhxCbXGVmqPLi-ZUfOJjdpTGbXntI8XmTmATSC79_tDcWj0rS11UdyhXVC_lCQ66aVXPhChk1XsDsiUZejRNBDEzowdqjYzDAr0nSzKkL0ugZB-KaujZ3KgIYip1t__Py6kvoSJLe6wqT-AhuUMDqqm8PpvXhn-G1IvFEWT5m59r5UcEbTFm5CeegmDg_29TEgcNpzMofxAC5osNdGhmDA0RnzAhaUranvnGoaPniKBRQeqKEaRYCpRA0gyBhk51PtgYZQg-cDZUcoTsQyUMhxs-F7fKr0puINPpglQbZpfZGBNZtp5Na9r7UWz5a15iVkYDZ7Rw47jt5ascRtBlHECAxgUO_ChgNY2NPN1sYWIvyiMcGzZI7kyW-6mixMRscOBrg6YWA8iPaqHXB4OOp-Id6pb_S711vTR0JsOI-e3c_zb1Njcr88DOdPAwrOD8rPOJiZjvMjUw2selPkxKehSCqvjjai_PtDr3QQgYEly2Z35IHn6kDpjGX24YteFxmA1lNE0ee2yLvFjZos03gwGX0b6MeBo1AVz7WcFECArXCfyOA8491qC0xj128el8KpylwPQ4TMEnbiCNFseLGWYbTk_D6nPrdk430zSEpVJVr8cGgUfWv439Apwyjnr_MIH1nywUs1tq09raQkcGo1z6gOPtwqWJHAV4uS6S7EdWXR4h1Qskra8zt5TmIr7FL70gIjqdmgnAUF_MhyfhOl9uH_1GhdUycg_6MTAlFnqxwbKesBODOcONoQL2VWs5hoZwk5349gUlw0nHOqMIquZAoe0KCxopi6Y0iWeeob-M0qRqHqiw-CAxexBjRw-PVzDSMV5229DMBbd_G6InZNkfGaV4wE8h5UJ6NRgnB7KUhr-Z5AmDTvHtQNs432W_liZEHYbGwA5NYFXCmoSqSkUDQGZ4aq6iDUbK5TAu9IvuPPdSW7T5tQSOmJwSKWKKS3QxR1CZwWCGqAziSR1nFsGprSgVLieuN9YNfeuKT3s4oyIPu1JDGIPruEOfEz4aGfBMxo-kTLUPbDW_33K2DgLk4FuKvhmDpZcpxzeSlxHipLMCozBN1odrQq2bL8raZl2pK8ZHIjMHmPtmCzDtizJZ9gyz9Mh6_b-uMrV-rjpMa-S3gtm-utHu4WTZe78I0RwJ2CVmdeuj_f5vwz7FqqNIzh72hP2tSnlBpPDFsVBxiLzKMiQHQhXTxDcOWvg9G5iz0vAKDFLblPHgAKDqVGk6JXUPWjNqY-yMmCLsQTmO9z35tlGvm0eyWXGA-1HOxG7fMknQuFONNqagrg1OYGPYsVLXWVHqUchCrFfCLaX72fXbQIbXyuu8-1aZMY1y_2HkttTvrL4UtuyQBsG1vfL3Y0Yv6nPVncRDNEjjXQnWYQFZNzi0a4PHpWx2MpypW0jfISrE9CwxIbedazzHRR_aFl38wKrzx1BNQyNhQ8f4v5Ur1VpnDai6XtXAwSq1Ii7Lyl8X169QMBhbbJ4lcDLdmqFnl4sIt-wXplihOMARHg62LX8R8_pvyFNBX9JuzWktiNuI_-p6NQUnALpu4mAFmHGQWUiN-NM7By1SGOVUHWFms-8C6wjx5zsqKqm-1CS4pUFXcMwKC5UE6FTrpkuVjXlgyK9YaSMrrAZ7Xb3Ce6WP23MVCbWd5HbDzcuZJbPpC2iM6Tu21uUZcCf9kgTa6XUy0dMMEYJFLoMxcvN6xRhA1vPSAWXZZ-AR3CHq1HnPueEqbA92x63t9TCLYkgo9SpfVNGKamYmNJ2aROK202SKf3kI3PzYfDsJQJzmm7fc8-jRlJYQs00IfZxNknuAPbuso-2pXCwG7HCpfN1UNpG5VNqJqmPw8npboylAZfJSNmI_RwawDQhfjpT4yCf02pRVEZSTnKrKAXau_-BiB8dCv2Ij2VX4D5BAihmgUDNBFn7ndsUBeC1akPil1lv5MxaOXMzCavZH7U7HFgqTajGEoWXW82DfljFdm_c9P4JN7XanEKgkLYfAiCYnvTDkh17Bepr9syJFUzKp9ogspBzsW3RAaim6xMl4dxyDKbefn5OTIBUMZEvOxaBXUQXlAtg_dBYwCHUcF6HeNddgAbQnUMoka3YHcu5VDzjlW8VE4u-sbXY-Ae0_C6IEnq8Ugb0lVLGe9rUItkZxVtlk_LLDgpyJ52oH44_2pASGiO-5jlf8txrq4b_7HeZi9pIcZIVAliFa3Zg7x7b9kRdcYJeXOD-03K7BNP1QVqSyJLvMYb_yQlp67Nee_33FO4PzMjTvgg8L8aZOrUtiGPICmnkGcuCDvZrfEo1WrCGZV-RVV9ZxzCmU_EOk1g2hYty1LUlTv4Wyc_bhCEmorijJbgo5j4pCDx3Qpac4y-nQ20y0jgiKTJ6MUnwdF7bLdV3IPWNRe2nRdFJLb67EDJ6n8EuhOPy1txZ83k2o7rm0OW13dc_IJ2RTgQOINJBc8Pm_3tZTHIn9P",
+      "summary": []
+    },
+    {
+      "id": "msg_0688e092fcaa8ac5016af9210533f087d292e1ce69946771b8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0676\n\n## Episode annotation\n\n- Language task: Stack the orange blokc on top of the green triangle.\n- Success label: success\n- Outcome evidence: Frames 65\u201378 in wrist_cam and right_base_cam show the orange block acquired and lifted toward the green triangular piece. Frames 116\u2013125 show the fingers opening and withdrawing, leaving the orange block supported on the green piece; the stack remains stable in right_base_cam and wrist_cam through frames 140\u2013240. The robot subsequently approaches the other orange-colored block, but the episode ends during finger closure without an established additional acquisition, displacement, or harmful side effect.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 241 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43758,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 392,
+    "output_tokens_details": {
+      "reasoning_tokens": 221
+    },
+    "total_tokens": 44150
+  },
+  "user": null,
+  "metadata": {}
+}

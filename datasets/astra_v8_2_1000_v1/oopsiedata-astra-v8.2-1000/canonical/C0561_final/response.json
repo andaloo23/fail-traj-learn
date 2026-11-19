@@ -1,0 +1,109 @@
+{
+  "id": "resp_08487d3e8201212f016afbe5b9a53887d2bcd110c80d901e52",
+  "object": "response",
+  "created_at": 1794893241,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893247,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_08487d3e8201212f016afbe5bc6d8487d2be87e60593cbb40f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0561\n\n## Episode annotation\n\n- Language task: spread the folded towel on the table\n- Success label: failure\n- Outcome evidence: The towel remains folded in the same location in left and top at frames 0, 350, 700, 1050, 1400, 1750 and 1999. Across left, right and top, the grippers remain away from it despite minor repositioning, with no discernible acquisition or spreading. The task is visibly unachieved at the end due to sustained lack of task-directed action, rather than a failed grasp or an occluded completion. The recording ending alone does not establish abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 2000 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-2000\n- Categories: task_not_attempted\n- Explanation: Throughout the approximately 66.6-second episode, the grippers stay remote from the folded towel without a discernible task-directed approach, grasp or unfolding action; compare frames 0, 350, 700, 1050, 1400, 1750 and 1999 in left, right and top. Small repositioning, including the right-side change visible between frames 1290 and 1350 in right and top, does not advance the task. The unchanged towel and uninterrupted lack of productive action support one continuous failure segment; the underlying cause is not visible.\n- Recovery: Approach an accessible towel edge, grasp an appropriate layer, and progressively unfold and spread the towel across the clear tabletop; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The observed consequence is lack of task progress; the towel and environment remain undisturbed, with no visible damage or meaningful risk of damage.\n- Resetability: immediate\n- Resetability evidence: The towel remains folded and accessible on the table, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20147,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2174
+    },
+    "output_tokens": 420,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20567
+  },
+  "user": null,
+  "metadata": {}
+}

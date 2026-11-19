@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0443",
+  "language_task": "Stack the purple cube on top of the green block.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches and aligns with the purple cube in frames 0\u2013128 (left_base_cam, right_base_cam, wrist_cam), then closes around it and lifts it in frames 129\u2013152. It subsequently carries the cube toward the green block in frames 153\u2013240. At frame 240, wrist_cam still shows the purple cube between the gripper fingers, while right_base_cam shows the gripper at the block location; no released, independently supported stack is visible. Completion is therefore unconfirmed in the observed episode, rather than a visibly failed placement. The slow alignment and transport do not establish a local failure, and the recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

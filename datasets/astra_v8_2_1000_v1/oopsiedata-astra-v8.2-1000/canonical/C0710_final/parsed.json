@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0710",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal remains on the table outside the box throughout the observed episode (external, frames 0, 545, 934 and 1073). The gripper closes near the animal and withdraws empty in frames 915\u2013934 (external and wrist), establishing a failed acquisition. It subsequently approaches again, but no successful pickup or placement is visible before frame 1073; the final attempt's completion is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 918,
+      "failure": false
+    },
+    {
+      "start_frame": 918,
+      "end_frame": 1013,
+      "failure": true
+    },
+    {
+      "start_frame": 1013,
+      "end_frame": 1074,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 918,
+      "end_frame": 1013,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the stuffed animal in frames 915\u2013917, the gripper withdraws without it in frames 918\u2013934; external shows the animal remaining on the table, while wrist shows increasing separation from the closed fingers. The robot then remains at the withdrawn pose through frame 1012 without advancing the transfer. No possession or drop is established.",
+      "recovery": "Reopen the gripper, realign the fingers around a sufficiently substantial part of the animal, descend carefully, and verify retention with a small lift before moving toward the box; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The acquisition fails, but the animal and box remain on the table with no visible damage or harmful displacement (external, frame 934).",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in its original table location, so another approach can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

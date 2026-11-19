@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0202",
+  "language_task": "put the corn in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot lifts the corn in frames 33\u201340 and carries it toward the pot in frames 49\u201369. After release, the corn falls outside the pot in frame 70 and moves toward the foreground table edge in frames 71\u201374; the pot remains empty. This is a visibly failed placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 70,
+      "failure": false
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 75,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 70,
+      "end_frame": 75,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "Following established control and transport of the corn, the placement fails: right_shoulder_cam frame 70 shows the open gripper and corn falling outside the pot. In frames 71\u201374, the corn moves across the foreground tabletop rather than remaining inside the pot. The images do not establish the precise release or contact dynamics.",
+      "recovery": "Reacquire the corn if it remains safely supported and reachable, center it within the pot opening, and lower it before releasing. If its position near the table edge prevents safe acquisition, a person should reposition it first.",
+      "severity": "low",
+      "severity_evidence": "The corn ends outside the pot on the visible foreground tabletop, with no visible damage, spill, or disruption to other objects; falling off the table is not established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental damage or required cleanup is visible, so another acquisition can be attempted without a demonstrated need for human reset; safe reachability at the partially cropped foreground position remains uncertain."
+    }
+  ]
+}

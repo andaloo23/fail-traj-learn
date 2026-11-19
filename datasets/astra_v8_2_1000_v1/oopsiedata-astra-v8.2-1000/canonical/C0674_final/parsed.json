@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0674",
+  "language_task": "Pick up the stuffed animal and place it in the box.",
+  "success_label": "failure",
+  "outcome_evidence": "In external and wrist, the stuffed animal remains on the table outside the box from frame 0 through frame 1273. The robot approaches and changes its alignment around the animal (frames 153\u2013633), but no successful acquisition, lift, or placement is visible. It subsequently remains near the animal with only small adjustments and no task progress. This is an observed incomplete task with sustained stalling, not evidence of a dropped object or abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 153,
+      "failure": true
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 634,
+      "failure": false
+    },
+    {
+      "start_frame": 634,
+      "end_frame": 1274,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 153,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In external and wrist, frames 0\u2013152 show the gripper and scene remaining unchanged for approximately ten seconds, without an approach or acquisition attempt. Task-directed movement begins at frame 153.",
+      "recovery": "Begin a controlled approach, align the open gripper around a graspable part of the animal, and acquire it; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The delay prevents progress but causes no visible object displacement, damage, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal and box remain in their original usable positions; no environmental reset is needed."
+    },
+    {
+      "start_frame": 634,
+      "end_frame": 1274,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the preceding approach and alignment, external and wrist show sustained hovering near the animal from frame 634 onward, with minor adjustments but no acquisition or transport. Frames 800, 1000, 1114, and 1273 confirm that the animal remains on the table and the box remains empty; the prolonged interval does not advance the task.",
+      "recovery": "Reassess the gripper\u2019s position relative to the animal, align the jaws around its torso or another secure grasp region, close, and verify retention with a small lift before moving to the box. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The task remains unfinished, but no damage, drop, or harmful collision is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal remains accessible on the table and the box remains usable; another acquisition attempt requires no scene reset."
+    }
+  ]
+}

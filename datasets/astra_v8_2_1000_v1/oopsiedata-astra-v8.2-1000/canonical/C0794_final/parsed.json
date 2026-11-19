@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0794",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop in frames 0\u201325 in image and left_ego_image. The robot moves its open gripper toward the spoon, but no completed acquisition or placement in the drawer is visible by frame 25; wrist_image likewise shows no held spoon. Completion is unconfirmed because the recording ends during approach, rather than showing a visibly failed acquisition or placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 26,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

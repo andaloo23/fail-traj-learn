@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0242_W03",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the robot acquires the blue toy and carries it over the plate (overhead_cam and wrist_cam, frames 753\u2013800), but subsequently carries it away and releases it onto the tabletop rather than the plate (frames 802\u2013850). wrist_cam frames 855\u2013870 show the blue and tan toys outside the plate; overhead_cam frame 899 shows the plate still empty. This is a visibly unsuccessful placement, not merely unconfirmed completion. No unwanted collision is clearly established. Earlier execution beyond the two context frames is unavailable, and the window boundary does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 802,
+      "failure": false
+    },
+    {
+      "start_frame": 802,
+      "end_frame": 850,
+      "failure": true
+    },
+    {
+      "start_frame": 850,
+      "end_frame": 900,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 802,
+      "end_frame": 850,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully retaining the blue toy and bringing it over the plate, the robot moves it away again from frame 802, visibly increasing its distance from the plate through frames 810\u2013840 in overhead_cam. wrist_cam confirms continued possession during this transport. At frames 844\u2013849 the fingers open and the toy falls onto the tabletop outside the plate. Thus established object control ends in an incorrect placement rather than advancing the task. The earlier brief lateral adjustments above and beside the plate are not independently treated as failures.",
+      "recovery": "Reacquire the blue toy from its new tabletop position, lift with clearance from the neighboring toy, move over the plate interior, and lower before releasing; verify placement before approaching the remaining toys. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy is released onto the tabletop and the plate remains empty; no damage, unwanted contact with another object, or meaningful damage risk is visibly established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced blue toy remains on the accessible tabletop, as wrist_cam frames 855\u2013870 show, so another acquisition can be attempted without human resetting or cleanup."
+    }
+  ]
+}

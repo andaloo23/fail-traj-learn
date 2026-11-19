@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0079",
+  "language_task": "Snug the pillow into the case.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The pillow starts separate from the case in frame 0 (ceiling, head_left, head_right). After an unsuccessful initial pickup, the robot moves it onto the case at frames 99\u2013110 and progressively pulls the case around it. Frames 914\u2013940 and 1009\u20131059 (ceiling, head_left, head_right) show the pillow seated within the case, with fabric around all sides and its white surface visible through the central opening already present in the empty case. Completion follows a failed grasp and lengthy fabric adjustments; no damage or unrelated side effects are visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 78,
+      "failure": false
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 85,
+      "failure": true
+    },
+    {
+      "start_frame": 85,
+      "end_frame": 1060,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 78,
+      "end_frame": 85,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing around the near end of the pillow at frames 74\u201378, the gripper withdraws empty at frames 79\u201384 while the pillow remains at its original location (ceiling, head_left, head_right); wrist_right also shows the fingers clear of the pillow. This completed acquisition attempt did not move or secure the target.",
+      "recovery": "Reopen, realign around a thicker portion or accessible edge of the pillow, then close and verify retention with a short controlled lift before transfer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The pillow remains on the tabletop, with no visible damage, fall or harmful contact.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pillow and case remain accessible in usable positions, allowing another grasp without environmental resetting or human assistance."
+    }
+  ]
+}

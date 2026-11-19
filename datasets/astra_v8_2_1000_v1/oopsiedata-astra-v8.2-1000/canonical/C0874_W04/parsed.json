@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0874_W04",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: in base_image, frames 1050\u20131189 show the blue bowl transported to and released in the right red tray, with the cans visible in the upper blue tray. Frames 1238\u20131334 show an attempted acquisition beside the pink bowl; frames 1346\u20131399 show the gripper moving away empty toward the red tray while the pink bowl remains on the table. Thus the task remains incomplete with a visible failed acquisition, not merely unconfirmed completion. Earlier context is limited to frames 1048\u20131049, and later recovery or completion is not supplied.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1293,
+      "failure": false
+    },
+    {
+      "start_frame": 1293,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1293,
+      "end_frame": 1400,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, beginning at frame 1293 the fingers close beside the pink bowl without capturing its rim; by frames 1306\u20131334 the gripper is closed and the bowl remains stationary. Frames 1346\u20131399 show the empty gripper moving toward the right tray without the pink bowl, confirming failed acquisition. No successful reacquisition is visible; the unsuccessful sequence may continue beyond this window.",
+      "recovery": "Return to the pink bowl with the gripper open, align the fingers across its rim, and verify secure acquisition with a small lift before transporting it to the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl remains upright on the table, and no damage, spill, or harmful collision is visible in base_image through frame 1399.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed bowl remains accessible in its original table location, so another acquisition attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

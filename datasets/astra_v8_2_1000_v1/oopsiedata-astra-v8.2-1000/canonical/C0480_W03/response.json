@@ -1,0 +1,109 @@
+{
+  "id": "resp_0ab3651717694b07016afbeb1af4a887d2b46b7101758d85e0",
+  "object": "response",
+  "created_at": 1794894620,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794894628,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0ab3651717694b07016afbeb20b5c887d284e3a0ff63cf657e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0480_W03\n\n## Episode annotation\n\n- Language task: put the orange from off the towel to on the table\n- Success label: failure\n- Outcome evidence: In top, the orange remains on the towel throughout frames 700\u20131049, including frames 700, 850, and 1049. Across left, right, and top, small viewpoint changes do not show a discernible approach, acquisition, or transfer. Completion is not observed, and sustained lack of task progress is visible rather than a failed grasp attempt. This label is provisional for this window; earlier context beyond frames 698\u2013699 and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 700 | 1050 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 700-1050\n- Categories: task_not_attempted\n- Explanation: Across frames 700\u20131049 (about 11.6 seconds), left, right, and top show no discernible task-directed approach or object handling; top shows the orange staying in the same location on the towel. Minor camera-position drift does not establish useful alignment or progress. Context frames 698\u2013699 are visually consistent with this inactivity already underway; it persists to the window edge and may continue afterward. Its cause is not visible.\n- Recovery: Approach and align with the orange, grasp and lift it clear of the towel, then place and release it on a clear area of bare table; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The observed consequence is lack of task progress, with no visible damage, disruptive displacement, or meaningful risk of damage.\n- Resetability: immediate\n- Resetability evidence: The orange and surrounding objects remain in place and available for another attempt; no environmental reset or human intervention is visibly necessary."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63641,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 392,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64033
+  },
+  "user": null,
+  "metadata": {}
+}

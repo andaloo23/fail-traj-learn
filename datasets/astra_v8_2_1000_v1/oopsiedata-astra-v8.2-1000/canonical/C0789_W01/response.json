@@ -1,0 +1,116 @@
+{
+  "id": "resp_0a16599cc7dd453d016afbb9e312dc87d2bc582750b7a72c6f",
+  "object": "response",
+  "created_at": 1794882020,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794882030,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a16599cc7dd453d016afbb9e900e087d2933f820f84ecbfa2",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7nv8yj6EP9dKBhtp5Rgyf6zJ_xsz6dd4mvRwVTB56kV7gQyBRTIsMF57Sr0zI9MfwyDFSHDqf-NF41bl3R38RvGG-kQkpQZafE3XR-NBv_qva7dAzhqsrt31t_edf_1JGSVrWy2yzWl2e_v4sJbO28Ws5ehZjUw_thGvhPK_UJHk_ZfT4q0cIDHi8znSTPFJbmzro0QTyFTWGRVVXW8rXudPVSFJsaPYgnor_P5l6NoVL_6jf0by6Sqir8buacoPgN5VkkEG4eHPIBv0a_UnMV0HPsIZwhLBCJEjgojCFQk4e8wyM_FIkTUU7YP4Tyjv1xBf6ErSDg3tubtoIN9ecm6XCkPZyl3rDauMNGPf8o9Y09WHclP1Dx0-wlUAQ2Kgi3sL2_ak9gdpb5E4HsXQS7eT3mu2pv-wC5jkIayIcYDZP5K5p6MmguL90Bve0SmFbC8cRAJn04yo_gIIe-ic-1EfzHBzPc38qP1AGR3hkSxoWKg2dlUNutUTQ8bYYLVuavALE-BBXYaIZZRIUs1x153MBsJL6yFbachpe9nbP3SCNFe8UtA44fgwqSPI7cJLOQVbyoR8aj1zWvhWJMRNzVt4wfZdWPGY8QNx4aSwI1e5BJUjbBzrrn0IlzS_KE2puuAqx4-S8UzbTACi70Qb6MZZwCg4PsHnyDIUL_CCkEjL9HVGQrupMEjL6Dl2Kq-u6w5_CeIJt2ux_fEBfotXzStZTlEWU2Niv4Mme9THYK6CV06xt1q8XXjATY6qVHJGI9hpYgodsj-Kl44CUyav7TX-KKy_l4PbbF8v9uueapF9keHYqPjJN6kAzW9bTqiDLfOqMyoxhoCevbVa8K78nsx2BLHFgz8UL8u1oGCmhPurQfPVGCOrcSSzgoRVfX9ycRfsSSnkkJXOqJt75MMFbwEIrSpLylv6EziJPw2beqBQo-QIU5teMDhlkRBTSc-Ek-KQ6jcKT0gQDjjWqMEg4ErNL_TKsWk90DHichC-eDZHJ06KXc7JB-Y-R7T_4NC6MTG_GRylmZtS8SjGUm_yzMShH5ynA_f3CPAvqlOWyfMQH7Jk6MGlyimytvcuFQoF737tnCSUz3AJawZ3bUfD_FegwrLiQIUrdikJWREKbm9gHE1mcbrCa8mOIMwmr4Lh1-OZPZiTbfTy_3PIxxTOKfZ4WN-o4MiWHfMIEkh7kQO9Rkfof6hssNiutfYOQerUiMt9gvUYtXme9uAqFUypPx8YaO-0kRfn3g4SNSlEc31qkB6Lal1GAhNp5HnQLAlIpQ0Dc3GqvHoQuLndMiI96--sbbE2EaxZ3lC-GwvWu3Ed7srBSoc7QffT78snlLGpFCKoIb5qJDA84dxJb3ZRb3xW_FdtYjdWMeoncKKdHpp_Kv17pIDm1kukXwJ_v-5bONX06sRx7OxJK0ZvVEyaEtzUyVu3YhXQxvSZLfatbi4V0b5ws1f5x-11_UGTr_WA53fYIvT3BCJ_GY7xiKpBEwH_gQ5EUbD-LrGE0crC_tzVLkwrclWOI-UD67DOc2kXdusYqyl7f9HvVcSkdqkm8pMaB7FH2a3pPgp1beCpmGLir-nVRR7Rky6IWbiiD_C63PstE1HIbGl99guW3b5JwkISc-MHRwxuHhtUVEvPpjlSn2at5jmFR1A8orxE7EsAYFhXos2-WmFhwX_uKWWzE5-Jmt15DIooDw40PI6oQC5q8smIquB9dswyzqHzwdg1TruSnc9DOQ6G23XGN_eFidQaHZ78VMX485cUgo8VNrU-tQh2UrAFK8x-8Qxo78rOxDbCXD5guseXH9QS7FZ0tuoTAXslvapnI10NKwpDFF1h7KxFMn2r3UmjPH5-AsnkiWEvCYP7V0oYPXkWZ5DojacohDFFota25UUM5WH9BtJ6L_LRrHeCT4iQaFIDGl1nTFUqZCYjG08yGHX5cluSnz7YUBFCYxXQgkUNwRa1IXtmRwcC35Lv_ls_XtW-JxFMHAajmg88v1-HMFhc5gSJq7EQ3pjUFIYLFgFyNpxrU9nHSTjUoHrsxrXm-UmQvSysdWpb6jqNY2w6Hh8Nw0n3sIFDy4iMBjASn-kt0dAQrbhiMLKEuq_Nk4C2yu54DuocZAcV1cfFavgWB-I0Ll8KRWVswQ06McKgijgAbuQ0deacQTEQiKtAJsjacTZBpOoXCQpwZQFqR1cKeJGgzCuQNfliOx1A7QSyOqDwPI0mn5raMFbGVQx8zyGP9gdXiWv3ldIDaPPVCqEZTrvYhCEOvqHD28AQ3gpjpw64McM8lfM8SMAiBY48XCgrpnaLzyel3_FiEkOzTWv0IHBiY_s_nxJ3E0jcXmNyrlsGCiBydqPq5Hg5lxVEdzvPpvCctrHncSmFMCmddPLw9RR2Zlf5glSNOYJV_cByHc1Sb5OkJLNxY5An-z8tmFaTKMY33nJYzGLdDXzs2nJZijyww8zqN53WiWVASJOFKH94X8Xg4lFEhOmWTANtET5hK6Ge_aZYf1eJ0a6RjLLSwuIXIh9IynJ_qNsXrbi0DMqlgpZ5J_cZGtuSiD5fL61tY36hfr9ntLo2zVHnyWynCyYaYdazGPjXLfGoFTr3Zc6hnE4bQ9p_e-e9EXmGEoJRSapuldaUPuYQE1kfGebL8P_alLRYW7giTWiaGxvy5mVVvnn0Xoh1SuqXiUh-v8nR1Vnaj-5lN1jiqZDbKFAz_0aVTjVkCNjOYGDmryeAcBlFkVd6nScbDyd3kdKdvMIDsWYUWWaJ6hhCsGfM26oUX2EOObj8pxJXwy14dhoTnF9iQa9AA0j_eIGAdY_HpBSfcSoWi5QBynk-RxeA20ym3-lKV8FIaDVuIwLit5iF7W77LVh4lBuZQJo8q3ivWPLM8pJNBw8scKEqqUoVf9Z4T6OjjItRjk2bkh91dp-dQyuY-3rKRR5sgKAQp8v2CylmrPAICyM3lT8uUeaPhgt_G8ga17tQmCs8GlxlJbM04prB8mHx8INqM0dtzX4xmGKBdNv7qHp2DXgh7SyMKnQH4JxRlcQGFi8ew0Xgz62Cgv62cpqyG3qLlUg-uzNbFd7klTBSi01LcFf08EhuCvle5gK3prxddTP3vAymbTqn7k485Z81UNOSqBV4eFf2Hna4PexV7L09iHH_nsObDPt2_a5Gjdz8M2WvEOmrGKxDKV5uTWhWw7SFmM=",
+      "summary": []
+    },
+    {
+      "id": "msg_0a16599cc7dd453d016afbb9ea3cd487d2946d18425a3da2af",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0789_W01\n\n## Episode annotation\n\n- Language task: Pick up the stuffed animal and place it in the box.\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window: external and wrist frames 0, 232, and 349 show the stuffed animal remaining on the table outside the box. After prolonged initial inactivity, the gripper begins approaching the animal (frames 233\u2013245 and 312\u2013328), but no completed acquisition or placement is visible. This is a provisional window outcome, not evidence of a failed grasp or final whole-episode failure; later context is absent.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 233 | Yes |\n| 233 | 350 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-233\n- Categories: task_not_attempted\n- Explanation: In external and wrist frames 0\u2013232, the robot maintains essentially the same pose with the empty gripper separated from the stuffed animal, while the animal and box remain stationary. This roughly 15.5-second interval shows sustained inactivity rather than an approach or acquisition. Task-directed movement becomes visible at frame 233; the reason for the preceding inactivity is not visible.\n- Recovery: Begin a controlled approach, align the open fingers around the stuffed animal, acquire and verify a secure hold, then lift and transfer it into the box; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The visible consequence is delayed task progress; external and wrist frames 0\u2013232 show no displaced objects, damage, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The animal remains accessible on the table and the box remains undisturbed, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43982,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 452,
+    "output_tokens_details": {
+      "reasoning_tokens": 63
+    },
+    "total_tokens": 44434
+  },
+  "user": null,
+  "metadata": {}
+}

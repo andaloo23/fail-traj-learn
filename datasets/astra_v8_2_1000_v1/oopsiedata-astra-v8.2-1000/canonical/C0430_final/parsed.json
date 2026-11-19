@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0430",
+  "language_task": "put the cup in the purple bowl",
+  "success_label": "failure",
+  "outcome_evidence": "The robot initially approaches the orange cup, which tips onto its side without being acquired (frames 89\u2013104, wrist and right). A subsequent acquisition also leaves it on the table as the gripper moves away empty (frames 145\u2013177, wrist, overhead and right). The robot then retrieves a black cup-shaped vessel from the shelf and brings it to the purple bowl (frames 305\u2013399, wrist and right), but release and stable placement are not visible before the recording ends. Thus completion is unconfirmed, in addition to the visibly failed orange-cup attempts. Both orange and black vessels are visible; the task does not specify which cup is intended.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 89,
+      "failure": false
+    },
+    {
+      "start_frame": 89,
+      "end_frame": 105,
+      "failure": true
+    },
+    {
+      "start_frame": 105,
+      "end_frame": 145,
+      "failure": false
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 177,
+      "failure": true
+    },
+    {
+      "start_frame": 177,
+      "end_frame": 400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 89,
+      "end_frame": 105,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the attempted acquisition, the orange cup tilts and falls onto its side instead of becoming securely held (frames 89\u201398, wrist); it remains on the table beside the empty gripper at frame 104 in right and overhead. This does not advance placement in the bowl.",
+      "recovery": "Reassess the cup's sideways pose and acquire it with an aligned grasp, verifying retention before lifting; human intervention is not necessary if that pose is safely graspable.",
+      "severity": "low",
+      "severity_evidence": "The cup topples on the tabletop without visible breakage, spilled contents or damage to other objects (frames 97\u2013104, wrist and right).",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible on the table and can be approached in its new pose without requiring an environmental reset."
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 177,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close near the sideways orange cup at frames 145\u2013152, but reopen and move away without it at frames 153\u2013169 in wrist. The cup remains on the table in overhead and right, while the empty gripper passes over the purple bowl and withdraws through frame 176. The completed acquisition attempt therefore fails.",
+      "recovery": "Return to the cup, align the fingers around its body rather than beside its end, and verify a secure lift before transporting it to the bowl; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the cup outside the bowl, with no visible damage or additional hazardous consequence (frames 153\u2013177, overhead and right).",
+      "resetability": "immediate",
+      "resetability_evidence": "The failed acquisition leaves the cup accessible on the tabletop, allowing another attempt without human resetting."
+    }
+  ]
+}

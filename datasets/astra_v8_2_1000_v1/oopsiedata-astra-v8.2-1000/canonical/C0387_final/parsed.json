@@ -1,0 +1,74 @@
+{
+  "episode_id": "C0387",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left toy is the blue-and-white toy and the largest bowl is the central white bowl. The robot instead handles the pink toy on the right (frames 12\u201345), drops it outside the bowl (frames 46\u201347), and returns to it (frames 84\u201399). The intended left toy remains on the table and the white bowl remains empty at frame 99; this is visible noncompletion with wrong-object handling, not merely an unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 12,
+      "failure": false
+    },
+    {
+      "start_frame": 12,
+      "end_frame": 46,
+      "failure": true
+    },
+    {
+      "start_frame": 46,
+      "end_frame": 48,
+      "failure": true
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 84,
+      "failure": false
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 12,
+      "end_frame": 46,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frames 12\u201322, the gripper aligns around and contacts the right pink toy rather than the left blue-and-white toy. It shifts the pink toy through frames 23\u201342 and lifts it in frames 43\u201345. Handling this visibly distinct wrong object does not advance the requested task.",
+      "recovery": "Set the pink toy down safely, identify the left blue-and-white toy, and grasp that toy for transfer to the central white bowl; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The unrelated soft toy is displaced, but no damage or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the displaced pink toy to its original position is a straightforward reset that can be performed by the robot or a person."
+    },
+    {
+      "start_frame": 46,
+      "end_frame": 48,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the pink toy is visibly lifted in image_primary frames 44\u201345, it separates from the gripper and falls onto the table outside the white bowl in frames 46\u201347. This establishes failed retention during transport, independently of the wrong-object selection.",
+      "recovery": "Leave the fallen toy safely supported or restore its position, then acquire the intended blue-and-white toy with a secure grasp before lifting; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The soft toy falls a short distance onto the tabletop and remains accessible; no damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The dropped toy can be repositioned with a simple tabletop pickup; no repair or difficult retrieval is required."
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 100,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frames 84\u201390, the robot again lowers its gripper around the pink toy, then closes around and shifts it in frames 91\u201399 while the intended left toy remains untouched. This is another wrong-object attempt; the unfinished final acquisition does not independently establish a grasp failure.",
+      "recovery": "Release the pink toy onto the table, redirect to the left blue-and-white toy, and transfer that toy into the largest white bowl; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "Only further handling and displacement of the wrong soft toy are visible, with no observed damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A simple release and repositioning of the pink toy would restore the affected scene; the intended toy and bowl remain usable."
+    }
+  ]
+}

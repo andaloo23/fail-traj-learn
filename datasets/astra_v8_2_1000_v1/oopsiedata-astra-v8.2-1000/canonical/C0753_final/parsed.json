@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0753",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In image_primary, the left toy is the blue-and-white stuffed toy and the largest bowl is the white handled bowl (frame 0). The robot lifts that toy in frames 74\u201376 and releases it inside the white bowl by frame 87. Before acquisition, it spends a sustained interval hovering and oscillating without progress (frames 9\u201341). During transfer, the white bowl slides rightward and displaces the neighboring wooden bowl (frames 78\u201381), an unintended scene disturbance.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 9,
+      "failure": false
+    },
+    {
+      "start_frame": 9,
+      "end_frame": 42,
+      "failure": true
+    },
+    {
+      "start_frame": 42,
+      "end_frame": 78,
+      "failure": false
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 82,
+      "failure": true
+    },
+    {
+      "start_frame": 82,
+      "end_frame": 88,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 9,
+      "end_frame": 42,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In image_primary frames 9\u201341, the open gripper repeatedly makes small back-and-forth movements over the space between the bowls and the pink toy, without approaching or acquiring the intended left toy. Both toys remain stationary throughout this sustained unproductive interval. Task-directed movement toward the left toy resumes at frame 42.",
+      "recovery": "Move toward the blue-and-white left toy, align the fingers around it, and acquire it before transferring it to the white bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This interval wastes time but shows no object displacement, damage, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toys and bowls remain in place, so the robot can continue without environmental resetting."
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 82,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In image_primary frames 78\u201381, while the robot carries the toy across the white bowl's rim, the white bowl slides rightward into the wooden bowl, which also shifts rightward. This unwanted contact disturbs an unrelated bowl rather than simply placing the toy; the exact contacting robot or toy surface is partially obscured.",
+      "recovery": "Stop lateral pressure, lift the held toy clear of the rim, and align above the white bowl's new opening before lowering and releasing it. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "Both bowls remain upright on the table, with no visible breakage or spill; the observed consequence is minor displacement.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the original scene requires straightforward repositioning of the two shifted bowls, with no repair or difficult retrieval needed."
+    }
+  ]
+}

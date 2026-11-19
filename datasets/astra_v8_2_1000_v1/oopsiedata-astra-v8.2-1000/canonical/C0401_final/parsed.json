@@ -1,0 +1,125 @@
+{
+  "episode_id": "C0401",
+  "language_task": "stack the bowls",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The turquoise bowl is nested inside the pale lavender bowl after bowl handling (left and top, frames 1050\u20131110), and the bowls remain together on the tabletop at frame 1999 (right and top). They already appear nested initially (left, frame 60; top, frame 0), so a newly created stack is not established, but the requested final arrangement is visible. The robot also displaces a red fruit-shaped object, repeatedly handles an unrelated plush toy, and places an orange object inside the bowls (left and top, frames 150, 450\u2013600, 1380\u20131400, and 1800\u20131999). It briefly tips the bowls before restoring their resting position (right and top, frames 1525\u20131710).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 142,
+      "failure": false
+    },
+    {
+      "start_frame": 142,
+      "end_frame": 155,
+      "failure": true
+    },
+    {
+      "start_frame": 155,
+      "end_frame": 210,
+      "failure": false
+    },
+    {
+      "start_frame": 210,
+      "end_frame": 667,
+      "failure": true
+    },
+    {
+      "start_frame": 667,
+      "end_frame": 1113,
+      "failure": false
+    },
+    {
+      "start_frame": 1113,
+      "end_frame": 1400,
+      "failure": true
+    },
+    {
+      "start_frame": 1400,
+      "end_frame": 1525,
+      "failure": false
+    },
+    {
+      "start_frame": 1525,
+      "end_frame": 1547,
+      "failure": true
+    },
+    {
+      "start_frame": 1547,
+      "end_frame": 1740,
+      "failure": false
+    },
+    {
+      "start_frame": 1740,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 142,
+      "end_frame": 155,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "The moving gripper pushes the unrelated red fruit-shaped object away from its previous position beside the bowls (left and top, frames 142\u2013154). This incidental displacement does not advance stacking.",
+      "recovery": "Move clear of the displaced object and approach the bowls along an unobstructed path; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the tabletop without visible damage or a fall.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced object does not visibly obstruct the bowls, so another attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 210,
+      "end_frame": 667,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot approaches and repeatedly works at the brown plush toy rather than a bowl (left and right, frames 210\u2013420), transports it (left and top, frames 450\u2013570), and leaves it beside the bowls by frame 600. Further toy-directed adjustments occur through frames 630\u2013666 before withdrawal. This is one continuous wrong-object episode across the window boundary, not evidence of a bowl-grasp failure.",
+      "recovery": "Leave the plush on the table, identify the bowls and their existing nesting, and perform only the bowl handling needed for a stable stack; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The plush is relocated, but no tearing, bowl breakage, or other meaningful damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and bowls remain accessible on the usable tabletop; a corrected attempt needs no human reset."
+    },
+    {
+      "start_frame": 1113,
+      "end_frame": 1400,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After withdrawing from the bowls, the robot approaches the unrelated orange fruit-shaped object (left and top, frames 1113\u20131170), acquires and transports it toward the bowls (frames 1200\u20131290), then releases it inside the turquoise bowl (frames 1380\u20131399). This unwanted placement does not advance bowl stacking.",
+      "recovery": "Remove the orange object and return it to a clear tabletop location while preserving the nested bowls, then withdraw; human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "The orange object is relocated into the bowl, but no damage, spill, or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the scene requires the straightforward removal of the orange object from the bowl, which the robot or a person could perform."
+    },
+    {
+      "start_frame": 1525,
+      "end_frame": 1547,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The right-side gripper tips the already nested bowls into an oblique resting position instead of maintaining their stable arrangement (right and top, frames 1525\u20131546). The gripper begins backing away at frame 1547; subsequent repositioning is recovery, not a continuation of the failure merely because the tilt persists.",
+      "recovery": "Stabilize the nested bowls, lower their bases flat onto the table, release the rim, and withdraw without disturbing nearby objects; human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowls remain together on the tabletop and retain the orange object; no breakage or spill is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The accessible, intact bowls can be directly stabilized and repositioned without human resetting or repair."
+    },
+    {
+      "start_frame": 1740,
+      "end_frame": 2000,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "By frame 1740, the gripper is again aligning toward the brown plush rather than the bowls (left and top), continuing its approach through frame 1800. It squeezes and reorients the toy through frames 1860\u20131999 (left and right), while the bowls remain nested in top. This renewed wrong-object behavior begins before the window seam; the precise transition between withdrawal and approach is less certain than the subsequent manipulation.",
+      "recovery": "Release the plush gently onto a clear tabletop area, withdraw without disturbing the bowls, and verify that the stack is stable before stopping; human intervention is not evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The plush is compressed and reoriented, but no tearing, breakage, or other meaningful damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plush and bowls remain accessible and intact; the robot can release the toy and withdraw without a human environmental reset."
+    }
+  ]
+}

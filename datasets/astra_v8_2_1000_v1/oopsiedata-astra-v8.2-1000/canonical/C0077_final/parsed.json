@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0077",
+  "language_task": "Open the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The upper drawer starts closed (frame 0, left_ego_image). An initial handle acquisition fails: the gripper withdraws without the handle and closes empty while the drawer stays shut (frames 101\u2013117, wrist_image and left_ego_image). After repositioning, the robot pulls the upper drawer outward (frames 160\u2013185, image and left_ego_image); it remains visibly open through frame 204. No unintended object displacement or damage is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 118,
+      "failure": true
+    },
+    {
+      "start_frame": 118,
+      "end_frame": 205,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 118,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the initial approach around the upper drawer handle, the gripper moves away without acquiring it (frames 101\u2013107, wrist_image). Its fingers subsequently close together clear of the handle (frames 108\u2013117, wrist_image), while the drawer remains closed in left_ego_image. This establishes an unsuccessful acquisition rather than a successful pull.",
+      "recovery": "Reopen the gripper, realign the fingers around the handle, secure the handle, and pull along the drawer\u2019s sliding direction; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the drawer closed, with no visible damage or disturbance to surrounding objects in image or left_ego_image.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and handle remain in place and accessible; the robot can reattempt acquisition without an environmental reset."
+    }
+  ]
+}

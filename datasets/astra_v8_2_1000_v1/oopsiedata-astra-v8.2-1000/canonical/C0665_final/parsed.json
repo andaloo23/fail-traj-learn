@@ -1,0 +1,199 @@
+{
+  "episode_id": "C0665",
+  "language_task": "take the tape measure and stretch it until it encompasses length of towel",
+  "success_label": "failure",
+  "outcome_evidence": "The tape measure starts retracted on the towel (frame 0, left and top). Repeated acquisitions end without retained tape or sustained extension (frames 358\u2013400, 533\u2013563 and 706\u2013713, left and top). Later actions bunch and lift the towel rather than extend the tape (frames 1127, 1590 and 1920, left, right and top). At frames 1998\u20131999, top shows the folded towel with no tape spanning its length. Completion is unconfirmed, alongside visibly unsuccessful attempts and task-inconsistent fabric handling; the recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 358,
+      "failure": false
+    },
+    {
+      "start_frame": 358,
+      "end_frame": 401,
+      "failure": true
+    },
+    {
+      "start_frame": 401,
+      "end_frame": 462,
+      "failure": false
+    },
+    {
+      "start_frame": 462,
+      "end_frame": 477,
+      "failure": true
+    },
+    {
+      "start_frame": 477,
+      "end_frame": 533,
+      "failure": false
+    },
+    {
+      "start_frame": 533,
+      "end_frame": 564,
+      "failure": true
+    },
+    {
+      "start_frame": 564,
+      "end_frame": 706,
+      "failure": false
+    },
+    {
+      "start_frame": 706,
+      "end_frame": 714,
+      "failure": true
+    },
+    {
+      "start_frame": 714,
+      "end_frame": 986,
+      "failure": false
+    },
+    {
+      "start_frame": 986,
+      "end_frame": 1002,
+      "failure": true
+    },
+    {
+      "start_frame": 1002,
+      "end_frame": 1109,
+      "failure": false
+    },
+    {
+      "start_frame": 1109,
+      "end_frame": 1128,
+      "failure": true
+    },
+    {
+      "start_frame": 1128,
+      "end_frame": 1537,
+      "failure": false
+    },
+    {
+      "start_frame": 1537,
+      "end_frame": 1623,
+      "failure": true
+    },
+    {
+      "start_frame": 1623,
+      "end_frame": 1872,
+      "failure": false
+    },
+    {
+      "start_frame": 1872,
+      "end_frame": 1980,
+      "failure": true
+    },
+    {
+      "start_frame": 1980,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 358,
+      "end_frame": 401,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The gripper separates from the tape measure starting at frame 358 and withdraws empty; by frames 390\u2013400, left shows empty closed fingertips and top shows the housing remaining on the towel. Renewed approach begins at frame 401.",
+      "recovery": "Reopen, realign around the housing or blade-end tab, and verify retention with a small controlled motion before withdrawing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The tape measure stays on the work surface with no visible damage or consequential scene disruption.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible, allowing another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 462,
+      "end_frame": 477,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the tape measure, the fingertips move away without retaining it during frames 462\u2013476 in left; top corroborates that the housing stays on the towel. Reopening at frame 477 starts another alignment.",
+      "recovery": "Adjust finger placement to securely capture the intended part and check retention before pulling; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This failed acquisition produces no visible damage or meaningful disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The housing and towel remain reachable and require no reset."
+    },
+    {
+      "start_frame": 533,
+      "end_frame": 564,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closure near the tape-end area at frames 531\u2013532, left shows the gripper withdrawing empty from frame 533 and opening by frame 540. Left and top at frames 540\u2013563 show the housing left behind without blade extension; renewed approach begins at frame 564.",
+      "recovery": "Capture the blade-end tab securely while stabilizing the housing, then verify a short extension before proceeding; no human intervention is indicated.",
+      "severity": "low",
+      "severity_evidence": "Only the acquisition attempt is defeated; no damage or hazardous displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The retracted tape measure remains accessible on the towel without any required environmental reset."
+    },
+    {
+      "start_frame": 706,
+      "end_frame": 714,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In left at frames 706\u2013713, the closed fingertips separate from the tape-end area without retaining the tab or drawing out a blade. Top shows the housing remaining on the towel; reopening at frame 714 begins recovery.",
+      "recovery": "Realign the fingertips around the tab, stabilize the housing, and verify retention with a controlled short pull; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "No damage or consequential displacement is visible in left or top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tape measure remains in the working area and can be approached again directly."
+    },
+    {
+      "start_frame": 986,
+      "end_frame": 1002,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closure beside the tape-end area at frames 984\u2013985, the gripper moves without retaining the tab or extending the blade during frames 986\u20131001 in left. By frames 1000\u20131001 the closed fingers pass over the housing, which remains on the towel in top; reopening at frame 1002 begins realignment.",
+      "recovery": "Reposition to capture the tab between the finger pads and verify a short extension while securing the housing; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition causes no visible damage or meaningful hazardous disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The accessible housing and towel need no environmental intervention before another attempt."
+    },
+    {
+      "start_frame": 1109,
+      "end_frame": 1128,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the acquisition attempt beginning at frame 1109, the gripper gathers towel fabric rather than securely acquiring and extending the tape end. Left and top at frames 1126\u20131127 show the towel bunched and the housing turned reverse-side up. The images do not establish a held housing being dropped; reopening at frame 1128 begins release.",
+      "recovery": "Release caught fabric, smooth the towel, and reorient the housing before acquiring only the blade-end tab; human intervention is not clearly necessary.",
+      "severity": "low",
+      "severity_evidence": "The towel is bunched and the housing overturned on the table, but no tearing, breakage or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Smoothing the towel and reorienting the accessible tape measure are straightforward resetting steps, with no repair or difficult retrieval required."
+    },
+    {
+      "start_frame": 1537,
+      "end_frame": 1623,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The left gripper pulls and lifts towel fabric instead of extending the tape. Left and top at frames 1537\u20131560 show gathering and displacement, and frames 1590\u20131622 show the raised towel corner beside the housing with no sustained blade extension. Opening at frame 1623 begins release.",
+      "recovery": "Lower and release the fabric, smooth the towel flat, then separately locate and acquire the tape-end tab while stabilizing the housing; human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The towel becomes displaced and bunched, but no tearing, broken housing or other meaningful damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A valid measuring setup requires straightforward lowering and smoothing of the towel and positioning of the accessible housing."
+    },
+    {
+      "start_frame": 1872,
+      "end_frame": 1980,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "Right and top show the right gripper drawing the labeled towel corner from frame 1872, then lifting and folding that end inward by frame 1920. Further handling of the folded fabric continues through frames 1950\u20131979 instead of extending a tape blade. The visible label and continuous fabric identify the manipulated object as the towel; release at frame 1980 ends the interval.",
+      "recovery": "Release and unfold the towel, smooth it flat, then stabilize the tape housing and pull only the blade-end tab along the towel\u2019s length; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The towel is folded and displaced, with no visible tearing, equipment damage or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Straightforward unfolding and smoothing can restore the measuring surface; no repair or inaccessible-object retrieval is indicated."
+    }
+  ]
+}

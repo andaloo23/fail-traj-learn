@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0901",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The first acquisition fails: the gripper withdraws empty while the spoon remains on the table (frames 44\u201364, image, left_ego_image and wrist_image). A second attempt lifts the spoon (frames 136\u2013166, left_ego_image and wrist_image) and carries it toward the drawer. However, the robot then holds it nearly stationary without releasing it through frame 399 (frames 250\u2013399, image and wrist_image). Placement is not completed visibly; the final spoon remains held rather than confirmed deposited.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 34,
+      "failure": false
+    },
+    {
+      "start_frame": 34,
+      "end_frame": 78,
+      "failure": true
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 250,
+      "failure": false
+    },
+    {
+      "start_frame": 250,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 34,
+      "end_frame": 78,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close beside the spoon without acquiring it (frames 34\u201342, wrist_image). The subsequent upward withdrawal leaves the spoon on the tabletop and the gripper empty (frames 44\u201364, image and left_ego_image), establishing a failed acquisition. The segment ends when the fingers reopen for another approach at frame 78.",
+      "recovery": "Reopen the gripper, align the fingers on opposite sides of the spoon, and verify a secure acquisition with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains accessible on the table, with no visible damage or harmful disturbance to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental reset is required; the robot can realign and retry the grasp directly."
+    },
+    {
+      "start_frame": 250,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After acquiring and transporting the spoon, the robot sustains a nearly unchanged holding pose for the remaining approximately 12.5 seconds (frames 250, 300, 350 and 399, image and wrist_image). The spoon stays between the fingers, with no discernible insertion or release advancing the unfinished placement.",
+      "recovery": "Reassess the spoon and drawer opening, then resume a clearance-checked placement and release only when the spoon is supported inside the drawer; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is an unfinished task; the spoon remains held, and no damage, dropping or harmful collision is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The environment remains usable and the spoon is already acquired, so placement can resume without a physical scene reset."
+    }
+  ]
+}

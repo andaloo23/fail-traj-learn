@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0466",
+  "language_task": "Remove the orange from the bowl and put it on the table.",
+  "success_label": "success",
+  "outcome_evidence": "The orange is initially inside the bowl (frames 0\u201330, left_base_cam and wrist_cam). The gripper aligns and closes around it, then lifts it clear of the bowl (frames 113\u2013133, wrist_cam and left_base_cam). It carries the orange beside the bowl, lowers it, and opens its fingers (frames 134\u2013174, right_base_cam and wrist_cam). The orange remains on the table as the empty gripper withdraws through frame 188 (frames 177\u2013188, right_base_cam). No failed acquisition, harmful side effect, or clearly persistent unproductive behavior is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 189,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

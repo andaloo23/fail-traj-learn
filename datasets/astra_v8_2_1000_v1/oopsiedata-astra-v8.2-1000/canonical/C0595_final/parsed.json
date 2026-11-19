@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0595",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper approaches the cloth in frames 0\u201310 and gathers and shifts it in frames 11\u201328. The yellow block becomes partly exposed in frames 28\u201329. Through frames 30\u201350, the gripper continues moving the cloth, but complete separation of the cloth from the block is not visible. Completion is therefore unconfirmed in the observed episode, rather than established as a failed grasp or other local failure; the slow cloth movement remains task-directed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 51,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

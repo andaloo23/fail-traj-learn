@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0780",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the green can reaches the upper tray by frame 1100, but the blue bowl is subsequently placed in that same tray rather than the right tray (frames 2143\u20132449). During bowl acquisition, the gripper also displaces the nearby pink-and-yellow can (frames 1500\u20131748). The robot later places that can inside the misplaced bowl in the upper tray (frame 3400). At frame 3653, the right tray remains empty and the pink bowl remains on the table beneath the gripper. Thus there is a confirmed wrong-destination placement as well as unfinished work; the final bowl acquisition is unconfirmed, not an established failed grasp or abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1600,
+      "failure": false
+    },
+    {
+      "start_frame": 1600,
+      "end_frame": 1748,
+      "failure": true
+    },
+    {
+      "start_frame": 1748,
+      "end_frame": 2143,
+      "failure": false
+    },
+    {
+      "start_frame": 2143,
+      "end_frame": 2450,
+      "failure": true
+    },
+    {
+      "start_frame": 2450,
+      "end_frame": 3654,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1600,
+      "end_frame": 1748,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "While acquiring the blue bowl, the gripper contacts and displaces the adjacent pink-and-yellow can: in base_image it changes from its near-horizontal position at frame 1500 to a diagonal position beside the gripper at frames 1600\u20131700. By frame 1748, the bowl and gripper have lifted clear, leaving the displaced can on the table. This is unintended disturbance of another object, despite successful bowl acquisition; the exact contact onset between the sampled frames is uncertain.",
+      "recovery": "Continue carrying the bowl with clearance from nearby objects, then reacquire the displaced can at its updated position for placement in the upper tray. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the tabletop and accessible at frame 1748; no damage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced can can be acquired directly from its new position without repair or human resetting."
+    },
+    {
+      "start_frame": 2143,
+      "end_frame": 2450,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In base_image frames 2143\u20132400, the robot lowers the blue bowl into the upper tray, and frames 2448\u20132450 show withdrawal leaving the bowl there instead of in the right tray. This is a wrong-destination placement, not a failed acquisition. The preceding overhead transport is less conclusive about destination; the lowering and release establish the semantic failure. Subsequent movement toward the remaining can advances the task and is not an extension of this failure.",
+      "recovery": "Remove the can subsequently placed inside the blue bowl and set it directly in the upper tray, then securely reacquire the bowl and transfer it to the right tray. Finish transferring the pink bowl to the right tray. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The misplaced bowl remains upright and accessible, including after the can is placed inside it at frame 3400; no breakage, spill, or other damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The objects remain reachable and can be rearranged through ordinary pick-and-place actions; the later nested can requires an additional move but no environmental repair or human reset."
+    }
+  ]
+}

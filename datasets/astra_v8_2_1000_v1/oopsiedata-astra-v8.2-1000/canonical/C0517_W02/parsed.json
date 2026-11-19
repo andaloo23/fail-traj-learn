@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0517_W02",
+  "language_task": "fold the shorts",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "Provisional for this window: the shorts are already folded into overlapping layers at frame 350 (top, left, right) and retain that folded configuration through frame 699 (top). The robot makes further edge adjustments, including unsuccessful right-gripper acquisitions visible at frames 474\u2013493 and 620\u2013632 (right). No damage or unrelated side effects are visible. The earlier folding action and later episode context are unavailable; this assessment concerns the visible folded state and behavior in this window, not final whole-episode completion.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 474,
+      "failure": false
+    },
+    {
+      "start_frame": 474,
+      "end_frame": 494,
+      "failure": true
+    },
+    {
+      "start_frame": 494,
+      "end_frame": 620,
+      "failure": false
+    },
+    {
+      "start_frame": 620,
+      "end_frame": 633,
+      "failure": true
+    },
+    {
+      "start_frame": 633,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 474,
+      "end_frame": 494,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing at the fabric edge at frames 459\u2013473 (right), the right gripper withdraws empty during frames 474\u2013493: the hem separates from the closed fingertips while remaining on the table (right, top). This acquisition does not secure fabric for further folding or adjustment. Reopening begins at frame 494 (right).",
+      "recovery": "Reopen and align the fingers around an accessible fabric edge, then verify retention with a small lift before continuing; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "Only the acquisition is unsuccessful; the shorts remain on the table with no visible damage or harmful collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The fabric remains accessible in its folded configuration, allowing a direct retry without environmental resetting."
+    },
+    {
+      "start_frame": 620,
+      "end_frame": 633,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following right-gripper closure at frames 598\u2013600 (right), the gripper moves away from the fabric during frames 620\u2013632 without carrying it; an increasing tabletop gap appears between the hem and closed fingertips (right), while the shorts remain on the table (top). Reopening at frame 633 begins recovery rather than continuing the failed withdrawal.",
+      "recovery": "Realign the open right gripper to capture the hem between its fingers and confirm fabric motion with a small test lift before executing another fold; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition delays further handling but causes no visible damage or disruption beyond the unsuccessful attempt.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shorts remain within reach on the tabletop and require no human or environmental reset before another attempt."
+    }
+  ]
+}

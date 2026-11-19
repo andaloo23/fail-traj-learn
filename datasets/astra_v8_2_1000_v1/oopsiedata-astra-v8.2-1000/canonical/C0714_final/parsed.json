@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0714",
+  "language_task": "fold the shorts",
+  "success_label": "success",
+  "outcome_evidence": "In top frame 0, the shorts are spread out with the two legs separated. The robot acquires the near-side edge and lifts it across the garment (left, right and top, frames 130\u2013230), then lowers and releases it onto the opposite half (frames 240\u2013270). Later movements adjust the layered garment. At frames 850\u2013894, top shows the shorts remaining in a compact, folded shape, while left and right show overlapping fabric layers and released grippers. No failed acquisition, harmful collision or unintended side effect is clearly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 895,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0852",
+  "language_task": "pick up the bottle",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In zed, the gripper approaches and closes around the bottle across frames 0\u201367; the bottle then stays with the gripper as the blue support surface recedes across frames 80\u2013130, supporting successful pickup. However, pale granular contents visibly stream from the bottle toward the blue surface beginning around frame 97, leaving a substantial pile visible in frames 150\u2013171. The tactile panel changes around acquisition but does not independently establish the lift or the contents' identity.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 97,
+      "failure": false
+    },
+    {
+      "start_frame": 97,
+      "end_frame": 151,
+      "failure": true
+    },
+    {
+      "start_frame": 151,
+      "end_frame": 172,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 97,
+      "end_frame": 151,
+      "categories": [
+        "other"
+      ],
+      "explanation": "During the pickup, pale granular material visibly exits the held bottle in zed frames 97\u2013150 and accumulates on the blue surface. This unintended emptying is a side effect of handling the bottle, not required by the pickup task; the images do not establish the contents' identity or a hidden mechanical cause.",
+      "recovery": "Stop the spilling motion and orient the bottle with its opening upward while maintaining a secure grasp, then place it safely on a stable surface. Human assistance is appropriate to collect the spilled material and refill or secure the bottle before another attempt.",
+      "severity": "medium",
+      "severity_evidence": "Zed frames 144\u2013171 show a substantial accumulation of spilled material requiring cleanup; no breakage or lasting damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The visible material is accessible on the blue surface and appears to require straightforward collection and bottle resetting; no repair or difficult retrieval is visibly necessary."
+    }
+  ]
+}

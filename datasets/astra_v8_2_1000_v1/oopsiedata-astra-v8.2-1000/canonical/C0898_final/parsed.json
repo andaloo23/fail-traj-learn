@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0898",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven is closed at frame 0 in image and left_ego_image and remains closed at frame 399. The gripper approaches the oven during frames 0\u201377, but then remains near it without visible door opening for most of the episode (frames 78\u2013399, image, left_ego_image, and wrist_image). Completion is not observed; sustained inactivity is visible, but a completed failed handle grasp or pull is not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 78,
+      "failure": false
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 78,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the initial approach, the gripper stays almost stationary near the oven, with only small later adjustments and no discernible opening action. Frames 78, 150, 210, 280, and 399 in image and wrist_image show the persistent near-oven pose; left_ego_image shows the door remaining closed. This prolonged stall does not advance the task. The images do not establish handle possession or a hidden cause.",
+      "recovery": "Resume task-directed alignment with the oven handle, verify a secure grasp, and move the door along its opening path while monitoring clearance and resistance. No human intervention is visibly required; seek assistance if safe motion cannot resume.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced objects, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and nearby plate and spoon remain in their original usable state; another attempt requires no visible environmental reset or human intervention."
+    }
+  ]
+}

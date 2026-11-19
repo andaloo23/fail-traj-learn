@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0441_W06",
+  "language_task": "take the small silver cup and pour its contents into the blue bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the contents are not transferred. The robot repositions the blue bowl while the silver cup retains its red and green contents (left, right, and top, frames 1750\u20131875), then adjusts the other gripper near the cup (right and top, frames 1914\u20131950). At frame 1999, right and top still show the contents inside the cup and the bowl empty. These observations establish incomplete execution, not a clearly failed acquisition or pour within this window; no completed cup acquisition followed by empty withdrawal is visible. Earlier context beyond frames 1748\u20131749 is unavailable as images, and completion beyond the supplied window is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

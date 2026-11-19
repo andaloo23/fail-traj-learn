@@ -1,0 +1,109 @@
+{
+  "id": "resp_0c8793fe09442fff016afbb9c9519487d28d8574edc830ba9b",
+  "object": "response",
+  "created_at": 1794881994,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794882002,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0c8793fe09442fff016afbb9cecff487d2a7d028628d51ddec",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0454_W02\n\n## Episode annotation\n\n- Language task: put all the toys into the bowl\n- Success label: failure\n- Outcome evidence: Throughout frames 350-699, top shows the green bowl remaining empty and the toys remaining in the smaller container to its right. Frames 350, 525 and 699 in left and right corroborate essentially unchanged gripper positions with no acquisition or transfer. This window shows sustained inactivity, not a visibly failed grasp. Completion is unconfirmed and the outcome is provisional because earlier context beyond frames 348-349 and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 700 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 350-700\n- Categories: task_not_attempted\n- Explanation: Across frames 350-699, top shows both grippers remaining apart from the toy container without a discernible task-directed approach; left and right show no meaningful acquisition or transfer movement. This approximately 11.6-second period of sustained inactivity does not advance the task. Context frames 348-349 show the same pose, supporting continuity across the starting boundary, but the earlier onset is not independently established here; inactivity may continue beyond this window. No hidden cause or abnormal termination is established.\n- Recovery: Approach an accessible toy, grasp it securely, transfer it into the green bowl, and repeat for the remaining toys; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: No displacement, damage or meaningful damage risk is visible in frames 350-699; the consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The bowl and toy container remain upright and unchanged in top through frame 699, so a task attempt can begin without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63578,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 388,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 63966
+  },
+  "user": null,
+  "metadata": {}
+}

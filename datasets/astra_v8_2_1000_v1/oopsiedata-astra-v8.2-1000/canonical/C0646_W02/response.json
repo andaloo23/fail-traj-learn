@@ -1,0 +1,109 @@
+{
+  "id": "resp_0a5a4ce33004b36f016afbbfc1cd8087d2ac650c621c601d11",
+  "object": "response",
+  "created_at": 1794883523,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794883531,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0a5a4ce33004b36f016afbbfc89bcc87d298529a25b6c13584",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0646_W02\n\n## Episode annotation\n\n- Language task: align one of the two cubes to the top right corner of the box\n- Success label: failure\n- Outcome evidence: Throughout frames 350\u2013699, top shows the cubes remaining in the same positions inside the box, while left and right show no discernible task-directed approach or manipulation; frames 350, 500 and 699 illustrate the unchanged scene. Completion is not confirmed, and sustained inactivity is visible rather than a failed physical acquisition. This outcome is provisional for the supplied window; earlier context beyond frames 348\u2013349 and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 700 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 350-700\n- Categories: task_not_attempted\n- Explanation: Across frames 350\u2013699 in left, right and top, the grippers remain outside the box without discernible task-directed movement, and neither cube is repositioned. This approximately 11.6-second period is sustained inactivity that does not advance alignment. Context frames 348\u2013349 show the same state, supporting continuity across the starting boundary independently of the prior prediction; inactivity may continue beyond this window. Its cause is not visible.\n- Recovery: Begin a controlled approach to an accessible cube, acquire or controllably push it, and align it with the requested box corner; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: No collision, displacement or damage is visible in left, right or top; the observed consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The cubes and box remain undisturbed and available for an attempt, with no physical scene reset needed."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63581,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 377,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 63958
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0941",
+  "language_task": "Pick basketball and place in blue bowl.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In exterior_cam, the robot lifts the basketball at frames 70\u201381 but loses it onto the tabletop beside the bowl at frames 97\u2013112. It subsequently reacquires the ball and carries it toward the bowl at frames 197\u2013218. At frames 234\u2013241, the ball is seated inside the blue bowl as the fingers spread around it; the gripper has not fully withdrawn. The earlier loss and reacquisition make the completion suboptimal.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 97,
+      "failure": false
+    },
+    {
+      "start_frame": 97,
+      "end_frame": 113,
+      "failure": true
+    },
+    {
+      "start_frame": 113,
+      "end_frame": 242,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 97,
+      "end_frame": 113,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the basketball previously lifted and carried at frames 70\u201396 descends away from the fingers at frames 97\u2013108 and lands on the tabletop outside the bowl by frames 109\u2013112. This loss of retention interrupts the transfer and requires reacquisition; the images do not establish its underlying cause.",
+      "recovery": "Track the ball until it settles, realign the open fingers around it, acquire a secure grasp, and then transfer it over the bowl before releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The ball falls a short distance onto the clear tabletop and remains accessible; no damage or meaningful damage risk is visible in exterior_cam at frames 109\u2013120.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains on the usable tabletop beside the upright bowl, allowing another acquisition attempt without human resetting."
+    }
+  ]
+}

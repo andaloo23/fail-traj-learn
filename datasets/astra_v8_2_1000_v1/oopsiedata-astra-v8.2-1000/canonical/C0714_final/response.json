@@ -1,0 +1,116 @@
+{
+  "id": "resp_03451c83de89f835016af923c7a2c887d182d10670a1c49d64",
+  "object": "response",
+  "created_at": 1794712524,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712541,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_03451c83de89f835016af923d7fce887d1b05bd22dab114782",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SPfsHfKQ8lNaAQ7HyQe0tH7X-SJr0uS-YUg08j6EXRN-TSIQb12Puyle8l-t-lbunEd9e-sBZSkdzl1K-Bk0ggL12-x4CV14URUKVQwDub-kqsNKnUCyL-7Dvdi4gW9WZMj3QzVCMd8Xkt5VRmMcvXh2krNp8d_61i6MQYmjJ8VlfwuFJmCkQ7dDcTdy4uqVMDp3LLJdssvAjGM4V74z36YeaRmDjqCyRoHpGtnohWyXiQO_zBFzymDrieFSKgM74soZwe7cyPhs3lz-LVxJuBSIh3LR0bbvCUIKQO6NZA3pRc_xMRQIxAihuRstyMB4IZoCgwfx5K5dBDu5R3WwKSfmYFifaS-cuHQyW9VFIy548dun_PvL8L-v-320Ggffk2lng1kztdaYflbOCnsIIuEQJ6t1Nb7_kdUmRX7DRvq9SVC4qnRrSvK7E0_2s80rWec-moUuXk9qAzDEdBhd2pEfRiViEL5UePOTF7AolK_Yrvei6D4pwmrhkzsPaJCtp1gTNE31Dn4KMJB3bklUS94IV7uhzBxS258rOIIiEc8-ImWYC7RMD9Nkw5ea3JDqBIo1FL4yQJCTr89XIbnKX3GOT3Wnm-oXM1DdE_F90GqLh3BR2lg_tLWofdOpUvT8ZQUWeFZTEIBCkiwtBpf9TQEyjJ0arZjgtVI0nH602hXFisPI6EuOvL7VS6qVTLaVRcPEj8vXtpXZZWwlvczootVHXlRU92Taz64nk-UznPqgG5waGeWyFYtHmyEKwL-CksEwxIfF7NYnb31OSrW3aAN_uYA9LA8RZEG6InekhXzlPnBe4Ef3dvkDeenjr0fWZk4JXMwRxXGET-RcdtmJefkbL_Oz2xwECYO-6rcoAvLGDAT__m0mLOJSUbF6rCzV2zu0lrCGzHqKhNJ2qwDVe5lXW-MHIpHGp9vPq6yhrimhSdaxiSpJlfTjSxdeVMr9fbOXAmMJGGsLuLVSzG6h3SUtemNGlWUpwrgX0OwOmihqpvcES7r_C1LIjvb3ibiid6-AAZETrVpdwKB1ns7GYaeOi7ZiwnGp_lBob89foMdD9q46ZRoug34FY-gYXM_9dVmqJea07ouxQsuMJad1ancrtCfGtnLQuMO59Ug6JjyJUDo7_LHJBqNbKV72kExJ2Ky5eJVIlOQXz-D_m_v0qcnu6KwFEW9PTAQj0ZIUnGd0gDoXoaEf_bFNCOe0EmDxEL-TFCKkm9VnW5rA40wC03c2EzmlBB9AR2C46cRW8H1m7u9-4ke0e6jBCjtXNOfZU7YtAuTjEr4wF12kRdJ8B3oB-D7JXBw9EWQ8npvifYgV24AYmpPG67678SwdWzaWV8uvLpMpM8DNc9mPHVydY8cyiUOmuH3J66oTAgcHITbqznM9jqmDSCBZk9T-RyM7gVOrHoud2gSDwIRUOdmaqRbbQQ7wz-irWXxdFVoAGOu5xv2cKOZsMiXHjI9cBC3Y2pubAKzlnors736BkwpTrxVDJkvneXrdaxVOnYOuVD_pLdwH6LmTVjxF4YaFl5W732F0HIjILTdw_QdcxH2ToBF2rSGa7jkIUPexrPjipSWZD-HIgqI6O9gD7YoAonYlgB1j_HZ1jon9JIOOFI5IGCxeigNyzCbGXxqNPwsmbD3ieVd0Je_pHHEAMZlS4vh3Rs2NA0FF60pCnMxVxxiNmRll_MHmc7vW9EEMOnfgd9yL5kjfPIvWhBGCUvhDn_57W4jF3DtKb5SA7eKtUZrwK5HKW3n-ayxhmNNZ0LboZVvaT8LD49eApbj9sgHXjHB0hZLaA2fHb5uLbyhJSmpgkQncauqVR7XJrSPMzHeTpH_579CtwQTvyvd4yUUUGSj3N7tU5roxlLLX_d1LG6lOsE49-yBGYS2PNanA3LqK19FjE8IiOKwdTUYte-En2JX6qQqL853i4U-M8mqhytlriNc8W1BH8c7-UiDhtlXrHVUE6cEGo6KfdTFoYghmfwQtMboHtgcPhGOv1JT6daCNNde_lCHXkH8uV-1v9Pv2GF9NVhCtxmdjgCSXSdDWAVKTqA7JPOF6g9X2N1f5T6SbcKCZ9JOpsiO-fn2lhX_nh2-9KVF-u7I8XFV4o_g-YP6oHLdbUgBP97S8cI2dvdj43Eej3XVUh_rDM5N2Psnmko7J4BWo6v3qC6SVO2Mt29drRJJxnaLcZrIUAm4Umq2IFi2hkZVBWhpbrBs5uLbE44jon20stV6mOfAZ6sYHXZDMpkJgLZyDCRjjuJcSNxjZy2JuUJiyWPiD1DpJos00LrfFGWx9NrSWA7j0wd82mrvHhXkABiKcUvk9QkEw25ptk5sf0ADWGY8Al4cvLRPPHW18ofS8ie1LBC79MkjTDnKtiUwWHE7liDEK_yNBss5hNXIDp3JH0KUCCbI5MsYgKqa_yypUI_RIr5igTVKfTgGtiCD4I7fKllHMWLh-afAmPmS7EX2pZ0grFCdZnnJFBYfEHS1I2MmtaZn48TF__wsaGMHG5F5fqi_vDmoOkhwArjZxT8HyTw7xm9g1_PU8wesJxIkJKg2I89ikQRe-vZ0WYD3DFAUz81r86FV4CRUgf_u5faOYgInYGdfugT1bdTXIc9bDL5EhzmzXke8kLT5wC4a4EkkNaAQB7ZPg3ffw2JKG9ra41wbdZnK_Z2ah8aHrIei9wJqBFJ84nP2iOByToB_dPbWDNZWYcmMb4sX9JHwpWzL45Ql0q8xfjcPnhBDuC5orJmTBoETANh4GmoymcwuEbAiJqQV2r84c82Wqw_gMhBUqCkiiKh7-lLJDaDWeV2A3gWq0PV_11rn3eIRmAOb7S-IIJQlNSPe8JMl2R_T38RAfNSdTPRH1hmQRIqYvEh0iHaLjY_xpr1nY0TfHYm10I6BIo3Kd6GaoUKcqsQpQkdNPf5t6F8YH1bfh0rOHxm5cJuBlimNv3jYjhr1BiKY4w-5hbx1vwHem64n6b5lM8djPc1DP9El4l5ETw3b_nkJq8sMr-Owm-S_wKi0GeQNBxAywv0bEjX_5haBp9Msbzlkd6LZjl8coA1ifeBBjRjGM0Qvj8zpWZX-6SjcmVL5zB6xJBirYV7IyTr8SOqqQc2mU1ORvW2v-12WZHUYUymzxtKGK9REEwmEN05_I2wAsGJ9vjdWY_ZiwQGhEOxJAQhxuRKX4WGGnar1LZEsP9E=",
+      "summary": []
+    },
+    {
+      "id": "msg_03451c83de89f835016af923db422087d1bce58ea56920c048",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0714\n\n## Episode annotation\n\n- Language task: fold the shorts\n- Success label: success\n- Outcome evidence: In top frame 0, the shorts are spread out with the two legs separated. The robot acquires the near-side edge and lifts it across the garment (left, right and top, frames 130\u2013230), then lowers and releases it onto the opposite half (frames 240\u2013270). Later movements adjust the layered garment. At frames 850\u2013894, top shows the shorts remaining in a compact, folded shape, while left and right show overlapping fabric layers and released grippers. No failed acquisition, harmful collision or unintended side effect is clearly established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 895 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 214166,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 297,
+    "output_tokens_details": {
+      "reasoning_tokens": 116
+    },
+    "total_tokens": 214463
+  },
+  "user": null,
+  "metadata": {}
+}

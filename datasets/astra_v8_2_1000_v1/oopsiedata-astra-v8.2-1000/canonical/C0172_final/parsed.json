@@ -1,0 +1,39 @@
+{
+  "episode_id": "C0172",
+  "language_task": "close the drawer",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is open at frame 0. The robot approaches its handle, withdraws without closing it at frames 14\u201321, and remains away through frame 42. A renewed approach at frames 43\u201352 produces some inward drawer movement at frames 53\u201355, but the drawer remains visibly extended at frame 60; full closure is not observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 14,
+      "failure": false
+    },
+    {
+      "start_frame": 14,
+      "end_frame": 43,
+      "failure": true
+    },
+    {
+      "start_frame": 43,
+      "end_frame": 61,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 14,
+      "end_frame": 43,
+      "categories": [
+        "grasp",
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, the fingers close near the drawer handle at frames 9\u201313, but the gripper subsequently moves away empty at frames 14\u201321 while the handle and open drawer remain in place. It then stays away from the handle with little movement through frame 42, a sustained unproductive interval rather than continued alignment at the target. The images do not establish why acquisition failed.",
+      "recovery": "Realign with the handle or a suitable drawer-front pushing surface, establish controlled contact, and push along the drawer\u2019s travel direction while checking closure. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains open, but no damage, displaced unrelated objects, or meaningful damage risk is visible in right_shoulder_cam during frames 14\u201342.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and handle remain accessible and essentially unchanged; another aligned attempt can begin without an environmental reset or human intervention."
+    }
+  ]
+}

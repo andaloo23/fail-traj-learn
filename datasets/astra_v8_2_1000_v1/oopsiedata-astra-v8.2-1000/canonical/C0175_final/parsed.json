@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0175",
+  "language_task": "take tape measure out of bowl and put it in bowl again",
+  "success_label": "failure",
+  "outcome_evidence": "top at frames 0, 350, 700, 1050, 1400, 1750, and 1999 shows the tape measure remaining in the green bowl with both grippers away from it. left and right corroborate no visible acquisition, removal, or replacement despite viewpoint changes. Completion is unconfirmed; the observed failure is sustained lack of a task attempt, not a visibly failed grasp. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 26,
+      "failure": false
+    },
+    {
+      "start_frame": 26,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 26,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial viewpoint adjustment at frames 24\u201325 in left, the robot shows sustained lack of task-directed progress for approximately 66 seconds. top at frames 26, 350, 700, 1050, 1400, 1750, and 1999 shows the grippers remaining remote from the unchanged tape measure and bowl. left and right show viewpoint drift, including a larger change around frames 1800\u20131830, but no approach to or handling of the target. This is one continuous unproductive interval; its underlying cause is not visible.",
+      "recovery": "Begin a controlled approach to the tape measure, align the gripper with clearance from the bowl rim, secure and lift the tape measure out, then lower and release it back into the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; no collision, object disturbance, damage, or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright with the tape measure inside and the workspace undisturbed, so another attempt requires no environmental reset."
+    }
+  ]
+}

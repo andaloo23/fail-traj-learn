@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0705_W06",
+  "language_task": "find the tweezer and place it on the towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window: frames 1750, 1850, 1950 and 1999 in top show unchanged gripper and tabletop object positions, while left and right show no discernible acquisition, transfer or placement. The visible failure is sustained inactivity, not a demonstrated failed grasp. This label is provisional because earlier execution beyond context frames 1748\u20131749 is unavailable; the window ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 1750\u20131999, top shows both grippers remaining in essentially fixed positions near the front of the table; left and right likewise show no discernible search, approach or object handling. This approximately 8.3-second interval is sustained lack of task progress rather than a brief preparation pause. Context frames 1748\u20131749 show the same configuration, supporting continuity across the starting boundary independently of the prior prediction. The cause and any continuation beyond this window are unknown.",
+      "recovery": "Obtain a clear view to identify and localize the tweezer, then approach, grasp, transfer and release it on the towel, verifying acquisition and final placement. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Frames 1750\u20131999 in left, right and top show no damage, unwanted collisions or object displacement; the observed consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The visible environment remains undisturbed, so another attempt requires no physical reset or cleanup."
+    }
+  ]
+}

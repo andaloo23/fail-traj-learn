@@ -1,0 +1,109 @@
+{
+  "id": "resp_0d24dabed7e2393c016afbe97e49f487d19f85537b312db469",
+  "object": "response",
+  "created_at": 1794894206,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794894213,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0d24dabed7e2393c016afbe980695487d1ae8c36dceded1476",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0351\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: aria at frames 0, 700, 930, 1400 and 1699 shows the cup remaining upright on the tabletop rather than being picked up or placed on the saucer. left_wrist and right_wrist show arm repositioning and empty grippers, with no visible cup transfer. Completion is unconfirmed, and sustained stalling is observed; no failed cup acquisition, dropping or abnormal termination is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 190 | No |\n| 190 | 436 | Yes |\n| 436 | 1050 | No |\n| 1050 | 1700 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 190-436\n- Categories: task_not_attempted\n- Explanation: After initial repositioning, the arms remain essentially stationary away from the cup for approximately 8.2 seconds. aria at frames 190, 300, 350 and 435 shows undisturbed objects, while left_wrist and right_wrist show empty open grippers without acquisition activity. This is one continuous stall across frame 350, ending as repositioning resumes around frame 436; its cause is not visible.\n- Recovery: Resume a controlled cup-directed approach, align one gripper and verify secure acquisition before attempting the handover; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The visible consequence is delayed progress only; neither object is displaced or damaged, and no concrete damage risk is established.\n- Resetability: immediate\n- Resetability evidence: The cup and saucer remain in valid tabletop positions, permitting another attempt without environmental resetting or human intervention.\n\n### Failure 2\n\n- Frames: 1050-1700\n- Categories: task_not_attempted\n- Explanation: Following arm repositioning, both grippers hover without discernible cup-directed progress for approximately 21.7 seconds. aria at frames 1050, 1200, 1400, 1500 and 1699 shows the cup unchanged, while left_wrist and right_wrist show essentially unchanged empty gripper configurations with slight drift. The interval is a continuous stall, not separate failures at frame 1400. Its onset is approximate around frame 1050; the recording ending does not establish abnormal termination.\n- Recovery: Reorient toward the cup, acquire it securely with one arm, verify retention during transfer to the other arm, and then place and release it on the saucer; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: Progress is prevented, but no object displacement, damage or concrete risk of damage is visible.\n- Resetability: immediate\n- Resetability evidence: The cup remains upright and the environment remains usable for another attempt without a physical reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 21325,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2174
+    },
+    "output_tokens": 632,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 21957
+  },
+  "user": null,
+  "metadata": {}
+}

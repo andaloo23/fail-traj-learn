@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0665_W04",
+  "language_task": "take the tape measure and stretch it until it encompasses length of towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is not visible in this window: top at frames 1050, 1175, and 1399 shows no tape blade spanning the towel. During the acquisition attempt, left shows the towel being gathered and the tape housing turning over rather than a sustained blade extension (frames 1109\u20131127). The robot subsequently repositions, but completion remains unconfirmed. Earlier context is limited to frames 1048\u20131049, and later execution is absent; this is a provisional window outcome, not a final whole-episode judgment.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1109,
+      "failure": false
+    },
+    {
+      "start_frame": 1109,
+      "end_frame": 1128,
+      "failure": true
+    },
+    {
+      "start_frame": 1128,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1109,
+      "end_frame": 1128,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the tape-end area, the gripper draws the towel into folds instead of securely acquiring and extending the tape end: left at frames 1109\u20131125 shows fabric gathering toward the fingers while the housing tilts and turns over, ending reverse-side up at frame 1127. top corroborates the towel's displacement and bunching. This is an incorrect acquisition/contact attempt; the images do not establish that the housing was held and then dropped. Reopening at frame 1128 begins recovery.",
+      "recovery": "Release any caught fabric, flatten the towel, and reposition the housing securely before aligning the fingertips around only the tape-end tab; verify retention with a short controlled extension. Human intervention is not clearly necessary.",
+      "severity": "low",
+      "severity_evidence": "The towel is bunched and the housing overturned on the work surface, but no tearing, breakage, or meaningful damage risk is visible in left or top.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A straightforward reset would smooth the towel and reorient the accessible tape measure; no retrieval from an inaccessible location or repair is indicated."
+    }
+  ]
+}

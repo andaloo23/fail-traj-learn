@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0411_W03",
+  "language_task": "put the red banana clip into the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not established by a visibly failed grasp. In top at frames 700, 900, 975, and 1049, the red clip and lead remain on the table to the right of the towel, outside the green bowl. The left and right views show gripper repositioning, particularly at frames 907-975 and 1000-1025; right at frames 982-1049 shows the red clip still on the table, while left shows no clip in the bowl. No completed acquisition, drop, or harmful contact is established. The pauses and positioning movements do not clearly establish a local failure. This outcome is provisional because earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

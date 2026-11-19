@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0397",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven is open at frame 0 in left_ego_image, with its interior and green plate visible. Across frames 10\u201360, image and wrist_image show the gripper gradually approaching the oven-door area. At frames 70\u201374, left_ego_image still shows the open oven and exposed interior; closure is not observed. This is unconfirmed completion during an ongoing approach, not a visibly established failed grasp or closing attempt. No unintended object displacement or damage is evident.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

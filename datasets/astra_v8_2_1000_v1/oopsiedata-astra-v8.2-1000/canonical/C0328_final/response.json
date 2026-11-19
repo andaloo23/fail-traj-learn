@@ -1,0 +1,116 @@
+{
+  "id": "resp_0e48f1d7d0f3587d016af90ca83c4487d2948c95d1165d8f8c",
+  "object": "response",
+  "created_at": 1794706600,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794706607,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0e48f1d7d0f3587d016af90cab2ee487d2a911d096be2b401f",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QywfbWPSbObVYC_EPgxXDdEeth8ttYwtyE7alWG5i_Y8OVIkBurTC3a891EBtF8VaIgow9J_Mk-dGOOU_rIH0ZButdPjBUzayyArcYwCHpYcpVbKbepzuQKg8jDW9qXXR5fa57PKibdIWazNP8aMOySaf19ngCQuxY7UkPm0fVOC-Jza3cdWlbAopT0QAP55xyrn_DuW2sJoVHUE8lh4WTrB32VSmC-gr60dUHbjeIoDuficBJoHj2HEiolN6PwVVUQI1dK7EkBODVVlqL7rrxWiH74Y74flVQQTN54kt0BvqumRX0f0IcH6W0nbXZllDwuICPxWTc_XO-tm4nCwAwFoRFi6MZIWRFTI3FPKKJ6-j8hogov9fTpInofdv0CFYRyvcdPJbWRsLvKsC1Jhy27Q5PxsWaM2bRACuo2s44juqvvSohf17ZV66quS_LOjjsHMp1iHJ3n4Q2pEpbUNEZzYSbnCz0MRdGyG-bXr6MK1Uv4TVnND5yAtMrBW77Uxlmra5eWgWZIqg3GghZ026w2IbM8Jy47nFpsVl-lOeucR-E2rKx6AVM0hkfFleZA-yQVxDw3GWOVqB8vxA6qoc_ZZGo6lU5GoWL5gu-rg_7O5i3IMb8LSGhCEeWgEr2b6qC3PyCo1Vat0hsKfJqkXrVWshtzbZOu0UeeXk_HjiCTrsoBl2h5-80ustz_qTqT-umo4cvpIqsseE1RcRA6J1bj8Ber1_e_f_KAMk2098y_Mq4RN4yoIj8JXGeshI-W-lcXzbnelK-RqHlJM4eVop6hOMi1v0rRjq3seDEL3N-TrAtQyPOrLQrfLRJN_YjwdMBNciasG_nyQW7oDCWpvR-HtZELMAKOXOw3nA0p9y5SDvGuA1anTvFMjw89OkfocwboCkpXie8ZLMiLR-AISBS9S0texib1NlaUwWNWZPjhtwqAZ9GzKwlzwJUCO0YrHpkJwe0Kaumo4DPGMazs0PCytl8uGL6e0nRhqwrN92YkVwYL7q6RcEJPF1ZHvvFjtY1c3LUbd85AbdLSaxvHdY6mcESWhK6B3SbyjQ5AlbUUP4fGeyds6JS6ILm8wqfOU8G5FZBCfscNXAVJFza9M4f11XbY_x12x_gZUisGCF99TeYP27FU4jjdoqndSy2DlmsvPxTcLUmyIZmrOJf_7ivZXPIC5Hr-Zv5mHclJcawKR_ZWRbxSiPDhMptLU_2mn7DzgWoqBCBCYlTjFt9jkRuEUZkWWMHjMFoPvIqKr5qVR0bjXUZx4mxtna89JfdizYRtlLhM4ECNsoeKeJozV3ge6QqxUPVkc6FW822JV-SPRCxx6aTY5YYz0HPP4ZpaApv1L_YIF1yQdl2jchjWNkR4en1o0ZfDTULMTC_ZdM-6zIkQ9jAYwP4Ul74pw3CATegFvm-TM25Z5UJvuLvea4CY2RCe4teABYTBwEnMBjkXzFoYQsg8mevCL5PgeXnJo7dh8jgVhMXn9yXISoci95FiUtlt8eLxWh80T7T6Hb2xBB96BN1H8FrGpGG_d0hCXHNJzt483QFvBNxVlvb3UF3jHqvqPzmHzAiqHE3U3vG7xen_ZKEg10Uf2Ubkaw5u1hHxuVXfMNKxnYfqK2MQTaDVNiks2kx4BNdsr7EIyWALZbwZTA_bgswS-269jX9XyczZDQ5nkoBBEj1aZznbRbOWj_U3aM7PcrXj70mus3o5dinSq9FIOtqRvdi7KGHu1ShH115zpXNEE2n7Km340QBdJ0OsuTf-NHEW-zM1_nsP36Y7j_3P4CEI0Ex7GpHfNrg379aTa8I9eP6HxHoHWdODfJW9i7fYV7yGePgD9YdF1pSxhRxeRYGvYjj6voKF8ZZKpcF0eyfSKUjYF0OiSOO2eWCEGmlisBG3_BFbNbcCcCesNBVr3jzCyuIlWoVAmq7vD1ibq8BU_40HbyBKG4rvkGUxOjR5pkxpdBzYppp56oT7pYPSDeTzk7rAIoi-Hncn1yXJHxSfnxJlqMMHDet_dwAn6hWoTV4fg6Nq9J-OAYTVnpmumvQCxF4q0XvrKnGz7EhgXL_lo-DiWEoAZZFI4RoaHZQSPHK_IC5ULRKFgvcMYw__M2MgukvPc1vbGFYFRK5OA2DKrw5S-HdwkJ8MPaDY9oYUK6D1q4TgC_aZaCChYx7R4cM9pTGm5duOnUt6kWzQJ9-PbUij2Xoh61T_vhEHSrO4QBk-zpDM2wY-IaPMqEjYIru5vPTG9aclCMpSMCHifaiajWj-ghxxo88kmNm8Cy_hGzwV4cCKlQS-hcQ5fR4gEONKDqdCq_5i0p9uPldxGu5VukkQK8VXQi3mFspdWQ2b7JN0kRvnf5s06EzBS-15ifvHL77tGgJTEHW8vikq0l4sws3ZRoTgxH0luBmvBLpo_w-mhcuXR8egXGgt02MGiq8rb7mbBYm7omCewQU0RQcyo0hjpRFXN4qdvLv1Cxg16NBjbeqN_oBsRcvXHMOzeXFcixEk6Oshq94ZyqNC6J-Y0y7lkY4lW0pYzDm2UPaGPnRaIdiq7XAupWOkeNcENNN36LFb6EUZuIui9k723XElouOkCvGwTF00ZDX5PgnVRCe5TC6_0eROMHE74aLbpdfKPTrOphnae-oc",
+      "summary": []
+    },
+    {
+      "id": "msg_0e48f1d7d0f3587d016af90cacfd9487d2a6593fdf138344fb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0328\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: success\n- Outcome evidence: The spoon initially lies on the tabletop (frame 0, image and left_ego_image). The robot closes its fingers around the handle and lifts the spoon (frames 76\u2013100, left_ego_image and wrist_image), then carries it to the open drawer (frames 120\u2013178, image and left_ego_image). It releases the spoon at frames 183\u2013190; the spoon settles inside the drawer and remains there with the gripper empty through frame 205 (image and wrist_image). No failed acquisition, harmful collision, or unrelated object displacement is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 206 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 40580,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 261,
+    "output_tokens_details": {
+      "reasoning_tokens": 74
+    },
+    "total_tokens": 40841
+  },
+  "user": null,
+  "metadata": {}
+}

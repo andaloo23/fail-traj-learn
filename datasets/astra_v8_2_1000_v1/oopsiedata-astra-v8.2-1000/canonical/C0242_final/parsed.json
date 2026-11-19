@@ -1,0 +1,130 @@
+{
+  "episode_id": "C0242",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "No toy is left on the plate. overhead_cam and wrist_cam frames 58\u201366 show an unsuccessful acquisition of the blue toy, followed by repeated unproductive withdrawals. Frames 765\u2013801 show the blue toy retained and transported over the plate, but frames 802\u2013849 show it carried away and released onto the tabletop. wrist_cam frames 855\u2013870 confirm the blue and tan toys outside the plate; overhead_cam frame 899 shows the plate still empty. This is visibly unsuccessful placement, not merely unconfirmed completion. No unwanted collision or abnormal termination is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 67,
+      "failure": true
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 147,
+      "failure": false
+    },
+    {
+      "start_frame": 147,
+      "end_frame": 321,
+      "failure": true
+    },
+    {
+      "start_frame": 321,
+      "end_frame": 386,
+      "failure": false
+    },
+    {
+      "start_frame": 386,
+      "end_frame": 475,
+      "failure": true
+    },
+    {
+      "start_frame": 475,
+      "end_frame": 550,
+      "failure": false
+    },
+    {
+      "start_frame": 550,
+      "end_frame": 638,
+      "failure": true
+    },
+    {
+      "start_frame": 638,
+      "end_frame": 802,
+      "failure": false
+    },
+    {
+      "start_frame": 802,
+      "end_frame": 850,
+      "failure": true
+    },
+    {
+      "start_frame": 850,
+      "end_frame": 900,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 67,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure near the blue toy, the gripper withdraws empty during frames 60\u201366. wrist_cam frames 58\u201366 and overhead_cam frames 65\u201366 show the toy remaining on the tabletop rather than being lifted. The precise reason for the failed acquisition is not visible.",
+      "recovery": "Realign the fingers around a graspable portion of the blue toy and verify retention with a short lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table with no visible damage or disruptive collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible, and no environmental resetting is required."
+    },
+    {
+      "start_frame": 147,
+      "end_frame": 321,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the tan toy, the empty gripper reverses away at frames 147\u2013148 and repeatedly moves between the workspace and robot base without acquisition or placement. overhead_cam and wrist_cam frames 165, 210, 240, 270, 300, and 315 show repeated excursions with the toys and plate unchanged. This sustained unproductive movement exceeds an ordinary alignment pause; a renewed approach begins at frame 321.",
+      "recovery": "Stop the repeated excursions and execute a deliberate collision-free approach to one toy, followed by a verified grasp and transport to the plate; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lost progress; no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toys and plate remain available in their tabletop positions, requiring no physical reset."
+    },
+    {
+      "start_frame": 386,
+      "end_frame": 475,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the blue toy in frames 375\u2013385, the robot withdraws empty from frame 386 and moves away toward its base, as overhead_cam and wrist_cam frames 390\u2013435 show. It then waits with small adjustments away from the targets through frame 474. This abandoned approach and sustained inactivity do not advance placement; a completed grasp attempt is not clearly established. A renewed approach begins at frame 475.",
+      "recovery": "Return to a selected toy with obstacle clearance, align the fingers before closing, and verify possession before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No object damage, disruptive contact, or meaningful damage risk is visible; the consequence is lost task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tabletop arrangement remains accessible and usable without cleanup or repositioning."
+    },
+    {
+      "start_frame": 550,
+      "end_frame": 638,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following another approach near the blue toy in frames 540\u2013549, the robot withdraws empty from frame 550. overhead_cam and wrist_cam frames 555\u2013615 show movement away toward the base without a retained object, followed by waiting through frame 637. This is another abandoned approach with sustained absence of productive action, not a clearly established completed grasp failure. Movement back toward the workspace begins at frame 638.",
+      "recovery": "Resume a deliberate approach to one toy, correct finger alignment, and verify a secure lift before moving toward the plate; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The plate remains empty and progress is lost, but no damage or unwanted collision is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No scene component needs resetting; the toys remain accessible for another attempt."
+    },
+    {
+      "start_frame": 802,
+      "end_frame": 850,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After retaining the blue toy and bringing it over the plate, the robot carries it away from frame 802, increasing its distance from the plate through frames 810\u2013840 in overhead_cam. wrist_cam confirms continued possession during transport, followed by release outside the plate at frames 848\u2013849. Established object control therefore ends in an incorrect placement.",
+      "recovery": "Reacquire the blue toy from the tabletop, lift clear of neighboring toys, center it over the plate interior, and lower before releasing; verify placement before handling the remaining toys. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The blue toy lands on the tabletop with no visible damage or established collision with another object.",
+      "resetability": "immediate",
+      "resetability_evidence": "wrist_cam frames 855\u2013870 show the displaced toy still accessible on the tabletop, allowing another attempt without human resetting or cleanup."
+    }
+  ]
+}

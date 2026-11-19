@@ -1,0 +1,116 @@
+{
+  "id": "resp_042dc21e0f9dc7a3016af918a7bff487d28545cf2863d9d593",
+  "object": "response",
+  "created_at": 1794709675,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794709689,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_042dc21e0f9dc7a3016af918b37f9087d2a45dfcb59186361c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Ri7_3f5i7lChlY1EkmmV4KgC6W_eHw95Zye1DCY9dpjS4P65rbOKfkx-U20k4wFXehHD7VdVN9Ybm7wPKiyBt0tbsAsWjSl9EkjZ2ESMnL8PRWlUzXq-E_62yRwF_ppqwoRFIPM6keEf0qeUSnPVlcjtfhjNF6IBBvrhXNV4bEYpAEJIrJpqrZ__g6KtDyF-pk7m6aMQNLL5PqZx-ztM7aeHWat-1TXaWDhH2tx9AxAbc2hlBwP-7Pgy6_p7Ldn2EJuM2ctREbZk0bYgyHO4M2e4xQEfpzprfT4HLF-kbhY4FaffwoMBXCq0T3OcQpLRcXfe9xigH4WboWWpJVXmHbuvl_aWkJGyc0J-x1XWD5oBR8udU_sEDrhcCZ4znPg78pr1B3UgKFLtq_kuyw2Ob3bwqO5mV1PQo9IYKTuItLtK47FwL7xdbkIo6UtUx-x95_gkTFdTvkWDU3DftUuMyphmwKm-5yprpD1umFwvxKs36clzeDpORnMIW5HtJwHe9tWBKG0_Ak-a_VaWSGi81GXLonCZdZWApP6NE4ZsJPdEZZeYl-_XnP7r_kmg7UgufcFMwmcSnjnnOmzldPTZLFHuLu7DnB0qTmjUJXhucdsbsVMat57HoLG5M0iw_BxXNwBNTd6vyJOyTjl0Bf7Uc3jU23oPRFCpEWYCj2zi-J2jjIDk_Zim_AJNpOiqSYEyhrP3GXCcrIHpG_KshWu11zf-ex-J6P8LfiPHpZwxiV9Z7Zu2yVDDJswaUSi7eo9l0WO0Jgw-hxZLUB-DSOBOtAJiYpYiCsZdW6RRH6oJlq1kAJI38oFlKFU1tlEm2OCda0QNF0qlr_JRwuOZRNNIChehhKf6LB_gUgPB_5D2DcYwoL_ajfxhb2bTwGeDdnL9lCNoGPdy1CsuOKcObkCoJRP4UUOeEF1Q3BctKWSk5aNlgftO2d32F8zPym3bmxTQ4ViHgsIoWC4OcpqE0CpRlxEYdqfHhqt7d5B3aE4P-qk78sXL0hTN_Hz4aFvsHgRUxhTkoUzO-9bqPTcwhesnC3m2lzMeF1uHn53CqMrAUa7tEkjnq6bZv8kgUBnDgNITphE4mnY5SPV3St8Jjuzqtp0O9VsqFnCLzKp10THIYVxUNfBBVz89IHyU5FmIODYMBw3LW8rIrEVnM8WAittoa26AcnKF73HhOPU9WuO-Wq_-1wjMZC0zynCu9zU9MbtzmXiE-03rtfc79wVKaaUQN26d7q87Z7kbHZu9NBRZPzYwnyvMvA7Mm7tGb6lYxQgS2U_JRz7yAYAPjC0IiMkMdphdUCrLRFk04lQceM-2QJi1ftN2bn8OMtGLSaT4k4ulyM6BdhzkVq17ehNhPoWx0uDoG11HF1hBa7pggMquk9nGw42R0cUgc1NYrWws9RweKIPvRC2ZlFI-JJYn5u_BO6iHZBwPv4oYszunMt1KUojn9AwxjxpoUd2ikd5ajZU4f98Vb2prdrtuU0bRyhv2EYsknQQJ7kfsPlqhPdGfF35x63vpaW0cw9R3trshCDeogp4B3nTcKRxjyAffpMgfmVzUHShp3jF-W-cVHKChSIOn8eoCKyQRuydPfQi8n-ty2UOBgF-sDwsIZQHjW1qpr3uJNPNyUtsFTeipeAp-xoAtgN_Wqxqd860KsY1y-H7fj7dFndTCJv2dpStWrrxbOqzT5Uvkexs2UiB7s5KbNsjzUR0ttvLrRu8rKw7sJQUus8iDPjdq4aJ5F3gnc6CQ9N8OpQ3MSlJdT3TioXpeIusZmX9mvpeN89fjHyuWxoQSH6hMjwz0mdDQqZ7ZZKhEr3Rzp1_FJj_2AaNwOX9vD-6xbpIFlWEVdpbBqIQljyeQXQcGO_9wMB3UndCrTpnFAl9BXwUdS6ENb1kG_XUIXXAItLK_fWt454glbNb0eRvDPHlGhJKaVXa0d5C0WZ9EwjGY8tVS9MJNGv-GkqmMEQsH_4uU7KOTJDSIy3RRB9Rkekb-xFf3vsPrsRIiPK12NFrclqAS1TryIbRA7YO4IzfoKeSDuCeixa32LM85U51X1jJGiWUJp01ZSSHfgbOpYtYAA88cqDZihdcaxLvfj0D7x_wFFrxiW8iQEVPuXrQCeHny4QAL4iQqK6P3Wo5UPX2Bs_IuLZvCwk7gpLAm6b8JxZyH4B6K6bkyeThPLyNOehpdkHAOv-aRoqjAQGi0963UAJbxya1xSxMMzG1d2T7pop7Ci9mAfK0-yV3yIjY0Xv7ukPS6y-DEWGG2g3oMmHp8kNv9fNQhXWnaUsQ7FFE3AlwVVPQHhrEx5rIQD8Aym3GGKPrhrWb4TXcosa2HaJOyMSZ9NPgUWxlFCRwF9Zog1tq5lmowAZvi3CtCj8yobFotTHetEvfF88aoVKAivrZ2_xLjADJHDCx7UKwy8SzqY1jQsMi2-3AAGZmEr4lyYt_",
+      "summary": []
+    },
+    {
+      "id": "msg_042dc21e0f9dc7a3016af918b49a8487d28e1102cfe1f689b1",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0518\n\n## Episode annotation\n\n- Language task: put the duck on a plate\n- Success label: failure\n- Outcome evidence: The yellow duck is on the table, separate from the plates, at frame 0 in left, overhead, right and wrist. The arm moves toward the shelving instead; wrist shows a blue-and-yellow toy car at frames 81\u2013600. At frame 600, left, overhead and right still show the duck in its original table location and the plates empty. The task is visibly unachieved, with no observed duck acquisition or placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 25 | No |\n| 25 | 601 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 25-601\n- Categories: task_not_attempted\n- Explanation: Beginning at frame 25, the arm moves away from the duck toward the shelving rather than approaching it, as seen in wrist and right. By frames 81\u2013105, wrist centers on an unrelated blue-and-yellow toy car in a shelf compartment. The robot then remains there with small positional adjustments through frame 600, without acquiring the duck or advancing its placement; left and overhead show the duck and plates unchanged. No possession of the car or physical malfunction is established.\n- Recovery: Withdraw from the shelf with clearance, locate the yellow duck on the table, approach and grasp its body, then transfer it onto a plate and release it. No human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The task remains incomplete, but no object damage, displacement of the duck, or harmful collision is visible in left, right or overhead through frame 600.\n- Resetability: immediate\n- Resetability evidence: The duck and plates remain available in their original configuration; another task-directed attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 134886,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 464,
+    "output_tokens_details": {
+      "reasoning_tokens": 63
+    },
+    "total_tokens": 135350
+  },
+  "user": null,
+  "metadata": {}
+}

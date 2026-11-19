@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0301_W03",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: sorting is not completed. Frames 731\u2013788 in wrist_cam show finger-closing motions beside the pink toy; frames 839\u2013856 in overhead_cam and wrist_cam show the gripper withdrawing empty while the toy remains on the table. At frames 1012\u20131049, wrist_cam shows pink and blue toys and food-shaped objects still outside the bowls, and overhead_cam shows no completed placement. This includes a visibly unsuccessful acquisition, not merely unconfirmed completion. Earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 839,
+      "failure": false
+    },
+    {
+      "start_frame": 839,
+      "end_frame": 857,
+      "failure": true
+    },
+    {
+      "start_frame": 857,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 839,
+      "end_frame": 857,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After acquisition motions near the pink toy at frames 731\u2013788 in wrist_cam, the gripper begins withdrawing without it at frame 839. By frames 844\u2013856, overhead_cam clearly shows the pink toy remaining on the tabletop and the gripper moving away empty; wrist_cam corroborates the separation. No stable possession or drop is established. Reorientation toward the objects begins at frame 857.",
+      "recovery": "Reapproach with the fingers centered around a graspable portion of the toy, adjust the height and orientation, and verify a secure lift before transferring it to the toy bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition leaves the toy on the table, with no visible damage, spill, or meaningful damage risk; both bowls remain upright.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible on the tabletop, so another aligned acquisition can be attempted without an environmental reset or human intervention."
+    }
+  ]
+}

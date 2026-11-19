@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0365_W05",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this provisional window outcome. In base_image frames 1580\u20131749, the robot lifts the pink/yellow can toward the upper blue tray; release is not confirmed. Both bowls remain outside the empty right tray at frame 1749. The blue bowl is disturbed during withdrawal. Contrary to the preceding report\u2019s suggested bowl acquisition, the visibly transported object is a can, which is a valid task target. Earlier context is limited and later execution is absent.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1610,
+      "failure": false
+    },
+    {
+      "start_frame": 1610,
+      "end_frame": 1676,
+      "failure": true
+    },
+    {
+      "start_frame": 1676,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1610,
+      "end_frame": 1676,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 1610\u20131664, the withdrawing robot disturbs the blue bowl beneath its arm while carrying the can: the bowl emerges tilted, shifts, and rocks as the arm clears it by frames 1670\u20131676, rather than being deliberately transferred to the right tray. The precise contact point and any earlier onset are obscured by the arm; subsequent bowl rocking is a consequence, not a separate failing action.",
+      "recovery": "Continue with clearance from both bowls, securely place the can in the upper tray, then allow the blue bowl to settle and reacquire its position before transferring it to the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The blue bowl rocks and shifts on the tabletop, but no breakage, spill, or other meaningful damage is visible in base_image frames 1610\u20131749.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains accessible on the table and settles upright by the end of the window; another acquisition can proceed without human resetting."
+    }
+  ]
+}

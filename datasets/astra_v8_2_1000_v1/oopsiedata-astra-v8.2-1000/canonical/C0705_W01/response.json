@@ -1,0 +1,116 @@
+{
+  "id": "resp_0293ab87c040408a016afbb8db3ae887d183909dd5fd89fd34",
+  "object": "response",
+  "created_at": 1794881756,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881766,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0293ab87c040408a016afbb8e1487887d1ae7e11305cfed03b",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7jnRrx0MhFUAVLJM5QcXLDfH-g-P0qPo-NSGLPbENtHTiwdkXxWgfRBcGgcH1w0lVLBEbHPG8V1up2bMM6d2i-7LMr3jEuUe_8sSs9QlTU3YburDaMH9i8D10sycVikCCnQBk3a7OauL8NvwP3sB0XFL0n1AluFXyvcYeCrPYsuIHaRP2CwQvTQFBH5XmROmaWTNeRFKESLLUPhCv_fesu_CFA4-3VxJ-Xr7fwTmcGvkEQLIfqNWeLAF-LuT55YXgrpj60lZOs6v52myvZYW-8GlFIgHpQ9G-voLsojnNrkQoCQH1is-YNpu5PfGDeMiDtMA-DWVlHE_rnsiGXbYxS6PS9_ixws5KJ_gjs3W2IHRBgFFfM5ObNqkYGxF89NtV20ffc9WStU91HnJFBtPAhlmwbkhV_CqLHUEIWbtyud_rVU0OU5jjTzE4tRPQVhFF_oRHwK1pjc0lDLyHDwHUKXcINGrrLqwROIrwe0kP9cag69oeAQgS3thijZnPxpfxMXMd9TGv-hoMMpa1O9ZAbRlO-yjwjighUyi1CWz9KspRvd2ytUqGzhJPrbqd-_wajV6jBFVx1f_4n3Cq_2n0g5AvbaPoEZEyVh-JdPkpbsl7SyefGMQrijZLLeog0Auh0GqBhHRDJMpsn0xKi1FObEPkLgoB1JH96YFdYDnqt0-Pagv57nH3a9vOf-KuOpnowIBrFYks0f0MBVMWkiqMqe9hF9OoMAgkMaaMOvme9AuhNrM65qnVUmEfK48h-TcBC-dQfcVD1upTsOiDdDdV-GNCZCoFXugFf3LuXrC9M83hH28eWu44UNvQUwHzJ3KcpfDwwsPxKAhdhqoLQEIynQZHst87X9xqM0hRGoArmhRdmqGbeFqGa77ArbsxzsqfL2EpTiZX2MgSxTWv9qHCTb9RHswtj6a2t_hk2MSriAd_3BEMe0KOPECesRr3ct7yKjBKL_dcEecjHf6H2ISfFLMJbaSrPwILe7lhpdosdAp_cx1vjRhr4wbnk_01mfcV6bIilbCahvI23l9BhJvUuxtZ-URQRId44iDRfcsHp2S7KQHfgfnsGS6cysj4oVU5gLmQ1fawyb_q_C7P0Q6hDHJBksIBahSFVX-8kh7s8Q95obBXsc9I2S7iERqPHW3jS6_s4KVhyQtmjf1sE2Nk0SjYBxtKRr2k-2HfKDvePfzWo2doI-V8exoPLuiROprscYkrWp_AUUU-OJxfFmq-5A8w_fDc9Ba0biwPEqFubZHEGBIRCITiyIFZo0ob1btptHZWV7l7O2FfOEtCLPIxEKkUEOzWT1CGs-6GYLoRyyXpFGrSwsrFlDF3DpVqmGOAEqruzRvE39b-arUIHlIuDGAHGx5ARWoI92_nBTPuAR4gwS5GBf8Hd79u183oyeOo6TwrpuPZo4luOibokJhByP4a8gFwqP6mBphpUiuRoErP_d_w0eZQw-tjXIergW5oH4A0nQeUz72gXRmFO3A12Moi1f4B9oq9Kgw8j3e-YiBK-gNfxKE9iIrbtweVXYhSrhhLcaGH0h-nz4lVj3GO0IyUelUoI8V6tT5ks7X33rRnX8Lfmx-CJR8rOenHb_A-TkWiQQVncRkpjH93-7CaT5ivg4iw2AsXp0Dn4-_7qG7HHmMKlMdW6VHi_zIS8wQ30iQn9T2-nJLwqqnUz6Ghm5RUIbwDx7WpyXxKdcTNfKKMXp2f1dVVGuBYt313PDrG_xaoXvzkWZV9F_Nurgr71y8DrWQ4DDDTuCqfQo1oIXInUac71q5E2s0_ZIfQZnLIsE8xsaJzN40DUJtkffFryqOY7GuKuSXTcuZeSfq47mhS0vs2qMYf7056gcwESWKpK6RE815qsURyVLRl7ewx5v17HDIneuhUncJnFrobMbdzStHKTKk2hieM2GsLOj2W4Im4S1Sv3NG8DtyRg-oRz52_NbXOfJ6HdBQxvHmb7hDeea05ZRwEQaq2-2CPL5MkUJV77XgS5X41W99RfmPJbUDsxhFykNGatOF9nuT6dyc9Us_6Pyybvqb_oarnUdytUSRGhoE2GzKm7NYiTAePAtsqb1xIRHNQ9ZAZBj0pUU9_n2vj2CglYI7nLBxBRkcGBRxA1w2Rca_D7px4OqUt2KLJZ0VR4QjmC8jRDGuqmaaW5Rh6kuywp8TB14H0kCZ3uCxlh6mio_t-X1AaL7MrKs03V1KkzEVU7GPJDwKqswsCekr1GS0QeSUNCDwKb-EMAaAgb5gQYluW1TSdmMcms6Qu4I5mb5GYpsmb5Mnbp_nm9J0i2WZmHhjIBtmOdkr5IVU7IZSgrQIDksBhD-rf6WYyuACxM-1iYbUOk2Ex_zUYEt1lnTkQmiyh59YKJLZ1uiuufjJLm6QUIjCd6vqY_MRsywArxOJpCvpbZr0nRqNQm_HgiI9VYTFxyc0D5UQj0dH6A3rUkx65fCmA2NZ0EMw4DZuHXPe79BKzy0cw6DLHaLNKEQK677nQbDkqzb97AgxbIfZSs0ScLkvgm5VsvJzLyZK8jByLZBEMq1ZtolAr07pzwUYgsT9e9UNBl2eciGvVCjY5VQh1ZLKTcyje45I6HXy_lnhdo0l2O78dqxzBDbNQ7wg_KTNxd7RwzB7UM9NZZtCcURet4HWEGtfiY7mo4mHnDp2PaAnlK3cb3Ay0lYRSbagYKQug1GV_Bqy75d-pQD4rdzG-MDrQ8781VMTjLvGNA0rTaEa43oLZOSU7-xqQgnXeIjLjUksI-CTSsyrokraZhZawi0A1d06zdQdUKCwvcNUwdbHWbGIEwaW6Sd07yqFRiP6IqcCeMu4Gow",
+      "summary": []
+    },
+    {
+      "id": "msg_0293ab87c040408a016afbb8e206b087d1a516d5075e7ef1e7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0705_W01\n\n## Episode annotation\n\n- Language task: find the tweezer and place it on the towel\n- Success label: failure\n- Outcome evidence: In frames 0\u2013349, the top camera shows the grippers remaining near the front of the table, with the container and towel unchanged; left and right show no acquisition or placement. Completion is unconfirmed in this window, rather than a visibly failed grasp attempt. The provisional failure reflects sustained lack of a discernible task attempt; later episode context is not supplied.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Across frames 0, 100, 200, 300 and 349 in top, the grippers stay near their initial positions without approaching or handling a target; left shows slight viewpoint drift, while right continues to show the undisturbed towel. Over approximately 11.6 seconds there is no discernible search, acquisition or transfer advancing the task. The cause is not visible, and this inactivity may continue beyond the window.\n- Recovery: Locate and visually identify the tweezer, obtain a clearer view if necessary, then approach, grasp and transfer it to the towel. No environmental human intervention is visibly needed.\n- Severity: low\n- Severity evidence: Only lack of task progress is observed; no collision, displaced object or damage is visible in left, right or top through frame 349.\n- Resetability: immediate\n- Resetability evidence: The scene remains undisturbed, so a task attempt can begin without repositioning objects or other environmental reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62877,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 398,
+    "output_tokens_details": {
+      "reasoning_tokens": 30
+    },
+    "total_tokens": 63275
+  },
+  "user": null,
+  "metadata": {}
+}

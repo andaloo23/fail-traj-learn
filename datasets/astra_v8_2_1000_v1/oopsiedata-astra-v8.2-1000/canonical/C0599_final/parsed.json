@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0599",
+  "language_task": "Put the red plastic fruit into the blue bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches and aligns around the red fruit in frames 0\u201363, adjusts its fingers in frames 64\u201382, and carries the fruit toward the bowl in frames 93\u2013127, as shown by wrist_cam and right_base_cam. Frames 128\u2013139 show release and settling inside the blue bowl. In frames 145\u2013154, left_base_cam and right_base_cam show the fruit remaining in the bowl after the empty gripper withdraws. No failed acquisition, harmful collision, or unintended object displacement is established; the finger adjustments before lifting do not alone demonstrate a failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 155,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

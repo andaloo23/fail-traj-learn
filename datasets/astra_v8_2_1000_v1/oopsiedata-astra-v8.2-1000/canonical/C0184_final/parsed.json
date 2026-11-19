@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0184",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven starts open (frame 0, image and left_ego_image). The robot first displaces the unrelated green plate, then partially raises the oven door around frames 150\u2013180. The door subsequently lowers and remains open at frame 246 (image and left_ego_image), establishing an unsuccessful closing attempt rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 30,
+      "failure": false
+    },
+    {
+      "start_frame": 30,
+      "end_frame": 119,
+      "failure": true
+    },
+    {
+      "start_frame": 119,
+      "end_frame": 196,
+      "failure": false
+    },
+    {
+      "start_frame": 196,
+      "end_frame": 247,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 30,
+      "end_frame": 119,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "The gripper descends against the unrelated green plate and its contents, then slides the plate across the tabletop instead of closing the door (frames 30\u2013118, wrist_image and left_ego_image). The plate's displacement is also visible in image; this is an unwanted scene interaction, not necessary oven-door contact.",
+      "recovery": "Lift clear of the plate, locate the oven-door handle, and approach it without contacting the tableware; human intervention is not evidently required.",
+      "severity": "low",
+      "severity_evidence": "The plate and its contents remain on the table with no visible breakage, spill, or meaningful damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "Although displaced, the plate remains supported and the oven is accessible; another closing attempt does not visibly require an environmental reset."
+    },
+    {
+      "start_frame": 196,
+      "end_frame": 247,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After the robot has raised the door partway (frames 166\u2013180, image and left_ego_image), the door reverses direction and lowers during frames 196\u2013246, ending open rather than seated against the oven. The images establish failed door control but do not establish slipping or a mechanical cause.",
+      "recovery": "Reposition at the handle and guide the door through its upward closing arc until seated, then verify it remains closed before withdrawing; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The consequence is an open oven and an unsuccessful attempt; no damage to the door, appliance, or robot is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The door remains attached and accessible in an open position, allowing a new attempt without visible repair or manual resetting."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0383",
+  "language_task": "pick up the cube",
+  "success_label": "success",
+  "outcome_evidence": "Frames 0\u201314 show the gripper approaching the blue cube in exterior_image_1_left and wrist_image_left; frames 16\u201322 show the fingers closing around it. In frames 24\u201329, exterior_image_1_left shows the cube lifted clear of the mat, while wrist_image_left shows it retained between the fingers. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 30,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0140_W02",
+  "language_task": "stack the bowls",
+  "success_label": "failure",
+  "outcome_evidence": "The bowls remain separate in top at frames 350, 475 and 699; no completed stacking is visible. left and right show approach movements, followed by repeated contact with the unrelated orange, green-stemmed object rather than a visible bowl transfer (frames 481\u2013699). This is a provisional window outcome: completion is unconfirmed, and earlier context beyond frames 348\u2013349 and all later context are unavailable. The brief initial pause does not independently establish continuation of the previously predicted sustained stall.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 481,
+      "failure": false
+    },
+    {
+      "start_frame": 481,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 481,
+      "end_frame": 700,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In right, the fingers repeatedly contact and turn the unrelated orange, green-stemmed object: its orientation changes at frames 481\u2013490, it shifts and rotates further through frames 525\u2013575, and the fingers again surround it at frames 675\u2013699. top shows the arm beside the turquoise bowl while both bowls remain separate; left also shows no bowl transfer. This unwanted interaction does not advance stacking. Secure possession of the orange object or a hidden cause is not established. The interaction reaches the window boundary and may continue beyond it.",
+      "recovery": "Withdraw the fingers clear of the orange object, then realign with an accessible bowl rim and verify a secure bowl grasp before lifting and stacking; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The unrelated object is displaced and rotated on the tabletop, but no damage, spill or concrete risk of meaningful damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both bowls remain upright and accessible, and the orange object remains on the table; the robot can withdraw and reattempt without a required environmental or human reset."
+    }
+  ]
+}

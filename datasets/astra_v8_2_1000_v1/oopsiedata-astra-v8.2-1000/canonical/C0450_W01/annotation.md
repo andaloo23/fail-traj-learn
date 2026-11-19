@@ -1,0 +1,26 @@
+# Episode: C0450_W01
+
+## Episode annotation
+
+- Language task: take all the veggies out of the bowl onto the towel
+- Success label: failure
+- Outcome evidence: In frames 0, 175 and 349, top shows the veggies remaining in the bowl and the towel empty; left and right show no acquisition or transfer. The robot remains essentially stationary throughout this approximately 11.6-second window. Completion is unconfirmed, with sustained inactivity rather than a visibly failed grasp attempt. This label is provisional because later episode context is absent.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 350 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 0-350
+- Categories: task_not_attempted
+- Explanation: Across frames 0-349, left, right and top show the grippers remaining away from the veggies without a discernible approach, acquisition or transfer; top shows the bowl contents and towel unchanged. This sustained inactivity does not advance the task. Its cause is not visible, and it may continue beyond the supplied window.
+- Recovery: Begin a task-directed approach, grasp an accessible veggie, and transfer it onto the towel, repeating for the remaining veggies; no environmental human intervention is visibly needed.
+- Severity: low
+- Severity evidence: No object displacement, damage or meaningful damage risk is visible; the observed consequence is lack of task progress.
+- Resetability: immediate
+- Resetability evidence: The bowl, veggies and towel remain in their initial usable arrangement, so an attempt can begin without resetting the environment.

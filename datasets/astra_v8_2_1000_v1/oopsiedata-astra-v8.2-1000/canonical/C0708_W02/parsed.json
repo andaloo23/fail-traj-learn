@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0708_W02",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, not a visibly failed attempt. In base_image, frames 350\u2013430 show the right gripper lifting a green cup clear of cups remaining on the table; frames 434\u2013580 show the left gripper approaching and closing around another cup. Frames 590\u2013650 show the left gripper lifting that cup while the right gripper lowers its held cup beside the remaining central cup. At frame 699, cup handling is still in progress, with no completed stacking and packing visible. No dropped cup, empty withdrawal after acquisition, or harmful side effect is established. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so the outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

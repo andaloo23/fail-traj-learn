@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0843",
+  "language_task": "pick up the cup on the table, and hang it on the mug tree.",
+  "success_label": "failure",
+  "outcome_evidence": "The pale yellow cup is acquired and lifted from the table (frames 140\u2013193, left_wrist and right_wrist), then positioned beside a mug-tree peg. After the gripper opens (frames 411\u2013417, left_wrist), the cup falls away rather than remaining hung (frames 426\u2013440, left_wrist and right_wrist). At frame 497, head and right_wrist show the cup back on the tabletop and the gripper withdrawn; this is a visibly failed hanging attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 411,
+      "failure": false
+    },
+    {
+      "start_frame": 411,
+      "end_frame": 458,
+      "failure": true
+    },
+    {
+      "start_frame": 458,
+      "end_frame": 498,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 411,
+      "end_frame": 458,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The robot opens its gripper while placing the held cup beside the tree, but does not establish lasting support on the peg (frames 411\u2013425, left_wrist). The cup falls away and settles on the table (frames 426\u2013457, right_wrist; also visible in head), so the post-acquisition hanging operation fails. The precise handle-to-peg misalignment is not clear from the images.",
+      "recovery": "Reacquire the cup from the tabletop, align its handle with an available peg, and lower it until the peg supports it before fully releasing and withdrawing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The cup falls onto the tabletop, with no visible breakage, spill, or damage to the tree or surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible on the table and the tree remains standing; another acquisition and hanging attempt can proceed without an environmental reset."
+    }
+  ]
+}

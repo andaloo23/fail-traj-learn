@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0524_W03",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: stacking progresses, but completion of packing is unconfirmed rather than visibly failed. In base_image, frames 700\u2013820 show the right gripper releasing a cup beside another tabletop cup and withdrawing; frames 820\u20131000 show the left gripper lowering its held cup onto the lower cups. By frames 1043\u20131049, the left gripper has opened and withdrawn, leaving a standing three-cup arrangement. No drop, failed acquisition, or harmful side effect is established. Packing is not visibly completed, and earlier context beyond frames 698\u2013699 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0229",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first lift loses the spoon onto the table beside the box (frames 48\u201352, ceiling and wrist_left). The robot retries, lifts the spoon again (frames 84\u201390, wrist_left), and releases it into the blue box (frames 108\u2013112, wrist_right). The spoon remains inside after withdrawal through frame 132 (ceiling), confirming completion despite the earlier failed retention.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 48,
+      "failure": false
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 56,
+      "failure": true
+    },
+    {
+      "start_frame": 56,
+      "end_frame": 133,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 48,
+      "end_frame": 56,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After visibly lifting the spoon in frames 44\u201347 (wrist_left), the gripper loses retention beginning at frame 48; the spoon falls and rests on the tabletop outside the box by frames 50\u201352 (ceiling and wrist_left). The gripper moves away without it, preventing this transfer from completing; task-directed return begins at frame 56.",
+      "recovery": "Return to the spoon\u2019s updated position, align the fingers around its handle, regrasp, and verify retention with a short lift before transferring it into the box; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls onto the tabletop and remains accessible; no damage or disruption to other objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains on the open tabletop beside the box and can be reacquired directly without environmental resetting or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0005",
+  "language_task": "close the drawer",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is visibly open at frame 0. The gripper approaches and adjusts near its handle during frames 1\u201318, but the drawer remains extended with its interior exposed at frames 19\u201323. Closure is not confirmed in the observed episode; the images show an unfinished interaction rather than a clearly completed failed grasp or push.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 24,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

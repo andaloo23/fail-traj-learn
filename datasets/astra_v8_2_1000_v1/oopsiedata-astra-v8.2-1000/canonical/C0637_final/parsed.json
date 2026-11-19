@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0637",
+  "language_task": "Pick basketball and place in blue bowl.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In exterior_cam, repeated acquisition attempts leave the basketball on the table (frames 73\u201380, 125\u2013171, and 300\u2013311). The robot eventually lifts and transports it toward the bowl (frames 337\u2013370), lowers it inside, and opens its fingers around the ball in the bowl (frames 412\u2013416). Completion is visible, although the gripper has not fully withdrawn.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 65,
+      "failure": false
+    },
+    {
+      "start_frame": 65,
+      "end_frame": 81,
+      "failure": true
+    },
+    {
+      "start_frame": 81,
+      "end_frame": 119,
+      "failure": false
+    },
+    {
+      "start_frame": 119,
+      "end_frame": 172,
+      "failure": true
+    },
+    {
+      "start_frame": 172,
+      "end_frame": 294,
+      "failure": false
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 312,
+      "failure": true
+    },
+    {
+      "start_frame": 312,
+      "end_frame": 417,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 65,
+      "end_frame": 81,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, after closing around the basketball, the gripper rises away during frames 65\u201373 without retaining it; the ball remains on the tabletop beneath the open gripper through frame 80. The attempted acquisition does not advance transport to the bowl.",
+      "recovery": "Reopen and realign the fingers around the ball, close securely, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The ball remains on the table, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains accessible for another attempt without environmental resetting."
+    },
+    {
+      "start_frame": 119,
+      "end_frame": 172,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the gripper again withdraws after an acquisition attempt during frames 119\u2013129 while the basketball remains on the table. It opens and hovers above the unacquired ball through frame 171, before descending for another attempt at frame 172.",
+      "recovery": "Adjust the grasp position and finger spacing, descend around the ball, and verify a secure lift before moving toward the bowl; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "This unsuccessful acquisition delays the task but causes no visible damage; the ball stays on the tabletop.",
+      "resetability": "immediate",
+      "resetability_evidence": "Neither the ball nor the bowl requires repositioning for a valid retry."
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 312,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the gripper rises and opens during frames 294\u2013305, leaving the basketball on the table rather than carrying it. The separation remains visible through frame 311; renewed approach begins at frame 312.",
+      "recovery": "Recenter the gripper around the ball and establish secure finger contact, then confirm that the ball follows a short upward motion; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the ball safely on the table, without visible damage or disruption to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains within reach and the environment is ready for another attempt without intervention."
+    }
+  ]
+}

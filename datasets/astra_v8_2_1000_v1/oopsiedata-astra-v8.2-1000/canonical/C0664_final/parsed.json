@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0664",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left toy is white and blue, and the largest bowl is the central white bowl. Instead, the robot acquires the pink toy on the right (frames 13\u201318) and deposits it in the white bowl (frame 29). The blue toy remains unmoved through frame 71. This is a visibly wrong-object execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 5,
+      "failure": false
+    },
+    {
+      "start_frame": 5,
+      "end_frame": 30,
+      "failure": true
+    },
+    {
+      "start_frame": 30,
+      "end_frame": 72,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 5,
+      "end_frame": 30,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frame 5, the gripper's approach is directed toward the right-hand pink toy rather than the left-hand blue toy. It descends around the pink toy in frames 7\u201315, lifts it in frames 16\u201320, and releases it into the largest white bowl at frame 29. Physical acquisition and placement succeed, but handling the wrong toy does not fulfill the requested task.",
+      "recovery": "Return the pink toy to its original tabletop location, then acquire the left blue toy and place it in the white bowl. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong plush toy is relocated into an intact bowl; image_primary frames 29\u201371 show no visible damage or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the original scene requires only moving the pink toy from the accessible white bowl back onto the table; no repair or difficult retrieval is indicated."
+    }
+  ]
+}

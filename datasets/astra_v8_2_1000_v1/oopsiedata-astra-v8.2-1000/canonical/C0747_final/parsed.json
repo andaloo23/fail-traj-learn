@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0747",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "success",
+  "outcome_evidence": "The robot first moves the yellow banana-shaped object off the tray and sets it on the table, clearing space (frames 48\u2013125, overhead_cam and wrist_cam). It then grasps the pink plush toy and releases it onto the tray (frames 153\u2013205), followed by the tan plush toy (frames 248\u2013332). Both plush toys visibly rest together on the tray after release at frames 332\u2013334 in wrist_cam and remain there through frame 350 in overhead_cam. No failed acquisition, dropped toy, or harmful side effect is established. This interprets \u201cthe toys\u201d as the two plush animals; the banana-shaped object's inclusion is not explicit in the task text.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 351,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

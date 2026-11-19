@@ -1,0 +1,116 @@
+{
+  "id": "resp_0817cd87e4d9c11d016af931a18f9c87d2b270ebc714730152",
+  "object": "response",
+  "created_at": 1794716065,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794716072,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0817cd87e4d9c11d016af931a3db3c87d2ad203a5f23401661",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TGp3Pkpyr8TM7pA-OTereOwSg4qnqHOoOYV45rwg1pnxvK0qYGX42ZV4kMh4unbqGC9yOMTdPivhLwpcQobInvNW8ZsyX-XsTbgk3XnVqtPgFFFKviK0UovpeNH3M5baMZuMF3B2iT0cpEfoaJHwSzmvDuwl_m71vha2ZcKIq-J56PDd7J3WDh9dRGzsszHWaVMTW1PkxvLfE-Q0XqJyNUUNn-mEz-0ZsPujIN-6ik_4xEJPZzdn5aHmSkcV9y_olX72DxS3D5Xq-GbqlPdY2ZJqlVzOSrefVco3I7Mp4DZPJkxOWSMNUEE8ND34iVQOBTIaVugA7FVA4kIBvoEJcfkuCWBfS6c16tM9sWW_WoASiOZ8HQkW31TxVESMjYDRIu3eQ_n019iie3YvDwX-fbWAHFPEMkA67WWS_IOT2RSevGseFclWHpjPAWiuGA-6vdCMVb3eQ0tIK6GkGwPx6php70Hc4yB-du2V9lCDWcW2k9vwcN4f593ifWB6Q9mpM8BGucp0SfF6YjS1QV9ytZfyVx4jWqFYLeIgVEheWOL5YMxU3arQw-UjOCNWYjo7OH8y6g1an38pOlwblKHGPRINchIOY5_BcSG00TpgOi3KSWhbc2oD98r3bHWo4cLdcZNTccghJrVIYQcFiwrpX_uai-Vg3dQvuxWD4AWeB0VbP08YYCM_5vMgJGuArpw40vr40t0NAmrMYydgPS54jUcc5dxmKx7tQRjDXNCRyvEDfG9gJl65QdKyfn43YIS0-LMw4xiyzYNwoY7DN4got6twO9edZxK_23Er2fMi-jy_k5KmgjtJQ3ygyoOmliKr2HXYwHZjjiWQ696esM-TKM5IjK8oOjnVh20DxKXyQB7esZbbKegMo0eCpwTMwWrr6bhc6Fib07F3DlZ3XswbQWLXJex9AxdOf2vkaiK-CVEw2Xb5B3JYnd50SMxj86facDBgY0nVUboMQYS-WhXS8NzsNxyXDfWLNsTd_FTUc4B3JHf4dxS-xRTlZgAG0J_3jvADBWO79L5__HTOWyUhRBP539R_NE9gvdjOYUBcW3p3puDAokpPjt0TvzzqaALeSjWgHsPBTDWSEFAZEb1ruCLTGQ7gDP9m5BV8vtHuhuk5NXGlC6OPS9PC53hC5MNQXEWJnz7iYMuD1XH6BvpalnVyGkXPLx3qufHkNwWJZ6pISNSdXX_p8zVnmTKjXXrh6MmqSw93SGBj6QEFFZqF9mxe_t6g2pP7LsIfsTWzrIBlhyYHbdvRuGHFBrmU94kIdLyHwYKe_YFC7PfM4R5CUUIcUS3JvYHEKev-Yo5F_LtYxWGSsQzQ35erNma5Dtu4jBJCe4Me025UFjaBnhHW7bQb02r4uaQB7A8U4NtjB42rIyw7HLlovWF9P38444u_rEB35xdu506xw4-rGgDM5N77-InK5JgIUbDKMYrTzGdzjdkewVCE8SePg0qfCM5tDil6FIsNirppCDGWWYoWMBSdbJxwJr6JpJzea5rPwLfYkWGTciEdQeFnbmm_6iLGdht8XczbNQyIEJWYbp7h3ECO1_Cp5qazE6X1CbvC9bMGdw7TecyfoxmyytfQZGn43QLy9uoqH4jZs7gLL-W5gR4V5zuqfavHnIXyTQHDpARdfrHL45NIOyvdbsXLkUmrkw8w9-uWVY14R6xdne9ZDx7Pv5ehq_TR7Ajr9ZFceA4O6V3NVuBekG1PuHg-qI4HvBA4VFA_nqHCC7jRtLQN4M6NfmmJL4b-alJfDRjk76Zgu5CQuX27Gzm2lnAEO0htifs6rNaS33dMRXHgqPAOu2dAnb0W-ov8ApFBG3VjpeLxadOMblAwW6Eal1Nmtkh5WWSs3VnfvbJRVJHztPKOwzYziFRdiKCe1Wfn7JvVroX78d_PYVWFF6dLhCNMDBZVrgD-TDjZJ5JBNH386DnIPLMgTazGo9qtNbFrrGTpdVBVvm0H6jkX64T3RUvyMKxOMfY3FENs6j5U5CcPLgpZpR5vLG0RF9N-aDUOc6mIjr1JpI4_A-g2tns67c6MWA6HI16Sq1xMYPbE-SIJupBn0mPn3-sDIX-Vc2Ql93TqFepRXSfWWYX2iMPDJTuSN3QAFBERPxEcTV1EplUmMZrBg31LnYv2-h-JdFNmFJD31QNZ-Hf6aWVeiRsK8fOgij7kvKUpHXL9ZCRhjywqj4GHEGH52BCMljDQJYcIArAaldQ6C3F705jwgFXAJTKj5jhtx21n6k8y5PJiifCBa0xm0-GlA==",
+      "summary": []
+    },
+    {
+      "id": "msg_0817cd87e4d9c11d016af931a52f0c87d284668a57285c61a8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0945\n\n## Episode annotation\n\n- Language task: put the knife in the cup\n- Success label: failure\n- Outcome evidence: The robot acquires the orange-handled knife from the plate and lifts it (frames 60\u201385, left, right and wrist). It carries the knife toward the cup but releases it outside the opening (frames 131\u2013139, left and wrist). At frames 141\u2013147, the knife rests on the countertop beside the plate, not in the upright cup; this is a visibly failed placement rather than merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 131 | No |\n| 131 | 148 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 131-148\n- Categories: manipulation\n- Explanation: After establishing control of the knife, the robot opens its gripper without inserting the knife into the cup (frames 131\u2013133, wrist and left). The knife falls onto the countertop and settles beside the plate (frames 134\u2013147, wrist and left), leaving the intended placement unsuccessful.\n- Recovery: Reacquire the knife by its handle, align it with the cup opening, and lower it into the cup before releasing; verify that the cup supports it. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The knife lands on the countertop; no damage, spill, or other meaningful disruption is visible in frames 139\u2013147.\n- Resetability: immediate\n- Resetability evidence: The knife remains accessible on the countertop and the cup remains upright, allowing another attempt without an environmental reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 27654,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 400,
+    "output_tokens_details": {
+      "reasoning_tokens": 45
+    },
+    "total_tokens": 28054
+  },
+  "user": null,
+  "metadata": {}
+}

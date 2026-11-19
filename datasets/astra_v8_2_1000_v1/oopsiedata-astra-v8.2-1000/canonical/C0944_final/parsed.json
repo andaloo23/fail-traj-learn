@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0944",
+  "language_task": "pick up the bottle",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In zed, the gripper approaches the bottle at frames 0\u201365 and retains it while moving it clear of the round tray at frames 85\u2013105; the bottle remains held through frame 172. The tactile panel shows a sustained contact-pattern change from approximately frame 66 onward. However, zed frames 106\u2013152 show light-colored granular contents streaming from the bottle toward the tray, with scattered contents clearly visible at frames 150\u2013172.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 106,
+      "failure": false
+    },
+    {
+      "start_frame": 106,
+      "end_frame": 153,
+      "failure": true
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 173,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 106,
+      "end_frame": 153,
+      "categories": [
+        "other"
+      ],
+      "explanation": "While the bottle remains held, light-colored granular material visibly streams from its opening in zed frames 106\u2013152 and accumulates on the round tray, clearly visible by frames 150\u2013153. This is an unintended spill during pickup, not a failed acquisition; the images do not establish why the contents were not secured.",
+      "recovery": "Keep the bottle securely supported and orient its opening upward to stop further spilling, then place it safely down. Human assistance may be needed to collect and refill the spilled contents and secure the opening before another pickup.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is dry granular material scattered onto the tray; no breakage, equipment damage, or meaningful damage risk is established.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Collecting the material from the accessible tray and restoring the bottle contents requires a straightforward cleanup/refill; no repair or difficult retrieval is visibly necessary."
+    }
+  ]
+}

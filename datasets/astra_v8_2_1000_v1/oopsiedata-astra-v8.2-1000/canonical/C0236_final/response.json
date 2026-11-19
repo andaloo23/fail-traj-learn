@@ -1,0 +1,116 @@
+{
+  "id": "resp_05aa8125c4a83427016af90524a5c887d1b5067952ad2654a7",
+  "object": "response",
+  "created_at": 1794704676,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794704682,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05aa8125c4a83427016af90526774c87d192aaadc47ee4b35e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QUqpBIubhIOfhFYS-ICbb_5_b_nCdh3tSM3tN0UkCVh5RwaYLhYC3PPF3zj0LEiuLiezVHyyPJkyOSFKpXnCxVW8N0peP87AJsWZDpGcvIdOtWHezTxKLH5ev1wChBElHOUEyJnRmVxlBaOdQFXBUGfCODlt2xDWheOkGHe7g37FxfV39Z6Cd7LA6wJBJO_T5zBTMqknnakBLiSlvzZQD_lNFe6_wBYyEWiGxrAYXSeeqLFSQ4obZsY1Fyuye_nMOS6lSYRXYSSRyFALW3Qp0iZIKMDwXWoBgLk_fnIkSgI93lxRs_fXr67qTkxtzC8Qt7fPzHiLk4eKJG0LWz6NReZ62jNvATZoyHyHl8JbDigRH70wRPtdIiux7_4ibNvEgrf4E5rbXO6-yom4NizE_ZUV31HE9S8h__R_3yG9IStsOOmmHQn2_GIffAXBHX3U6GlpR4he5pVEYGsmqjcw6mLJEFT5UpCD9wfwSbOfY5r3gUzfixsQrcOaTS4apM44YbKjF44vTSw_4_7M0nUcNR2icp43WGUKRnBuZP4n24OnXwMKoD8iXDZ2DUSgN1wJnqAcpsMf7X54vf8jSOMMgR22x8ZswW2eYDQE-p1r5dIoSVwveAUyTMruHOO5KQu5a3vRT6o5Y0jeqn3PHVcuOUqeT8MPo__w9oUWJC80vb7Rfcj2XEorAcjRdCStB6wiKqaizM0i-h6oGy0YcjnPulbYKQS6-J0cRkXl1LevxG9z0SRNzfktLAyeJG-S1T5kxA-D0o8qZaVcaUl9UUx6athdBe7Pa7rKg1s1fKPDOa5f3mwBj6nAbNs-_OxEDJr__yt7Dwsu6hx5WkY2JSCfH0CiATEDR9NP3moPa-FZcAV6503ngPEonbXJKJ94FEcGcfzsqWI__dbOiXaAKRQfnJmIOU1dnemFoRgDcP6UeiaSEMX5Lq-6VgfNIARX39HRuiVUpIBwRBRlyGRBiP8sC0DwRApHiWqRnuEAnZi_9eDYPqa5zLQTKBVeWx5XA5Zc1KtoNAI5HWBoDdrJF2sbsjVs17foflb_TZ1ST4DdUk2gzlvUHUi95kZRJ9EbCBgeg0ymTgMTW3pS0uKh2AYKQt8ud4CoRmCz0DUFetagg0XOukA9sOc8RHrOYuWdK-HIpY3HGWRqz-aBXmDAR_sRx_ODQrwuiWd4_GB11V2a0OIBq1LrSLRsGMvGyuXmWFdrjVXcYIZGL9mDfigIMc4hdJLmZzUl_7Qst2_SzpRtR5wO0Jpw7xQMhRCo0IDnq1spjxx1TWwMwgzr28OgTmt_KDke_0H6kK-AMchjqggSFXWCyZLDswkSohXXu2jEQ6XdrcOSSHk1C8y4oDIKzT0OXcgFNjM4a-w-TuZS6u3D8tedGNPoC83sH-WkGhqU49x7s47W2I-2mReEl-EZfoMowGrW-yr2pYyK3TFejNZaTcWMLWop_ohRiwNFgq0O2LdwUru0nwv4z10pZC3b-Xbz8SKGgMZw0rgVxlo811xsfDdEhDIwOjU0P6wbKUZ-Ts9F9lR2lg5ZbJcdDDyPKPK6Xk8my7wpOTF5d5eX_OlkDxOy9McSCxq7C-JzxlhepLJ8bHGFoEa69nA_2u2iuTDrhlAx7D3VJluUxfA9VvroKkiBu_VySJtxEzHD9krr7wegRF7opYFgQx9gFNYlGzC7oOOYzPyNjzTn-c4OyaXvxADFd_VSAZIGrMGHQu9wpFUs7a5Nca-uKu0U7AUOErAlXLTMMhx6ztbpwHRQ1cZUJRV19CUsjiaaclwFtIIuRnAXSDqW5XIfGhbLTLdovALfNh2j5F6o4_VWUnneMazLxzqCU-KAXcI4z7MQjcL3E2XfhQCfwNFvHNwr_l0p1TUhwE05vb1hFXTlAK6IW9vcjxRBKgR_8ShNMfdlubXJ0MlWkWRBAffFQotPyv9P2uFrkttHKDBhrbeoxMxn5KY_qXigDnkQzno5QCj7Bv6bv7KFmlTf2hYj_BHK0XckmmDYMzRVod8_7Ma_LOsiGWCBtYXzMa6T1fT6Y7Fiidj-hKcSjZv",
+      "summary": []
+    },
+    {
+      "id": "msg_05aa8125c4a83427016af90526ebe487d1ace800b6ad754eda",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0236\n\n## Episode annotation\n\n- Language task: Place the black spoon in the sink.\n- Success label: failure\n- Outcome evidence: The black spoon lies on the counter beside the sink in frame 0 (left). The robot approaches its handle, but repeated finger closures and small withdrawals do not lift it (frames 19\u201374, left and wrist). At frame 74 (left), the spoon remains outside the sink; this is a visibly unsuccessful acquisition sequence, not merely an unconfirmed placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 19 | No |\n| 19 | 75 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 19-75\n- Categories: grasp\n- Explanation: The fingers close near the spoon handle in frames 19\u201320, then withdraw empty in frame 21 while the spoon remains on the counter (left and wrist). Further closures and small withdrawals repeat around the same handle position, including frames 31\u201335, 49\u201352, and 65\u201369, without acquisition; the spoon remains on the counter through frame 74. This continuous ineffective grasping sequence does not advance transport to the sink; the underlying cause is not visible.\n- Recovery: Stop repeating the same closure, reposition the open fingers to straddle the handle, and verify a secure grasp with a small lift before transporting the spoon over the sink and releasing it; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The spoon remains on the counter, with no visible damage, spill, or harmful displacement in left or wrist through frame 74.\n- Resetability: immediate\n- Resetability evidence: The spoon and sink remain available in their original usable state; another properly aligned attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 11636,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 419,
+    "output_tokens_details": {
+      "reasoning_tokens": 30
+    },
+    "total_tokens": 12055
+  },
+  "user": null,
+  "metadata": {}
+}

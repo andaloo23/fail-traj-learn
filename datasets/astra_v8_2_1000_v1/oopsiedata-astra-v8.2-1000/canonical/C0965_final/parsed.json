@@ -1,0 +1,102 @@
+{
+  "episode_id": "C0965",
+  "language_task": "Pick up NIST rod and insert into corresponding hole on the NIST board.",
+  "success_label": "failure",
+  "outcome_evidence": "In side and wrist, the initial acquisition topples the upright rod onto the board (frames 14\u201316). Further acquisition attempts follow, including a brief lift at frames 128\u2013136, but the rod returns to the board at frames 137\u2013140. At frames 142\u2013180, it remains beside the gripper without visible insertion. Thus completion is unconfirmed, with visibly unsuccessful acquisition/retention attempts independently establishing local failures.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 14,
+      "failure": false
+    },
+    {
+      "start_frame": 14,
+      "end_frame": 17,
+      "failure": true
+    },
+    {
+      "start_frame": 17,
+      "end_frame": 78,
+      "failure": false
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 84,
+      "failure": true
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 137,
+      "failure": false
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 139,
+      "failure": true
+    },
+    {
+      "start_frame": 139,
+      "end_frame": 142,
+      "failure": false
+    },
+    {
+      "start_frame": 142,
+      "end_frame": 181,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 14,
+      "end_frame": 17,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In side, the rod tips at frame 14 and lies flat on the board at frames 15\u201316 instead of being acquired; wrist also shows it displaced outside the grasp. Secure possession before the toppling is not established.",
+      "recovery": "Re-localize the fallen rod and approach with the fingers aligned across its sides before closing and lifting; human intervention is not evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The rod falls only onto the board, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rod remains accessible on the board and can be approached in its new pose without an environmental reset."
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 84,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 78\u201379 in wrist, the rod rotates across the outside of the closing fingertips rather than being secured; side shows it remaining on the board. Through frame 83 the acquisition ends without a lift, before the fingers reopen and reposition at frame 84.",
+      "recovery": "Open fully, center the fingers around the rod rather than its end, and verify retention with a small test lift; no human intervention is evidently required.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition displaces the rod on the board but causes no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rod is still within the accessible work area; another aligned grasp requires no external resetting."
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 139,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the visible lift at frames 128\u2013136 in side, the rod falls back toward the board as the fingers separate at frame 137 and rests there at frame 138; wrist corroborates its movement relative to the fingers. The acquired rod is not retained for insertion.",
+      "recovery": "Reacquire the rod, verify a stable grip before transport, and keep it secured until aligned and seated in the corresponding hole; human intervention is not evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The short fall ends on the board without visible damage to the rod or surrounding equipment.",
+      "resetability": "immediate",
+      "resetability_evidence": "The dropped rod remains reachable on the board, so no human restoration is visibly necessary."
+    },
+    {
+      "start_frame": 142,
+      "end_frame": 181,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the repositioning at frames 139\u2013141, side and wrist show essentially unchanged rod and gripper positions throughout frames 142\u2013180, with no further acquisition, transport, or insertion progress. This is sustained unproductive holding near the target, not evidence of abnormal termination.",
+      "recovery": "Resume by reassessing the rod pose and grasp alignment, then perform a verified acquisition and insertion; no visible condition requires human intervention.",
+      "severity": "low",
+      "severity_evidence": "The sustained lack of progress prevents completion but produces no visible damage or additional hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The board and rod remain available for another attempt without environmental intervention."
+    }
+  ]
+}

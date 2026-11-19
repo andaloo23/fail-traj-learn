@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0365_W03",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "This provisional window outcome reflects incomplete task execution, not a visibly failed attempt. In base_image frames 700\u2013790, the robot transports the green can over the upper blue tray; through frames 940\u20131049, it releases the can and withdraws, leaving it in that tray. At frame 1049, both bowls remain on the table outside the right red tray, and the other can remains beside that tray. No local failure or unintended side effect is established. Earlier context is limited to frames 698\u2013699, and later execution is not supplied, so whole-episode completion remains unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

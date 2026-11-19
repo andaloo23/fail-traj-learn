@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0491_W01",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, rather than a visibly failed attempt. In base_image, the green cups are at the table center at frame 0; the right gripper approaches and aligns around them through frames 100\u2013280, then begins lifting a green cup by frames 330\u2013349. No completed stacking or packing is visible. The brief pauses and ongoing acquisition do not establish a local failure; later episode context is not supplied.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

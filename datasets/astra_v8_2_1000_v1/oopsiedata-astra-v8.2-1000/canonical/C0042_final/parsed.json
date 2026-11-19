@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0042",
+  "language_task": "Pick up the green cup and stack it on the purple.",
+  "success_label": "failure",
+  "outcome_evidence": "The cups begin separate in top frame 0. Repeated acquisition attempts leave the green cup on the table while the gripper withdraws empty (top and right_wrist frames 300\u2013313, 505\u2013517, and 702\u2013723). At frame 749, top and right_wrist still show separate green and purple cups, with no completed stack. This is visibly unsuccessful acquisition, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 279,
+      "failure": false
+    },
+    {
+      "start_frame": 279,
+      "end_frame": 313,
+      "failure": true
+    },
+    {
+      "start_frame": 313,
+      "end_frame": 477,
+      "failure": false
+    },
+    {
+      "start_frame": 477,
+      "end_frame": 517,
+      "failure": true
+    },
+    {
+      "start_frame": 517,
+      "end_frame": 675,
+      "failure": false
+    },
+    {
+      "start_frame": 675,
+      "end_frame": 723,
+      "failure": true
+    },
+    {
+      "start_frame": 723,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 279,
+      "end_frame": 313,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the green cup, the gripper moves away without acquiring it; right_wrist frames 279\u2013306 show the cup separating from the fingers, and top frames 297\u2013310 confirm it remains on the table. The withdrawal does not transport the cup toward a stack. Repositioning begins at frame 313.",
+      "recovery": "Reopen the gripper, realign opposing fingers around the green cup, and verify retention with a small lift before transport; no human intervention is evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The cup remains upright on the table, with no visible damage or consequential disturbance in top frames 300\u2013313.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both cups remain accessible and usable; another grasp can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 477,
+      "end_frame": 517,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "A further closure near the green cup is followed by another empty withdrawal, visible in right_wrist frames 477\u2013511. Top frames 501\u2013516 show the green cup still on the table apart from the purple cup; no pickup is accomplished. Reapproach begins at frame 517.",
+      "recovery": "Reassess the cup-to-finger alignment and grasp height rather than repeat the same acquisition geometry, then test retention before moving toward the purple cup; no human intervention is evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition delays the task but leaves both cups upright, with no visible damage in top frames 505\u2013517.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed grasp does not create an environmental state requiring intervention; the green cup remains available for retry."
+    },
+    {
+      "start_frame": 675,
+      "end_frame": 723,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure, the gripper again retreats without the green cup (right_wrist frames 675\u2013715). Top frames 691\u2013722 show the cup left behind on the table, so this attempt also fails to acquire the object needed for stacking. Repositioning resumes at frame 723.",
+      "recovery": "Reopen and correct the grasp position using the visible cup boundaries, acquire the cup, and confirm a secure small lift before stacking; no human intervention is evidently needed.",
+      "severity": "low",
+      "severity_evidence": "No drop from height, damage, or toppling is visible; the cups remain separate and upright in top frames 702\u2013723.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains valid for another acquisition attempt without moving or repairing objects."
+    }
+  ]
+}

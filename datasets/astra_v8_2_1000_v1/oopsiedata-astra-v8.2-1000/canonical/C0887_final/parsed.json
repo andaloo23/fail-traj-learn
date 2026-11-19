@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0887",
+  "language_task": "Pick up the ball and place it in the bowl.",
+  "success_label": "success",
+  "outcome_evidence": "At frame 0, camera_high shows the orange ball beside the blue bowl. Frames 138\u2013200 in camera_wrist_right and camera_high show the gripper acquiring the ball and carrying it toward the bowl. Frames 283\u2013320 in camera_wrist_right show the fingers opening and the ball settling into the bowl. By frame 340, camera_high shows the gripper withdrawn and the ball inside the bowl; this state persists through frame 749. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

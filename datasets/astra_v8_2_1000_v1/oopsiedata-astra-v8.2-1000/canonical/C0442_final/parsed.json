@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0442",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 48\u201353 show the right gripper lifting one green cup away from another, and frames 78\u201395 show the cups separately controlled and positioned for stacking. The right gripper releases its cup onto the table in frames 97\u201399; the left gripper aligns and lowers the other cup over it in frames 103\u2013115. After release and withdrawal, frames 121\u2013131 show a stable, compact nested stack. \u201cPack\u201d is interpreted as nesting the cups together; no separate packing container is visible. No failed acquisition, dropped cup, or harmful side effect is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 132,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

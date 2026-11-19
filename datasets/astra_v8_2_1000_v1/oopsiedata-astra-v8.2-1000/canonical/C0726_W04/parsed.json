@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0726_W04",
+  "language_task": "Pick up one object from the big bowl and put it inside the small box that is empty.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is not visible in this window: the brown and green objects remain in the bowl in left and right at frames 1050, 1250, 1330 and 1399, and no transfer into a box occurs. Instead, the robot grasps and reorients the orange box beside the bowl before leaving it on the table (left, frames 1193\u20131326). This is a provisional window outcome, not a final episode judgment; earlier object provenance and later execution are unavailable. The prior report's interpretation of this box as an object being transferred from the bowl cannot be verified from the two supplied context frames.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1163,
+      "failure": false
+    },
+    {
+      "start_frame": 1163,
+      "end_frame": 1326,
+      "failure": true
+    },
+    {
+      "start_frame": 1326,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1163,
+      "end_frame": 1326,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot approaches the orange box outside the bowl at frames 1163\u20131189, closes on its rim around frames 1193\u20131200, and holds and reorients it through frames 1308\u20131325 (left; corroborated by right and top). This prolonged box-handling sequence does not acquire any of the objects inside the bowl or place one into the empty box; the bowl contents remain in place. At frame 1326 the fingers open and withdraw, leaving the box beside the bowl. Physical acquisition of the box is not itself a grasp failure. Its provenance before the supplied context is unknown, but the visible operation is on an external box rather than an object in the bowl.",
+      "recovery": "Leave the box upright and accessible, select a visible object inside the bowl, grasp and verify its retention, then carry it over the empty box and lower it before release; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The box remains on the tabletop and the bowl contents remain contained; no damage, spillage or meaningful damage risk is visible in left, right or top at frame 1326.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl objects and upright box remain accessible, so another task-directed attempt requires no environmental repair or human reset."
+    }
+  ]
+}

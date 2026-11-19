@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f1b51fde5fe3b1f016af932f1a17487d285f779c169f33250",
+  "object": "response",
+  "created_at": 1794716401,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794716407,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f1b51fde5fe3b1f016af932f45f0887d299a20fd626454c68",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TL370Sf-Iq-A4-IsjChYvxkgcRHurlZv25J4qwvz7Y0N-m8JZmbGFR_9Xa0-v5TY4lj8J6uccmWjTZZibDAOSsX6-yDstu9JZPoH3KUlpNkk6w8jKjCqFeXIJDoPIxlf2tXWYxqTz6kQEopka1YQyMHBK4delHHIAPAx7TgCwWGGlNQfZ6Jg8b9AcxLQU41hKNlP91ZoqZWzyeLHyHx7jYsruVRIDpjZJaFFvtLpDyZGsql24-_EQnL9YDvhKNjM46U2Or0rFCqqxH_WbmIoxXn_Hmhs7ByJ9vB2AcL7bOBKUaRwj2pHxSbkA45zGP02H3sbF7DDdri2K0XzdktrRAd93Yw374xz7gi6HKDAsI63OAjOb5yOKtW1gcAbSPepp9gxUBAMjWR64BCdGZwdG5uVMYM4ylkaYi9MUnQOjKC3Q8cdojvj788-qFr_p-uq2PCzRmYavfgsEXyzgNrDf8EA7F-6_YZWiySBF5_1MqW4aDRta3_rILNGUXfpYu8g5tFhkx1fn7IOrzZHqOIHEIdhwtQLXXtg2yU4JczNpxWeW5W9KlkurKNfbavPjAMVk7gEcU9jQvKBOyOrFH1F2d-eeTSXS9-RYr76hpoxQlMTobe7M8eL6OZbRXk7KPOKNZ86kJbRS6iDzt1SeECN13vkfSARDcSGMT9cW_hIEXWldjVt92kDkq68I9DjVGjrFaEuwTcHlNevZg-L240W9jLJa4ZEOtc9P_ZBfwt6ZHJTMlIi8wI1IGW-dsIPS_d4_9mmFv1YEboEhHPqhen6tbuWKcxSCuNtwF795zs1DuCOxki14ZrXRXzie_Lq2aBVYGhjPsUiwWx4zl5om2B6zFnrRtQAHnaxMmU3AjApXMY6UGdoc8HnYOxKCl9DQ6MgkS9EI-NB58WN24L94Dd9TpA09De1LSfkNuv05EZAky13VC87DmXgI52nLWpFbtZ5WxeIUrj9JIsCzq0WN-4rLU3l48LP19Y38GXWzZ1MIsLAdjj0Oivyp5KKttseo3YeccA2QPS8bkyCz3acPgoBpON2bZbv8VpjuI90aJD4O8TYmeO_uinHcMhPdpAD8WNOtrX-ES87OH2H0o_KIJsU7xYYIzPeLAUHnvVEhyKlk5_gAu5j_qp6MMcbnhNTbtMGPJliAVQseBVB9E58kvmG8Pa2aSaaDJxMU7urSAttdnJKTlpnQXRhRKIGkOi6aiT14TQapnz141ePIqVbLidPvG6OJmEfm5-qt896E3gTAcflgsbeJarTzpvfW_HVH94P3EzKQgwzecg1U-gmge1nYj3DSXrf3g4GChw7n1lOMykyPRFrY9VcVjBKIpqkOsUiJkgUVCSQQRmmIdcKg0_le8X5dmaHujppmh5KJqJHR1UgECDDD9_6Lmnser0DJzUTSClFB7Ab97z91E-udxV4eTy1WBUNVcYE_htqjM28xAlLbGixTSUE2dU-x0Vi0UMB_DNThhXSfI1t1krnAVrK8UUXFwSbT4WuyqIsyYWfJ3PS6858GqF3calDJRihiOFGKINDNenZWdSU5N2xFmWHkdoczXsxq0Faa-6ThtL846z_g7Wka5pjX3u5BT2XT0k6sN6cKGtIYS61swAyaE_F9ajjRpDkxPaBoJa4f7skOVWwiuPSkyMk4bg_m6_dgiLPWlv0-z4MFTUP_U0WCs8Rx3KQRodVQ0Qzt6BAjZhKtMPUmN0V2W8fRTVxKSblRShRHTdfZVaMZPndfhzuau5FgXBTJwt8e4HWwJljsNN0JT3Nv3fttv4aOVmwBs8lQf022i3mhxDbAq5H83zChA9VsUCyCiCRizpm9GjbvZRx0001Ps3tkDZXPb5PmMCMELhgdrEHh2ehEsCHbHZtb20j-5NqJA2HThwlLCiIOSIq6zNwL4Wtx7-Fo3UhsYv5mrXttS4Z8yhLFGiJg5_81iHVaZGkYGvJLL4YhYKtsBwZlXrvY0eF8ktf2HpbM_QRjOiPdE0aGjX1soCilcb6W2gfIa9cYEOr4X3hpwfNd4eRz71meKE_cSjZgXCvBT5gWYxjOuBR3_0v__pPpRwhPJdntioTq6cdBw0Uiw9kv-fwEKtxhxBtw0ioFMfOHcXxLcbJucqOu8OwSmeJHgYuVz3bzFujxoeii_2HIvgAs5aAe3zkDqoomBuwQdA5zm4OJia7Cu05mQzq1VyYR3XAXztS1y99amQwXjrX82KUJSdZj0PWhYP6vDTRjQwOXV1_oRsr-TlIszkrX-ItR8s3nflOEELQmLQiJ_c2g-5yJH5Tqzz_EYEyBrkrYkwzaQRne-VYbt_W5iHuqnNiC2f5HaI0HWFzcoQ9-rYxawJS0zpfcefloZqADbNdGVzPIQQs4pFDe43Vynzvejb0gestaucI4Ap8aLNyAlkPARtmWVB-MY15wk9vi6fBWDWP-m1m0OGsUo9XP4MLVRnwFMjtizeZ3kH1N4SgbNPYb8LjG8534ILPkXVRWTEy_ZqSk-kdwwUN3-3Kh4Opu8NM4-SCoiZsE7-WuqiCjXslv_PMfhEtiVGXew43y7zKi3zx4fg8OVBNHOY",
+      "summary": []
+    },
+    {
+      "id": "msg_0f1b51fde5fe3b1f016af932f55e8c87d2945a8c72cc257bec",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0981\n\n## Episode annotation\n\n- Language task: pull out the block sticking out\n- Success label: failure\n- Outcome evidence: In front and wrist at frames 0, 25, 60, and 97, the orange block remains protruding from the wooden stack without visible extraction. The open gripper makes gradual positioning movements but never visibly acquires or pulls the block. Completion is unconfirmed in the observed episode, rather than a completed grasp or pull attempt visibly failing; the images do not establish a distinct local failure or abnormal interruption.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 98 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 18107,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 223,
+    "output_tokens_details": {
+      "reasoning_tokens": 68
+    },
+    "total_tokens": 18330
+  },
+  "user": null,
+  "metadata": {}
+}

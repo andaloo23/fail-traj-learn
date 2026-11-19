@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0695_W01",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than a visibly failed acquisition. In external and wrist at frame 0, the stuffed animal lies beside the empty cardboard box. The gripper approaches it during frames 148\u2013167 and 248\u2013265, with intervening stationary periods. At frames 338\u2013349, external and wrist show further positioning near the animal, but no confirmed lift or placement in the box. The observed approach does not establish a local failed attempt; later episode context is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

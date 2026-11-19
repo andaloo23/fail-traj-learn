@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0585",
+  "language_task": "put the orange from off the towel to on the table",
+  "success_label": "failure",
+  "outcome_evidence": "The awkward wording is interpreted as moving the orange off the towel onto bare tabletop. In top frames 0, 1050, 1400, and 1999, the orange remains near the towel\u2019s left edge. The left and right views show prolonged disengagement followed by approaches and repositioning, but no confirmed acquisition or transfer. In left frames 1980\u20131999 the gripper approaches the orange again; completion remains unconfirmed rather than a completed failed grasp being established. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1400,
+      "failure": true
+    },
+    {
+      "start_frame": 1400,
+      "end_frame": 1441,
+      "failure": false
+    },
+    {
+      "start_frame": 1441,
+      "end_frame": 1617,
+      "failure": true
+    },
+    {
+      "start_frame": 1617,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 1400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across left, right, and top frames 0\u20131050, the grippers remain away from the orange with no discernible task-directed acquisition. Subsequent repositioning, visible in frames 1080\u20131399, still leaves the orange untouched and does not establish an approach aligned with it. This is one continuous prolonged interval of inactivity and unproductive repositioning, not separate failures at window boundaries. A clearer approach begins around frame 1400; the precise transition from preparatory repositioning to useful approach is somewhat uncertain.",
+      "recovery": "Direct an open gripper toward the orange, align around its sides, securely acquire it, and transfer and release it onto clear bare tabletop; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delayed task progress; the images establish no damage, displaced objects, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange and surrounding scene remain usable and accessible, allowing another attempt without environmental resetting."
+    },
+    {
+      "start_frame": 1441,
+      "end_frame": 1617,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach in left and top frames 1400\u20131440, the arm redirects away without acquiring the orange. Left frames 1441\u20131500 show the target leaving the gripper\u2019s vicinity, while top shows the arm withdrawing over bare tabletop and the orange remaining on the towel. Reorientation continues through frame 1616 without acquisition or transfer; renewed approach becomes visible from left frames 1617\u20131620 and top frames 1650\u20131680. This sustained diversion interrupts progress, but does not establish a contact-level grasp failure.",
+      "recovery": "Reorient toward the orange and make a controlled approach, align the open fingers around it, then acquire and place it on bare tabletop; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The diversion delays the task without visible object disturbance, damage, or a supported meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange remains on the towel in an accessible position, so another approach requires no environmental reset."
+    }
+  ]
+}

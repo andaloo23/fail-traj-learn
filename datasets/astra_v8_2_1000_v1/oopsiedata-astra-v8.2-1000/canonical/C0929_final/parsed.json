@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0929",
+  "language_task": "Pick green block and place on cardboard.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the block starts on the bare table beside the cardboard (frame 0), remains behind during early empty withdrawals (frames 51\u201369 and 159\u2013174), and later falls from the gripper onto the bare table (frames 475\u2013482). The robot subsequently reacquires it and moves toward the cardboard (frames 577\u2013599), but a completed release and stable placement are not visible. Final completion is unconfirmed, separately from the visibly unsuccessful earlier attempts.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 51,
+      "failure": false
+    },
+    {
+      "start_frame": 51,
+      "end_frame": 70,
+      "failure": true
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 159,
+      "failure": false
+    },
+    {
+      "start_frame": 159,
+      "end_frame": 175,
+      "failure": true
+    },
+    {
+      "start_frame": 175,
+      "end_frame": 305,
+      "failure": false
+    },
+    {
+      "start_frame": 305,
+      "end_frame": 320,
+      "failure": true
+    },
+    {
+      "start_frame": 320,
+      "end_frame": 475,
+      "failure": false
+    },
+    {
+      "start_frame": 475,
+      "end_frame": 483,
+      "failure": true
+    },
+    {
+      "start_frame": 483,
+      "end_frame": 600,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 51,
+      "end_frame": 70,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the block, the gripper lifts away empty while the green block remains on the table in exterior_cam, frames 51\u201369; the acquisition did not succeed.",
+      "recovery": "Reopen, align the fingers around the block at its actual tabletop position, and verify retention with a short lift before transport; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block remains on the usable tabletop, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "Neither the block nor the cardboard requires environmental resetting before another attempt."
+    },
+    {
+      "start_frame": 159,
+      "end_frame": 175,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another near-block closing motion, the gripper withdraws upward without the block; exterior_cam frames 159\u2013174 show the target remaining on the table rather than following the gripper.",
+      "recovery": "Adjust the grasp position and finger orientation, descend around the block, and confirm a secure acquisition before withdrawing; human intervention is not required.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition prevents progress but produces no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible on the table for an autonomous retry."
+    },
+    {
+      "start_frame": 305,
+      "end_frame": 320,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The gripper withdraws from another acquisition attempt while the green block remains separately visible on the tabletop in exterior_cam, frames 305\u2013319; it has not secured the target.",
+      "recovery": "Locate the block's slightly changed position, reopen and realign the gripper, and retry with a verified short lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only a small tabletop displacement and unsuccessful acquisition are visible; no damage is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block remains reachable and the scene is still valid for another attempt without resetting."
+    },
+    {
+      "start_frame": 475,
+      "end_frame": 483,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the green block has moved with the gripper, it separates and falls onto the bare table in exterior_cam frames 475\u2013482, away from the cardboard. Whether this resulted from slipping or opening is not established, but retention through placement failed.",
+      "recovery": "Reacquire the block from its new tabletop position, verify a secure hold, and transport it over the cardboard before lowering and releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block falls a short distance onto the clear tabletop and remains there; no damage or consequential collision is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The fallen block remains accessible on the work surface, so another attempt does not require a human reset."
+    }
+  ]
+}

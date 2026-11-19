@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0330",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in image and left_ego_image. The robot approaches the door/handle region during frames 10\u2013128, but the door remains lowered and the oven opening remains exposed at frames 200, 320 and 399 in image and left_ego_image. Completion is visibly not achieved; the episode includes sustained unproductive hovering rather than merely ending during an otherwise progressing closure. No damage or unrelated object displacement is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 130,
+      "failure": false
+    },
+    {
+      "start_frame": 130,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 130,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach and small alignment movements, the robot remains near the open door with only minor pose changes and no meaningful closing progress throughout frames 130\u2013399. image and left_ego_image show the door remaining lowered at frames 130, 200, 300 and 399; wrist_image shows the gripper staying beside the door edge. This prolonged unproductive interval constitutes stalling. The views do not clearly establish a secure handle grasp or a mechanical cause.",
+      "recovery": "Reassess the handle position, align the gripper for secure contact, and lift the door along its hinge arc while checking that it moves toward closure; verify closure before withdrawing. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced unrelated objects or concrete damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains open and accessible with the surrounding scene intact; another attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

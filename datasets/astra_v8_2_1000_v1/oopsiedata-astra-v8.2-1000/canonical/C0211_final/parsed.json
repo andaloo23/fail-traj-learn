@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0211",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the first grasp closes near the cloth at frames 19\u201326, then moves away empty at frames 27\u201334 while the cloth remains in place. A renewed attempt at frames 49\u201369 catches and lifts an edge, but removal is not visibly completed before the recording ends. The yellow block remains obscured or indistinguishable; the final attempt is unfinished rather than demonstrably failed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 19,
+      "failure": false
+    },
+    {
+      "start_frame": 19,
+      "end_frame": 49,
+      "failure": true
+    },
+    {
+      "start_frame": 49,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 19,
+      "end_frame": 49,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, the gripper closes at the cloth's front edge at frame 19 without securing it. The closed gripper subsequently lifts and shifts away empty at frames 27\u201334 while the cloth stays in place, confirming failed acquisition. It remains near the edge without acquiring or moving the cloth through frame 48; reopening and realignment begin at frame 49.",
+      "recovery": "Reopen the gripper, align the fingers around an accessible cloth edge, secure a pinch, and verify that the cloth follows a small lift before pulling it clear of the block. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition leaves the cloth in place; no damage, displacement of unrelated objects, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains available for another grasp and the environment requires no visible resetting or human intervention."
+    }
+  ]
+}

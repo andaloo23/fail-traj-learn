@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0510",
+  "language_task": "Pick up the spoon and place it in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon initially lies on the counter beside the sink (frame 0, right and wrist). The gripper closes around its handle at frames 81\u201389, and the spoon moves with the robot toward the sink at frames 96\u2013148 (right and wrist), establishing successful acquisition. The robot lowers it into the basin and opens the gripper at frames 203\u2013210 (wrist). The spoon remains in the sink as the empty gripper withdraws, confirmed at frames 225 and 299 in right and wrist. No failed attempt or unintended side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 300,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

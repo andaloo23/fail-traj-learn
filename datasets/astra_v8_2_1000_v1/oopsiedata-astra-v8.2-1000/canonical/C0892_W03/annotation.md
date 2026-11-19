@@ -1,0 +1,17 @@
+# Episode: C0892_W03
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: failure
+- Outcome evidence: Completion is unconfirmed in this provisional window, rather than a visibly failed attempt. In base_image, the gripper adjusts around the green can at frames 700–900, then carries it toward the upper blue tray at frames 914–982. At frame 1049 the can remains between the fingers over the tray, without a confirmed release; the pink can and both bowls remain on the table, and the right red tray remains empty. The visible acquisition and transport advance the task, with no established local failure. Earlier context beyond frames 698–699 and later execution are unavailable.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 700 | 1050 | No |
+
+## Failure annotations
+
+None

@@ -1,0 +1,116 @@
+{
+  "id": "resp_001a0600aaf4cd5a016af92c48b03887d292e6af01695adf25",
+  "object": "response",
+  "created_at": 1794714697,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714710,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_001a0600aaf4cd5a016af92c4c7d5887d2b2868a542089acdd",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SxXrnFFPWdtIU7ohMHiaqEwge-7IUF8N3YId0vFfjAhcrgP_NvFaQyB26GvLf3QVmruednppzBqysCsdnXhZXqdG8VQDsDBcERrfglcMv6GDGS4Ys9ZyKp7JM7h7imlwR4tTH-XVAqr9PhzM0iP-Da4hw0Mk8sdEbeAbRGc85nzNsZMVfdj0eBAKf7rtC-lFycajkGUIxhL4NBz3P94yQYMVdptEsUtYZ4-u6xsMoX9Q1I-zCmDFPbAYSeXmmiJhLREmvsdTBVMK6AG5KTK9BPfM0OBOCAzjAPVlnETusulxaczNjiTmGkz1Jq0cEvtQC4kW1NMO2-xRKGYIjcOV-zPjrudr5TvcCsv5sFSIhsIM6LD1_W5WEakvWvR4e3pnm4cekKpJWWriZuok8heJrEOi2ZGvtAUqUxOreCW5PdTr_756iBk_r6PT3OWXQVb33UeE5LjIVJUUT9g6RWIwhx4VdLjdBZ2rGtQr6q3IO37x4Q6xLyiikBvR_E-P0mrkc6axgUdIInBf6LnNWeA4kqEYwzehrCK7Fhc-4JVsNLMbnQb0z3E_xbIkTtxk6b2_l-XwXQo2Rj4ylAqvVqkAhamoFf84ckA4-ep7Vx3mbyAydIExgcCjJy8fn6b4M67-R2i4UcOqIiwWJJ0TN8L0UICPF1xcsbFjvmEGpSwvMMTVMxLAPad6kXxTXufwLVPy_W4HSLrF7bBRkIj3Cwy0qIJk2CqCgGRc2mO6hOZi-OfjPJCUQ3VCMpcxkIbFrjHfa4PQlUYqLroiGhpplXYyAyom00nCeA6iDi1wNinJz4w6JJnRgnqeE7PJk_KI6gS0nkP_NkBXlz3dGO4WpOgak7OtVF79Ha7tZGycc_orh2JQtCoHKGa4e9cb8RXY1S6cCgjbU-kSjzo5Xc-Iweq4Nlk8iEA2qLAkRcsFAoACBKv-2ZV2E2TJXShUsNzXCcq2-fh4r5oWHQvXL1Smg3FCkyu8oa8VBjBIdGYePEme8dTeSgaVcotekVBbUuM-kVaOVQl5Ri8UnIcKAmM51RJXDBXtU6kCHdQlu1H3qJmFeusMJCPfe60BPflFkZ0oIy3J9y0tcD7GBBJHdt-XxwOwGHOJFghQAr245PEsmS9bbzB5OgBb-B-QvrDEBQGsBXoRaX6VBJNDljEyVU1rM4FFk6mql3JPMHd5lo20p-dJQ19rg3Kuw8rgSfImMxBMnyCf3ns3Zwt3DGK8TSNgBKmmfqTzAwvE1m-wk7fZqvDBHX1P1m0CtBkWsdcjbdOGtwGSyvYf-_0_67Fv0XiK0qQ6nZYpWUGJSmevXgD2tB6tCsI4hcA9IsYtPaF-RJEVKe-sShJZi6Ev4mN6scsvj4agJ60-YSOEE6ZWeGdhh7NFCEFrDvBVEOxN-oFj6nRQA3Wj_kyJf0zXiHTrjg1Oowe1OiWm6AnfkMkBr3X8i4Iz5ufLM74XuqDur2a_YGqiVt0lw07IQUyuxl2fE9F2BmVJN9BhL7U98znEuGKsCiZCssZ66_TL1Um0eyzwBG05Ju5nf-vEkLjrss3aa6HZTdOysLKht0jo_FL1Rlf8LUknx5NxthuL72ykITx6WnnIkwgkNzteDiv-Z2pfRJjGv_qEiwoMvMM1Mm9YWf0xtnWFHkk0oj73wEUqG_SqPdhMKlBixGsq_PJJop7D70lhfG5mFUNr_EULjjok-zMYOCSe_VaFDY4vUy52EjSriqdvEpVZV3Ap6qwf8bzLlgD4DABkVSK22NzOnriIYowZ8Kt64lo349GEd1E96A1h01-Ad55gwI6ZVS39VSbHVzlbrxgQ7lfEsMX7kG5yLo50HxS45wHqVNOR9k5NSh-IUkE76pfIv1t8cZmdL2aPw1TGsi62HWnBYxUxPKeW2xvS8TiJDePUlY0wGSvvmCSJ6bhzylUOp7J28F0EHDpZl8XZnqJWQA99AXI7lObdciv3B7dwTeQmwRhpgMDe6YQcewr25UdC0NNSP64U3BYPou7sFWSBZ9Cora4GfY9OXPwhTQa2NCrxegN-RFAIfvdE_eEXyo0U7IfoPwCqSPJzzPW6_8yn4qS6onGHHnMBgMMTGWNhyQWEUd3zOPuGwlf0ve8zkUpqbw3dvGP70KysWBBS3TLQt8OU5G0p53GXyPd4b9OlAbkC13ifuPN8WDMkZ6yEzSAEU4bsBesNfAFe1LvarH62cDN04mx3qFsD9_kXPBpRVYhjB_Ni6nHf7K4iJRSd0p_Y90StlQ5fCfX2qQyOUY1tL42BRonlav_Qidb7gntcUaCu9IHWunuROVYvyws-06HDyiOawL1NKWDGkzVDN0OHpkNQCMGwF1_zQ-QxDAFtnByrvIVIl0RNce0X27HR1f58JYokWPF6VojI0wq_Dd7P6WsCKKC59RFGj2-DuHXMqNp8tkrnVrxDhgv_ovv6YKd3HxbS2LD6Y0cbXozSV3cBci9xA==",
+      "summary": []
+    },
+    {
+      "id": "msg_001a0600aaf4cd5a016af92c4df22c87d2b2396155db063acf",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0848\n\n## Episode annotation\n\n- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.\n- Success label: failure\n- Outcome evidence: In base_image, frame 0 shows two cans and two bowls outside the trays. The robot places the pink/yellow can in the upper blue tray by frames 358\u2013367, but fails to acquire the green can on two attempts. At frame 464, the green can remains on the table and both bowls remain outside the empty right-hand red tray. Thus the observed task is incomplete, with visible failed acquisitions rather than merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 135 | No |\n| 135 | 268 | Yes |\n| 268 | 430 | No |\n| 430 | 465 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 135-268\n- Categories: grasp\n- Explanation: In base_image, frames 135\u2013158 show the green can emerging outside the gripper after the acquisition attempt, displaced toward the bottom of the image. By frames 168\u2013175 the gripper has moved away empty while the can remains on the table. The robot subsequently moves the empty gripper over the upper tray in frames 222\u2013257, accomplishing no can transfer. Secure possession before the separation is not established.\n- Recovery: Return to the green can, align the fingers around its visible sides, and verify a secure lift before transporting it to the upper tray; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The can remains on the tabletop, with no visible spill or newly established damage; its crushed shape was already present at frame 0.\n- Resetability: immediate\n- Resetability evidence: The displaced can remains accessible on the table, so another acquisition can be attempted without an environmental reset.\n\n### Failure 2\n\n- Frames: 430-465\n- Categories: grasp\n- Explanation: In base_image, frames 430\u2013432 show the green can rotating out from the fingers and separating onto the tabletop rather than being retained. It remains near the lower image boundary through frames 445\u2013464 while the empty gripper withdraws and travels toward the upper tray. This is a second visibly unsuccessful acquisition, not an unfinished closing motion.\n- Recovery: Re-localize the displaced green can and approach with the fingers centered around it, then verify retention before transport; human intervention is not visibly required.\n- Severity: low\n- Severity evidence: The failed attempt displaces the can on the table without visible damage or spillage; the images do not establish that it falls off the table.\n- Resetability: immediate\n- Resetability evidence: The can remains visible on the tabletop and no cleanup, repair, or human repositioning is demonstrably needed before a retry."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 42026,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 670,
+    "output_tokens_details": {
+      "reasoning_tokens": 63
+    },
+    "total_tokens": 42696
+  },
+  "user": null,
+  "metadata": {}
+}

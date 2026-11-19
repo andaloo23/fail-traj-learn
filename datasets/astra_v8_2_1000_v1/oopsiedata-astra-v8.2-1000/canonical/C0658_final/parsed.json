@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0658",
+  "language_task": "Pick up the green cup and stack it on the purple.",
+  "success_label": "failure",
+  "outcome_evidence": "The cups begin separate in top at frame 0. During acquisition, the green cup tips onto its side rather than being carried away (right_wrist and top, frames 265\u2013307). The gripper subsequently moves away empty. At frame 749, top still shows the cups separate, with the green cup on its side; right_wrist also shows it remaining on the table. This is a visibly unsuccessful acquisition and an uncompleted stack, not merely an occluded or unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 265,
+      "failure": false
+    },
+    {
+      "start_frame": 265,
+      "end_frame": 399,
+      "failure": true
+    },
+    {
+      "start_frame": 399,
+      "end_frame": 464,
+      "failure": false
+    },
+    {
+      "start_frame": 464,
+      "end_frame": 750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 265,
+      "end_frame": 399,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_wrist and top, frames 265\u2013292 show the green cup tipping onto its side during acquisition. At frames 307\u2013328 the gripper moves away while the green cup remains on the table, establishing failed acquisition. It then moves over the purple cup and withdraws without carrying the green cup (frames 343\u2013395), so this motion cannot produce the requested stack.",
+      "recovery": "Reobserve the fallen green cup, acquire it securely from its new pose, and restore an upright orientation before moving it above the purple cup; human intervention is not necessarily needed.",
+      "severity": "low",
+      "severity_evidence": "The cup falls onto the tabletop; no spill, breakage, or damage is visible in right_wrist or top.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The green cup needs straightforward reorientation from its side for an upright retry; it remains accessible on the table and requires no repair or difficult retrieval."
+    },
+    {
+      "start_frame": 464,
+      "end_frame": 750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following a renewed approach toward the green cup in frames 399\u2013463, the robot remains essentially stationary without acquiring it through approximately frame 610 (right_wrist and top). It then repeats empty movement toward the purple cup and back (frames 613\u2013737), leaving both cups unchanged instead of recovering the fallen target.",
+      "recovery": "Reassess the green cup's actual pose and perform a verified acquisition and reorientation before attempting transfer; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "This interval adds delay and no task progress, but no additional object displacement or damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The stalling and empty motions create no additional environmental reset requirement; recovery can resume from the existing fallen-cup state described in Failure 1."
+    }
+  ]
+}

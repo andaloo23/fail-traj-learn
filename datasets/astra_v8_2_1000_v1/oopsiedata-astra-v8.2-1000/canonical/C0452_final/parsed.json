@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0452",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon starts on the table (frame 0, image and left_ego_image), is grasped and lifted (frames 63\u201395, wrist_image and left_ego_image), and is carried to the open drawer. Frames 152\u2013158 in wrist_image show the spoon released into the drawer; frames 159\u2013172 show the empty gripper withdrawing while the spoon remains inside. No failed acquisition, unintended collision, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 173,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

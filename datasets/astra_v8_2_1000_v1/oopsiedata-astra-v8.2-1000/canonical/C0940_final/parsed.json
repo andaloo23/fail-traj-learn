@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0940",
+  "language_task": "Place the red block on top of the yellow rectangle.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first lift loses the red block, which falls back onto the table (frames 7\u201312, wrist_cam and right_base_cam). The robot subsequently reacquires it (frames 65\u201375, wrist_cam), carries it to the yellow rectangle, and releases it (frames 150\u2013158). After withdrawal, the red block remains supported on the yellow rectangle through frame 240, visible in left_base_cam and right_base_cam, with the overlapping placement also visible in wrist_cam. The successful placement follows an unsuccessful initial acquisition/retention attempt.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 7,
+      "failure": false
+    },
+    {
+      "start_frame": 7,
+      "end_frame": 19,
+      "failure": true
+    },
+    {
+      "start_frame": 19,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 7,
+      "end_frame": 19,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the initial lift, the red block moves out from between the fingers beginning at frame 7, tips and falls back onto the tabletop in frames 9\u201312, and remains there while the empty gripper moves clear through frame 18 (wrist_cam and right_base_cam). The attempted lift therefore fails to retain the block for transport to the yellow rectangle; the images do not establish the underlying cause.",
+      "recovery": "Reapproach the red block at its updated position, align the fingers around opposing faces, secure the grasp, and verify retention with a short lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block falls a short distance onto the usable tabletop; no damage or disturbance of unrelated objects is visible in frames 9\u201318.",
+      "resetability": "immediate",
+      "resetability_evidence": "The red block remains accessible on the table, so the robot can reacquire it without environmental resetting or human intervention."
+    }
+  ]
+}

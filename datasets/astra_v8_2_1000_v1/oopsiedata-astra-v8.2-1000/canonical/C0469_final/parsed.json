@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0469",
+  "language_task": "Pack the cups with a single arm.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, three cups are initially separate or loosely overlapping (frame 0). The single gripper acquires the light-colored cup (frames 28\u201335), nests it with the right blue cup (frames 40\u201360), and moves the combined cups onto the remaining blue cup (frames 61\u201380). It releases and withdraws, leaving one stable nested stack through frame 101 (frames 81\u2013101). \u201cPack\u201d is interpreted as nesting the cups together, consistent with the visible operation; the task does not explicitly require placement in the nearby box. No failed acquisition, dropped cup, or harmful side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 102,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

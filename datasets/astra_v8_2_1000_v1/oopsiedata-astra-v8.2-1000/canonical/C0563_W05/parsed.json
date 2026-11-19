@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0563_W05",
+  "language_task": "put all the fruits and veggies into the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "In frames 1400, 1575, and 1749, top shows the green bowl empty and the produce remaining in the light-blue bowl; left and right show no discernible acquisition or transfer. Small posture/view shifts do not establish a task-directed approach. The task remains visibly incomplete during sustained lack of progress, rather than a visibly failed grasp. This label is provisional for this window; earlier context beyond frames 1398\u20131399 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1400\u20131749, top shows the grippers staying away from the produce without acquisition or transfer, while left and right show only small posture/view shifts and no discernible task-advancing action. This approximately 11.7-second interval is sustained unproductive behavior. Context frames 1398\u20131399 show the same arrangement, supporting continuity at the starting boundary independently of the prior prediction; the inactivity may continue beyond this window. Its cause is not visible.",
+      "recovery": "Begin a task-directed approach to an accessible produce item, grasp it, and transfer it into the green bowl; repeat for the remaining produce. No human environmental intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress; no damage, disruptive displacement, or meaningful damage risk is visible in left, right, or top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowls and produce remain in a usable arrangement at frame 1749 in top and right, allowing another attempt without an environmental reset or human intervention."
+    }
+  ]
+}

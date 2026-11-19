@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0567",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is closed at frame 0 in left_ego_image and remains visibly closed during the approach at frames 150 and 200. The robot subsequently positions its gripper near the oven handle, but no door opening is visible through frame 311 in image and left_ego_image; wrist_image provides a close but partially occluded view. Completion is unconfirmed rather than a conclusively completed, failed pulling attempt. A sustained earlier pause is observable.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 28,
+      "failure": false
+    },
+    {
+      "start_frame": 28,
+      "end_frame": 110,
+      "failure": true
+    },
+    {
+      "start_frame": 110,
+      "end_frame": 312,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 28,
+      "end_frame": 110,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the initial repositioning, the robot remains nearly stationary above and beside the closed oven for approximately seven seconds, without acquiring the handle or moving the door. Frames 28, 60, 85, and 109 in image, left_ego_image, and wrist_image show essentially the same gripper placement and closed door. This sustained pause does not visibly advance the task; its underlying cause is unknown.",
+      "recovery": "Resume a controlled approach, align the fingers around the oven handle, verify acquisition, and pull along the door's opening path; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The pause delays the attempt but causes no visible damage, displacement, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in place, so the robot can continue the attempt without environmental resetting or human intervention."
+    }
+  ]
+}

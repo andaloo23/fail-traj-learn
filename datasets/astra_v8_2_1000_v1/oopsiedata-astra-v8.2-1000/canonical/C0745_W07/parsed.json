@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W07",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the cans remain in the upper blue tray while the gripper approaches the blue bowl (frames 2100\u20132277), closes at its left rim (frames 2301\u20132349), and moves the bowl toward the right red tray (frames 2355\u20132449). At frame 2449, the blue bowl has not yet been placed in that tray and the pink bowl remains on the table. This provisional failure label denotes incomplete execution, not a visibly failed attempt; no local failure is established. Earlier context is limited to frames 2098\u20132099, and later completion is not supplied.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

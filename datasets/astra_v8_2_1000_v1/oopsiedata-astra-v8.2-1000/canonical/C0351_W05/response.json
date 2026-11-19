@@ -1,0 +1,109 @@
+{
+  "id": "resp_0fdbbba30a63f59d016afbe8300b2487d1b7df15de7cb6e10c",
+  "object": "response",
+  "created_at": 1794893873,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893882,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0fdbbba30a63f59d016afbe83601b487d1bd37c7242bfcb840",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0351_W05\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: In aria at frames 1400, 1500, 1600 and 1699, the cup remains upright on the tabletop while both arms stay away from it; left_wrist and right_wrist show essentially unchanged empty gripper configurations. No pickup, handover or saucer placement is visible. This window shows sustained stalling, not a demonstrated failed acquisition. The outcome is provisional for this window; earlier execution beyond frames 1398\u20131399 and any subsequent execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1400 | 1700 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 1400-1700\n- Categories: task_not_attempted\n- Explanation: Across approximately ten seconds, the arms remain nearly stationary without a discernible cup-directed approach or other task progress. aria at frames 1400, 1500, 1600 and 1699 shows the cup unchanged, and left_wrist and right_wrist at those frames show no cup acquisition or transfer. This is sustained unproductive behavior rather than a brief ordinary pause. Context frames 1398\u20131399 show the same configuration, consistent with continuity across the starting boundary, but the full onset is unseen; the stall may also continue beyond the ending boundary, which does not establish abnormal termination.\n- Recovery: Resume a controlled approach to the cup with one arm, align and grasp it, verify retention, then transfer it to the other arm and place it on the saucer; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: Task progress is prevented, but no object displacement, damage or concrete risk of damage is visible.\n- Resetability: immediate\n- Resetability evidence: The cup remains upright and the visible scene is unchanged, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 64696,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 438,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 65134
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0789_W01",
+  "language_task": "Pick up the stuffed animal and place it in the box.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window: external and wrist frames 0, 232, and 349 show the stuffed animal remaining on the table outside the box. After prolonged initial inactivity, the gripper begins approaching the animal (frames 233\u2013245 and 312\u2013328), but no completed acquisition or placement is visible. This is a provisional window outcome, not evidence of a failed grasp or final whole-episode failure; later context is absent.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 233,
+      "failure": true
+    },
+    {
+      "start_frame": 233,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 233,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In external and wrist frames 0\u2013232, the robot maintains essentially the same pose with the empty gripper separated from the stuffed animal, while the animal and box remain stationary. This roughly 15.5-second interval shows sustained inactivity rather than an approach or acquisition. Task-directed movement becomes visible at frame 233; the reason for the preceding inactivity is not visible.",
+      "recovery": "Begin a controlled approach, align the open fingers around the stuffed animal, acquire and verify a secure hold, then lift and transfer it into the box; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed task progress; external and wrist frames 0\u2013232 show no displaced objects, damage, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal remains accessible on the table and the box remains undisturbed, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

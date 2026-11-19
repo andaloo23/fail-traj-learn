@@ -1,0 +1,116 @@
+{
+  "id": "resp_018e420b6be75e56016af901a3fb3487d2ab5649db85ce61a7",
+  "object": "response",
+  "created_at": 1794703780,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703786,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_018e420b6be75e56016af901a5fc8487d2ae3051283f89fa6b",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QGqpHYZfE9Fd_NkWRH1zXvzbTGgk4aor1IW5_mafIsV86HOltay3gkLcJrLjRyWwTxb844LnpXKb3jF6_gkcB0si05i3AeQrcEDbgC8xjjTiJpFl9NZ0nylNkilkrUCsEy1GmJWxOg--W6-7aXEUsapDf6E2cRieXE1RW1wxp8R13jl4VyBK7n42OFct7fHa_axNUIMfdltTKEKUW7xX0JiUsYBlScJ2L9VRmqkblPN4p39QOvuSyW_2W1Ik_5RiQogJ19vgYM3tO-9SNSa7f9arxH58dRbQP-iPPiLrYnpcVS6uMrtehQVsT7xL_511jvClTkwdAwjsHRvp0uJoivDy5wCbuczyhbuN1cL7hKX9VEoYJpjoGesBT4j3JcbSeJK4VTAAyfeyri-9iQ76Y1TUd1J2o_8MK6X6hQRUbGI4IwdwuL4SX5cCA763DGXCu2dDZg58fvvfLtzcigLlQi2_44ja-FUe3jjUwoEorgluDLg47Amib3iprj0JoKGBSzKWWJdVpQAPw9NhwiAGYljCUywICS_DqmLgsPIMgSOlId_4EfThSHBDlvp4cnvyppsTEXkG3n1f7aaDEfYjNE_tTuOxGMP5BJjK0CSCkkJ4LbNeA598MbV-stjL8EDdR8kuTsYW6apKw0YZleINAS1twwEmMEucJ-d2RzE-eERs6sOUY1a4J_IJAjRWcVPJUVBnzBtM66XZivZCRA0YNBdp_fYx7d8DfvkJJ54U1xXN0BfoIZeYBraUIa56xjfBD-6uCwOV7bbuIU-0Z4p1J2K531QnTS4JIT8IhZrwzxnwqF5q0eFTKkO2B8eSHTqhisy6t5a-6_TLXaIoH1jIVdOKmj119tLycACPGyrc9PfDArVOzTVdJsiUdXvHlgeRekFu9DWkJGhXbFhG3c8sJ1uzKwIQQbwVUVa9tJ4WadujVFVO0W7qsRW07TbQ2igUq2qbGDVG_GD392GoZjjEH9ImJ4euw-8oWPOwgvw_kPlNtG5iGNVnTkYNnrDNKa20Vt3Rg6qrwBeDD5N8mYwxLg6FbRaV5KnAKKL0z5ZE8xNMBSK3HGFPaYPzLMYMw6Ulz90rA_3H-mpzQXSHmU0L4lY7k1qfNxZIAhsLTFHzsADMqlqHrW-NJjCOXxb1Ext5HUI-gROAXQKe3HhFqLRSGKCBgwPUXZUbE9saLuXKixE6ZUxwyBuc4nxE3qDkX8pc4WUZ8rWp9boLesNBzAeUAnYfTJPM176L9_aG5U3QYHm7lfOVkuG3LguBlMPjbmig3_NsceRH91sFKelR5A8b7sWG7dipfMLI-qSNoqPGR5P8TgOuKs_4HV8sGHZrZWH1x0SwbBpYBCsT7AHownf2_rIIksnSjbuB8ewaEVmfkYbcfCsUgKdlnPRwaOpkl0YwHqIfndPRHhujggpFRqV7VfVBEIPiN6ywbYbRdhi_1sACFigmDQgN0qpR3HAS5ede1s-2chMOKhzFoENXvTHC7TUuCp2cfGgtzx2HL-Pej819BZmSk4yM4GS1ZgBsAPyYwvn8ljVuXDkUxurlBOTHsC2C9dupPFXNqogCi746MzIx3sjZLPAU7hv-nO_09J0s4FWeQarDXKgm7TBd2K9WUEICvDUN-6L2lAbf0ig9q-U3sHblY5jpVbS8WEMrwIWdkecUc1wVgLs9WZJpw7OmF-wRU-To86kz9SR90NgKYHVV_76Yqgqdwxn55WldNhJpChiquBYLGeTCAnnXOcQskZVbchNmJWiMAcV4Ha4ZLNO-JjgRnurdyWZS7oQcF3TWXI7iuab5WAnwHgb3i_ZHyHX2c2aDWNWoi698jfZ2-dkeW6kJtCIsUdtUx0N-VCqjCrVw2ovSCSTGlqyPaSUSl2W2hq7rHAcuLUUAlt3LTnPYXL_Hr2aytvAAo-HTl8iBtl73Y7CS6KyMDa80n63y4Ifm1BYTlDt7Fr6WAnXnMf0c1Dt63EHPry3HkmZVjIhkZhimvhfiNwXNkHJB2v97Z5fnGichzWyIUe25-gFAczD4QRnUuY66zbzAy4dwyJskqMq0Nrpc6lH7WV15SdOcFQn6uYBmILSYU3MoIljlANodUXScP-AILz90joSO6uOIyFrD4fdRMtGdizKQGKEdxPvpBQU_TdlHu0HUkGQWlUj8uBTdMvf1n0jxOXu7DIIbfL3swxj0l-2HpB5itQ_0IqPXEBRHPzNgpZLq-dTWBBcV43JR9nM9l1fJeCys2iFiogoNoU5x_kXkMiy5NSoATwrvGC9AMkKQK8PvY16xbQbmi3ho8O98xrgJg4pWFn5F5MYKh7b_enf2DmcgbVcRvae8lCLjBNd8r1l-ASwp0Z87zA2y-WMQ0qO0h54hl4x8qq0ouCRKZQ8cqs84LBxLvY1G8CtS4LZIoPdBiVWjyQiWD69x2mac1jCU93rqCsQUPYa_EPOi-E6UqEAcCi0u5vTC-IL_hL55yvQaRWX9lLZP8ifsGxrqeUX9G5C-vfZ0tH0rhBAOWaibp20vUri39UTtYpWWS38syqv4t7yaUqEq29NJ1riHTxSl3SzAWW9Mn0lZpcVjDnqfuMTS-cQQWXvMz38Rtl7wnyMUKWJ9Tpg2EvlAxYfAi8q1fUrwdnVs4vNkVKWIssY6pxogPJ1Vbqj89iOEGmJEA3PWrfzUR0IOfnAEiR1znmFbcN3c_wxopOCIAPPcClLYmr95E-8vQjjDjvQtEQYzXMU8UrYO-w8r_Z0EOZG8cGcVHSAxoJF_dIQj0P0jwW5-wEMBf4-RsmnOR-YpQCFSvkWMZaRbaKO05qCJnhZmGdMHL7aiL_j-tM4a7j0Kb4CL9uUppab09v0dlWQs6WtMnTJ6PVeu353o4QpDYmyl48TAuUcN0QJViQf9q-rFrB2_q3DuzP7NoGqi2_nz4JIao9Cc8q5xXAT92g=",
+      "summary": []
+    },
+    {
+      "id": "msg_018e420b6be75e56016af901a85dcc87d29765507f581b5555",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0168\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop outside the open drawer from frame 0 through frame 98 in image and left_ego_image. The gripper moves near the spoon and then toward the drawer area, but no acquisition or placement is visible; wrist_image at frames 26, 51, and 98 shows no spoon held between the fingers. Completion is therefore unconfirmed in the observed episode, rather than a clearly demonstrated failed grasp. The visible positioning movements and brief pauses do not establish a local failure or abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 99 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20571,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 265,
+    "output_tokens_details": {
+      "reasoning_tokens": 90
+    },
+    "total_tokens": 20836
+  },
+  "user": null,
+  "metadata": {}
+}

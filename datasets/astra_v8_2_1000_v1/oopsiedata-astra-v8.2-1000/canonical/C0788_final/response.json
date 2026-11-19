@@ -1,0 +1,116 @@
+{
+  "id": "resp_0abe0512bdd143d4016af92988a7d887d2be68f5176de76d60",
+  "object": "response",
+  "created_at": 1794713993,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714007,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0abe0512bdd143d4016af9298cb05887d284c9c35572bb9397",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SmZlUKzfnKC7DgNauYLOnbqvee5uR8__TEcj5SYbf0EXqjsQu4NBhPK2hsxKXIQT-JGonK17RBZLCRw4kwO6ih3iVn5bH6ZvT8cihqW3iA3VBQIxD3Q6gndPxzjSt0D2sMr5oG2BeBCWXQ2IKN46eDeV0WfpkO4AZAWDMriFqf1U_61afFDJNDm2TGbwxKQIcId0LnxYkplW_--8p_LBULHAMqt2aP7yy37HGOyv4LYhHPWJ893ddLvnwlFEffnOa16u4y3OBM5DsVCDRgK7lW-qUmLI_AdOky8JAZy5buCBbY2IR01PQEaar7AEKYpjt5eRUDstQXgOt9GvrYrgXJvdcjdKuH2_S7QdI9IEja5LEMQJ7q61Zk6RamcvuHhfnv2uqxi_T-rqPsEtD1lpHnYOwkPV9CnGL9W1ybBzHh-ttSLy-amLh8V5ek1DkQIw8JP7YC6ztgutR6enIuPIrGK7ZSA2-lXV-BITfpuivjSAxBe7MF5IxqBa25-TVS0G9ZxPy9e76wY9IKzNrjKUSquJ6mveMeMQJCUwTgBE-WNSOxMGJx160-6KEQ5xfkorr2KcuuM1nBwyejvD3alMbeHNt_DJW8OLZ5KcqxLH-q9kDOowyjoWN9inWpxdUHaKRLvoaLiqYIUfvGl27Qy_2ITl4km8DKGlU95wsu5zkIe8WAnFkyKSFsmGQOLO07DIOqDR_DTC3b3fKpLoOWJGPXXNXK9H6OywlB7bOm2ilDZnCzXGd9hWYiDbQVxrXnJkzN8jb93yK3H9VSVNqqz9At3Q3LQDaUCfnnrZAftwdqhc-WNdrjIEOz-aQZE3OKRq733ZgXJ2FbRAAqyedFQxBgN-pkpIF1dY1e5MErWqHyNozeEB1sLwOyo1BcZhEEcs1QWFJnUG2Rbt-tMGYHnY7arUKKyttdWmGQuY7-V1bC22SpjvH4qTwl7HELWidUeO61NTSNAJims-U7sARnIKhG1EyAcpLBukDh0BofgVQv4MI91WWt6DuEsAnFH34Hd__i8cjQmcvmbugXs-ZwGSUxEMmvBa8iUOmseIQ9aCmTpIA5FPfpxcFv8tRn9cLT1vFhiQzOW_3q9KtZWV7uCJGJ34CgE8BaWjSTwhY5htsMgAtpbHy8WzQ5qWKuXyKnyO2psCd29tiNo56UJcNuDzs637XvujbmDi_smMhPdAwGA5p8vR5KxWm3T3Z4TUKXM4QMBddqf0AJQk2_GK6mCDzkBEdQtCN1DGv_gcxMihvJZhVWCX7prel0MD6VtayN2CqPmgXLkbRo1uE7IKoRB74p2TMCaL7NxeAV-2cKWbpXylgHlelXvtd2YVVhATEYomTwpaPz-RLdvCRNEx5pKMmkufb9hR2WLmkUA4vgiE4rhIkHUfpHiM8k38I9ZJYT9lVmYsi9wuBlEPqo-kmkGdb9DUeacwTABJGOfOJkMXk5kp5Hmu9vq8F3HzB8brBUP0e9XPxrwwAj5U2QTeVAguI2A0rYqiDlIOUcAbO8eoS5G7ZFHrvu-e5ANmM5FvKnLcMaL2il84FNTjVVqxNxYOUl0yOrKZe37vgYc3xjOB5Bg1BVTvjmN3_4cVI0JRss5oGezEjRyPyHsf_9VKY9DoJnT_y1V02WqwEWJxG7ATzIdhfpMCLSljBmFprAja246sxw5nePlyIUupG-1hx45P7nSF3Yqpk1CV9yff4PMp-vJALYx9IkRPPh0te5E24CGyEcYPMxTFmK8ASKtvaXdp35pzG2V1ajrV4Dx-oP0wGBI8fHD_MawKtLpW6ZrgJHzH7Mj2mBARunhV-CCFkhkmDvPiUJNzSPgvr9tscGTI8rzRmSQYhRmvd9VUZu4Vwe1BkgpeISzH8baqMgwSwA5_-OXzXL20v9JghcI_-sS4vQOwoyCFGoDi9HujjVO6MoCreIVL6Ahr0LhqHcyYryJWwXLFN2bGiiFPzbshWfreKlEw2O8uRGxw-ERYceffI1TQ8t8SaAlD6-6jmhEDd9OGfkei6csipdnMPc9mPFTWI5erXhb2-jOPGApQ2BukbbIKaIl9ElFxDmZ2uCCo0o8xchY9ma1z55wcO5ik-cWRLbV4Wkgmqy4Nci6yUWSp1E46k_Tx-8T7aVYzKpYWo4S5m5g1vMRxJzJTcUNrPj7esLyoRgPQc40d4ni8drJOePXGC4GgKrXL04Nb4Aae1yex-OtKudX2M0e6Cd-2g_mswv57a2e25vutMheskh5Hlc3ZjB3mWturz8RevABE6MZD0LNvatuauJ5IcioSw-aKgSPD0NQkEFb4Hww91k6DaT-FoEcQREhUVxXU_HL0y6M36i1jYSELK8RZkz2gaWAfkgEdEXbExcVbtCF7Htln2yjVpEfZNf6hmhyFCC6oF1oG5lx_4c8XHiyeKHzcm1M7x6s4C-CLgRzGl3i4nhvMbXFe2bTicwegJfhiIqoapKP3pFPHFux94Ghz1KB89gspmFZupy8kXKhQtWKu_MI5iUPMWx06XnrkaX00IvAASGxct9jMwj0QVQSK68HByCZ7oVnvSictsAy3vxAIYCwQUvXN-ufEDASSrhy5pFakQn9Mi7_ZfEkJzHpzIJo6Fr7qZzgaYuqND463LnAeXq9NObTMFI4joOJIA2tA1KWJOxmM35H-B8PEB6R-Ku8jqDBAqIbQPktFurymFDgdDrvcagTKVp1YwxewaeLKGizwaS2sJpE_NHmpMSM1NeOdv6V-yIDNwnhiRLV-UzDsXC24rGEMLTGuQsLW6Xc67lStuc3D_da-oHe0vEetILYFmS-NFqWr7tRt48rGrZE6rE2YkJ0QjF4KQrXWgwBfUyx02Hm-5dQwOHc__2zSkytlsPbwY5Unp8dfn84G4kbYD4Vyl7ya9lMWE8SE6RyVrPPu4gmFOMLumrWKOHWWmcd2MNbmUVARTXqRVZ-m6WnTsiAx1nnCoxQmFYfHGNLGQZVefE11iKDCB2rxWFsSRDrljbLL7wetHQXIMdrHAZeqxt1kXIkgag2EVVyo5tt49FhpQbHtPwQtqV1cYzj145KTc6KZgu8oJxlT_hbJSp4QWeF8gcGGkEfzLVPHZgIU9S_N9L2RM8MmUX4AUreakGULGZGSA65hLLeOQjwHQFsJcr79gE_mvKN",
+      "summary": []
+    },
+    {
+      "id": "msg_0abe0512bdd143d4016af9298fdacc87d2849650db37adf349",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0788\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop at frame 399 in image and left_ego_image, rather than inside the drawer. The robot makes multiple acquisition attempts: wrist_image shows the spoon separating from the fingers at frames 85\u201387, and later empty withdrawals at frames 313\u2013320 and 374\u2013391. This is a visibly unsuccessful episode, not merely unconfirmed placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 85 | No |\n| 85 | 91 | Yes |\n| 91 | 303 | No |\n| 303 | 324 | Yes |\n| 324 | 361 | No |\n| 361 | 400 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 85-91\n- Categories: grasp\n- Explanation: After closing around the spoon handle, the gripper loses engagement at frames 85\u201387 in wrist_image. The spoon settles back onto the tabletop in left_ego_image while the empty gripper rises through frame 90, preventing acquisition for transport.\n- Recovery: Reobserve the spoon\u2019s shifted pose, align the fingers around its handle, and verify retention with a small lift before transporting it; no human intervention is needed.\n- Severity: low\n- Severity evidence: The spoon remains on the table, with no visible damage or disruption to unrelated objects.\n- Resetability: immediate\n- Resetability evidence: The spoon remains accessible for another grasp without environmental resetting.\n\n### Failure 2\n\n- Frames: 303-324\n- Categories: grasp\n- Explanation: At frames 303\u2013308, wrist_image shows the fingers closing against or beside the handle without securing it. During the subsequent lift at frames 311\u2013320, the fingers separate from the spoon while left_ego_image shows it remaining on the table; the gripper withdraws empty.\n- Recovery: Open the gripper, correct lateral alignment and grasp height, and confirm that the spoon moves with the gripper before proceeding; no human intervention is needed.\n- Severity: low\n- Severity evidence: The attempt fails to lift the spoon, but no damage or harmful side effect is visible.\n- Resetability: immediate\n- Resetability evidence: The spoon is still on the accessible tabletop and can be reattempted directly.\n\n### Failure 3\n\n- Frames: 361-400\n- Categories: grasp\n- Explanation: At frames 361\u2013364 in wrist_image, the fingers close beside the spoon handle rather than enclosing it. The robot subsequently lifts and retreats empty at frames 374\u2013399, while image and left_ego_image show the spoon remaining on the tabletop.\n- Recovery: Return to the spoon, realign the open fingers to straddle the handle, and verify a secure acquisition before moving toward the drawer; no human intervention is needed.\n- Severity: low\n- Severity evidence: Only task completion is prevented; no visible damage or meaningful damage risk is established.\n- Resetability: immediate\n- Resetability evidence: The spoon and drawer remain usable, and no cleanup or manual repositioning is necessary for another attempt."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 76858,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 794,
+    "output_tokens_details": {
+      "reasoning_tokens": 118
+    },
+    "total_tokens": 77652
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0293",
+  "language_task": "stack the cubes",
+  "success_label": "failure",
+  "outcome_evidence": "The robot acquires the green cube and moves it toward the tan cube (frames 113\u2013168, wrist and right), leaving an apparent two-cube stack after release (frames 185\u2013200, left and right). The purple cube remains separately on the table through frame 499 (right). Thus stacking all the cubes is not visibly completed; this is partial progress, followed by an observed unproductive interval, rather than a visibly collapsed stack.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 217,
+      "failure": false
+    },
+    {
+      "start_frame": 217,
+      "end_frame": 401,
+      "failure": true
+    },
+    {
+      "start_frame": 401,
+      "end_frame": 500,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 217,
+      "end_frame": 401,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the remaining purple cube, the empty gripper moves away from the cubes and makes an extended excursion around and above the workspace without acquiring or stacking another cube (frames 217, 249, 281, 321 and 393, left, right and wrist). The cubes remain stationary during this interval. This sustained unproductive movement does not advance the remaining stacking task; no completed failed grasp or collision is established.",
+      "recovery": "Return to a clear approach above the purple cube, align the fingers with opposing faces, grasp and verify retention, then place it centrally on the existing stack; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The interval delays completion, but no cube falls and no damage or meaningful damage risk is visible in left or right.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cubes remain available on the tabletop and the apparent partial stack remains standing; another task-directed attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

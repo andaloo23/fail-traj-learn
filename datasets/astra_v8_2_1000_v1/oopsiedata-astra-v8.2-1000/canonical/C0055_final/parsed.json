@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0055",
+  "language_task": "Stack the yellow block onto the blue one.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot acquires and lifts the yellow block in frames 69\u201395 (wrist_cam and right_base_cam), then lowers and releases it beside the blue block rather than on top in frames 130\u2013145. Frames 160\u2013178 in wrist_cam clearly show the blocks separately resting on the table; left_base_cam and right_base_cam confirm that they remain unstacked through frame 213. This is a visibly unsuccessful placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 137,
+      "failure": false
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 145,
+      "failure": true
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 214,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 137,
+      "end_frame": 145,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After transporting the yellow block, the robot opens its fingers and leaves it on the tabletop beside the blue block in frames 137\u2013144 (wrist_cam and right_base_cam), rather than supported on top of it. The subsequent clear views in frames 160\u2013178 confirm the failed placement. The images do not establish a hidden cause for the placement error.",
+      "recovery": "Reacquire the yellow block, lift it clear of the table, align it over the blue block\u2019s top surface, and lower it onto that surface before releasing and checking stability; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The yellow block remains on the tabletop, with no visible damage or meaningful damage risk; the consequence is an incomplete stack.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both blocks remain accessible and intact on the table, so another grasp-and-place attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

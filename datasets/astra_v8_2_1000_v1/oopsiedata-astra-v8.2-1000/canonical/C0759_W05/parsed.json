@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0759_W05",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the robot lifts and transports the blue toy at frames 1400\u20131538, then releases it onto the plate at frames 1541\u20131547 (overhead_cam, wrist_cam). Subsequent low gripper movement disturbs the toys and pushes the plate across the table at frames 1559\u20131587; the tan toy ends up beside the plate rather than on it. At frame 1749, overhead_cam shows the blue and pink toys on the plate and the tan toy outside it. Thus the observed arrangement fails the task, rather than merely having an unconfirmed placement. Earlier execution and later recovery are not supplied.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1559,
+      "failure": false
+    },
+    {
+      "start_frame": 1559,
+      "end_frame": 1589,
+      "failure": true
+    },
+    {
+      "start_frame": 1589,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1559,
+      "end_frame": 1589,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "After releasing the blue toy, the open gripper continues moving low among the plate and toys instead of clearing them. At frames 1559\u20131564, wrist_cam shows the blue toy abruptly shifting beside the fingers; at frames 1567\u20131587, overhead_cam shows the plate sliding across the tabletop while wrist_cam shows the tan toy becoming separated from the plate. This unwanted contact disrupts the completed arrangement and violates the no-collisions requirement. The gripper begins clearing the displaced arrangement by frame 1589.",
+      "recovery": "Lift the gripper vertically clear of the plate and toys, reassess their positions, and reacquire the tan toy from the tabletop before placing it fully inside the rim; use a clearance-preserving withdrawal. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The plate and toys are displaced on the tabletop, but no breakage, damage, or meaningful damage risk is visibly established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced plate and tan toy remain accessible on the table, allowing another attempt from their current positions without human resetting."
+    }
+  ]
+}

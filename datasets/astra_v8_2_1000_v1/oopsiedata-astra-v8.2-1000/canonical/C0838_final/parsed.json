@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0838",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper approaches the corn at frames 2\u20138 but moves away without it at frames 9\u201329. The corn remains on the bare tabletop beside the green cloth through frame 57; placement is visibly not achieved, rather than merely hidden or unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 9,
+      "failure": false
+    },
+    {
+      "start_frame": 9,
+      "end_frame": 58,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 9,
+      "end_frame": 58,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, after approaching closely at frames 6\u20138, the gripper moves past and away from the corn starting at frame 9 without acquiring it. Frames 12\u201329 increasingly reveal the empty gripper separated from the unchanged corn. It remains away from the target through frame 57, with no renewed acquisition or placement attempt. The visible evidence supports a missed acquisition, not a drop or a known mechanical cause.",
+      "recovery": "Reapproach the corn, align the fingers on opposite sides, close securely, and verify possession before lifting and transferring it onto the green cloth; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The corn and cloth remain in place, and right_shoulder_cam shows no damage, displaced unrelated objects, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn remains accessible on the tabletop and the cloth is unobstructed, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0517_W06",
+  "language_task": "fold the shorts",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: completion is unconfirmed, rather than a visibly defeated folding attempt. The robot adjusts near the layered beige garment and withdraws, leaving it at the upper-left of the table (frames 1750\u20131839, left and top). A person introduces and spreads a separate dark pair of shorts (frames 1885\u20131918, left, right and top); the robot subsequently aligns its grippers near its waistband and leg edges (frames 1920\u20132099, left, right and top), without completing a visible fold. The task does not specify which pair is intended, and the beige garment's earlier folding history is unavailable. No clear failed acquisition, damaging contact or persistently unproductive behavior is established. Earlier and later context is missing, so neither the introduction of another garment nor the window endpoint establishes a final episode outcome.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

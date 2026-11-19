@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0441",
+  "language_task": "take the small silver cup and pour its contents into the blue bowl",
+  "success_label": "failure",
+  "outcome_evidence": "The contents are not transferred into the blue bowl: right and top at frames 0 and 1999 show the red and green objects still inside the silver cup and the bowl empty. Failed cup acquisitions are visible at frames 1068\u20131075 and 1713\u20131725 in right and top. The bowl is repositioned during preparation and briefly loses stable control at frames 1606\u20131623 in left, right, and top. No completed pour is visible; completion beyond the recording is unconfirmed, and the recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 501,
+      "failure": false
+    },
+    {
+      "start_frame": 501,
+      "end_frame": 720,
+      "failure": true
+    },
+    {
+      "start_frame": 720,
+      "end_frame": 1068,
+      "failure": false
+    },
+    {
+      "start_frame": 1068,
+      "end_frame": 1076,
+      "failure": true
+    },
+    {
+      "start_frame": 1076,
+      "end_frame": 1606,
+      "failure": false
+    },
+    {
+      "start_frame": 1606,
+      "end_frame": 1624,
+      "failure": true
+    },
+    {
+      "start_frame": 1624,
+      "end_frame": 1713,
+      "failure": false
+    },
+    {
+      "start_frame": 1713,
+      "end_frame": 1726,
+      "failure": true
+    },
+    {
+      "start_frame": 1726,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 501,
+      "end_frame": 720,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In left, right, and top at frames 501, 540, 600, 660, and 701, the robot remains in substantially the same configuration with only small drift and no discernible acquisition or pouring progress. The cup remains full beside the empty bowl. This sustained unproductive interval crosses the frame-700 window boundary; renewed repositioning becomes evident around frames 720\u2013750, so the precise transition is approximate.",
+      "recovery": "Resume a task-directed approach to an accessible cup grasp point, verify secure acquisition, and position the cup above the stable bowl before tilting; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The consequence is delayed progress; no spill, damage, or meaningful damage risk is visible during the stall.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains upright with its contents retained and the bowl accessible, requiring no environmental reset."
+    },
+    {
+      "start_frame": 1068,
+      "end_frame": 1076,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following close engagement with the cup at frames 1048\u20131067, the fingers withdraw empty at frames 1068\u20131075 in right; top confirms that the cup remains on the table with its contents. This establishes unsuccessful acquisition, rather than merely unfinished closing.",
+      "recovery": "Reopen and realign the fingers around an accessible cup handle or suitable exterior grasp point, then verify retention with a small controlled lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cup retains its contents, with no visible spill, breakage, or other damage from the failed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible on the tabletop, so another acquisition attempt needs no environmental resetting."
+    },
+    {
+      "start_frame": 1606,
+      "end_frame": 1624,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The previously held blue bowl tips away from the fingers and rocks on the tabletop at frames 1606\u20131622 in left, right, and top, losing stable control during placement. It settles upright beside the cup by frame 1623. This briefly disrupts preparation of the receiving bowl rather than advancing the pour.",
+      "recovery": "Allow the bowl to settle, verify that its base is stable, and securely reposition it if necessary before acquiring and pouring from the cup; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The empty bowl rocks and settles upright on the table; no spill, breakage, or other damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl settles upright within reach beside the cup, leaving the environment suitable for another attempt without human resetting."
+    },
+    {
+      "start_frame": 1713,
+      "end_frame": 1726,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After close engagement with the silver cup at frames 1680\u20131712, the gripper pulls away without carrying it at frames 1713\u20131725 in right and top. The cup remains on the table with both colored objects inside, establishing another failed acquisition.",
+      "recovery": "Adjust the grasp alignment to capture a secure cup handle or exterior surface, close the fingers, and confirm possession with a small controlled lift before moving above the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the contents in the cup, with no visible spill or damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both the cup and upright bowl remain accessible on the tabletop, allowing an immediate reattempt without environmental resetting."
+    }
+  ]
+}

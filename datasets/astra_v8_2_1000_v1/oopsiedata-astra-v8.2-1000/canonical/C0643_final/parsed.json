@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0643",
+  "language_task": "pick up the cup on the table, and hang it on the mug tree.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot lifts the light-blue cup and carries it toward the mug tree (frames 165\u2013225, head and left_wrist). When the right gripper opens, the cup falls rather than remaining suspended (frames 340\u2013355, right_wrist and left_wrist). It ends upright on the table beside the tree, with the gripper withdrawn (frames 385\u2013405, head and both wrist cameras). This is a visibly failed hanging attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 340,
+      "failure": false
+    },
+    {
+      "start_frame": 340,
+      "end_frame": 370,
+      "failure": true
+    },
+    {
+      "start_frame": 370,
+      "end_frame": 406,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 340,
+      "end_frame": 370,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully transporting the cup, the robot opens its gripper without securing the cup on a branch. The cup descends away from the branch in frames 340\u2013355 (right_wrist and left_wrist) and settles on the tabletop beside the tree by frames 364\u2013369 (left_wrist). The placement therefore fails to accomplish hanging; the precise handle-to-branch misalignment is not fully visible.",
+      "recovery": "Reacquire the upright cup, align its handle with an available branch, and lower it until the branch supports it before releasing and withdrawing. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup falls a short distance onto the table and remains upright; no breakage, spill, or other meaningful damage is visible in frames 364\u2013405.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible on the tabletop and the tree remains standing, so another acquisition and hanging attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "episode_id": "C0536",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left toy is blue and white, and the largest bowl is the central white bowl. The robot instead lifts the pink toy in frames 16\u201320 and leaves it outside the bowl at frame 21. It later attempts to acquire the blue-and-white toy but withdraws empty in frames 70\u201372. At frame 90, the intended toy remains on the table and the white bowl is empty; this is visible noncompletion with failed actions, not merely an unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 6,
+      "failure": false
+    },
+    {
+      "start_frame": 6,
+      "end_frame": 22,
+      "failure": true
+    },
+    {
+      "start_frame": 22,
+      "end_frame": 30,
+      "failure": false
+    },
+    {
+      "start_frame": 30,
+      "end_frame": 51,
+      "failure": true
+    },
+    {
+      "start_frame": 51,
+      "end_frame": 70,
+      "failure": false
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 72,
+      "failure": true
+    },
+    {
+      "start_frame": 72,
+      "end_frame": 77,
+      "failure": false
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 91,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 6,
+      "end_frame": 22,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frames 6\u201315, the gripper targets and closes around the right-hand pink toy rather than the left blue-and-white toy. It carries the pink toy in frames 16\u201320 and releases it beside the white bowl at frame 21, relocating the wrong object without advancing the requested transfer.",
+      "recovery": "Leave the pink toy safely supported, identify the left blue-and-white toy, and grasp and transfer that toy into the white bowl; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The unrelated soft toy is displaced on the tabletop, but no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The intended toy and bowl remain accessible, so another task attempt needs no environmental reset."
+    },
+    {
+      "start_frame": 30,
+      "end_frame": 51,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In image_primary frames 30\u201343, the empty gripper remains essentially stationary above the table between the target toy and white bowl. Small back-and-forth movements in frames 44\u201350 do not establish an acquisition approach or move either task object, forming a sustained unproductive interval before the approach resumes at frame 51.",
+      "recovery": "Resume a directed approach to the blue-and-white toy, align the fingers around its body, and attempt acquisition; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The interval delays task progress without visible damage or hazardous contact.",
+      "resetability": "immediate",
+      "resetability_evidence": "No scene change during the stall prevents an immediate renewed attempt."
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 72,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing around the blue-and-white toy in image_primary frames 63\u201369, the gripper lifts and retreats empty in frames 70\u201371 while the toy remains on the tabletop. This establishes a failed acquisition rather than merely an unfinished closure.",
+      "recovery": "Reopen and realign around a substantial portion of the toy, close, and verify retention with a small lift before transporting it; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains safely on the table with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy is still accessible and requires no manual repositioning for another attempt."
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 91,
+      "categories": [
+        "sequencing_semantic",
+        "collision"
+      ],
+      "explanation": "In image_primary frames 77\u201386, the gripper again descends around the pink toy instead of the left blue-and-white toy. During this interaction, the white bowl visibly shifts left and forward in frames 78\u201385, indicating unintended contact-driven displacement. The gripper withdraws in frames 87\u201390 without completing the requested transfer.",
+      "recovery": "Lift clear of the bowl and pink toy, reassess their positions, and approach the blue-and-white toy without contacting the bowl; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowl and pink toy are displaced but remain upright or supported on the table; no breakage, spill, or other damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shifted bowl remains usable and accessible, and the intended toy remains available for a new attempt without a human reset."
+    }
+  ]
+}

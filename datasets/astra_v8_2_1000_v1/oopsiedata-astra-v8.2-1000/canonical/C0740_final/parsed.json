@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0740",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the blue cloth remains in the same draped configuration from frame 0 through frame 69; no removal is visible. The yellow block is not exposed, so its identity beneath the cloth cannot be independently verified. After sustained hovering, the gripper repositions and approaches the cloth at frames 60\u201369, but acquisition and completion remain unconfirmed rather than showing a completed failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 34,
+      "failure": true
+    },
+    {
+      "start_frame": 34,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 34,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam at frames 0\u201333, the open gripper hovers almost unchanged above the cloth for approximately 6.8 seconds, with only a slight vertical adjustment and no discernible acquisition or removal progress. This sustained inactivity ends when the gripper begins repositioning at frame 34.",
+      "recovery": "Approach an accessible cloth edge, grasp it securely, and lift it clear of the block before placing it aside; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cloth and surrounding scene remain unchanged during the stall, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No objects were visibly displaced or damaged; the robot can proceed with another approach without an environmental reset."
+    }
+  ]
+}

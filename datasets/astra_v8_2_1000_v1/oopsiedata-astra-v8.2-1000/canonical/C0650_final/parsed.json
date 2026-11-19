@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0650",
+  "language_task": "Pick up NIST rod and insert into corresponding hole on the NIST board.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "Frames 13\u201319 in side and wrist show acquisition and transport of the rod toward the visible hole, followed by lowering at frames 21\u201325. During the prolonged insertion attempt, the board shifts across the table (side, frames 25\u201380). At frames 103\u2013108 the fingers open and the rod settles farther into the hole; it remains upright without finger support through frame 125 in wrist and side, supporting completed insertion despite the board displacement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 26,
+      "failure": false
+    },
+    {
+      "start_frame": 26,
+      "end_frame": 102,
+      "failure": true
+    },
+    {
+      "start_frame": 102,
+      "end_frame": 126,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 26,
+      "end_frame": 102,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After the rod is brought to the hole, the robot continues holding it at nearly unchanged exposed depth while the board shifts leftward across the table (side, frames 26, 40, 65, and 80; wrist shows little change in rod depth). This prolonged contact displaces the board rather than visibly completing insertion. The rod only settles farther when the fingers begin opening at frames 102\u2013104; the images do not establish the underlying cause of the resistance.",
+      "recovery": "Stop pushing when the board moves, relieve contact pressure, and reassess rod-to-hole alignment before a gentle insertion retry. Human intervention is appropriate if the board needs repositioning or securing before continued contact.",
+      "severity": "low",
+      "severity_evidence": "The board is displaced but remains on the table, and neither side nor wrist shows breakage, dropped objects, or other meaningful damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the shifted board to its original working position is a straightforward reset; no repair or difficult object retrieval is visibly required."
+    }
+  ]
+}

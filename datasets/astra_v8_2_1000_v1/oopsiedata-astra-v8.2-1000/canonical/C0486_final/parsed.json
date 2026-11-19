@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0486",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon initially rests on the turquoise plate (frame 0, image and left_ego_image). The robot closes its gripper around the spoon and lifts it clear of the plate (frames 48\u201379, left_ego_image and wrist_image), then carries it to the open drawer (frames 90\u2013124, image and wrist_image). The gripper opens and releases the spoon into the drawer (frames 125\u2013130, wrist_image); the spoon remains visibly inside as the empty gripper withdraws (frames 131\u2013137, wrist_image). No failed acquisition or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 142,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

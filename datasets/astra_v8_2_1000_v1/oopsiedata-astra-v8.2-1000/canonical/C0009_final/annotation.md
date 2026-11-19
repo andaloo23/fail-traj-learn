@@ -1,0 +1,27 @@
+# Episode: C0009
+
+## Episode annotation
+
+- Language task: Put the spoon in the drawer.
+- Success label: failure
+- Outcome evidence: The spoon remains on the tabletop outside the drawer from frame 0 through frame 399 in image and left_ego_image. The robot approaches it, but wrist_image shows prolonged hovering and small positional changes near the spoon rather than acquisition or transport (frames 103–399). The task is visibly incomplete, with sustained unproductive behavior rather than merely an unconfirmed final placement.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 103 | No |
+| 103 | 400 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 103-400
+- Categories: task_not_attempted
+- Explanation: After approaching the spoon, the robot remains near it with small repetitive positional adjustments for the rest of the episode, without visibly acquiring or transporting it. Frames 103, 200, 300 and 399 in image and left_ego_image show the spoon still on the tabletop; wrist_image shows the gripper hovering near its bowl. This sustained stalling does not advance placement in the drawer; no completed failed grasp or hardware malfunction is established.
+- Recovery: Reassess the spoon’s position, align the fingers around an accessible grasp point, descend and grasp, then verify acquisition before lifting and transferring it into the drawer; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: The task remains incomplete, but no damage, displaced unrelated objects or meaningful damage risk is visible.
+- Resetability: immediate
+- Resetability evidence: The spoon remains accessible on the tabletop and the scene is usable; another acquisition attempt requires no environmental reset or human intervention.

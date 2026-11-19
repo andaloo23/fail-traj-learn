@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0123",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the drawer handle and closes its gripper near it (frames 48\u201391, wrist_image), but subsequently withdraws without pulling the drawer outward (frames 115\u2013150, wrist_image and left_ego_image). The drawer remains closed as the arm moves farther away through frame 283 (image and left_ego_image). This is a visibly unsuccessful acquisition attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 115,
+      "failure": false
+    },
+    {
+      "start_frame": 115,
+      "end_frame": 284,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 115,
+      "end_frame": 284,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the handle at frames 83\u201391, the gripper starts withdrawing empty at frame 115; by frames 124\u2013150, wrist_image clearly shows separation from the handle while left_ego_image shows the drawer still closed. The robot continues moving away and opening and closing its empty fingers through frame 283 without reacquiring the handle or opening the drawer (wrist_image, image). The views establish failed acquisition but not its underlying cause.",
+      "recovery": "Reorient and return to the handle, align the fingers around its accessible gripping surfaces, and verify secure engagement before pulling along the drawer\u2019s travel direction; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The drawer is not opened, but no damage, displaced unrelated objects, or meaningful damage risk is visible in image or left_ego_image through frame 283.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place; another handle-acquisition attempt requires robot repositioning but no environmental reset or human intervention."
+    }
+  ]
+}

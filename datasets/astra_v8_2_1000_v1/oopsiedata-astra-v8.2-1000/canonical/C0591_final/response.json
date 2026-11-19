@@ -1,0 +1,116 @@
+{
+  "id": "resp_05d0ea1ae837bf47016af91d4030e087d1960da2a296cd0fb6",
+  "object": "response",
+  "created_at": 1794710851,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794710860,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05d0ea1ae837bf47016af91d48313087d1a2b27f8e8af73a48",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R1NkFr43ImR8c8vbPx2lfpMQKMuen2N6lOdPjW2lLgJE48W1q73TmFu2vRRMFiNt620WuFAfMaALsHQH1UIN2ToP5Dk6Ezjc-hh8zBgQxc_0ziq2ypWmDiabYOhRqS0JcIxpJcMtxM1kmJ4Xt7lZcHAkAM4G2Wi-jklakOAYfhjkuVa8LL43X8QLi-5uoSBE09XIW-JSU4-9656DJXJ-nXBhKzl5ZqfTlxt8An-MtcFzDsNwlq_9S4DX4Z7gGTIgVXZzZTUR_zSQpLzSKmkvlhLaJBRDHre8RBKeWSbovg1ZY636Y2555Y7vrGMqlnE4KNXKtZ7phkTjV0Q74-JEJdgND6TL3GkLNMInSJXQQkhTyJ7VrpsZomQ2f9426ig8_3n6KHa66FuE7hVTcY_grk88q-yUF_de2_awsJQNMIg7T9NRhtmTclxzQQEmGrEwJLCisgc8XZZKF58XFfPIWvVHbi_IkK-qbYGYDElX6a323b8-V9oc_HKBQo9lnp6Jsn6pk7CDW-TDFe4vjhK9eh8TDSp6_GjG3nmrDllMEmNKDaE_CcAfe5ruwliewNJwz-AdJYOgHV5CFGK3F1XKNMpXq-5_5M7yb8wgaf7tF2gicUz4pMNYbY06F-ze5OtdD4XI5D_-IRn0u5ZDq2T-JBrb3Vtt6-JU3n0bHWEveaGTj8lIO2j5QIdGDYx24G4YznOsHT4jgjL3oNlsGeE4od2uvilPhrv48MW0Uor4T3g1Al0soRV796Kah7dBLGOHfipueEln7LiPh6FF0JPTUQnvhSzzrPRXxqAZ-er3OuKhBdtRbcdZupoAyGoAuETmoIezG5E7GOaUYnu1JRz6f0stPqSy5Z5rWo6YkdMvHopuuLYaNILqQ7-LKcu9QgXnulW06amwR2oKU9TYbAO3sYTI2p6NEYHfUF3p-49l0ZqvBAoeKc43-MITn01qUr_SD411DlfvaBVGVrjKiv5xjZTW7_AwrTY9-FncODaYMHf0-9GepPM04xj39aOjm9NBF-akv_13sEnNHnfilKK7yW8BoRQnFn7rzde1zBmI_co6ezixxE79Tf5FKvmAz60zbvZRtc83NsHVyU5RsmIGbUuPNPBha1gTFybDJPs3R7Ky5uPoRDwP89z98qDiGGfR9NxIJYdxcca2WLAfilVKBn7prPqP0Zg5y06ljCPK95T3FCN9Nh9rpBwCklfqdOyet8c_0nWZUdh1HERM7xw5mi2goDAlK2V9E8bTW03PZ6z0vVEsBN4Mz1HjFf3taKy7KQFVdHKLD8Gcgk4dJT7Cog5cXsE116Z0TrYb9RvmDHrSqoqgxk-CGm6eeRUbb6zWRdYoqNdsAWzLwPbGTAgXVcLqe0186ISTCBAE2FELUEyiNAEgrk5tlKHfyujPRe9InF0pk7buV5UbyUPF9JfPfgNreKUJKp1d0vmpZeHcQEdzlcEo85XiO6xUWAFF-ZTy-bNCVMLDNZW3m013p4FKBgT6ScZWpAHPdPp74l8PjSO6t0MAxMQpy5i_WyD_vtSvIOmdpwLm799gKu5ZbDqGymEbin5PI1ZlsoBxmNd7dlzMX6oAptoSXCfETR6sdsZBnah7vUaXLT0XEfki6a9fQKVnv-dHanqKRdKXsdw42h3BiJqpac7uPi-PgrSpA-75pCcTQ77n6ISbhjQnoBdgyP57zResawKWgk8V0x-EqMVj2fyQ9jVKi0vGucfo1WKOgx3GgfH5zeSKg9n58JwwUlyJI8bwgWFi4Pivb90-bi-IBV11eWhVUV06xzBQeXE5BYpvVIDCiH58ttcOXoBwsk3xLEKvN_UrnJG6Ym7tUBYFcMb-z_k8fhDxJMLOC_7aMK3_Kom0kVIyp0cJNJGOKhgy5D0pG-ykpW8fHN3r3lNO2oknZhiaIB0VL-OZDN6K7AEJWq21K6HJO9Z3gaF9HR-RMUNQs4jV75HceegBs85QnTcWYPa3hUIrwlCPC6Ww5sdl3nh8Wqs5uBJ6U7M4rAHe2-jEJQeCaxj5jRIA6kaHsN7ygK17h8HlU_quAoBFd0XAHJBAxz8THClweUTp8TffdKhmqV-33bm8T51DLVJW5GNYP-BtiuShe6UhxwzBBpf9JCb9_6BBqjK72tbJYtoWRUJSECsZdY_F7gAn4Xz1PF-b0_ngPMMKuI8l5AFrZAwTg8W0H1BnkncF7c_3ehJo9xc3MEkmmZ3p6fuZsEgy6wMcQ5cMSNZuqbvu7uJUlbSo52e28CiYFiZItv-660Kj-oaPHWellAvUJltG1bp_0wJk97H89kBFxUg8RhCCBfZQSV-UceV8iA-t5SmTU3X-Luvh-0Z5Ns0wHxRLyw-y8w6Dgclndm_ve8rxFqW6Gl5JF0_yFBn0UqHgrL4-OJ26v0H6-1jo6OYz1GwLy1OeAicFCz0IrZuqh63Ans8Juv2n__ktxaMYeZCJ2IPdWsItVrp1qJZWw50KXyuVBrHgThuCqOS2wy7LF3jEMGdl4XG8jC31K_D81EsK1mLfGEAWzHZ4r1Uz3p4O7YoK6o9O3qdf3H7MfdG2njOALR2wuHfhKXS4NyZZbzv_8MKUDuajA==",
+      "summary": []
+    },
+    {
+      "id": "msg_05d0ea1ae837bf47016af91d49554c87d19786521862fdbcc8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0591\n\n## Episode annotation\n\n- Language task: Pour a bowl of M&Ms into a bowl of skittles.\n- Success label: success\n- Outcome evidence: The visible contents are packaged candies: frames 82\u2013105 in left_wrist identify Skittles packets in the green bowl, while right_wrist shows M&Ms packets in the blue bowl. The robot lifts and repositions the blue bowl, with controlled transfers between grippers visible in head and both wrist views. At frames 460\u2013477, head and left_wrist show it positioned over the green bowl and beginning to tilt. Frames 478\u2013492 in left_wrist show the M&Ms packets sliding into the green bowl; by frames 491\u2013492 the blue bowl is empty and the yellow packets are with the red packets in the green bowl. No dropped bowl, spill outside the receiving bowl, or other harmful side effect is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 493 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 87355,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 304,
+    "output_tokens_details": {
+      "reasoning_tokens": 73
+    },
+    "total_tokens": 87659
+  },
+  "user": null,
+  "metadata": {}
+}

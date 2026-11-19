@@ -1,0 +1,27 @@
+# Episode: C0362
+
+## Episode annotation
+
+- Language task: flip the cup
+- Success label: failure
+- Outcome evidence: The cup remains on the table without a visible flip, comparing frames 0, 250, 400 and 499 in left, right and wrist. The robot repeatedly changes its empty gripper's position and orientation without visibly acquiring or turning the cup. This is sustained unproductive behavior, rather than merely an unconfirmed final manipulation; no completed cup-handling attempt is visible.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 57 | No |
+| 57 | 500 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 57-500
+- Categories: task_not_attempted
+- Explanation: After initial positioning, the empty gripper rotates away from the cup from frame 57 onward; wrist shows the cup leaving view by frame 99 and the camera facing the shelving by frame 137. Subsequent repositioning brings the cup back into wrist view at frames 236-250, but further motions through frames 337, 400 and 499 never visibly acquire or flip it. The left and right views show the cup remaining on the table throughout. These repeated empty motions form a sustained unproductive interval; no hidden cause or failed grasp is established.
+- Recovery: Re-localize the cup, align an open gripper around its sides, establish and verify a secure grasp, then lift slightly and rotate it to the opposite orientation before placing it down; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: The task remains uncompleted, but no cup damage, spill, unwanted collision or other scene disruption is visible in left, right or wrist through frame 499.
+- Resetability: immediate
+- Resetability evidence: The cup remains available on the table and no environmental restoration is visibly needed before another attempt.

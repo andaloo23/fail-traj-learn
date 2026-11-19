@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0816",
+  "language_task": "Open the oven.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The initially closed door (frame 0, image and left_ego_image) is pulled outward and downward, visibly separating from the oven body by frames 80\u201390 and remaining open at frame 178. During the continued pull, the oven body also shifts and rotates on the tabletop (frames 101\u2013162, image), rather than only its door moving. No damage or overturned tabletop objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 179,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 179,
+      "categories": [
+        "other"
+      ],
+      "explanation": "While continuing to hold and pull the open door, the robot also displaces and rotates the whole oven on the table. This becomes observable from frame 101 and grows clearer at frames 140, 151 and 162 in image; left_ego_image shows the arm continuing the door interaction through frame 178. Moving the appliance itself is an unintended side effect, although the door has opened.",
+      "recovery": "Stop pulling the appliance, safely release the handle once the door is stable, and reassess its position; a person can restore the oven to its original placement if needed before another attempt.",
+      "severity": "low",
+      "severity_evidence": "The oven remains upright on the tabletop, with no visible breakage, falling objects or other meaningful damage; the observed consequence is displacement.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the oven to its original position and orientation requires a straightforward repositioning; no repair or difficult retrieval is visibly necessary."
+    }
+  ]
+}

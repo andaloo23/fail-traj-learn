@@ -1,0 +1,116 @@
+{
+  "id": "resp_091c3cd876da6877016af929e69bf487d1a2a11069c45fc960",
+  "object": "response",
+  "created_at": 1794714087,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714097,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_091c3cd876da6877016af929eb941887d188ce6a1166aef53a",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SnyRfBNdnoEr5RpfB1vRVjA9Wf4XyBZrN9vGk3sP4YRwPye54691sNPx_1B4RURmm-LubPE6BcgQTLtpAeQWLcRZ86981Oql0O5tPs-8WfrFcELggu-103cX5sAcVMpzLItLvf-xX_Ff3jH9YopQ0vkk7L7tx1o6VbzXTj1hgXyHfRNputhIopjK4O0B8Ywu0agC79ZN-nYVUu30m0JvXx1FbaRrhn_VptmMwoyaa73qCfvNykAkMeCTUiKz0Qw5B60SFV4I3DVjs1H_zkOk9kNhmaWtNTEUjv_X2-2gwxTLAFc_LiNDB-4dahTW7oT1Qh3XfO5BfX2HUdYaOLXMmFt7hq2ybzJdPs-clJmthvuCCHuMUO1lH3jFs7FthRkE4GsyNywXlgyDpvzE41N7lbWr3N3vwWZ3DJFkSqHH5haD1a3S58eGNdd8kI31GDmfQoyvTT3l5lOfzZLsTNRSPxfWhXSyxPZ56IdOSbV0NkCLy5LZz43oM-u9A599czj7zG3cq6KiUPk53xvDSlAPK4MLyJiLNPgYTjqM3RZ2lZwlA7TGs8iKEUdBz_TBKJ6lU00VE_BLOe3UzYTsZY0YlOal3MuMpgbXlB7zh7jowEnt4nGhHAX_8KYR_rZvO0w8-tP_tFO5y6yT_3ArUb6DxCOz_QPAWVKhDRqQLQT2g6Is7krT8tLGHlQTjLCPH6Gn90DlkoCzsOO_JTi5pR4LbgKdMWU4i8_S-Tb2rN4g4My_hy_RWtCiv6wl7ymChVv8BC3T6_cZdo-JLdwfcL8EFCPg8ELiGAZcFi1wgd7I83mfp7iBIC_rWG8wX7iqrhhfwIy6btlwlVntQX8JqybZrvEn98l09F_eHs26V3peX-UCmWLihfg3cQJ4M7WBbBBkKbtwimE-JPhmv5lvmkM4pwEdBFnylyElsiWg-T_K-um2VGyiLEUV-7aJVOivtOvYwlvQ6jfSqq1z814RE35xLyb686PGJeOYaOvGgUP6Li9dgGyYKLhM556yxutscq2uYwqezoCNJTttovNTflI9yqvHRZPMjXZOpAUwQkWjM0FRYrplKxMszmEUhEiOMz3k4zgWC5Kjkn3HbiodTNMweMdSPMePIgR8IIGlTj9WLKh_3Kccl4T4V9goYFPx6UgWtC330MOx5MLEzjinpRp2Vp6VJqFkNoZeaK5-PEong2aOrTjYLZmQiLZ1q4gVlIalLpTIOq1-xNntzvdoheHRL8Vh8T7UBwxU-EdfHDL-fYNaELe2N27iOcaXd4fLV0i-vbNfNeLuVMPZJWJ2osKvYUn5aW_QQcY6H7Bd7oFOIykBWNVSRYQq4R-xgbhMbZO-vPI5_FcRIMUW4qb3E_x-YgGz19lBL_8-oXLhKpFgNjxFPgUL0yn9fTVQkveg2l24fVfXhUV7io-x8UpqzusGP0czZYRfNkJE_axpaNoiNXEOQj-Xe8NoBwpEaVPmFq4PR17r_-5DBkAZMn4kBIiRTWX9bq5UAlLwJYjsaYxf-f-Uv2WlQFTfy13NL8reCPo1-99oQ-_sJDVCfw9sSeRdE8IEA_wwurYHn8ZYRkPmY4wgnNCsmAcKtQjWJPQNYfqE1vEozVfaLY6UhlWtLK4YiVqnkEr9hwKg5tV4SXOVgv3Bw0faRzeBLXhcO5x9TT8hAK4vFC03aneeXoa0p1u9C29_OqArfL92033DTZiMmE4cmwjo6qorrpxAsOnIsng6ORsn1t8w0WJU1f1FInF1ZVgwKVadweDRAhvcGvOzydKMqynP6kR8qYTaSJPL72GMiUaAJAaatJsX4y44Svs3RStzKKpeg-tfgzVuPryYQWdLheXUL14rgg1uge6TR-zTK2_IynnjKuFRuRdO2F2NQMbEQXHDMsdsgUK_k0b3Xn5uRUXkheMjrnxfnQbYCBlW68Pm_PlDWI6x_o62MMLWbTPWHXvXwvCIbKL3O2G3yUmS9K2jrUVjMStKED7XN8A-xSBU4iWiPp6W3VZ4830BvdhfxwioNu3nB9SXFN-hqzUU6lZazlXmCu-vNZJjGOfBxjA3aKZIdubcK4WkZ_9J70gec-DRm1FOtQlOOgL-Ptrcm-wtCkxRzwZXU55H3hZeABBlrKOBdIbznXw8m17E-onD6Rl-HObPAWgEFSglB7rE9XCQKy6oabk9heysqBkQ8pJOJoXeUTf_8V4pzg-XvvfDvfB2QVGe2k4nuoKaEg3sailzU8i1cO1N26fajSwkA2uDAx3P640YO6oGOxWWtbiapk2Wbxl7TK2HeSWm-xGRUur4lvCapla-hUeuA0lhypHcZ_nGNyDMuvqqjV5FTBUnqgH3q18RGF-fU0zj2S3kilmSyhYHJW-MveCQvR4EL1eVPK7Pz7seGYhPOLGVv4fPA_lFEgah084I8IKJLQsMSO-u5O3kRit2hO3JuDWVYJ15Xu8HbSRNtcXgotrJql1FX2xvVZcCrApSoAvSMcCK1EtknfWAk6SbZ9DMBqWpMsohVlYknP1lQmVNo9yH-ZgzJwaSuRzz9LWe6w9oY2itNY_HYMXoXEbmZLUCv1vucBf",
+      "summary": []
+    },
+    {
+      "id": "msg_091c3cd876da6877016af929ed47e487d18ba1b29afbd3e143",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0803\n\n## Episode annotation\n\n- Language task: Pack the toys onto the wooden tray.\n- Success label: success\n- Outcome evidence: The robot first moves the yellow banana-shaped object off the tray to the adjacent tabletop (frames 72\u2013175, overhead_cam and wrist_cam), clearing space for packing. It then grasps and places the tan plush toy on the tray (frames 211\u2013310) and the pink rabbit toy beside it (frames 372\u2013462). Both plush toys remain supported on the tray after the gripper withdraws, including at frame 523 in overhead_cam and wrist_cam. The banana-shaped object's inclusion among \u201cthe toys\u201d is not explicit; the visible sequence supports treating it as an obstruction cleared before packing the two plush toys. No failed acquisition, harmful collision, or damage is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 524 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 64396,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 274,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 64670
+  },
+  "user": null,
+  "metadata": {}
+}

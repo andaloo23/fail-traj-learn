@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0390",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot puts both animal toys in the blue bowl (wrist_cam, frames 180 and 430) and the carrot in the green bowl (wrist_cam, frame 615). However, it misses the brown food-shaped object and later puts the orange fruit-shaped object with the toys (wrist_cam, frames 675\u2013705 and 990\u20131000). At frame 1071, wrist_cam shows the brown object still on the table, the carrot alone in the green bowl, and the orange object mixed with the toys in the blue bowl; overhead_cam corroborates the remaining tabletop object. This is visibly incomplete and incorrect sorting, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 675,
+      "failure": false
+    },
+    {
+      "start_frame": 675,
+      "end_frame": 776,
+      "failure": true
+    },
+    {
+      "start_frame": 776,
+      "end_frame": 930,
+      "failure": false
+    },
+    {
+      "start_frame": 930,
+      "end_frame": 1007,
+      "failure": true
+    },
+    {
+      "start_frame": 1007,
+      "end_frame": 1072,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 675,
+      "end_frame": 776,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During closure, the brown object moves out from between the fingers rather than being acquired (wrist_cam and overhead_cam, frames 675\u2013681). The robot then moves away empty toward the green bowl and opens its fingers there, while the brown object remains on the table (frames 705\u2013775, both cameras). This empty transfer does not sort the object.",
+      "recovery": "Re-localize the brown object, open and center the fingers around its sides, and verify a stable lift before transporting it to the green bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the tabletop, with no visible damage or meaningful damage risk; the consequence is a failed acquisition and wasted transfer.",
+      "resetability": "immediate",
+      "resetability_evidence": "The brown object remains accessible for another grasp without human resetting."
+    },
+    {
+      "start_frame": 930,
+      "end_frame": 1007,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot carries the orange fruit-shaped object toward the blue bowl containing the two animal toys, aligns above that bowl, and releases it inside (wrist_cam, frames 930\u2013994; overhead_cam corroborates the placement). Frame 1000 shows the food-shaped object mixed with the toys, contrary to separating food from toys. Acquisition and transport themselves succeed physically.",
+      "recovery": "Retrieve the orange object from the blue bowl and place it in the green bowl with the carrot, then acquire and sort the remaining brown food-shaped object; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is incorrect sorting, without damage to the objects, bowls, or robot.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning to a valid sorting state requires a straightforward transfer of the orange object out of the toy bowl; no repair or difficult retrieval is required."
+    }
+  ]
+}

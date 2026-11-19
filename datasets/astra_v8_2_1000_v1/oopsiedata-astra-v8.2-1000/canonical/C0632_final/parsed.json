@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0632",
+  "language_task": "Put the yellow toy pear into the blue bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The pear remains on the tabletop outside the bowl throughout the episode, including frame 240 in left_base_cam and right_base_cam. Approaches near the pear are followed by empty withdrawals at frames 68\u201398, 163\u2013195, and 228\u2013240; wrist_cam also shows the pear remaining on the table. These establish unsuccessful acquisition attempts, rather than merely unconfirmed placement. No successful lift or placement is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 68,
+      "failure": false
+    },
+    {
+      "start_frame": 68,
+      "end_frame": 99,
+      "failure": true
+    },
+    {
+      "start_frame": 99,
+      "end_frame": 163,
+      "failure": false
+    },
+    {
+      "start_frame": 163,
+      "end_frame": 196,
+      "failure": true
+    },
+    {
+      "start_frame": 196,
+      "end_frame": 228,
+      "failure": false
+    },
+    {
+      "start_frame": 228,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 68,
+      "end_frame": 99,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the close approach at frames 60\u201367, the gripper withdraws without the pear during frames 68\u201398. left_base_cam and right_base_cam show the pear remaining beside the bowl, while wrist_cam shows increasing separation from the target. The near-object acquisition attempt therefore fails; the precise contact mechanics are not clear.",
+      "recovery": "Reopen the gripper, align the fingers on opposite sides of the pear, descend to an appropriate grasp height, and verify acquisition with a small lift before moving toward the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pear stays on the tabletop, and no damage, spill, or disruptive object displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pear and bowl remain accessible in their original working area; no environmental reset or human intervention is needed."
+    },
+    {
+      "start_frame": 163,
+      "end_frame": 196,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After another approach close to the pear at frames 153\u2013162, the gripper again moves upward and away empty during frames 163\u2013195. The stationary pear is visible in left_base_cam and right_base_cam, with wrist_cam confirming that it remains on the table rather than traveling with the gripper.",
+      "recovery": "Correct the grasp alignment and height using the visible pear position, close around its body, and verify a secure lift before transport; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "This attempt leaves the task incomplete without visible damage or meaningful disturbance to the scene.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both task objects remain available on the table, allowing another attempt without resetting the environment."
+    },
+    {
+      "start_frame": 228,
+      "end_frame": 241,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The third close approach at frames 219\u2013227 is followed by an empty withdrawal beginning at frame 228. By frames 238\u2013240, left_base_cam and right_base_cam show the gripper separated from the pear, which remains outside the bowl; wrist_cam likewise shows the pear on the tabletop. This is another failed acquisition, not evidence of a drop or abnormal termination.",
+      "recovery": "Reposition the open fingers to straddle the pear at grasp height and confirm that the pear lifts with the gripper before attempting placement; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No object damage or harmful side effect is visible; the consequence is failure to acquire and place the pear.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pear remains accessible beside the upright bowl, with no cleanup or object restoration needed."
+    }
+  ]
+}

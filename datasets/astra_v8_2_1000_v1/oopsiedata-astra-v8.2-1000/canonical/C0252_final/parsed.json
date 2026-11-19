@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0252",
+  "language_task": "Pick up the pen with the right hand and the cap with the left, then put the cap onto the pen.",
+  "success_label": "failure",
+  "outcome_evidence": "The supplied task ambiguously says \u201cpen cap\u201d for the right hand and \u201ccap\u201d for the left; the visible long pen and short dark cap support the interpretation above. Frames 180\u2013360 in right_wrist, left_wrist and top show acquisition and lifting, followed by bringing the pen and cap together in frames 511\u2013625. The cap is not secured: frames 649\u2013684 in left_wrist and right_wrist show it falling away and lying separately on the table. The pen is subsequently released, and no completed capping is visible through frame 1399 in any view; this is a visibly failed insertion attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 649,
+      "failure": false
+    },
+    {
+      "start_frame": 649,
+      "end_frame": 673,
+      "failure": true
+    },
+    {
+      "start_frame": 673,
+      "end_frame": 800,
+      "failure": false
+    },
+    {
+      "start_frame": 800,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 649,
+      "end_frame": 673,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the left gripper opens during the capping attempt, the cap moves away from the pen in frames 649\u2013664 (left_wrist and right_wrist) instead of remaining attached; it falls onto the table, where frame 684 confirms its separate position. The right gripper still holds the uncapped pen, so the release fails to retain the intended assembly.",
+      "recovery": "Locate and reacquire the cap, verify its opening and alignment with the pen, and insert it before releasing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The small cap falls onto the work surface without visible breakage or damage to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cap remains on the accessible tabletop and the pen remains available; no environmental repair or human reset is needed for another attempt."
+    },
+    {
+      "start_frame": 800,
+      "end_frame": 1400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following release of the pen and repositioning, the open grippers remain over the separated pieces with only small pose changes and no completed acquisition or renewed insertion throughout frames 800\u20131399 (left_wrist, right_wrist and top). This roughly twelve-second interval is persistently unproductive rather than a brief alignment pause.",
+      "recovery": "Re-establish the locations of both pieces, grasp and verify possession of each, then align and cap the pen; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "This interval prevents completion but shows no additional damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both pieces remain in the tabletop workspace; the robot can resume acquisition without an environmental reset."
+    }
+  ]
+}

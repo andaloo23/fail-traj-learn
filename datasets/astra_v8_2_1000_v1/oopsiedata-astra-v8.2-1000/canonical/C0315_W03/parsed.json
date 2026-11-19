@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0315_W03",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "In overhead_cam and wrist_cam, the robot lifts the carrot-shaped food item at frames 718\u2013733, but releases it into the lavender bowl containing animal toys at frames 801\u2013807, mixing rather than separating the categories. Other food-shaped items remain on the table at frame 1049, with the gripper stationary near the round orange item. This is a provisional window outcome: sorting is visibly incomplete and one placement is task-inconsistent; earlier context beyond the supplied boundary frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 801,
+      "failure": false
+    },
+    {
+      "start_frame": 801,
+      "end_frame": 808,
+      "failure": true
+    },
+    {
+      "start_frame": 808,
+      "end_frame": 960,
+      "failure": false
+    },
+    {
+      "start_frame": 960,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 801,
+      "end_frame": 808,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "wrist_cam shows the fingers releasing the carrot-shaped item at frames 801\u2013804 and the item settling beside the pink and blue animal toys by frame 807; overhead_cam confirms placement into the lavender bowl. Acquisition and transport succeed physically, but mixing a food-shaped item with animal toys contradicts the requested separation. The task is interpreted as sorting represented food versus non-food toys, since the scene uses modeled objects.",
+      "recovery": "Retrieve the carrot from the lavender bowl and place it in the separate food bowl, checking the categories of the remaining contents before continuing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The item lands inside an upright bowl without visible damage or a meaningful damage risk; the consequence is incorrect sorting.",
+      "resetability": "immediate",
+      "resetability_evidence": "The misplaced carrot remains exposed and accessible in the bowl, allowing autonomous correction without an environmental or human reset."
+    },
+    {
+      "start_frame": 960,
+      "end_frame": 1050,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach to the round orange food-shaped item, overhead_cam and wrist_cam show sustained essentially stationary positioning at frames 960, 990, 1020 and 1049, without finger closure, acquisition or further sorting progress. This extended inactivity is distinct from the preceding task-directed approach. Its cause is not visible, and it may continue beyond the supplied window; the window boundary does not establish termination.",
+      "recovery": "Reassess the orange item's pose, align the open fingers around its body, and resume acquisition and placement into the food bowl; no visible condition requires human intervention.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed sorting; no damage, spill or hazardous contact is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange item and bowls remain accessible and undisturbed by the inactivity, so the robot can resume without resetting the environment."
+    }
+  ]
+}

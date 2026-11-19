@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0155",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven is initially closed (frame 0, image and left_ego_image). After approaching its handle, the robot remains nearly stationary for a sustained interval (frames 96\u2013260, image, left_ego_image and wrist_image). It subsequently pulls the door outward and downward; frames 298\u2013303 in image and left_ego_image clearly show the open door and exposed interior. No unintended object displacement or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 96,
+      "failure": false
+    },
+    {
+      "start_frame": 96,
+      "end_frame": 261,
+      "failure": true
+    },
+    {
+      "start_frame": 261,
+      "end_frame": 304,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 96,
+      "end_frame": 261,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach, the gripper remains in essentially the same position beside the closed oven for approximately 14 seconds, without visible door movement or productive adjustment (frames 96, 150, 210 and 260, image, left_ego_image and wrist_image). This sustained stall delays opening; the images do not establish its underlying cause.",
+      "recovery": "Resume task-directed handle alignment, verify secure engagement, and pull along the door's hinge motion while monitoring clearance; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay only; the oven and surrounding objects remain unchanged, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental resetting is needed because the door remains closed and surrounding objects remain in place; the robot can continue the attempt from this state."
+    }
+  ]
+}

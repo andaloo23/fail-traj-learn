@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0382",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon is acquired and lifted from the table in frames 24\u201334 (wrist_left, wrist_right), then carried over the blue box in frames 35\u201354 (ceiling, wrist_right). The gripper opens and releases the spoon inside the box in frames 58\u201362 (wrist_right). After the gripper withdraws, frames 75\u201382 (ceiling) show the spoon resting fully inside the box. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 83,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

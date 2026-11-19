@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0470",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper approaches and gathers the cloth in frames 0\u201327, briefly raises a fold in frames 28\u201331, then withdraws without carrying it in frames 32\u201347. The cloth remains on the table through frame 69. This is a visibly unsuccessful cloth-acquisition/removal attempt, not merely an interrupted acquisition. The yellow block is not visibly identifiable beneath the cloth, so its exact state and successful uncovering cannot be confirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 32,
+      "failure": false
+    },
+    {
+      "start_frame": 32,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 32,
+      "end_frame": 70,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, the raised cloth fold settles back as the gripper moves away in frames 32\u201338; by frames 39\u201347 the gripper is clearly separate and empty. The cloth remains behind through frame 69, establishing unsuccessful acquisition or retention rather than removal. The images do not resolve whether the fold was securely pinched before it fell back.",
+      "recovery": "Return to an accessible cloth edge, align the fingers around a fold, and verify retention with a small lift before moving the cloth clear of the block; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The cloth remains on the tabletop with changed folds; no damage, hazardous displacement, or other harmful consequence is visible in right_shoulder_cam through frame 69.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains accessible on the table, allowing another grasp attempt without restoring the original folds or requiring human intervention."
+    }
+  ]
+}

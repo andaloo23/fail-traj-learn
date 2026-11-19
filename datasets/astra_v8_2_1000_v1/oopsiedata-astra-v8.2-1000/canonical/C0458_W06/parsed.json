@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0458_W06",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 1750\u20131760 show a compact nested green cup stack resting stably on the table, with both grippers clear and no visible disturbance. \u201cPack\u201d is interpreted as nesting the cups compactly; no separate packaging destination is visible or specified. This is a provisional judgment of the visible end state only: the stacking actions and any earlier failures are outside this window and cannot be verified from the prior prediction.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1761,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

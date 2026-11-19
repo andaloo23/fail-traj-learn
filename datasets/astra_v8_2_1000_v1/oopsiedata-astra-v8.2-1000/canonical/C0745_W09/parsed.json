@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W09",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image at frame 2800, the cans are in the upper blue tray and the blue bowl is in the right red tray, while the pink bowl remains on the table. The robot approaches the pink bowl through frames 2800\u20132968, acquires its rim, and moves it toward the right tray at frames 3072\u20133149. At frame 3149 the pink bowl remains held, with no completed release visible. This provisional failure label reflects unconfirmed completion, not a visibly failed attempt; no local failure is established. Earlier context is limited to frames 2798\u20132799, and later placement is outside this window.",
+  "segments": [
+    {
+      "start_frame": 2800,
+      "end_frame": 3150,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

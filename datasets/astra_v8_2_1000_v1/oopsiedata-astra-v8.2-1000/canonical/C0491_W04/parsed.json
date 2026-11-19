@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0491_W04",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, not a visibly failed attempt. In base_image frames 1050\u20131190, the right gripper acquires and lifts the upper green cup clear of the two lower cups. In frames 1200\u20131399, the left gripper approaches and lifts the left lower cup while the right gripper lowers its held cup toward the remaining cup. These controlled acquisitions and repositioning are consistent with packing the cups; no dropping, failed acquisition, or harmful contact is established. At frame 1399, handling is still underway and completed packing is not visible. Earlier context is limited to frames 1048\u20131049, and later execution is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

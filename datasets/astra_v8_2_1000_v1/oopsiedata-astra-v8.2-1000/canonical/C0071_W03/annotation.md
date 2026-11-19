@@ -1,0 +1,17 @@
+# Episode: C0071_W03
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: failure
+- Outcome evidence: In base_image, the robot carries the green can over the upper blue tray (frames 700–880), lowers and releases it into the tray (frames 890–940), and withdraws while the can remains there (frames 950–1049). This is visible task-directed progress without an established local failure. However, both bowls and the pink can remain on the table, and the right red tray remains empty at frame 1049, so the full task is not completed within this window. The label is provisional for the observed interval: completion in later execution is unconfirmed, not a visibly failed placement. Earlier context beyond the supplied boundary frames and later execution are unavailable.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 700 | 1050 | No |
+
+## Failure annotations
+
+None

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0484",
+  "language_task": "Stack all the bowls on the table into the middle bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "Frame 0 in head shows separate teal, middle blue, and orange bowls. The right arm lifts the orange bowl but releases it beside the blue bowl rather than nesting it (frames 83\u2013119, head and right_wrist). The left arm subsequently places the teal bowl into the blue bowl (frames 190\u2013214, head and left_wrist). At frame 229, head still shows the orange bowl separate while right_wrist shows another approach toward it; completion is not observed, and the earlier orange placement visibly failed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 120,
+      "failure": true
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 230,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 120,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After transporting the orange bowl toward the middle blue bowl, the right gripper opens while the orange bowl remains offset to the right (frames 101\u2013106, head and right_wrist). The orange bowl settles beside the blue bowl, and both bowls visibly rock rather than form a stack as the empty gripper withdraws (frames 107\u2013119, head). This is a failed placement after established object control, not a failed initial acquisition.",
+      "recovery": "Allow the bowls to settle, reacquire the orange bowl, center it above the middle bowl or its nested stack, and lower it until supported before releasing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The bowls rock and shift on the tabletop, but remain accessible with no visible damage, spill, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental repair or manual reset is needed; the robot can observe the settled bowl positions and reattempt placement directly."
+    }
+  ]
+}

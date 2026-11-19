@@ -1,0 +1,26 @@
+# Episode: C0454_W05
+
+## Episode annotation
+
+- Language task: put all the toys into the bowl
+- Success label: failure
+- Outcome evidence: In top and right at frames 1400, 1550 and 1749, the toys remain in the patterned cup and the green bowl remains empty. Across left, right and top, no acquisition or transfer is visible. Small left-view shifts around frames 1579-1584 do not establish a task-directed approach. This provisional window outcome shows sustained lack of progress rather than a failed grasp; completion outside the window is unconfirmed because earlier and later execution are unavailable.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1400 | 1750 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 1400-1750
+- Categories: task_not_attempted
+- Explanation: Throughout frames 1400-1749, top shows the grippers remaining away from the toys with no acquisition or transfer, corroborated by left and right. The approximately 11.7-second interval is persistently unproductive; minor left-view movement around frames 1579-1584 does not develop into discernible task progress or recovery. Context frames 1398-1399 show the same configuration, supporting continuity across the starting boundary, though the earlier onset and continuation beyond this window are unknown. No hidden cause or abnormal termination is established.
+- Recovery: Approach an accessible toy in the patterned cup, align and securely grasp it, transfer it into the green bowl, and repeat for the remaining toys; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: Frames 1400-1749 in left, right and top show no damage, object displacement or meaningful damage risk; the visible consequence is lack of task progress.
+- Resetability: immediate
+- Resetability evidence: At frame 1749 in top and right, the containers remain upright and the toys remain available, so a renewed attempt requires no environmental reset or human intervention.

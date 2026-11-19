@@ -1,0 +1,116 @@
+{
+  "id": "resp_05efb761b670210b016af91850dbc487d2ab8c7b3fd6525db7",
+  "object": "response",
+  "created_at": 1794709587,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794709601,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05efb761b670210b016af91859467c87d2a8b1389b6a70c90c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Rhikcgq4KKYBvNbn3I7SE4Hb4LSs0d3Ph4yPRMONevF_S9NIkPDye1KO45S1iG3X4TCA6Qsb7hkFET0N5ZN4Ti7WrRakmjyt6smOIywTzhyFsHFuqWHHTqBPHkzUOy--LYimSAZSUdwVLxNsqO-rkXP8NvYgZTv75YcNodRdrMlf_Q__RyUgvFAvHeShHiMy28UfwZjJhRx60Fvb5-OokF3lre-aqFUq69TgyBmrY4ByIOdVE6Qzozv4WvxDLuvBICv0-MokJ5hNe9ndeRJNisYRhQoXaHaA3YVlEUu6t3IVB8eKLrfEiz-VPU230xgUec8sGWubLj8T1ABAgNMbtYYsM_pYa7TCmIZtx1Nbz-YUhZlGKQGpBURz80knht6P9wO-7zCWNF28xyk6avw0UEnIcKdZUODtWSGp3RAXPBlS_4l1VCAiL2_4g9rcWwNdwwbdVTy-Rynte-JppRB37Q5bIvvaHdD7980vyAXNIZAWZWPv4CQdZEt4i5qu6rEP5wDviDExogCYQRPLw8jXT27tpsnKD0ZNsv652x9-RrpHOeKF8TGlkFNC-VWbIC-VkdNqZIvFfMvwMJZnzgls__ZUYInJ2xsX7JlfUesOIKIJFIkQZ-ez_OG1Ga_QryiepJlIQWEdwHzXZGnDxSay-gRJ840hyqRDlpWoZj1BMwZERnywLVe4VUn29mESwRIC0f_RTJDOUu-4xvdDvGUUOT3c54tceEDxxem8w49Q8GUvH5s1rL_T1vmWr50U_9kaOBYIDswIfJx7ESxkh3RVk_FUr25k0t_dur8X7CzG2Kjg4CC0pgJB-PVjxy3Vnv4TXD1YGbw77Ql_oQsrWEifMPpk3KzVyg3mOPZYchwa8tWc3wgCksPsZlZzf6Gft_jZfRa3f-xwMTFT3k_eLtCkn8X3vmo4FzGD1ShcxUrTf7BkTjgPV9SP_HIYEm6f4L_9tKCuRkZ7DqpPSX-XyqaXNEZtGyjymH0GyF5CU7cgbnVF_9sgmgiLg24xLEZD_hL9MSPoEFFA6wwx5w8e_xNmUj8uNKczGm8RlDR2vkcdhA7-z466eR8pj9VgyLTwUF2ZEYDXNIMusy1HTtZhK5PvPfc3d0wpIQv__3UFAY0ZdcyO-usA5JPQ0uyYe65TMY-86Ue9_d0h6ohRX57nVgD9gFl8r-vqvusgoN1yoIB7Ht4nOaesnpl0_EsjWDtImT_IyHXu0bxntkkZTW-yswTZI5IDqn3XrosL1sA8ZBic3IqSleGbqXKDOxXJkeXJdrCv6Fwsw1yxVfD_bSj3LNwUzAxZ6TB2BrI5fyW2schA4WjfFthi17DBG2WS6xSDrMc2XLRjRE9p81yvi_AKglQzHl_LurOhF8gAtzddGwDaQ9T47F6bUYf5szTJC9VELl_q036X0xJXrwsJCuCSYpYXl0_zEfgBaVjnsAd6x5dFskLMoukfZzJCVZruSAOG8CgmgBjbLTa0TkM5NY_fCoZVzDCXW-PfmWjCL-jPbt3Oaz0R1Jjk82kx05Vvjq7vbuIuCBr5feU2R9xRy9EA-stWh7o6eDHbJcmjXjmNG738KMyaBPHCiUqXB9JeK8a9gInvNgsB630Ja9UlF37-3e-2p7-hDCTu4xR3kSL_FTZju2oz8PkXa84FDWKoHJ9cZzV4DRf-sievInlYTYQOxCYIOFCpOgJLD6rMGRQpGvzfNdpna-SM6nsbNfExrB2VN2k08AC-QJkfpF4byNZPMJpJbQterKuiGvRdhU899XILDWHDpPeV3OIlLmDN_FCUV1WJ1Na_gEBkbWK6Z5l-QzGW8lV5WYvE2sGHbYcdwoKksThPGrJPEFlSTQGSK-t2ckLQOkmK93PzaTp1J-O9Mo9mKJ3ihtj9by4kxVxy8FXGka5iBlm7rfFTU3DZmuNzzctvGACWVh7yO8h1IkQuCF_3DC9Pr8vaBp9yATNE_0zJQkTvVFWTamKa4359-QpxQ_RQa_KJVSQRn0oBTpdCklpQAVDMbv9RPGwfAu10dp54cJeIPG7Wb1zGSxHYUApLWAzOdeP_oPROOOBEfeUI4tHlqREYtbIgyKzLyUSmHzVbCWx_RIaNa8tmI189PnGhhthxWiegYcXZtqGKF1_e8CvNdmip-Plah9s98GoB4948fa2zBTtFNmkcJELqkcRgo6CnazrCThMEAqLn-QzXEU2uKJcTeMoQpBCjPI7n4BE65SfupJ0dOyq_Xvxxy30Gjd1txfe7NulhoyOWxSW9rvbHkZP5YFMc-zkjREWiXXWTHduFOqrOtW-wLZNufowRnDrJ4FYbERckEYFT7AqveKW1PiZDzM1B0_aRAT1GlJYt4BvNx4vToM31lVdN6yVwj-MlqEMsTiABDclhLina31ob9i02wA70ElrFLvxH7uMR1Z4s-rKL48AWYuDXCL_DplS-cmJlvosaOoANoN0yNa2y9U5BbFJrd7dga6G4x26YKL8ERyjPHWJKbW0Le3t9tFBBFhIQGOIi4j9OGqGo1SWg4XNQPyj4OBvjn-hWBpHHm6fd2O8VXRnlauWWZZ3wHGBjkeqySNBCVVvjfl9bzcyXFfh8Zi0r6XFrs_WVngtc_o7t7K3-bEL4aiHTNq4b4FZVg4GavAZdTlj1sp0Us_iZ6UBIBVzgpGYTQbJLvrqsFd6bx2Ye1mSRA3ad8imuNm-tcGAsuR0XmUrJnNaxlDO28-4i9oOVJG9kO7VdcuzaoSYkZp8gxuN7vFIKgr8WGUZoInFjcKGH7b5CloGjLMS5KHlPTJswbk0fBwUYeFXI53bVaghh2YSihOtXv3RkKRwnY8_P0QNq1FIln30BIQ7uEjeZms9sXkruYZEx0zaPmWU7VXPGA7OVShewXLIV5QQfp0qIiTTlaY4pI8Het5vYj5TxrBn6FpycSlDxv3haBQwHA8S-tPbxI6kcOeOZ-KqDsNU3XUcos1nMqE-Msu64KMKtvu2wA1v4rkf4RqKPIyBVnon3tkuH7GJ-L087AnvlEVYiOqaux1Z4zV0lDAaLxEWgAua_gBk0Mmykk-ldMxgRtvLEikF6PE59LxG8jNP7Blm7MrtpP2sxX6IMCzpUphqbZ6kCnht5KPr7aj0jc72sfNj7Bt9fjOmN2EQ_kgRcNlzzCDpVMYuV3mus7BMFD5NEs2xX0CY6ws62goOk0_kZai9xkqzv8DF3FUIVOmPq3z8MTsjnyvuZgrDewOSz9GcAWMDEaT7YbniLiJsoZiOopM=",
+      "summary": []
+    },
+    {
+      "id": "msg_05efb761b670210b016af9185c344c87d2abcca228379bd3eb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0516\n\n## Episode annotation\n\n- Language task: Seperate the food and the toys into the two bowls.\n- Success label: success but suboptimal\n- Outcome evidence: The robot sorts the brown food-shaped object, carrot and orange into the green bowl, and the blue and pink animal toys into the purple bowl. wrist_cam shows both toys together at frame 443 and all three food objects together at frames 737\u2013739; overhead_cam confirms the cleared tabletop and occupied bowls through frame 752. All acquisitions and placements succeed, but the carrot transfer includes a large excursion away from the bowls before returning (frames 549\u2013608, overhead_cam and wrist_cam).\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 549 | No |\n| 549 | 588 | Yes |\n| 588 | 753 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 549-588\n- Categories: other\n- Explanation: While securely holding the carrot, the robot moves outward and high away from the nearby green bowl rather than progressing toward placement (overhead_cam, frames 549\u2013580). wrist_cam shows the tabletop giving way to views of the surrounding room while the carrot remains held (frames 560\u2013587). This extended transfer detour is unproductive; the subsequent return toward the table leads to successful placement at frames 619\u2013623. No hidden cause is established.\n- Recovery: Bring the held carrot back along a clear, controlled path, align above the green bowl and lower it for release; human intervention is not needed.\n- Severity: low\n- Severity evidence: The carrot remains held throughout the excursion, with no visible collision, damage or dropped object in either camera.\n- Resetability: immediate\n- Resetability evidence: The bowls and other objects remain in valid positions and the carrot is still grasped, so placement can resume without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 91651,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 532,
+    "output_tokens_details": {
+      "reasoning_tokens": 124
+    },
+    "total_tokens": 92183
+  },
+  "user": null,
+  "metadata": {}
+}

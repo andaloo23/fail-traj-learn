@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0418",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the cloth initially covers the block (frame 0). The gripper closes on the cloth (frames 42\u201344) and pulls it rightward (frames 45\u201362), progressively exposing the yellow block. By frame 63, the block is fully uncovered and visibly separate from the cloth. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 64,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,109 @@
+{
+  "id": "resp_0913d72fd4b3882d016af9200d90e487d289d5acefdcacfd6a",
+  "object": "response",
+  "created_at": 1794711565,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711570,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0913d72fd4b3882d016af9200f665c87d29c358d0e04d4c217",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0656\n\n## Episode annotation\n\n- Language task: put the corn in the pot\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the robot lifts the corn in frames 32\u201340 and transports it toward the pot in frames 50\u201369, but releases it outside the pot at frame 70. The corn lands on the tabletop and remains there through frame 78 while the pot is empty. This is a visibly failed placement, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 70 | No |\n| 70 | 79 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 70-79\n- Categories: manipulation\n- Explanation: In right_shoulder_cam, the previously held corn is released at frame 70 near the pot's front-right edge and falls onto the tabletop rather than into the pot. Frames 71\u201378 show it settling and remaining outside the empty pot, with no corrective acquisition.\n- Recovery: Reacquire the corn from the tabletop, align it fully over the pot opening, and lower it before releasing; no human intervention appears necessary.\n- Severity: low\n- Severity evidence: The corn falls a short distance onto the tabletop; no damage or disturbance of unrelated objects is visible in right_shoulder_cam frames 70\u201378.\n- Resetability: immediate\n- Resetability evidence: The corn remains accessible on the tabletop and the pot stays upright and usable, allowing another attempt without environmental intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8820,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 329,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9149
+  },
+  "user": null,
+  "metadata": {}
+}

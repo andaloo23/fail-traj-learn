@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0619",
+  "language_task": "Place the yellow block next to the blue rectangle.",
+  "success_label": "success",
+  "outcome_evidence": "Frames 0\u201361 in wrist_cam show the yellow block between the gripper fingers during positioning. The fingers open in frames 62\u201370, and the arm withdraws in frames 72\u2013100. Frames 80\u2013100 and 240 in left_base_cam and right_base_cam show the released yellow block standing on the table beside the blue rectangle; wrist_cam also shows their neighboring positions after withdrawal. The placement remains stable through frame 240, with no visible failed attempt or unintended disturbance of other objects.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

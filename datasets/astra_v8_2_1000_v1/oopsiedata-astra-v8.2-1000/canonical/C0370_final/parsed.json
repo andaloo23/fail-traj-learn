@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0370",
+  "language_task": "Stack the green cup into the purple cup.",
+  "success_label": "success",
+  "outcome_evidence": "In exterior_cam, the cups begin separate at frame 0. The robot acquires and lifts the green cup at frames 48\u201360, carries it toward the purple cup at frames 61\u201379, and lowers it into the purple cup at frames 80\u2013119. After release and withdrawal at frames 127\u2013145, the green cup remains visibly nested in the upright purple cup through frame 149. No failed acquisition, harmful collision, or other side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 150,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

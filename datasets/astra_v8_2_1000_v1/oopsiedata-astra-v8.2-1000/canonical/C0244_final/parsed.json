@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0244",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in image and left_ego_image. The robot progressively approaches the door area through frames 35\u2013135; wrist_image shows the door edge close to the gripper at frames 136\u2013165. At frame 165, image and left_ego_image still show the door projecting outward rather than closed against the oven. Completion is therefore unconfirmed in the observed episode; the images show an unfinished closing attempt, not a clearly completed failed acquisition, loss of control, or other distinct local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 166,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

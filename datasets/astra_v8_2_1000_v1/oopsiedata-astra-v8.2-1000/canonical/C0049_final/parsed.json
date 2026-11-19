@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0049",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open initially (frame 0, image and left_ego_image). The robot approaches its handle, but spends a sustained interval nearly stationary beside the open door (frames 77\u2013227, all three cameras). Later movements and slight door motion do not produce closure: the door still projects outward at frame 399 in image, with its inner surface visible in wrist_image. Completion is visibly absent, although the final ongoing attempt is not established as a completed failed acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 77,
+      "failure": false
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 228,
+      "failure": true
+    },
+    {
+      "start_frame": 228,
+      "end_frame": 400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 77,
+      "end_frame": 228,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach, the gripper remains almost stationary beside the door handle for approximately 12.6 seconds without appreciable closing progress (frames 77, 120, 180 and 227, image and left_ego_image; wrist_image shows the largely unchanged finger-to-handle arrangement). This is sustained unproductive stalling rather than a brief alignment pause; the images do not establish its underlying cause or a secure grasp.",
+      "recovery": "Reassess the handle alignment, establish a secure grasp or supported contact, and move the door along its closing arc while monitoring clearance and door motion. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The door remains open and task progress is delayed; no damage, displaced unrelated objects or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in a usable state, so the robot can reposition and resume without an environmental reset or human assistance."
+    }
+  ]
+}

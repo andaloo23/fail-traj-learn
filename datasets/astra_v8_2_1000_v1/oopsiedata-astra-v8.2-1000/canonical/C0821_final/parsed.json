@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0821",
+  "language_task": "pick up the bottle",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In zed, the gripper approaches the bottle in frames 0\u201366, closes around it, and carries it away from the round tray in frames 80\u2013121 while the bottle stays fixed relative to the gripper. However, pale granular contents stream from the open neck and scatter across the tray in frames 90\u2013138. Frames 149\u2013157 show the bottle returned toward the tray and the fingers opening. The tactile panel changes during acquisition around frames 67\u201369 and release around frames 149\u2013151.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 90,
+      "failure": false
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 139,
+      "failure": true
+    },
+    {
+      "start_frame": 139,
+      "end_frame": 158,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 90,
+      "end_frame": 139,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "While the bottle remains held, pale grains begin appearing at its open neck around frame 90 in zed, followed by a sustained stream in frames 100\u2013127 and a growing scatter on the tray in frames 128\u2013138. The handling spills contents rather than simply picking up and retaining the bottle; no loss of the bottle itself is visible.",
+      "recovery": "Stop the spilling motion and orient the held bottle with its opening upward before further transport, then place it securely on a stable surface. Human assistance may be needed to collect the spilled grains and refill the bottle.",
+      "severity": "medium",
+      "severity_evidence": "zed frames 128\u2013157 show substantial granular spillage requiring cleanup, but no visible breakage or damage; the visible spill is largely contained by the tray.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Collecting the grains from the accessible tray and restoring the bottle contents is a straightforward reset; no repair or difficult retrieval is visibly required."
+    }
+  ]
+}

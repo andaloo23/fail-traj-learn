@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0837",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the purple cube in frames 15\u201329 and closes around it in frames 32\u201336. In frames 40\u201344, it lifts and carries the cube toward the right, leaving the cube\u2019s original tabletop position empty. The subsequent motion occurs partly outside the view near the box, so final placement is not confirmed, but placement is not required by the task. The gripper returns open in frames 77\u2013100; no failed acquisition, dropped cube, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0974",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The spoon is acquired and lifted in frames 75\u2013110 (image, left_ego_image, wrist_image), but the first release at frames 191\u2013198 leaves it on the tabletop outside the drawer. The robot reacquires it at frames 291\u2013313, displacing the adjacent orange object during acquisition. Frames 361\u2013367 show the spoon released into and resting inside the open drawer (image, wrist_image); it remains there through frame 399 (image).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 191,
+      "failure": false
+    },
+    {
+      "start_frame": 191,
+      "end_frame": 199,
+      "failure": true
+    },
+    {
+      "start_frame": 199,
+      "end_frame": 281,
+      "failure": false
+    },
+    {
+      "start_frame": 281,
+      "end_frame": 294,
+      "failure": true
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 191,
+      "end_frame": 199,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After transporting the held spoon to the drawer, the robot opens its gripper outside the drawer at frames 191\u2013192 (wrist_image). The spoon falls onto the tabletop and settles beside the orange object by frames 197\u2013198 (image, left_ego_image), so this placement does not accomplish the task.",
+      "recovery": "Reacquire the spoon, position it fully over the drawer interior, and lower it before releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon lands on the table and remains accessible; no breakage or meaningful damage is visible in frames 198\u2013200.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains within the robot's workspace and can be picked up again without environmental repair or human resetting."
+    },
+    {
+      "start_frame": 281,
+      "end_frame": 294,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "During the second spoon acquisition, the gripper pushes and rolls the adjacent orange object away from its previous position at frames 281\u2013293 (wrist_image, corroborated by image and left_ego_image). This is unintended movement of an unrelated object, despite the spoon acquisition subsequently succeeding.",
+      "recovery": "Use a spoon-grasp approach that clears the orange object; restore the displaced object if its original arrangement is required, with human assistance only if autonomous replacement cannot be performed safely.",
+      "severity": "low",
+      "severity_evidence": "The orange object is displaced on the tabletop but remains intact and on the working surface; no meaningful damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the orange object to its previous position is a straightforward minor repositioning; no repair or difficult retrieval is required."
+    }
+  ]
+}

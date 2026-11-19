@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0677",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the green can is released into the upper blue tray by frames 153\u2013160, and the red can is placed beside it by frames 254\u2013264. The blue bowl is released into the right red tray by frames 333\u2013345; the pink bowl is subsequently released and settles with it by frames 424\u2013437. Frames 480\u2013488 show both cans in the upper tray and both bowls in the right tray, with the gripper withdrawn and the remaining tabletop cleared. No failed acquisition, harmful collision, or other unintended side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 489,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

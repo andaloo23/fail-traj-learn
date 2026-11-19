@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0881",
+  "language_task": "Pick green block and place on cardboard.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In exterior_cam, the robot acquires the green block and carries it away from its original position (frames 85\u2013113). It then makes an extended detour to the left of the cardboard before returning (frames 118\u2013289). At frames 333\u2013339, the gripper withdraws upward and the green block remains on the far end of the cardboard, supporting completed placement. No damage or unrelated-object disturbance is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 118,
+      "failure": false
+    },
+    {
+      "start_frame": 118,
+      "end_frame": 256,
+      "failure": true
+    },
+    {
+      "start_frame": 256,
+      "end_frame": 340,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 118,
+      "end_frame": 256,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After bringing the held green block near the cardboard at frames 110\u2013117, the robot carries it away toward the foreground and left, then repeatedly changes its height and orientation beside the cardboard rather than placing it (exterior_cam, frames 118\u2013255). The extended off-target transport does not advance placement; the block remains retained, with no visible drop. A sustained return toward the placement area begins at approximately frame 256.",
+      "recovery": "Retain the block securely, align it above the cardboard with a direct clearance-preserving motion, lower it onto the surface, and release before withdrawing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed placement; exterior_cam shows no dropped block, damage, or unwanted collision during frames 118\u2013255.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block remains in the gripper and the cardboard remains available, so placement can be resumed without resetting the environment or requiring human intervention."
+    }
+  ]
+}

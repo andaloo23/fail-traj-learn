@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0250",
+  "language_task": "push the button",
+  "success_label": "failure",
+  "outcome_evidence": "In left and wrist, frames 0\u201360 show the robot approaching and aligning with the yellow button. Frames 65\u201371 show a fingertip overlapping the button\u2019s edge in wrist, followed by withdrawal in frames 73\u201385. The robot approaches again in frames 110\u2013142 and partially withdraws in frames 145\u2013158. Neither view clearly establishes button depression or another visible actuation response. Completion is therefore unconfirmed, rather than a definitively demonstrated failed press; the images do not establish a local failure or harmful side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 159,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

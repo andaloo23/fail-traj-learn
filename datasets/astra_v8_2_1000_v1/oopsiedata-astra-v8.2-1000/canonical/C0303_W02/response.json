@@ -1,0 +1,116 @@
+{
+  "id": "resp_0831859bdac8d47e016afbbf3ddfa087d29ef440e6b277d8df",
+  "object": "response",
+  "created_at": 1794883391,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794883403,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0831859bdac8d47e016afbbf48679c87d2ac26c5a2d96e22d3",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-79MQx-dsbjtycsIfqQvrgKkic2K7Vf6ixXtaxJvTzoN9IGRb6zv5M1elSc3KXoo0cHnEGJjZnNtb0Jhaw8hDEv456KezHDJ7_tbEnpjWBc9SN5qxNXRYCyRUPjCKMvKFYrdwxeWQ2isOC0BZ3krzRRILGGtZ5C08_ANi6W16HUP8kDMHl8ThnsUt9SR-Vdx3_H_HAUyDq2YXodK2P7APjTpGKBqYLZI5IGsJ9jC45r_6BrCwDD3w2WeoxMkXEF5AJHw_R_M5OMEZjZmA-c7TBl9oHe94u37LL2FyhIvms5C_3TtVokcMiKKWqzKXddMOCmn-2dIX9CDHR4kDMqge-nUV2QtY8haGs5xuDQMMIhL4yanjH_yUh2bMSP9VFnVi8M2nJpH7bWA_pmj8dwp1cJZFuf8G_tDMrVlVWTb8f79yVPdZi7WmheBHgkOOFgcUVEm4p0v4V3ecj5ATui7jXRWEwfpX1RkdKL0IT3-ZxGV0Vf5BE5RdSADTBF3_WwVYmEJO1PTkxNm3dPTL4bKFPl8vdd3IJmDnilzOqaED2xUz95DY9XXbeAi_17oXE44KQfmLChxtyLNwsoZxuYQEbCM7lg7VHEKmk2F3_C8O8kEaQFZtmIOcwFRi1VYIlhdKe9zqYeK6f_TCB2h5nnGuvLBSlwENYsiJToWWCv3KFXQAydUu8DBvqve3jQvS3hvxPWLxw5AHTE_QPVNg_ZoXxyNUbCZp6OuEZuZIMnEVB0fgVy74UhlzG8STx0VSZbtJwncRgssDRqU18br5xLgU0uh8xfaGKqTfPPTMlN_1kVn3BWaeoXd-2eLL-3-lZ8Fso8w8h2kzL9R-vw1IDMkV8kpscoGdJkrgl318wWTwdzvjn172hAW-WXaKRJCZwDJYA6v7x1vHQJgZYiO-4ETVhEgffRwvdsxXNeuwQbZEXpnSKccBejw_o1S2oHMvZXPNL0x3tW39GgkSUXCEdym7HJaQKBkJ61xETvvpAyEoSqA3NOpAV6SGJuePmRbR-67HJg_O25H_7lenw7tV67vR6E9DaSUYVwUyqQWdi0qd10Y4vXtAP0oPNMortWwgSkf1LQKOndUIQySh_iDalKn8BNGuMVVmt21RbugMGkX0e6Z8lKdt0klzNIQBFmKYjnvZEQ0I9HF6wEV-T2CCb1aN0ESJ99MUlMkbySaCke5faljSPd7i9pewZVFAPBFkJXCXXjuxER4ghtRYs6tLIT17dfjgjPfdpvxc60EslB82o15i3TBjtLDpYDBZqbEzCwDxDxc0OxwV6So2PKVptU1pbBdgKWwTib0UrYSW3_icIQUBt2pJWRfmFvEed3DDxziQxScmmAY-EmY7MgWl-FMxqjWmcWiOQRuNTvL2raI3zIV5i4xCZchIZekKLOH9qzgz5OPSWxH-IXX3G8PqtXZ0Gyqma6FMHe4WUdHcjoFWzOxgym2d-6Yh3J9Ia2cGqfrMk5F60N5UtxLChrKz75-Pp9hHaAWtTNuFcfrlcOCHJvDk_za_CKf4vxfLr-TtRSSg_3j0LCEjw98g-UO3co49xYoM50osEtRsXPtkO5VLutKWHkhZ4bQpbGCAoWBftUGP1-gLo6XTkx58Q0Qa2ovXALRJrcQBFSP7gpAA23T1lK7rZOFL_Iwt_TDRLo9lSfI4NAbTcifN4ftF8NOg_AoeOXm2azBsvbeRDF3-hL77e2zB0uvE65TCXHGfXxi0LcVSKHjYcw2OFXfzbFVl0wxmTdEyXbBLalOb7FldSzrSg9Jje25ZlK4fTRI8RkhUQn3KI8bvVcu3ZFqhitjrUB5QfNKdJwP7QmcSCyRkTg6-3HXYS0x-laj8kHneGFacRY_nfcCaCwFpW8njoyKxg7D6j1K8AKK0PlEho8YV92iNe3dettbS7O-rH4ZeQwDPnLl-9PILYrO-28CHgGH_kcXmO5PM8nsq-Nme8btz69nnN1hkhfaD3lehlARaGYKr77XURSL3mpE4XGi44Q7AW5pjvPXsSBg0exxBfdy9DcPO9BX0zWSdE72MiBbDbLGwWhfbGCMInAlx2R68sTpggbirxeqVzb8z4lq2ZKoQtCLbnSjkAy1a-WGD-1A4LoOBnzrv8MBGcm1wYTivAQndXXzl9sjP3pQSHTjTAof3FwskLuAT_FXICt4DFasIUeVxXTMV_HeDCTCQluYNXzV89aXR1X0gLYiic6YH-sI-i0iycCGlAmEZ4az9XphJIGFxKr6xm0IssRGYo8_o-RbP_EyOvbnKwXNAGk6zEQpI-wqdBTiPTAyYvbWBLgPceGR1-SL8yD7YSTbENKlswOlMNrfIyCx2tdUtlsZI5_3wAlRKybFA6SSFT6neEk2-z-frPst85cYh_GFs2MneIqdsz5tPgRIpL4NIZ4ILysiLRD15StZy4oZupWRIHPlZbGVldKOBdrSMASgkteccDB-pt9769Zmz5lweCc_VBi1zIxakZgU0qGB5Z0kBAWYJo-MaxAaouohE-gwFSS-Fr-Uf4BoR3RI5FB6QXSiHJwu8UrmUgSV_y9wGZ4qJCmzbCTdt_X33IW7eloVihd7ZjHSGGovg2siJOAsSmXjSBI3wNXP0FZH6W-7eDIPjBqSiES5ig4Y1Ht3oEZRNqgsfOC-c58Sr6RTwnqVc-JW3_ZSePcWORGNewj-e6jwJj6YDZQFJ-Qb4DX7aTutjUtoKPfdkPpuQadU__BeX1bQijfGglJRwPPTuV6IJfhmCpIUyjqbmpAzg3VHgMwt0uj1-jw7o2XPEU7_SjLtcJ-h9DU9gsl1iPC0qj85KdM_0wOBTAvsLw5i4mmcJIerkbOlE6CByKhzaGAQ6A==",
+      "summary": []
+    },
+    {
+      "id": "msg_0831859bdac8d47e016afbbf49116c87d2be1c321b3bf5ed88",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0303_W02\n\n## Episode annotation\n\n- Language task: unfold the towel\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window: the towel starts folded at frame 350 in top and right and remains layered rather than fully unfolded at frames 675 and 699 in right and top. The robot approaches the towel at frames 460\u2013500, gathers and lifts fabric at frames 520\u2013550, and repositions it through frame 663, visible in left, right and top. These actions establish a task-directed attempt but not a clearly failed acquisition or manipulation; releasing and repositioning the fabric does not alone establish failure. The outcome is provisional because later context and earlier context beyond frames 348\u2013349 are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 700 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63389,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 226,
+    "output_tokens_details": {
+      "reasoning_tokens": 29
+    },
+    "total_tokens": 63615
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,27 @@
+# Episode: C0916
+
+## Episode annotation
+
+- Language task: Put the spoon in the drawer.
+- Success label: failure
+- Outcome evidence: The spoon remains on the tabletop throughout the episode, including frames 0, 80, and 158 in image and left_ego_image. The robot approaches the object cluster but then moves toward the table edge without the spoon; no acquisition or drawer placement is visible. This is an observed unsuccessful reach, not merely an occluded or unconfirmed placement.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 54 | No |
+| 54 | 159 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 54-159
+- Categories: reaching
+- Explanation: Starting at frame 54, the gripper moves past the spoon toward the near table edge rather than aligning with it, as seen in left_ego_image. Frames 68, 85, and 100 show increasing separation from the spoon, which remains stationary. Through frame 158, image and left_ego_image show no spoon acquisition or renewed approach; wrist_image shows the gripper over the table-edge region rather than enclosing the spoon. No contact with the spoon is established.
+- Recovery: Move back to a clear position above the tabletop, relocate the spoon using the available views, and align the open fingers around its handle before descending and grasping; verify possession before transferring it into the drawer. No human intervention is visibly required.
+- Severity: low
+- Severity evidence: The spoon and surrounding objects remain on the tabletop, with no visible damage or meaningful damage risk established; the consequence is lack of task progress.
+- Resetability: immediate
+- Resetability evidence: The spoon remains accessible in its original tabletop location, so another approach can be attempted without an environmental reset or human intervention.

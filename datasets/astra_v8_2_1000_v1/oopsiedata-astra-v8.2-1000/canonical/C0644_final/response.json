@@ -1,0 +1,116 @@
+{
+  "id": "resp_003b656470231ba1016af91f35af3087d284f0264fe46c3d7a",
+  "object": "response",
+  "created_at": 1794711349,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711354,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_003b656470231ba1016af91f373ef487d2874a4fe16148b481",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R8782hZ5aajjaR5ii6vV4j0Gu0p0Mpuy8VWPEC0PXso5Zwx-ZQIDOGgeVPLOhJu9W2TLxjF6lgRxND_sWE8VrgXqMcuK-ij3I2Ae-BBzuRlPges-aRiqK9D5IMtQf5PH0Z0boPh3KvXRBlXCBx_1Z-RRC-w4aJQ7A-Hq5Hqg3gOCccUe4VHrjaA_drSC_I9-aj-OVrt9pSeYdY4yHtmC3Nf30eS5xYbUUAC--6ZzF3hPtdtirnGMehXvE9SbSod_0ncaeGUzQGm8ipw7DK8aA-mYTfhrvBCvtDYVpvDEl5QJjPoJXfU0n7aWRuBA1GOWzzDyQwNFcpeJT1VSZj97arEkUgNTfvCgHLXCfeb8N3-U_t7qm23ySEi4IJ5G3G5nffUgIOrhjLrT2MHFbkkPL4yjDv8d1UR2nKvW_FnNbIYq6CamfbM_bu_rB9Cb-eq5PGLGf7lBfUSteUsf9sv2iXIHWUt_t1NZW330bmofTCi3ldZZ2LJ_KQ-VbQsg6esiIhlH_8OvUKL9Yt8QItulGvN5NShV7UBCeW2JCVtrz0zNfQ_9l2T1lQKtn3LjxMDbxFfYOJ4zuhpmEj2KdwmtkYgd-Ru1JfBtdrilhd_wqm_9x4_aUk2dl4UjAiyqcJUuSZsvrputSWX9XsWMCwk5Umfsu8xgyDBVr4ysavEt1Qizgsh_Xaa1rLJ0wxpHHO_7vBuryIA-3k81UzpKMQBV0Y2rksNwdSpCnHndB8Z3dBAynr20Z56HDMhRwpGec2IuOiM_EWsulV41S1BpAN7NqWwsKUQ5Iovo2UZ2t5vsQ_ui4IxlakoHPqC1tSYUbMT4-gLFq5rmUvL8CXSqU6uokVadARRc28UqKZD9MQiGAgIrcFQEpCc0kN4v4vLh82fUbZCysKO6t_lmqFXqhqhj-0yXPlHcpkamjXM22beQP1N6BUoid52OqABoMMfZis488hXk5pw4817o1enQE-MZL6g0_U-IAeTUE51Uj6socZeHY5xILLIyrO8-2ChdyResIfg0ACxS2ToZ86TO45HKo3R6ciJXFk9uWKsj0uZ348oGy_dn-_0uL8jMHUYmmGwN8vKF0LgmF3Xf9dqgmlUZBJb257osQNArqrn2-zMzzarbbRYd8nupaZyBp1Sz9cQbnHiptKEWrO3XVV9Q1S49_k_LKpYd3r-Gwzpuhi49_mBMpKoN0W6sFc-UpjbW13wtSUIJ6IfdE-htbXggVe24zChhAuh8S3vGESYFYLVnvNfe4zxpUWhb-fv9A0PoaNGKgcFFMRols8lhqmQWBmBg5fpJXFn3uePE4ld6UNTqeDdPwCWKXJ4fbJzBz_5LBQOw_YiLDJcSV7i15ExfmMYdIQ9qUXq_1i2j9H5Lvd-5oK3kr0sKRGh-ULBRlJImLwjlCLFMOXUGSu-XPV4eQmxuOsK4pxgNmK12xOZQHfmQPE-xjdM-Og2ocro-IzFETaHgtVcmGNhOg8oY6tRCq25Rb1Y0-YoJBRcP3IjsVE3rBMA1-qJiitqIeNpNDq6joO6BOlsb3IXPav3WthlB8GLx82XtDXYlPmYLaXGAiaWi_nRf_MfJlcBkFmF4RfwRD6DTSke3O7inoT5xU6QfG87pF6jyzkmJdnQM_fFtxHCweEA9Kxc4G6yHk1ZEwnCTApFzLJSV9jNDp_4ZwDxPc5ZcpQFf6_1hTa3yf1CjCkaa14w1EgSlWxEHuRHaIX4-RQbirTJpKXWo1kEeTi7ahs3uImCrqeb-N_GBjsd1s9JRIiAOu-mJlBUFILh1bDEXG6j2d_yZfs0z4P3JVrsyAnbSZw2cppgt8GX3exR9mNrXEgRezzMmt7KBVzYTclr1iBA81qx_kh1lceIygt0276Y8HV2YpKMRZIfswnnGDgzXbQfLD-FrbMIH5nVb7yVWKa8nH7pOJlGj2KoTr84rXhJX2nD63uObpPloKSfIg_hFpCLWL7YNY3LOol3VP05Mcm-_D9cZPBF-nGSDc3qS4FlrA_4mYkF_iSSfzQ3Em0kfrGM2H6j1MbZIihBZ_cn9Fpxr3C__79x4qivKtZ74HMRigRKyFvjJF3mLbj_iHy67neTNrce1XEWQxiYOFAkc_O8G9dOU1mO5SqFl91wyzqmTwlXkSEyfV7Y4F1Eb24NUtkes_FepVA0jcP1D_4EM8LdSSZpubO5IQ6iGZ_w_1UDRb2GUM1SGQzP_G4XPWvx2lV8MLKxhuRBY8E9Ce--Ds3QYZ_jnLbAqMa6_MRbkPywRVbgmUGQdx7_4m1u4BB2VC_Dc6DCOt4y5ty4sQKe8HzBSOwUitP0cGVKs8Sh9qBQKNlnhk32JCCLUaS0E9Fh50TOEjKfVSBE3R-Neslgl9IQdr5V",
+      "summary": []
+    },
+    {
+      "id": "msg_003b656470231ba1016af91f39114087d29a87b10c16ec18c9",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0644\n\n## Episode annotation\n\n- Language task: set the mushroom on the green cloth\n- Success label: success\n- Outcome evidence: In right_shoulder_cam, the mushroom initially lies on the bare tabletop beside the green cloth (frame 0). The robot closes its gripper around it (frames 14\u201320), lifts and carries it toward the cloth (frames 34\u201357), and releases it onto the cloth, with the gripper visibly separated above it (frame 58). No failed acquisition, harmful collision, or unintended scene disturbance is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 59 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 7101,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 214,
+    "output_tokens_details": {
+      "reasoning_tokens": 56
+    },
+    "total_tokens": 7315
+  },
+  "user": null,
+  "metadata": {}
+}

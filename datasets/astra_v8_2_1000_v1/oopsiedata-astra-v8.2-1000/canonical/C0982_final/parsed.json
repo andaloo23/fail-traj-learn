@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0982",
+  "language_task": "align one of the two cubes to the top right corner of the box",
+  "success_label": "failure",
+  "outcome_evidence": "The top camera at frames 0, 350, 700, 1050, 1400, 1750 and 1999 shows the cubes remaining in their initial positions and both grippers outside the box. The left and right cameras likewise show no discernible cube acquisition or repositioning. Completed corner alignment is unconfirmed; the visible failure is sustained lack of a task attempt, not a failed grasp or placement. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across approximately 66.6 seconds, neither gripper makes a discernible task-directed approach or manipulates a cube. The top camera shows the same undisturbed cube arrangement at frames 0, 350, 700, 1050, 1400, 1750 and 1999; left and right show no corresponding acquisition or alignment action. This is one continuous period without task progress, rather than separate failures at window boundaries. Its underlying cause is not visible.",
+      "recovery": "Identify the intended top-right corner, select an accessible cube, approach and reposition it with clearance from the box walls, and verify its alignment; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress; no collision, object disturbance or damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cubes and box remain undisturbed and available for an attempt, so no environmental reset or human intervention is visibly needed."
+    }
+  ]
+}

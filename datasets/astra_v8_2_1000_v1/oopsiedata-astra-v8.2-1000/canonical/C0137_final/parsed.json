@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0137",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches the mushroom at frames 0\u201318, grasps and lifts it at frames 19\u201326, and carries it toward the green cloth at frames 27\u201338. Subsequent movements adjust its placement above the cloth. At frame 69, the mushroom has rotated down out of the gripping pose and rests on the green cloth beneath the gripper. No failed acquisition, harmful collision, or disturbance of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0513",
+  "language_task": "pick up the corn",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the corn is on the tabletop at frame 0; the gripper approaches it in frames 17\u201331 and closes near its middle in frames 32\u201336, slightly changing its orientation. Frames 37\u201349 do not show a clear lift off the table or transport with the gripper. Completion is therefore unconfirmed, rather than a visibly failed acquisition: the robot does not withdraw empty or visibly drop the corn. No local failure is established by the brief final hold or the recording ending.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 50,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

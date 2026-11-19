@@ -1,0 +1,109 @@
+{
+  "id": "resp_04a72e5647ed92a2016afbb8ef1ea487d1befd35b0b9034c0a",
+  "object": "response",
+  "created_at": 1794881777,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881788,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_04a72e5647ed92a2016afbb8f9b63087d1a32c52316b2cf773",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0094_W02\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window, rather than visibly failed. Frames 350\u2013480 in aria and left_wrist show small alignment adjustments around the cup; frames 481\u2013560 show the left gripper closing and lifting the cup. Frames 570\u2013675 in aria, left_wrist and right_wrist show the arms converging for handover, with the receiving gripper closing around the cup. At frames 694\u2013699 the left gripper opens while the cup remains at the receiving gripper, consistent with transfer. The saucer remains separate, visible in aria and left_wrist; placement is not observed. No failed acquisition, drop, or harmful side effect is established. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so this outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 700 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 74363,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 74607
+  },
+  "user": null,
+  "metadata": {}
+}

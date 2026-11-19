@@ -1,0 +1,116 @@
+{
+  "id": "resp_08966327624ccb9d016af8f6f87cb087d28987bb493c06b8c8",
+  "object": "response",
+  "created_at": 1794701048,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794701053,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_08966327624ccb9d016af8f6fa825887d28137d9a50e99c3ca",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Pb-36ZmiL4yciBmnAyGBoWZ6jv03_dwjR3GvnvcQ9oXOHwmm-rh1CMUQaspusbUwFee0H9bQpx_mW3iekFipKbcG2LMqUOop8ardrsTPaIkbLOaMZpeFtQOXazOimBtfJYDH4R6ii1vhE2nZWfFZLoe1NvrsfaNtqC1s24JsG_yUIpKsUod9xhQetfg3vsXJdGWN1lCVt9vBgDodevbJxHhBHuujczivYDDPqzESUgED8V51h0qHzAhdqTmvZrPdUFOkJv-hnpkRTpxyXQliPZWU9mUAVgNT5_LvD7z2Z7do-BzEtbbrfTUY_6LpRLQUbnc57anji-drzRTElEVLCDErkrMiIuIWcFZzP0uaJKUIM0yl7DPCTDm9y1Ad7C0q9taPmnt1-na7bfXpIDelOI1yMkFSzcCsicRsTgc6H1cy8-57Yb53qgF2VIcbF7nFThgr1PF8yIRaLgQTnYXvxf9kcMhC0CkrGVXFTdp4UCiGUr2rRelHmXUd0x0LoOaKtbM9xK_GcipeCq75kpgftHjULxwg4lhVs8sgjUm3KcLmQj7HpS3HVtZ93MwRjqapW1YJ6nn5b7VORBrhC2JNTJRkEYTtlOxM2wW3jGQ--BDvw_HTdGC5E3xE5cjMi4vHCdXeyqe4kouF7qLsdavh5G8DBz2UnQ494xXlJm0kkD7xtesWozc7qd6KgiSaOyBnlGHGnkGugSwLIuUZxCdV8_OEJGiogOvqU_EfGygfq_0yJmbkaH31r9FII028LtwpsU5Hlk8HWX3NJHZUcfoUbya04CY8MucxHYA-cueRjou8dM7OPfz33t-Evtg4EHbtSzIOM8Ph7-WmMiJwPr2Q0Pka8djqrv067Sw_TWqRAFV-WF62gj4n-nX_dc1EimMtS3Fvp7jZtGPqY3Z4S9OkAdVDCkSlA4khNm0T03V1oGZ1oxYSAXYWu98PBj2eLkV_mkeXJbex3xBu-FQkUZIkGaPMIWc0ydzTUMIaVGtamWKZ4q6c31_4jx-B2kxK_CFz2x0a4_NH_CRoERV4DS0u5r4Qzdxakwv9cR8XD8xTqnKjBH16FrbEUCyXhnJd0dMj5q_ynZ2JE-aRD52NQNMoRdO9EFQHO46RAdSwXo11OvPmIR3MxtMB-zJ6tY2r_svX-iZ6_kiK8V9l7xVmBlmLCIGaTdo124PYiCkmQcQ2O7rM21qHNpJOKGtHIHJQ0rS0T5udtTDtTmoptAjvksCq5a86oa6cDUsC1t1ERmtd-ZfI5bsBc9ParMkgVpe3_W7OtOPbniIbj-wHTmJ8EXYFrna3K5ldwPOJBtVBRBM06t0RqoSS9PI0CLh-oF7QfTY0HzY5P-Sw5OzJYxjJiqhZYHo9y0oqpi3ggZga4j0uzJbCHAYmOeuRiomJfaaAo8OLNSKo_XjA3iW4P8ZzWPDA4n2422ODpR1S1g-nQ9sFAE-Qi2tzbEYchEpMzdqKoXQgwP5vC6KeNHw-uK_V1keHJcjVkoFoZA6JPWj-4Zzt-5NF-pb1eSB3lFQ8-7pAXGX8RQwX6n0J5cChGKdFHtLTsY68B6T3E5n-4Fam6_cTCDV25WHhJ-lkhoWO7x5XzxbYcjgKVCXsNOvSMTGx2Duviga7VYyxWBontwCHDBItqxNsa8-DY8hXf2CTyfx24gLAmFHoMYgFhU4KP9s49lZZXB4nkwFD6j7GQdsvdHnprG7HHkIOb7h3JclSc2-yvhc6BhMgmGT__UhoRjo7HINseMgHfxvFvKfbbDeeYVsEKTr0CMzxP6-zAaqFYupNLuSzzUEfj239CNv5bjjB44Af5uueQ7jSv7tNZgryL28bszNaw1NVEKhCcDWZYuAfQ9swGgh3YGw56eSTH3E6nWXhayH1GzR2fRs4H09r2OfrEQKSvdjwpIjUYk0uCZpQueOS3pv2OtO8n8JNKOnm24cs0r6OFf6UqIIeU4CBBlC_haZgdeXTxJw86rHitNL8_-H5bPc",
+      "summary": []
+    },
+    {
+      "id": "msg_08966327624ccb9d016af8f6fb1e2887d2ae48a348852af626",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0028\n\n## Episode annotation\n\n- Language task: Put the yellow bell pepper into the bowl.\n- Success label: success\n- Outcome evidence: The robot approaches and closes its gripper around the yellow bell pepper (frames 49\u201384, wrist_cam), then lifts and carries it toward the bowl (frames 91\u2013112, left_base_cam and right_base_cam). It releases the pepper into the bowl at frames 113\u2013115 (wrist_cam). The pepper remains inside as the bowl settles and the gripper withdraws (frames 121\u2013142, wrist_cam, left_base_cam and right_base_cam). No failed acquisition, harmful collision, or unrelated object disturbance is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 143 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 26801,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 209,
+    "output_tokens_details": {
+      "reasoning_tokens": 26
+    },
+    "total_tokens": 27010
+  },
+  "user": null,
+  "metadata": {}
+}

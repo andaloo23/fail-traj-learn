@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0534",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The drawer remains closed during the approach and attempted acquisition (frames 0\u2013129, left_ego_image and wrist_image). The gripper then withdraws without the handle or drawer following (frames 130\u2013166, left_ego_image and wrist_image), and continues opening and closing away from the handle through frame 293. No drawer opening is visible; this is a visibly unsuccessful attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 102,
+      "failure": false
+    },
+    {
+      "start_frame": 102,
+      "end_frame": 294,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 102,
+      "end_frame": 294,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 102\u2013108 in wrist_image, the fingers close beside the silver drawer handle rather than securely enclosing it. During frames 130\u2013166, wrist_image shows the empty gripper moving away while left_ego_image shows the drawer remaining closed. Further finger opening and closing away from the handle (frames 180\u2013293, wrist_image) produces no acquisition or opening. No secure handle possession is established.",
+      "recovery": "Reopen the gripper, return to the handle, align the fingers around its accessible gripping surface, and verify acquisition before pulling along the drawer\u2019s travel direction; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the drawer closed, with no visible damage, displaced surrounding objects, or meaningful damage risk in image and left_ego_image.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place; another correctly aligned acquisition can be attempted without an environmental reset or human intervention."
+    }
+  ]
+}

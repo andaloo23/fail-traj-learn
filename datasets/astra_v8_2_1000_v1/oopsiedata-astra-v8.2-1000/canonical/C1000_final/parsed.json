@@ -1,0 +1,33 @@
+{
+  "episode_id": "C1000",
+  "language_task": "Put the red object into the purple plastic bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The red object remains on the tabletop outside the purple bowl throughout the episode. Frames 158\u2013173 show the gripper approaching closely above it in right_base_cam and wrist_cam; frames 174\u2013218 show the gripper withdrawing empty while the object stays behind. At frame 240, left_base_cam and right_base_cam still show the red object outside the bowl. This is a visibly unsuccessful acquisition, not merely an unconfirmed placement; no damage or unrelated object displacement is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 174,
+      "failure": false
+    },
+    {
+      "start_frame": 174,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 174,
+      "end_frame": 241,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the close approach in frames 158\u2013173, the gripper begins moving away without the red object at frame 174. Frames 180\u2013218 in right_base_cam and wrist_cam make the increasing separation clear while the object remains on the table. The empty withdrawal does not accomplish acquisition or transport, and no renewed acquisition occurs before frame 240. The images do not establish the underlying cause of the miss.",
+      "recovery": "Re-localize the red object, align the open fingers around its sides at an appropriate height, and retry acquisition; verify that it lifts with the gripper before transporting it over the bowl and releasing it. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the usable tabletop, with no visible damage, spill, or disturbance of the bowl or yellow object.",
+      "resetability": "immediate",
+      "resetability_evidence": "The red object and bowl remain accessible and in usable positions; another attempt requires no visible environmental reset or human intervention."
+    }
+  ]
+}

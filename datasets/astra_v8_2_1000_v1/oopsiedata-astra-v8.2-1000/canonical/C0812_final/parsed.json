@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0812",
+  "language_task": "pour the coffee beans into the cup",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The robot acquires and lifts the light-blue bean container (frames 36\u201384, left and right), then pours beans into the brown cup on the black platform (frames 121\u2013144, right). By frames 145\u2013163, wrist shows the source container visibly emptied and right shows beans in the receiving cup, but also several beans scattered across the tabletop. The transfer is completed with spillage.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 127,
+      "failure": false
+    },
+    {
+      "start_frame": 127,
+      "end_frame": 145,
+      "failure": true
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 164,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 127,
+      "end_frame": 145,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "During the controlled pour, beans scatter outside the receiving cup onto the table, visibly established at frame 127 and increasing through frames 130\u2013144 in right, with scattered beans also visible in left. The robot retains the source container, but the pour fails to contain all beans within the destination.",
+      "recovery": "Return the source container upright and set it down securely; collect the spilled beans before another attempt, using human assistance if the robot cannot reliably collect small loose objects. For a subsequent pour, position the source rim closer to and centered over the receiving cup and tilt gradually.",
+      "severity": "low",
+      "severity_evidence": "A small number of dry beans spill onto the tabletop; no breakage, equipment damage, or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The scattered beans require straightforward collection and, for a fresh attempt, reloading into the source container; no repair or difficult retrieval is visibly required."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0825",
+  "language_task": "Pick up the block and place it on the cardboard.",
+  "success_label": "success",
+  "outcome_evidence": "At frame 0, camera_high shows the green block to the left of the cardboard. Frames 280\u2013350 in camera_wrist_right show the block retained between the fingers while the robot lifts and transfers it over the cardboard, consistent with the movement in camera_high. By frames 490\u2013520, camera_high shows the green block on the cardboard as the gripper withdraws; camera_wrist_right shows the gripper empty. The block remains on the cardboard through frame 749 in camera_high. No failed acquisition, unwanted collision, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

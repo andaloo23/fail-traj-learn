@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0267",
+  "language_task": "Place the black spoon in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "Frames 11\u201318 in left and wrist show the gripper acquiring and lifting the black spoon from the counter. Frames 25\u201349 show it transporting and lowering the spoon over the sink. At frames 50\u201354, the spoon is released into the basin; frames 60\u201374 in left show it remaining in the sink as the empty gripper withdraws, corroborated by wrist at frames 60\u201366. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

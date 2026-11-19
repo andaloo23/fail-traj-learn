@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0435",
+  "language_task": "Close the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven door is open at frame 0 in image and left_ego_image. After a prolonged interval with essentially no progress, the robot raises the door during frames 298\u2013317; it is upright and closed at frames 318\u2013352 in left_ego_image, corroborated by image. No unintended object displacement or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 33,
+      "failure": false
+    },
+    {
+      "start_frame": 33,
+      "end_frame": 209,
+      "failure": true
+    },
+    {
+      "start_frame": 209,
+      "end_frame": 353,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 33,
+      "end_frame": 209,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following initial positioning, the robot remains essentially stationary beside the open oven for about 15 seconds without advancing closure; frames 33, 80, 140 and 208 in left_ego_image and wrist_image show nearly unchanged gripper positioning, while image confirms the door remains open. Small adjustments do not produce discernible progress. Task-directed movement resumes at frame 209.",
+      "recovery": "Resume alignment with the door handle or accessible door edge, establish controlled contact, and raise the door along its hinge path until closed; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay with the oven left open; no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in place, so the robot can continue the closing attempt without environmental resetting or human intervention."
+    }
+  ]
+}

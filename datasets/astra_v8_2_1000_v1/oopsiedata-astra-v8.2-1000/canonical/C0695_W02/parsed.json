@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0695_W02",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not a visibly established failed acquisition. In external at frames 350, 549 and 699, the stuffed animal remains on the table beside the empty cardboard box. The external and wrist views show gripper repositioning during frames 435\u2013458, 532\u2013549 and 627\u2013645, but no confirmed grasp, lift or placement. The intervening pauses do not clearly establish sustained failure rather than preparation between adjustments. At frame 699 the gripper remains near the animal. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

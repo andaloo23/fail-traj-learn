@@ -1,0 +1,109 @@
+{
+  "id": "resp_0b8af5edd62de5b1016afbe98df46887d1ae437fc93c9e7b36",
+  "object": "response",
+  "created_at": 1794894222,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794894227,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0b8af5edd62de5b1016afbe990ecb487d19f02b7021c5c7691",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0420\n\n## Episode annotation\n\n- Language task: unstack the boxes and put them in straight line\n- Success label: failure\n- Outcome evidence: In top at frames 0, 350, 700, 1050, 1400, 1750, and 1999, the boxes remain in the same scattered, non-collinear arrangement. Left and right show minor viewpoint changes but no discernible acquisition or placement. The straight-line arrangement is visibly not achieved; the failure is sustained lack of task-directed action, not a failed physical grasp. No stack is clearly visible initially, making the unstacking component ambiguous; the supplied task is retained.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 2000 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-2000\n- Categories: task_not_attempted\n- Explanation: Across the approximately 66.6-second episode, the grippers remain clear of the boxes without discernible task-directed approach, acquisition, or placement. Left and right at frames 0, 700, 1400, and 1999 show only minor changes in viewpoint, while top shows unchanged box positions throughout these frames and the intervening checks. This is one continuous period of unproductive behavior, with no visible recovery separating the windows. Neither a hidden cause nor abnormal termination is established.\n- Recovery: Begin a controlled approach to an accessible box, grasp it, and place it along a chosen straight line; repeat for the remaining boxes, separating any actual stacks first. No human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The observed consequence is lack of progress; no object disturbance, damage, or meaningful risk of damage is visible in left, right, or top through frame 1999.\n- Resetability: immediate\n- Resetability evidence: The boxes remain available in an unchanged, usable workspace, so another attempt requires no visible environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20210,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2174
+    },
+    "output_tokens": 421,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20631
+  },
+  "user": null,
+  "metadata": {}
+}

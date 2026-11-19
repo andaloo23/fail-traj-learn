@@ -1,0 +1,27 @@
+# Episode: C0737
+
+## Episode annotation
+
+- Language task: Open the oven.
+- Success label: failure
+- Outcome evidence: The oven door remains closed from frame 0 through frame 399 in image and left_ego_image. The robot moves toward the oven’s upper front area during frames 0–79, but then remains near it without visibly opening the door; wrist_image also shows little subsequent movement. This is an observed failure to open the oven with sustained unproductive hovering, not merely an unconfirmed outcome at the end of an active opening motion. A secure handle grasp is not established by the images.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 80 | No |
+| 80 | 400 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 80-400
+- Categories: task_not_attempted
+- Explanation: After the initial approach, the robot remains nearly stationary near the oven’s upper front area, with only small positional changes and no visible door movement. Frames 80, 160, 240, 320 and 399 in left_ego_image and image show the door staying closed, while wrist_image shows the prolonged near-static gripper pose. This sustained stalling does not advance opening; the views do not establish a failed secure grasp or a mechanical cause.
+- Recovery: Reassess the handle position, align the fingers around it, establish a secure grasp, and pull along the door’s opening path while checking that the door moves. No human intervention is visibly required; if the door resists, stop and request inspection rather than force it.
+- Severity: low
+- Severity evidence: The task remains incomplete, but no damage, displaced objects, or meaningful damage risk is visible in image or left_ego_image through frame 399.
+- Resetability: immediate
+- Resetability evidence: The oven remains closed and the surrounding scene remains intact; another approach can be attempted without an environmental reset or visible need for human intervention.

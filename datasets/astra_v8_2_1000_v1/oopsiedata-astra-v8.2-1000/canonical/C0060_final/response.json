@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f35fa326ad3c8fe016af8f7fb373887d28b4d0254876bedda",
+  "object": "response",
+  "created_at": 1794701307,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794701312,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f35fa326ad3c8fe016af8f7fcca8487d28532a38f305e6cbd",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PgARmLZ7D3TMxD9JSnF00PdNd3sk54Sza-R3-zaBcgitxO5-12tN2Zc5m8WoyhHAWT6SLwkIaQY3ezk_fB5F8pJtNvGCsIARw3TipVwr6xiTkXyJZ5CL-GjWOPgmzg577aFabuS3GXCcKjat_RAX-MWzsCXXWM0pK2cSMbIrlATJUsX967_tcv1kdSssF3q4NkLXxB2L-5Je0gsrr-y2lu4oTFKBdOFEE7a-SDmSgAEJUDsirJNCtIyYGsdVpxvwz4DqHBp4-Hqd4ViI0zuJuPCHIwGD0t5JcXRsSdkFeXIWDG1XZDv_SAS6gU8gMibsa90fWnuMxLndK1lW2_b9jGx1g0ptGv-pspQL_zQEKzeIlSNoUMgDDzqf_rVBUOs_43bXnV4WXL2_UUQypVAGb32Je63AJwnZhl90rIya6x7qhhRN9m1oPBZqLTfJBLgTt_5RDlTxPUJxRCV3zsrLfg0znhOMJ50IS8UHAYrP6Qvugs0gK_agz84kQk9FEikG_qfAF-eDdDRnU-rzrfPPfNC74CdIuKO4OZT3PhoyIMLn47F_fdNfCfndUQ_qXq97BdBegna4zNscinpLG1C16WPWHgJu-SOiZZ7n04KWzccRcKFqq5LBiWfUkD4Fu7PZgbmWLReF7xfnOANvFbFaE_As2Ci5JrJVAI-yuaDyPQJRBLM8U5UrK5KJAhKfdwgf8drkCvfNgdOFatTgEod6jR82FPdurDvAwU_X-SNPLESjhV-SUBvWzHDnd2dyXJI2X1ldjB9wn-Jy6v_-9T29NNx91PJXQ5Sci5lfuPc8piC5TcQwBOkUMusxRhrwWz411YB3ywZs_V6Z17WeCkE2lRRHwu42KBINSgnaGsGrbywuyXIgj6FyrJFd4G3G03JNdJiSM0O0UD5i027AS7RepxV8juCJdw95pMrSV6Y_Cg58xkG7gBMfIewpBYKF5beMN2u_SypgdGobynDhwytJLvVQOm9eSR3YgLhn-H-qYeyPvckt_oskjfEgVjI-2NHysZhjk0eQSN6bqzyBRahMXbFkDSUDich9muuch18kJzfeOlHlPexn2JswxfSVRtphTyMBEdYJNr6KB2CtOwsigJpx08-S0HUFOl_9lpQGl2EuLFY5XiX31Uc8r9JgJjw-a4YKYtC7peNqdpS4lEeLF760yeHevqJgQhBrsV4RGzNbMLgS63xfhGK37sYAo9X3HgC5yoaAgA9WBHuHWaoi1aSC9VnOrnsmO3WT4_pEcJNsOed4qLb6_xbYtqbRu35uHTbDKy_xUoJzTVL8AImNuYUQ7UsHCL0a8Sp-UF9uVWkVbncN2f6zhw-BAhkrJ6moXXgSys3MHczwP3TTGs2G1CNycNaRg8WFqYloTMeoo0oNz1cGGAfugQTENBFKiskyZv1PMEjYxtllNqlf2uRefNfBGaiJpHduXollA_2tqbbfzCP0RgWXCabCN60uDfu6CsTHfh3IrjmF5Kak7VOuatHhhLZmg7hv6RcZrx8gJ4GkwV3NQNhcw5roVeGIDA_lOmVz9xQw9SQgd4koAxaZ81pp9ZO49ZnBkZmhZOvD_XcLJw286ShKNrnwHA51dDjrlKVMXJ8AdErXXBxWmW4OOEA7mie5e5glXqaxsg8KDUnbncaByzV0bcL-j3auIFeO4snyeBoixJ2xiGV0woaYi_DToWZDvhdm0bkkE0G8DiiWUH0OJqPnzN_t2txf1P8SS9HihWuR6U7rMgVltVFWWruKNbapTnVEwdnWXDq_UYVH4ahT7sFqgFTXbM7RJl36V_JZUUXS1TWuBd-FdpD1CO0MSxIKVpej-knDRydsn-okNlusbkWtxgF2IpYQ9Jsj7dRG0zt2UkKAIVGiYvYCJFCQM8F2m1SkNBx5dELg-D5zZjFIYJwKBO1vM_ABCftwUF1KECMNiCM0zk1kXMiY1zOwMShVVChOXaRtHaSSXzgrUlXakfBmGQ4r2MdKeFIhzhfim8qW7fULDxLJSADmo5Orl9FWpOlqR8nFtfwjahXK-lY-dd8Ue5xyqHYFjBscT2R9ylr4v44teZ2fU1qXcFxh4mQSrMknxY2QHMKR-7iPqgRv6dcJR5cIFgan6F9NEzG7ja-JKIovlT1RIsjtSX5co_7TA3UMc5DPQ_Bkw8JNG0=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f35fa326ad3c8fe016af8f7fd60d887d2ba1ab1f279212eb0",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0060\n\n## Episode annotation\n\n- Language task: Move the hammer to the plate. Then, grasp the mushroom.\n- Success label: success but suboptimal\n- Outcome evidence: In image_primary, the gripper first closes near the hammer but lifts without it at frames 27\u201328. A subsequent attempt lifts the hammer at frames 40\u201343 and deposits it on the green plate at frames 56\u201360. The robot then closes around the mushroom at frames 83\u201384 and lifts it with the gripper at frame 85, visibly completing the ordered task after the earlier failed acquisition.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 27 | No |\n| 27 | 29 | Yes |\n| 29 | 86 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 27-29\n- Categories: grasp\n- Explanation: In image_primary, after closing near the hammer at frames 25\u201326, the gripper rises empty at frames 27\u201328 while the hammer remains on the table. This establishes an unsuccessful acquisition; renewed approach begins at frame 29.\n- Recovery: Reopen and realign the fingers around the hammer handle, close securely, and verify that the hammer follows a short lift before transferring it to the plate; no human intervention is needed.\n- Severity: low\n- Severity evidence: The hammer remains on the tabletop, with no visible damage or harmful disturbance to surrounding objects.\n- Resetability: immediate\n- Resetability evidence: The hammer remains accessible for another grasp, so no environmental reset or human intervention is required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 9510,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 393,
+    "output_tokens_details": {
+      "reasoning_tokens": 45
+    },
+    "total_tokens": 9903
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0025_W07",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray at frame 2100. The gripper gradually approaches and closes around the blue bowl\u2019s left rim (frames 2100\u20132360), then moves the bowl with it (frames 2364\u20132449), consistent with acquisition and the beginning of transport. At frame 2449, neither bowl is in the right red tray, and the pink bowl remains on the table. Completion is therefore unconfirmed in this window, not a visibly failed acquisition; no local failure is established. Earlier context is limited to frames 2098\u20132099, and later execution is unseen, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

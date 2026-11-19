@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0996",
+  "language_task": "pick up the bottle",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In zed, the gripper approaches the bottle in frames 0\u201370, then holds it as it moves away from the purple tray in frames 80\u2013100, visibly accomplishing pickup. However, pale grain-like contents escape from the bottle during frames 101\u2013157 and accumulate across the tray, clearly visible in frames 158\u2013178. The tactile panel changes around frame 71 and remains deformed during handling, consistent with contact; the pickup and spillage judgments rely on zed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 158,
+      "failure": true
+    },
+    {
+      "start_frame": 158,
+      "end_frame": 179,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 158,
+      "categories": [
+        "other"
+      ],
+      "explanation": "In zed, grain-like material begins escaping at the bottle opening around frame 101, forms a sustained stream in frames 104\u2013136, and continues intermittently through frame 157. The previously largely clear purple tray becomes covered with scattered contents. This is an unintended spill during pickup, not a demonstrated loss of the bottle grasp.",
+      "recovery": "Stop the motion causing discharge, orient the bottle so its opening retains its contents, and place it securely on a stable surface; human assistance is appropriate to collect the spilled material and secure the opening before another attempt.",
+      "severity": "medium",
+      "severity_evidence": "Zed frames 150\u2013178 show substantial scattered material requiring cleanup, but no visible breakage or damage that makes the environment unusable.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The spilled material is visibly accessible on the tray and appears recoverable with straightforward cleanup and bottle repositioning; no repair or difficult retrieval is established."
+    }
+  ]
+}

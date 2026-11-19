@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c48733745fec48e016af92b877ed487d1bde6a5bd99517285",
+  "object": "response",
+  "created_at": 1794714503,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714510,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c48733745fec48e016af92b8a20c487d186d11bbd6cbef26e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SuP2rDbQNziFxlngDuF-BY9HxpdUi3yoXpk3QNgRWRBEFmx5Q6W_MIkiK0USKlmTKNNVl1xRKHp1C0cwKYFBAsAGOZTGsOhXcifFw5_R0Ce05eQ1nXsLolU9HTXYm2wP9PeHRdkqZHEsX1fu37_yw0Wbje4AynCqPhU3CcRBpL7n8599n2t0Viz-sce2maDVRgwd6HcA0vqhlJUrE5uR-BpQbhQMimqZtO5GRu9BqVccyY5noNMXRSD_PZSFY0NsHFVPtlwx_2O08uoMDlA062H1b6Nm_jUA0UIoOAJe6IiX0MZRQQsWc7pvnzhIfcfFOvuGzVpJszUOCV0RFIBAHKQRJNJqkys6NjW1xLMc72Vx5WHfei9tTtOO5Yu4HwavOAULjxBINuEEuWFTq6PHpK-cJh0ttfNQbnIrHlyyC4QKtphgtb2lxtz0AXJWhQeZYWO8lcoEpLn65ac4g5dgypLSYsFKOYZd7qkBs4YpsyuqJmrg2U4BQ-0S9SPEYZ6Smp1DyzlDsb1Lt3-9NhbMBc8tA8saE372J9GYHvOTi0FplGiXgsPr7vD8JPKKk2TlH7GDO5Sf2PrcUqqFgL22eUB9p0qt3N1iDN4IGRvrbS8dQGEnYOxGNWH0TDsxzUDSbtiSAIodOmlWoFfacNUJYaUsfVGL6PUD2-cKSuCPM9_MNDZoOaU7PzhsjrUzbZOH_AxZDpc3SZL-8ufhlay8piryaraEJYgjfL6E_VN12k4uXVGEpkuPDOTDgZ4msH55wrP3cGCNIgVuMoEPjVHBhV0iQ3aCVN8Qk1Hr0reLOw-CYw-2_-Z2t2YfiIjGqE0wrEvd9eoiZqrjIm7JwLl7fxAuaJsGLdhD7Y_xoYkXLkUYZT6VZSi89wPbbOLiIVmC0pDFWT_ccv_lEAeumAiEk-jKSWqFghENVaJMTV-uK6aLHdPnBwdB77S72dvCeM3pytrOH4ItdmexiytyYE8NITQRBhNho9oV5ei3-fTNrRVF651T2EpJuCqpS0fgKlJ9E81YOjboZdSJQ8admRo03k65M9Ih7cgl4Aao0dy9fjdBfyN2_nVgtymybGJ7TOQ5imss2mzd4WYBS0FpmX4AGDt_csscWqxkPRC1wwG6w9XuAkm_H2K1gupoz1QEHpCcejXdYJp8SleZsIQtX96v5ADoQuSmlF0jkt8PsSqBPYih7NXFpZIA5yuoVzm90kOFPgvVGeR8m0xCv1iDeOLvfThpnutaTDjZ_ytAgDwiEb8K82aRHsJFSosJQThnRgLBEM5lJUMAI3vXLPEow1UDrmp9HirkgzPXlKcKUPWVtEzFzsi1RZf3Dk9GjLtdp2QYUIqllrk5-JuoljGUKUNq99_6wO7sh9uB7-NsYpjjjdFONozLNQABNxXr_BAqjEpT3x2VcPJd_J24V5ltZ7fi7QP4x-3W2nFPt84UNu6u4q31vRfLRlsYelf1OVslE0ahKwRGAY0X3CfwHfJ_7ahTjc0vz_nADORC7L3Y9TxvYrs5ERm2BANtSybuJGEY1wH102XUaNpPP78NEmdEZkcZmLQV1nsZS5leCMygSLEeRUgNjeORxjvMkqMvgxmwICR91PlWxxz3DiG7K6jmBvwdH-Lkt_TqF-YFGif9i4tELN_GHz2nfGON2RJ5VgicGV0bd8Xmmm24fEWJKsdl-A0hu-SGorKcU7tpqWcmUagSjvq6eyOPO_0oop2yn_W95c7pmReCBALydpnrOvv13dAtJLDHe0Ycw5eQKuhHNFK6EPAKmRrzLSRdEUuQ1CZREj9i6OQbyKt2TUCY9xpLLetDYBcpijHNjnZffY8IL3Gxj0cS_C5KhLcYYvsDIVs3k5wnb5H6yhWeHPAGKPPo66_OS7m-2WZN6N-qIFXbwd6Hz0D9JUBg4QRZTtN03XH6TkKC3tUhI5ZzUjyQZThFwsRi3rwdLFriDH3m6YzC41xr14TB2ROyO7KSWGoOkPHUoiZ7b58XdidtzsViil_Dn_F8RLE_OZQcMXG0h6BEDPHfpU1lbyu6GF3Jk1N7J8rMysMhlTts1dsst-crJpJ23ftkC_Zi_4Q2JK2zt9xQsUcaqleixkrHF-q4-aAauEQYXBS1MAEll9wgAHCq5x4y658pw1adAarDN6V1D1WWkzt6hV-YOdg8KCLKao3KLIiep_kMoEPGbqZW_750sVhaRBRnZ6kCF44fBb5hEbdvf3bu3AEbRNwnfAV4Xgxnf9StHBvPuJy4ZSYmc-eP_fBLUvUZ-ZPBSuU_NPQytI_CdkWecTwZy1tFwbbJ--yzU3f-5WT32Xq6MpMjXL0pALQwgo-n502oQwBdUpHL5WsuIULn-cz8f73f0pL2kT6qymelq3Wc-IXGYVQNoZwcuft6ZB5oKlaxBUhCZ6v70l-qyElmu6vFpVZUlvrrSKiLBoLTumToxKyVhCftX4NsFeHJCC14FzqWEUO8mcVj5F-rUntVS66KkN0y-y_lntBrzU_o61ojYSSwVLDS4CDm_v1E-AGa4c6ztE7F61DmOj6IFeWhjUOKXUdwIOzYw8WisnY019TtPBas21HIlIyDsVdT1vRChvYzQNrBDenyS_6wXyd1CI04l7XdZOaXGryEkU5y8kvDmuqple8o2m5bJcm9gWgrCY7nCWv68PsMCyZxPRjuz8Pf7SWwZUJX-kN-OVXfSU5bLU4otdaeyBrCMJrhGspBQU-KnHDaXL46aG2zznJ6gRk_3U--9f-JzTMeH-jA1itoKFoW4EA0tf5A42hNM4P2H3l8MsFKBlWKyLRBHGQkj4qhZ6qpDkUO1fUZaKV7TSgT0ofn0jk114gZwbpJe-BYgCVwqGo-xbiG6OCAjUyn38luqR0zofgYkPrBf5bljlgL1JTSxTbLCG9XRAzorGgNxSWLOifd4BKiNiR3w_BL9S69jmfnhaMP9InMPs4dSB-vA5rVdi2YPu3IEZNqQcpjSttii-OrdL5iboxiispVVp2I46lXoeCgA2E_n3MwhcY9jPCusE06mfm35-aZsywqCG1ee_qBp69mDolgzfHLZdnheS6V1KUGhcwnIDyHyIinHrCXCIzrjZs_J8rxfnYXLb8tPA7FG8UhGPQmow9tXZ6sdHmMV7Wff5I9QhNjCUh9e1oxOeXh6QUPiATMBP1P90eHI1bMPeZg6tSUWFkK_8oOvnaWPkYF5Sh5qEyhXXotDgGGi738QVbZV7IpvJ8lTyz6ZawaoBxgmuRM7ifjtBQ8GAex0k3miLn0AsAmU3NyRMw5z90ys6oCkNfFo5Ric89D7p1e5OsQCloJBsfJ_OFnjziHv_6pfBFE6NsbL-361zvdR9BBqyLGRBqG12pILZW3uAIrcNx4u5ozS-NAvXxB3qvKnzId_ZNqmRrXgnX4wo5cqMsjMJl9wkp8OYZZ__y9G_8ceHUQ4It8A0IgvHnYWM=",
+      "summary": []
+    },
+    {
+      "id": "msg_0c48733745fec48e016af92b8ce58887d18212438515b7b62b",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0840\n\n## Episode annotation\n\n- Language task: Stack the yellow triangle on top of the purple cube.\n- Success label: success\n- Outcome evidence: The robot acquires and lifts the yellow triangle (frames 75\u201398, left_base_cam and right_base_cam), then lowers it onto the purple cube and releases it (frames 148\u2013166). After the gripper withdraws, the yellow triangle remains supported above the purple cube (frames 174\u2013200, left_base_cam and right_base_cam, with wrist_cam providing a closer view). The stack remains in place through frame 240; no failed acquisition, collapse, or unintended displacement of the green block is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 241 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43757,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 318,
+    "output_tokens_details": {
+      "reasoning_tokens": 137
+    },
+    "total_tokens": 44075
+  },
+  "user": null,
+  "metadata": {}
+}

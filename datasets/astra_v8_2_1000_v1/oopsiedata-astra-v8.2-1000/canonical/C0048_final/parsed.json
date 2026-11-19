@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0048",
+  "language_task": "close the drawer",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is open at frame 0. The robot pauses beside it without visible progress during frames 6\u201318, then aligns with the front and pushes it inward during frames 34\u201338. At frame 38, the red drawer front is seated against the cabinet and the exposed interior gap has disappeared, supporting completion. No harmful side effects are visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 6,
+      "failure": false
+    },
+    {
+      "start_frame": 6,
+      "end_frame": 19,
+      "failure": true
+    },
+    {
+      "start_frame": 19,
+      "end_frame": 39,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 6,
+      "end_frame": 19,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, frames 6\u201318 show the gripper remaining stationary beside the open drawer for approximately 2.6 seconds, with no visible alignment change or drawer movement. This is a sustained unproductive pause; task-directed movement resumes at frame 19. Its underlying cause is not visible.",
+      "recovery": "Resume alignment with the drawer front and apply a controlled inward push, checking that the drawer seats fully; no human intervention is indicated.",
+      "severity": "low",
+      "severity_evidence": "The pause delays completion but causes no visible damage, displacement, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and surrounding scene remain unchanged, so the robot can continue without environmental resetting or human intervention."
+    }
+  ]
+}

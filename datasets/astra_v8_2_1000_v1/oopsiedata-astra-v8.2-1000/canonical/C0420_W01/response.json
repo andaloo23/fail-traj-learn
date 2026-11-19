@@ -1,0 +1,109 @@
+{
+  "id": "resp_00824d93d21d97b2016afbb78a44a087d19cfe1b673a379811",
+  "object": "response",
+  "created_at": 1794881419,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881439,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_00824d93d21d97b2016afbb79b6f9487d19f64ed7ce3bba68c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0420_W01\n\n## Episode annotation\n\n- Language task: unstack the boxes and put them in straight line\n- Success label: failure\n- Outcome evidence: Completion is not observed in this window: frames 0\u2013349 in top show the objects remaining scattered rather than arranged in a straight line, while left and right show no discernible approach or acquisition. The visible objects appear already separated, so the intended unstacking component is ambiguous; the supplied task is retained. This is a provisional window outcome with sustained inactivity, not a visibly failed grasp attempt; later episode context is absent.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Throughout frames 0\u2013349, left and right show the grippers remaining away from the boxes without discernible task-directed approach or contact, and top shows unchanged object positions. This approximately 11.6-second interval of inactivity does not advance the requested arrangement. No hidden cause is established, and the inactivity may continue beyond the supplied window.\n- Recovery: Begin a task-directed approach to an accessible box, acquire it, and place it along a chosen straight line, repeating for the remaining boxes and separating any actual stacks first; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: No object disturbance, damage, or concrete damage risk is visible; the observed consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The scene remains unchanged and available for an attempt, with no visible need for environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62877,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 359,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 63236
+  },
+  "user": null,
+  "metadata": {}
+}

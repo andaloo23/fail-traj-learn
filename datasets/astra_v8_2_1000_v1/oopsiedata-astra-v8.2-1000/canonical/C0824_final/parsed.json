@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0824",
+  "language_task": "pour the coffee beans into the cup",
+  "success_label": "failure",
+  "outcome_evidence": "Frames 26\u201355 in left, right and wrist show acquisition and lifting of the light-blue bean container. Frames 98\u2013117 in right show beans entering the brown receiving cup, but frames 118\u2013141 in left and right show extensive spilling across the tabletop as the source empties in wrist. This is a visibly failed transfer with partial delivery, rather than merely unconfirmed completion: a substantial portion of the beans ends up outside the cup.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 105,
+      "failure": false
+    },
+    {
+      "start_frame": 105,
+      "end_frame": 142,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 105,
+      "end_frame": 142,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "At frames 105\u2013108 in right, beans begin appearing on the tabletop outside the receiving cup. The robot continues tipping the held container; frames 118\u2013130 in left and right show the falling beans scattering widely beside the cup, while wrist shows the source becoming empty. Some beans reach the cup, but the continued pour loses a substantial portion onto the table, with no visible corrective action before frame 141.",
+      "recovery": "Stop pouring, return the source container upright and set it down securely. Have a person collect the scattered beans and reset the supply; then align the source lip close above the receiving cup and pour gradually while monitoring the landing point.",
+      "severity": "medium",
+      "severity_evidence": "Frames 124\u2013141 in left and right show widespread bean spillage requiring cleanup and disrupting the workspace; no broken containers or other physical damage are visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Collecting the loose beans and refilling the source is a straightforward cleanup and reset; the visible containers and tabletop remain intact and usable."
+    }
+  ]
+}

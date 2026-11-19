@@ -1,0 +1,134 @@
+{
+  "id": "resp_064c22afc2de8d33016af8ec2dff8c87d1996eef2afa66162b",
+  "object": "response",
+  "created_at": 1794698286,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794698291,
+  "error": null,
+  "frequency_penalty": 0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_064c22afc2de8d33016af8ec30cfe487d1b2965ac223e3b65a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0008\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: success\n- Outcome evidence: The robot closes its gripper around the wooden spoon at frames 78\u201383 and lifts it from the table at frames 88\u2013100, visible in image, left_ego_image and wrist_image. It carries the spoon to the open drawer and releases it at frames 166\u2013173; wrist_image shows the spoon resting inside the drawer at frames 175\u2013181. The gripper subsequently withdraws empty through frame 198, while image shows the spoon remaining in the drawer. No failed acquisition or unintended side effect is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 199 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 39270,
+    "input_tokens_details": {
+      "cache_write_tokens": 39267,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 39267
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 176,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 39446
+  },
+  "user": null,
+  "metadata": {},
+  "provider": "openai",
+  "hook_results": {
+    "start_hooks": [],
+    "before_request_hooks": [
+      {
+        "verdict": true,
+        "id": "pg-ut-aus-e9574c",
+        "transformed": false,
+        "checks": [],
+        "feedback": {
+          "value": 6,
+          "weight": 1,
+          "metadata": {
+            "guardrailPass": "true",
+            "successfulChecks": "",
+            "failedChecks": "",
+            "erroredChecks": ""
+          }
+        },
+        "execution_time": 0,
+        "async": false,
+        "type": "guardrail",
+        "created_at": "2026-11-14T23:18:04.520Z",
+        "deny": false,
+        "softDeny200": false
+      }
+    ],
+    "after_request_hooks": []
+  }
+}

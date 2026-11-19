@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0759_W06",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: overhead_cam at frames 1750, 1775, and 1799 shows the pink and blue toys on the plate while the tan toy remains on the tabletop beside its left rim, so the requested arrangement is not completed. The empty gripper makes small clearance and orientation movements beside the plate (overhead_cam and wrist_cam, frames 1750\u20131799), without a visible acquisition attempt or new collision. This short interval does not establish a local failed action or sustained stalling. Earlier actions beyond the two context frames are unavailable, and the window ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1800,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

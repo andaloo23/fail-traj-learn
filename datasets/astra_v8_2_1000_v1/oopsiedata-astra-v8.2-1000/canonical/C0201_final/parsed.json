@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0201",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop beside the yellow plate in image and left_ego_image at frames 0, 16, and 33; no placement in the drawer is visible. Across frames 0\u201333, image and wrist_image show gripper repositioning without an established spoon acquisition or a completed failed grasp. Completion is unconfirmed in this short observed episode, rather than a visibly failed placement; the motion and brief pauses do not establish a local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 34,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

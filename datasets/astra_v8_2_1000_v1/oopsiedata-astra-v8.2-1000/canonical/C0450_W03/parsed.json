@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0450_W03",
+  "language_task": "take all the veggies out of the bowl onto the towel",
+  "success_label": "failure",
+  "outcome_evidence": "In top at frames 700, 850, 950 and 1049, the veggies remain in the bowl and none are on the towel. left and right show no acquisition or transfer. The left arm repositions but never visibly engages a veggie. This is a provisional failure for the observed window: sustained unproductive behavior is visible, not a failed grasp, and eventual completion is unconfirmed because later execution and earlier context beyond frames 698\u2013699 are absent.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "left, right and top show prolonged inactivity and intermittent repositioning without a discernible veggie acquisition attempt. At frames 700\u2013817 the grippers remain away from the bowl contents; during frames 818\u2013900 the left arm moves toward the far side of the table, remaining beside rather than over the veggies in top. Further adjustments around frames 931\u2013975 lead to another stationary period through frame 1049. The bowl contents and towel remain unchanged throughout. This sustained unproductive behavior is consistent with the arrangement visible in context frames 698\u2013699, rather than being inferred from the prior prediction; its cause is not visible, and it may continue beyond the window.",
+      "recovery": "Direct an open gripper toward an accessible veggie, align and grasp it, then place it on the towel and repeat for the remaining veggies; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; no damage, displaced scene objects or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl, veggies and towel remain in a usable arrangement, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

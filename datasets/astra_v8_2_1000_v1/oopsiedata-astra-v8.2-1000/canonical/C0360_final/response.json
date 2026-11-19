@@ -1,0 +1,116 @@
+{
+  "id": "resp_0d9a39d031e2550a016af91092c5d487d2ad67667149f6734a",
+  "object": "response",
+  "created_at": 1794707606,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794707620,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0d9a39d031e2550a016af9109b0fb487d2b1fb50beefe834d2",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RCmgY-tYrAe-2IvuOb2A3RcMtP-t11mW3nYEedRd2JQotfPtgG4JpWBu1yTEW8lvjedW6SA0gEKVlgODOfRgKrsczvsT0AsIK1qrNtvnuBHO0fl6q164vZpAYNfpa_v1HISgkPOcVsNxvQrfvDGK0n5walKTqZwbHFpEZVptQ3kAyacbwlPRu06CcL6dFPNGV5JAXRFSs2QjZ8bwoPbeTxRyQzi4UZl4Fe0CGuJ0_gqR2tEfYYGAEyLNhPg3s-cE6Va5DvzRatlp7cy-Gk_dDLSQEpewb8zOq3wFGr5U7cFvRp20rJF7QBclhntHsDMH2goSyZBLddihHcj3lIr6EZ7sJWamL6__n945MJkgG55bBFQY8U0o2zUJiYhqFUMpi8C-80P5Ya_EPEk2hz3uRi5AexW4TOsMQjirpWvuyrZNpyNBvZWifbX0_msiNozbM9o6yIq6cbqOt7tUXTG-4CKzlKMTYRTjAnspl1uy_0w6cl1ANxvBpgbPIXrFBhUN4jbKfuO9eLGESXuRrYSW7aaVJuGFD_WdtDdJBK-bs_vQ4-VxhxZsw_En1nPzRRNcowH814l4gAVpEN8-zh8z1I5He5d2jgxR6iChza7mfZPZpYvkcxlFqFp0TcMmCBB4I6Sl5fszwiZU5OOp6qUKi-6SjumutsZG9qk6zIRY4j0eOCiN1kvnpSVSSU6GteN2FlNE0wJPr111-yWEn-XHHmv3pl93vGxwuWuOORFoMkget-6CtAl78vITbYUcAJND7ftcby0DGlq9XMMN-VQvT9M6xTQDMZSrfCc7HLvYNju4PpO6mA75p3d204SC6bPL9-gzpdI1YjHBN6ftJvzKsz-2jp8WPVxez9htDi6CuubfD0SId57OuukF6ewKyMiFaQDcaFPTCnb10qkJkKiZh0eY4qXvTz2C1LX83Bzw1yf-UIjq91KcDKcu2WOtrZQ_eujNF0y2495LkDKNXvrrFxc3c-EKbDXX41WcbxFgFTQ68x95_vULzuKq5pee0NoduECa_sKa7X8mnz1xsS2p7jlfS0WJSJwOzN9IwGn1GfT5BnI9qUlIK5ZNYdjjcfFDzA6pmjPjv94pncr-kGxfgJIG9X6kwOvRyLF6Plz4_0dZi8DDSBHrZnWzv6tP3yPehJ_FIPHvDn7dkKcGYGdJm58LkC7-ax58QeiyoexuZEXwBQEydgsQkdssBWSYvrNpI0twhz-peEfKwd28KR7tdo5eGICOemOxA_TpPrvW8AD5WHJ0HcwkhdSiSziMQw5Nmhw32i3xkbuMa4O_Uu2CP9qUfwd2VI_J4FwENn08TER8d9PAvzxn04dLvxA9Z25-n_U6bk6iEv-oJN9SgZKzeHtYO1VWvSpMFfh1C-ASgo-chWirFwHJtk0WM7zCGrMmsKpPolwGN3eVVHVJIk-EE4lZ8aZA-0q7aHgzOHXc88CprDRkiDW-bMU36Ql1MxsbTb62xX6mAoBVhvlc2ZayzPl1UoeQj8stqn-YJ6HIZoBqPHW7hDQ1WEy1uTNMaQ-UACF2UKSEPX7Q9sc4Ytv639MiIgFC0pLCnQbJLOinakZwCIM98Tru20gOW8Hlb9yoK3qLFMvkKK6zaC8p2ki3iG0ugsOsOOKli1MVReoHGJXXhsUQGgcrFj50a0n-Xj841ZDfpyl55DZWKqeSw4EKaqrMJ0vyzklOKKxsZoEs6GG8ME7SteJuTnSPzwO36CIy8kf0TkLihOSP7CC0nx2D769a5RZGpbKMgML8iu6xddHcKHbaOY3tHSgp7xd1Qnhy-ScV7_8mEyyQgeJc3n4jzzuevx-qSQeBCAS0-djm7kRUecp4hKxBtmJQaXv-1FoF9f6ozjYxF7OiBgMsBY-L-Tyn01qTetXugZzAHrGk7q8zKd-JXppuVozsUZBvO6NrejP1YCcwAOSbXF4CG3PeY_9Q5cmugOI-vmR8q_OzVkmFTeERUmnxPUgQmslTNycx71K3aPu8iYib7CcIFbeRmyk-1BN725oVVQURzVPGdqff-A_hqhXHCjSOKN6SxJ0kqb6r290wZtPJUlNqpe34SPXfy-IhVqyGl_lTFOOag5Y5uw9QNAua1_rM_2QfFwMVQCqhxJty3T7UFHG1bGWM9lFPPSn59fG9rNJsygCmeDstSB6idRmCSwN1GrlTqU-FUf1xckUkuECdi81dIPqNK50dUSNd5aF123jHLUgmTTsIH0E_fso7PQWVVigBwYY9aDPEkGyDyZA0Lq5yYVZrkJL4970eN37-tq8y4JVajiSfBKskgAC5b3jYMUVHl_m55ozucvmLVOwU-NYO3AO3X6oYOzhyCBGdy3Dsblhxekk6K_nyYxvLPr08mJdX8rFDS0Jo27ER2iU2zCIc2pJEMw_qLI5o0q23idHdxV_kYZfLbKOs29POFlPomrsY5AhTIixDI6sjE8aMyWY2naptQ6U4YHAgIOr4db1B4VKvcM8jZiEJ1bxjcveYOpcSrfYoePGFcsbsPHzvEd7olPXLfbpcTqVf3yStTy-J4anm3x34R6LxrffCGHG23KaWMum9mO02EnyNjNdtiAxdCEG-YpCiZkEpZLOD7XV0sx2Mt_cKT46WqpuxRtccWoomue_NzfQKRAELkv56MwzTao4RFb3fPAmA5lDI053_x5gsHAMn0fowcrRbO_6A7Qdc1LvfC0IRer61JrxQEnq0XCBnMjvFteRnUg8JyiJ4VmH0oJrsYU=",
+      "summary": []
+    },
+    {
+      "id": "msg_0d9a39d031e2550a016af9109d0ba487d2ab4cbf3b739b7a5d",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0360\n\n## Episode annotation\n\n- Language task: Pick up the green cup and stack it on the purple cup.\n- Success label: failure\n- Outcome evidence: The cups begin separately on the table (frame 0, camera_high). The robot repeatedly approaches the green cup but withdraws without it; both cups remain separately on the table at frames 301, 557 and 599 in camera_high, corroborated by camera_wrist_right. No stack is formed; this is visibly unsuccessful acquisition, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 140 | No |\n| 140 | 155 | Yes |\n| 155 | 272 | No |\n| 272 | 350 | Yes |\n| 350 | 506 | No |\n| 506 | 600 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 140-155\n- Categories: grasp\n- Explanation: After closing near the green cup, the gripper rises without acquiring it (frames 140-154, camera_wrist_right and camera_high). By frame 151 the green cup remains on the table beneath the withdrawing gripper. The robot begins another approach at frame 155.\n- Recovery: Reopen and realign the fingers around the green cup, then close and verify that the cup follows a small test lift; no human intervention is needed.\n- Severity: low\n- Severity evidence: The cup stays on the table, with no visible damage, spill or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: Both cups remain upright and accessible; another acquisition can be attempted without environmental intervention.\n\n### Failure 2\n\n- Frames: 272-350\n- Categories: grasp\n- Explanation: Following another closure near the green cup, the robot withdraws empty and moves toward the purple cup (frames 272-301, camera_high and camera_wrist_right). The green cup remains on the table while the empty gripper continues the motion over the purple cup through frame 349; this cannot advance stacking.\n- Recovery: Return to the green cup with open fingers, correct the grasp alignment and confirm possession before transporting toward the purple cup; no human intervention is needed.\n- Severity: low\n- Severity evidence: The attempt fails to lift the green cup; both cups remain on the usable tabletop without visible damage.\n- Resetability: immediate\n- Resetability evidence: The green cup is slightly displaced but remains upright and reachable, requiring no external reset.\n\n### Failure 3\n\n- Frames: 506-600\n- Categories: grasp\n- Explanation: After returning to and closing near the green cup, the gripper again withdraws without it (frames 506-527, camera_high and camera_wrist_right). Subsequent movement near and away from the purple cup is empty-handed; frames 557-599 show both cups still separate on the table. No successful acquisition or stacking follows.\n- Recovery: Reapproach the green cup, establish a secure grasp and verify a short lift before attempting placement; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The observed consequence is another unsuccessful pickup and incomplete stack, with no visible damage or spill.\n- Resetability: immediate\n- Resetability evidence: Both cups remain upright on the table and available for another attempt without human resetting.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 105870,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 799,
+    "output_tokens_details": {
+      "reasoning_tokens": 93
+    },
+    "total_tokens": 106669
+  },
+  "user": null,
+  "metadata": {}
+}

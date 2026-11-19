@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0242_W01",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: no toy is placed on the plate. In overhead_cam and wrist_cam, frames 52\u201366 show an acquisition attempt at the blue toy followed by empty withdrawal while the toy remains on the table. Frames 147\u2013320 show repeated empty-arm movements without acquisition or placement. At frame 349, wrist_cam shows the empty plate and toys still outside it, while overhead_cam shows another approach underway. Later context is missing, so eventual completion is unconfirmed; the failed acquisition is directly visible. No unwanted collision is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 67,
+      "failure": true
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 147,
+      "failure": false
+    },
+    {
+      "start_frame": 147,
+      "end_frame": 321,
+      "failure": true
+    },
+    {
+      "start_frame": 321,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 67,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the fingers close near the blue toy in wrist_cam frames 52\u201359, the gripper withdraws empty in frames 60\u201366; overhead_cam confirms that the blue toy remains on the tabletop. This establishes failed acquisition rather than a successful lift. The precise contact or reason for the miss is not visible.",
+      "recovery": "Reposition above the blue toy, align the fingers around a graspable portion, descend carefully, and verify retention with a short lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table, with no visible damage, spill, or disruptive collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible and the scene needs no physical resetting before another attempt."
+    },
+    {
+      "start_frame": 147,
+      "end_frame": 321,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following repositioning toward the tan toy through frame 146, the empty gripper reverses away at frame 147 and repeatedly sweeps between the workspace and robot base without acquiring a toy. overhead_cam frames 164, 210, 240, 273, and 306 show these repeated excursions with the plate and toys unchanged; wrist_cam confirms the empty fingers and changing view. This sustained unproductive movement exceeds a brief pause or a single alignment adjustment. A renewed approach begins at frame 321.",
+      "recovery": "Stop the repeated excursions, select one visible toy, and execute a deliberate collision-free approach and grasp with possession verification before transport; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lost progress; no contact damage or meaningful damage risk is established by the images.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plate and toys remain available in their tabletop positions, so another attempt requires no environmental reset."
+    }
+  ]
+}

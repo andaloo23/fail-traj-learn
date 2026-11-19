@@ -1,0 +1,62 @@
+{
+  "episode_id": "C0666",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop throughout, including frames 0, 120, and 290 in image and left_ego_image. Instead, the robot closes its fingers beside the yellow-handled, broad wooden utensil (frames 78\u2013113, wrist_image), then withdraws empty. No spoon acquisition or drawer placement occurs; this is visible noncompletion, not merely an occluded placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 114,
+      "failure": true
+    },
+    {
+      "start_frame": 114,
+      "end_frame": 126,
+      "failure": false
+    },
+    {
+      "start_frame": 126,
+      "end_frame": 241,
+      "failure": true
+    },
+    {
+      "start_frame": 241,
+      "end_frame": 291,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 114,
+      "categories": [
+        "sequencing_semantic",
+        "grasp"
+      ],
+      "explanation": "From frame 53 the robot lowers toward the yellow-handled, broad wooden utensil rather than the separate round-bowled spoon visible in left_ego_image. It contacts and shifts that wrong utensil during frames 78\u2013105, closes beside it, and begins lifting empty during frames 110\u2013113 (wrist_image and image). The utensil remains on the table, confirming unsuccessful acquisition as well as wrong-object targeting.",
+      "recovery": "Withdraw clear of the tabletop, identify the round-bowled spoon, align the fingers around its handle, and verify possession before transporting it to the open drawer; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The wrong utensil is slightly repositioned on the table, but no damage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both utensils remain accessible on the tabletop; the robot can attempt the correct object without an environmental reset."
+    },
+    {
+      "start_frame": 126,
+      "end_frame": 241,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After withdrawing, the empty gripper remains above the tabletop with small pose changes and repeated opening and closing, without acquiring anything or approaching the drawer with the spoon (frames 126, 170, 210\u2013240, image and wrist_image). This sustained interval does not advance the task. More substantial renewed movement begins around frame 241.",
+      "recovery": "Re-localize the spoon and resume a deliberate approach to its handle, avoiding further empty gripper cycling; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The interval wastes execution time but causes no visible damage or additional object displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon and open drawer remain available, and no cleanup, repair, or manual repositioning is needed to resume."
+    }
+  ]
+}

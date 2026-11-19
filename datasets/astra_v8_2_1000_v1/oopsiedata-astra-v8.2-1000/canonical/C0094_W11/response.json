@@ -1,0 +1,109 @@
+{
+  "id": "resp_0e13a377adfc80fd016afcb7fb0eb487d291ac137165f811ec",
+  "object": "response",
+  "created_at": 1794947069,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947076,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0e13a377adfc80fd016afcb8013c5887d28d4fc5e7fa4f8713",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0094_W11\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: Provisional for this window: task completion remains unconfirmed. Frames 3500\u20133849 in aria and right_wrist show the cup, saucer, and nearby gripper in essentially unchanged positions; left_wrist shows the other gripper remaining open and stationary. No pickup, handover, release, or withdrawal confirming placement is visible during approximately 11.6 seconds. This establishes sustained inactivity, not a failed acquisition or placement attempt. Earlier task steps and the later outcome are outside the supplied context.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 3500 | 3850 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 3500-3850\n- Categories: task_not_attempted\n- Explanation: Throughout frames 3500\u20133849, including 3500, 3600, 3700, 3800, and 3849, aria and right_wrist show no discernible task-directed movement of the cup or nearby gripper, while left_wrist shows the other gripper stationary and open. This sustained inactivity does not advance the task. Context frames 3498\u20133499 show the same configuration, supporting continuity across the starting boundary; the earlier onset and continuation beyond this window remain unknown. No mechanical cause or abnormal termination is established.\n- Recovery: Reassess cup possession and support, then resume the remaining task steps, verifying stable placement on the saucer before releasing and withdrawing; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The visible consequence is delayed progress; no drop, spill, damage, or meaningful damage risk is established.\n- Resetability: immediate\n- Resetability evidence: No environmental disturbance requiring a reset is visible; task-directed action can resume from the current configuration without human resetting."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 74921,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 427,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 75348
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0575_W04",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 1050\u20131221, the robot positions the held green can over the upper blue tray; frames 1222\u20131294 show release and withdrawal, leaving the can in the tray. In frames 1294\u20131399, the empty gripper moves away while the can remains in place. At frame 1399, the red can and both bowls remain outside their destination trays, so overall completion is unconfirmed in this window despite successful partial progress. No visibly failed attempt or harmful side effect is established. This label is provisional: earlier context is limited to frames 1048\u20131049, and later execution is unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

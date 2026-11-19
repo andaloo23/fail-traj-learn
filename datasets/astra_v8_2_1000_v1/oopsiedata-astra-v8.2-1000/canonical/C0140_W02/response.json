@@ -1,0 +1,116 @@
+{
+  "id": "resp_05ced642cac0c033016afbbe387cb487d2a7a0a1b9fc12c116",
+  "object": "response",
+  "created_at": 1794883129,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794883140,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05ced642cac0c033016afbbe3d650487d2b90497213ec8ffa9",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-75F1v-Po3TDLD9Jh147CAKZIn9IIFmnR13E-jrxaC5lFqMPKun5FWX95uoNge163V9ZnGwARNaINeNOR_GpqO919tswQUmkI8FOjn4jFICFcxGfVltCZFmRGE48_OqQirEa_V86O9jopqz0M_-8kbD_HyF70wvbNBTAJEfZR8dYIO5hJGdFBp9knCt-rdDjty3_ttPmu8ktF-VMDnLtoV122-QKRaSimSvWUer50-ORv_pJBqUCKb9aU8JeC4NNT05LHKcCo-rMfyiSRgZK_zK_SmoVxHlkaKs4eFg3QQ3mOPja3eMYN5doOSWxT2Umb1eHPCGhGWxkBJI7AFYqG-ijTLwHXEwSWxLNobhBmGsbHmgzQAKud-65Sm3PdvlZd662r--3aDagYdGmOqC9nKRRPuJhLge4thv7J1YF-CD5hH6FJOSqntN51MvjQPvUZQviPFxzt3GTGFjcx5Tcmx_WxKe9EGweV06ZRxdlbRIeDb8ywexOqekHtKsVHZaXvMhzCbYW9ZPQkolg-Seal6zLh09274To87fNLjnGIfs9FyU62aHFzMsTzIm3yVbo-oG3FASMgAD0WaTdl3wS-D4gLKpwNnLczklZ36m5-jlKUDCl4JE8vvBNv5iL-kAYFAwoCC2v1SKRMGTFjH1wwdEsBSlOEUGP3lgAM9MAMQmuy56byNfaEyy_JZ_BKr6ZPdnRW1s_ZqH294t7b5oMzFyCkAMBKwpI__7Hr-MslkDZn6BulB2LYHkxPsI1yWa5ZFRZN5jJHHcowYpCq2O8G5OC5xBXvAM-R8Gu4U99X7LnpQC0TCosDhx9z-2a6gJORC8gUK72lQz5gYHfbjplAW063T34QwqdUhP5ofwwXuzpukb2Y02gzc8xxPxEKIAKxe7IWIIFUQ5NCRcb265bY16QJqqU91TQdcVFQ58xdQMyxt6qhSCyP_WAHcJTG6hSrvwT9nIh6uw61AGkETy0YhP3ACg5MwzReN4708r9x41E_wH6EuBIw1r5Sp6qr_LY9SqCzzwE_FoImJa0xws69CvFZ0UeCFlugiY0cLWWpiCAv6YRCxzG9V2v4vh2FhyH9xDVvFhKf6AAcRVfhh73CQaW30Ge3Hh7fxdhUrytrKGT5rJdeiCMUCOo4V5eNM05MCoxeEVrU11wvYa2BTs0XproV6FccVH-R0Ugd6lK_GSOeYUHd0NG8R_7F-AllcrxnUNFR_l-tkOAOdcyh22d4EW7BiTPhCrUWqRsyWHtnd6K822uVusR4TE8aMBR9QAVMTZ4HnAYQE5Iuzf5vhd_my6ZV5MByJIUBIpXgeRdQS3MoKxPZm48-APoWS8fgngmXrFKdxqt8r-njjh3ET6Xf36nHe2XniaQdyg5oVp1mgG0jWIog5GBYQ-PA0Uii4PYdZdi8SXeI1h9NL8fJ4SfUBAMDAxJ3P9E32_Smvq5u1sl8M9Us1CLhK-gHt48Nrw4xC0ntjcWqeR9oOwsOOYYo3m3-tXymTnJbNBRRK9SDORLW6hD9EGCe6pXIbmID3hrFT7TSEOn59K-_qcNxoOiQ0rozXOMJ3p_rsiLPZmabVR-vtO3wNX7d7O_5VETZwoQ2arnEOq3bpbU6zvCRLfn2t-3u3pPzfqJ94wgnQW1c-u8TkaDwoCA4XRRKSLQYA2OGKb3dOZhNfrr8LGxd8MD-6DPOmlFaHnC2B0mpuHh5s-mndZwvl6Q2nsa41MQt3lJQhegigVc9lSqrlVgQueKwYl3yOpXlnRonU_mWKXimBR3YURDUKMKkpp6Qd9zl7qoTVsNbClFmWkCIJsm8pDALb8gPlHwOIZTdX9joDkQw2qPX-BaUSmMVHNe8qCe4bqseh2jZuKVazmc_A8PBUuTOwPQX2SWfBazEcRwrP_pHLTkQvH9DbjnlAnFh_Zi25SnfqpJukG7p_v5hzzUqh653IjnUGxDf1_W1f1Y7-iEqnnzb2QEPGi9AuizLbRLxom5nFRXrXvkzLLPwdhC6lNoI9WFLekzJ_6lvEtoJUaen_5oke-uWT4XZhXNuIQpd0GIAy_tsVawqYQmP3wKwyV0MLjg7tIU12eSwkZYnlZ__h05wFQzb2ox3XmSTH5zfn7XldUiW6a0Ie39oc8am2KhWKKhJntLo3ZHP04ctRjOj1yxODHpnlb5MRudlBYQwzONIm1_Tfl-Ow6aL-ubpC1gArsmTqn246zAljX7cy2l_0DFegywJtWUrs5xREoAJhE19cHVb98XkdXUiCQ1zwgF5if5j_b5WEcrVz0oOWwtFncWGVKZGh-Ot3WF0y-__icd01m3LtXaa756x9zLOARLSYCAT8WPoGx_tHULvhnAQwpUyR6pNxJkS7UlmzuaNWJ5GjsDMgOzXEFg7IPOANEP4viCMzpvyuFIB-mFfRhCTYu8TFnhBUdHZmQ7eu9RyB6z3eGnFUTP0As6FCH-pzMBZMii4SIf5R7tQOCBj4m7mtjUGuZFUff5ZDmXft_kIts0xo68CnnVDBj74VApWRP92TFliozGKb3siPywmn7HFDzx7QrEQX_fxCpEFeER3c3sbfylOlRB6pJwe9A-EKwdMLcVOs6n5q7s6ycXdLgdm29NYoR6lg-Hm36cR9k5DjLb0rsBqN4gNA3LYouZZsjyAgf2YeCA2MiF4DsHsCWyhul86nomp6nQZ2T0yGvr1gz3yqGLIVOVqNLZGEd7HvA3gLNdYYXkf7BbGBb6U5T2O84qNlpbnb2X3Ara3lCMoFwd1fyj7xEpn0wQpP17K77hXefEc6PqtnXZKl6vM1i9f1iS5QDw3jUKqDBETvJRdcuPh42XUUIkDBcTDmNNC-zxwsn9v6SJktUwgZp2qWWa1-pLfK9rh8mPvzjkeDUoEyCqbZfqzgBfZfRPB5u3f0fDufM9ukEdsePlYTm-trCeRCIz6VMU4bjRUMLeNckT5bslVAl8_DWqTjU3wiWg8yT59yQOFS_dxp1rxpvCMtEu2_IGsHoS5byIZ2YnpelipdO3sWKxPihSO1w3rtfnELb07lQky1s7x7gZ9OQngdYJaJh7tItpA2sZLWd4u4-PYw438l9CEyAFBZ2iUWSsXElBnZycBNaO85UGhfgZZwhZHEE9BQat4XIhQch9u2St55Yxm-h-qjUxzO5BDIjlEQ83ttMMGXHK-fCUEkdJ4yjVonJgjF77hteKTiBMskXBhZLlFZw5252iXec2IPy_euD0f5pX7iNhEpGymBd4Lm9vOk-aCkmyHNq4bDqDL9SmezcpKLI9PH_vhAph5cgv0Fu1hViioI2iZ1ChiDRah_zuv6j9WemVgP73VVliAc_jiZkcqQ-dLEfsTFbCdJPKEcFSLpGOUVBvoNRdv-DpZ80jZtqSqSuKCtPa-Y5aCz-HHAhG_wpSLwlTUOgDJc4S_ODa7cF5Qqvz9rCY8kVP4nbVz6AL5CEs9W9iYg-nLcPhCaANAbwT",
+      "summary": []
+    },
+    {
+      "id": "msg_05ced642cac0c033016afbbe3f368487d2b357d1e7f68ffd8f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0140_W02\n\n## Episode annotation\n\n- Language task: stack the bowls\n- Success label: failure\n- Outcome evidence: The bowls remain separate in top at frames 350, 475 and 699; no completed stacking is visible. left and right show approach movements, followed by repeated contact with the unrelated orange, green-stemmed object rather than a visible bowl transfer (frames 481\u2013699). This is a provisional window outcome: completion is unconfirmed, and earlier context beyond frames 348\u2013349 and all later context are unavailable. The brief initial pause does not independently establish continuation of the previously predicted sustained stall.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 350 | 481 | No |\n| 481 | 700 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 481-700\n- Categories: collision\n- Explanation: In right, the fingers repeatedly contact and turn the unrelated orange, green-stemmed object: its orientation changes at frames 481\u2013490, it shifts and rotates further through frames 525\u2013575, and the fingers again surround it at frames 675\u2013699. top shows the arm beside the turquoise bowl while both bowls remain separate; left also shows no bowl transfer. This unwanted interaction does not advance stacking. Secure possession of the orange object or a hidden cause is not established. The interaction reaches the window boundary and may continue beyond it.\n- Recovery: Withdraw the fingers clear of the orange object, then realign with an accessible bowl rim and verify a secure bowl grasp before lifting and stacking; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The unrelated object is displaced and rotated on the tabletop, but no damage, spill or concrete risk of meaningful damage is visible.\n- Resetability: immediate\n- Resetability evidence: Both bowls remain upright and accessible, and the orange object remains on the table; the robot can withdraw and reattempt without a required environmental or human reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63553,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 494,
+    "output_tokens_details": {
+      "reasoning_tokens": 71
+    },
+    "total_tokens": 64047
+  },
+  "user": null,
+  "metadata": {}
+}

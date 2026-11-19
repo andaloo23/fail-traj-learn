@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0037",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper raises a pinched portion of the blue cloth through frames 43\u201352, but the cloth falls away at frame 53 and remains on the table as the gripper withdraws empty through frame 56. Frames 57\u201369 show a renewed approach without completed removal. The yellow block remains obscured, so its identity and final position cannot be independently verified; the visible attempt fails to retain the cloth, and subsequent completion is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 57,
+      "failure": true
+    },
+    {
+      "start_frame": 57,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 57,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, the cloth rises with the gripper at frames 50\u201352, then separates and collapses onto the table at frame 53. The gripper retreats empty through frame 56, losing retention before removing the cloth from the covered object.",
+      "recovery": "Reapproach an accessible cloth fold or edge, secure a deeper pinch, and verify retention with a small lift before lifting and moving the cloth clear of the block; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cloth falls back onto the tabletop with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains accessible on the table and can be grasped again without an environmental reset or human intervention."
+    }
+  ]
+}

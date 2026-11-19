@@ -1,0 +1,116 @@
+{
+  "id": "resp_0cb6d312ff781093016af933300bec87d29e1abb483475d129",
+  "object": "response",
+  "created_at": 1794716464,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794716473,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0cb6d312ff781093016af93331dee487d2a2639913aac59cd8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TM6eGP79CqLM8CYZovdl0iaUf98yaRz9spFQO_gcZlAXGzFoK7u-FRcxTf0Rt3hWoY_lCDot2zHJQC8iMSdeCfDYxUL9-viP6p3Xf3mBAmKQ0G8o29MgBRY3Q9QRH5PZzwLIzVoz9MbSwoKIF9hL3DhVPgpzyefhnCV7mk6OlZoR49kgyf37JSDxoTw6dgs-0tguT_8XPLzklfQCCa40mY5mXr9gSUbNiRr-UST7aEYZ7kv__QbMPT42ssQDeZb3QnElWVjGeCuHsOqbLESeNgTCJHJJkD4KsR5DI6JtTnmUBO9RhCJOr2-MbUmEm4gxeUH3miCLGucisMW9WoEn53APzE6uex8NQy5qomdgfBxmYBvIVvXOm2QHrxRPF8B3OWO8J8_NxJDoxPFwl0BRHYP-4Kq24tGPAIPfHDukAzx9zmWg_ACff0DK1X7Jz9eomi5ITz5cQuj4vfB7dWxwNJKrwlxS9-7vs2caePIjO9cdttGuJA7SerGZ-Iw7vf6SMKjzVHkZlSVmRaEwyHhZXTJv_Z3XXYBVwtBdVGyaHUcheLq-1OaH9UfMC4PCAnMkRk4ezqpIFfvlk7C7wBC7imygm9Y6rd55KKAXUtXRnjIgPxlsCY8JCjFMEz8R4SzPbrK8FDhBeCR7GsyZqVUN5S6WMlLEM9rsJ7z2E_o4-axENavMHisGhUCgg68YCjfx5eOWome-HvaA4eKn1WlxNp1P4nr-Trej-DAzQs34VlviqLoLyUfEEB9h_7SbZNlK1RgN_XWsZswQX4u3ygI4PZYhOE8RdXutFGfiq5_hmw0cjyYh_damcDOPs6zGLGMmcl-sqs5yZOLkbqKDqiLCOopPLvkqKvDee94IF-4krZm1lCZm0woAJXJnFFX9OJx5vY2Xk9GJ9Dztj48-ce5o7KwAKqmtHfdjSTEVtcNZ3DT2cdw60PH3FvroPxigJ-a0qDUQuCmzA9EQYdhi9RPGM91P4YWUKEtJBUk522Hd0Zfs0G-6pu1OdiQDjFr4IL7ic8xnCxOZn_2Tzpy55gCc9WIz_BqN8M6o4qZOTtOM5GuMkiqCxbLAblE7wcHLVNRBDkbKXiy7RJnPQGXoHFSEguwIOVlnFazXmziiN0nO_n9_BpNyAhDN-QuUhNtFB65YNt7vY-lyqxse9zFgzcl75EIR1yW6-SQK2KSALogIDWWx1TfV4Zc-gn_5VNOT9jqc-GKElI1MZ44scAckb9Njf8f3868ax--RKc0DNKOw-UYj0sq-jXQWXjeSctTzu1wR3PJoCfHx7GHGYLe9VZ1uJnz3l4Wus_PFlqNn9envvIpF93YYqp7KGoqGgf16LppuMrRYekRg0GUBoUjdHzvRADd_fo2WZ1kVHt2J_T-KFhqC143_voKP6qYr0PSXeavdXbM-i0oMRat2GtMQD9ZN1giNAV5fm2DVE_kpUa5wGh-IbtNRGxfB1qoPvlfh_DK1229bR-FaHewW-MP1A0CWiGJq9C9ilEFjj0_2g-jdPHiN1PiCVao5F8Vr02-wbfQYBYqys3wF-i5bOPMol9BuiJkZrl56thkwZ-GAgb1S2RqP7uXZOH52CSWsHaq2E-4k5_Dc-7Qs4WH8v04bFAsyc_VM24OmY0SLa_NkpkecCBHBkzGhp3VRQZQw9vZXQu8eLQz7gD1QLlHwlKaZrMe4qQNQpuiTQNxJrdSlXA4duKQB7UqUBSE-8gZ5TVKGWVfwrLd-a0VZt9eWPDdeLBcMm_kGWzsw5PJN8l66DHbmWPyNRlGxrgJrewVruZsXNmtib4vBXlIV8mv_vFsHqvrf-EBbKdDI2LTjkgdA0RyVHCfMylQDhNUNvuHZEtEOb0JnyTlefwmrx0TBzOGotOaEilI3imXoEEQ3-tIhMPhyCn45Uf9pTV2qMaNBlTH7Ub54p16GVR35rrBathEzrwZXMdcGKx-R7-AzUDdLkGAPnIYyGZQVVdckW9pvo2hDzLmxjzuyMiGwUjDd9LC4ITFcR_LtY6Rnbhyow264aGkwACs2mqlao740MMFEgEUFkC9EAmk_aRC9jOmW7oQfopvIn-DuutttVfjMYFa-kYEjxqHk9NMWqAgxVxaqNwbPNVo9corc6cOPEJ-VYF4gp5dfR1IDR7VGbPIOKVkrgR9ep3CJi3MUp92vxVN9cNXzuT4B_b-sFZ8ZtS1KmiLMNj4pXkguNZ_5f3Rz4P0FKcIfZn27wz5vl54zl9PFxF3Z0FseAhh6vox7k8vph9NqQMA8MrungOhj4Zb0KRUzZ-ewA3MbDl3hN8ibGogjbUgrhSAt2N408Qeg1-Jvi2-WGlnPAChtbFL8XMzhVUdxNqq5KyL1EWdL-frrAQHNzjoI-V5oTCzz9ERzLVchpcGDF1g4GXfxPynwEgOODeQh9u1kEi-MHOY3_eF1oVLVnnZ8auHGT-_S546YeTZU9949aQDW614BlHgBgV7gLC2qykjJ1zErll11Rn-NB96i7A-c3QqPJJbhr6UAOKoPb1pw-PBZeWJZ37Bb3F2LbUz4dP7g_jq3nFkx0Yp1-ShV0fDZi4BbsTirajY-HZddtSNfsELU8Uvaz3Yw5IKyi8c6jeBcwoC9hGr2w8phYOwWDPb9SNXoqAE",
+      "summary": []
+    },
+    {
+      "id": "msg_0cb6d312ff781093016af933338ca887d2b57aef22ecacbab5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0986\n\n## Episode annotation\n\n- Language task: stack the blue block on the yellow block\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the blue and yellow blocks remain separate on the table from frame 0 through frame 69. The gripper approaches and hovers above the blue block but never visibly acquires or moves it. Completion is unconfirmed; sustained hovering is visible, but no completed failed grasp or abnormal termination is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 10 | No |\n| 10 | 29 | Yes |\n| 29 | 48 | No |\n| 48 | 70 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 10-29\n- Categories: task_not_attempted\n- Explanation: In right_shoulder_cam, frames 10-28 show sustained hovering above the blocks with only small pose changes and no continued descent, acquisition, or object movement. This approximately four-second interval does not visibly advance stacking; approach resumes at frame 29.\n- Recovery: Resume alignment and descend until the open fingers straddle the blue block, then acquire it before transferring it to the yellow block; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: Both blocks remain upright and unchanged, with no visible damage or harmful contact.\n- Resetability: immediate\n- Resetability evidence: The scene remains ready for another attempt without environmental resetting or human intervention.\n\n### Failure 2\n\n- Frames: 48-70\n- Categories: task_not_attempted\n- Explanation: In right_shoulder_cam, the gripper holds above the blue block during frames 48-56, rises away during frames 57-62, and returns to another elevated hover during frames 63-69. This sustained pause and back-and-forth movement produces no acquisition or stacking progress; both blocks remain stationary.\n- Recovery: Re-align over the blue block and perform a controlled descent and grasp, verifying possession before lifting and placing it on the yellow block; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The visible consequence is lack of task progress; neither block nor the surrounding scene shows damage or disruption.\n- Resetability: immediate\n- Resetability evidence: Both blocks remain accessible in their original positions, so another attempt requires no environmental reset.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8048,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 591,
+    "output_tokens_details": {
+      "reasoning_tokens": 86
+    },
+    "total_tokens": 8639
+  },
+  "user": null,
+  "metadata": {}
+}

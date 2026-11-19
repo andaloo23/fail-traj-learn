@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0204",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches the closed drawer and aligns its gripper with the silver handle (frames 0\u201385, image, left_ego_image, and wrist_image). It grips the handle and pulls the drawer outward, visibly exposing its interior (frames 98\u2013117, image and left_ego_image). The gripper releases and withdraws while the drawer remains open through frame 176 (frames 122\u2013176, image and left_ego_image). No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 177,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0680_W05",
+  "language_task": "flip the small box upside down",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not a visibly failed completed flip. The pink rectangular box remains on the mat with the same broad face upward in top at frames 1400, 1500, 1600, 1700 and 1749, with slight translation and in-plane rotation rather than visible inversion. The left and right views show changing gripper alignment beside its edges, including frames 1440\u20131525 and 1560\u20131675; these do not clearly establish a completed acquisition followed by loss or empty withdrawal. The movements remain plausibly task-directed preparation, so no local failure is established. The pink box is the apparent target of these approaches, although \u201csmall box\u201d is not uniquely specified given the nearby orange objects. This outcome is provisional: earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

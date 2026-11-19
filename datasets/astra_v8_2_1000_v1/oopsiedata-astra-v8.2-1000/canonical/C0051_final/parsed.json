@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0051",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door remains closed in image and left_ego_image from frame 0 through frame 399. The robot approaches the oven\u2019s upper front area during frames 10\u201346, but subsequently makes only small repeated movements without opening the door (frames 47\u2013399, also visible in wrist_image). This is sustained visible lack of progress, not merely completion left unconfirmed by the recording ending; secure handle acquisition is not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 47,
+      "failure": false
+    },
+    {
+      "start_frame": 47,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 47,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the oven, the gripper stays around the same upper-front position with small repeated shifts for the remainder of the episode rather than progressing to door opening. Compare frames 47, 100, 200, 300 and 399 in image and left_ego_image; wrist_image shows the repeated small motions while the oven remains closed. This prolonged unproductive interval establishes stalling, but the views do not establish a secure grasp or a mechanical cause.",
+      "recovery": "Reassess the handle position, reposition the gripper to acquire it securely, and then pull along the door\u2019s opening path while monitoring door movement; stop and reassess if it does not move. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced surrounding objects or meaningful damage risk is visible in image and left_ego_image through frame 399.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in their original usable state, so another handle-acquisition attempt needs no environmental reset or human intervention."
+    }
+  ]
+}

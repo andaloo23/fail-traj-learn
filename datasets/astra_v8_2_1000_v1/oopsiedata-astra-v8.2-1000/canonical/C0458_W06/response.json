@@ -1,0 +1,116 @@
+{
+  "id": "resp_0b9619d9d3cb0303016afcb76d78f087d1b36e69fb3fe68a69",
+  "object": "response",
+  "created_at": 1794946925,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794946928,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b9619d9d3cb0303016afcb76e736c87d1808a2a71926be121",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq_Ldw_NxzmIm-fskKI3fsn0jUz0ggQ_tPnyCU493os439ZSd8wIGM_imoxSxpiUD7wjieujUjKGhuna0pEXw0ne_mS16QUc7vY6vhEuUwDYMJAZAWyJGM6JzkzdWUGRpsIV-eKTO402SfII2sU2ZIBPAOJjSku5aDAe-T6LRxl5cFZs0C5aBbf1rm8H5D_oJYqiaFQDYJAhEAafdIvP2z1ZPU5ocrgPZBxo5MP42OgLBtWwW2qJxYIcBSD1gWWK90thhTwHPQV2cXaxKrAIDztOrdoNYkE4CfaXwvCiJVtXVsCSVEEyvvTi00P_fxWyBQc-sf9CVgYH-y65MLFzyv-6_ugGiLP5zdCPUwUVrgFkugpcrIIgJIt-rBlEkpX0tfKaosKZCrjnBJz_r2nncj_A37HDW18xxHLTDtJVi21nPuNdBV0UijLMS_59pcQCdz5_CpBtpqLJFOEqvAMRyz1CYukABp50pAsk1DKMEj6gqSpZeJ9NMKXjtXdD69DYLBT4zSpRjnojKDFeRwXOhqOmo65zH4mgCu25vWKrIgkxFKX0eszfT6H6dQLF68K72nBLdfvrANHFk1Uu503tmAofDuwmG0lLeIeHd5sa0C5wWQhHnQbaB-7dyUkeQl8LcQW0e9A8oqPyZlGsZLsn1FcGuCymkjlSmqvPUMRAN74c6JHrxOIXiFgA30S7DbPOdj1FPPAOWjPuX7L5wonItEfRTLBUWecx83MrpQXQ0zNCH0O9DbNgM8O7wy9xqjG8J3QGGXaPuRsewucN97NR7X3il5JX8AlYGoJd9ZWrY2XpCxtv-HofeRV06uAdomyDeoncu1Yjp56pjoiKZzsF_eHrQPNimCMBRL4OTxwtw25FDtZDGR3TJfHjKmkBx49quVALBrAWoBIhBhjHm_2WYYYpLH95lh0Z6F60SKRlPpBx_M98huEy0jeuGw3Qos5bmfOZlUoVLLZazetAmJ3iKkqVdZGg532f72R_GM8gAdvIKzaoD6htX6Us7UUIEQhPHHbY5vN7rdzsetsyVT9Wj4mRaoTjGy8WfJokbPmTcVS8a8Y_oJj8teSzEw9UcyMhDBuD4YiyOAr5zkA4Bsf6Ll1IXIF2lCMupy2QerjNb10QwGG0FB52wjEXu19gMKHA1b2ofuzimbBmzNRj5xY7tUE7M3xJpoIYHSzkuLROOyIt1u5wDj6JyE48b3BYdKftoK87Cha3SaRHWXHnUHHxjuU85Fbwfk1z6o0ViIqU3LssGKWyYg62I-gEUBXxBHAVxtB3YtfDDIj0f81Uud2MEjq7gV9PB8CK19e9aBFNlALZDAac1CMUbGVE3yu_oAKuPYOGYQ3rUIQ9J-Kzoupi3tDyRupDmGd-GO-NbzFCgsHkmPnD2BwTHZcBsYQioo_EQkiThPHz-1RpI1SKBh8V_vBxUgQpA3f2VWELjJ4kORGhgo-u1-ELMdg6A4Vc6MeB-jQ2_uYA0RmwEfRuescolMKcJJDMKqz8cjoociQIiHVqZ_qDMZq3v-R5GBWEnennazQdmCpBwHJODRnbJ0eh3xrPoFkI1GnpCOoBkRu3LoqrQ2hFk2NTT4_2X9L2Y5LcdqNdOBkekJl78a6tHFBuCPKJJrJ6nhQ_U3JPYRQ4-evD9cwwo4G5rj3K56WSoJv2wq_vKooTZQpSwogtxTZQpAsGJF-yjrrXBLagjqj83O96P0JP22nSQ97QtXV_IwGmwAH1TKYqEqZOhk6q1E2njNNcTOvho08EQbRQ48IFFTA6BR8S0QQm4XkgMMgN6zTsaOtL7fG7C68R8NZDFPGq2dfg3zlS10ThBwNBZjw4RTmqQsYUmH8KkEwFnKNno9BwLWSnBLwiVhtmsNp3mhIht9yemt7JZEYM6uLSJ7jD8TMH9RXTtkEtx9qath9leAeSYHl2bGa2yG84v8HWsV6gVlgSPiH1zzAinrhsaUpiAxPZe8GScRlGVKdzSLpN6zNmDKjPQ3DPx1HQNhXKiq6ov3tbjULtWs2sCu2TGBvtIIDIfqKxGkpavC1VEWJlrWpRkAAJJPnEssqCAN0jt0F6mdIGpLH_9GsVUs9IfHg2PxC5sjGf0CDaKYBmq3XElSU0BUooz-Jh-nj3ENvG0AvW5Mmy8ZHA07P7Ylb5njxpwkpZ-7LqbJR8ECOnNUrdSmdB6hyQUUnE_AFnD6ZXqse79kz9G5ZiEtfFfR34g37T0rq2-G8L9OQXLR5r7XvF9PmSX3NTca6eAcJROsIaXkIzwzyulxsN4JGCuuD_xjFFyuIdVzROEUBmWi9LH3Q08NwnWY-qmN2HSzhdGnbFlpAAumDvUZ_0gf4Ex92mtiR01Uy4ekWqKJ6IQKvBA4a73tukeHts6KaSOV-fxdSji_y4YV5BayHoLME_ac4KeYCTyno09A1ppIKmkwFknJ63HPZH1Yi1VqNThUFsuyhQQZ-on2z3SeMHP00fEKvQbglsutumZcFnV4FoFGm5t97nKfGtf-p4FRGpFm7BoPwkcIHdInnFBN0ozNEXrKGTcPVzSWizETUKMb_v4RK2iIUJxJLQBUHtGjIXcV3869fSBmLMbCpSmf0Q5GEVhSW7eXkdhGH-wiA3I-93VPMvZc7s9XL295D90PulVVi-RNthCibadjXpoZ7CaEaZCmLOzRvBTLnFGFP2pdpfxGKkvbHldN1gMSj8V91uKVo8-D3d2_s_lk6Efa4e_ZBqCZCZ177pLkEOd_nZ0=",
+      "summary": []
+    },
+    {
+      "id": "msg_0b9619d9d3cb0303016afcb76eb4b487d18a3436ab84072e38",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0458_W06\n\n## Episode annotation\n\n- Language task: Stack and pack the cups.\n- Success label: success\n- Outcome evidence: In base_image, frames 1750\u20131760 show a compact nested green cup stack resting stably on the table, with both grippers clear and no visible disturbance. \u201cPack\u201d is interpreted as nesting the cups compactly; no separate packaging destination is visible or specified. This is a provisional judgment of the visible end state only: the stacking actions and any earlier failures are outside this window and cannot be verified from the prior prediction.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1750 | 1761 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3672,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 183,
+    "output_tokens_details": {
+      "reasoning_tokens": 21
+    },
+    "total_tokens": 3855
+  },
+  "user": null,
+  "metadata": {}
+}

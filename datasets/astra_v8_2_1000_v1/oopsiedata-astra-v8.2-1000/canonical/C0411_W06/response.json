@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f65e032f2988c80016afbe9926d2887d2bbb263fa270a176f",
+  "object": "response",
+  "created_at": 1794894226,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794894233,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f65e032f2988c80016afbe9962a8887d2ad6aba1f8255c812",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--mablWg4E5NOzmfv2xEt1XLnxCDedNhRXJzktkJTwP3pMPj2-1s-7QQXbR1TIVYBJFbTtO5Fl7KjWkBLvPxlIetJ7zhGuelKgyPdUujlFNopiqcJ8rWX-jFaEFEoz5_qaIyOIzl1sJiw32JwIET-vkbomQqbN2t8qPESADjm5rfOyU2q6hkwOghzuDVnjG7kWfOFjKq2tsie2tMyCsaeZl5SRVox-qYBRu0gGriiws8h4EHtDGJ_VPxPBrp2qkbv_3DEcMFY5iMXnh-WSgu25Pr0uFjceegTeZtiP0W_yZ_HQN4076B4ahmtXiILLbMoW7WUms4wl59kYMRPczQJpSi0e0By1_kMwOe004_l3bKNla8ZEmxMpLnYPsm_3KGyTpO9WA-t8ijXrzR2Crm1MgYqMbwSLDHiny_AtXMAHBJqeKPUz74cf8KaSdH166-HJ6EiSwrMLLHdAcxfHPXp3tSTbrKmYGfHTHgML_RMY75wns8FHC1Df_hwT0QTL1FadO0ezorJGJzWuuDSxQCa7RJINWIcqYYNOHgFW6eQGjlTC1PN5pBsH1b3uGjEvI5KpQLyxhGdGB26lbdFt7R2_AQGM2qDnpTyWX6DHLT-BNNtzsC-WKIeBgKPq-uYebhJzvJzivN44PVdF6GoiUILw2H7NjT9WNKjWh41jismYy8O_JQnYlBvqnwb3LR5FJH6Ft3ccg2TzFdRxApRde4ei0dkvqpUlPVZo4WD1aeSSeSObT1Xt-K_0vYD89LAPhBpPM-CiVq5jzO23jeFR8zAAamODJZFocOMUl87_gtuF2L_oj6Hyl746txAWJNA2CtJCT0QdjvCUpyox7aukP-NsfX3XNtKvn8pClUzrz1PqWWkB7ZPMldSviRG9FTbx6HMi9CN3z7pbzzk9dmWIwmj0QiqEnuyTkWdHoJqEa2SOrGJzWuJ9-Fbrrr-sn79flIR0n6HFvDZdkPRzNVrCm1znaF1NRN4k6H-AqAMFssmE703YBdgpCObIA1lxwiH6qP-Z1HIXZtvk1oWt-_cGWlQ1_3Kdz7CZkwY96VGi6wIivbYS50lSfW_kKbon90qwqA9ecap705IIA1QKET_HBpcfuXr6GDsgocsIw9lxu1qtGASpRj9cYl8gBpICPFefTQZ_xRYvx1Lh0dT4yyER8aPs21PsArUzS3ynDWbupUVE7hJrBF4V5UG5waezvAQuTF8Zci6IILO28cm1STAwEp8JMnTeHWSB6cjaKSftxxsh8KTQp3PW3v6lesVZWyIb1AESE5mVpReomKXzYPeMdmtuoq1fPCWGt6TjoClpYEIKLVG9_NFgXyzSIgU8SaIlQb9iE4tbCxss9OX_-vRVX4jAVnj_aCrwpC1bFwU7C91pJW9T4CZysEF6aTiDtN1gteGD2OBZTvfR7Vs4kCHYnBChUsysps-InSxEPBca9LkAGqn4J1tORCBkPSK7orLGS3tZOFJuEvzNyTJ_oO0uZ3YkIoMDHN9-Rgf-H6NT3ASfStHfjm5JxBNI-qSFKCLNj44XlMLq81ROG2yNgoKkIqvcTXxUsewYhE4MiTTMcSPzk2ifqdyEHJHi9tbJWypwyoczzqQ7ZyolzZ-TF4OT11zwTNPXDSsXPFATAlNqQ5dOUl_C2xTM1FwjG4kP9rJKi07vNeuFL1AZmah8Tz49Dx4r780QLp6Xv2tBqdcbVlsi1srukFNhEHAje-rVMMSf5R_DGP6TuZLiYwE8w3vWpArc1CWvZX-vBrLUR-YxqoVOR1yK5AnOetNcG9-YpoL8lEKdwM12IhYuXtpa1yhuR-Mn9t8otmLMBCLs5DlJQv4eptOvTKuZXL-gga-0LwKyZdueU2-n0bo_1aIAizCmkrf0NNKNUE6hBNnN67o0qws-K-bH5wXSViVuslHlhhZUKExhBRKy7biDiPtconknUc_cChIJqZJ7GLNoMmubAp-kI1TDbwpIMhNjCEQ_qPx4to835SXAZ1iCDNuPJo2hfYVRp7qU5I14RamuJJDZ7mBHj0l-g8TYSzhRi4dDM32ikXErwDvakeaM-26uypYUfWIfErN-hCg_k7024kkp-CLX_luF27f0qAsCqDN3hb-Ph-2Gm-MA15nVJi-nGvlYkc0Weamah28WRTlGJf3Iqp0aK3VHuWPkV4NiipAE9s2o_sENMqogEcMg3Q4TqKwxUypdH4mXU-wAFYm5G81x1BOZqWT1qSUy5aMsTc6oNuj9TAQTPZobkr4-CQzauLgXamwPj15AYtgzoaDDFm9GCUxciuaRszIFFdbB5hj5swIxXj4_XICzwwOTnzDrqxEECEtW5Hd4oMfwqNxuBU7uWYALTzU18C8xpGkBOXVVrwdIwRdPxLJQZGXgMRxvV7gHlWGiTHtlh0XxCjY2od0mbT77UM_yZJoCTpGHsTFioW10aXmuFktDn5QXqCbC5ssEvTaQqiI-qpM4ni_oKF0Ga-hToMXmSjOMHW9Aw4OunjjbF-j1eVKVJva5G0C4u4iR2L3jy2BnL-hyuB3KSQnvPGVI8XuPTCj75k_yOnH87EGYYKZgI7cqq5lYsn3KJQ80UJefqB0m9EhoUo7KLdjTR_wsUBYVzYa-xLk75PWhx4S7k-ho54-qe8zIAYKdh07WILebVqM9Y93s0xRvzhK5AwGh_wPYpYgfFH1eh2Kz5QILtgc_-ESxyxbCMC6Ypdfd_BZsn8xNZ_iX9nozm6ySnjkTSiYZFUIGEcTca573HM3I5DDqG-E_ZnQC4lA93k7a-1aDYA738Uc1MvSMfqhsawiPUMV6mxx3X-ZgiZMf_WFX2qrXlbabRz0UIfgXy4kwGbmZ1AK0keq8EtZvP3taNZb2-XL3nrU4EXzu8KBDNjXan0Vv56f74Xzca7N7U_OMA15O2D10JucWTaY4zQiNZRABTVEkirhG1YjuwcKTgQuW9o1WycWD77CIM2PeSjcNc-HFO9z-N6c_GkdvyXNqpcfRLIcQsa4EiK_HPno43axwO9Fi3gUF2YA0Oddpa-7EjgZ-IMjXWrDqRUe9Cz2I6Px7wkmcAEznYyjGaixNMjBkVpis5_pmhAjICLbKq82eSEViwFdofYjM88F959B7cZGUPYLUqTCgVdCmTaMPa7TemIX8oUMGXkB08RoBUW4yWvExLMg3oNwP9BGQiTZnRT14kanE_W-OGXJwv3t4JwiirKCQtblDefPGygiUfa7nmM5KXxWTqOKfgyY2b_UHLWgbx1fYZPpfs0vfROl9uzsKVINQAROQPKMUVbWW7hwWbdni6FkM66cc9G9AKeC9kaATfye7KFoAaNfiUNxdTt-PjgRJ-ZhPzZQ5yAl-cjdDRhSWxcTfUVvMnavD5lPjtQMoM6sYY=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f65e032f2988c80016afbe997c22c87d29534990fc88ce592",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0411_W06\n\n## Episode annotation\n\n- Language task: put the red banana clip into the green bowl\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window: the red clip and lead remain on the tabletop to the right of the towel in right and top at frames 1750, 1800, 1900, and 1999, while the green bowl remains empty in left and top. The arms reposition, including a renewed approach toward the clip at frames 1968\u20131999, but no completed acquisition or placement is visible. These observations do not establish a failed grasp, harmful contact, or sustained stall distinct from the intervening positioning and brief pauses. Earlier context beyond frames 1748\u20131749 is unavailable; this label is provisional for the supplied window, and its end does not establish abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1750 | 2000 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 46613,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 310,
+    "output_tokens_details": {
+      "reasoning_tokens": 89
+    },
+    "total_tokens": 46923
+  },
+  "user": null,
+  "metadata": {}
+}

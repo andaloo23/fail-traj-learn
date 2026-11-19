@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0176",
+  "language_task": "Pick green block and place on cardboard.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the green block starts beside the cardboard at frame 0, is visibly carried in the gripper at frames 250\u2013300, and falls onto the tabletop away from the cardboard at frames 301\u2013307. The robot subsequently approaches the fallen block but never visibly transfers it to the cardboard; the cardboard remains empty at frame 599. This is a visibly failed transfer, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 301,
+      "failure": false
+    },
+    {
+      "start_frame": 301,
+      "end_frame": 308,
+      "failure": true
+    },
+    {
+      "start_frame": 308,
+      "end_frame": 483,
+      "failure": false
+    },
+    {
+      "start_frame": 483,
+      "end_frame": 600,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 301,
+      "end_frame": 308,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the block separates from the gripper at frame 301, falls at frames 302\u2013304, and settles on the foreground tabletop by frame 307, well away from the cardboard. Retention fails during transport; the images do not establish why the gripper releases it.",
+      "recovery": "Locate the fallen block, align the fingers around it, reacquire it, and verify retention with a short lift before transporting it over the cardboard; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The block falls onto the otherwise clear tabletop, with no visible damage or disruption to unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block remains on the tabletop and available for another acquisition attempt; no environmental repair or human reset is visibly required."
+    },
+    {
+      "start_frame": 483,
+      "end_frame": 600,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the fallen block, the robot remains in essentially the same low foreground pose through frames 483\u2013599 in exterior_cam. Minor gripper or arm adjustments produce no visible acquisition, lift, or progress toward the empty cardboard, establishing sustained unproductive behavior rather than a brief pause.",
+      "recovery": "Reassess the block and finger positions, withdraw enough to obtain a clear alignment, and execute a verified grasp before resuming placement; human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is stalled task progress; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block and cardboard remain available on the table, so another attempt does not visibly require environmental resetting."
+    }
+  ]
+}

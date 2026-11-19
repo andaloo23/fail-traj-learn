@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0483",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the green can is successfully transferred to the upper blue tray by frames 127\u2013156. Attempts to acquire the pink can leave it on the table while the gripper withdraws empty (frames 180\u2013203 and 281\u2013300). At frame 387, the pink can and both bowls remain outside their designated trays, and the right red tray is empty. Thus the task is visibly incomplete, with failed acquisitions rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 180,
+      "failure": false
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 245,
+      "failure": true
+    },
+    {
+      "start_frame": 245,
+      "end_frame": 281,
+      "failure": false
+    },
+    {
+      "start_frame": 281,
+      "end_frame": 341,
+      "failure": true
+    },
+    {
+      "start_frame": 341,
+      "end_frame": 380,
+      "failure": false
+    },
+    {
+      "start_frame": 380,
+      "end_frame": 388,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 180,
+      "end_frame": 245,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, after contacting and slightly shifting the pink can at frames 173\u2013179, the gripper separates from it empty beginning at frame 180. It then travels to and operates over the upper tray without the can (frames 193\u2013244), leaving the target on the table and making no transfer.",
+      "recovery": "Return to the pink can, align the fingers around its actual width, and verify secure acquisition with a small lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the tabletop; no new damage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible for another grasp, with no environmental reset or human intervention required."
+    },
+    {
+      "start_frame": 281,
+      "end_frame": 341,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the second approach ends with the fingers closing beside the pink can at frames 281\u2013285 without acquiring it. The robot withdraws empty at frames 291\u2013300 and again moves over the upper tray through frame 340 while the pink can stays on the table.",
+      "recovery": "Re-localize the pink can and adjust the grasp position before retrying; confirm that the can follows the gripper before beginning transport. Human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition wastes motion but causes no visible damage or spill.",
+      "resetability": "immediate",
+      "resetability_evidence": "The can remains in an accessible tabletop position, so another attempt needs no scene reset."
+    },
+    {
+      "start_frame": 380,
+      "end_frame": 388,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the third attempt shifts the pink can at frames 372\u2013379, but the fingers pull away without retaining it beginning at frame 380. By frames 383\u2013387, the empty fingers are separated from the can, which remains on the table.",
+      "recovery": "Reopen and reposition the fingers to surround the can securely, then perform a short verification lift before transport; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition fails; no new damage or hazardous consequence is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pink can remains reachable on the table, and no cleanup, repair, or manual repositioning is visibly needed."
+    }
+  ]
+}

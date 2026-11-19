@@ -1,0 +1,134 @@
+{
+  "id": "resp_09f9fdc0cd8f856c016af8ebfd7dc487d189b9de1a277deaf7",
+  "object": "response",
+  "created_at": 1794698237,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794698241,
+  "error": null,
+  "frequency_penalty": 0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_09f9fdc0cd8f856c016af8ebfff1d887d180de11ddaba134c9",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0004\n\n## Episode annotation\n\n- Language task: Open the drawer.\n- Success label: success\n- Outcome evidence: The robot approaches and aligns with the upper drawer handle in frames 0\u201385 (left_ego_image and wrist_image), then pulls the drawer outward in frames 105\u2013123 (image and left_ego_image). By frames 136\u2013150, the drawer remains visibly extended with its interior and slide exposed in wrist_image, confirming completion. No failed acquisition, harmful collision, or displacement of unrelated objects is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 151 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 30291,
+    "input_tokens_details": {
+      "cache_write_tokens": 30288,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 30288
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 150,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 30441
+  },
+  "user": null,
+  "metadata": {},
+  "provider": "openai",
+  "hook_results": {
+    "start_hooks": [],
+    "before_request_hooks": [
+      {
+        "verdict": true,
+        "id": "pg-ut-aus-e9574c",
+        "transformed": false,
+        "checks": [],
+        "feedback": {
+          "value": 6,
+          "weight": 1,
+          "metadata": {
+            "guardrailPass": "true",
+            "successfulChecks": "",
+            "failedChecks": "",
+            "erroredChecks": ""
+          }
+        },
+        "execution_time": 0,
+        "async": false,
+        "type": "guardrail",
+        "created_at": "2026-11-14T23:17:16.523Z",
+        "deny": false,
+        "softDeny200": false
+      }
+    ],
+    "after_request_hooks": []
+  }
+}

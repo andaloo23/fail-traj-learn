@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0796_W02",
+  "language_task": "cover the big pink box with the towel",
+  "success_label": "failure",
+  "outcome_evidence": "Throughout frames 350-699, top shows the towel beside the uncovered pink box, with no discernible transport or covering; left and right show essentially unchanged gripper positions, including at frames 350, 525 and 699. The observed failure is sustained inactivity, not a visibly failed grasp. This label is provisional for this window; earlier context beyond frames 348-349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 350-699, left, right and top show no discernible task-directed approach, towel acquisition or object movement for approximately 11.6 seconds. The towel remains beside the uncovered box, so this sustained inactivity does not advance the task. Context frames 348-349 show the same configuration, supporting continuity across the starting boundary; the inactivity may continue beyond this window. Its cause is not visible.",
+      "recovery": "Begin a task-directed approach to an accessible towel edge, acquire the towel securely, and spread it over the pink box; no environmental human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only task progress is prevented; no collision, damage or meaningful risk of damage is visible in left, right or top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The towel and box remain available in unchanged positions, allowing an attempt without environmental resetting or human intervention."
+    }
+  ]
+}

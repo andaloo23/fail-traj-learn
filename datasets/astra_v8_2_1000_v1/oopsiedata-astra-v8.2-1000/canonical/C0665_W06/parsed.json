@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0665_W06",
+  "language_task": "take the tape measure and stretch it until it encompasses length of towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window: top at frames 1750, 1900, and 1999 shows no tape blade spanning the towel. right and top at frames 1872\u20131979 instead show the robot acquiring and folding the towel's labeled end. This is visible task-inconsistent handling, not an established failed tape grasp. Earlier context is limited to frames 1748\u20131749; the preceding report is not independently verified, and the window end does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1872,
+      "failure": false
+    },
+    {
+      "start_frame": 1872,
+      "end_frame": 1980,
+      "failure": true
+    },
+    {
+      "start_frame": 1980,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1872,
+      "end_frame": 1980,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After approaching the labeled towel corner, the robot draws the fabric with its right-side gripper: right and top at frames 1872\u20131884 show the corner moving with the fingers. At frames 1894\u20131927 it lifts and folds that end inward, gathering fabric rather than extending a tape blade. Opening and repositioning at frames 1928\u20131936 is followed by further handling of the same folded fabric at frames 1937\u20131979, without establishing a measuring setup. The fabric label and continuous towel surface identify the manipulated object. Release at frame 1980 ends this interval; no hidden perception or mechanical cause is established.",
+      "recovery": "Release the fabric, lay and smooth the towel flat, locate the tape housing and blade-end tab independently, then stabilize the housing and pull only the tab along the towel's length. Human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The towel becomes folded and displaced, but right and top show no tearing, broken equipment, or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The towel needs straightforward unfolding and smoothing to restore a suitable measuring surface; no repair or difficult object retrieval is indicated."
+    }
+  ]
+}

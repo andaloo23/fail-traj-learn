@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0890_W05",
+  "language_task": "tie the banana plug around the two screw drivers",
+  "success_label": "failure",
+  "outcome_evidence": "Interpreting \u201cbanana plug\u201d as its flexible lead, top at frames 1400, 1575 and 1749 shows the red lead separate from the two screwdrivers, with no wrap or tie around them. Throughout this window, left, right and top show no discernible task-directed manipulation. This is a provisional window outcome with sustained inactivity, not an observed failed physical tying attempt; completion outside this window is unconfirmed, and earlier and later context is missing apart from frames 1398-1399.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1400-1749 in left, right and top, the grippers remain essentially stationary without discernible approach, acquisition or tying activity for approximately 11.6 seconds. Top at frames 1400, 1575 and 1749 shows the screwdrivers and red lead remaining separate and undisturbed. This sustained inactivity does not advance the task; its cause is not visible. Context frames 1398-1399 show the same state, supporting continuity across the starting boundary, and the inactivity may continue beyond this window.",
+      "recovery": "Begin a task-directed approach, stabilize the two screwdrivers together as needed, and acquire the flexible lead to wrap and tie around them; no human environmental intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress, with no observed damage, object disturbance or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The lead and both screwdrivers remain available on the tabletop, and no environmental reset is visibly required before attempting the task."
+    }
+  ]
+}

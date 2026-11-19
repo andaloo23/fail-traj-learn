@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0695_W03",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window: external at frames 700, 833, 920 and 1049 shows the stuffed animal remaining on the table outside the cardboard box. The external and wrist views show small gripper adjustments at frames 713\u2013733 and 815\u2013838, followed by repositioning away from the animal at frames 903\u2013920 and 989\u20131008. The wrist view shows separated fingers without a clearly completed acquisition; these movements do not establish a failed grasp rather than preparation or realignment. No lift or placement is visible. Earlier context beyond frames 698\u2013699 and later execution are unavailable, so this failure label is provisional, not a final whole-episode outcome.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

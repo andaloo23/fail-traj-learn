@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0630",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in image and left_ego_image. The robot approaches its outer edge during frames 1\u201352, but then spends most of the episode near the door without closing it. Small door movements around frames 145\u2013156 and 198\u2013208 do not produce closure. At frame 258, image and left_ego_image still show the door extended outward and the oven opening exposed; this is visible noncompletion, not merely an obscured final state.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 259,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 259,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the door, the robot remains nearly stationary beside its outer edge for a sustained interval, visible at frames 53, 90, 120 and 140 in image, left_ego_image and wrist_image. Subsequent small adjustments and slight door movements do not develop into a closing motion, and the door remains open through frame 258. This is persistently unproductive behavior after a discernible approach, rather than an absence of any task attempt; the images do not establish a secure grasp or a mechanical cause.",
+      "recovery": "Reassess the door edge and handle, reposition to establish controlled contact, and guide the door upward along its hinge arc until visibly closed; stop and reassess if it resists rather than forcing it. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The oven remains open, but no damage, displaced unrelated objects or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The door remains accessible in its open state and the surrounding scene is intact, so another controlled attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

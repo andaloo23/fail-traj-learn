@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0345",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop throughout, including frames 0, 28 and 56 in image and left_ego_image; no placement in the open drawer is visible. Frames 9\u201351 in wrist_image show the empty gripper repositioning over the tabletop, ending near the orange object, but do not establish acquisition or manipulation of any object. Completion is unconfirmed because the episode ends before a completed spoon-handling attempt; no definite failed grasp, harmful contact or sustained stall is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 57,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0634",
+  "language_task": "Open the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The upper drawer is initially closed (frame 0, left_ego_image). Two unsuccessful handle acquisitions precede the successful pull: wrist_image shows the gripper withdrawing without the handle at frames 81\u201397 and 142\u2013144 while the drawer remains closed in left_ego_image. The upper drawer visibly extends at frames 200\u2013214 and remains open after release and withdrawal through frame 254 (image and left_ego_image). No unintended object displacement or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 78,
+      "failure": false
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 98,
+      "failure": true
+    },
+    {
+      "start_frame": 98,
+      "end_frame": 139,
+      "failure": false
+    },
+    {
+      "start_frame": 139,
+      "end_frame": 145,
+      "failure": true
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 255,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 78,
+      "end_frame": 98,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure near the upper drawer handle, the gripper begins withdrawing at frame 78 and is visibly separated from the handle by frame 81; it continues away empty through frame 97 (wrist_image). The upper drawer remains closed (left_ego_image), establishing unsuccessful acquisition rather than a completed opening.",
+      "recovery": "Reopen the fingers, realign them around the handle, and verify a secure acquisition before pulling along the drawer travel direction; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt fails to open the drawer, but no damage or disturbance to surrounding objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and handle remain in place and available for another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 139,
+      "end_frame": 145,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the next closure near the handle, the gripper again moves away without retaining it during frames 139\u2013144 (wrist_image); the handle separates from the fingers and the drawer remains closed in left_ego_image. Finger reopening at frame 145 begins another recovery.",
+      "recovery": "Adjust the finger placement to capture the handle securely, confirm engagement, and then make a controlled outward pull; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only another unsuccessful acquisition is visible; there is no observed damage or meaningful disruption.",
+      "resetability": "immediate",
+      "resetability_evidence": "No scene reset is necessary because the drawer remains closed and accessible, with its handle intact."
+    }
+  ]
+}

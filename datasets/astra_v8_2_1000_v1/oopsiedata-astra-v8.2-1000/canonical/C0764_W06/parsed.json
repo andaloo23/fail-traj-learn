@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0764_W06",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the full task remains incomplete, not visibly failed in a local attempt. In base_image, frames 1750\u20131900 show the robot transporting and positioning the pink can into the upper blue tray; frames 1950\u20132099 show withdrawal, leaving the can in that tray alongside the green can. At frame 2099, both bowls remain on the table and the right red tray is empty. No failed acquisition, drop outside the tray, or new damage is established; the pink can is already crumpled at frame 1750. Earlier context beyond frames 1748\u20131749 and later execution are unavailable, so eventual task completion is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

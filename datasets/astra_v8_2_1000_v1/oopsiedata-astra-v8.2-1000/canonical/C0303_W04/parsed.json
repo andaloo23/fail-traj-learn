@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0303_W04",
+  "language_task": "unfold the towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window: the towel remains visibly layered at frames 1050 and 1399 in left and right, with a compact footprint in top. A grasp attempt ends with empty withdrawal at frames 1137\u20131145; subsequent actions reposition the fabric at frames 1207\u20131235 and approach its opposite edge at frames 1291\u20131399. Full unfolding is not shown. This outcome is provisional because earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1137,
+      "failure": false
+    },
+    {
+      "start_frame": 1137,
+      "end_frame": 1146,
+      "failure": true
+    },
+    {
+      "start_frame": 1146,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1137,
+      "end_frame": 1146,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the fingers converge near the towel at frames 1121\u20131136 in right, the gripper withdraws at frames 1137\u20131145 without carrying fabric. Left shows separation from the towel by frame 1142, while top shows the towel remaining on the table. This establishes an unsuccessful acquisition rather than merely an unfinished closure; a renewed approach begins at frame 1146.",
+      "recovery": "Reopen and align the fingers around an exposed single-layer edge, then verify fabric retention with a small lift before pulling it outward; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition leaves the towel on the table, with no visible damage or harmful displacement of surrounding objects in left, right or top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The towel remains accessible in a valid state for another grasp; no environmental reset or human assistance is required."
+    }
+  ]
+}

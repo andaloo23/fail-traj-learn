@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0160",
+  "language_task": "put the sushi in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "The orange-topped, white-based sushi remains on the table in left at frames 60\u2013119. Instead, the robot grasps the yellow waffle-textured, green-and-white-ended object (wrist, frames 48\u201367), carries it to the pot, and releases it into the pot at frames 118\u2013119 in wrist. This is visible wrong-object handling, not merely unconfirmed task completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 48,
+      "failure": false
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 120,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 48,
+      "end_frame": 120,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "At frame 48 in wrist, the gripper closes around the yellow waffle-textured object rather than the adjacent orange-and-white sushi. Frames 60\u201385 in left and wrist show the yellow object being transported while the sushi remains on the table. The robot continues this wrong-object transfer and releases the yellow object into the pot at frames 118\u2013119 in wrist; successful physical handling does not satisfy the requested sushi placement.",
+      "recovery": "Remove the wrong object from the pot and return it to a clear table location, then acquire the orange-and-white sushi and place it in the pot. Human intervention is not visibly necessary if both objects remain safely reachable.",
+      "severity": "low",
+      "severity_evidence": "The wrong object is relocated into the pot, but no damage, spill, or meaningful damage risk is visible in left or wrist through frame 119.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the original scene requires a straightforward removal of the wrong object from the accessible pot and replacement on the table; no repair or difficult retrieval is indicated."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0367",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal remains on the tabletop outside the box throughout the episode. The external and wrist views show closed, empty gripper withdrawals at frames 344, 548, and 822 after acquisition attempts. At frame 1274, external shows the animal still on the table and wrist shows the gripper near its head, without a confirmed grasp or placement. Thus earlier attempts visibly failed; the final approach has an unconfirmed outcome rather than a demonstrated completed acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 332,
+      "failure": false
+    },
+    {
+      "start_frame": 332,
+      "end_frame": 428,
+      "failure": true
+    },
+    {
+      "start_frame": 428,
+      "end_frame": 543,
+      "failure": false
+    },
+    {
+      "start_frame": 543,
+      "end_frame": 627,
+      "failure": true
+    },
+    {
+      "start_frame": 627,
+      "end_frame": 818,
+      "failure": false
+    },
+    {
+      "start_frame": 818,
+      "end_frame": 907,
+      "failure": true
+    },
+    {
+      "start_frame": 907,
+      "end_frame": 1275,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 332,
+      "end_frame": 428,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure near the animal's lower body at frames 327-331 in wrist, the robot withdraws empty beginning at frame 332. By frames 344-346, external shows clear separation while the animal remains on the table, and wrist shows the closed fingers without the animal. The robot remains in this unsuccessful state until the renewed approach at frame 428.",
+      "recovery": "Reopen the fingers, realign them around a substantial portion of the animal's torso, and verify retention with a small test lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The animal stays on the table; neither camera shows damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target and box remain accessible in their original workspace, so another acquisition can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 543,
+      "end_frame": 627,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After another closure at frames 537-542 in wrist, the gripper lifts away without retaining the animal beginning at frame 543. Frames 548-551 in external show the empty gripper above the unchanged target; wrist likewise shows the animal separated from the closed fingers. The subsequent empty withdrawal ends when renewed alignment begins at frame 627.",
+      "recovery": "Open the gripper and revise the grasp location and descent depth so both fingers surround the torso rather than close near its edge; confirm a secure low lift before moving toward the box. Human intervention is not required by the visible state.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition is prevented; no damage, falling object, or disturbance of the box is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal remains safely on the tabletop and available for an immediate revised attempt."
+    },
+    {
+      "start_frame": 818,
+      "end_frame": 907,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Closure near frames 810-813 produces a brief tug or deformation during frames 814-817, but at frame 818 the gripper separates empty. External frames 822 and 904 show the animal still on the table as the arm withdraws; wrist confirms no retained animal between the fingers. A new approach begins at frame 907.",
+      "recovery": "Reopen and reposition for a deeper, centered torso grasp, using a short verification lift to check retention before transport. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The soft animal settles on the table without visible damage, and no unrelated objects are disturbed.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup or object retrieval is necessary; the animal and box remain usable and reachable for another attempt."
+    }
+  ]
+}

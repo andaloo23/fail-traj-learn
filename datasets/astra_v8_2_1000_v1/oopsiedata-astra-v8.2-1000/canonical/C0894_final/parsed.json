@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0894",
+  "language_task": "Open the oven.",
+  "success_label": "success",
+  "outcome_evidence": "The oven is initially closed (frame 0, image and left_ego_image). The robot approaches and aligns with its handle, then pulls the door outward and downward during frames 125\u2013142 (image and left_ego_image). The door remains visibly open with the interior exposed through frame 171 after the gripper withdraws. No failed acquisition, harmful collision, or displacement of unrelated tabletop objects is established across the supplied views.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 172,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

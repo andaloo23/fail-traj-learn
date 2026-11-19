@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0098",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot lifts the spoon on both attempts (frames 88\u2013121 and 313\u2013350, image and left_ego_image), but neither transfer succeeds. The first drop leaves the spoon on the tabletop (frames 136\u2013144, all three cameras). After reacquisition, the spoon falls outside the drawer and past the table edge (frames 375\u2013382, image); wrist_image shows the gripper empty afterward. This is visibly failed placement, not merely unconfirmed completion; the spoon's final resting location is outside the supplied views.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 136,
+      "failure": false
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 164,
+      "failure": true
+    },
+    {
+      "start_frame": 164,
+      "end_frame": 375,
+      "failure": false
+    },
+    {
+      "start_frame": 375,
+      "end_frame": 383,
+      "failure": true
+    },
+    {
+      "start_frame": 383,
+      "end_frame": 400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 136,
+      "end_frame": 164,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The carried spoon slips downward out of the gripper near the drawer at frames 136\u2013138 and lands on the tabletop by frame 144 (image, left_ego_image, and wrist_image). The empty gripper continues into the drawer area and opens at frames 151\u2013155 rather than depositing the spoon, before withdrawing to recover.",
+      "recovery": "Return to the spoon's visible tabletop location, reacquire a secure grasp, verify retention with a small lift, and align the entire spoon over the drawer before releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon lands on the table without visible damage or disruption to other objects (frames 143\u2013144, image and left_ego_image).",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the tabletop, so the robot can retry without environmental resetting or human intervention."
+    },
+    {
+      "start_frame": 375,
+      "end_frame": 383,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the second transfer, the spoon leaves the gripper outside the drawer at frames 375\u2013377 (wrist_image and image), falls toward the front table edge, and passes below it at frames 379\u2013382 (image). The spoon is not retained until safely inside the drawer; the images do not establish why retention was lost.",
+      "recovery": "Stop the transfer and have a person locate, inspect, and return the fallen spoon to an accessible tabletop position before retrying with a verified grasp and drawer alignment.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is a fallen spoon and failed placement; no breakage or damage to other objects is shown, although the landing itself is out of view.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Retrieval and replacement of the spoon are needed because it fell below the table and outside the visible workspace; this appears to be a straightforward human reset, though its exact resting location is unknown."
+    }
+  ]
+}

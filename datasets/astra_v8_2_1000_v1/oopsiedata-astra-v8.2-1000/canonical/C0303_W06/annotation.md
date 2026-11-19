@@ -1,0 +1,17 @@
+# Episode: C0303_W06
+
+## Episode annotation
+
+- Language task: unfold the towel
+- Success label: failure
+- Outcome evidence: Completion is unconfirmed in this observed window, rather than a clearly failed acquisition. At frame 1750, right and top show a raised towel portion over a compact, overlapping base. Frames 1817–1925 in right and top show continued lifting and repositioning of fabric; by frames 1931–1940, top shows a wider towel footprint, but right shows substantial curled, overlapping sections. At frames 1998–1999, left, right and top still show folded or curled fabric rather than a clearly fully unfolded towel. These are task-directed adjustments without an established local failure or harmful side effect. The label is provisional for this window; earlier context is limited to the supplied boundary images, and no subsequent completion is visible. The window ending does not establish abnormal termination.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1750 | 2000 | No |
+
+## Failure annotations
+
+None

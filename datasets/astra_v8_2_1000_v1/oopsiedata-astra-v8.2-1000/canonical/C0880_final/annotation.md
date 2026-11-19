@@ -1,0 +1,26 @@
+# Episode: C0880
+
+## Episode annotation
+
+- Language task: take tape measure out of bowl and put it in bowl again
+- Success label: failure
+- Outcome evidence: The tape measure remains inside the green bowl in left and top at frames 0, 350, 700, 1050, 1400, 1750 and 1999. Across the chronology, left, right and top show no discernible task-directed approach, acquisition or lift. Removal and replacement are not observed, so completion is unconfirmed; the visible failure is sustained inactivity rather than a failed grasp.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 2000 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 0-2000
+- Categories: task_not_attempted
+- Explanation: For approximately 66.6 seconds, the grippers remain essentially in their initial configuration without a discernible attempt to acquire the tape measure. Left and top show its unchanged position in the bowl at frames 0, 350, 700, 1050, 1400, 1750 and 1999; right also shows no task-directed approach. Minor viewpoint changes do not establish useful preparation or manipulation. This is one continuous period without task progress, with no visible cause or evidence of abnormal termination.
+- Recovery: Initiate a controlled approach, align the gripper around the tape measure while clearing the bowl rim, grasp and verify acquisition, lift it clear of the bowl, then lower it back and release; no environmental human intervention is visibly needed.
+- Severity: low
+- Severity evidence: The observed consequence is lack of task progress; no damage, unwanted collision or disruptive object displacement is visible.
+- Resetability: immediate
+- Resetability evidence: The bowl remains upright with the tape measure inside and the workspace undisturbed, so an attempt can begin without resetting objects or human intervention.

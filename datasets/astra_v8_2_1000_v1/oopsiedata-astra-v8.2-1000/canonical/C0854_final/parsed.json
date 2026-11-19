@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0854",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first pickup loses the spoon, leaving it on the table while the empty gripper travels toward the drawer (frames 85\u2013140, wrist_image and left_ego_image). A second pickup retains the spoon during transport (frames 270\u2013330, wrist_image and image). The gripper releases it into the open drawer at frames 331\u2013338; image shows the spoon remaining in the drawer as the empty gripper withdraws through frame 364. No unrelated-object disturbance or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 85,
+      "failure": false
+    },
+    {
+      "start_frame": 85,
+      "end_frame": 148,
+      "failure": true
+    },
+    {
+      "start_frame": 148,
+      "end_frame": 365,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 85,
+      "end_frame": 148,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The spoon handle slides out of the lifting gripper at frames 85\u201389 in wrist_image, and the spoon settles back onto the table in left_ego_image. The robot continues toward the drawer empty and opens its fingers there around frames 137\u2013143, while image and left_ego_image show the spoon still on the table. This failed retention and empty transfer do not advance placement; return motion begins at frame 148.",
+      "recovery": "Return to the spoon, align the fingers securely around its handle, and verify retention with a short lift before transporting it to the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls back onto the tabletop without visible damage or disturbance of other objects; the consequence is a failed transfer and wasted motion.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the table and the drawer remains open, so another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

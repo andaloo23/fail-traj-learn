@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0303",
+  "language_task": "unfold the towel",
+  "success_label": "failure",
+  "outcome_evidence": "The towel begins as a compact folded rectangle at frame 0 in top and right. The robot lifts and repositions fabric at frames 540\u2013780 and 1230\u20131260, then opens portions further at frames 1830\u20131950 in left, right and top. However, frames 1998\u20131999 still show substantial curled and overlapping fabric rather than a fully unfolded towel. Completion is therefore unconfirmed in the observed episode, distinct from the visibly failed grasp at frames 1137\u20131145. No abnormal interruption or harmful side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1137,
+      "failure": false
+    },
+    {
+      "start_frame": 1137,
+      "end_frame": 1146,
+      "failure": true
+    },
+    {
+      "start_frame": 1146,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1137,
+      "end_frame": 1146,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the towel edge at frames 1135\u20131136, the gripper withdraws empty during frames 1137\u20131145. Left shows the fingers separating from the fabric, right shows increasing distance from the towel, and top shows the towel remaining on the table. This is an unsuccessful acquisition, not merely unfinished finger closure. A renewed approach begins at frame 1146.",
+      "recovery": "Reopen the gripper, align around an exposed towel edge, and verify retention with a small lift before pulling the layer outward; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition leaves the towel on the table without visible damage or harmful displacement of surrounding objects in left, right or top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The towel remains accessible for another grasp, with no environmental reset or human assistance required."
+    }
+  ]
+}

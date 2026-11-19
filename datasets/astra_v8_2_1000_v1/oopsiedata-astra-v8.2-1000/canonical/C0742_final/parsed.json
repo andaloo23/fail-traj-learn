@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0742",
+  "language_task": "put the sushi in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "The orange-topped, white-rice sushi remains on the table, while the robot picks up the separate yellow crosshatched object with a pale green base (frames 40\u201356, wrist and left). The yellow object is released into the pot at frames 113\u2013119 (wrist); the sushi remains outside the pot in left. This is visible wrong-object placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 24,
+      "failure": false
+    },
+    {
+      "start_frame": 24,
+      "end_frame": 120,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 24,
+      "end_frame": 120,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "By frame 24, the gripper is aligning around the yellow crosshatched object rather than the orange-and-white sushi beside it (wrist). It closes around the yellow object at frames 40\u201349, lifts and transports it at frames 53\u2013100, and releases it into the pot at frames 113\u2013119 (wrist and left). The acquisition and placement physically work, but involve the wrong object; the sushi remains on the table.",
+      "recovery": "Remove the incorrectly placed object from the pot and return it to a clear table location, then acquire the orange-and-white sushi and place it in the pot. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong object is placed in the pot without visible damage, spilling, or meaningful damage risk; the intended task remains undone.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the yellow object from the accessible pot to the table is a straightforward reset; no repair or difficult retrieval is visibly required."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0680_W01",
+  "language_task": "flip the small box upside down",
+  "success_label": "failure",
+  "outcome_evidence": "No box is visibly flipped in this window: frames 0 and 349 in top show the objects in essentially unchanged positions and orientations, while left and right show no completed inversion. The robot initially remains stationary, then repositions its left gripper near the pink rectangular object (frames 222\u2013349, left and top). The task does not uniquely identify which visible box is intended. Completion is unconfirmed rather than a visibly failed flipping attempt; later episode context is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 222,
+      "failure": true
+    },
+    {
+      "start_frame": 222,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 222,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 0\u2013221 in left, right and top, both grippers remain essentially stationary and all objects retain their positions and orientations for approximately 7.4 seconds, with no discernible approach or flipping attempt. This sustained inactivity does not advance the task; no hidden cause is established. Visible repositioning begins at frame 222.",
+      "recovery": "Identify the intended small box, requesting clarification if needed, then approach it with a clear path and establish a controlled grasp before inverting it; no physical human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay only; no object displacement, damage or meaningful damage risk is visible during the stationary interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains unchanged and available for an attempt, so no environmental reset or physical intervention is needed."
+    }
+  ]
+}

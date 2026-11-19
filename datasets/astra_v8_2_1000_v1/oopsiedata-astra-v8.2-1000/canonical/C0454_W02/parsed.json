@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0454_W02",
+  "language_task": "put all the toys into the bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Throughout frames 350-699, top shows the green bowl remaining empty and the toys remaining in the smaller container to its right. Frames 350, 525 and 699 in left and right corroborate essentially unchanged gripper positions with no acquisition or transfer. This window shows sustained inactivity, not a visibly failed grasp. Completion is unconfirmed and the outcome is provisional because earlier context beyond frames 348-349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 350-699, top shows both grippers remaining apart from the toy container without a discernible task-directed approach; left and right show no meaningful acquisition or transfer movement. This approximately 11.6-second period of sustained inactivity does not advance the task. Context frames 348-349 show the same pose, supporting continuity across the starting boundary, but the earlier onset is not independently established here; inactivity may continue beyond this window. No hidden cause or abnormal termination is established.",
+      "recovery": "Approach an accessible toy, grasp it securely, transfer it into the green bowl, and repeat for the remaining toys; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No displacement, damage or meaningful damage risk is visible in frames 350-699; the consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl and toy container remain upright and unchanged in top through frame 699, so a task attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

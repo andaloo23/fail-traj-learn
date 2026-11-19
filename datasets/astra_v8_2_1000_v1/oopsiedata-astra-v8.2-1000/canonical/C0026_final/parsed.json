@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0026",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot acquires and lifts the mushroom from the table in frames 23\u201333, carries it toward the green cloth in frames 34\u201351, and lowers it onto the cloth\u2019s right side in frames 52\u201366. At frame 66 the gripper still surrounds the mushroom, with no clear release or withdrawal establishing independent placement. Completion is therefore unconfirmed in the observed episode, rather than a visibly failed grasp or placement attempt.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 67,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

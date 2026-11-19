@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0860",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, frame 0 shows the mushroom on the tabletop to the left of the green cloth. Frames 5\u201335 show the gripper approaching and aligning around the mushroom; frames 36\u201357 show continued gripper repositioning with the mushroom between the fingers. At frame 57, the mushroom remains away from the cloth, and no placement or release onto it is visible. Completion is unconfirmed in the observed episode, rather than a clearly demonstrated failed acquisition or placement; the images do not establish a distinct local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 58,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

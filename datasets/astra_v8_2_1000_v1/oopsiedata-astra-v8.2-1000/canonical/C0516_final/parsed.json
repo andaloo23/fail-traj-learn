@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0516",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The robot sorts the brown food-shaped object, carrot and orange into the green bowl, and the blue and pink animal toys into the purple bowl. wrist_cam shows both toys together at frame 443 and all three food objects together at frames 737\u2013739; overhead_cam confirms the cleared tabletop and occupied bowls through frame 752. All acquisitions and placements succeed, but the carrot transfer includes a large excursion away from the bowls before returning (frames 549\u2013608, overhead_cam and wrist_cam).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 549,
+      "failure": false
+    },
+    {
+      "start_frame": 549,
+      "end_frame": 588,
+      "failure": true
+    },
+    {
+      "start_frame": 588,
+      "end_frame": 753,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 549,
+      "end_frame": 588,
+      "categories": [
+        "other"
+      ],
+      "explanation": "While securely holding the carrot, the robot moves outward and high away from the nearby green bowl rather than progressing toward placement (overhead_cam, frames 549\u2013580). wrist_cam shows the tabletop giving way to views of the surrounding room while the carrot remains held (frames 560\u2013587). This extended transfer detour is unproductive; the subsequent return toward the table leads to successful placement at frames 619\u2013623. No hidden cause is established.",
+      "recovery": "Bring the held carrot back along a clear, controlled path, align above the green bowl and lower it for release; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The carrot remains held throughout the excursion, with no visible collision, damage or dropped object in either camera.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowls and other objects remain in valid positions and the carrot is still grasped, so placement can resume without environmental resetting or human intervention."
+    }
+  ]
+}

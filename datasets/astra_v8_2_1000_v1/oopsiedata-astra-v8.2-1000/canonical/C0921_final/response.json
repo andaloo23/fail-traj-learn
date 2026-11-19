@@ -1,0 +1,116 @@
+{
+  "id": "resp_03350287a445dbef016af930f67d7c87d1ad896f811596bbb5",
+  "object": "response",
+  "created_at": 1794715894,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715901,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_03350287a445dbef016af930f82a5887d1814fa17a32fcc5b4",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TD-pXwcMEcgh-RXAEiHeg9mNY592-wRkH4BS7WPg506EWTK6tGtxBupkv08t3OUQt8fgDqxcD7uVWTbiWTUxnj1cQAseDN6AVzzPT9r3h3gqEKbMIBPDONv7RLOmldfpq-7n2u-QkjHeYJwsUPecJpiYPTxEM_DGO6QsJanPM-p7ug82z4ICx52zvSVQIib3XkAPMpNGPNRn9WXS_7_Wc6rWI8J7dBfYeJLNUYOmN4kEzxccxSKOF1J9cf15hc6Y1qUaZy3LR-I_txO0HZOnWbXC9yTEUj3ZSTq-Bd3tvT7_5XgXPyYT34RUQXBkM1UFWPRh63FpSRfRDrm7iWCxIrPD0iHePPtz5qpfouBIpJ85oyun5KHjG9T_6BZaVEThj5qsP8A-CGUJXtz6vF1kPj2iF_fVkcfveFnDiRf1dGTFWtjJScHLuFbFGkW7ren2DptEkNmN5W_2I1Teiye6svzDgbVoQrmcv1GOEMrOjWo9q_xuhzGWXs7zCjW3vZlmSH_W1k8vTUNQOGSZ0gMRYAQvpzhIpcrUruiXG2ftZBhLPBnsi5VibHavq03DXudbQE2P1o9lIMcHHCre7SBoCm0OsCmKtByBFJN6MET94EQ7kski_8VmDjD1faqJ7Kjzlvl6pZjDXBMNf21LVIGFoEtNafL9BR9WhfmFHfjLEeQKC4khxPeQehGRujthdWQtDGtsbzhmuZREG2tZXjnmWbwSYH4ZDHCwy-49jUGpfVW9WA6rdyUG8SxBZFLdpN5SZ9vQ32Gy14L1a0XD4_x8K9yTIrpWcf-sCegyhYRXR06jm6p6kZH1S_IxeL_9iYUM3Rcooh1n8LN9X9YtRcHcWUHRLkhCScr0lle_lAqrjNZxIzlLnLPr8-dAuiq5u8-8BkhD1x_DpDjH-Ff9pM9Tqh4ScPoUhUh1Q3kb4OXeUW8yJcReFRwXlItmQCubbeS48Alx0y7c9i_Ai9-kCedblH8dtvBNKCVmF8rMt1gXoAbG3nxDQGS0Yy9FXvmGVy54Ble3kepq-7SDIwcVy3i5dxaedYVc_izPjf1NzZPB7In3j0pTQ_CtNER6qgDT3iDm_frutnfUzcrAMrM9xBTaQ-pDozq0G3HIWbQ_7x9_QgpehQSxc1vnoAQer16dNnmw3B7U2RUfBtpDHATrdQrODpMwlTkCvnO9qBgjIWDz1wySgs0c1hGJqeQraMPY4lN_YDLcKE6shJLrENnOrRRirgJsm_nK7gpUPbtnk5tquqo-sR008o8oqV6fg6ascSTRcMZWL6JC3INK5Ry7a3gsujxBgq1Wn-8yKAGw1PYz_BTu-dXB_cPfBmUmKNfP6l1l_5IV2CmTRCK2_KML_uwXF4VNhIglaVbAUaHTsrXNA0-PTeK_PUSe6o8yIXP6t1_fGtQ4Jss-1imFFbV6BPU_qbEdQuiI1AJs2UpqsiHRi9oJsWfIxIIwnWJjNA1pX33e2vrAm5Ug2RWPQE-Sa4Hgxn9TfbTjkvSqnofxULMC8INzw3VLkT-JsGItkiPcxIG7WaU_R4SzQrLmBIZMZWKJCuduPBDV8QR3x4tF8OkUFQ5uRVFlFTUrX0_XVQM8DjOyWgOs75nIDLXD_jD8RPL1Qr6lHkiDgQwyxYZofXprK1U6ig41rW0vtLEyGvKPyCjx6vLFRALzI9LWn7BFMCKIW7EAfRLtcepn03TyrwkIY6JUsir2vxim_bQTsZUHS6ZFdTXBVh9u3gMhGN6iGCH8vROsN6aGLqhUDPCzb3pRyZMt0L6ytH8-3OutXX0JVhVhdIh4MZpik3NCx7Sdp8aC71ht22pb4lQdJlmjHK3ZVN3t6d-yyGBayuevVfpCgMwst0ZOisgbT6CkWmMKIzMokfSsGQI74NsKbZXY2KXJDVljokqMr3L9RaQYqKbEms_w9OJJ6quLNtgrmFcAZUSJa1nyd7lwTwXXWOuW9ra-qcajVF9SVLUAHNF9rHCO97w6cPKaizj9q5Q6osy-j6QDZA13cAedmiLZQPsMdOjOa3GzU40GmvQaToBuTg4SA_YaghWlT1X8Dh6rVyDbdW5ryIKYcQrEyR-uH4fBQDaUtGqT8UyUFKtH4q8nr6j3UuT34kTguXsM4uZXtuS6XFAsUYurLuyBxChoiPQtzpAIaWZowSJVLiCw6piX-pjRa6-m4Gs3MSyCjYxu5Xl2nQpB2PSvuj0Fz-BHXO106vMk4HZKSY0MmQgm2Oe-_BjeuDtfWHWVpSP6bGMK1-nAJBzxXSn6g==",
+      "summary": []
+    },
+    {
+      "id": "msg_03350287a445dbef016af930f9352887d1a7a32feaea57b3eb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0921\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: failure\n- Outcome evidence: In image_primary frame 0, the left toy is white and turquoise, and the largest bowl is the central white bowl. The robot first attempts to acquire the pink toy on the right (frames 11\u201353), then approaches and lifts the correct left toy (frames 84\u201399). At frame 99 the correct toy is still held beside the white bowl; placement is not visible. Completion is therefore unconfirmed, alongside an earlier visibly wrong-object attempt.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 11 | No |\n| 11 | 54 | Yes |\n| 54 | 100 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 11-54\n- Categories: sequencing_semantic, grasp\n- Explanation: In image_primary frames 11\u201350, the gripper repeatedly aligns with and closes around the right pink toy rather than the requested left turquoise-and-white toy. The pink toy moves during contact, but after the acquisition attempt the gripper withdraws empty while the pink toy remains on the table (frames 51\u201353), establishing unsuccessful acquisition as well as wrong-object selection. The requested toy remains untouched throughout this interval.\n- Recovery: Withdraw clear of the pink toy, select the left turquoise-and-white toy, establish a secure grasp, and transfer it into the largest white bowl before releasing. No human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The wrong toy is slightly displaced on the tabletop, but image_primary frames 51\u201353 show no visible damage, overturned bowls, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: Both toys and the destination bowl remain accessible and usable; the correct task can be reattempted without an environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 10725,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 464,
+    "output_tokens_details": {
+      "reasoning_tokens": 52
+    },
+    "total_tokens": 11189
+  },
+  "user": null,
+  "metadata": {}
+}

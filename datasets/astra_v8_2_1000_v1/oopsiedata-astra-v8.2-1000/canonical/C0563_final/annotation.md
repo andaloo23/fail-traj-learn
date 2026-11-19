@@ -1,0 +1,26 @@
+# Episode: C0563
+
+## Episode annotation
+
+- Language task: put all the fruits and veggies into the green bowl
+- Success label: failure
+- Outcome evidence: At frames 0, 350, 700, 1050, 1400, 1750, and 1999, top shows the produce remaining in the light-blue bowl and the green bowl empty. Left and right show small viewpoint/posture shifts but no acquisition or transfer. The task is visibly incomplete after approximately 66.6 seconds of sustained lack of progress, rather than an unconfirmed transfer or a demonstrated failed grasp.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 2000 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 0-2000
+- Categories: task_not_attempted
+- Explanation: One continuous period of sustained unproductive behavior spans the episode: top at frames 0, 350, 700, 1050, 1400, 1750, and 1999 shows the grippers staying away from the produce and the bowl contents unchanged. Left and right show only small posture/viewpoint changes, without a discernible task-directed acquisition or transfer. No recovery interrupts this inactivity; its cause is not visible, and the recording endpoint does not establish abnormal termination.
+- Recovery: Begin a task-directed approach to an accessible produce item, grasp it, transfer it into the green bowl, and repeat for the remaining items. No human environmental intervention is visibly needed.
+- Severity: low
+- Severity evidence: The consequence is lack of task progress; left, right, and top show no damage, disruptive object displacement, or meaningful damage risk.
+- Resetability: immediate
+- Resetability evidence: At frame 1999, top and right show the bowls and produce still in their usable initial arrangement, so another attempt requires no environmental reset or human intervention.

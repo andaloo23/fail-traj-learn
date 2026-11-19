@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0120",
+  "language_task": "Pick up the ball and place it in the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The orange ball starts beside the blue bowl (frame 0, camera_high). Repeated acquisition attempts are followed by empty withdrawal while the ball remains on the table (frames 197, 387 and 651, camera_high and camera_wrist_right). At frame 749, camera_high and camera_wrist_right show the gripper near the ball, still outside the bowl; completion is not visible. The earlier acquisitions visibly fail, whereas the final attempt has no confirmed outcome.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 174,
+      "failure": false
+    },
+    {
+      "start_frame": 174,
+      "end_frame": 206,
+      "failure": true
+    },
+    {
+      "start_frame": 206,
+      "end_frame": 358,
+      "failure": false
+    },
+    {
+      "start_frame": 358,
+      "end_frame": 504,
+      "failure": true
+    },
+    {
+      "start_frame": 504,
+      "end_frame": 629,
+      "failure": false
+    },
+    {
+      "start_frame": 629,
+      "end_frame": 656,
+      "failure": true
+    },
+    {
+      "start_frame": 656,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 174,
+      "end_frame": 206,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the ball, the gripper withdraws without it beginning at frame 174; by frames 193-205, camera_high and camera_wrist_right show the ball remaining on the table and the empty gripper moving toward the bowl. This acquisition did not advance the required transfer; the precise contact failure is obscured.",
+      "recovery": "Return with the fingers open, align them on opposite sides of the ball, close and verify retention with a small lift before transferring; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The ball remains on the tabletop, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball and bowl remain accessible and usable; another grasp can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 358,
+      "end_frame": 504,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The next acquisition is again followed by empty withdrawal, starting at frame 358. Frames 375-397 in camera_high and camera_wrist_right establish that the ball remains outside the bowl while the gripper moves away; it subsequently opens near the empty bowl and retracts through frame 503 without transferring the ball.",
+      "recovery": "Reacquire the ball rather than continuing an empty placement motion; adjust grasp alignment and verify that the ball moves with the gripper before transport. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition leaves the ball on the table; no damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup or object restoration is required, and both task objects remain within the workspace."
+    },
+    {
+      "start_frame": 629,
+      "end_frame": 656,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closing attempt, the gripper moves away empty beginning at frame 629. Frames 643-653 in camera_high show the ball remaining on the tabletop beneath and separate from the withdrawing gripper, while camera_wrist_right shows empty fingers. A renewed approach begins at frame 656.",
+      "recovery": "Reopen and recenter the fingers around the ball, obtain a secure grasp and confirm a small lift before moving toward the bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition is prevented; no visible damage or consequential scene disturbance occurs.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains available on the tabletop and the bowl remains upright, permitting an immediate retry without a human reset."
+    }
+  ]
+}

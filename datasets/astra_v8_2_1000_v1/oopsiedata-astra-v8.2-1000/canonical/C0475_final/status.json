@@ -1,0 +1,22 @@
+{
+  "status": "validated",
+  "model": "gpt-6-astra",
+  "usage": {
+    "input_tokens": 69749,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "reasoning_tokens": 72
+    },
+    "total_tokens": 69996
+  },
+  "batch_id": "batch_6af915d620988190b899566f2637b18e",
+  "completed_utc": "2026-11-15T02:20:28.376927+00:00"
+}

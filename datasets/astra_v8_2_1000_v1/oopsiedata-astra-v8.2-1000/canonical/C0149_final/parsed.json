@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0149",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the drawer cabinet but does not visibly open a drawer. In wrist_image, frames 101\u2013125 show the fingers closing away from the silver handle and withdrawing empty; further finger cycling occurs through frame 224. In left_ego_image, the drawer fronts remain closed at frames 0, 125, and 224. This is a visibly unsuccessful acquisition attempt, not merely unconfirmed completion at the recording boundary.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 225,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 225,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_image, frames 101\u2013105 show the fingers closing beside the drawer front without enclosing the silver handle; frames 113\u2013125 show the closed gripper moving away empty while the handle remains on the cabinet. The robot subsequently opens and closes its fingers in the same general area, including frames 145\u2013150 and 169\u2013175, without acquiring the handle or opening the drawer. left_ego_image confirms no drawer extension through frame 224. These repeated ineffective acquisition motions do not advance the task; no hidden cause is established.",
+      "recovery": "Reopen the gripper, reposition so the fingers straddle the actual drawer handle, and verify acquisition before pulling along the drawer\u2019s sliding direction. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains closed and the attempt is unsuccessful; no damage, displaced tabletop objects, or meaningful damage risk is visible in image or left_ego_image through frame 224.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place, so another properly aligned attempt can proceed without an environmental reset or human intervention."
+    }
+  ]
+}

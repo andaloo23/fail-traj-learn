@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0581",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image frame 0, two cans and two bowls are on the tabletop outside the trays. The green can is left in the upper blue tray by frame 1100, and both cans are contained there after gripper withdrawal at frame 2098. The blue bowl is left in the right red tray by frame 2900; frames 3700\u20133800 show the pink bowl released and stacked with it as the empty gripper withdraws. Frame 4227 confirms both cans in the upper tray and both bowls in the right tray, with no target objects remaining loose on the tabletop. The chronology establishes task-directed acquisition and placement without an observed failed attempt or harmful side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 4228,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0756",
+  "language_task": "Pick up the blue rectangle and put it on the right side of the table.",
+  "success_label": "failure",
+  "outcome_evidence": "The blue rectangle remains beside the yellow block throughout the episode, including frames 0, 150 and 240 in left_base_cam and right_base_cam. At frames 43\u201352, wrist_cam shows the gripper closing beside the blue rectangle without acquiring it; frames 58\u201374 show withdrawal empty. Later approaches and repositioning do not produce a visible pickup or placement. This is a visibly unsuccessful acquisition, not merely an unconfirmed final placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 43,
+      "failure": false
+    },
+    {
+      "start_frame": 43,
+      "end_frame": 53,
+      "failure": true
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 43,
+      "end_frame": 53,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_cam at frames 43\u201350, the fingers close offset from the blue rectangle rather than enclosing it. At frames 50\u201352 the rectangle remains outside the grasp; subsequent reopening and empty withdrawal at frames 53\u201374 confirm unsuccessful acquisition. left_base_cam and right_base_cam show the target remaining on the table.",
+      "recovery": "Reopen the gripper, align its fingers on opposite sides of the blue rectangle, descend to a suitable grasp height, and verify acquisition with a small lift before transporting it to the right side. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt fails to lift the target; no damage, toppling or harmful displacement is visible in wrist_cam or the base cameras.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blue rectangle remains accessible on the tabletop, and no environmental restoration or human intervention is needed before another aligned attempt."
+    }
+  ]
+}

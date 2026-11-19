@@ -1,0 +1,109 @@
+{
+  "id": "resp_0ad9c3b930a08e33016afbbbf4381487d1ba7c2afeed97c641",
+  "object": "response",
+  "created_at": 1794882549,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794882559,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0ad9c3b930a08e33016afbbbfc061487d18f1ec8133eea5073",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0705_W03\n\n## Episode annotation\n\n- Language task: find the tweezer and place it on the towel\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window: frames 700, 800, 900, 1000 and 1049 in top show essentially unchanged gripper positions and no object transfer; right shows the unchanged towel, while left shows no acquisition or useful approach. The visible failure is sustained inactivity, not a failed grasp. This outcome is provisional because earlier execution beyond context frames 698\u2013699 and later execution are not supplied.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 700 | 1050 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 700-1050\n- Categories: task_not_attempted\n- Explanation: Across frames 700\u20131049, top shows the grippers remaining near the front of the table without a discernible approach, acquisition or placement; left and right likewise show no useful object handling or search movement. Approximately 11.6 seconds pass without visible task progress. Context frames 698\u2013699 show the same configuration, supporting continuity of inactivity across the starting boundary independently of the prior prediction. The cause is not visible, and this failure may continue beyond the window.\n- Recovery: Obtain a clear view to identify and localize the tweezer, then approach, grasp, transfer and release it on the towel, verifying acquisition and placement. No human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The observed consequence is lack of task progress; frames 700\u20131049 in left, right and top show no damage, collision or displaced scene objects.\n- Resetability: immediate\n- Resetability evidence: The visible environment remains undisturbed, so a new task attempt requires no human repositioning or cleanup."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63659,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 395,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64054
+  },
+  "user": null,
+  "metadata": {}
+}

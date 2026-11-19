@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0489",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray by frame 404, and both bowls are stacked in the right red tray by frames 673\u2013745. Completion is visible. The first green-can acquisition fails, with the gripper withdrawing empty at frames 121\u2013139. Incidental bowl displacement also occurs during the other can acquisition and the blue-bowl acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 121,
+      "failure": false
+    },
+    {
+      "start_frame": 121,
+      "end_frame": 140,
+      "failure": true
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 289,
+      "failure": false
+    },
+    {
+      "start_frame": 289,
+      "end_frame": 303,
+      "failure": true
+    },
+    {
+      "start_frame": 303,
+      "end_frame": 476,
+      "failure": false
+    },
+    {
+      "start_frame": 476,
+      "end_frame": 481,
+      "failure": true
+    },
+    {
+      "start_frame": 481,
+      "end_frame": 746,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 121,
+      "end_frame": 140,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image frames 121\u2013139, the gripper withdraws toward the upper tray without the green can, which remains on the table after the closing attempt. This establishes failed acquisition; renewed alignment begins at frame 140.",
+      "recovery": "Reopen and realign around the green can, then verify retention with a small lift before transferring it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the tabletop, with no visible spill or new damage attributable to the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible for another grasp without environmental resetting."
+    },
+    {
+      "start_frame": 289,
+      "end_frame": 303,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 289\u2013302, the gripper and red/yellow can move against the adjacent blue bowl, shifting the bowl down and right during can acquisition. This is incidental displacement rather than placement of the bowl in its assigned tray.",
+      "recovery": "Clear the bowl before continuing the can lift, using a grasp and lifting path that avoid neighboring objects; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The blue bowl shifts slightly but stays upright on the table; no damage or spill is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both objects remain accessible, and the task can continue from their changed positions without a human reset."
+    },
+    {
+      "start_frame": 476,
+      "end_frame": 481,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 476\u2013480, the blue bowl being acquired presses into the neighboring pink bowl, displacing it downward. The pink bowl is not being intentionally transferred at this point; the blue bowl begins lifting clear at frame 481.",
+      "recovery": "Lift the blue bowl clear of its neighbor before translating it, and reacquire the pink bowl\u2019s updated position for its later transfer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl remains upright and on the table after the small displacement, with no visible damage or spill.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shifted pink bowl remains reachable and requires no environmental intervention before continuing."
+    }
+  ]
+}

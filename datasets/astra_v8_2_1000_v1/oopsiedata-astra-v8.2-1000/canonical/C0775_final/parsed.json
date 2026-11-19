@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0775",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door remains closed in left_ego_image at frames 0, 100, 150 and 212. The robot repositions near the oven, holds nearly the same pose for a sustained interval, and resumes moving toward its front around frames 146\u2013156 (image and left_ego_image). No opening is visible by frame 212; completion is unconfirmed, and the final near-door positioning does not establish a failed grasp or pull.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 40,
+      "failure": false
+    },
+    {
+      "start_frame": 40,
+      "end_frame": 146,
+      "failure": true
+    },
+    {
+      "start_frame": 146,
+      "end_frame": 213,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 40,
+      "end_frame": 146,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 40\u2013145, image and left_ego_image show the gripper remaining in essentially the same position near the oven\u2019s upper front, while the door stays closed; wrist_image likewise shows no substantial task-directed progress. This sustained interval of roughly nine seconds is unproductive stalling, rather than a brief alignment pause. The images do not establish a mechanical or planning cause.",
+      "recovery": "Resume deliberate alignment with the oven handle, establish a secure grasp, and pull along the door\u2019s opening path while checking clearance and door motion; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay without opening the oven; no damage, displaced objects or meaningful damage risk is visible during this interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in place, so another opening attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

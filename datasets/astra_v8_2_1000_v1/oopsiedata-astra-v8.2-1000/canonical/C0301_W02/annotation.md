@@ -1,0 +1,28 @@
+# Episode: C0301_W02
+
+## Episode annotation
+
+- Language task: Seperate the food and the toys into the two bowls.
+- Success label: failure
+- Outcome evidence: Provisional for this window: sorting is not completed. In wrist_cam, frames 381–388 show the fingers closing near the pink toy; frames 389–410 in overhead_cam and wrist_cam show withdrawal without carrying it, while it remains on the table. Subsequent repositioning and further acquisition motions do not visibly place an item in either bowl. At frame 699, the pink toy and orange food-shaped items remain outside the bowls in overhead_cam. Earlier context beyond frames 348–349 and later execution are unavailable; whole-episode completion is unconfirmed.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 350 | 389 | No |
+| 389 | 412 | Yes |
+| 412 | 700 | No |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 389-412
+- Categories: grasp
+- Explanation: Following finger closure near the pink toy at frames 381–388 in wrist_cam, the robot withdraws empty beginning at frame 389. Frames 393–410 in overhead_cam and wrist_cam establish that the toy remains on the tabletop rather than moving with the gripper. This acquisition therefore fails to advance sorting. Repositioning toward the target resumes at frame 412; no hidden cause for the miss is established.
+- Recovery: Recenter the open fingers around a graspable part of the toy, adjust the approach height, and verify that the toy lifts with the gripper before transferring it into the toy bowl; no human intervention is visibly needed.
+- Severity: low
+- Severity evidence: The toy remains on the table and both bowls remain upright, with no visible damage or meaningful damage risk from the missed acquisition.
+- Resetability: immediate
+- Resetability evidence: The target remains accessible and the scene requires no environmental reset or human intervention before another aligned attempt.

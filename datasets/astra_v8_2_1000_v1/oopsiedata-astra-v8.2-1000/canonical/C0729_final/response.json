@@ -1,0 +1,116 @@
+{
+  "id": "resp_022a5c230b20e831016af924fc74a487d1894defa04d4955e4",
+  "object": "response",
+  "created_at": 1794712828,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712838,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_022a5c230b20e831016af924ff42e087d19134ea76d0a12565",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SUHPRqgZZmFZqM1ddy2i_r_JlhbrOQD4XDdaj_wpnIPFNIElVYBvKdml3T6j82hJ9ZcvB5U-HnSMTr7gyMfBqWgCOrouMw-llB9izRMWuGnKAe4l-1Er-WWDbYqKnDH5hrWqEDCuLerMeP0TL6OzDLOhAAMqPZ6QjQeqiAqOFkuP_4tSj7heIVI8ivA-OSOOujd3CvsXLWrdWUG5uBOaGegfWbTSFO6gWQRafIWmC15Yjxkluvd42u9jzPKAP5a-r33gm29ST1iYLXoUo2rtDhKkgPz6FveLOfCPYV6GqMLJFRVJen1kw8ZOeEIwhIxksf7ZI6VJYlim4h3nUkLRqnWtcbNkjg3EEM2V-m5qge1gJtHkIcYZyseyny9rF9yP-1jpmn4sKViNNXanqFTW0eQ02xtcgMRNr-hfkEjcPWyysSWSz9dDJkSe_5m7WPc5CTmciZGkcttvieC07-LfjoqOG5UaB1T20WilTvGX3-AStOhuvioNGGhzlB5EFbQRXLmkhLHEeZpNg8b1EKG_MYpqiJMz9Orldk6slTrc6FgTS5I9WZlPK1zoibuFOC4DN6EliuN6Vx-i8ujBIhXxHVnYWHK3ObqG8VYpEFdEBQ1-zvB8MgQ8S-lCBXvnwp4x2vEdg_wREnpSXGjmdiAFidvT0OphHogrvPnFMgwy8-pBIxZIAtLSZ1lPSNF7qvGzUEj1mdy5t_NqrqHqLGFduCPBCNZBp8CmLaxFI6PwMk-E54IIEvlxvvbC1mRTL2VEmQKSMi0dC-jpxjtIVqYuhKDU6oq-bSdyGUDokFwRk2-eGQpUjhGPpIk4iiUqN3PBJTSNIqOThAp9NnXN5-DBjq9IsqLAz4nAC_VFBO4Km5ezbC1cIjaXGiEDthaz6HGhTluPdv3rvwdBGB9fj6IjKhrntwFpqza4xoI-kYBxBrw0PtVn6rI0qyCla1tUf0ZQbp7LUptFg8LKEQgC616PLEyDBrXtXnZt2g2IWbLm5Lkj_Mzzefl7ZyQq_04YMszJwE9plaGFjtIp9owRWZXpBYT_l58m4InAyvRzg_mMaYToE2AjAst4_sRaLqyvpf2hn7VaeloNLK3YO60ZD3CkcHuPbNYnUZ7ffCJN732__6La4k1CxhN_JcD5GOamvC5YSbvx7eNeunE_L5tt6Bp2Xy3tisJHHi7KJtxngHzwN4wa_zbzMai801nKb0FVP_oihFnp-wRVogM137SWwNuFMP3EaL3Rviu0q06HGHO1rg6T1CTWKPQ52PfupC6lxdfZruHn3GuGdArFUiiPXch1dlhIavLI6bFRcNGizflv_flTpx2n0j2DXtAxjOlDT9mB_PNHUwNaAQhqT90Szsy5PdN8h8_006MnxpnkKu1ikVAK02uo2DDaALYrBoBTPgkbbXRrscODo6U2exIcaUQhwTXIXXbB4LdvoMGsirC7pzo7zxRwzAtyPVkG93zF8HjaEMA-rbBEtWYWMT-4xHrHUyJZdCrbd_n5EAb8-QlWrD9Db4UGgOWrfvNUjXoMciLAUkwrPRT1fdmV-DOITHe2Y82QlEL3wreukmnwByjuNaT05RovqYiZNsYoxnFIHC5UZ4Z9m2PiN_mSWG5xlNf6Rg1D7AYwF-NTt8PNarfeTarq8agU7DNArH5qpcedNbs2_r7IrltiCDDkgzNaCsZaAT0GF69SLrcfwtY6WdiJhzvcnqBC_IiQZC8XZ_bKfqnFvuoMS78Gx-VsvBZ4x3pGEeCh9-Q7jabQriM2B0eXN8uzFpbxvVyOscrsCDzV27dA_b2nNsAPh3oHpOrxSE65smLCqXEKCydZz2kp-M0dCMsXvxgte6poWWT_ESlZaGcsDnXPRO-PlFPelYMixw0Tdq3V26tSKNJtwmnEU7HVsHF3cN8VlS-tHRbzEmyG2J_-8L6Tgk5p7rxd_1O1iZ4wStd02ku4pGyn17SvuxRIrfsTA2vWRuTqX_3aKaHVp61P5XXvIvCv5yZpedsxQ9bGpertMggwDFD7k77bMcXVAFukkneWs3_vsqBe3nAr5GoFfI6FQs_X9eDBtCu9XfRNaG939lKZvoXMNBZBu3pHSwJO22HSEvU-pMHzQTjRTxcyhQNr2tuvibTi5QfJtqHzUr-XYTJQ03TQQL_5qxsFirM_THoCcICAeL1lTYeaJboGj0sEGpGc_KIfcH3OoQ8y21W4PV1U7Dq1yNR9e6Jg52Tpj9pnxTo-UoSSkdb5PO0XLghKWPVTY8x5_mXR0P40hadVSpHbJrOtjHs2hw4KAtspNKYKv20DxO4ghPc8fp6R6c8qGx55qXOoWUJYNvpvOiPQMbHUzHhK4lhu07IhLGBx6DH_nhTgwK9T9QrNO6RtHO7BOfgMQ_Qn5WpWgXVhtbtXyHB3hf3B4gFrSu9KFxZJW1n0y69zB88ChwQtkB8RzsX2KuvURdYqtqN0NdgHbWh7Y3KWoKysvM1MiL91A8hmWY7qFbELTfmmoNuX019flty1BXLkdjYrsIunL4NzjSKRT2mXLC7Bs3PC0M0yz9707o9DBWSlfFw3Yc0YiASTMyPBE43yaNe1OjPiog7lUhuhIK_1FQqioWlsn6brnSq1Dtv2PPXk_3S0J5YBPENsJt346sorcP3j9m_SpJexBy5puHZavfn3QDhlJ_HHmZKJ61VjZjHW-zeVi4vPiSxlFxJAfVgNz6TV-iTvzX3jcMTP25UMCdvoAt70gCCP6brZaREJnulpvEYQwqH_VvBZoDUdbLKwAfTxmp5P19P84dx6rt2KFYNUEGSrat6oVCXz6Fp6dOVFgG0brlGuN8LIke4",
+      "summary": []
+    },
+    {
+      "id": "msg_022a5c230b20e831016af92501cb8087d1b3e27a131dd8ccbc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0729\n\n## Episode annotation\n\n- Language task: insert the purple peg into a hole\n- Success label: failure\n- Outcome evidence: The robot grasps and lifts the purple peg, then carries it toward a corner hole (front and wrist, frames 55\u2013120). It makes small positioning adjustments near the hole through frame 200, but on opening the gripper the peg moves away from the opening and falls outside it (wrist, frames 201\u2013206). The final views do not show insertion; this is a visibly unsuccessful release rather than merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 201 | No |\n| 201 | 207 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 201-207\n- Categories: grasp\n- Explanation: As the fingers open, the peg slides out of their hold without being seated in the hole (wrist, frames 201\u2013203). Its exposed tip then moves clear of the circular opening and the peg falls outside the fixture rather than remaining inserted (wrist and front, frames 204\u2013206).\n- Recovery: Locate the peg and confirm that it has settled, then reacquire it and align its tip centrally over a hole before lowering and verifying insertion prior to release; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The peg falls a short distance within the tabletop workspace; no damage to the peg, fixture, or robot is visible.\n- Resetability: immediate\n- Resetability evidence: The peg remains visible beside the fixture in the wrist view at frame 206, with no evident obstruction or damage requiring an environmental reset; the robot can attempt reacquisition."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 51110,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 459,
+    "output_tokens_details": {
+      "reasoning_tokens": 89
+    },
+    "total_tokens": 51569
+  },
+  "user": null,
+  "metadata": {}
+}

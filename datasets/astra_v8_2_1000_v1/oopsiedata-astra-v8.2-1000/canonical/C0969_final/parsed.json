@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0969",
+  "language_task": "put the sushi in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "The robot handles the wrong object: the wrist view at frames 45\u201356 distinguishes the orange-and-white sushi on the left from the yellow waffle-textured, mint-ended object between the fingers. Frames 68\u201389 in left and wrist show the latter being carried to the orange bowl, and frames 93\u201395 show its release there. The sushi remains on the table and the metal pot remains separate in left at frame 95; this is a visibly task-inconsistent execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 26,
+      "failure": false
+    },
+    {
+      "start_frame": 26,
+      "end_frame": 96,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 26,
+      "end_frame": 96,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "From frames 26\u201340, wrist shows the gripper shifting its alignment toward the yellow waffle-textured object while the orange-and-white sushi stays outside the grasp area. Frames 56\u201378 in wrist and left establish acquisition and transport of that wrong object, with the sushi left behind. The robot then deposits it in the orange bowl at frames 93\u201395 rather than putting the sushi in the separate metal pot visible in left. This continuous wrong-object operation does not advance the requested task.",
+      "recovery": "Leave the deposited object stable, withdraw the gripper, identify the orange-and-white sushi and metal pot, then grasp the sushi and place it inside the pot; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "An unrelated object is relocated into a bowl, but neither camera shows damage, spilling, or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the misplaced yellow object from the accessible orange bowl to the tabletop is a straightforward reset; the sushi and metal pot remain available and intact."
+    }
+  ]
+}

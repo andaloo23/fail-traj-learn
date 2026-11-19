@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0874_W06",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: base_image frames 1750 and 2099 show cans in the upper blue tray and the blue bowl in the right red tray, but the pink bowl remains on the table. Frames 1984\u20132099 show a missed acquisition followed by empty movement toward the right tray, establishing a visibly failed attempt rather than only unconfirmed completion. The initial opening and withdrawal over the right tray do not independently establish continuity of the preceding report\u2019s grasp failure; its acquisition is outside the supplied images. Earlier context and later completion remain unknown.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1984,
+      "failure": false
+    },
+    {
+      "start_frame": 1984,
+      "end_frame": 2100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1984,
+      "end_frame": 2100,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image frames 1984\u20132006, the fingers close beside the left edge of the pink bowl without capturing it. Frames 2034\u20132099 then show the gripper moving away empty toward the right tray while the pink bowl stays on the table, confirming failed acquisition. The preceding withdrawal, approach, and alignment are not failures. The unsuccessful empty transport reaches the window boundary and may continue beyond it.",
+      "recovery": "Return with the fingers open, align them across the pink bowl\u2019s rim, and verify possession with a small lift before transporting it to the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The bowl remains upright and accessible in base_image through frame 2099, with no visible damage, spill, or harmful collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental reset is needed because the missed bowl remains accessible on the table for another acquisition attempt."
+    }
+  ]
+}

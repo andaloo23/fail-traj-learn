@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0746_W03",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the gripper initially works beside the green can (frames 700\u2013785), then withdraws without it and travels toward the upper tray (frames 786\u2013900); the empty fingers and green can remaining on the table are clear by frames 822\u2013840. At frame 1049, both cans and both bowls remain outside their destination trays. This window shows a failed acquisition, not merely unconfirmed completion. The outcome is provisional because earlier execution beyond the supplied context and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 786,
+      "failure": false
+    },
+    {
+      "start_frame": 786,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 786,
+      "end_frame": 1050,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the gripper begins withdrawing from the green can at frame 786 after the near-can acquisition motions. By frames 822\u2013840, its fingers are visibly empty while the green can remains on the tabletop. It continues toward and over the upper tray without transporting a can (frames 850\u20131049), so this attempted transfer does not advance the task. No corrective return is visible within the window; this failure may continue beyond its end.",
+      "recovery": "Return to the green can, align the fingers around its accessible body, and verify secure acquisition with a small lift before transporting it to the upper tray; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the table and no spill, newly established damage, or meaningful damage risk is visible in base_image through frame 1049.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible on the tabletop, so another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

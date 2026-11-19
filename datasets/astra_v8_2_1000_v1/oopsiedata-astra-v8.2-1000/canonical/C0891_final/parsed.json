@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0891",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot moves the yellow banana-shaped object off the tray (frames 63\u2013140, overhead_cam and wrist_cam), then successfully places the pink rabbit on it (frames 326\u2013338, both cameras). However, its subsequent acquisition of the beige toy fails: the gripper closes short of it and moves away empty (frames 424\u2013464, wrist_cam). At frame 566, both cameras show the rabbit on the tray but the beige toy still on the table, establishing incomplete packing rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 424,
+      "failure": false
+    },
+    {
+      "start_frame": 424,
+      "end_frame": 497,
+      "failure": true
+    },
+    {
+      "start_frame": 497,
+      "end_frame": 567,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 424,
+      "end_frame": 497,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 424\u2013427, wrist_cam shows the fingers completing closure in empty space short of the beige toy. The robot then moves toward the tray without the toy, which remains on the table (frames 438\u2013464, wrist_cam and overhead_cam), and opens its empty gripper over the tray at frames 489\u2013496. This unsuccessful acquisition and empty transfer do not advance packing.",
+      "recovery": "Reopen the gripper, realign its fingers around the beige toy, acquire it, and verify that it lifts with the gripper before transferring it onto the tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The beige toy remains on the tabletop; neither camera shows damage or a meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible and the tray remains usable, so another acquisition attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

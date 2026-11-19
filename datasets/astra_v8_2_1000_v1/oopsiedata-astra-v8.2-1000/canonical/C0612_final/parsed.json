@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0612",
+  "language_task": "Move object into or out of container (ex: drawer, clothes hamper, plate, trashcan, washer).",
+  "success_label": "failure",
+  "outcome_evidence": "The supplied task does not specify the object or container; the approach most plausibly targets removal of the orange-handled utensil from the orange mug. Frames 60\u2013166 in wrist show alignment toward that utensil, while left and right show the surrounding counter and plate. The gripper closes and subsequently opens without extracting the utensil (frames 180\u2013205, wrist). At frame 219, wrist and left show the utensil still at the mug, with no completed transfer. This is a visibly unsuccessful acquisition, not merely an unconfirmed final placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 180,
+      "failure": false
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 220,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 180,
+      "end_frame": 220,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 180\u2013184 in wrist, the fingers finish closing beside the orange-handled utensil without securing it; the utensil changes angle but remains at the mug. At frames 196\u2013205 the gripper opens and shifts away without carrying the utensil. Frames 205\u2013219 in wrist and left confirm that no extraction occurred. The images do not establish a hidden mechanical or perception cause.",
+      "recovery": "Reopen fully, realign the fingers around an accessible section of the utensil clear of the mug rim, and verify a secure grasp before lifting it out; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The utensil remains at the upright mug, and no breakage, spill, or other meaningful damage is visible in left or wrist through frame 219.",
+      "resetability": "immediate",
+      "resetability_evidence": "The mug and utensil remain accessible on the counter; another aligned grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

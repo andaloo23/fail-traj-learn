@@ -1,0 +1,222 @@
+{
+  "episode_id": "C0759",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The pink and tan toys reach the plate (wrist_cam, frames 165 and 870), and the blue toy is finally placed there by frame 1545. However, subsequent low gripper movement displaces the plate and leaves the tan toy outside it (overhead_cam and wrist_cam, frames 1559\u20131588). At frame 1799, overhead_cam shows the pink and blue toys on the plate and the tan toy beside it. Thus the final arrangement visibly fails the task, rather than merely lacking confirmation; unwanted collisions and repeated failed attempts also occur. Selected visual checks limit exact boundary precision, particularly around the recovery near frame 360.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 46,
+      "failure": false
+    },
+    {
+      "start_frame": 46,
+      "end_frame": 50,
+      "failure": true
+    },
+    {
+      "start_frame": 50,
+      "end_frame": 260,
+      "failure": false
+    },
+    {
+      "start_frame": 260,
+      "end_frame": 278,
+      "failure": true
+    },
+    {
+      "start_frame": 278,
+      "end_frame": 324,
+      "failure": false
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 360,
+      "failure": true
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 502,
+      "failure": false
+    },
+    {
+      "start_frame": 502,
+      "end_frame": 532,
+      "failure": true
+    },
+    {
+      "start_frame": 532,
+      "end_frame": 571,
+      "failure": false
+    },
+    {
+      "start_frame": 571,
+      "end_frame": 636,
+      "failure": true
+    },
+    {
+      "start_frame": 636,
+      "end_frame": 976,
+      "failure": false
+    },
+    {
+      "start_frame": 976,
+      "end_frame": 997,
+      "failure": true
+    },
+    {
+      "start_frame": 997,
+      "end_frame": 1173,
+      "failure": false
+    },
+    {
+      "start_frame": 1173,
+      "end_frame": 1185,
+      "failure": true
+    },
+    {
+      "start_frame": 1185,
+      "end_frame": 1223,
+      "failure": false
+    },
+    {
+      "start_frame": 1223,
+      "end_frame": 1333,
+      "failure": true
+    },
+    {
+      "start_frame": 1333,
+      "end_frame": 1559,
+      "failure": false
+    },
+    {
+      "start_frame": 1559,
+      "end_frame": 1589,
+      "failure": true
+    },
+    {
+      "start_frame": 1589,
+      "end_frame": 1800,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 46,
+      "end_frame": 50,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "During the pink-toy approach, the neighboring tan toy abruptly tips and shifts away at frames 46\u201349 in wrist_cam; overhead_cam shows the gripper descending among the toys. This unintended displacement violates the no-collisions requirement.",
+      "recovery": "Establish clearance from the displaced tan toy and realign around the pink toy before continuing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The soft toy is displaced on the tabletop without visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible in its new pose without human resetting."
+    },
+    {
+      "start_frame": 260,
+      "end_frame": 278,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the tan toy toward the plate, the robot opens its fingers at frames 260\u2013261 and leaves it outside the rim, clearly visible at frames 270\u2013277 in wrist_cam and overhead_cam. Established possession ends in an unsuccessful placement.",
+      "recovery": "Reacquire the tan toy, lift clear of the rim and pink toy, and release fully over the plate; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy lands on the tabletop with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The misplaced toy remains accessible for another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 360,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the blue toy, the gripper withdraws empty at frames 324\u2013330 and travels toward the plate while the blue toy remains on the table (overhead_cam, wrist_cam). The empty transfer persists through frames 345\u2013351; renewed approach is evident by frame 360. The recovery boundary is approximate because the selected checks do not establish its exact onset between frames 351 and 360.",
+      "recovery": "Return with open fingers, align around the blue toy\u2019s body, and verify retention with a small lift before transport; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition leaves the toy on the tabletop without visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blue toy is available for an immediate retry without scene resetting."
+    },
+    {
+      "start_frame": 502,
+      "end_frame": 532,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After visibly transporting the blue toy at frames 420\u2013495, the robot opens its fingers outside the plate at frames 502\u2013510. The toy remains on the table during withdrawal at frames 525\u2013531 (overhead_cam, wrist_cam), so the established grasp does not result in placement on the plate.",
+      "recovery": "Reacquire the blue toy and position it fully above an unoccupied area of the plate before lowering and releasing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The soft toy lands on the table with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible beside the plate without requiring an environmental reset."
+    },
+    {
+      "start_frame": 571,
+      "end_frame": 636,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the blue toy, the gripper withdraws empty from frame 571 onward while the toy stays on the tabletop, clearly separated by frames 585\u2013600. The robot continues toward the plate and opens empty by frame 630 (overhead_cam, wrist_cam), completing an unproductive transfer.",
+      "recovery": "Realign open fingers around the blue toy and verify a retained grasp before attempting another transfer; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition delays placement but causes no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the existing scene for another attempt."
+    },
+    {
+      "start_frame": 976,
+      "end_frame": 997,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After finger closure at frames 974\u2013975, the gripper lifts away without the blue toy starting at frame 976; frames 990\u2013996 clearly show the toy remaining on the tabletop (overhead_cam, wrist_cam). Opening for another approach begins at frame 997.",
+      "recovery": "Open and realign around the blue toy\u2019s body, then verify retention with a small lift before transport; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table without visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No scene intervention is needed to retry acquisition."
+    },
+    {
+      "start_frame": 1173,
+      "end_frame": 1185,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the blue toy toward the plate at frames 1095\u20131172, the robot opens its fingers at frames 1173\u20131174 and releases outside the rim. The toy lies on the tabletop beside the plate at frames 1183\u20131184 (overhead_cam, wrist_cam), establishing an unsuccessful placement.",
+      "recovery": "Reacquire the toy, position it fully inside the plate\u2019s footprint with rim clearance, and lower before releasing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy falls onto the tabletop without visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The misplaced toy remains within the accessible workspace for another attempt."
+    },
+    {
+      "start_frame": 1223,
+      "end_frame": 1333,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following an approach toward the blue toy, the empty, open gripper retreats over bare tabletop at frames 1223\u20131260 and remains away with little change through frame 1332 (overhead_cam, wrist_cam). This sustained unproductive interval leaves the toy beside the plate; renewed task-directed approach follows.",
+      "recovery": "Resume a clearance-preserving approach to the blue toy and verify acquisition before transporting it onto the plate; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The interval delays completion without visible damage or unwanted object displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and plate remain available in their existing positions, requiring no environmental reset."
+    },
+    {
+      "start_frame": 1559,
+      "end_frame": 1589,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "After placing the blue toy, the open gripper continues moving low among the toys and plate. The blue toy shifts abruptly at frames 1559\u20131560 in wrist_cam, and the plate slides across the tabletop through frames 1575\u20131588 in overhead_cam. The tan toy becomes separated from the plate, disrupting the achieved arrangement and violating the no-collisions requirement.",
+      "recovery": "Lift vertically clear of the arrangement, reassess object positions, and reacquire the tan toy for placement fully inside the rim; withdraw with adequate clearance. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The plate and toys are displaced but remain on the tabletop; no breakage or meaningful damage risk is visibly established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plate and displaced tan toy remain accessible, allowing another attempt from their current positions without human resetting."
+    }
+  ]
+}

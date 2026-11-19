@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0023",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot grips and lifts the spoon in frames 89\u2013104 (left_ego_image, wrist_image), but loses it in frames 105\u2013108. The spoon settles on the tabletop by frame 114 and remains there through frame 204 (image, left_ego_image), while the robot moves toward the drawer empty-handed. This is a visibly failed transfer, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 105,
+      "failure": false
+    },
+    {
+      "start_frame": 105,
+      "end_frame": 205,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 105,
+      "end_frame": 205,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Starting at frame 105, the spoon slides out of the lifting gripper; frames 107\u2013108 show separation and its fall toward the tabletop (wrist_image, left_ego_image). By frame 114 it rests on the table. The robot continues away empty-handed toward the drawer rather than reacquiring it, and the spoon remains outside the drawer through frame 204 (image, left_ego_image). No recovery is visible.",
+      "recovery": "Return to the spoon, align the fingers around its handle, reacquire it, and verify retention with a small lift before transporting it into the open drawer and releasing it. Human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls onto the tabletop and remains accessible; no damage or disruption to other objects is visible in frames 108\u2013114 or 204 (left_ego_image).",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains on the reachable tabletop, with no visible damage or cleanup requirement; another acquisition attempt can proceed without human resetting."
+    }
+  ]
+}

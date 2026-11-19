@@ -1,0 +1,116 @@
+{
+  "id": "resp_06e690d271318467016af92b86979c87d18037cc41b5b9b3ce",
+  "object": "response",
+  "created_at": 1794714502,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714506,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_06e690d271318467016af92b88a6e887d188df456a246c2e2e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SuK-dAOhRKp7i2N9X1SPPgvjA-IR9YxnUDHGn7TYW5ckNzmx9SxhJO9qdLG9tr14r38lWLVp9bYTaozzP5jBb2Pkwbbb7kdiNBogVJ07Gr60-rPhma-K1QMs4IzX22BdxnJogLDDgPLy_UQX8oYDnKpTewNTrjKOssgBzDOQ-MnsnPiX6n58Ii96jLeildiEdQnykzB-Ut5IZKlVhtp-d0FVC1Xjdl_le7PmQL2AYE3cTgu-94yvWyPMDOTQBbBdvaSVibYOAcPAKxMPXG-kD8pecI6TdtIYFPCIs2aj2VXtKYjdgfLnhmpXoCAAjuZ45iuQnrBATXyyTgWLtenbYqsgMA0DmBtCw60nGfGrRb6UlGFW1pu-TlNfjbWjd-bUXUfgfkz1__g6CmEgv1NtmqzN5zln7pwm6TtUvTJu6zyrTwCCnfKrVpr5Rv3qFsQMt36bG3G_5NGDgfV-Sn0X8LZa6l641Xv7kI3SLU04Affv9P0AGFE_RjrAvaLchyMs93L2oDuN1OBqhFJx0ALFoe2ndCcxVrJJfJM7T3NBqtFaExRUqqW_rCJcLQfSm3nVlF_sOSzjb-IG9FCgEwLJu6zke5HYMNi4_g--xtxqqeTG1h02QABVU1B8mOwpy3rXD9xmtgYRjJhdRqzSyYvo5m_BNAe-yu7LbTR5tjuxygKHYbL5Cj0Rc-3U3VqTUf0tdzkFP8qtM6qYvkeCX9wP7yPxLMGQ7MzVY2MRELFf6BbqmacQeI3dvijypNvFdf1-oev4tAHzdb4qIk5yjIkiHVqRBemDPyahY7bgFRF89KH9ubX1OJBVQfyt3uueGe65xBsCWM0u09LRQS8eulDOqbtf9ZRdIWk_L3_xhrqvzQZFGnzDW4VFmceTLneLv4-lEqKhk-5iDnWhMaPhCLuC5OKx3yzQLGU-y7mlqWdemwciNUUUbfy33CuDQmU_crVsrbL7u2nuF1GIJNyLGv3lPS0FNm59jh63TZTsCRzNFeKC_snQNtChdJusJcF1Azv6JS1yh5kH7xBbVxpA3wsbQfmiVrTBKl0AswBpFXDp8Q_R3mzjcUnqaGvpkHLMloIpWFU2IqyC97y-huCs4rxSD8iANGQrSEx5HlsbBd3zTOBib6e4t-3JYSWPmiq-1RIkt--q8BCH9-edBOJ-CLkzUeIMRSn0p5tI3oYduJJgnyZM9-zJPqx6xunFTeo0hP9Wz52n1ul_GtHdu1u2vmZjpupXkyjuxb2s1SCPdXUISPDUhVed0m0fx-wsfM8Uz2AnBVMtVn0s5xbPvXDQ_jXrhmYFGvqeAoboM8WMHJom0o_vB5R9Zh4VpZNedxK2WRV_5av77SW17_v7T88v171QXvi5NQwLE-CYDXqF-XTg8whlOXIkGExteVSdsf6VJc_6lQALJ3kh0k-hhUn-EakcxZqafqdN4RViXKFmZae1wmWy_inP7oEhgiPqdjwMJPPhrWrCsy7VmextxMSdL9coH6mH3p2a8-Vw3CezuDd9Qpl1hOb8fEoLJYd1bE6AaZdm7-ccEPCURhcKI-TnUftumRAPN8TTMe_vjxik_o5E-bMbXYrHvY64n9LIiMo8s5aGtwhif7FgQTup_Fk4rBs7ouZ1AxmyL14qhHEsQ4wrbQtuTT2-l4Y8FE9P50F5guLOyspizIJotQGzk61FX4q-rmW6c3mJWYdYnOceNYcdbJkrncAfRSnoGe_wxHFRVoIcXgKdzFspiwI0gM4BJLrGjoXshQHZ2VPAcW44HIopZ-9l-0y8Qls7l7lyq0ezHjprF9NlkvMqrZH_Edk1UZS4sp8d7NmZmENE9aGNGMr9E1VhZU=",
+      "summary": []
+    },
+    {
+      "id": "msg_06e690d271318467016af92b88afe887d1a3da1212d70328cc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0837\n\n## Episode annotation\n\n- Language task: Pick up the cube.\n- Success label: success\n- Outcome evidence: In base_image, the gripper approaches the purple cube in frames 15\u201329 and closes around it in frames 32\u201336. In frames 40\u201344, it lifts and carries the cube toward the right, leaving the cube\u2019s original tabletop position empty. The subsequent motion occurs partly outside the view near the box, so final placement is not confirmed, but placement is not required by the task. The gripper returns open in frames 77\u2013100; no failed acquisition, dropped cube, or harmful side effect is visibly established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 101 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 10706,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 16
+    },
+    "total_tokens": 10900
+  },
+  "user": null,
+  "metadata": {}
+}

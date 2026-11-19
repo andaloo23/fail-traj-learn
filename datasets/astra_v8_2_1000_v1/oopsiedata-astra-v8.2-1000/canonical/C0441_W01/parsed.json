@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0441_W01",
+  "language_task": "take the small silver cup and pour its contents into the blue bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, rather than a visibly failed pouring attempt. Frames 0, 200, and 349 in top show the blue bowl and the silver container with its contents still on the table; no transfer into the bowl is visible. Frames 45\u2013225 and 298\u2013349 in left, right, and top show arm repositioning and approach near the containers, without a confirmed completed acquisition or failed withdrawal. No local failure is established. Later episode context is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

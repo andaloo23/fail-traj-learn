@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0433",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot separates the initially nested cups (frames 203\u2013391), builds a small stack (frames 447\u2013581), and then brings the cups together again (frames 685\u2013906). The final placement fails: the last handled cup tilts during release and falls onto its side behind the remaining upright cup arrangement (frames 907\u2013953). Thus packing is visibly unsuccessful, rather than merely unconfirmed; no completed final packed stack is shown.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 907,
+      "failure": false
+    },
+    {
+      "start_frame": 907,
+      "end_frame": 954,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 907,
+      "end_frame": 954,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In base_image frame 907, the cup being placed by the image-left gripper begins tilting instead of seating securely over the other cups. As the gripper opens and withdraws (frames 912\u2013929), the cup falls away; frames 940\u2013953 show it lying on its side behind the upright arrangement. This unsuccessful final placement prevents completion of the packing task.",
+      "recovery": "Reacquire the fallen cup, restore its orientation, align it concentrically above the remaining cups, and lower it until securely nested before releasing; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup falls onto the tabletop and remains accessible in base_image frames 940\u2013953; no visible damage, spill, or meaningful damage risk is established.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The fallen cup needs straightforward retrieval and reorientation on the clear tabletop; the robot could perform this reset without repair or substantial environmental intervention."
+    }
+  ]
+}

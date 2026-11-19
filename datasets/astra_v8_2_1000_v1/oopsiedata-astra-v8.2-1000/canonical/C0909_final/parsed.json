@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0909",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The spoon is initially lifted but slips out and returns to the table at frames 42\u201348 (wrist_left, wrist_right, ceiling). The robot subsequently reacquires it at frames 104\u2013114 and transfers it to the blue box. Frames 139\u2013143 (wrist_right, ceiling) show the gripper opening and withdrawing with the spoon resting inside the box, confirming completion after the earlier failed retention.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 42,
+      "failure": false
+    },
+    {
+      "start_frame": 42,
+      "end_frame": 69,
+      "failure": true
+    },
+    {
+      "start_frame": 69,
+      "end_frame": 144,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 42,
+      "end_frame": 69,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After lifting the spoon at frames 33\u201341 (wrist_left), the robot loses retention at frame 42; frames 43\u201348 show the spoon falling and settling on the tabletop outside the box (ceiling, wrist_left), while wrist_right shows the empty fingers. The robot continues to the box and opens its empty gripper at frames 64\u201368 rather than transporting the spoon. Task-directed return toward the spoon begins at frame 69.",
+      "recovery": "Return to the spoon\u2019s new position, align the fingers for a secure grasp, and verify retention with a small lift before transporting it into the box; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls onto the tabletop and remains accessible; no damage or disruption to other objects is visible in ceiling or wrist_left at frames 43\u201368.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains on the clear working surface beside the box, allowing another grasp without environmental resetting or human intervention."
+    }
+  ]
+}

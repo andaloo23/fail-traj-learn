@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0303_W02",
+  "language_task": "unfold the towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window: the towel starts folded at frame 350 in top and right and remains layered rather than fully unfolded at frames 675 and 699 in right and top. The robot approaches the towel at frames 460\u2013500, gathers and lifts fabric at frames 520\u2013550, and repositions it through frame 663, visible in left, right and top. These actions establish a task-directed attempt but not a clearly failed acquisition or manipulation; releasing and repositioning the fabric does not alone establish failure. The outcome is provisional because later context and earlier context beyond frames 348\u2013349 are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0790",
+  "language_task": "Pick up the ball and place it in the bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The orange ball starts beside the blue bowl (frame 0, camera_high). The robot acquires and lifts the ball, visibly retained between the fingers during transport (frames 165\u2013200, camera_wrist_right and camera_wrist_left). It positions the ball over the bowl and releases it inside (frames 245\u2013283, camera_wrist_right). The gripper withdraws empty, leaving the ball in the bowl (frames 318\u2013350, camera_high); the ball remains there through frame 749. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

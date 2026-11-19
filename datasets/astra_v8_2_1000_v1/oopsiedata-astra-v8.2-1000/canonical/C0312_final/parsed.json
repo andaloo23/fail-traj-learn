@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0312",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the wooden spoon and closes its fingers around its handle at frames 78\u201394 (image, left_ego_image, wrist_image), then visibly lifts and carries it at frames 105\u2013137 (image, left_ego_image). At frames 175\u2013197, the spoon remains held outside the drawer; no release into the drawer is visible (image, left_ego_image, wrist_image). Completion is therefore unconfirmed in the observed episode, rather than a visibly failed grasp or placement attempt. The approach, acquisition, and subsequent transport do not establish a local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 198,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

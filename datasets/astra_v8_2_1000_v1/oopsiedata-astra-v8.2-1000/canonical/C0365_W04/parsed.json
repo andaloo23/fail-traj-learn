@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0365_W04",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, rather than a visibly failed attempt. In base_image frames 1050\u20131149, the green can remains in the upper blue tray as the empty gripper moves away. Through frames 1199\u20131399, the robot approaches and aligns around the blue bowl, with acquisition still unresolved under partial occlusion; no withdrawal empty or dropped object is visible. At frame 1399, the pink bowl remains on the table and the right red tray remains empty. No local failure is established by this ongoing approach/acquisition. Earlier context is limited to frames 1048\u20131049, and later execution is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

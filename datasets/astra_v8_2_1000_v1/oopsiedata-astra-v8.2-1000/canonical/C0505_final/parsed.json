@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0505",
+  "language_task": "put the pineapple in the purple bowl",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The robot lifts and carries the pineapple in frames 80\u2013145 (left, right, wrist), then releases it into the purple bowl at frames 151\u2013154 (wrist, left). It remains in the bowl through frame 399 (wrist, left). During transport, the robot also displaces the unrelated orange-checkered tray and its contents, visibly changing their position between frames 104 and 105 (left, right).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 104,
+      "failure": false
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 108,
+      "failure": true
+    },
+    {
+      "start_frame": 108,
+      "end_frame": 400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 104,
+      "end_frame": 108,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "While carrying the pineapple past the orange-checkered tray, the robot or carried object contacts the tray area and shifts the tray and its contents; the displacement is visible across frames 104\u2013107 in left and right, with close proximity visible in wrist. This disturbs unrelated objects rather than advancing the requested placement; the precise contacting part is not clearly resolved.",
+      "recovery": "Lift the held pineapple clear of the tray and continue along a collision-free path to the purple bowl; a person can restore the tray's original position if needed.",
+      "severity": "low",
+      "severity_evidence": "The tray and contents shift but remain on the table; no breakage, spill, or other meaningful damage is visible in left and right at frames 105\u2013108.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the displaced tray and its contents would require only a straightforward repositioning on the table, with no repair or difficult retrieval visible."
+    }
+  ]
+}

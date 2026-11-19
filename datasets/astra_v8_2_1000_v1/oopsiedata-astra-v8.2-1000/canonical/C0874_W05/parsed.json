@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0874_W05",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: base_image frames 1400 and 1749 show cans in the upper blue tray and the blue bowl in the right red tray, but the pink bowl remains on the table. Frames 1640\u20131749 show a failed acquisition beside the pink bowl followed by empty movement toward the right tray, rather than merely unconfirmed completion. The initial gripper opening and withdrawal over the right tray do not independently establish the preceding report\u2019s claimed grasp failure; the earlier acquisition is not supplied. Later completion is unknown.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1640,
+      "failure": false
+    },
+    {
+      "start_frame": 1640,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1640,
+      "end_frame": 1750,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, frames 1640\u20131655 show the fingers closing just left of the pink bowl without capturing its rim. The bowl remains stationary, and frames 1690\u20131749 show the gripper moving away empty toward the right tray, confirming failed acquisition. The preceding approach and alignment are not labeled failures. This unsuccessful sequence reaches the window boundary and may continue beyond it.",
+      "recovery": "Return with the fingers open, align them across the pink bowl\u2019s rim, and verify possession with a small lift before transporting the bowl to the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl remains upright and accessible, with no visible damage, spill, or harmful collision in base_image through frame 1749.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental reset is needed: the missed bowl remains on the table in its original accessible position, allowing another acquisition attempt."
+    }
+  ]
+}

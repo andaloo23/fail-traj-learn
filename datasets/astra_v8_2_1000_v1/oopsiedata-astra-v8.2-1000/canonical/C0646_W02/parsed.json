@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0646_W02",
+  "language_task": "align one of the two cubes to the top right corner of the box",
+  "success_label": "failure",
+  "outcome_evidence": "Throughout frames 350\u2013699, top shows the cubes remaining in the same positions inside the box, while left and right show no discernible task-directed approach or manipulation; frames 350, 500 and 699 illustrate the unchanged scene. Completion is not confirmed, and sustained inactivity is visible rather than a failed physical acquisition. This outcome is provisional for the supplied window; earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 350\u2013699 in left, right and top, the grippers remain outside the box without discernible task-directed movement, and neither cube is repositioned. This approximately 11.6-second period is sustained inactivity that does not advance alignment. Context frames 348\u2013349 show the same state, supporting continuity across the starting boundary independently of the prior prediction; inactivity may continue beyond this window. Its cause is not visible.",
+      "recovery": "Begin a controlled approach to an accessible cube, acquire or controllably push it, and align it with the requested box corner; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "No collision, displacement or damage is visible in left, right or top; the observed consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cubes and box remain undisturbed and available for an attempt, with no physical scene reset needed."
+    }
+  ]
+}

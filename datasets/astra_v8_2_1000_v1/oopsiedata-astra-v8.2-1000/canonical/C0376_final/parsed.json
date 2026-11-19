@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0376",
+  "language_task": "put the bowl on the table",
+  "success_label": "failure",
+  "outcome_evidence": "The orange bowl starts in the rack (frame 0, left and wrist). The robot approaches and adjusts its grip, then carries the bowl out of the rack toward the tabletop (frames 81\u2013145, left and wrist). It lowers the bowl near the table by frames 161\u2013167, but the gripper remains at the rim and a completed release with the bowl independently supported is not clearly visible. Completion is therefore unconfirmed in the observed episode, rather than a visibly failed placement. No clear local failure is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 168,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

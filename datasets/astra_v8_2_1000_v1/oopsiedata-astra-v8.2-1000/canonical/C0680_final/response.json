@@ -1,0 +1,116 @@
+{
+  "id": "resp_032af7e3a990925f016afbe7bd47c487d1b3ac5a5ff907c82e",
+  "object": "response",
+  "created_at": 1794893757,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893762,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_032af7e3a990925f016afbe7bf351087d19628f73101d0ca8f",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--fCxR-McKD8tlUL7wCzATKxt7lNuC4WTuQiG25F3YsFYGSoh8thDkOs5_aib_YO5AXq8f9CUBylpRJiyE0eTHb2z6P8F4-8_CABLR_rSTK5MH5PQe30XIXsGngecS3M_9CTb-60pToU-aqpZWfuPx6RjBf1Iwau2w0roO6ERNXG4JDOwapvjMvciObGQDldIsfNvAVFwSaum_UIN9FhpnUgN_0KOIMyuayJXrg6jnl0gj1v5e8bQDeDBcV5Z9wLND5MQf7OuV8gW1IU9B65TYgS3ob4Hw1DAAafJh04r3RtQZoDXieE6v_pzW5IV4smKUD9SmZNhV7toqoAZCPKj0SiPzKj24FwU_J_E0RoYoC3OduasWAYbOQ2VqqPky7V7OfdQ95itYfwPk0rLPR74t9Wj3oBnxvk8C2untalRKC6LDj7RGOrk0_r-SU3aHQIfBGAbP07SkgpF9DRVjTYCkwDnTQIu8pi5DDNghNlh5g2_MvBlRc3-bDrj_2ZeJn_4H_KZoyekeFQVAYw0AlNB9z1tRgmRs5hkklcJ1WCOlr-B15MlsfLEEkdKTM4FxB-kDRPTI1_33Nkr_rBmC0EZR-wkErI73cM4gUqnXzaKapnCTyCacuDrihLpFTQiNMcyNxBGufcoJN_Y7Ls8Ko412m93CLfz3ZvP2PEreiUeAYGM9LF4YWccff3Dynbo39s_gdWRzSunF9og_dShTFRF52bbZj7hZP5eWtEsczG7oLYWBgFwutsJJENPAnZYd1wqOD9IXIqN_o1446ZzTJgVZxT7nPtWrVh9EwyKAE3IqVGV_D016J0yTeQ9U5oySveHT62YfT3m9IJ8QDILyEOfU2Mk-7agyxESAKR3itAgc2eQqR1MoaWyeyHpykE7NB2P60cIf-1f24HvwQGvNvnDxBW26guX4a4ZrvkEP6p2-hjrkU7sJntuupu77OU8oqSBfKZRLdPrgfCX5z2K7i7LeElDxBNI0bZkPVbc9ibxw_r0kY6kG7Op74zlEe0JYChl-OO534im2CPrwrfolO0ZBLhsTqJEWafC1KQfOGPsciId95FI2ly4WM2-zj-I1MPzf0ySbTXzHyM2-OWiABgTPNt5qzB3wPDv-7y6fzoJKyd85XFVKVImFFSYUatlPkNQ0eXHYFWnAbqbtiiK6W15IPQ5bYfo_h-7Kjl7Rvl36jcdYXBxwlEyd0sg6HS6eCNgR0yXM5OGBFexle78vORoJQYPf4Y_3oKd6TKgoQ2erFhD4ojxk9Pr0RgLR66NcTbabEk6RgQZT4WdgX7oFeLstb6H4qG-IYWwb2KrBmKggeppV_SjOeGetl6pU8bzlLegZFUwb_NSTC94xULydipbjoYCJM4Rzi_XTUyLxLAHwOIHwNwHkuv2DwzYB9K4b9aIxAsn2OYWdsXcshjhz3ZrrwV1664FX0md8XXj8rC3fKUh6Ga5nivNtOkkqb5JU6dLITpBXIMCnA0MkL7H-7viTbxaguGiDDYpimeRF9DlConror8UXUE79mvPuka5CKVG5uuKLjs95ogA4BAmFmMWUml0PtYbI4VNy_bycCzLnA7I-XhhCeOcWwuAR3Eku2PkAy8_FSQQLar-CWINHZmSP6fERe9d1uUqayqx3-gVxcYn_H1uMrd3I2NMoJ408-HxCRRdte49oK0dqCy6bJxEzLXdlET0AiiuPDmRCPg4guORXll321PEeLtq-jfmfBo48Cg2nITkkBtlubcXna1U8QUaOAMHnvkmaLFarB6BTOlVovOvlCKKxC44CBkOh5l1ZGdpwtcCmki4LJ7aGqrEpStPGhS1riTmYCaVrsagsr8ohemv5Cwa_XzYmiKX1WiIaQ3rvCl9Rz2F0KSzraYdAePHGjibGU_1_6eW1pNaCDcQaX-ShxC4xYSHYvNq0xN-S4sllYk3fxSxMBqOx1HPnVfZk2grMSYRwAhyfhSHNdlPjNpO80JdMC1ikwMs-GEMwXiG5s9yS3taUQ7d_xDdjM7Peb7dhpuq4Dt1G4M24MAcbFo-QMZzG-E2AEQq1wjoVGVe1c-s03h6EZGjYRAHnSzuH4XghTwhwA-OPAQ7uDtY2edvk0_qaiCKe0h2gNvBqbIg252GSlOZet9smn2msqg3eJfcuD9gS07MxFkIx2_sBjs1wawTPlTsc9x__ybNkTGp2jhtoqeigltLhIiX1Xkr47TIDJ8-BB6i80Q_8Bsdvw-DTPvHI5rkfFoeLF8lNhPXMjrKbplCcnBcM6O88yRxwFAkSWkTOGUV5yYXaiP8Zlt8njyCIy-yNeK3e8VvR_ScjvalNBUhHQzO965cf-591-pcspH54qEQW46mZCirRf9M8Z2J8okAnnJ2FVJqwGE0jKfxg9R9QHAIcxgKwHXVjtgRkjt8pbJVghS6qZEYNsRiFV9U_QR9RetPjwmKSZWZPMVGm97SydnJFL6ZafRT6Z3FKmabXs2q_EEN-wylRUoRPNYimo8PT3KLZ2uhzFJaf-rdZRANxfUKuKDpvNTOv2tqrPqKzaSAFUZKLOa675vBErxCSJAbDCjBf3UjnhynIhuzT4KtRVz9zUQFZCBlr8fcnxs0xJwzI5vAVI-YxpCDUCMdcq1YOO_gjUTWS1lOvJz9YbR17LBL02nkrg0HwEgYw-2LrE01aMlDz5Acu1ClKiE2C8ZsMSXVk7cXEsojOdmCLQRASWrMpVBxRstRA==",
+      "summary": []
+    },
+    {
+      "id": "msg_032af7e3a990925f016afbe7bf810487d19881e828b2eac786",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0680\n\n## Episode annotation\n\n- Language task: flip the small box upside down\n- Success label: failure\n- Outcome evidence: No completed inversion is visible. In top at frames 0, 700, 1400 and 1999, the pink rectangular box remains with the same broad face upward, despite some translation and in-plane rotation; the orange containers also show no completed flip. The left and right views at frames 930, 1320, 1750 and 1999 show approaches and repositioning without a confirmed inversion. The pink box is the apparent focus, although \u201csmall box\u201d does not uniquely identify it among the containers. Completion is unconfirmed, rather than a clearly observed completed flipping attempt that fails; no abnormal termination is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 222 | Yes |\n| 222 | 2000 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-222\n- Categories: task_not_attempted\n- Explanation: Frames 0, 60, 120, 180 and 221 in left, right and top show essentially stationary grippers and unchanged objects for approximately 7.4 seconds, with no discernible task attempt. This sustained initial inactivity delays the task. Repositioning begins at frames 222\u2013223; no hidden cause of the inactivity is established.\n- Recovery: Identify the intended box, requesting clarification if necessary, then approach and establish a controlled grasp before lifting and inverting it; no physical human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The observed consequence is delay only, with no visible damage, displacement or meaningful damage risk during this interval.\n- Resetability: immediate\n- Resetability evidence: The environment remains unchanged and ready for an attempt; no environmental reset or physical intervention is needed."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20061,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2174
+    },
+    "output_tokens": 420,
+    "output_tokens_details": {
+      "reasoning_tokens": 21
+    },
+    "total_tokens": 20481
+  },
+  "user": null,
+  "metadata": {}
+}

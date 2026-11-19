@@ -1,0 +1,116 @@
+{
+  "id": "resp_0dedd06d90b00382016af91df8e69487d1a708df4aa941b8ac",
+  "object": "response",
+  "created_at": 1794711033,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711043,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0dedd06d90b00382016af91dfc03a087d1a63c16917d7b6f09",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R4ERZj0P0bTSQs1COo7dXXwsYEUWZW5GllsVgdgSRAdGFK4SW9y37x6chFSX4qO08wjJNaSo-iewTiXDUFm26ItQ_xWRgpun2i_nuxM8-iXju8V9qmoxWTEQCcqcWygTjQPemDSU3Nd8O33aIUig6dKzc1krfWRBcoHa3yN3hn2smNraDkknNOHk67lVTgIPpRMLUo3viOjYnmmKguaYF-vnY9khd_ZExuUtvlqFBkaXKN-QQfoz5nw7tWmb0FyvYwtW-iFW-93P6M5p-9eb3SJfVD6fX75weHi84meFItf1akGyIx2C_wJsK6TK0_pie-vgPhhubPpfDXgARINXdbC_qcwb0CuwAnLwIy9Kos9ceEfSMpKJT5WfGbS79XRT89VQZ8CY94M8vnBJEEXerPF16ZlAfMZ_OI3w0gUKnzA4uM7XksjZdzeanmIEeASyjrRyXYafuSCPVfy9QOSs8cQHPMrz5gfghadd4wlIrdOzmUAZ8YtfLr1OAw2PucqLj3nCo4J65Hr3XF9x9ADNsjYk5CwVkccnk0iBk_VMhJwYE4s5P50UP0q3GtcWME2tTrw9rGGTFn28LGIJA6Cl18RYHMZMpjdUorHmxWMQW0o4xA-LNbFoRLuL0nC6IG8U4ZqZlXEBgbFoe6QclUJmX4BfFQvXTvUeMeKBErhHBN5YNN5vULV-A1ts9_fC25zCbyXwe1uVgkyuWi6-pYOdxqkWMLFjntxus-KUcPm074jBOHI6qLD-TC42aNGEZx9xt04wDQhgFeM9ha3w-2835bP9xNlFxVPlpMaMlh3uUk7JLo4_x2TexDLNYPL7c6ATRUllq_JLUzIXvKOi8nu-qozLBNsSHvz8bBd3oUScRhNtg4T-aQV5NdlxjuKOG4Ctk2MWn8s2dXMDjV-0IB4iMuGCjXNblzXYSnd8KlaHNQjl9stwAqqfIxfJzl-WtrOIaHXptvuW2NNAwPP5tyC0MFTynn_nTzWdgoyHZGsKHrPo-7wxJLaf08QJeTaxSIrOfGLGW2XoRZu79SVfhm2eor_y-vRub-n3dY6KNgVDe5XjAw4gf1XAAA_MET8OeNG4pVpgEDmRFY-rnTREwXeG7a7xM7_TymaWn9_a1oPUwyuD9kklMftg5-VyfnbOzx9ERf3HWGc_CU156UA7OXZ3Q99ODq3mRLzQSxu5VfOP_bkFnLmPV4MU4636KxO8nXH_s0LYMMhQf1WqMAHLbBghEX1cxZOlAnb6LByoHf7qacKsY0tCVBnS_ExPmwcPh_QMU5ihmwT7e3O4Gy6FWOID2BW_p4QoYywLnPTtfFacPvIYpKQF5k26xkW32qJp45K2PJHj-24U6aL-I0Cp9leaBjAPuqwTv-LxUz4rJzqQWDGtphFUVyQVS1-iICn5bokdnzkjA2xKd5vsD-Phchtwa2hHdECr9Vzg4QodwE5qEEs_IwfhVP5Z19ViEiNCMVa-jTLPpILcm3yYSk8iNcUkeMKxpUBzKNEi-iJrtWGjc8pZ4RdwGHPC0hAyFgsLVudx72OUldXFdHpKlFKnrHjT4ieX9KivbW85gMBg4FqCzxbHYirS74QJl-bzjm9IdzTRO9FpnARfuhzaoxyYkcei93jI1wfVkJ1RGHwpVA4Wv4b4FX-F26ZM3r_R7aYNTZ8YZcWvCSHjNAL3ZOmuA7k4n8OokJOKLDelFM9LgFvs5afThn-DqoB6xHjQlyfklgyHugAFy1S_m8aWrDBasxyUhAxVppAsuzjzrn9eB_6jk8aw3L-a7xGh8pmCDuT9p6N956gjXINAeBClTkD0D7Hjzp79c90QOUYhYe31-dcBeQQlOMOt0s5cEX2OAU4Y--AtDQvMRqFnFRE2P0X6_DE4U5dhhwWeOWlIeVf_SZYhP_PKs0jTJgF2lodutne64q5ArBSHuO4BszAmYhgodRgyAAwO0UumB9aN62JV-NKfpqu0qv2ka-uaYkmjCXuQyzM-F5gX_XXdShE919DW5E4niIXseyqwpq3lY5CGaqz7DiBBpEFC7K1d_569crtKImDX0v-fAx4yDa_V0KY0QytWQXVMfHhiLgrGz7vMb1nY-7YkHrXyePHAuzjXhJIpovzgTDCFhUcmF0SvMQIdTz8eqTPm1Dbwwe3VKIss-u5vKnix29V1dTEh8GG7ErULPQwZCRruzj9iyFye9-2VOnbBEgWy--jwxXY1G5vfTKjuS8GIFR2XRc5bvhtSFe2UcoCKIplD0a4WYzjc_OrRuhQJn_z-M2qvK-hLwIVf17bnWcCFCpe2t_PHq8zoyzujBPU2VPnJa5oRNjmB8aneSFT1ksV-kpqzVlOBDdnTq-54F4nYqxHVtWTPSTr8AUXnRVUCBZtn1uDvgXClrpyc5a7XYMoJZ2aOe09kXgOYTvS4UgVgu6-iSAS7nK1_bbvxmvg0kEfhn9yfCtDvaiRqtc_F7fu13_wZsMJUXvwhPjbNBruHdVA8OadeRwKepC8IDX7JxelAOqiqdqOZaOESICnFNP44JEJKOqeRSXFyNIUFSA27Dg5sxK7QazO0Nfae104mFqMKcmlvX0eC93YY30tTeBQYtCUD-DvxPFIxSpI6ee0iHhKqNepYHzOFGeodLsmlTj-lUjRdP4kJ8vKmRLgzV097OS9ai7iqIEhsEwIKNH8F_GLKstkP6I8blvNLFoHs5q5HTJvsbnUaFh_glEpXAa9tLuvpFyDV6PLeDMwqQtux0PFM39n4YyP7aPjqO9mj9riWqzDiQLXR1N-7Mnlzsm_VXjAk5HljYt5gyr732aBsF2u-NDpoZIM0BXM3fpy-0gpnxUHut7_WAys7orzxTqVRnp8lBCL6Rw9vcSRKLp1jnnHvjd4IeGijxRa8jKDK5SUZUmRX8bBDX9g5Nbxe6xM2DHtvzmwJOT7g-9kxBFNlnDUqQ_-ZLryA6pdOGunU99mAN8MmlHYBydFOJaVq9a8aOwgDVMBjG4DuAXu52ja-8UpLhTu1WcngLla4CcIHlo2WTCuQ4NUDYVH-dbV0tPg5XnnBxlQ_m4FbLsdE7k_E43Wsm5pD28o0UXrq0iAe7VIZgfHJeTrYYxHSko9CMkpihXs5QJl5RXtYKZKfRNAjB43YmheUOfhk-OEjTLN3QpMQqn8QFg2RCUeIkKK2wm4SrlSGB4fKKkz5XjpRSWzvzEoVdou7iLXb5qIk3oBp4QtKtem-mGrwsyGhd5HTaZXpA==",
+      "summary": []
+    },
+    {
+      "id": "msg_0dedd06d90b00382016af91dfe8b9c87d1a665adbd1a34ce21",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0612\n\n## Episode annotation\n\n- Language task: Move object into or out of container (ex: drawer, clothes hamper, plate, trashcan, washer).\n- Success label: failure\n- Outcome evidence: The supplied task does not specify the object or container; the approach most plausibly targets removal of the orange-handled utensil from the orange mug. Frames 60\u2013166 in wrist show alignment toward that utensil, while left and right show the surrounding counter and plate. The gripper closes and subsequently opens without extracting the utensil (frames 180\u2013205, wrist). At frame 219, wrist and left show the utensil still at the mug, with no completed transfer. This is a visibly unsuccessful acquisition, not merely an unconfirmed final placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 180 | No |\n| 180 | 220 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 180-220\n- Categories: grasp\n- Explanation: At frames 180\u2013184 in wrist, the fingers finish closing beside the orange-handled utensil without securing it; the utensil changes angle but remains at the mug. At frames 196\u2013205 the gripper opens and shifts away without carrying the utensil. Frames 205\u2013219 in wrist and left confirm that no extraction occurred. The images do not establish a hidden mechanical or perception cause.\n- Recovery: Reopen fully, realign the fingers around an accessible section of the utensil clear of the mug rim, and verify a secure grasp before lifting it out; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The utensil remains at the upright mug, and no breakage, spill, or other meaningful damage is visible in left or wrist through frame 219.\n- Resetability: immediate\n- Resetability evidence: The mug and utensil remain accessible on the counter; another aligned grasp can be attempted without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 40125,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 544,
+    "output_tokens_details": {
+      "reasoning_tokens": 118
+    },
+    "total_tokens": 40669
+  },
+  "user": null,
+  "metadata": {}
+}

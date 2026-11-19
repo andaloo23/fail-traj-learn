@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0835",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the oven during frames 0\u201352, but the door remains closed in image and left_ego_image. Frames 53\u2013173 show sustained hovering with only small adjustments; wrist_image does not establish acquisition of the handle or an opening motion. The final closed door visibly establishes noncompletion, rather than merely leaving completion outside the camera view.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 174,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 174,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching, the robot remains near the oven with little change in position throughout frames 53\u2013173 in image, left_ego_image and wrist_image. No discernible handle acquisition or door-opening movement follows, and the door stays closed. This prolonged unproductive interval constitutes stalling; the images do not establish a mechanical fault or failed grasp.",
+      "recovery": "Resume task-directed alignment with the oven handle, acquire it securely, and open the door along its hinge path while monitoring clearance. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced objects or meaningful damage risk is visible during the stall.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains closed and the surrounding scene is unchanged, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

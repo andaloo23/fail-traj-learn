@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0399",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is closed initially (frame 0, image and left_ego_image). The robot gradually approaches and aligns its gripper near the door/handle region (frames 50, 150, 220, image and wrist_image), but no door-opening motion is visible. At frame 304, the door remains upright and closed in left_ego_image, with the gripper still nearby in image and wrist_image. Completion is unconfirmed in this observed episode; the images show an unfinished attempt rather than a completed failed acquisition, sustained stall, or visibly unsuccessful pull.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 305,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

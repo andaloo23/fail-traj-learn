@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0708",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 400\u2013800 show the robot separating and positioning three green cups, and frame 1000 shows a released three-cup pyramid stack. Frames 1200\u20131600 show the cups being collected and nested together; frames 1700\u20131833 show the compact nested arrangement remaining stable with both grippers clear and no loose cups visible. \u201cPack\u201d is interpreted as nesting the cups together, since no separate packing container is specified or visible. The handling chronology supports completion, although the final view alone does not reveal the individual nested cups. No failed attempt or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1834,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

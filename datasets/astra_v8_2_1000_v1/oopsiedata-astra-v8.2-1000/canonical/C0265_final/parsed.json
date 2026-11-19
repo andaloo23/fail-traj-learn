@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0265",
+  "language_task": "find the cube under the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "The robot repeatedly repositions near the green bowl, but no cube is visibly uncovered. The bowl remains inverted on the table in left and top at frames 0, 690, 1140, 1500 and 1999; right also provides no evidence of finding the cube. Completion is unconfirmed, rather than a clearly demonstrated failed grasp: acquisition and subsequent loss of possession are not established. A sustained unproductive interval is visible before repositioning resumes at frame 1845. The recording ends without a visible lift or inspection beneath the bowl, but does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1380,
+      "failure": false
+    },
+    {
+      "start_frame": 1380,
+      "end_frame": 1845,
+      "failure": true
+    },
+    {
+      "start_frame": 1845,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1380,
+      "end_frame": 1845,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After earlier approach and viewpoint adjustments, the robot remains apart from the bowl with only gradual positional drift and no discernible uncovering attempt for approximately 15.5 seconds (left, right and top, frames 1380, 1500, 1650, 1750 and 1844). This sustained unproductive behavior leaves the bowl unchanged and does not advance finding the cube. Frame 1380 is an approximate onset supported by the selected checks following repositioning around frame 1350; the exact transition from preparation to stalling is uncertain. The same interval continues across frame 1750 without a distinct new failure. Renewed repositioning begins at frame 1845 and brings the left gripper nearer the bowl by frame 1860.",
+      "recovery": "Resume a deliberate approach, align for a secure grasp of the bowl, lift it clear, and inspect beneath it for the cube; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed task progress; no damage, displaced unrelated objects, or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl and surrounding environment remain usable and need no resetting; the robot can resume a task-directed attempt without human intervention."
+    }
+  ]
+}

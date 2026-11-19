@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0986",
+  "language_task": "stack the blue block on the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the blue and yellow blocks remain separate on the table from frame 0 through frame 69. The gripper approaches and hovers above the blue block but never visibly acquires or moves it. Completion is unconfirmed; sustained hovering is visible, but no completed failed grasp or abnormal termination is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 10,
+      "failure": false
+    },
+    {
+      "start_frame": 10,
+      "end_frame": 29,
+      "failure": true
+    },
+    {
+      "start_frame": 29,
+      "end_frame": 48,
+      "failure": false
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 10,
+      "end_frame": 29,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, frames 10-28 show sustained hovering above the blocks with only small pose changes and no continued descent, acquisition, or object movement. This approximately four-second interval does not visibly advance stacking; approach resumes at frame 29.",
+      "recovery": "Resume alignment and descend until the open fingers straddle the blue block, then acquire it before transferring it to the yellow block; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Both blocks remain upright and unchanged, with no visible damage or harmful contact.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains ready for another attempt without environmental resetting or human intervention."
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 70,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, the gripper holds above the blue block during frames 48-56, rises away during frames 57-62, and returns to another elevated hover during frames 63-69. This sustained pause and back-and-forth movement produces no acquisition or stacking progress; both blocks remain stationary.",
+      "recovery": "Re-align over the blue block and perform a controlled descent and grasp, verifying possession before lifting and placing it on the yellow block; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; neither block nor the surrounding scene shows damage or disruption.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both blocks remain accessible in their original positions, so another attempt requires no environmental reset."
+    }
+  ]
+}

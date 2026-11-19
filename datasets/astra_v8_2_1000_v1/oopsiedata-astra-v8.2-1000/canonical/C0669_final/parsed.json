@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0669",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "success",
+  "outcome_evidence": "In image_primary frame 0, the left stuffed toy is blue and white, and the central white bowl is the largest bowl. Frames 25\u201331 show the robot grasping and lifting that toy; frames 32\u201338 show its transfer over the white bowl. In frames 39\u201340, the gripper opens and the toy rests inside the bowl. No failed attempt or unintended side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 41,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

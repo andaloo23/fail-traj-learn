@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0609",
+  "language_task": "Pack the cups with a single arm.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In base_image, three initially separate cups are visible at frame 0; the arm nests the light-colored cup with the right blue cup during frames 470\u2013530, then moves that assembly onto the remaining blue cup during frames 532\u2013573. The released nested stack remains stable at frames 584\u2013625. \u201cPack\u201d is interpreted as nesting the cups together, consistent with the visible actions; placement in the nearby box is not explicitly requested or observed. Completion follows a sustained stationary interval around the first cup.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "failure": false
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 369,
+      "failure": true
+    },
+    {
+      "start_frame": 369,
+      "end_frame": 626,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 120,
+      "end_frame": 369,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching and making small adjustments around the light-colored cup, the robot remains essentially stationary with its fingers flanking the cup throughout base_image frames 120\u2013368, including frames 200 and 300. This roughly 12-second interval produces no visible acquisition, transport, or packing progress; renewed adjustment begins at frame 369. The images do not establish a mechanical or planning cause.",
+      "recovery": "Resume task-directed alignment, secure the cup, and proceed with controlled nesting after verifying clearance and possession; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The interval delays completion but shows no falling cups, damage, or meaningful damage risk in base_image frames 120\u2013368.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cups and workspace remain in a usable configuration, so the robot can continue without environmental resetting or human intervention."
+    }
+  ]
+}

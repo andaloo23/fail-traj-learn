@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0067",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The drawers are closed at frame 0 in left_ego_image and remain closed at frame 375. In wrist_image, the gripper closes near the drawer face around frames 107\u2013119, then withdraws empty through frame 134 without opening it. After further empty gripper motions, it approaches the cabinet again in frames 281\u2013375. The final attempt is unfinished, so its eventual outcome is unconfirmed; the earlier unsuccessful attempt is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 107,
+      "failure": false
+    },
+    {
+      "start_frame": 107,
+      "end_frame": 270,
+      "failure": true
+    },
+    {
+      "start_frame": 270,
+      "end_frame": 376,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 107,
+      "end_frame": 270,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_image at frames 107\u2013119, the fingers close near the drawer face without capturing the visible handle. The gripper subsequently moves away empty in frames 120\u2013134 while left_ego_image shows the drawer remaining closed. Further finger opening and closing away from the handle, visible around frames 150\u2013157, 181\u2013183, and 230\u2013237, does not establish acquisition or advance drawer opening. This unsuccessful sequence ends when the robot begins returning toward the cabinet.",
+      "recovery": "Reposition the open gripper around the drawer handle, confirm that the handle is captured, and pull along the drawer\u2019s sliding direction while monitoring drawer movement; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The drawer does not open, but image and left_ego_image show no visible damage, displaced tabletop objects, or meaningful damage risk from this failed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place; another handle-acquisition attempt requires robot repositioning but no environmental reset or human intervention."
+    }
+  ]
+}

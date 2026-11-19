@@ -1,0 +1,116 @@
+{
+  "id": "resp_055c9fbc411411ec016af92b4a8f7c87d19bf80d980c7d2053",
+  "object": "response",
+  "created_at": 1794714442,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714449,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_055c9fbc411411ec016af92b4be3a887d1af383576d45160d8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-StRwtHGO5Jx7bZO4aN7L5RCwYl_Pad7lG8av6qhhA0romL7AZAYmVArAYuEnp2kygrd5q6f6yJo3ErIJIXDL_D-R1Gm4JbMbtGSGZbAqkXYGs0HYM4ntGDX8VNkdy5xhrEuYhE01CzjYkiTajUQx1HnOZDlAlQFcp9hbojJy6H3cHcCGXArrqD7K49DrqNZVRqrmIA97EBHQlMUMXO8QNixwhIshpzPpPny6-uMIx3w_W71CienVXjy_PEMTupdQitQkuW0IN0uI03N4qppw-R8pkW5Uv6LY33ITr84Opjwxoh5nB7R_W2_1k0AJTtF_69R3OonvxxNL6mmYaExjoggI-axsPnRwO3jiR8mGG7WVeUg2fpTKUEaZP6ehodwnzUcinhMq-rUlsh6DpE6JzkRPR9GNOecgwuS5sbJFgTKRzhgGorwHeDZSLfyChmp3PTbMLMGt3cVaoFYrxMup0vBc4V67SbdHuTETk24d2Ux3kJn2OfG1zXEKl44Lmuiw9D4TWv6_q2zP8WWuTbPwqO1VELsdWNIKkzfqfd4z4-1GWa4exvUaTfNIkKb4a8PLZd99nT6qqgCXXmF0DMxRvsrTnoUVyCArUsUUC9n5jbsTVPnBoV6xMuyHBA5pMBGxqF1Y5dn8jkoHDuwK9mopHcFxHnX5O96fwbyorF6xvolUnj9uaKCzlZg75KcGJ17HuDKhs0YiBYgStekBrqdB5jdukWbWzeavk4-hhZjt6YndaOEceqUTPy9fqlBuXkWHE_3g9pWhHFqGR7PgW9WmMUOJwkLwOK4PSryW_mQJdm3d5xIT5Hqht93lzwyMY2MCu0nXyDmGVzC_CxmnQsFFV1_2P1byDVyUmz0XTs4Ip7DY_vy2dNnE3nOIuzP3HdDG1WptFTnNA5g4C3aJmL3Km8v_x6Zei4ERqH1cvXnej10883bYEV8iuAfh3Tg_fnTITTcJTAEpI5CZnR5P51r6japZz6dk2TGqAkREib29KPDlf5vSDntutsBBFJhUYVLZDG7AT2CnHZQJQGOeeDkHn6uzCQJj-lMV1ptJuzrmAc5ZFIieiuEWqXs5z9S-8LgQUfL9xexigJ1T5f4vsBFiZIoqK2qQ2yO7LTjqIJkB09Y5I6I4M5ZzjS15mOX52RygY-y_KFuKTTt1G_7I9mu4fp850ouAhsNwqaR5xiAsxX-Ghls1HfQrmV_A3cVfB-4A9HeYeVLHG4SEtpFolo5hylC08ZIMyeBwIT05hol1GlfawR96-ONIlonAVfLFFFCCosnQKL8FuL1nS_Ro0YJ4UUUEQW5ME4_4wyOWMw2zdrtN4bkhVFwOEN3FWGhyJgbMgfbtNbqgx-CsFuulp0Tz52dUl0jzvgfkDsoSn75jdWGJuGYv-i7l5o_a3budq-5s8IL1B4-OefN7jpivxN15m4jfVCW6SEKStkJPCcL-zHLdixM_aIUUNhUKnP3_v6uWjDq0l_jrj9a7ZtrxxqbbQ4bKX5COjgLC-IIFqKf0sB8tWI9foKkCggoOUkx29VGKyBEs1c6tOk8ZMHqWO0uHE09qVlo7iOS4jHtr0e_WEX-LE7cI2O186P--DQofCHodP6b7ogxCqmaT7lGp4AmtjwpPrJP7SrZpg5hfXkr-xoNcTJ7JCrgvS9EHZVgYhSxp6RMnMJR5D00iIPpSqytbWCR9mHVZp2_lwFNmXPiTKr3FrmvDfg660a-RITglO33BtQkFh2mKEQrmrsNn3vZEsOBvFEvYhOA_s6HbzGHCnl_qrLxENnoXMS-T3CB-YOafPvupMuMYeEYjsJgL6EpQDwBjUEKbiXD25c4P2v4yfGwWtsohRhBqRLF5PYTC1BJD1Za4Jm_mksWmgdvalCNS27S7fbkzLhkjCZglb6FlLxNiPcGUcri2uvty7OxXDz0siXC39OKUnJKfVRwYeeepgSfch0U5JkinlCHt6SGY5pPOk_J0D9r-VnJG-klPVJfo77kVTH70RoaFoV7qj9lElY3QBLxOmr0OQnniqmuF6hXBjAZm8EJrVO60FLnEDlVzNfx1i4JFktZZYNzpp6k_yKXnQ9KZgLMgfUxXoxsKmxvjHd38EsvqJ81tZ7hM2vhoUIS7ccJegg6n5cNONviVMMbgzP9EDKrvnzw2nrbKyG-KE8=",
+      "summary": []
+    },
+    {
+      "id": "msg_055c9fbc411411ec016af92b4ce2f487d1a31e7cd4a2ffe813",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0838\n\n## Episode annotation\n\n- Language task: put the corn on the green cloth\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the gripper approaches the corn at frames 2\u20138 but moves away without it at frames 9\u201329. The corn remains on the bare tabletop beside the green cloth through frame 57; placement is visibly not achieved, rather than merely hidden or unconfirmed.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 9 | No |\n| 9 | 58 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 9-58\n- Categories: grasp\n- Explanation: In right_shoulder_cam, after approaching closely at frames 6\u20138, the gripper moves past and away from the corn starting at frame 9 without acquiring it. Frames 12\u201329 increasingly reveal the empty gripper separated from the unchanged corn. It remains away from the target through frame 57, with no renewed acquisition or placement attempt. The visible evidence supports a missed acquisition, not a drop or a known mechanical cause.\n- Recovery: Reapproach the corn, align the fingers on opposite sides, close securely, and verify possession before lifting and transferring it onto the green cloth; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The corn and cloth remain in place, and right_shoulder_cam shows no damage, displaced unrelated objects, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The corn remains accessible on the tabletop and the cloth is unobstructed, so another attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 7015,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 398,
+    "output_tokens_details": {
+      "reasoning_tokens": 38
+    },
+    "total_tokens": 7413
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0158",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The drawer remains closed throughout the observed episode: compare frames 0, 183, 273 and 399 in left_ego_image. wrist_image shows repeated finger closures near the silver handle followed by empty withdrawal, including frames 117\u2013128 and 161\u2013186. No drawer extension is visible, and the final frames show the gripper still near the cabinet rather than a completed opening.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 117,
+      "failure": false
+    },
+    {
+      "start_frame": 117,
+      "end_frame": 294,
+      "failure": true
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 117,
+      "end_frame": 294,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The robot repeatedly closes its fingers near the handle without securing it or moving the drawer. In wrist_image, the closure at frames 117\u2013118 is followed by separation from the handle at frames 121\u2013128; similar unsuccessful close-and-withdraw motions occur at frames 161\u2013186, 214\u2013235 and 255\u2013274. These repetitive attempts do not establish useful handle control; left_ego_image shows the drawer remaining flush with the cabinet.",
+      "recovery": "Withdraw slightly, realign the open fingers around the accessible middle of the handle, and verify secure engagement before pulling along the drawer's travel direction; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The attempts leave the drawer closed, with no visible damage or displacement of surrounding objects in image and left_ego_image.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in place, so a corrected acquisition can be attempted without an environmental reset."
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the repeated misses, the robot remains near the cabinet with an open gripper and only small finger or pose changes, without another substantive acquisition or pull. Frames 294, 330, 370 and 399 in wrist_image and left_ego_image establish sustained lack of progress for the remainder of the episode; the recording ending alone is not evidence of abnormal termination.",
+      "recovery": "Resume a deliberately realigned handle acquisition and verify engagement before pulling; if a reliable alignment cannot be obtained, request human assistance rather than continuing unproductive motions.",
+      "severity": "low",
+      "severity_evidence": "This interval adds delay but shows no damage, displaced objects or other harmful consequences.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental change needs reversing; the robot can resume from a corrected approach without a human reset."
+    }
+  ]
+}

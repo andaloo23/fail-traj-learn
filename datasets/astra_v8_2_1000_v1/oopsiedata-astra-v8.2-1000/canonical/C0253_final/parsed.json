@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0253",
+  "language_task": "pick up the red block and put it in the bowl",
+  "success_label": "failure",
+  "outcome_evidence": "In cam_2_scene, the robot approaches the red block beside the bowl during frames 30\u2013110; cam_3_wrist shows the fingers closing around its vicinity and the block rotating during frames 114\u2013140. From approximately frame 144 through frame 342, the robot and block remain essentially stationary outside the bowl, with no transfer or release into it visible. Completion is unconfirmed, and sustained stalling is visible; a failed acquisition or loss of possession is not established. The initial bowl-containing-block imagery in cam_3_wrist and cam_4_wrist at frame 0 conflicts with cam_2_scene and the subsequent views, so it does not establish task completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 144,
+      "failure": false
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 343,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 144,
+      "end_frame": 343,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach and finger closure, the robot stalls beside the bowl for roughly ten seconds. Frames 144, 200, 280 and 342 in cam_2_scene and cam_3_wrist show essentially unchanged gripper and block positions, with no lift or transport toward the bowl. This sustained inactivity does not advance the task; the images do not establish whether the block is securely held or why movement stopped.",
+      "recovery": "Verify whether the block is securely grasped; if not, reopen and realign the fingers for acquisition, then lift and transfer the block into the bowl. No visible environmental condition requires human intervention.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, spill, harmful collision or concrete risk of damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block and bowl remain accessible on the usable tabletop, with no visible cleanup or physical scene reset needed before resuming or reattempting acquisition."
+    }
+  ]
+}

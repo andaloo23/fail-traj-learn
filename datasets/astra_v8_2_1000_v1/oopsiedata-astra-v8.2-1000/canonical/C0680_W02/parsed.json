@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0680_W02",
+  "language_task": "flip the small box upside down",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than a visibly failed flipping attempt. Frames 350, 500, 600 and 699 in top show the pink rectangular object and two orange box-like objects retaining their positions and orientations; left and right show no completed inversion. The left gripper gradually repositions and rotates beside and above the pink object, but possession is not established. The intended \u201csmall box\u201d is not uniquely identified by the task text. This outcome is provisional: earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

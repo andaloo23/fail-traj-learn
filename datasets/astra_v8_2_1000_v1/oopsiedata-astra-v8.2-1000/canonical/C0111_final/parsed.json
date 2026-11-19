@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0111",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the oven handle in frames 0\u201376 and pulls near it in frames 84\u2013134 (left_ego_image). By frames 106\u2013134, image shows the oven housing shifting and rotating on its support; left_ego_image still shows the glass door against the housing, without a visibly exposed opening. The observed pull displaces the appliance rather than visibly completing the task.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 103,
+      "failure": false
+    },
+    {
+      "start_frame": 103,
+      "end_frame": 135,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 103,
+      "end_frame": 135,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "From frame 103, the pull at the handle visibly shifts the oven housing, becoming clearer in frames 106\u2013121 (image and left_ego_image). The appliance rotates and moves relative to its support while the door remains against the housing through frame 134; the established handle interaction does not produce a visible opening.",
+      "recovery": "Stop pulling, release the handle, and have a person reposition and stabilize the appliance before retrying a controlled pull along the door\u2019s opening direction.",
+      "severity": "low",
+      "severity_evidence": "The oven is displaced but remains supported on the table in frames 121\u2013134 (image); no breakage, falling objects, or other damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the oven to its original position and stabilizing it requires a straightforward repositioning; no repair or difficult retrieval is visibly needed."
+    }
+  ]
+}

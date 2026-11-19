@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0192",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first acquisition fails: frames 77\u2013100 in left_ego_image show the gripper lifting away while the wooden spoon remains on the table. After returning, the robot successfully lifts the spoon in frames 247\u2013280 (left_ego_image and wrist_image), transports it to the open drawer, and releases it in frames 320\u2013325 (image and wrist_image). The spoon remains inside the drawer through frame 350 in image. No unintended damage or disturbance of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 77,
+      "failure": false
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 153,
+      "failure": true
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 351,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 77,
+      "end_frame": 153,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the spoon handle in frames 65\u201376, the gripper lifts empty from frame 77 onward while the spoon stays on the tabletop, clearly visible in left_ego_image by frames 80\u2013100. The robot continues toward the drawer and opens its empty gripper in frames 145\u2013152 (wrist_image), accomplishing no spoon transfer. The images establish failed acquisition but not its underlying cause.",
+      "recovery": "Return to the spoon, align the fingers on opposite sides of its handle, close, and verify that the spoon lifts with the gripper before transporting it to the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains safely on the tabletop, with no visible damage or meaningful damage risk; the consequence is an unsuccessful attempt and wasted motion.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the table and the drawer remains open, allowing another acquisition attempt without environmental resetting or human intervention."
+    }
+  ]
+}

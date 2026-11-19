@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0846",
+  "language_task": "Pick up the green bell pepper from the pink bowl and put it on the table.",
+  "success_label": "failure",
+  "outcome_evidence": "The pepper starts inside the bowl (frame 0, wrist_cam and right_base_cam). Three acquisition attempts end with the gripper withdrawing empty while the pepper remains in the bowl (frames 66, 137, and 193, wrist_cam and right_base_cam). At frame 240 it is still in the bowl, not on the table. The final repositioning is unfinished, but the earlier failed acquisitions are visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 81,
+      "failure": true
+    },
+    {
+      "start_frame": 81,
+      "end_frame": 133,
+      "failure": false
+    },
+    {
+      "start_frame": 133,
+      "end_frame": 142,
+      "failure": true
+    },
+    {
+      "start_frame": 142,
+      "end_frame": 185,
+      "failure": false
+    },
+    {
+      "start_frame": 185,
+      "end_frame": 201,
+      "failure": true
+    },
+    {
+      "start_frame": 201,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 81,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 60-65, wrist_cam shows the fingers closing past the pepper without retaining it as the gripper rises; by frame 66, right_base_cam confirms an empty withdrawal with the pepper still in the bowl. The unsuccessful acquisition ends when reopening and realignment begin at frame 81.",
+      "recovery": "Open the gripper, realign the fingers around the pepper's body at an appropriate depth, and verify retention with a small lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pepper remains contained in the upright bowl; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the bowl and another attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 133,
+      "end_frame": 142,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following a second closure, frames 133-137 in wrist_cam show the fingers separating from the pepper during an empty lift. right_base_cam at frame 137 confirms the pepper remains in the bowl. Reopening for another attempt begins at frame 142.",
+      "recovery": "Reassess the pepper's position and grasp depth, reopen and reposition around its body, then verify a secure grasp before lifting farther; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The acquisition fails without visible damage, spillage, or displacement outside the bowl.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright and the pepper is available for an immediate retry without resetting the scene."
+    },
+    {
+      "start_frame": 185,
+      "end_frame": 201,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 185-190, wrist_cam shows the fingers closed without retaining the pepper as the gripper withdraws. By frame 193, wrist_cam and right_base_cam clearly show the empty gripper above the bowl and the pepper still inside. The next reopening begins at frame 201.",
+      "recovery": "Reopen and adjust the grasp position and depth rather than repeating the same unsuccessful closure; confirm possession with a short lift before moving toward a clear tabletop location. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition is prevented; no visible damage or harmful side effect accompanies the empty withdrawal.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pepper remains accessible in the intact, upright bowl, so no human or environmental reset is needed."
+    }
+  ]
+}

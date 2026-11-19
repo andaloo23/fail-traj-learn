@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0281",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in image and left_ego_image. The robot approaches the door edge during frames 7\u201357, but then remains near it without visibly closing it. At frames 180, 300 and 361, image and left_ego_image still show the door open and the oven interior exposed; wrist_image shows the gripper beside the door edge. This is visible noncompletion with sustained unproductive behavior, not merely an outcome hidden by the recording ending.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 58,
+      "failure": false
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 362,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 58,
+      "end_frame": 362,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach, the robot stays in nearly the same position beside the open door, with only small adjustments and no visible closing progress. Compare frames 58, 120, 240, 300 and 361 in image and left_ego_image; wrist_image likewise shows the fingers remaining beside the door edge. This prolonged unproductive interval prevents task completion. The images do not establish a secure grasp or a mechanical cause.",
+      "recovery": "Reassess the door edge and hinge motion, reposition to establish suitable contact, and move the door along its closing arc while monitoring clearance; verify closure afterward. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The oven remains open, but no damage, displaced unrelated objects or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The door and surrounding scene remain available for another attempt; no environmental restoration or human reset is visibly needed."
+    }
+  ]
+}

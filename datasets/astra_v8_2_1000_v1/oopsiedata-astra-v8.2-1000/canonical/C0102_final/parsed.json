@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0102",
+  "language_task": "Close the oven.",
+  "success_label": "success",
+  "outcome_evidence": "The oven door is initially open, with the green dish visible inside (frame 0, image and left_ego_image). The robot approaches and aligns with the door, then raises it toward the oven front (frames 57\u201368, image and left_ego_image). The door is upright and closed by frame 70 and remains closed through frame 92 (left_ego_image, corroborated by image and wrist_image). No failed attempt or unintended displacement of surrounding objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 93,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

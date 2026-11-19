@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f54a830287afd88016af9311df69887d2902766007a52cd15",
+  "object": "response",
+  "created_at": 1794715934,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715945,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f54a830287afd88016af931202a0887d2a9a478fd0d914d32",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TEqED-SAPKysm9JjO80a5hkfPXO_zzFyNkorCK400iBwQusehLIfw7we-3NCHCepxM3KvzBWZ26CsVmZJPgTuM7Xagzignu0wN8GfcIqlMYyiK2p_31KNVY99ULaLSqlClQqQ2qeaHWOanQ_wR2oa2Na0qO1ojmJGhyGV6HO5ThHMvPXKOMIBFBKr7MjUWTixz2QdwjJYLYBEbwuV1egatdzsMHvLRD_odP2qeLeZGLb_fWx-S5pm20j4S7R1ZNEMTdwXWpVF_WnG72Pdy6xBy-uUb6y-9jichCCen9BdvjiUCj-OJ11gw1SGbdPAUZ5oT3FKQV2RVVZMP5geHf2ShpFoowx_iEoa_ENK4APz7vbWT0LIdjdq3kxdlf5HwKc_VSO9Sucw1lA2u17GQ6JV7LhTdcCKcHiO0CiCR4o-pV9sz2ebH-YoS2SlX9LNHVrSS344_3ojQnOdlrBZbM6asjCqU7zFKdn5Q62c6f7iY03LKq5iBk-ppOX_ov_HoZ8tB_NnWgV0rH3A71v6w515MrxKfVwucvvAM6OJ2Umgqf0zqkTWIhAHOMRon8h1w9Z9iLL2DEO6gbPVR3CTuMsbpDFo_pF3MwlmdWTsyS8lmHxtUo0NR3hm-7rR4Um4dU8nB5OcPdh8KvS3q8Pm7pikuiCBMEO7usfn0uZXsjb5H5cxGJQZXUq__mx7n8RNxTCp6s7BfX9r_JPnqK6wqM0A6f60xwk68Rnq1L8kI8rplluZr85Nqw7BpNWRdoNh5B0dniI0RAnDHpJssglRqV_8HzTkWu1S_bhG_qqLxejcxSEpOiA4KGqIspkxCKhFXbudxajZYd5wlzllbcdQO295yKKiTZLZTsrPbs0iGonsGBTeq3-S9a6kZEgpddaHJOpE6qehL7_oeJ0ImilU2Vj8Q-1pHKoSYk2iVha_rXnU7KRbIO1z-dbVEHEKoSVkIB5ri1jKfHxpdnSqBlkQglf2e_j7NqWMwK7gbljAnbrMV7w_DfYI5Iqr3WUwZ6NuMytXsW4UlsxphKX2iDFN7uKSghALCYczoW2pp8W6JLT675sKrNvxXaJ7wia3SLf97_i7NCxD_l6MIgteAQ9kFyhzAdKRFanYHo19lM_Hq92c7NC2ZKzNMKYOgMSd7KUaQIK48f5MOUmja1lknn90TgrXWNLUDPRO0HWRtXSMlzc6ZULO2boXtzZMNIDOHMH643geDH6xJPyxfg4cwSacBzIWj4O5PnQSkSHyKGy1M5udCmLaTztCwBG1zxnaWABrHq8uM0Gnasrm4tawVr-vjIcA6bQ_MwSyTCEo-uMXQ93U3F83WDASUmM9AyeSw-eGK2uykTZasz4cT8T0NsepmkHWI6AoT-MNUsZkmpmuRDFHWdlDTlMNdAARz7bsHItRGlfm1K4sY2DMDHqG2g6NYw4MevJoI1c8xBBUGnrmGHcfW3yiBnBnPG6DyaCqNM6XGbHFvpPs6MuXTrNTnWR7fG1lKRtUilxHREsIOT18yHaAi2KILXoRePAKx6jewl5ODh3Hgow41tUxB4tIBk4M0o_l1RV-nNO9kYn91POIwOKtbGg7aMx4NFgTrfROVQMY6pveJ3TqT1B9H3HJC9RThhieHnJUKJ-V37jH3JsUhhUEQ1b1pyKrcw-JwKTgBtI2ZCZKd42T9W8doPsAqLZ_bVOds3e9nX6hubuPIcY82KK2pedH3fBhsY5I-yJ0qT5Nmpe6k4yZ56omSx5upCOEVm2Ji2Kr-IiRtizZcj1jtKIc6HmcS3oz92YCU4LQWaiqSmHKGZzHds6e8DbtzzgyAXLtcqupmYhzVavBjhV3aV-BQfVo1sliLpBk1UeMGXMi2YST4YJq7Er3uUT8VAGaSOqCozdjryVSNiSQHoR7ThYVGurTkL9ffyZ2ZtoG2Ng66bOlRjc8suzerY_zVI9UJQ2ds7z_O8Tn1GRKkBF1oIpIuubUMgwdxel307LjzoBlYOkQr5VswOQpg3zagdo8qxg7i9hh_0vrCZrir_6Duk3iPG1Rb26daZu3Rv95GCtXJHuikqDNzSwthlkGp8odOfFPNUJ2Ln5c4Ygn8BE6LdEMnegOVMVKrOyVECGsktXyiDoFv8c_80qMy_mb3sA4VnlxMxC5x3lssrHwCwwU7lXYrp8dRq9I2jQk_yQ11fDsDsO9SJjao0TliNoVDU0SGA_BTVG8a5aCjSW_ldNMchJxDwDvJR0W6L_9_oPpwbUMlKfQt0unWieR4qMNsiCMErvHIssnI0Yq1mpILPzVWs1ELzkOR6jrt1PPARqxKmldkEOFcXYj45Y-YrnjltamA-3VGUV-9uW5wyb8SW_AWxNsf1EhJ69KMm9SM92p3VQQwkQPi1TR-G8eCQUVY-92z3hWXzOQX4wN9a3urwmZqJuvs-9OfAGa_yXvYlsbDVqGUtm5YkXUeUoZ8F67CeEt5mPofi9cM1QZLTLbuiBskxM9zgXQsuVOa6VSP4Jp46bRm1U5MGFLLctQahxbaq9aPjYc8CxpPQcFV5yQy3CAhnXnbFQoPRKwuR1s1bgeoqgZchfJrD137NQ7i-RQCBtk_bIbhXKahp-o0WDuhaJ4gWIq6fWKV6oGEheTG5-nPZTtKJWoh7vxuS-Ni6aEJvi-fkcyGI6W6nykfAytgK6WxgWZqPQv7VtCN7CLqz4fij3e2Ay5SYO0wG5OtQmaEk5laLVRlJg17a3wvr4BWlixmm-6-3k_o7PO4BsxzJBGLN7mNq9LfnfKf3es7Dcg9Gepxewdt0JlGShzROb7pSimXfq7kV_Sno_a5wN9P_qIKuYDrB6SxEUhSb4ZtAwgMaiXeov39FkGEv7pz--a4OjQDoryukNn5xeJ0VSc70jQsLmkWj4okVg-B1TnjWr4EFyY8oEgj9hv-Rb64YIy5eM74CTmvNKFGMcmnTo94DpO54rtFj6WHiXe3F21yEqptCQsqCokNJ9uL_yxu6leGAeZnabqooUjBT6N2StXobwCmbtjUsPi9KQ4VZNB3L-sFokMtGrvHLF2JTso1g3hxlhJcvO-8GIEEfZf3oVRJcpjuXWKB1Jnb1X_60kdTWFsqnpTjTwUoI04QGr3VgYwFZLXVcc8Z-3kCXCI9-hHf4nablKNI9qjw9QrXJE0zd1fYOxHhagp-cpY6ULQpTr9LyoKutyyhazM8dCGG-oU1OQIGgluN8v3UB_UFXsMF8FYF0CmOR08rskJd3jBtrlYaCaS1yr4HkXBrSTZpI-USzOgtiakWctw8YPBH4IjBbe9v6kwF95Tar8fM1vnEm9_8oSC7swIkIVor-QNlt94bC1utyCt_b9KDRm-UVnGerqQlHhihAjvVhCQUzXDKMax_wUDFRwpFNEY6CyqHfCyp2OHASROjeWeSZqNQiF3rKoKr-qxGALCGQbcaYMgZn7O0Hmrgk7QM6IeF_opslyHOr5h_YlSnhcPdqcZ9pvPMCKTGdAqGbYBuwTLMZ-xd2ri6qbISSSQTIbrm9XniblMsK0XFq4N-K1JMyPV_4u13WCpVzbasC2bLkRiN4Fb54vN4S-14ajHutMH0YKDGBWU2D4L3rz82wZUZjd_61ue2K2NQne25fepQGxgAuaC-TihvYEGcwPdm2tPp1cKgVZmxz6iPHUSbWL2XnBPdm7MoPT5afVO019CJH05WihvEX2c8SvbLzvSv9PPfM2cdu2K6cDzSb0KGPXPYziN4BVS2UVDAPnv9mqiEe9glR2sYTZiD043262_USIWvd_W1wwvh7c2c8yntESahMYN_Mfg7XMEJmyMmeVZuOYIjdFO-jQeUvv6mjRfDnlTIV-eld95PWP6mgExfmCS1cMh1eh4o79IawhcsIw1xwxFub_g0wDXmYMrvd7SzDMJm58izP2B1-sQnrfK1U4ipe4W-ETQWv0xBXbBfOMiMyfpFrKEOdlzIoXVl7lo1Tjrhl3NCTczY3m_PpGnfjVmyCF8zE-F0Uo-jhMvsCZBoykv3vM2nEBo0rkdQyFZ4KPmGPtWlN30_YybkSTaI4gjsBYLNhHLJSUqPkeC3VO_H30EdoK2u6f5CvleLhy7FN-zzhKaksLtBLcXN2KyLNClMt2SvVhgoE9EPdMa-P0VF4FoKOge9KYendNQg-ESxB42Qq2jaCTdAAZggzi0B7Mg9gRjFKyMb6gUrXJlixclmbZzJbEESMh8CDyymVCFwdNskMJD9eNXA3mxsKdhOkWEzT5hLWn57a42o3-3aRCAt9MbEOMSY-TZ-r9_vXoH6SGImckXUNqc3tiMq2aEgnpivy",
+      "summary": []
+    },
+    {
+      "id": "msg_0f54a830287afd88016af93125c53887d284b2234be481cb91",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0915\n\n## Episode annotation\n\n- Language task: Close the oven.\n- Success label: failure\n- Outcome evidence: The oven door is open at frame 0 in left_ego_image and remains lowered at frame 163 in left_ego_image and image. The robot approaches the door, but its gripper lifts away without closing it around frames 100\u2013105. It subsequently approaches again during frames 106\u2013163; completion of this renewed attempt is unconfirmed, rather than visibly established as another failed acquisition.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 100 | No |\n| 100 | 106 | Yes |\n| 106 | 164 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 100-106\n- Categories: grasp\n- Explanation: Following positioning at the oven door, the gripper lifts away empty during frames 100\u2013105 in left_ego_image while the door remains lowered; image also shows the unchanged open door. This establishes unsuccessful acquisition for the closing attempt, although the precise contact or reason for the miss is not visible.\n- Recovery: Reposition the gripper at the door handle or a suitable accessible edge, establish secure contact, and follow the door\u2019s hinge motion upward to close it; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The door remains open, with no visible damage, displaced unrelated objects, or meaningful damage risk from the failed acquisition.\n- Resetability: immediate\n- Resetability evidence: The oven and surrounding objects remain in place, so another acquisition attempt can proceed without an environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 32723,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 569,
+    "output_tokens_details": {
+      "reasoning_tokens": 216
+    },
+    "total_tokens": 33292
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_09d5a19a3e4ccad7016af907525db887d1af554ca6903d27b2",
+  "object": "response",
+  "created_at": 1794705234,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794705244,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_09d5a19a3e4ccad7016af907571a4487d1a05f9e36672f0c70",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QdeMji8N0XZcEqRLd45S4SNYs_xq3YYD2qJblv5vN_RMpenWfBoQr2pmUOvt5xWQ_eRkm8bPZs97Xue5-8VS3-ZzuWt7VOC_ejOkZH2JZuasrMCCiAAbm5roOP7CwoXVlnAT9dfzHPKWEyM_2jArRU3Kbwvi-KVPrdPOPe4QUXOSQtpJ4_iV75nOWbM-r9tD7QqjLSqZdYlLPjxO4w7lWE6-VEPliEfdqJOkWgLlqhFPOVBWsM29sSGfpxXh_ManYXX4z-zMOks0eUiS4Ukxyog9pBd2RLYpWztfmq-l5JytFSzZ6AOrll8oqZkNF7m73FU8bnD_SK-UnDHYnPnbfeeChHsfHO6hjyqJmDlwqvCoxoq0n4kyAOaQomjE6tfF7XYdDzBeCu406Z0wHaYmuEfj6AIMnG6KynCm-nLEVmYWBfV9Xq8PP1LCLHC3c1vEhspf4guDWKY4Sc_wIY-qxt93aRxeyll1MO7C1BlvPWYcnaPXxgL5BmWoEWplGP5Ro-Sb91naDZrRyiN-CJ01PQIFb70xaotN71LdJVyqBizAt_tvKKQ--Y9YPbNFfb6Z4fexAMO9iT0b0k0Bu_sgsGhq1keJlYNMELnIhqbvAQoRDvsIoP6D8xTseNNP-167UeKnJI7GgMMXz_RJG3MJpWqAVNmkglC732A3i4yffCG5k0v1FenR5yuL5dVv2Zpvphpj_JHPJZQZL7t44tSE4Oxl-8PFj-kwHTILjTt2HQ0Iio7QMKYlco4buNqttLmNCUqI691lTGKbO8V0EsEdW0338DycIu3t1-nNdnQooumNImbW9a9oRhu1H8XBTGHPJcPA8P0cEQ6AtMGccpXztJ5FX_Y2r2-Ycr1Z0mv72BO513w37SUfsdTk-4I6cKyjLjWqCGSE5LrIug9x-jpHTGxispBSQ-l4e69uDoWrNq_SU0fwCZ97-BXBNQljHHE6CZLRg4GOum9vI_UTnT7UxynlPE4cU62oX4He3p4dNnW9302Ahz-fLzVqI7S0bnhU8XPMRJpWaYLvjoxsw-12Sr_jLm0s5ybVjWt5bvsJLMu_4_uQ-13RzlZw7trs-ADMkD-Rw__ypHHs4PmPVOQ8iDL0rTJcX7Z2VUnXI3Yn_hpzckVaKgvbt4lLL-lXNg4GxZdEJK20NE77XGks4izk60PtAMB65GKmjLJfJSYTf3fTq2dWnuPvBR-WNsR1Q_azIz4kOf9qWemWDw49FikayUImGRrLKSR0eUOy9lnW2QRw1qStWCd__-Ysts8GoFYD5bApqlX2LGLaa2z29MNPatLm5F1IP4r1ROOaaNGsUSPzfk7gVFtdi0ZX5bsN6eLRFnre_sAzMMLX0k8kIQK43VFi_wrWmSEgCFQLnH7tErCbqmxjEIG5H-gPMPvSbQ8K-6zxKceBRjLUaPL-bdU_-j7wWxobjiA5m1Dqv2jyoL5TO9srJvpPJ2ltRgl4eGz_DdLhIIwSTJKcQ0MzY9bEuczZkKmWrUdY8jBP66UIVpFhlvf9oIkKitTPBEwomTYkiujHupjmi1XjwQzt3ZbRcwW20SEphxHC8HMjrkuOrs-pidQoCmeQhvlWxxQ_OeK5MnB1YbH8yB02w_27W-nIqk61F2vrBRpy0VLz3_wxJSAxx8OyDd-ibb8ItyIn2j1shMrHWoOp5xD5XOFn40C3SL5U31GviLKPF1tNE77FYFnMBdn2fZaA7nw3CaWjUkyeSvB0qY94lxsfZo4a6kh46YQQIyCrauJ0zcE2_rYY3Y_xp6YDTbWHheK49TSKvI0seEW9yiy20JqREw6ATA5XIWTathQXorCYKJQMMOo7hPt-JnpzNjlirkmIGI5f20td8BtzkgxaBt-Pzug0-j91HIChRDaD-VUIm4dP_WTsOtn2O8EYtcGzMDez4lI2A89GpLeiYRpwr_XWAobKs6e9ZR1D93ZdwlYBOThb2afdPOXsN7YjdhXxfTEUTFNFelD8oPYZm99Jd9EURNULFNDKTvs5YVTsojhzJ73t-g27KCQdFLxSnQG274VTaYAlzLk6Nc4",
+      "summary": []
+    },
+    {
+      "id": "msg_09d5a19a3e4ccad7016af90757a76887d18f26960760d8fff1",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0253\n\n## Episode annotation\n\n- Language task: pick up the red block and put it in the bowl\n- Success label: failure\n- Outcome evidence: In cam_2_scene, the robot approaches the red block beside the bowl during frames 30\u2013110; cam_3_wrist shows the fingers closing around its vicinity and the block rotating during frames 114\u2013140. From approximately frame 144 through frame 342, the robot and block remain essentially stationary outside the bowl, with no transfer or release into it visible. Completion is unconfirmed, and sustained stalling is visible; a failed acquisition or loss of possession is not established. The initial bowl-containing-block imagery in cam_3_wrist and cam_4_wrist at frame 0 conflicts with cam_2_scene and the subsequent views, so it does not establish task completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 144 | No |\n| 144 | 343 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 144-343\n- Categories: task_not_attempted\n- Explanation: Following the approach and finger closure, the robot stalls beside the bowl for roughly ten seconds. Frames 144, 200, 280 and 342 in cam_2_scene and cam_3_wrist show essentially unchanged gripper and block positions, with no lift or transport toward the bowl. This sustained inactivity does not advance the task; the images do not establish whether the block is securely held or why movement stopped.\n- Recovery: Verify whether the block is securely grasped; if not, reopen and realign the fingers for acquisition, then lift and transfer the block into the bowl. No visible environmental condition requires human intervention.\n- Severity: low\n- Severity evidence: The task remains incomplete, but no damage, spill, harmful collision or concrete risk of damage is visible.\n- Resetability: immediate\n- Resetability evidence: The block and bowl remain accessible on the usable tabletop, with no visible cleanup or physical scene reset needed before resuming or reattempting acquisition."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 66218,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "reasoning_tokens": 33
+    },
+    "total_tokens": 66694
+  },
+  "user": null,
+  "metadata": {}
+}

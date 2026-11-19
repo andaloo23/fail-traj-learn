@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0400",
+  "language_task": "Open the oven.",
+  "success_label": "success",
+  "outcome_evidence": "The oven door is initially closed (frame 0, image and left_ego_image). The robot approaches its handle, then pulls the door outward: frames 118\u2013140 in image show the door separating from the oven body and exposing the interior. The door remains visibly open through frame 205 in image, with left_ego_image providing a complementary, partly arm-occluded view. The opening is partial rather than fully lowered, but the requested open state is achieved. No failed acquisition, unintended object displacement, or damaging contact is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 206,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0757",
+  "language_task": "Pick up NIST rod and insert into corresponding hole on the NIST board.",
+  "success_label": "failure",
+  "outcome_evidence": "Frames 17\u201328 in side and wrist show the gripper acquiring and transporting the upright rod. It lowers the rod toward the board in frames 29\u201332, then repeatedly makes small adjustments without visible insertion progress through frame 196. In wrist, the circular hole remains offset beside the held rod, including at frames 115, 143 and 196; side shows no completed seating. Completion is unconfirmed, with visibly persistent unsuccessful positioning rather than merely a recording ending during initial acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 33,
+      "failure": false
+    },
+    {
+      "start_frame": 33,
+      "end_frame": 197,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 33,
+      "end_frame": 197,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After acquiring the rod and lowering it toward the board, the robot repeatedly shifts it around the hole without visibly seating it. Frames 33\u201368, 98\u2013136 and 137\u2013196 in side and wrist show the retained rod at approximately the same board-level height while the hole repeatedly appears beside it. This prolonged unsuccessful insertion behavior does not produce visible task progress; the images do not establish a hidden mechanical or control cause.",
+      "recovery": "Lift the retained rod clear of the board, reassess the hole and rod-tip alignment, then approach vertically and attempt a gentle insertion, stopping if it does not seat rather than continuing repeated board-level motions. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The rod remains held and the board remains usable; no breakage, displacement of unrelated objects or new damage is visibly established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The robot can withdraw and realign the held rod for another attempt without environmental cleanup or human resetting; no visible jam or damage requires intervention."
+    }
+  ]
+}

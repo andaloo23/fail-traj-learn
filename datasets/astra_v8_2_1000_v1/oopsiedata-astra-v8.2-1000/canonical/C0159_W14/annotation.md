@@ -1,0 +1,17 @@
+# Episode: C0159_W14
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: success
+- Outcome evidence: In base_image, frames 4550, 4650 and 4771 show both cans resting in the upper blue tray and the bowls stacked on the right red tray, with no task objects remaining on the surrounding tabletop. Throughout this window the empty gripper stays clear of the objects as it withdraws toward the left; no failure or side effect is visible. Success is provisional for this observed window: the completed arrangement is visible, but the earlier placement actions are outside the supplied image interval.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 4550 | 4772 | No |
+
+## Failure annotations
+
+None

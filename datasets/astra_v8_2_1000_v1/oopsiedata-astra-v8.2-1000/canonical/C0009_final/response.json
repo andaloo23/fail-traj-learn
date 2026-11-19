@@ -1,0 +1,141 @@
+{
+  "id": "resp_033d790dabf0bf99016af8ec3c699087d1b034638afdbd7d38",
+  "object": "response",
+  "created_at": 1794698300,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794698313,
+  "error": null,
+  "frequency_penalty": 0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_033d790dabf0bf99016af8ec40dc2087d19c97f237a5af0922",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-OxKlN_YNIzhAESfdA-FrwuZeAB3t3a17Ro9ESxpkXLh7ppat6Etlrd9s2xFd-O78szy-LerbITq5vnI9qqiHmWiZRzQLEpuM3J6cJcDV_e4jSOav7k-Oy9yYbcuUCwgAlAliGtcH73FSdtT0-xpFAOKZXBn9cu3JFSf-zdfIdSYojiKLQ7rr3gyt-TBJzfJH0wqlhGg0mZJre1UWCo2rItzHdCoR3AYCURDMUpKmI0nK4xyY8ahVpuejCgaZxb0amoWx8B269FlgCMgSqUJV3JlwE_9KoKDU_3bHnAEgRq9UGgt6qorfHRWqsdN6vENGnUtfACFEm2UAt_2dyOvmZQEyinC7UeZzuIwL2bEYSlKCuQFI3s6sGhmpyN5VmvT8clon4tLK-y5fNzazJOC_ldEY2Jj8GPGS9yMrvwG3Vqik1yCyqk0JHCCNIWPR-nzaRRsOLQvvmH9buEpeGKz9PCx4aIgAOxtGoeISq4a3S851Kil1TdsDB6UEzPBtCIbyeEkifGt61Vzz49lrh-sqsVSqFuDdOuME_62Z2V4pSSmJ08cxv1Lt3nkRwtcy_hZ4VDgCrHBjrnurF7mSfhhCgplHlK4EwcteD-QjivHyuJzmLYFcZWKYv83ONx-cljjSFV_zw_c7kqAHZmfZFZVQIy5pe5LzH3AFLIDVdjCm_YUQcVZE9ExSoITrhm_A1dgaT7wbfpPNgklLvkt1CjzbtKebrZu5zprQj_GzRlYtDXhr4DPpQS4Xaoi7ciYjKiOTkMF_v4p3ZDjvWdVvEW7Xfk-qfhBclAF_xCE1xkZZZY5hGcraMP8lQNKmMjdSGs6a1bMeKNsOkci3V_XUxIfS8OdQ8YS5xaFjSnNt6zjdVuXrpPHc9ThUToWkNnZUsM0G7l4x85syf5EGLo_2zDAtqXVQQVEdjMokD5XSCnH3ZIJZ-sX1av-aHMptuiv8nPeA1bbrEuxdso2aGegZQSXvuBbEZgvGMLmEWzqwpIx3NuSNI9juvoDDzuFSdIfT-QcB1BXYEI6bzkc83bwH5XAbEPca-06sVxT8_0CqHX2hVlJnt8WKucaULal50PZNb8vPmL7NVTB-lKRuY2uEqmFyL3mCOjeUCvgMFzN2itppU5c-_jz2Qx3mIJVrUY-jlVRPAfcgrXDoiRLf3luF1xWkPd0uBJcUWRdbKJ8vRuqnnVcbvx3aUZ_3-M9rnJ7Nty-H-0UAW5HJAD23zfjeFfTLN6LNhBUftGjrpIa_myUS-vIty3hZa0KCcUD0aVXlu_2HzV2E81qXla8hHpUf__veRcSFRXJ7uAE6K-it-3RrHfzkF-QLXP1JI_Q4iUI1thu2X1fbv4xLE2BRpONcF7P8PCDGe2qDhFDcyOBJNTBPJGjBKP4hapbyk9QpQtX1fVV8JcjkoPiqN5hhaejJUepyldciESy6w0vMPO6lbZSdIldZqmS4RQMjLxIykgPoAI1EFlV6V3HvFTHbUO0fx5RsghrpPFMngsfIyWdLLS58WJ7eQ7CeBilETXJvRgMrk2_CHUrPUSouQuWQIzpKImyulWzLui3erKpYOgeoMjGwrX_mc5F7U9k39ZBKGaEMpQ0Uj0HnBjg0TEizfLqEShzk7aFiWHjzqeawZJr_TGgnDUBIOBrtgrryCvs5k2kmb6qJmkyRSaWXLGqPG8HVQ76kp42OpUkwmEQSg_fONJs_QG9ZYb-h1rl9434LJhXNOJcUTDqjOslj69Xw4IyFXYna4dzF7ZGXrVqnswjBGuEpB4RfdNEV9PELYhrmsO5VLhoYAGqIJuGZE3Ak1qY19_4sEP_tdRYi6stEM0Y89L8Up2wOHJQDNFqfBPDZFD5Hiu1dNiYYEp0m_stOY_CjQpOjUCSK-gG-dJHG9FnZTdopSX5wPwShM5BoVQfpIpQWAoyE74TnEVEZr13iT2OXJKqQ8b078AZc9mWNMRNWMGKMKUzw6jltCH645BN-2VqaZNfrSOLzo8Aa9w3dy3TlfZopmQ2Jrms2oh_GpN8j0Cj45iHk3yjPXDSsOPLaw0j5VvSsr6LiIWNrIbQKACNcEL8CmAKqJ9zoCciq6qt_JLWILxdGH2yERGFL-xNw_aqkpCpIgADXmBZOTun2Q90ccJBhJBvlZdrNZsXmAADugCW5XtYU49QRgkq3ClYdO_1FjbPrS364xqhAuyAjJQa2lj7BrZfiQLI5ZfmE-TDZAk5KjoY8KIPNtMMxAjYk81cvKJdNYo3HNE0YWZQS6ngIv32CUJ1XUOiQ4pWRIsENtGDcnW_xwhCHIAVL9f5O0QPzwRtQ8W37oxqZt-MLd4w30datT2BE64PnwQzZ5evofFx0QG98FSRgFxfB2EBPcGk6GDOn2OqS-TeCVjTLw2R2K8QVCnyfwBuUhGKDxtJK6CQyBpFYobmkE0frNR9Wdu7ro_7Myuf6jmtRTPjb6bF1E23zg_xeXBA4lACCMpaUL4PNJM4dD8oGFTdhGfgupzLjzTanFTw_WxbLZHBJglgnBNBzTYefghMBbYlZSjtPkhNYsFWKTmt0bQs0f-0eek5t_PETrheqDi04VdGABQpTM9CzBhZ-3DUdZ2kJSJ8_MfK1FSKQCAA5Tj47zyiuwRUKksoPr5s17y8AgI6Ss_TqOC_jkfvmf5JWzEFWFAhXkY12gNJUHqK4DEHLiVToVxlPLW8RDkXN4tlQLwz-GUYq_1AoL-HWTMZmgzvOasBcAfUm4uO05QS7v7yDZOWTngzd_iF31vMK_itUo34_pI1GpKdvh-umjnvFGpKL3C0DzOKOikWx9IVdD_xlEcsCLdFf56Me7zyxSmsYidEA5LEYTPgKPf4BX2lb5EUBtkOvID_CCMZZotkEy1AaHSo8x5g4S_lP_8U",
+      "summary": []
+    },
+    {
+      "id": "msg_033d790dabf0bf99016af8ec422d8087d1af3a237bdf992cac",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0009\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop outside the drawer from frame 0 through frame 399 in image and left_ego_image. The robot approaches it, but wrist_image shows prolonged hovering and small positional changes near the spoon rather than acquisition or transport (frames 103\u2013399). The task is visibly incomplete, with sustained unproductive behavior rather than merely an unconfirmed final placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 103 | No |\n| 103 | 400 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 103-400\n- Categories: task_not_attempted\n- Explanation: After approaching the spoon, the robot remains near it with small repetitive positional adjustments for the rest of the episode, without visibly acquiring or transporting it. Frames 103, 200, 300 and 399 in image and left_ego_image show the spoon still on the tabletop; wrist_image shows the gripper hovering near its bowl. This sustained stalling does not advance placement in the drawer; no completed failed grasp or hardware malfunction is established.\n- Recovery: Reassess the spoon\u2019s position, align the fingers around an accessible grasp point, descend and grasp, then verify acquisition before lifting and transferring it into the drawer; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The task remains incomplete, but no damage, displaced unrelated objects or meaningful damage risk is visible.\n- Resetability: immediate\n- Resetability evidence: The spoon remains accessible on the tabletop and the scene is usable; another acquisition attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 76857,
+    "input_tokens_details": {
+      "cache_write_tokens": 76854,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 76854
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 408,
+    "output_tokens_details": {
+      "reasoning_tokens": 35
+    },
+    "total_tokens": 77265
+  },
+  "user": null,
+  "metadata": {},
+  "provider": "openai",
+  "hook_results": {
+    "start_hooks": [],
+    "before_request_hooks": [
+      {
+        "verdict": true,
+        "id": "pg-ut-aus-e9574c",
+        "transformed": false,
+        "checks": [],
+        "feedback": {
+          "value": 6,
+          "weight": 1,
+          "metadata": {
+            "guardrailPass": "true",
+            "successfulChecks": "",
+            "failedChecks": "",
+            "erroredChecks": ""
+          }
+        },
+        "execution_time": 0,
+        "async": false,
+        "type": "guardrail",
+        "created_at": "2026-11-14T23:18:18.297Z",
+        "deny": false,
+        "softDeny200": false
+      }
+    ],
+    "after_request_hooks": []
+  }
+}

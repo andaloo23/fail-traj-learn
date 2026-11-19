@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0032",
+  "language_task": "pick up the bottle",
+  "success_label": "success",
+  "outcome_evidence": "In zed frames 0\u201359, the gripper approaches and closes around the dark bottle. In frames 80\u2013112, the bottle remains fixed between the fingers while the round background surface recedes relative to it, showing pickup and retention; it remains held through frame 129. The tactile panel changes around frames 60\u201364, consistent with contact, though it does not independently establish lifting. No failed acquisition, drop, or clearly attributable harmful side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 130,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

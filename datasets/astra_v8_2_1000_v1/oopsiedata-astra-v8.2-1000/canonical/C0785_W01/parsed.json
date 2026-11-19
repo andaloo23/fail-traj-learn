@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0785_W01",
+  "language_task": "pick up the ductape and put it in the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window: frames 0, 150, 250 and 349 in top show both tape rolls remaining on the table and the green bowl empty; left and right likewise show no pickup or placement. The robot makes only small pose adjustments without a discernible acquisition attempt. Later episode context is absent, so this is a provisional window outcome, not evidence of a failed grasp or final whole-episode failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across approximately 11.6 seconds, the grippers remain near the front of the table without a discernible approach to acquire either tape roll; top at frames 0, 150, 250 and 349 shows unchanged object positions. Small changes in left around frames 148-153 and 325 do not develop into a task-directed reach or grasp. This sustained lack of progress spans the supplied window and may continue beyond it; its cause is not visible.",
+      "recovery": "Identify the intended duct-tape roll, approach it with an aligned open gripper, acquire and verify a secure grasp, then transfer it into the green bowl; no environmental human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No object displacement, collision or damage is visible; the observed consequence is delayed task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rolls and bowl remain undisturbed on the table through frame 349 in top, so another attempt requires no environmental reset."
+    }
+  ]
+}

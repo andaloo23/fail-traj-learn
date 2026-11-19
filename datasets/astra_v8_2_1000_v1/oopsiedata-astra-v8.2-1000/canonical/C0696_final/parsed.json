@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0696",
+  "language_task": "put the corn in the pot",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot acquires the corn during frames 25\u201331 and visibly lifts it during frames 32\u201340, then carries it over the pot during frames 58\u201370. The gripper opens at frame 71, releasing the corn into the pot; frame 72 shows the corn remaining in the pot with the gripper empty above it. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 73,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

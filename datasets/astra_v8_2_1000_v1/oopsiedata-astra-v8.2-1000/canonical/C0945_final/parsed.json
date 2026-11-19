@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0945",
+  "language_task": "put the knife in the cup",
+  "success_label": "failure",
+  "outcome_evidence": "The robot acquires the orange-handled knife from the plate and lifts it (frames 60\u201385, left, right and wrist). It carries the knife toward the cup but releases it outside the opening (frames 131\u2013139, left and wrist). At frames 141\u2013147, the knife rests on the countertop beside the plate, not in the upright cup; this is a visibly failed placement rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 131,
+      "failure": false
+    },
+    {
+      "start_frame": 131,
+      "end_frame": 148,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 131,
+      "end_frame": 148,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After establishing control of the knife, the robot opens its gripper without inserting the knife into the cup (frames 131\u2013133, wrist and left). The knife falls onto the countertop and settles beside the plate (frames 134\u2013147, wrist and left), leaving the intended placement unsuccessful.",
+      "recovery": "Reacquire the knife by its handle, align it with the cup opening, and lower it into the cup before releasing; verify that the cup supports it. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The knife lands on the countertop; no damage, spill, or other meaningful disruption is visible in frames 139\u2013147.",
+      "resetability": "immediate",
+      "resetability_evidence": "The knife remains accessible on the countertop and the cup remains upright, allowing another attempt without an environmental reset."
+    }
+  ]
+}

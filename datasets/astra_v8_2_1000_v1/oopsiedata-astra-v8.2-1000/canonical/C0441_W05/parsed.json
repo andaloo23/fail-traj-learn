@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0441_W05",
+  "language_task": "take the small silver cup and pour its contents into the blue bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: no contents reach the blue bowl. The robot repositions the bowl beside the cup (right and top, frames 1400\u20131605), but the bowl then tips and rocks on the table before settling upright (left, right, and top, frames 1606\u20131623). A subsequent cup acquisition is unsuccessful: the gripper withdraws empty while the cup retains its red and green contents (right and top, frames 1713\u20131725). At frame 1749, right and top still show the contents in the cup and the bowl empty. Earlier execution beyond the two context frames and later execution are unavailable; eventual completion is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1606,
+      "failure": false
+    },
+    {
+      "start_frame": 1606,
+      "end_frame": 1624,
+      "failure": true
+    },
+    {
+      "start_frame": 1624,
+      "end_frame": 1713,
+      "failure": false
+    },
+    {
+      "start_frame": 1713,
+      "end_frame": 1726,
+      "failure": true
+    },
+    {
+      "start_frame": 1726,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1606,
+      "end_frame": 1624,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The previously held blue bowl tips away from the fingers and rocks on the tabletop rather than remaining securely controlled during placement (left, right, and top, frames 1606\u20131622). By frame 1623 it has settled upright beside the cup. This loss of stable retention disrupts preparation of the receiving bowl; no contents are transferred during it.",
+      "recovery": "Let the bowl settle, verify that it is upright and stable, and reposition it with a secure grasp if needed before attempting the pour; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The empty bowl rocks on the table and settles upright, with no visible breakage, spill, or other damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl settles upright within reach beside the cup, allowing another attempt without human intervention or environmental resetting."
+    },
+    {
+      "start_frame": 1713,
+      "end_frame": 1726,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the gripper closes near the silver cup, it pulls away without carrying it (right and top, frames 1713\u20131725). The cup remains on the table with both colored contents inside, establishing failed acquisition rather than an unfinished closing motion. The earlier approach and alignment are not labeled as failures.",
+      "recovery": "Reopen and align the fingers around an accessible cup handle or exterior grasp point, establish a secure grip, and verify possession with a small controlled lift before positioning the cup over the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition leaves the cup and its contents on the table, with no visible spill or damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup and upright bowl remain accessible, so the robot can reattempt acquisition without a human reset."
+    }
+  ]
+}

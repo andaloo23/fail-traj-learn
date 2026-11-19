@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0789_W04",
+  "language_task": "Pick up the stuffed animal and place it in the box.",
+  "success_label": "success",
+  "outcome_evidence": "In external and wrist frames 1050\u20131061, the gripper opens and the stuffed animal settles into the box. The empty gripper withdraws in frames 1130\u20131146 while the animal remains supported in the box, with limbs protruding over the rim. Both cameras show it remaining there through frame 1399, without visible damage or disturbance to unrelated objects. Subsequent stationary periods occur after placement and do not establish failure to advance an unfinished task. This is a provisional outcome for this window; the earlier pickup and later episode context are not supplied beyond context frames 1048\u20131049.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

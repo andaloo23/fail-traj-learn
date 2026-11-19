@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0450",
+  "language_task": "take all the veggies out of the bowl onto the towel",
+  "success_label": "failure",
+  "outcome_evidence": "top at frames 0, 700, 1400 and 1999 shows the veggies remaining in the bowl and the towel empty. left and right show empty grippers and intermittent repositioning without visible acquisition or transfer. The task remains visibly incomplete at the end; the observed failure is sustained non-engagement, not a demonstrated failed grasp. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across the episode, prolonged stationary periods alternate with non-engaging arm adjustments without a discernible veggie acquisition or transfer. left, right and top at frames 0\u2013480 show the grippers away from the contents; frames 900, 1050, 1400 and 1650 show the left gripper repositioned beside the bowl, while frames 1750\u20131999 show further right-gripper adjustments without handling a veggie. top confirms unchanged bowl contents and an empty towel throughout these observations. This constitutes one continuous period of sustained unproductive behavior; no visible recovery or distinct failure separates the windows, and its underlying cause is unknown.",
+      "recovery": "Begin a directed approach with an open gripper to an accessible veggie, align without striking the bowl, grasp and verify retention, then place it on the towel; repeat until the bowl is empty. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; no damage, spilling, displaced scene objects or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl, veggies and towel remain in their usable arrangement at frame 1999 in top, so a task-directed attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

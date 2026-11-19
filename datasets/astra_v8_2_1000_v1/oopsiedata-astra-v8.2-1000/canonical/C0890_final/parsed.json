@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0890",
+  "language_task": "tie the banana plug around the two screw drivers",
+  "success_label": "failure",
+  "outcome_evidence": "\u201cBanana plug\u201d is interpreted as the flexible red banana-plug lead, since the plug itself cannot be tied. In top at frames 0, 700, 1400 and 1999, the lead remains separate from the two screwdrivers, with no wrapping or tying. Left and right show pose/viewpoint changes but no discernible acquisition or tying attempt. The task is visibly uncompleted at the end following sustained lack of progress, rather than a failed physical tying attempt; the recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across the approximately 66.6-second episode, no discernible acquisition, arrangement, wrapping or tying occurs. Top at frames 0, 350, 700, 1050, 1400, 1750 and 1999 shows the lead and screwdrivers remaining separate and undisturbed. Left and right show gradual pose/viewpoint changes, including more noticeable changes near frames 1920-1950, but these do not establish task-directed progress. This is one continuous period of unproductive behavior, with no visible recovery separating the reporting windows; its underlying cause is unknown.",
+      "recovery": "Begin a task-directed approach, arrange and stabilize the two screwdrivers together as needed, and acquire the flexible lead to wrap and tie around both; no human environmental intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress; no damage, harmful object disturbance or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The lead and both screwdrivers remain available and undisturbed on the tabletop at frame 1999 in top, so another attempt requires no environmental reset."
+    }
+  ]
+}

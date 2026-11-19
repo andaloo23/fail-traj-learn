@@ -1,0 +1,116 @@
+{
+  "id": "resp_04b0ea74a830f392016af92d5c2fa087d2888f95d6ce683266",
+  "object": "response",
+  "created_at": 1794714972,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714982,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_04b0ea74a830f392016af92d5ecbcc87d2b0e9d07cc06a4074",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-S1nlKiySxKuKTHMDOXavHiwXlnOoURNU3yJOTeHjX91fFhQUzVZTovvLmua9h-zYc-M-1UEU46Z55CLCxISRUQMsWowbsElydqL1-jB5vV2aJ2skw39k_NZ5QV1PunD8miLpiRG1mbJDyVnkphQPsXdnDaaB4sVs-6YrczFSfaLj0uTdHZXj-M6NYlZq2eK6Ki7eG1rzvOlkNEY6_Kf-jy_IBkMcqxZ7b4L97lcus0K-9leNKcBQDVc9-eQKO0BFvz1bVyii2ffdCMnmOxRfBPPf_H2R8JYqOJMDbYLufhNMXtvz1Roxh5xWcZn5ZB6cWEUBntqIa3r7DIeoUwHjliTud5nlqGk9KWsBOsPP6jzXUzxTBodsM5cMgiD6wv23BRopyOKvvh4mntrl3vNVMLIx2kAJR0vFJsZZHYvP5gnEtY2Ar6-uan0odCtSrF9uA0V_epeLdVSHR8ZFKMOQpUDR8OscezZylQRLPf8LtIfciGyCZvF7bb4lSVegF4PpteL98dtJMjsZ4_el-iNaKE26cDV9ZURfyeAHckFmduApZBe4-_DQGszBOJRsmN9h5pLk2n_LVjPfl-9lawOEM37NGyvi5rmzGV7D2NgcNhFUqRYE8CskyJfXL-KxIg5aqEq7yOUx4BXaY-R7gKZ7xcjfFF-lIL9W-5G38NzPVZPwszpus9TX24tgotfrpYQuQ8EklaU_8IR0wR4vtNGeS8LZBSwKZUJs_jf8kpcqJKJWRTJ2JsjeyVKKez6nk6JobVPRo5LPAlpo7JqtUvXrb_h_qSRwbLGU68TsCe5THNSTgMvBXWE-haxYDfD_WZ5PKZ-y-L6m5o1chAcgE11em90AkjT9XJSs_THiE-ths-QWSoSARqeMcdoRvlaRnwr1_fwuVoS4GCnfMN_DJSp65UQOWjLnv-FX027dMgv5hOQfaXfwGPA3nQZXO1fu7sh6MashWW6Fet_CnovF8kN7hsGiKaZNzog0ajrWrmSpjqePsrI7zl1RMYbNdmEdl-Y5mxZLU91gjcoxPVxRxrOnTGqRD29BDMZ53fHAsw_ovpBIw7ivgfGJa8qCeuH0bNAU2mFAFbnnS2s0e_v_D8-RMPJhCjeok9D9lEIDx69MbNTrd2jzmyE8b2EhwenQ6-J1D-WJcCPh-ymoe4MI7qi0wXY7O19q8BckiuzNjo_SPQH2cqH5noW4Qb51s9tuuvTxwNHLKQgm9FFXMxLlGcEWcRJZ5rLjJGZcH9rb7FlhfriQbJgWIbnlXcKJPAXhowYynsnr9WDGhk9civ9-QklEzQLS8_1IxMbFChdxNUve73q4Pk0Acfs511vmJ7Ul_DjXZ72DWtMFrAbS13BrCHBXbFWmIEBpsdaF2CtejW9Wlv9Ly-2x9OoWp3aCDXgZF0_cM9IRF5vgYPWwmSwyI4zykSCk99WQwYBDITjSHDdeJWrNdY-yirOzEsKppl_JQkTqzJ5M0DbTcJAthN2LKGFxUjvK6zCE5uMruCmIYnX0KlE63KjSruCGX4m6CWiHWIEbiBiuXSNIDlKCkDLMuUIPjFMPgvOYUuDm8IhRoE6xCvrt4TXbI5n0TOkqfORB4xaVkyrLH2dr4WC-Bi2a3p-nS7sIUPzd1C_QPmlS-h4KlJXz-zceTGWFG_IwjBGhb4zbz9Pg0LeYssi0hPjDDPjiaFecNT3zNwRiq1KfmwHq5BTwgx_Cy6QLWt4wxbxnGcH-KricA3WVj-oMkdV_hcL9i8U5sYUtzNP_tgl2wbc6G5kCfazHBgzBhE6WNeHw8oCbT2cgdhGPSYiS77IrSAZwNoht2DUVLyt6i40DqP9yuIbk_vWJR5pcLT8ZuCrfNOj-sJ7BhmxB8MwNvqib8OHf1xRnLgldjAafQ5m1q3QEi48lODnHOSSO3Xfz4a19SLgdqgimMyd33S9Ifrrye7EFy_EXK2hgrp7SPu6DfUFuTRh93mj1Xg624A21RtlY3F7mHGX_G7xR-7Gp1kXkxTDLNXNhHLsnbbtiuEX2KTf0j3hl9koPahCuTKHPeuxlkomxGl7V7ZqF3xCvm6ihaS2GuBMiG27zTU9JNVPLi_i8KZgqxbYRJvxWXi4xAmxVpWO-dwhTlKVsY-Rd8BoSNfjPPg0dxEziVgIxT4e-c8C1V9weTuGnWjSe__2bnhJPHLERfe9q3PZ2OyOORy0bE5gWH4c1zKAXaS-ZmezYK53c6Msn2KgjrMR5y48ozrdsksDhXEoyLMXurhpKrTSsyZ5tGsxVR0q9ktbZVV5fh5CZ95eRVMDfFfWVEMgqYZDeRNEGCP8Gtw7HQ6_-xl4AUf8oylbXKwhv08xmZxFo5bwXfQkyn7JyhA1GwcyLWGeq6VtWpgCdFG-9vrjPhLS8EcdQfja8gEaZvYvx7q91Y_p1JZuXkJG0zCjViEydjF71e2u8cOPVxG6kO8MKUvpRJSLbgtVPTQKcyuPE9l723IF2UrFCaxzNvr6dW21AAVltK-Xzdx4x8wDtvhvyJ1-esoWLUxRRf4l1mO9cyQ-mTa0GTAIt82Psg7hfZfCRZE1uhONx2XuSTW_XBN4Q8YwWx4JfNPVC1iXLhKeEvqgQnUNc1fVTfE=",
+      "summary": []
+    },
+    {
+      "id": "msg_04b0ea74a830f392016af92d61247087d2bf26aeb6a08d44c2",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0863\n\n## Episode annotation\n\n- Language task: Stack all the bowls on the table into the middle bowl.\n- Success label: failure\n- Outcome evidence: Frame 0 in head shows separate orange, middle blue, and teal bowls. Frames 104\u2013125 in head and right_wrist show the teal bowl placed into the middle blue bowl. The orange bowl is subsequently lifted and brought toward that stack, but is lowered and released beside it rather than into it (frames 194\u2013219, head and left_wrist). At frame 233 in head, the orange bowl remains separate, establishing an unsuccessful placement rather than merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 194 | No |\n| 194 | 210 | Yes |\n| 210 | 234 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 194-210\n- Categories: manipulation\n- Explanation: After carrying the orange bowl toward the middle stack, the robot moves it to the left of the stack and lowers it onto the table instead of nesting it (frames 194\u2013205, head and left_wrist). The gripper opens and leaves the orange bowl separate by frame 210; subsequent withdrawal confirms the failed placement in frames 219\u2013233, head. Possession during transport is visible, but the reason for the placement offset is not established.\n- Recovery: Regrasp the orange bowl, lift it clear of the table, align it above the middle stack, and lower it carefully into the teal bowl before releasing; verify that all three bowls are nested. No human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The orange bowl remains upright on the tabletop beside the stack, with no visible damage, spill, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The bowl remains accessible and the stack remains on the table; another placement attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 42545,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 494,
+    "output_tokens_details": {
+      "reasoning_tokens": 74
+    },
+    "total_tokens": 43039
+  },
+  "user": null,
+  "metadata": {}
+}

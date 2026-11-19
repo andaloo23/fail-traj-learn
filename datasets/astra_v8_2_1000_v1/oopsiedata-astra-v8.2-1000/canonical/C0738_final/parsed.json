@@ -1,0 +1,130 @@
+{
+  "episode_id": "C0738",
+  "language_task": "Push the Displayport cable into the cable holder on the white block.",
+  "success_label": "failure",
+  "outcome_evidence": "The cable remains on the work surface rather than in the holder. The wrist view shows repeated finger closures beside the cable and empty withdrawals (frames 340\u2013385, 462\u2013480, 570\u2013580, 697\u2013707 and 801\u2013820); front and top corroborate that the cable is not transported onto the block. At frame 862, wrist still shows the cable below and separate from the holder. Earlier acquisition attempts visibly fail; the final approach ends without confirmed acquisition or insertion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 334,
+      "failure": true
+    },
+    {
+      "start_frame": 334,
+      "end_frame": 436,
+      "failure": false
+    },
+    {
+      "start_frame": 436,
+      "end_frame": 462,
+      "failure": true
+    },
+    {
+      "start_frame": 462,
+      "end_frame": 545,
+      "failure": false
+    },
+    {
+      "start_frame": 545,
+      "end_frame": 570,
+      "failure": true
+    },
+    {
+      "start_frame": 570,
+      "end_frame": 657,
+      "failure": false
+    },
+    {
+      "start_frame": 657,
+      "end_frame": 697,
+      "failure": true
+    },
+    {
+      "start_frame": 697,
+      "end_frame": 779,
+      "failure": false
+    },
+    {
+      "start_frame": 779,
+      "end_frame": 801,
+      "failure": true
+    },
+    {
+      "start_frame": 801,
+      "end_frame": 863,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 101,
+      "end_frame": 334,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the initial closure, wrist shows the cable outside the fingertips as the robot repeatedly shifts and closes near it without acquiring it (frames 101\u2013250 and 280\u2013334). The subsequent lift at frames 340\u2013350 is empty; front and top show the cable remaining on the surface.",
+      "recovery": "Open the fingers, align them on opposite sides of a reachable cable section, and verify acquisition with a small lift before transporting it; no human intervention is indicated.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition prevents progress; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cable and holder remain accessible and intact, permitting another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 436,
+      "end_frame": 462,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Wrist shows the fingers closing beside the cable at frames 436\u2013445, then lifting without retaining it at frames 450\u2013462. Front and top show no cable transport toward the holder.",
+      "recovery": "Reopen and reposition across the cable rather than beside it, then confirm retention before lifting farther; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition fails; no visible damage results.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cable remains on the reachable work surface, with no scene reset needed."
+    },
+    {
+      "start_frame": 545,
+      "end_frame": 570,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close near the cable in wrist at frames 545\u2013557 but move away empty through frames 558\u2013570. The cable stays below the gripper, also consistent with front and top.",
+      "recovery": "Re-localize the cable section and approach with both fingertips straddling it; use a short verification lift. No human intervention is indicated.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition produces no visible damage or harmful disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "Another grasp can be attempted directly in the unchanged usable workspace."
+    },
+    {
+      "start_frame": 657,
+      "end_frame": 697,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Wrist shows another closure beside the cable at frames 657\u2013670, followed by small motions and an empty withdrawal through frames 685\u2013697. Front and top show that the cable is still on the surface rather than carried to the block.",
+      "recovery": "Correct the lateral fingertip alignment and verify that the cable moves with the gripper before proceeding; no human assistance is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Task progress is prevented, but damage is not observed.",
+      "resetability": "immediate",
+      "resetability_evidence": "Neither the cable nor holder requires repositioning by a person for another attempt."
+    },
+    {
+      "start_frame": 779,
+      "end_frame": 801,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Wrist shows the fingers closing at frames 779\u2013790 without trapping the cable, which remains outside the fingertips during the withdrawal at frames 797\u2013801. Front and top likewise show no successful pickup.",
+      "recovery": "Open and re-align around the visible cable, then test retention before attempting placement in the holder; human intervention is not indicated.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful grasp causes no visible damage; its consequence is failure to advance the task.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains reachable on the surface and the holder remains usable, so no environmental reset is necessary."
+    }
+  ]
+}

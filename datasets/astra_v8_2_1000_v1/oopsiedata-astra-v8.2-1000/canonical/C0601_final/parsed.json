@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0601",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The robot sorts the carrot, brown food-shaped object and orange into the light-blue bowl, and the pink rabbit and blue elephant toys into the green bowl. wrist_cam frames 1086\u20131090 show all five objects separated into these groups; overhead_cam and wrist_cam frame 1131 show the stable final arrangement. A failed initial acquisition of the blue elephant precedes its successful retry and placement (frames 664\u2013695 and 774\u2013837).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 664,
+      "failure": false
+    },
+    {
+      "start_frame": 664,
+      "end_frame": 695,
+      "failure": true
+    },
+    {
+      "start_frame": 695,
+      "end_frame": 1132,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 664,
+      "end_frame": 695,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the first blue-elephant acquisition, the toy moves away from the fingertips rather than becoming secured (wrist_cam frames 664\u2013674). The robot subsequently raises the closed, empty gripper while the toy remains on the tabletop, confirming failed acquisition (overhead_cam and wrist_cam frames 678\u2013694). Reopening for recovery begins at frame 695.",
+      "recovery": "Reopen the gripper, realign its fingers around the elephant's body at its updated position, and confirm secure acquisition with a small lift before transporting it to the green bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table without visible damage; the observed consequence is an unsuccessful pickup and delay.",
+      "resetability": "immediate",
+      "resetability_evidence": "The elephant remains accessible for another grasp, and neither bowl nor the other objects requires resetting."
+    }
+  ]
+}

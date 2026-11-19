@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f81e9cbd3d178bd016af9219d284c87d19a47726cb3d40d49",
+  "object": "response",
+  "created_at": 1794711965,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711972,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f81e9cbd3d178bd016af9219eae5c87d19d737c312a152aa7",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SGkIVxlD8aNCnS8Y96QYVQEgWGAVqGoRQXWbkZxMTS_25Aa5Ppet3xbheMuF-aUiqjZUqvkBS5Swj6tZsMjPH5qXyXY89UQFL7cG44AqE_AXUdjLT-8qmapm4jqysT8BRTMY4DOtXvZjtcAZ0faaYBqtdMWEQxdZFR2ezH3ddJ0SQxJFpRrAkyfd9n85hZV7w-bdy1aE0Oed2TGgy9KI_l5VnAfJ36uaROUBwSL1eCYTUTJhHn5jNS9RQ0urLB0uZ6-RmdtVKqhp0eSN3r5WY-d1xW96jvhvtqGo4xKVGG12EEYBskLIav1UntAiUYANOTCxfBzseuzui1jP_oBowc26GGAp0ca8uxdBCkUxXRfeKNLSF8SSIvaBhIKehb_-yERAfJFA9eOjizZbmNwgOftfwdFHZ4bdOrqfgTP7THM8J376dbwPU1FekpPeXPWuF_5IwBGsv2BqpHAc_ekAAlYtNQP56nL2f1h2GomZ_pIN-LfiTMNn3ryXXtVEtwsUIQ9Nan2jaTAl93sPdnnFTX7yG-9XMmROw7BlbWhi0sjzqTBhmSXkWTALAn-y3_6sAE0ASFq-1LQv5vPXtBdcqOspDBjgNP1-M6PePWh95OfkflL5HZfOmDDroKZY-3B995Hu_2AU0ALSJKWU2g8U20r5xM9iK8BmXFVsjJQW8vA1mtsXHvSyr787svfP2TW247HI_gL8orhFPIUTyxuxquVG9cV-tKCbcCf1jSfgpBGqAJQdbxUa1iWDuLrHc2KnNvsWK8lA98rFcNvE2hFIxT4cwtTJKXjMaqF7RfROn9n0YkNXx77wtCNAyhuRx0IP5NWDfbkdfoDAVhnL87YyB_ajjafmaAn2ToNNXz8lzKuu-B76rgO89zfbJdTwcH14m37LlLAfn84NV9MAGlAjl1lJqD8WJEnILmqczBuTjwh8G_RsrNkjYBTGsU5qLY0R44dwSwim4q1AdjXsrhYp6HDqkAwlkQxjHB2ImDrleG3Y683w92MicgJAbfJeTQ5rqW6-R-ORCqxhgeiKEDzlMNHiOQUBPCB9uLSx6_Y2d5v3jsNiE2t39zb_aXigtQFfOVT8KA8WtZLs5EiQUFP57R1zNmQAfjGxWEa72_w7XLpzN-74tNCL4CxmWjMTL7qpxG1e7xL240bUIbndpir5KYbsP_K7fIvApEuVefqnz5myO8a8PkmtRSLWoqnG3uhz10ccXAa91JSyA1U0WQd8KDoO6VmzHIvWwrqcH50r-UgPF-K8E-CjD-4X6QUSn_ARKJg4t557BTOQo9XGUa2Yu_FOuQXRJz8WCfJ6C-WREvlSt6ar5KrB-IOkpc02eHDnaLPteY4OwAE93Lod-HxVk0mTFOxDbQyruxHnuUlMGW-Hn7sLQtNPA6BB8H15x8TMYd-7CwlHSxGKKAPzsS0eUwkDCq4GHCpgAiQW84gfo69NHfxcpGOfOnhqipziXFJw1uMhgkZMWcy0ozIEPyTwnU51SkPYZ3LVsh_5cViavPC4iqXD84T3YNhJo6LwuV1vN476H1bgcZOq9MgzgAl3GKzCE9U5wIFVFKVRfomB1DefJY7YoTL28q-ouaYg11KAl2Zjtw4K9ma6fhZbzASETvybXTO96Rj-_lYsjn4KiOrpVSCAVdgZmgUBODwbB_eKMRe55lzqORyE_8-Cc73GTb0Kaq-4G4O5cto79hBsBbuFABa9Xdok44tXXhtLsBNbBw3dYylgytL_nPC9QoUwxWaSOHdNnTSqSNkv5Ff7tfX43GdVLROBOW2qqbsJBpA_1WgyFcJMGFESvcCIxH4YlVE9UEdnd-4R5fljl9KQBvdBQvnouU0rov1hrgoYy-hTkgrKQQfL2pzrRpbH83obOANJcorq-fAuTiEO5qGlcI00Z9QsVnGmpp6rwFUuSy89vHs8p8JNd-RWAAXcVzXtdmZjjJSBi9enyYad8N6TSp4YupyeQOHBNSNLFeMVtd9BJrClHbKXaOQexenpbBPT08puJA__UkvIVmWvhwLGckxUgPZve46MIqO4PXsoOGe0FBqaYYS8XWbJN3NzYvNDt6rnpQpLWTGt2hsPqulXQInG36bQ5C0qYY_1t_KGxL7OQ2C9ViW5ulTsr7drY6Yyxhxqlq6LYmxGpL6VbNICvcaGEZ6Y2T1tzY3Lxb0fwz62wFU",
+      "summary": []
+    },
+    {
+      "id": "msg_0f81e9cbd3d178bd016af9219f903887d19d3c8ffe8951d026",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0678\n\n## Episode annotation\n\n- Language task: Pack the cups with a single arm.\n- Success label: failure\n- Outcome evidence: In base_image frames 0\u201320, the cups remain outside the box while the gripper opens and approaches. In frames 21\u201326, the translucent cup tips and moves toward the bottom of the image without being held; the two blue cups remain on the table. No cup is visibly packed. The observed attempt is unsuccessful, and any subsequent completion is unconfirmed.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 21 | No |\n| 21 | 27 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 21-27\n- Categories: grasp\n- Explanation: In base_image frame 21, the translucent cup begins tipping beneath the open gripper rather than being secured. Frames 22\u201326 show it tumbling away toward the lower image boundary while the gripper remains empty. This unsuccessful acquisition displaces the cup rather than advancing packing; the exact contact is not clearly resolved.\n- Recovery: Locate the displaced cup and confirm that it rests safely on the table, then approach and securely grasp it before transferring it into the box. Human intervention is needed only if it has moved outside safe robot reach.\n- Severity: low\n- Severity evidence: The cup visibly topples and moves across the tabletop, but no damage or spilled contents are visible; its final resting position is not fully shown.\n- Resetability: minor_reset\n- Resetability evidence: Returning the displaced cup to a stable, reachable position would permit another attempt and appears to require only a straightforward repositioning; its final accessibility remains uncertain."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4345,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 404,
+    "output_tokens_details": {
+      "reasoning_tokens": 40
+    },
+    "total_tokens": 4749
+  },
+  "user": null,
+  "metadata": {}
+}

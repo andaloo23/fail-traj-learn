@@ -1,0 +1,141 @@
+{
+  "id": "resp_076971dba5fb497f016af8ec16129887d18d6d4d7e5889523c",
+  "object": "response",
+  "created_at": 1794698262,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794698280,
+  "error": null,
+  "frequency_penalty": 0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_076971dba5fb497f016af8ec19d4f087d18fd73d9717fc06b7",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-OwpJyEi2Wl0G60_BI-sZXSSB5YnGatPDUpoTnWVcHLmb9hWLhhvLRk19DpkshG8FJ_X-kCWGEBqjcg8AOrNumZbl2yw4wnhJqfjpIMvVo8Ix3xEL99u3IMSsd82XpVKviA-7REn2aW6ipiuePIpVh84YXIzeIdTA6160AVaiQVvlvnsdAhV4F3vbEglcRuDaCrpF6BhFdV2u7TxPKFZyh6r6vIDpwR5BapQPAvqiQI0SeLOSr13MSQ_pFH8PVmbNR5kTxuyjq1RuhGpQfSBpc6IR7iP_Ng3HTlH2G0OpgCQ3tF9KvW6sKg7EcgnTKO-1vvw8BuLScEr-reX62PwN1p2vOCFaP0FIgWkreDb5M-hji0tEQXjwv_sTkShl3EtfxsUxpTabJagxu8XvhcX_RyI1ZFASv0aMk4KfTH0z6gi8mgVqjdBNoWuSRup_cV-DgS5mS_SyFl9joRY-VV_5F1EAgy_UsAu1BtOShUShKOpgI3-lWA2ZNZbZMUd4r-6sMyOMS7Jk52CrOPWCLQKatPGeIVqmyQDJY5NgBPcmKtEiVc9AWPds14b7ghE3q5mFAHz6iRyW6QG1q9Kt5_MThY9iwkS_lWbjEE0B_WGTK9IrGsVOpwt9LBWluvBvUiEjcW5JSHwq3pKvjlgVrY99QTZBKcgh3Dm6M7gAzsi0rkaCBK_o4bhimWo2xyEvAd2w-Go9DWrlQ0oth8gkNOuNkof8aZYZ4IXkJglE6kRbRgb6r3UqfdxzuUx1TdRfprpFJMnQmX8E0N-U7-ZNefm9y4rfj1Z41kPtEcEL9Zlz1bqxZmy8wOCFVfY64JNF46lTgcml3df86WlR58xGYG3KozDTHFFQ9uhbzA9YD7YmRnfLZ6ZokwGl_q-v5jmtebKhF6sC8nvb2eeJ82vRcXfwh81TM7BHe1WdHiAmTd4Up5FbDF6p-9BtCKNrbkA3gf398P5IbcdCiWJhTrSUFZRPYjR_pBlQ-fZGafr3S4iWate_KJ8gt5dbHGVeAnh9PjICmB2msULNVVlkxE8rl01dGHxoMXIUdx59UGdycH4vgsyyjj7pFguLRmlA7lmw5n5QQZMGqfCByhC65E318KiBm0kvKYThbn4N1vpEwjbcRxzdF6rHYld1fQ5Hwc-lsjJGcw1IhJUxhDbnQCmCNTGKCr598odLvw07WrOFcyFSMWtdpvmpJV8TWUNwq2rlvw-P_kNQCjc6xBbXlFhvYKi8G-vvPsmGeZ0XhwvFnZvY1Wt78heHJQlSloqW59BwkxO-GY5o4NhazkZ8o5UF3cZ9k3AsWhysFndB6gRKZRzsk4RX8UhdrIFzrK9HZplmHWAmPEwZVX-G7GkJFXHRwh0T7DOOCP8DcDXx-_o82HdPANgwMrRw3vH4iF_N9Pyih6wPraQb-6MUAYbYuOlWq-N2d6dyedujziJjep5N5C6JmwDYf5gt3JSUF9pArgNlsD5laBd4m2ZByr58SLWvj3qCNzDCu4AtcEIFyHcAyeFgt5oW2zqwP2aRYuI3FTMfyyjznuKasJ8Pen8Fvj3m6Gh_h6_3puaHxVreq7gTXMrknVcE082o3bIVnzr4qklclXf7IwKbjuu4bqONXD6a5J5I0XXLeIv4Mqne5e-1SOSakFjUMMMS-aOUxdF2AAdOZg0lkvRfHot6BDp5RFZfm71bmkyi7_g6KMUAG2zciwwNcypsZx33Gr1j3Mz9G2_ERkIBoZPCCfnR8Aii273uitULAOhHRwWRg0EZgZytyZ96tocFbA2I4866PQYZ_sby8sKtveODkl4Z2GZlwE4L9Qu6dRf8uRC9YQmgsKLGILbDNUH_PeIl2hRJRgOIyelo12KRUIRRVKCvHNevYtDUDYzjPX5jSFsNbW01Umid5xMgsW9LB2sS4H8D86T5r2YMeJnL6IdRIeyvp5XRj7fRsXahjW5iPISQeszb47RwR0K7qBGZghqXv4TyHuYPxSkd3NXzWSIvqqLIu4yJdZImraw17kws0R2gXqMGv0r7a6o0tGe29gdv79BUV0ESoKFVabYV_SS0HHERmAndnPGV0_wH0x3NQX8PnXfW09fBrzziY8nH9PCUg4oD0kzl26Qhk6T9G2CyOI1-WS9-C64iyhIx1rqqevr4qZGrsN9u9fVSfqnOWfql7SB41iX7FcCOMsqfukbOcigNykS912EckNoZaHDKEClfkcR1BskZ9xXCUf7y-YJZEkwgjbX6pfZZdSDjBoQVhTkYeYPXCRBn3f5cti5ow67N4NXaQNV5pVsc9YsnPFJJFNlZtXOL3sl6ZbW59FCMhqFYRbTE12AsBjz2hjwhxAVZwDRqsr8KX4PoM4TdoJSOUgZonCBQL-tVqfViG7xsXle0DsiKBRRY7aRSWxv2ak5IHKmh_sjuDp9wJ76WUr7T0fZ5QEvAxM8er6zeNGK-sHjzsj5aNTttwgJfE9tZUle58MIxpG3P0hihfw4__4HRxJp8yvIYwLUs-eqVAH1tSqtFVaNvNN5KVkqwvuGqwM17UM9e2w3PNhOK7m0KpmkBeUURao5Vka3_DtzcyiqKuq9ErPuOZU9q-ynbRHgifctEvOknV1HQAqlhChmlooZlemNc-oFwmMVlDurDefVTvHnXJMxqarwX-x5EoYLtRTcJdRmVmgl8S1XMU7L4MsO9BgkQ7smckIBTeYUrrse1OMGKLC3xPAmxyLI-LIBZRBvwHTZ357e5iRANUFiW-JuP2GL_n8tYwIyfEZesYc-iXSqIdj-d0SIzxhP9ysV1n7r0cSVTgIe-3gfy28PD67cyxcNRGJH3xSUth8x8G2sfS3nq5wtTekIr8VUlJRtSXgTvCktNisqR5UHHur2969JeHZLDP6s6TvaHkemOfjkIrbzKXBA7A0NGE7JDjeofV02KQHAeLWVdV7CsaR7WlXqlQfhLtYPwo92UoBT7m5CLpFZMlVXN5jT3UjggSUgiSxa8O5rneStjDUtzCOondR5O36IbVqIDEU4QOckQWEpPo_ZJfFRKnLreE0W7Fsm7LdMn4P9BD1zwxaPvq_raWXTGT-UOT4FQSc0-jvPKYrvRJX3nDhZ3Itd-cTfhC8aHapW3YR3IaTkTrGpa4ykVHbOgLj6uKcuqP9TmFDDaQIBeyexdn42nKYgx0lju_00N4yhWbYpoT0IUq6MhuUyAZNrOuPzhOsjSqk4D1F-Cac-IG11FoEh-mrz0PeAyV3eSBD4jq0Wj34ZWOnnK9QBaYyWfUGy2KwtDa0d5CjTebhvxIAt5MV3Xin-W_nqNGaByF_b-lxsTUDl5SIAzRrIT_ISDJw_Ik6gf8cTsoQ7iovpx0o8B2R0eKdduirMK1kOrAnU1cpSPx62HH0sVjHZXkRbr-v6lNiJ8NZW0T_c81JV9yiPPwaGs0TIkxLJWG2J9U7RA5qFdhoqb3aqb68JFkK0z5TywEpmgUd7bJqzdv0hjCJ5lx8sJCm2E6bDLsxXx9vfqZVD2oidj-DFTdgetFI-vE1xons09ppN6vaOo8Zi_bvj08i3Iw0xzT5TGwehAadlsZ9Har35Ksp2Tc4jQm5CPGww_2EDMqy-_g0ykMdr3uJCUmiIsx9i81T7lb7ogqNx7COeRCmbJK_QPA1cM2Mvy8-3NQewb-6Zvoj_0Qsf7XjngXFjJhhQckzj6VLGtrd_p9cKpd28NrlaRO28rSc=",
+      "summary": []
+    },
+    {
+      "id": "msg_076971dba5fb497f016af8ec1dc7a887d1805fdf7eec7ea739",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0007\n\n## Episode annotation\n\n- Language task: Pick up the pink plastic bowl and move it towards the center of the table.\n- Success label: success but side effects\n- Outcome evidence: In left_base_cam and right_base_cam, the robot acquires the bowl around frames 142\u2013156 and lifts and carries it inward during frames 157\u2013168; by frame 240 it is closer to the table center than at frame 0. Release is not shown, but the requested pickup and movement are visible. Execution includes sustained hovering at frames 60\u201396 and displacement of the unrelated green object during frames 195\u2013202, visible especially in wrist_cam.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 60 | No |\n| 60 | 97 | Yes |\n| 97 | 195 | No |\n| 195 | 203 | Yes |\n| 203 | 241 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 60-97\n- Categories: task_not_attempted\n- Explanation: After approaching and adjusting above the bowl, the empty gripper remains essentially stationary for approximately 3.7 seconds without acquiring it or advancing the task; compare frames 60, 78 and 96 in left_base_cam, right_base_cam and wrist_cam. Task-directed approach resumes at frame 97.\n- Recovery: Resume alignment with the bowl rim and perform a controlled acquisition; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: This interval delays completion without visible damage or disturbance to the scene.\n- Resetability: immediate\n- Resetability evidence: The bowl remains upright and accessible, and no environmental reset is required.\n\n### Failure 2\n\n- Frames: 195-203\n- Categories: collision\n- Explanation: While the robot moves the held bowl beside the unrelated green object, that object visibly turns and shifts away during frames 195\u2013202 in wrist_cam, with its changed position also visible in right_base_cam. This unintended disturbance does not advance the bowl-moving task; the exact contact point is partly obscured.\n- Recovery: Move the bowl along a path with clearance from the green object and place it securely; restore the green object's position if required. No human intervention is necessarily needed.\n- Severity: low\n- Severity evidence: The green object is displaced on the tabletop but remains on it; no breakage, spilling or other damage is visible.\n- Resetability: minor_reset\n- Resetability evidence: Returning the displaced green object to its previous position is a straightforward minor reset; no repair or difficult retrieval is indicated."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43761,
+    "input_tokens_details": {
+      "cache_write_tokens": 43758,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 43758
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 646,
+    "output_tokens_details": {
+      "reasoning_tokens": 94
+    },
+    "total_tokens": 44407
+  },
+  "user": null,
+  "metadata": {},
+  "provider": "openai",
+  "hook_results": {
+    "start_hooks": [],
+    "before_request_hooks": [
+      {
+        "verdict": true,
+        "id": "pg-ut-aus-e9574c",
+        "transformed": false,
+        "checks": [],
+        "feedback": {
+          "value": 6,
+          "weight": 1,
+          "metadata": {
+            "guardrailPass": "true",
+            "successfulChecks": "",
+            "failedChecks": "",
+            "erroredChecks": ""
+          }
+        },
+        "execution_time": 0,
+        "async": false,
+        "type": "guardrail",
+        "created_at": "2026-11-14T23:17:40.545Z",
+        "deny": false,
+        "softDeny200": false
+      }
+    ],
+    "after_request_hooks": []
+  }
+}

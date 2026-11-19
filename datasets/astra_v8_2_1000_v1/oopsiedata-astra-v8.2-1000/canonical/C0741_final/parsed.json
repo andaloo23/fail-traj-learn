@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0741",
+  "language_task": "put the purple mug in the basket",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches and grasps the purple/mauve mug beside the blue basket (frames 30\u2013130, exterior and wrist), lifts and carries it toward the basket (frames 146\u2013240, exterior and wrist), then lowers and releases it inside (frames 250\u2013269, wrist). The mug remains in the basket as the open gripper withdraws through frame 281 (exterior and wrist). No failed acquisition, harmful collision, or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 282,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0411",
+  "language_task": "put the red banana clip into the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "The red clip and attached lead remain on the tabletop to the right of the towel, outside the green bowl, in right and top at frames 0, 990, 1465, 1750, and 1999; left and top show the bowl empty at the end. The robot repositions its arms and resumes an approach at frames 1980\u20131999, but no completed acquisition or placement is visible. Completion is unconfirmed rather than disproved by a completed failed grasp; sustained stalls are observable separately. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 235,
+      "failure": true
+    },
+    {
+      "start_frame": 235,
+      "end_frame": 1101,
+      "failure": false
+    },
+    {
+      "start_frame": 1101,
+      "end_frame": 1466,
+      "failure": true
+    },
+    {
+      "start_frame": 1466,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 235,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Frames 0, 60, 120, 180, and 234 in left, right, and top show essentially unchanged gripper positions and untouched objects for approximately 7.8 seconds, without a discernible approach or acquisition. This sustained inactivity delays the task; its cause is not visible. Positioning begins around frame 235 and is clear by frame 240.",
+      "recovery": "Begin a controlled approach to the red clip, align around its body, acquire it, verify retention, and transfer it into the green bowl while maintaining clearance for the lead; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay only; no damage, unwanted contact, or meaningful risk of damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and the bowl remains upright, so execution can resume without environmental resetting or human intervention."
+    },
+    {
+      "start_frame": 1101,
+      "end_frame": 1466,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the repositioning visible in right at frames 1099\u20131100, left, right, and top show essentially stationary arms with slight pose drift at frames 1101, 1200, 1320, 1400, and 1465. Neither acquisition nor meaningful approach occurs during this approximately 12.2-second continuous stall, and the clip remains outside the bowl. Repositioning resumes around frame 1466 and is clear at frames 1467\u20131470; the window seam at frame 1400 does not divide the stall.",
+      "recovery": "Resume a task-directed approach to the red clip, align the fingers around its body, acquire and verify retention, then transfer and release it into the green bowl with clearance for its lead; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The stall prevents progress but causes no visible object displacement, damage, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The clip and bowl remain in usable tabletop positions, permitting another attempt without environmental reset or human assistance."
+    }
+  ]
+}

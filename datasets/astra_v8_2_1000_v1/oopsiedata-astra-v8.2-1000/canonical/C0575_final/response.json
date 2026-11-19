@@ -1,0 +1,116 @@
+{
+  "id": "resp_02d3a1f27c929eba016afcbe01f0c887d1b879edc7140c74a0",
+  "object": "response",
+  "created_at": 1794948610,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794948619,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_02d3a1f27c929eba016afcbe07dab887d1bc05fe0bdd329620",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq_L4Lc4tSBNj5pmWHkNK8ra7shHvZIylwVRzH2iJpBcDrGP8Yd9soGETVlXHKyFKBnb7A0B5WBKEWlvbEMm3XhxBOS4rzynKO3Fg_lErjZQaLGn7Q5VMoK8V2MZUhCpCSKOy_ra4VmxhqdBxQ72xy4sFbrXDmPnGXTMFQgbFDQhXFiEN5xvvJ-GBEP5PiY5NXdN8AytTI_ugUS108PeQchGqKa9wTnBN2bS9E3Jpva9XQ0uHIEsmcGUPiboQcAgUzwNiedSvq6EEJFGaupDYWol4WP-Tfa9DU0aXzC2j52gm8X3jm9A6CqIuSDJv8DpH7f_uax982HNVQqN-DLGV5c2pTnqHwklKp5Sd8kjE4MsYqvkoC0fdffJfwT5mkUs7aTJP6jfsHCZtHJOcSW8m6Q3Tc7r_ghYm4u1_U_rgIHhIuaVjc4igy2uIY_Y4VLxi4ipFEB8ikQAdkTe6jZ6N-_8z7s27skivdZesDiy2F4XHiG95kUaDk1Az6zrxhKRiWpRBPZnB9VfhnTUgqIkN4oo2mMKKFsHmevGMu-GVe6JVWUH0ifdzbNZE5OaSZFFWVYLXcwAqfrcyv8kzzzc2Si4izCkyeNwm8S81PSW71BtntvA9I4dyewLlHZmFstcYnkPuE6Dv2RoA8C-dbI-uviA-rzMxkGcBfrAUhrykZCKYO3JuCgX0m4AOUx8lmmKIrHu7ao0We9WSeTlDyrab-dNTyI9A1qfd63a8a4f1E4dWMN0yeuiiLqfdw_j1bnrBWMRgRCwMZAoMyocxQsrq70WACCIApQALXcp7UVUvsH7r-O5pbYTqlHD4F9u02ceyegnYv_jYlI3HLUuBy1AzY3j90nXoGmvXmlarN9RrWZgzvb7ox7VQhqyRUuHiIOMQbLrXpF_Uh-OrS5anSv7jYTZcjYmA5wHFlFkRRmBKI938uI5ugTbsO2ecoyWtmdnITOO0wydwxCkI5vYvWHlM7VUZiDuGGRFn2kuqsc1B2O_YHbba2KEaN7vPodMDWF3VYTQCTQKBtr57lVNICUupS0kKGQhoWTxM59K2CGQecWSaL8-QWutrZBMIXaokQlE-3pQ7hdoNHJNZY76qUbrCJaDXXK0uLWIE8HuIiSHIuAw61RINDJ4ebCtvHOAKoqYvSUPVybXhbpL-ZZ37-CGaWZzC1NtwVydVK-pTNMa7h49NKwOT9TET7keA1e940oc4IL3XiOY1yTHe5bId4JwSOsEzM4PacoTYzKGQ1YRr1SPKp8-O7wSRQCo5ZEqK0Pb8r5hVE8iQETp0YqPmFgsSlLn_3y69ay7F56AoBaFNB2YHj1R3jMkagpiejphODJDNqO5vOg0ZlIN2zZ4bbB8HJHP6wqfoLCarsYw6NGniH24-RKdjf4S0gRr8qczNCRo7aeAucsQR79EAf4AcNsGd3loi_TIar79ZFxJlKeTUKW7zAbsU75DTXNsIUkcEAXJsi9UxaYyrOSz5n38d1fjzwVbwc0FSe8mT61CgRXmoKE4mfDpk1A3q0Vmd_FYxn7BtfmHYe__7Gos8Np7BdmKVzTRq1gHt7hTcVTq6Ol4v8iW2BWFv0lEbRZb7DWfEW2TcRxKrJp3LMcJ2I9qnYhwirhYj16FhAHACJomYjzuDbOt4nZdv2u-IFwQDF0HBdOnUjf6-vANoaJgpZmVE77IRAD6PbuvQflZPFtSN7uj8flDsK7Buc2PBaCM01YCVKUOYEdWehGcVOOq-iaUHzeY5K_dvfZCDnkbPJ548_7_RVyES7k_yl5KowBFHhtt-bxVfk7RZpcrGh5tIkCWXbEqW6Znn9uOGwltvuEMr74qLFVKb6p8i8xh5b7OtScXn1qhgRCOD19nBLM1dU24OnR8EVlOdfxi-aRKC55iRtNSg49Iw6yAa2Ly0A90hgovjIq9x16i7eHUtfk8p3qmYLcQwf7BibJCxBD-cad6Jxa_gfdOOos82N32YsEkKP7ic4rA8eufTHppfp8lzGkAL0VVwwo9aVUX8JIYnIs6HAqtWL3BI0oF9FNH0f2tHwCVnwKElkgGO80GM4GNNPaQr9Wj2b8dyGzsclkE8w6lq-GaSCRKO8c2RJ0VZfSIZS2a4H6klgRQatn35K15zAN2zGqqV3QqSnme5E5knGHBzHoS5JUiHKdXZbUQkcf96HIJy4hxk4pDBX8xPkfnTWgmm01g-2r8_uqq6oBN-gjsXo6u6fJOFPrTngPl1CAUJSmzR1eN6Uif6Ou44QYCIljsGD2hg6hqMzxxJIDz92yZMSHhS5iwpxsi5hgW6W74S64BQua88PfJtDEU6GazaOhGCyCQXnQBrrXTHIRT64BxT80I-U2JhLIPI5LmQmt94MsFd1gQEDiKRGzXSIOKLW8Xll1Nu8MGH2uaw1or-gQcavYte7nSGc_fh53mW1HgLmuionHvSRB8aizsRz2TRP6r44gOTDdYEafpybXHSeqf7sDNIwV2WsWf5TPNDDTah22Ax-OVvuzfEHf0aPvEWDHv7L2iRdyRssmSlkMGYbp6iRIl574-3SXUM1YDi5Iy--sy38tZsotuDjRhnbo4r1EaU5DU6rYoUnSB50IQDLpPujsmw6PctNPNWAiQTq9PF4doNLKs7LR1jBFVQIYW2a_xcprRXwtwlfqONlc9RIDjZ0d9mp79FFMEn9-vI5OEUmaueT5q5A4fOCCtVVfOdsfc6IBnIYorlZAv0fBwmgdWW6Gp9HUMs94rqOl9_UFUi1Dn-zTlNbxHmgVtdqFwuvHS8NZusUyyU60Q==",
+      "summary": []
+    },
+    {
+      "id": "msg_02d3a1f27c929eba016afcbe0a421c87d1b386b5ab95fed254",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0575\n\n## Episode annotation\n\n- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.\n- Success label: success\n- Outcome evidence: In base_image frame 0, both cans and both bowls are outside the destination trays. The green can is released into the upper blue tray by frame 1300, and both cans are visibly in that tray by frame 2099. The blue bowl rests in the right red tray at frame 3100; by frame 4000, the pink bowl is nested with it and the gripper has withdrawn. Frames 4100\u20134296 confirm both cans in the upper tray, both bowls in the right tray, and no loose task objects remaining on the table. The reconciled chronology establishes no failed acquisition, sustained unproductive behavior, or harmful side effect.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 4297 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 12976,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2174
+    },
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "reasoning_tokens": 25
+    },
+    "total_tokens": 13221
+  },
+  "user": null,
+  "metadata": {}
+}

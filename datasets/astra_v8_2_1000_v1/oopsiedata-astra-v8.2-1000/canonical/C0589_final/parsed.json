@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0589",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "failure",
+  "outcome_evidence": "The right gripper repeatedly closes and withdraws empty while the spoon remains on the table (ceiling and wrist_left, frames 56\u201377, 99\u2013114, 159\u2013172, and 206\u2013221). The left gripper subsequently acquires and begins lifting the spoon (wrist_left and wrist_right, frames 285\u2013300), but placement into the blue box is not observed. Completion is unconfirmed at the recording end, in addition to the visibly failed earlier acquisitions.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 62,
+      "failure": false
+    },
+    {
+      "start_frame": 62,
+      "end_frame": 78,
+      "failure": true
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 100,
+      "failure": false
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 115,
+      "failure": true
+    },
+    {
+      "start_frame": 115,
+      "end_frame": 163,
+      "failure": false
+    },
+    {
+      "start_frame": 163,
+      "end_frame": 173,
+      "failure": true
+    },
+    {
+      "start_frame": 173,
+      "end_frame": 208,
+      "failure": false
+    },
+    {
+      "start_frame": 208,
+      "end_frame": 222,
+      "failure": true
+    },
+    {
+      "start_frame": 222,
+      "end_frame": 301,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 62,
+      "end_frame": 78,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the spoon, the right gripper lifts and withdraws without it; the spoon remains on the tabletop (wrist_left and ceiling, frames 62\u201377). The closed fingers visible in wrist_right do not retain the spoon.",
+      "recovery": "Reopen, align the fingers around the spoon at tabletop height, and verify acquisition with a small lift before transporting it; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the table with no visible damage or disruptive displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible and the scene needs no physical reset before another grasp."
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 115,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The right gripper completes another closure beside the spoon and retreats empty, leaving the spoon stationary (wrist_left and ceiling, frames 100\u2013114; closed fingers in wrist_right).",
+      "recovery": "Reopen and correct the grasp position rather than repeating the same offset closure; confirm that the spoon moves with the gripper before proceeding. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition fails; no damage or meaningful environmental disruption is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon and box remain in usable positions, allowing an autonomous reattempt without scene resetting."
+    },
+    {
+      "start_frame": 163,
+      "end_frame": 173,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure, the right gripper moves away from the spoon without lifting it (wrist_left and ceiling, frames 163\u2013172). The spoon remains visibly separate from the closed gripper.",
+      "recovery": "Reopen and adjust the approach or use the other gripper to obtain a better alignment, then verify a secure lift; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The failed grasp leaves the spoon intact on the tabletop; no harmful side effect is observed.",
+      "resetability": "immediate",
+      "resetability_evidence": "No object restoration or cleanup is required to attempt acquisition again."
+    },
+    {
+      "start_frame": 208,
+      "end_frame": 222,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The right gripper again withdraws after closing near the spoon, but the spoon stays on the table (wrist_left and ceiling, frames 208\u2013221). This is another completed empty acquisition rather than an unfinished finger closure.",
+      "recovery": "Reopen and select a corrected grasp, potentially with the left gripper, then confirm possession before moving toward the box; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The consequence is another unsuccessful pickup, with no visible damage or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the work surface and the environment requires no intervention for another attempt."
+    }
+  ]
+}

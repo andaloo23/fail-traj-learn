@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0874",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray by frame 900, and the blue bowl is in the right red tray by frame 1200. Three attempts to acquire the pink bowl instead produce empty movements toward the right tray, visible at frames 1398, 1748, and 2098. At frame 2193 the pink bowl remains on the table, establishing visibly incomplete execution rather than merely unconfirmed placement. No abnormal termination or damage is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1293,
+      "failure": false
+    },
+    {
+      "start_frame": 1293,
+      "end_frame": 1501,
+      "failure": true
+    },
+    {
+      "start_frame": 1501,
+      "end_frame": 1640,
+      "failure": false
+    },
+    {
+      "start_frame": 1640,
+      "end_frame": 1900,
+      "failure": true
+    },
+    {
+      "start_frame": 1900,
+      "end_frame": 1984,
+      "failure": false
+    },
+    {
+      "start_frame": 1984,
+      "end_frame": 2194,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1293,
+      "end_frame": 1501,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, frames 1293\u20131300 show the fingers closing beside the pink bowl rather than securing its rim. By frames 1398\u20131401 the gripper has moved empty to the right tray while the bowl remains on the table; it subsequently opens there by frame 1500. This empty transport and release sequence continues the failed acquisition across the window boundary. Return toward the bowl is visible by frame 1600; the exact recovery transition between frames 1500 and 1600 is uncertain, and frame 1501 is used as the interval boundary.",
+      "recovery": "Return to the pink bowl, adjust the grasp position so the fingers capture its rim, and verify possession with a small lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl remains upright on the table, with no visible damage, spill, or harmful displacement in base_image through frame 1600.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains accessible for another attempt; no environmental reset or human intervention is needed."
+    },
+    {
+      "start_frame": 1640,
+      "end_frame": 1900,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, frames 1640\u20131641 show another closure beside the pink bowl, and frames 1700\u20131751 show the gripper departing empty and reaching the right tray while the bowl stays behind. The empty placement sequence continues over the tray at frame 1800, rather than ending at the window boundary. Withdrawal for another approach is visible at frame 1900; the exact transition between frames 1800 and 1900 is uncertain.",
+      "recovery": "Reposition the open gripper across the bowl rim rather than repeating the same offset closure, then confirm a secure lift before moving toward the tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the pink bowl upright and unmoved, with no visible damage or harmful collision in base_image through frame 1900.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed bowl remains available on the table, so another attempt requires no scene resetting."
+    },
+    {
+      "start_frame": 1984,
+      "end_frame": 2194,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, frames 1984\u20132000 show a third closure beside the pink bowl without acquisition. Frames 2098\u20132101 show the empty gripper over the right tray while the pink bowl remains on the table, followed by opening there at frames 2192\u20132193. This is one continuous failed acquisition and empty placement sequence through the episode end, not a separate failure caused by the recording ending.",
+      "recovery": "Return to the bowl with an adjusted rim grasp and verify retention before transport; if acquisition cannot be verified, stop the transfer and reassess alignment. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "At frame 2193 in base_image, the bowl remains upright and the scene remains usable; no damage, spill, or concrete damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pink bowl remains accessible in its table location, permitting another acquisition attempt without environmental intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0241",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the isolated orange cube is on the table at frame 0; the gripper approaches and surrounds it by frame 355, then closes around it during frames 369\u2013398. During frames 426\u2013485, the cube travels with the raised gripper, leaving its original tabletop position empty, visibly establishing pickup. The gripper subsequently moves toward the right-hand tray and returns open by frames 667\u2013883. No failed acquisition, unintended collision, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 884,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

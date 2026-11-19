@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0561_W06",
+  "language_task": "spread the folded towel on the table",
+  "success_label": "failure",
+  "outcome_evidence": "The towel remains folded and stationary in left and top throughout frames 1750\u20131999, including frames 1750, 1875 and 1999. The grippers remain away from it in left, right and top, with no discernible unfolding attempt or completion. This is sustained lack of progress, not a visibly failed grasp. The outcome is provisional for this window; earlier execution beyond context frames 1748\u20131749 is unavailable, and the window ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1750\u20131999, left, right and top show the grippers staying away from the towel without a discernible approach, acquisition or spreading action; left and top show unchanged folds at frames 1750, 1875 and 1999. This sustained inactivity does not advance the task. Context frames 1748\u20131749 show the same state, supporting continuity across the starting boundary independently of the prior prediction. No recovery is visible before the ending boundary; continuation outside the window and the underlying cause are unknown.",
+      "recovery": "Approach an accessible towel edge, grasp the appropriate layer, and unfold and spread it over the clear tabletop; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress, with no observed damage, object disturbance or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The towel remains accessible and the environment undisturbed, allowing another attempt without an environmental reset or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0094_W10",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: completion is unconfirmed, not a visibly failed acquisition or placement. Frames 3150\u20133499 in aria and right_wrist show the cup, saucer, and nearby right gripper remaining essentially unchanged, while left_wrist shows the other gripper open and stationary. No discernible task progress occurs over approximately 11.6 seconds. Earlier pickup and handover and the later outcome are not visible.",
+  "segments": [
+    {
+      "start_frame": 3150,
+      "end_frame": 3500,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 3150,
+      "end_frame": 3500,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Frames 3150, 3250, 3350, 3450, and 3499 in aria and right_wrist show no discernible movement of the cup or nearby right gripper; left_wrist likewise shows the open gripper remaining stationary away from the cup. This sustained inactivity does not advance the task. Context frames 3148\u20133149 show the same configuration, supporting continuity across the starting boundary, but the earlier onset and continuation beyond this window are unknown. No hidden cause or abnormal termination is established.",
+      "recovery": "Reassess cup possession and saucer alignment, then resume the remaining task steps, verifying stable support on the saucer before release and withdrawal; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed progress; no drop, spill, damage, or meaningful risk of damage is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring resetting is visible; task-directed action can resume from the current configuration without human resetting."
+    }
+  ]
+}

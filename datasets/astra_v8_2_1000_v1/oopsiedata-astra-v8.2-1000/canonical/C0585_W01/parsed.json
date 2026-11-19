@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0585_W01",
+  "language_task": "Move the orange off the towel and onto the bare table.",
+  "success_label": "failure",
+  "outcome_evidence": "The task wording is awkward; the most plausible intent is to transfer the orange from the towel to the bare tabletop. In top frames 0, 175, and 349, the orange remains near the towel\u2019s left edge without displacement. The left and right views show no discernible approach or acquisition throughout this window. Completion is unconfirmed, with sustained inactivity rather than a visibly failed grasp; later episode context is unavailable, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 0\u2013349, left and right show the grippers remaining essentially in their starting positions, while top shows the orange unchanged on the towel. This approximately 11.6-second interval contains no discernible task-directed approach or manipulation and constitutes sustained inactivity. Its cause is not visible, and it may continue beyond the supplied window.",
+      "recovery": "Initiate a task-directed approach to the orange, align and grasp it, then transfer and release it on clear bare tabletop; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task makes no visible progress, but no collision, damage, or object disturbance is observed.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange and surrounding scene remain in their initial usable state, so another attempt requires no environmental reset."
+    }
+  ]
+}

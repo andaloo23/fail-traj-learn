@@ -1,0 +1,102 @@
+{
+  "episode_id": "C0494",
+  "language_task": "pack three grocery objects into a seven eleven bag",
+  "success_label": "failure",
+  "outcome_evidence": "The robot opens and stands the bag upright (aria, frames 200\u2013430), but no grocery object is visibly packed. The purple packet is released outside the bag and lands on the table (aria and right_wrist, frames 862\u2013872). The blue can subsequently falls and rolls off the far table edge (aria, frames 1126\u20131140). At frame 1450, aria shows the packet and green can still outside the bag, and right_wrist shows the empty gripper. These are visibly unsuccessful attempts, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 862,
+      "failure": false
+    },
+    {
+      "start_frame": 862,
+      "end_frame": 892,
+      "failure": true
+    },
+    {
+      "start_frame": 892,
+      "end_frame": 1047,
+      "failure": false
+    },
+    {
+      "start_frame": 1047,
+      "end_frame": 1063,
+      "failure": true
+    },
+    {
+      "start_frame": 1063,
+      "end_frame": 1126,
+      "failure": false
+    },
+    {
+      "start_frame": 1126,
+      "end_frame": 1155,
+      "failure": true
+    },
+    {
+      "start_frame": 1155,
+      "end_frame": 1368,
+      "failure": false
+    },
+    {
+      "start_frame": 1368,
+      "end_frame": 1451,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 862,
+      "end_frame": 892,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the purple packet, the robot releases it outside the bag rather than into its opening; it falls alongside the bag and rests on the tabletop (right_wrist, frames 862\u2013866; aria, frames 864\u2013872). The robot briefly remains above the failed placement.",
+      "recovery": "Regrasp the packet, align it inside the visible bag opening, lower it below the rim, and release; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The packet lands on the table without visible damage or significant hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The packet remains accessible on the tabletop and can be picked up again without intervention."
+    },
+    {
+      "start_frame": 1047,
+      "end_frame": 1063,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During acquisition at the cans, the blue can tips onto its side instead of being secured, while the green can is displaced (aria and right_wrist, frames 1047\u20131057). The target is not yet retained for transport.",
+      "recovery": "Re-align to the sideways blue can and secure a stable grasp before lifting, while leaving clearance around the green can; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The cans remain on the table; no spill or damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The sideways can is accessible for regrasping without a human reset."
+    },
+    {
+      "start_frame": 1126,
+      "end_frame": 1155,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The previously lifted blue can leaves the gripper, falls onto the table, and tumbles toward and over the far edge rather than entering the bag (aria and right_wrist, frames 1126\u20131139). The gripper then moves away empty.",
+      "recovery": "Stop and locate the can; ask a person to retrieve it from below the table and inspect it before another packing attempt.",
+      "severity": "low",
+      "severity_evidence": "A fall off the table is visible, but the landing is not shown and no damage or spill is established.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The can must be retrieved from below or beyond the table; straightforward human retrieval appears sufficient, though its landing location is unseen."
+    },
+    {
+      "start_frame": 1368,
+      "end_frame": 1451,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The final acquisition fails to retain the green can: it tips onto its side near the gripper and remains on the table as the robot lifts away empty (aria, frames 1368\u20131373 and 1425\u20131450; right_wrist, frames 1435\u20131450).",
+      "recovery": "Reapproach the sideways green can, align the fingers around its body, and verify retention with a small lift before transferring it into the bag; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the table without visible leakage or damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The can is still accessible on the tabletop and can be regrasped without intervention."
+    }
+  ]
+}

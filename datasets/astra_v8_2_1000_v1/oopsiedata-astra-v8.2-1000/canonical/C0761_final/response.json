@@ -1,0 +1,116 @@
+{
+  "id": "resp_0b13c1a8248d3283016af927e3266c87d1a947b306abc0028a",
+  "object": "response",
+  "created_at": 1794713576,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713596,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b13c1a8248d3283016af927f295d087d185b1a93bbf5e2d8e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Sf-7RuucBK5zFirw0PHfOIgm9yNiYEnSROZEINFECGKoYzDCP7dO0-wpnhw7Le0t4id7tYOANiwWBmK9D08JF10V-6tVxIpATLfR0gRJBEO3QwO5Mv4ghBXlS50Yxww2VfOKlLyojCiBJo7yDRqGU2-ixufkx7zyKT2TtiZ8ujxb26SBjso9DQs6EzmvFcTggSPgmlr9MmGeEo-AG0G0diW3GYQd67Eksr_cnvDUwKc9Oxz_DWpT9VWoJwVf-DnSX587PiAy8SO8uJyE7OfmS9yxU92oLc-8PibMjpCLRYz4Y1ed1Fy1FeO20M22jbjeXu9_Wme85JNi8TynIA3iK4PwM0vtx5yAvh7pkN5aaC2eUG6z-WH7af9tRhMTNZT3Nc8wnDheAzF9s_Nc64_hxlB4jeCAwUMhqDLaD93vedZ663gP3L33aBdWf_UAhpg4CY0Nim1xTxu05aDmSAkoZrPRN0kMNbADl55tsOXf7bY9lJQHKhsVz0RnwQYHLPfQ_mGoJbA7E1m7VA6unRrYVUcYeyKt5RWRHmeUw0ScguPP8jBJ753rQhWD3QoPtX106p5PMfwABlCmWDS11ukqM1bDgPwxNWX6vwJDPKR569Ey8_QZgg2Cfa6B-xn-RtiTzgU9PoeJ_QztDnPdj0vHmEfkafOWM179_2z03nbdLT9B7ZsyibV0zlWmiozaPKAY4rK7IvwSdgo6UxhoAkWMCd5D5kQ_m6CHQN_XPL9R6Rx_qCVfl9o1aGhw2efXChW8GCvrVT3FYtSw5G1E96GAu2HI692iKjNYcPb88bQ16myg1IGbYYWuxvXMA3D7k987YX8NVUE8yN6Us-6dtmYtgKr7i0PIvRwpHwITZ5A5mQTD1aMm7Q6HIlhUIGF50eIJDzk2DFJAr9XV_mTweZ-O4zPyG14HexsXY_G4OHrnwTG1RmQGeuwAt3sKPaZiuB5ghoT6UiOHJsNOVLLA3pDnY5zgB4Zn7RDHrPku2p-s92CVAF1FyusL3YkALUsPMhwJ4q1i8XaHFL2rVttBAp3oYAQfhhwbzq-Avy18INp4EKJNEHYdsnLpd-BXd1cpXKCmc5d712rvWuqmc_Jek2GdEKdnE1QiwW4P-zsOCv-_jgUX8suH5yxf9zjN21gVS5zDVVeSlke6k38iEyPpZLiHhN8aMoIe3Z318ckJQiApWeBoMhlpsGMNlXnlaLtZzO9f8N3UGfTJOziFXBVz26zeg80PZQsAYdqhjLh3KnGzdk4JX2JNuY8RqLIz899vqOdq9nV9ujnTy21qsFfWxAT6UIXMIJ_wR11-KTEOe4UbZRQ1Z-k7MX0KT6oB0CVFz3r5nJRlmw8Bf3cjkKlrK7TdXq3hE-A2QV8nGBwMaV850rMG6OcdeKn60OkbpcHc9GxY0w98ssMUdcj3s_vI2HUdcKZbjaIkVDqIXoCzcnhyabx-2yAT-RWyytKhtTX01DsSGiNnDPwb64l68KMJiYh7YRIV-04cFX0QURugflkJgYo7GQshlUhESg3db0EBAWThVGKjOD2Kz4TnRGyVVRZ5O1tWNRRFVrJYSmLwCe-2La6GQYbx21CCLCJhSup-8bAXUI0J8YdfBnUoz6NZLlQW7xsaAilPNPSkEUqduYAUgLHqVsaUhW5ie4ChuAvKRPWj0GBA1KikFviw3um5A2MYTWbhjh-D5FG91uw6oWBkusOKm8Jr85P0oMv0cjjqIRvluDp1F7heyYX3GXbWqM2tokPt7mb_QiKj1By2LO0drBHc8pER2fa_tHYdDL6rFU8YPA3NpErgScJzl-ndTesfND3kIa4kZG0x3YcO3Ct50sHor-NK5imSg_i0nUtdI6G6b5shPO0VsjJqP9qCzvBewtIqWribQrT3gJ7bHqHdpxqEAlroxCkyUrUoCzhASngzNvqOaV6FfHtrGzWoltV8SxzzENeuRM8qOLHF4bOcUlOQXltgUmtaPYD81y95cdVAXquPnsKz38d1DD5riUu3bLn3MhA1BEjUgwkdurB5Yyz--vu-nMIRFZ-cVJr52rd6tM0f0SH0HgidW4TEAdsKgXylbvSVC7bRsOdMyf6wrfzJciyBXbBGopEWLKJV8wbIvVwCEMi0JaECvysru66hmpkNmPWpPN0AukP2uA9KawrTxunPz1goQhTBa9zKSSeBTh8hYraJNbXC5O-a-fsz3Xaut2Xq0zYZC5lr7n0yHedLvdw0fKLDLZLARIEyMAWYiHLDUbksPBXgSzUCw6BHWFTAhaZQMsTSZv4itEisYLr6KN6RF9qkcBW2ZXN55b6xkWXySF-6J9ogI_ay3hjtKyJLD59yQD3ig8DeqJuEJtiUeBRBa44isYLmv3xhnbdgEIC6Zw4o42TuRRsKJJscLGZmpEBjja4Ay66lK1yyBbe8ztbc-crEJjG9_hn2hoDGr92k13RJ1jqoTIJa7iH9mpigDEtJmUGF9Dmiz78lO57jkouXsga6ex98iPJ5OUfsqFSGdYUvJ0sP8eHMnDq9L4YDZtVEpFIh4u_EBn5hurUahln2xVLM3c1o9X5hQWhIbkf6k5gPW2a_quj23y7TY3cAel732ajiccibn1VHXr4HE9TYrrAyaELu_U0Dn0kDgfW_6gUSMSQteJGwR_tdN48YYl_AhJIOxbgSZpLU2CSbLf3U3bFpvTE1JwNx3XIZZHt72bJEXvMLgpzyef0H-UHd1yaZe4rz3wY5oP1HGO7eG64ACRA_X09O21sL5IYxixmHDggJvHDqII4nbmQHvDt1CT1zlLba3F79s9SLkSz5bpgCM2JuQQjvYDdCrEIo0Q1FCrwR22LypciBSIGLr4uGhewmmm0c6O9nH4muflId9O1qfKOk3ScoOS_OEA1hxaYvXdcygTN-LClkz52i4zyLerK7QeEAJ3l0IUmAZPpzWqdMZHE4xN4NHWVWhznXTqOxif1twKEBWLZPxCW186-Hx2AtuZIOg_uVADOuqRvySzSpOId6tq7Lxcbc1WEz5PPBMfWUIvraOAED-l4dYbZOd1r_52kIeVmN6ViR3aZORhkd8-yvmVfKkWhwObNZwPHk6lk49Pcu8jwE93LEcGY_FEgpvDe7xlzEmFR_TkpkFtv-IgqumKPJyi9fJaZyExfu0CP3mmDYx_tng7KbYB5rfQ_xxnuhjy_4xMsbU3whYlZ24IaEzlLb5iLc6pjii3kZPud0GC-fM70DWukR6DHG4U4Wingedtnz5A5CPzlgcdEdU0w0Znq2fQ0GNQ4IHVFv-dYOzstbaoXOwY_wDhpP7j4lg_uNvyU__jQki04bi5skwX7jaTTvSx7JBmF1zmC5pIE8xWv7R438oUM--lqosRkKmYCRie_PVSdqQDZ_Wgtoddv1aOYovDvqDo7YI1hqr_f3TO3l1ElTk-_QjE8Wu-RdIMw2m_gyh0FDNc1C7Y6l0cJhko3LqESlHKL7WZt1fg8qVLJzl5GH_s1TxnW0p0fm5fLqFxKMFE3yoFWbLb6ZjHGKj1flfAgARl7bxqRm55QM9qqjX32PPoJJrwAC0fF-oYeg2H66W8g_pU8Kv9KzREu4A1nEomrdP8PvC-SZqyxb6JSKsqMS57icX0mHQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_0b13c1a8248d3283016af927f711e087d190b3a2a5cc864d9f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0761\n\n## Episode annotation\n\n- Language task: Snug the pillow into the case.\n- Success label: success but suboptimal\n- Outcome evidence: The pillow starts separate from the case (frame 0, ceiling and head_left), is positioned over it (frames 111\u2013190, ceiling), and is progressively tucked under the case edges (frames 350\u2013570, head_left and head_right). By frames 794\u2013823, ceiling and head_left show the pillow seated within the case perimeter, with its white center visible through the opening and both grippers withdrawn. Completion follows a sustained interval without visible progress.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 611 | No |\n| 611 | 650 | Yes |\n| 650 | 824 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 611-650\n- Categories: task_not_attempted\n- Explanation: The robot remains essentially stationary around the partly fitted pillow for approximately four seconds, without visibly advancing the remaining adjustment; compare frames 611, 630 and 649 in ceiling, head_left and wrist_right. Task-directed gripper movement resumes at approximately frame 650; the reason for the pause is not visible.\n- Recovery: Resume a controlled adjustment of the remaining loose case edge while stabilizing the pillow, then release and inspect the fit; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The visible consequence is delay; the pillow and case remain on the work surface without observed damage.\n- Resetability: immediate\n- Resetability evidence: The environment remains in a usable intermediate state, so adjustment can resume without an environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 271537,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 523,
+    "output_tokens_details": {
+      "reasoning_tokens": 158
+    },
+    "total_tokens": 272060
+  },
+  "user": null,
+  "metadata": {}
+}

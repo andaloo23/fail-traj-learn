@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0165",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the robot separates the initially nested green cups (frames 49\u201390), places two cups beside one another, and releases the third above them to form a freestanding stack (frames 105\u2013130). It then dismantles that arrangement and nests the cups together (frames 155\u2013218). The compact nested stack remains on the table with both grippers withdrawn through frame 242. Here, \u201cpack\u201d is interpreted as nesting the cups together; no separate packing container is visible. No failed acquisition, toppling, or unintended side effect is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 243,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

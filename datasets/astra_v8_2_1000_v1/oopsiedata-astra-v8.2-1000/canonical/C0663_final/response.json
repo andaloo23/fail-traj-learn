@@ -1,0 +1,116 @@
+{
+  "id": "resp_0fb96f89a0c9b4d0016af91fe0da0c87d2b9e78d3c1a0f450a",
+  "object": "response",
+  "created_at": 1794711520,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711526,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fb96f89a0c9b4d0016af91fe2ba9887d2a19d454f296cf6d3",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R_m5Z4eqLVX1rvvy-iBvset3oXZpfeb1TUyaUPoEYWg3btGZCgdgbGFj_VAiR1Oe1XNUiTr9SAq0ZPDrFBcR87OBx628h6n0dh8ZyquSeZL_K66EHhGwfoglVO-R-e7LdotvWUdSTKLXsO_hYOUaHyik3rLxpAnU1fe91EsSwXmsrickD2Zn740QqrAupnT4WslTLsmRtPE2MPDAnbB_TDZzFu6dRRVDlINqS8ICjDBB18r4FU7aK5IMek0WHFvIvbf4uJSsadP7WC5xQxGt3zyZnjvbVO7IpAk3iSTxiF8kQRu-ONqY7DN3LMWpm7RmveWRuA7Tw9yViinlL5e2aV0PtbW9GK7iYO7PVzV5dZdrTRtCWyxJc2gXngo3AQ94J8gntZ7kHUt36ZyaU3gI-CaeJZtqlHNymESUSkAbtg_YmpnwJTkUIIlLkhmPsmeE4168XaiaagqdVLLX0ZSUL1t9eBnNou-T_bXBozSJj4utLMERi0r9TwMt7FZ2Id_P1jG4WKpU04xlMPhAKtXXzONV1-2q7mbmJ_xSESxNGVKppk8TYYPzK3Q0XUNdkCdenQ595WJdut15jtxbHtTC3nkBHi_IuUvhXPG2E0huy4EGUJht4MtEH7bHz6WdweWJDu4yqrNJ3zNfk95LgTDgVNU8lZHJKmJw1CMlJVXzpErmHkatsdgJPlHtgT2g01Zq_xGqpjKUqoXxV_a335zS7AtM_LSqf2Yjzz79QHTWreZ6l2VEzfCFDWj9nYwkO6eum9A0dmrJxMeCadT_3cxf2OvIBGP-JgxpfBzfgNdm0LvK5BRWLRFjv_pVWRhFnbONi4LvyCxqp6wEhQ2EimIK9DohDAJJkMlomcL88FEKGc_-PrZ3e2wrswRBw4aDhFo1GdIMZS-w2olHd1ZwPSCx3ByOuuZsV97ed563SBJ8retdKNLLAqHZ9Qi1x15D393LDFe0HRGi8AJb1X6E3SkJP3jtPGFbUgCuwA6ytL4md2hcvTB5rVLIQQ5XylJeF63O7CeB_SVFHNVGP_rnxJCwopBtqdHu2J6Mn4gRsFINq7PGWlfXeXBwQzaoLn7NVGqkV92XBPsG7mZY-4WMZWPmT40yy6YMW6EncxrAk8f-tvJYnPV6TGeekAbdY7vpJh999XsTj_zuSlZbSJqQcL33HRbDPAe-RkNMYoXwDv6C_T18e3dOMPCfq8G1XePm8FJ66eDezAhRHlrcF3jKq0Wr6O_-452RUfL8UCc95H4cMXnp9F4Dkxu_f9EaNZi38qayjAYPFYfT3d_8vUNt9j6Yn-7ffF1MiCDd9F-1ODTgvUSI51Yg9TOapt6uegk-rWMHf2mmjDTIinpjrg-vez7vD4xrDqKjlWqZsEDnZu7FvRtEUrh1ccb6cUnrLFf3G5M4IjMSYjeJ7duhpUCoGI7zUoB3rx0QgyHjU3o5jiCe0a9cHTmmtW9P17jbOPYQG1icej3emq5jN756NNqPqD7CBvbfUqHH-dNoU-eUVdQ091JHL_IiGxHxrW0ysuZt8ETAjIxW_FKbdWxJ_rccYZbI3qyCE1a6smnXqUh57AeouSd8w3x5qWWAnhNLji96c98kN_9Mq9LOySP-sj3lLVBVB2ixE_6bZFmh3XbHWZxB6DW3cPZ8M69iWJEDWvmcZrCk93-3vpPRyrljZGHOP6oRxvqqcDXXlrzfLcFV5FoEtl943m92INsm3ohnyLjA3SRveW8SOZiXMXCyG53AJWgGwsyjcQZhdSkSeNvY_X5C6zvCZJPJTrVwXVe_XT8cHjwmQAKcI7x9fUZaKvzYWb5b2GJ4v1mTmzfDc6I5q_93lzjTYLUI2sHU_mYprV417R0uPyz5fnVXGsjeBW2B5fRL7MjrCgH4aysSvCGK4tn5wHlaj3VUO5EpDrZy_38UFRfLQpAP28HwQtS8iz5zTnLuSzsCt0gGtgY-3QCM_XuQCFx-5xSi92bARKTnRfmwqwbC1M7gHZrCVgjirvI_nlOd84il8Foz8fzyVOlxkvM6hETaPvT2lv6Ce4c3zlWchfiif6Olk-rHixYZu9CTtDx_VuKbCOaFv-yCb3VizX9--6KnT4Mp04cu1KF_6X4ROA-LHtkrMD9Ee1UBYME35e52HIHYTvRcKtDsB8nE6RTDedn3PB5oMwTfz853M7AKHayvY6HHg0hN6Y7LkWxPeNd-dDIKJkeIa0QCzY6BgqN8WtxYG0zY9GOHtZewErSfAsjHsbNWjEsHrIskj1Adudk2N-HeVrKXxhHmz06B4X2im77WSiZyGJgwoPNBr9GIOcGSFzqs2Z7XKzqLDx0O_5QuwgwpKnRnMlfdxQEsfwPizwcoNiE-bl_83X4e9hJSESnuGhmwQoISsjHAGvMxAFL2lpT_g1_gvfAPetWl-G3j3aMpB6qHgcl2QbSuxd96kf9FMzU0dz_-biJUiDaCXjZHg823-mYdvywA_47SNnVv5j07fL7LXfaO11XOqjU_dbGQqQQ_rlZm3c2zqqkSZIFT3ZbjETiXouYIgbkupx5Byamf6m8YOLmGDBkFres83R-2s50HEBrLLpIKxeszsa2OITr5sGORRcRnff0fG_PQPAPH4YoQ4g8i-ps1LdbXXFsRjoCen8HcaIKY2VA_zxpJAkhDk0GsU2Lu5-tkaJFpdi-ue2o6RQoDn58__Zx-nydOEGP_YwcwuLO8meNo2R3f0z4WFdwQjUdR26rlr_Q7fwWhQai6yevHpyKwwX01PPCB8la4ErPC0STtuiI-KXpYl_DHG2mgnEmIhYek5ZFeW5ky3ETy3UTuD7arvfx2hIfXqV-",
+      "summary": []
+    },
+    {
+      "id": "msg_0fb96f89a0c9b4d0016af91fe4976c87d2904f00fcf26cf3b9",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0663\n\n## Episode annotation\n\n- Language task: Place the black spoon in the sink.\n- Success label: failure\n- Outcome evidence: In frames 0\u201334, camera left shows the robot moving from above the sink toward the black spoon on the adjacent counter; camera wrist shows alignment with its handle. Frames 49\u201355 show finger movement near the handle, but neither view establishes a secure pickup. At frame 74, the spoon remains on the counter in left and wrist, with no transport or release into the sink observed. Completion is unconfirmed; the episode ends near acquisition rather than showing a clearly completed grasp followed by an empty withdrawal.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 75 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 11636,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 264,
+    "output_tokens_details": {
+      "reasoning_tokens": 89
+    },
+    "total_tokens": 11900
+  },
+  "user": null,
+  "metadata": {}
+}

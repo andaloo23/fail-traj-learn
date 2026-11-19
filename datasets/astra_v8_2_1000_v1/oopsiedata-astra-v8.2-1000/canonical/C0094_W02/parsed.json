@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0094_W02",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than visibly failed. Frames 350\u2013480 in aria and left_wrist show small alignment adjustments around the cup; frames 481\u2013560 show the left gripper closing and lifting the cup. Frames 570\u2013675 in aria, left_wrist and right_wrist show the arms converging for handover, with the receiving gripper closing around the cup. At frames 694\u2013699 the left gripper opens while the cup remains at the receiving gripper, consistent with transfer. The saucer remains separate, visible in aria and left_wrist; placement is not observed. No failed acquisition, drop, or harmful side effect is established. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

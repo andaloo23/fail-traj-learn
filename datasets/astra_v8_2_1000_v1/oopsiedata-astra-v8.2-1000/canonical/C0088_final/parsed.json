@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0088",
+  "language_task": "Pick up the apple from the bowl and put it on the table.",
+  "success_label": "failure",
+  "outcome_evidence": "The apple remains in the bowl throughout the episode. Frames 153\u2013163 and 207\u2013228 in wrist_cam show closed fingers withdrawing without the apple; left_base_cam and right_base_cam corroborate that it stays in the bowl. At frame 240, all three cameras still show the apple in the bowl rather than on the table. This is a visibly unsuccessful acquisition, not merely unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 153,
+      "failure": false
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 164,
+      "failure": true
+    },
+    {
+      "start_frame": 164,
+      "end_frame": 207,
+      "failure": false
+    },
+    {
+      "start_frame": 207,
+      "end_frame": 212,
+      "failure": true
+    },
+    {
+      "start_frame": 212,
+      "end_frame": 225,
+      "failure": false
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 229,
+      "failure": true
+    },
+    {
+      "start_frame": 229,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 153,
+      "end_frame": 164,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frame 153 in wrist_cam, the fingers have closed without securing the apple; through frame 163 they withdraw while the apple remains in the bowl. left_base_cam and right_base_cam confirm no successful lift. Reopening begins at frame 164.",
+      "recovery": "Open the fingers, realign them around opposite sides of the apple with clearance from the bowl, and verify acquisition with a small lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The apple remains contained in the bowl, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The apple is still accessible in the bowl, so another attempt requires no environmental reset or human intervention."
+    },
+    {
+      "start_frame": 207,
+      "end_frame": 212,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Frames 207\u2013211 in wrist_cam show another closure followed by empty withdrawal while the apple stays behind; left_base_cam and right_base_cam likewise show it remaining in the bowl. The fingers begin reopening at frame 212.",
+      "recovery": "Reopen and adjust the grasp position and depth so that the fingers surround the apple rather than closing short of it, then verify retention before lifting farther; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt fails to acquire the apple without visible damage or displacement outside the bowl.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable for a direct retry, with no cleanup or object replacement needed."
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 229,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following reopening and adjustment, wrist_cam shows the fingers closing empty again at frame 225 and remaining empty through frame 228 as the arm retreats. The apple remains in the bowl in left_base_cam and right_base_cam. Reopening starts at frame 229.",
+      "recovery": "Reassess the apple\u2019s position relative to the fingertips, approach with the fingers open, and establish a verified grasp before withdrawing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Only task completion is prevented; no damage, spill, or harmful side effect is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The apple and bowl remain available in the workspace, allowing another attempt without environmental intervention."
+    }
+  ]
+}

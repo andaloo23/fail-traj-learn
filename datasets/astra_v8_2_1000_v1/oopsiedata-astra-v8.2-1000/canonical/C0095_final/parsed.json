@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0095",
+  "language_task": "Pack the cups with a single arm.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In base_image, the robot consolidates the initially separate cups into one nested stack, releases it at frames 156\u2013163, and withdraws, leaving the stack stable through frame 177. \u201cPack\u201d is interpreted as nesting the cups; placement in the nearby cardboard box is not explicitly requested or observed. Initial unsuccessful gripper closures at frames 49\u201367 precede successful handling at frames 78\u201390.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 49,
+      "failure": false
+    },
+    {
+      "start_frame": 49,
+      "end_frame": 68,
+      "failure": true
+    },
+    {
+      "start_frame": 68,
+      "end_frame": 178,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 49,
+      "end_frame": 68,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the fingers repeatedly close near the exposed end of the light-colored cup and reopen at frames 49\u201359 without securing it. At frames 60\u201367, the jaws close above the cup while it remains with the cups on the table; no retained acquisition results. At frame 68, the gripper opens and begins repositioning around the cup for a better grasp.",
+      "recovery": "Open the fingers, align them around the cup\u2019s sidewalls, and establish a secure grasp before lifting; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful closures leave the cups on the table without visible breakage, toppling, or other meaningful damage in base_image frames 49\u201368.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible in the working area, permitting a corrected grasp without environmental resetting or human intervention."
+    }
+  ]
+}

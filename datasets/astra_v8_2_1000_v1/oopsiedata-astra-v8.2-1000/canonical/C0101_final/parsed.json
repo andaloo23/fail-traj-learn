@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0101",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven is initially closed (frame 0, image and left_ego_image). After prolonged hovering and repeated small excursions near its handle, the robot pulls the door outward and downward during frames 201\u2013216. The door remains visibly open with the interior exposed at frames 216\u2013223 in image and left_ego_image. No damage or unintended displacement of unrelated objects is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 198,
+      "failure": true
+    },
+    {
+      "start_frame": 198,
+      "end_frame": 224,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 198,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the initial approach, the robot spends a sustained interval hovering near the closed oven, interspersed with small back-and-forth excursions, without visibly advancing the opening task. Frames 53\u201390, 114\u2013149, and 174\u2013197 show extended nearly unchanged positioning in left_ego_image and wrist_image; the intervening excursions also leave the door closed in image. These views establish sustained unproductive behavior, but not a specific failed handle grasp or hidden mechanical cause.",
+      "recovery": "Reassess the handle position, align the fingers around it, establish a secure grasp, and pull along the door\u2019s hinge path while checking for opening motion; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay; the oven and surrounding objects remain intact, with no supported meaningful damage risk during this interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains closed and the scene remains usable, so another aligned attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_01547337abf13f03016afbe398701487d1aec8b83068c02856",
+  "object": "response",
+  "created_at": 1794892698,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794892711,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_01547337abf13f03016afbe3a4641087d1ad6f09a63e00a410",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--OpgGlTdnLePROQ6GXwxA44JLzx6419-ZFv5CbFaHhKPCC-plupOgasMNoRAHpwMw8FyEMGx7n5QyofaZA9QqFq8DTcsBv9GR9L2HCpyiemcGsIaKRz8GVtsc2tCNtQeYUMEbm5DkRveSjhxv9Tct4EKhyfn965AIdkrjp6q65fRLTauXy44atQQqCucSUKU2nfxS5_hukywDSXUwoLtfncSETj0Cc247w3t29MA1ce9Wbyvh3qpV2HOcnRudDbiwZk-UkORAFbb9GMnFKt3uLO3Gxd9XopJID1VFs5X6WmAG4txPiK-MQuTQxX9uQWjdZHx-P2dAaW2JsVtk9Us5T9k_ERtylhdXpkMDbClUHANN83mh9LdxPHfhF8BnfDMz1sURWCohrTfsBOW03DZawdz4k9AS_8CFj7kjJok_2TaIpKKCzH3OJ7hy44psVV3X1Y5yEalJpg3URup-aDJdMbKfA9NbDHNjbMTSp3EfibOvjb-RwVGh0DgceoWTFecDnq9yGrSV4F8_KKPkKCQc3-f3ySt1TrWRkEWc3susdRszvPMRlXvUBox0OeY72PGh7Rur3jZP8tPrVM5fc3Aaz6wo6zBpP9PoSCeIrkZFH00RH_QmhgXdc0k07mnFdOthUR-aLMqJg6Ewdy5YXw_QxeGCAdYdy8lvHnZclC9Cx1UxS5E8YakcYSohdGoCa4pKouJ6P_JY2wnIbmTTRdpmOr0FEekbksYU9VudzR_XUvs1FNLBqSmDz3no0GqNDgfs5wbQuaCIzSfBnBq6iwAK8QqUiqnoMf5bxAd7n8vQlXQRsgiR3bIHr2NWS6U8-i8hlRGflWcoxf8U5ivG48-GtFv_6B9EZ44XAM5Fy6Rpojwt_HkAKwzW82UumLlF4JVyacZahbnLVzwAd0BDxPzohEpsRZYtGVYIzByspjtwDgpPQWer_e4KK4iwmp0YUKTmuYE2CLszKHRDD8WUX24pyUfUqbk2mQyIYQy_gSuZ7gM6W6VV9hUaxEeIQgrx9ncIVDy_uPootTchwtn0NhU43Dc-JB7HKTCTkkW4RXa_KYtRptli9tTcZ0veIrBaRg0UEyhL546QVhyP8kXH3OFiA2TMIJ1mZDVOUZTZJXeg4m7mVUZI1UQOoPB9kN51JWgywSAl5LdS-3UzTtYrkWKeczbodpzzIs6JdjzC1cQ4s0MmRv99Na5qlroE8zhNLp8cpkK4GrHUppvgMHIY3dqKHv7dx0DGAK6MURQFOFdMm6zENQko26eViyX8zh7TrqgKiqy6OH-aO-GM1cnoCuEKkaKAECl5g-yW-PC2SsAvbi8p3BllSmVj7MQO8pm0n-JkS2okGc9a9fKMAbrk2gDaRza2E6j4BEZ1nYhdyHGxEhrbqB_9T7FJdiIoeH_Z05Kz91Dn7ZrwSCmD2jNuV9Oh_mECd2h8eJNbqGES0fiPMVMioEc0kFG13kWjBVpXoIovYpCGb4eg4s7IorV71YHZ3VF3IYPpmjlm9vkNmByxSq3_bRSjpHT_Y8hN9JnxUEirGSeCd2NkexWM-0Q4q1ru1nkdaPkdDl8ur9k1JrXEeWMxtNqe39f2XEYxf9iex4zuSMAj1dJdMRcp1n90S1BASzFhKUudP1gAjAJCKnlApE36B7UDZhI1dqHpiSVya8XD7zsou3FCvHvqVFBbEkEZjMGz9U3_BR7GPc3m9g4WTyvJ6GOa1-4ah3PgLwy_SJ4i5Pci3FvxiCJICoZoQ6h6q8SnjB4ZKvOPV7pJLlcCwOkv7ll_XUTntOzmxa41by_XL3zAJtW1RPqF85ktR8jaU597t6SWuUKbofWq6DoPXOsl3HsYrBWBewgB_rhJK3k2H2hEskNIyK0EusJRgaHqzRq3rEJc2blmVYZUmmni7-1X9O6qxvFg9wh2s8bjmauD3pyDJIHDfExsU1EAhIuYNMO5sHqIh6zmGM_hN3yFVaJRiizGF9LAJWdDikBzHzdg59dX2_sJv_EwU3kZhIKPCNSic7wl30Czs15NGpW9v-w1tGRxNOcyfLBPrxnpmA4a6x8Rv_sRx8fyhpxv3Ft058Qp96kkdJqFG-Q4vBaWzWT0NQ9XOxc9PcDzYhfj5tLDzqrPjl5bU97KepQBPxFTK0uTw0zIwP9gJOHvcNGRp_uz1aotGsi2hjEcOP0oaA7VorcIBVzyAKV1CpJAKx5WR5Kncz9U09Gx05tVhg2ns1UhCcCbwV6PvyaxJg0cvZCbPDK6ww1BDoyIALjCCr7qFmeshJLUK3aYWCp-QT1fYUuhHQ5icyoTE_5jHC01rVMLJMNEFZIkVH613j7NJJSCU3C1SydX-CUOebHIS33iRyIirJytBPrhxw5wIxjfQBjniHiQE_20ILbzvan9GPqVUht6Pia4_H8wTuSVhp_ohbAmxgTVDZS5_eFiPzOrMROMMrX84DbYaVIl9X-zZNuC1w9luckw1mhZHmgP6Uaoy0lNdi4xv64UuG7LqacmG5Cxd578PlE9kQDBxiDUYRdF0GQ5GDTigUmY2I645xVWhhPCtsJmMy8g1NVnF0avWB0az8wiIYatY8hU2oIvObqWGDC59ibgSPKCbq1aB9iSMLa-CR2rdFZP9JX6mj_cjpqdyd90mqIaflFsmkARhEBmz8yUi4-QNBK_aJiXuondrg3Awk8gzGK0fieg0DZbfk_f6fX22rC1f3PNCB96uugAW4RQMbPJJkhnECLSZQTzjccT8rQrwhOn__YVjLWL7LrS6ArhLTBIBeX1uNyX8enzvTXBF4KvLPu8Q8rkRI-CFLY0lIPw33KF_kJCW5jGunsJLiM3g12upj7b0Z1YGGTnli8V14EjGGrs_6WBHSFxg9kWpFjY7wvch-d2NP09u1RlyoKLw6QZqQe3U4wuKjG48oGg==",
+      "summary": []
+    },
+    {
+      "id": "msg_01547337abf13f03016afbe3a50f0087d1906bfd244b01358f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0680_W03\n\n## Episode annotation\n\n- Language task: flip the small box upside down\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window, not a clearly failed completed flipping attempt. Frames 700, 850, 925 and 1049 in top show no visible inversion of the pink rectangular box or the orange box-like objects. The left gripper repositions around the pink box, while the right gripper adjusts near the orange objects; left and right show changing approach angles without established possession or a completed flip (frames 820\u2013925 and 1018\u20131049). These movements do not establish a local failure. Which object \u201csmall box\u201d denotes remains ambiguous. This label is provisional because earlier execution beyond the supplied context and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 700 | 1050 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63459,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 36
+    },
+    "total_tokens": 63703
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0702",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot arranges the cups into a pyramid during frames 700\u20131000, then begins nesting them during frames 1100\u20131400. The final cup tips sideways during release at frames 1487\u20131509 instead of nesting onto the standing cups. It rolls toward the lower image boundary by frame 1600 and is out of view at frames 1627\u20131628. Packing is visibly unsuccessful, rather than merely unconfirmed; the loose cup\u2019s eventual location and any fall off the table are not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1487,
+      "failure": false
+    },
+    {
+      "start_frame": 1487,
+      "end_frame": 1509,
+      "failure": true
+    },
+    {
+      "start_frame": 1509,
+      "end_frame": 1629,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1487,
+      "end_frame": 1509,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In base_image at frames 1487\u20131488, the held cup begins tilting during the left gripper\u2019s release over the standing cups. By frames 1507\u20131509, it has fallen sideways onto the table rather than nesting, preventing completion of packing. The subsequent gripper withdrawal clears the objects; the cup\u2019s continued rolling is a consequence of the failed placement, not a separate failure.",
+      "recovery": "Locate the loose cup and, if safely reachable, reacquire and reorient it, align it concentrically over the nested cups, and verify stable seating before releasing. Human assistance is needed if the cup has moved outside the robot\u2019s safe reachable workspace.",
+      "severity": "low",
+      "severity_evidence": "The cup topples and rolls on the tabletop in base_image at frames 1507\u20131600, with no visible damage or spill. Its disappearance below the image boundary by frames 1627\u20131628 does not establish a fall off the table or damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the loose cup to an accessible, properly oriented position requires straightforward retrieval and repositioning if it remains nearby. Its final location is outside the camera view, so greater retrieval difficulty or a definite need for human intervention cannot be established."
+    }
+  ]
+}

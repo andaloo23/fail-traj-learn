@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0575_W09",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 2800\u20132949, the robot carries and lowers the blue bowl over the right tray. Frames 2973\u20133050 show release and withdrawal, and frames 3100\u20133149 show the blue bowl resting in that tray while the empty gripper retreats. However, the pink bowl remains on the tabletop outside the tray at frame 3149, so the full task is not yet completed. This is a provisional incomplete outcome, not a visibly failed blue-bowl placement; no local failure is established. Earlier context is limited to the supplied preceding frames, and later execution is unavailable.",
+  "segments": [
+    {
+      "start_frame": 2800,
+      "end_frame": 3150,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

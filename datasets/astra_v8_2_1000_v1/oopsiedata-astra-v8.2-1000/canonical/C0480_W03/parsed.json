@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0480_W03",
+  "language_task": "put the orange from off the towel to on the table",
+  "success_label": "failure",
+  "outcome_evidence": "In top, the orange remains on the towel throughout frames 700\u20131049, including frames 700, 850, and 1049. Across left, right, and top, small viewpoint changes do not show a discernible approach, acquisition, or transfer. Completion is not observed, and sustained lack of task progress is visible rather than a failed grasp attempt. This label is provisional for this window; earlier context beyond frames 698\u2013699 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 700\u20131049 (about 11.6 seconds), left, right, and top show no discernible task-directed approach or object handling; top shows the orange staying in the same location on the towel. Minor camera-position drift does not establish useful alignment or progress. Context frames 698\u2013699 are visually consistent with this inactivity already underway; it persists to the window edge and may continue afterward. Its cause is not visible.",
+      "recovery": "Approach and align with the orange, grasp and lift it clear of the towel, then place and release it on a clear area of bare table; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress, with no visible damage, disruptive displacement, or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange and surrounding objects remain in place and available for another attempt; no environmental reset or human intervention is visibly necessary."
+    }
+  ]
+}

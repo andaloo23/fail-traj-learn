@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0755",
+  "language_task": "Pack the cups with a single arm.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot approaches the clustered cups (frames 18\u201349), manipulates them, and visibly lifts a cup assembly (frames 114\u2013118). During subsequent movement, the neighboring blue cup tips and rolls onto its side (frames 120\u2013129). At frame 146, cups remain on the tabletop and none are visibly packed into the box at the right. Packing completion is unconfirmed, while the toppling is a visibly unsuccessful side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "failure": false
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 147,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 120,
+      "end_frame": 147,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image, movement of the held cup assembly against the neighboring blue cup starts tipping it at frame 120; it falls onto its side and rolls left by frames 126\u2013129. The robot then continues moving the held cups leftward beside and against the fallen cup through frames 131\u2013146, further displacing it rather than packing the cups. This is visible disruptive contact; no hidden cause or damage is established.",
+      "recovery": "Stop lateral pushing, lift the held cups clear of the fallen cup, and place them securely in the packing destination; then reacquire and reorient the fallen cup before packing it. Human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "The blue cup topples and moves across the tabletop, but no breakage, spilled contents, or other meaningful damage is visible in base_image frames 120\u2013146.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the fallen cup to its previous standing orientation requires a straightforward repositioning; it remains accessible on the tabletop, with no repair or difficult retrieval visibly needed."
+    }
+  ]
+}

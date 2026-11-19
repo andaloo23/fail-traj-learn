@@ -1,0 +1,109 @@
+{
+  "id": "resp_0744191e88fc4a2a016afbe7de17a487d28ef3036aafc67384",
+  "object": "response",
+  "created_at": 1794893792,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893798,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0744191e88fc4a2a016afbe7e3c2e487d2927e4120dded3f3f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0948_W03\n\n## Episode annotation\n\n- Language task: find the hidden stuffed toy and put it in the bowl\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window: frames 700, 800, 900, 1000, and 1049 in right and top show the green bowl empty, while left and top show no discernible search, acquisition, or transfer. The robot remains essentially stationary for approximately 11.6 seconds, establishing sustained inactivity rather than a failed grasp. This outcome is provisional; earlier context beyond frames 698\u2013699 and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 700 | 1050 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 700-1050\n- Categories: task_not_attempted\n- Explanation: Throughout frames 700\u20131049 in left, right, and top, the grippers remain near the front of the workspace without discernible task-directed interaction; the pink storage unit, bowl, and other tabletop objects remain unchanged. This sustained inactivity does not advance finding or placing the toy. Context frames 698\u2013699 visibly show the same pose, supporting continuity across the starting boundary independently of the prior label. The inactivity may continue beyond this window; its cause is not visible.\n- Recovery: Begin a task-directed search, inspect the pink storage unit and other plausible hiding locations, verify the stuffed toy's identity, then safely grasp it and place it in the bowl; no human environmental intervention is visibly needed.\n- Severity: low\n- Severity evidence: The observed consequence is lack of task progress, with no visible damage, displacement, or meaningful risk of damage.\n- Resetability: immediate\n- Resetability evidence: The workspace remains unchanged and usable; another attempt requires no visible physical reset or human repositioning."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63673,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 396,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64069
+  },
+  "user": null,
+  "metadata": {}
+}

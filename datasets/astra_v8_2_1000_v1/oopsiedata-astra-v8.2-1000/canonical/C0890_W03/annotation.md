@@ -1,0 +1,26 @@
+# Episode: C0890_W03
+
+## Episode annotation
+
+- Language task: tie the banana plug around the two screw drivers
+- Success label: failure
+- Outcome evidence: Interpreting “banana plug” as its flexible lead, the task remains uncompleted in this window: top at frames 700, 875 and 1049 shows the red lead separate from the two screwdrivers, with no wrapping or tying. Across left, right and top, no discernible task-directed acquisition or manipulation occurs. This provisional outcome reflects sustained inactivity rather than a visibly failed physical tying attempt; eventual completion is unconfirmed because later context and earlier context beyond frames 698-699 are absent.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 700 | 1050 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 700-1050
+- Categories: task_not_attempted
+- Explanation: Throughout frames 700-1049, left, right and top show the grippers remaining essentially stationary without discernible approach, acquisition, arrangement or wrapping for approximately 11.6 seconds. Top at frames 700, 875 and 1049 confirms that the lead and screwdrivers remain separate and undisturbed. This sustained inactivity does not advance the task. Context frames 698-699 show the same state, supporting continuity across the starting boundary; inactivity may continue beyond this window, and its cause is not visible.
+- Recovery: Begin a task-directed approach, bring the screwdrivers together as needed, and acquire the flexible lead to wrap and tie around both; no human environmental intervention is visibly needed.
+- Severity: low
+- Severity evidence: The observed consequence is lack of task progress; no damage, object disturbance or meaningful risk of damage is visible.
+- Resetability: immediate
+- Resetability evidence: The lead and both screwdrivers remain available in an undisturbed tabletop arrangement, so another attempt requires no environmental reset.

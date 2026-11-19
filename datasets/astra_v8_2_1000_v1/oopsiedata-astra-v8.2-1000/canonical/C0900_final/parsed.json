@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0900",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success",
+  "outcome_evidence": "overhead_cam and wrist_cam show three toys initially beside the empty plate (frame 0), followed by successful placement and release of the tan toy (frames 126\u2013140), pink toy (frames 252\u2013265), and blue toy (frames 393\u2013410). All three remain on the plate after the gripper withdraws (frames 420\u2013429, both cameras). No failed acquisitions, unwanted collisions, or damaging side effects are visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 430,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0094_W01",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, not a visibly failed acquisition. In aria, frames 0\u2013179 show the left arm approaching the upright cup while the saucer remains separate. Frames 180\u2013349 in aria and left_wrist show small positioning adjustments near the cup with the gripper still open; no completed grasp, lift, handover, or placement is visible. right_wrist shows the separate saucer and open receiving gripper at frames 0 and 349. The observed approach and alignment do not establish a local failure. Later episode context is not supplied, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

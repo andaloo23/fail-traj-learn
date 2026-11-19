@@ -1,0 +1,116 @@
+{
+  "id": "resp_00e6d1d883475fd7016af928aeb46087d1a918eec08915feba",
+  "object": "response",
+  "created_at": 1794713775,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713780,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00e6d1d883475fd7016af928b14a7c87d18f57d563c14e6c33",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Si12xtNcPeXzUdg231JsnbFPck4KUQEJr00yVIv-KKKlwaO81cex6SQmtkSHwWzxVB_-C7lw5_s68jUAdyUrma8_H9T80jS7GRFI58SpY2W4EQ8de0SNUBLCGibJTEyOmz-0M0bMancLWTdmXhdnSU2fh12FxG-a0RqlDrUaaThVnAMWGfpp7-hkfJm9XZWYrC6Uwt7b5Ab8A93FVcLiElNj5heyF34kCHEkVUqf7OgR45IMK7DUESUDZwWv0BSUepPV1Iry9zeZO6KaAS_s7yXQfLWn1KAe5jLgUhYJhtJtdXayALn7bVrYN5qoV_OR3oX1bkrdVDrHdPn85gHEuo8qJLyOm3NRYl70-vAOCjfvTSa0iDJXGaZsS8JWWspzw4KuMBYBaqwdWFTC8HylAF3gvirHmbpIP3-2YpjGNMZnljtzZq09cTwzYCiypYzXAlg_UNdFvDVtstlx_kcR30hEZdKiEHd8oUxgUhvS9ZNLPyNDmK39jPbqTseeBwQT0p8qXnkKNptWRE_GJylX68vPAIY2VwDnrpMwmToBhzSf-q1JonwekmSVZWLrbvElJdqlhs_EFG9dl9PYZIMPBlyF_QvOHd-jSFloocAkR59VGheh1_oSi3C2QbZ9DMz7Zcp4a3gzTBltL6xUf8XxajaL-IR_kcYWL23iKouh_aqVIOi1XmnHnbozTNVG52EciPAhCJDipUNKyISLhng-ClM_-N5tgQxt1ffqBKzKHi2QSCugh11eIrr5z6FnICFYdG2qHnN0SO5o3u4MnihmBPliz8hG0HFZtDKhHuOgrGH-mSjvBip61hJ5V_Y4ljXTjqR5R061Dtw2LQCoxlftH3eKPL6cyO2Ae824dwDsAHngptLFzmxPb0pd09TYDNupFtM1uLP0AGBIWhhszUUq6J5fBOlxElYBD8j-R7q8NXRG7XqOyPb4sdtvZS5UHZv65aFl-QzMPPG-wPti3gtY2shIAPRMBkBz_K4QbubUAAYGcWNutkW5S1kVbZvMD7J-ezOTbEpFK4-bAP0c2q27vWpx7kciKRwpPKPxZF4FkJWyBkVFwUmgXuQCvc5A4dlncpDItEKV9MVe-MikZX8qjo2QdGoEzhVC0Ca7YSWi6rcO76U35QCTqJ3dqcYzOzOUVPIBkQlkUAUmBzfqnTJnOQV_pV0BXFHzP0Ra_tSY6qT4hmUDPSLYVPThmxUoUXpNaLyWTFnCsqS2KslAwN71X3kQlCuBVMjzl5cWCPa2yBJ6ghOn3ru2m93qEbCdGmWnY3rjmR7xCxwqj8FFQEoM16AhGNlWxr6Uy-wwilzNDTDooS2KeV93gMrzk28j9pejX8VLkUOMN-O97WzDqgRBEm-PBaNUeXtEhciTLryUOfIugY4ZT4CClnD8ONj8CB-awjYiu00oROOtVPCx9EX7MqUxXoHBmB4EaRMVD8Ff2kfzB00s6rP3GbZmHTdhslC1rL9LmZzRmMNTYzLejz7-kU2BNRX3qQZi5y9ziXSo5uXgeBN8medgFJy48Zvc7mZwiHJ81DrOW9kUhGm6-N-Y9VQ8m1c2WKlf-Cwu3QVi_SYBlw_X579ytLxg_kcT31kGwA5UT8shKgbgyKTNvq8DGUJ4z1pvQmpoqx2Nt_RoM3sPr7uMgzgyUn90zbkeN1cuDix25-CdPV0eCizHyqqwJed9xb35UsDu-ZawdfcnbeLcM4wgnDhvH2A7erAWzFQQTTIX0UFIFZvINjLlvk_k_WfVyZF7MIgjeFZ23bZ_yyDARig614ksDxenPVMeY-I1IIRn0cSMsSRCLZ6RqP_ANw_U503ik0TjiKB2wlhVjy33Tlj86Sj-_mSBiaQIxIDOfRiKe-MWtaW2PSVOOjY8xI8nfHshDB8ngtGGY45U1QTJQea4BxSiFXRSWnsGVjab7Sm8lcsacSR4yhA3QIsLyO1XqbCt2kVsqF5kRJR9lZj3yFHXBsfR5_XW2e4SNHZrf0m",
+      "summary": []
+    },
+    {
+      "id": "msg_00e6d1d883475fd7016af928b1e4ac87d18b8c0e4ab8f24f46",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0776\n\n## Episode annotation\n\n- Language task: Pack the cups with a single arm.\n- Success label: success\n- Outcome evidence: In base_image, frame 0 shows three cups initially separated or loosely overlapping. The single gripper acquires the light-colored cup, lowers it over the right blue cup (frames 106\u2013168), then lifts the combined cups and moves them over the remaining blue cup (frames 172\u2013211). It lowers and releases the nested group (frames 212\u2013224), leaving one compact, stable stack as it withdraws through frame 255. \u201cPack\u201d is interpreted as nesting the cups together, consistent with the visible operation; placement in the nearby cardboard box is not explicitly requested or observed. No failed acquisition, toppling, or harmful side effect is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 256 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 24039,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 233,
+    "output_tokens_details": {
+      "reasoning_tokens": 27
+    },
+    "total_tokens": 24272
+  },
+  "user": null,
+  "metadata": {}
+}

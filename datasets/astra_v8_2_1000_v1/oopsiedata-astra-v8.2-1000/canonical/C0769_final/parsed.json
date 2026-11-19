@@ -1,0 +1,74 @@
+{
+  "episode_id": "C0769",
+  "language_task": "Pick basketball and place in blue bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the robot acquires and carries the basketball (frames 76\u2013130), but moves it around away from the blue bowl rather than placing it inside. The ball separates from the gripper onto the tabletop at frames 383\u2013387 and is subsequently reacquired (frames 513\u2013529). At frame 599 it remains in the gripper, outside the bowl. Placement is visibly unfinished; the episode also contains an observed loss of the ball, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 76,
+      "failure": false
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 383,
+      "failure": true
+    },
+    {
+      "start_frame": 383,
+      "end_frame": 389,
+      "failure": true
+    },
+    {
+      "start_frame": 389,
+      "end_frame": 532,
+      "failure": false
+    },
+    {
+      "start_frame": 532,
+      "end_frame": 600,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 76,
+      "end_frame": 383,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After acquiring the basketball, the robot carries it rightward and toward the foreground, then far left, and repeatedly moves it around the foreground instead of delivering it to the bowl (exterior_cam frames 76\u2013169, 193\u2013281, and 301\u2013382). This sustained, circuitous transport does not establish placement alignment; the bowl remains behind the held ball. No hidden cause or wall collision is established.",
+      "recovery": "Retain the ball, localize the bowl, and move along a clear path to center the ball above its opening before lowering and releasing it; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The ball remains held throughout this interval, with no visible damage or meaningful damage risk established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright and the ball is available in the gripper; correcting the transport requires no environmental reset."
+    },
+    {
+      "start_frame": 383,
+      "end_frame": 389,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam frames 383\u2013387, the previously held basketball separates from the fingers and falls onto the foreground tabletop, well outside the blue bowl. This loses the established acquisition; whether it slipped or was released is not clear from the images.",
+      "recovery": "Locate the settled ball, approach with the fingers aligned around it, and reacquire it before transporting it to the bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The small ball lands on the tabletop without visible damage, spillage, or disruption to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains accessible on the table and can be reacquired without a person resetting the scene."
+    },
+    {
+      "start_frame": 532,
+      "end_frame": 600,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "Following successful reacquisition, the robot again carries the ball toward the foreground, reverses toward the bowl, then moves forward again while continuing to hold it (exterior_cam frames 532\u2013553, 557\u2013577, and 582\u2013599). These repeated excursions fail to progress to placement in the bowl.",
+      "recovery": "Stop the repeated excursions, maintain a secure grasp, and align the ball over the bowl opening before lowering and releasing it; human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The ball stays in the gripper and no damage or harmful contact is visible; the consequence is failure to complete placement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball is still held and the bowl remains usable, so the task can resume without an environmental reset."
+    }
+  ]
+}

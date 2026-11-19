@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0325",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the upper drawer handle, closes its gripper near it, and withdraws empty without opening the drawer (frames 69\u2013123, wrist_image and left_ego_image). It subsequently remains away from the handle with only small movements and gripper cycling. The drawer is still closed at frame 324 in left_ego_image; this is a visibly unsuccessful attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 80,
+      "failure": false
+    },
+    {
+      "start_frame": 80,
+      "end_frame": 123,
+      "failure": true
+    },
+    {
+      "start_frame": 123,
+      "end_frame": 325,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 80,
+      "end_frame": 123,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close beside the upper drawer handle starting at frame 80 in wrist_image, but do not retain it. At frames 91\u2013123, wrist_image shows the closed, empty gripper separating from the handle, while left_ego_image shows the drawer remaining closed. The acquisition attempt therefore fails to enable a pull.",
+      "recovery": "Reopen the gripper, realign the fingers around the handle with adequate clearance, verify acquisition, and then pull along the drawer\u2019s sliding direction; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains closed, with no visible damage or displacement of surrounding objects in image and left_ego_image.",
+      "resetability": "immediate",
+      "resetability_evidence": "The handle remains accessible and the scene is unchanged; another aligned grasp can be attempted without an environmental reset."
+    },
+    {
+      "start_frame": 123,
+      "end_frame": 325,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After withdrawing, the robot stays away from the drawer handle from frame 123 through frame 324, with prolonged hovering, small movements away, and occasional empty gripper cycling (for example, frames 132\u2013135 and 181\u2013186, wrist_image). No renewed approach or drawer movement occurs in image or left_ego_image, establishing sustained unproductive behavior rather than a brief pause.",
+      "recovery": "Resume a task-directed approach to the drawer handle and perform a verified grasp and controlled pull; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The consequence is lack of task progress; the cabinet and tabletop objects show no visible damage or disruption.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer remains closed and available for another attempt, with no cleanup, repositioning, or repair visibly necessary."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "episode_id": "C0871",
+  "language_task": "Stack the green cup into the purple cup.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the robot lifts the green cup and carries it toward the purple cup (frames 73\u2013117), but does not establish a stable stack. The cups tip apart during placement (frames 161\u2013175). The green cup subsequently rolls toward the left table edge and falls out of view (frames 217\u2013224); the purple cup remains separate at frame 240. This is a visibly failed attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 161,
+      "failure": false
+    },
+    {
+      "start_frame": 161,
+      "end_frame": 176,
+      "failure": true
+    },
+    {
+      "start_frame": 176,
+      "end_frame": 217,
+      "failure": false
+    },
+    {
+      "start_frame": 217,
+      "end_frame": 225,
+      "failure": true
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 161,
+      "end_frame": 176,
+      "categories": [
+        "manipulation",
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the previously held green cup tilts away from its placement alignment with the purple cup beginning around frame 161. By frames 169\u2013175, the green cup has fallen onto its side on the tabletop and the purple cup is also tipped, rather than forming a stable nested stack. Acquisition was established earlier, but placement and retention fail; the precise contact mechanics are obscured by the gripper.",
+      "recovery": "Reacquire and upright the cups, stabilize the purple cup, then align the green cup vertically over its opening and lower it before releasing. Human intervention is not necessarily needed if the robot can safely handle the sideways cups.",
+      "severity": "low",
+      "severity_evidence": "Both cups topple on the tabletop without visible breakage, spilled contents, or damage in exterior_cam frames 169\u2013175.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The cups need straightforward repositioning and uprighting before another stacking attempt; both remain accessible on the table at the end of this segment."
+    },
+    {
+      "start_frame": 217,
+      "end_frame": 225,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After following the rolling green cup in exterior_cam frames 176\u2013216, the gripper makes a near-object acquisition attempt at the left edge in frames 217\u2013221 without securing it. The cup continues past the edge in frames 222\u2013223 and disappears below it by frame 224 while the gripper remains empty. The images do not establish whether gripper contact accelerated its motion.",
+      "recovery": "Stop the edge-side attempt and have a person locate, inspect, and return the fallen green cup to a safe tabletop position before retrying; do not reach blindly below the table.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is loss of the cup off the tabletop and failure to acquire it. Its landing is unseen, so damage cannot be confirmed; no meaningful damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A person must retrieve and replace the green cup and upright the cups. This appears to be a straightforward reset, although the fallen cup's exact resting location and accessibility are not visible."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_00d3ab6fd914c2f1016af90355c9dc87d284077acb73dbbc66",
+  "object": "response",
+  "created_at": 1794704213,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794704220,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00d3ab6fd914c2f1016af90357fb7c87d2a86f7dbd55cfc27a",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QNcMI-UNlonCAu1fNeJC1gy3OtRqbuYOHbaFOXhOpmv34k7j5v7LY58QDjQW2H00M3NS3BGbnvOiNXJ4KLMJzzsSCo_VNTdXwLeWUj6MqFeaUC5MoXbGyRPjtMpaNznwXY8T3EFWUkvpatmWePG__Am2jwkH5vqeRv5bqKcQUii7eMrotN-P9OUijjL5ZZTG-cT1JsC-4YdN3imIF7E49JH3-_H43QeDtgRDZ0DOrugWol1n3PwjaLNlPSucfFuHeoddPsgIxPAJR5eTLrcKuDmEYcE0d9TxbEcF_zL9zJN2sFLYgDFDBh5Jg52kU9I5geZWHnr7CthVz9T9M7o39wcfGL3TVjghToUWbRS_wjwpbfhi1kzbsMbImDvmhaAvj-j4mzTB8LJJSfx4zaKfTUlKBxG2FyMR0q58TFIYAen-nXOUS--D6ZKYP4_Qwkaon5AyFA7v_dQHJy5n_T-NGz7bBM3GsDZqCWeOf1mIiKw1p9EBKrvauwcF_PiXMhP_WinZB0GVO3GOetljVlDGCXzZUFVVv8xF2u6bqTFbpdpnTesbimGZQaAIERiPsYb5KRSG11T2CM3mm0HypoXTtxf1NtNk2rOUniYxeZvtPBQpEOCANu1EszV4EnYCaXN0Ieyd7Z0tn4PbzBWtPMAf2PMSZrjLxP517S72e0Xhbd1E1FKB4snfL3MOeCgUi7PlvBwTtf4ZmGZHTHc917cPe8Gl3tEU8AB3m1oiIyeZ8lH28OAotWpaKC2EpgLG7TINanWgpfhyeQphmyViyYNEwgL5lDM9mAtugc1TpRDB8B0CCu_1zmPnnuBxID189cw1snhtAY-FKpNvLM8aFUjPeBKYWsHglcnVPfVYTt0R0j2SXYkFJV_T3IbhK-IYY2rtyWNN7mBig8fuZn75f_SH_bX_KyTx-_ZGHgPBAE5hTDr4UYr-HPFqk7e946OnnCRay7-ZhWAMl58u5OCm8lcgX_xl6Z97XVrnBwYwpGojgDqmcjyRbKuff-a6M2JwF45TEfHVTqYPsWGJgVkMid1NOCwyAg7aKzQObbgNQrhryzLYvooMMp1iKGUCvVwE9P-5bJrpzk70eaY85rz4p_fsOnxk5-X4cGaRN8uP_9DoyOu1aKvYuiLo_iKDOX8plVmtNRLbOa3reDnp_tAEV2-FRR3nwLCSVZ0UYo_7jLn66Ne_QBcuQ5gsZek1CX0LSNBM-YzvWm4AKfacFd92hNutXgpeuVfVWNwyN2DILLUCqx9Oo3xFq7E2TZYgH9rmUg6hWUWsLMB9mUIRQV7Df40S9J7Q6K8M7FDE9sYyLHVZLtcRRxMGOyWZQlWWMjscsyZmZr_r60JJ11lwabs_i3r9WhvTAzdDMv9dIJnssspdKJycQBM8jDca_kO5okQbmwuOXyCSN9GW52sWJdQlXvH-rOhgZByeSBKuV5NT3GmiGk_mLjmBKva7tdZUuTdWYn5-y9H_H6CdpKSy8oW--cAqaN9f-eewCb_ibHI6o-b_vAlx_VkeYsiesNND1IQb89Nwv-gmHaLMWFEZxeVjQoow2HNu2AP6VvSzITCTzeSB8PKcxPdyR3htude4vR_NH4-5jM2c6QD2yw4feuESCSZQx3z9dUamFFs-FTpCWFmKe2EH4W6IHi1NCoMX1R3eeYKzraRyARiCep_Otu2m0ar1EuqTPARPzB4EYZe67VA4bzpXAS3n5uls_11yN5jQvsdkOoSjRZc2dnzBhgvYua3vqVkprB9sntSnIWJas4C0Sr_L2Bk6j3vmSCZGrd89dhggLm0_ZixnFWyNqptDAYV5yLvS570EPu85tP4TqUAm0o24Le45IT6TgLmOT8H_q9p1peG-xal53XZV65dAQv-2hLWdDvyoCpKQk_SWLafHkdGjhKIlFpVMJnZ2KYf2oKJjLNbooUDlmxentfLh51PiCJznhqGKzU0dL6v6w0Yo0s-gyzqgoEzHeAW8sAjuh_4YLLKt4AH3oHjv3jmTIsx6DT_EQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_00d3ab6fd914c2f1016af903587d0487d288e3daff28cbd9a2",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0211\n\n## Episode annotation\n\n- Language task: remove the blue cloth from the yellow block\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the first grasp closes near the cloth at frames 19\u201326, then moves away empty at frames 27\u201334 while the cloth remains in place. A renewed attempt at frames 49\u201369 catches and lifts an edge, but removal is not visibly completed before the recording ends. The yellow block remains obscured or indistinguishable; the final attempt is unfinished rather than demonstrably failed.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 19 | No |\n| 19 | 49 | Yes |\n| 49 | 70 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 19-49\n- Categories: grasp\n- Explanation: In right_shoulder_cam, the gripper closes at the cloth's front edge at frame 19 without securing it. The closed gripper subsequently lifts and shifts away empty at frames 27\u201334 while the cloth stays in place, confirming failed acquisition. It remains near the edge without acquiring or moving the cloth through frame 48; reopening and realignment begin at frame 49.\n- Recovery: Reopen the gripper, align the fingers around an accessible cloth edge, secure a pinch, and verify that the cloth follows a small lift before pulling it clear of the block. No human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The missed acquisition leaves the cloth in place; no damage, displacement of unrelated objects, or meaningful damage risk is visible.\n- Resetability: immediate\n- Resetability evidence: The cloth remains available for another grasp and the environment requires no visible resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8048,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 411,
+    "output_tokens_details": {
+      "reasoning_tokens": 30
+    },
+    "total_tokens": 8459
+  },
+  "user": null,
+  "metadata": {}
+}

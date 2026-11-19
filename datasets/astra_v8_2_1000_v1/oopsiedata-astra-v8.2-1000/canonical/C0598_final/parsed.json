@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0598",
+  "language_task": "Close the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven starts open at frame 0 in left_ego_image. The robot raises the door to a nearly closed position by frames 75\u201390, but it swings open again during frames 93\u2013106. After another approach, the robot closes it at frames 214\u2013216; it remains closed as the gripper withdraws through frame 268 in left_ego_image and image. The repeated closing attempt is inefficient, but no unrelated object displacement or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 93,
+      "failure": false
+    },
+    {
+      "start_frame": 93,
+      "end_frame": 114,
+      "failure": true
+    },
+    {
+      "start_frame": 114,
+      "end_frame": 269,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 93,
+      "end_frame": 114,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After the robot raises the door toward the closed position, the door begins opening again at frame 93 and returns to its lowered, open position by frames 104\u2013106 in left_ego_image, also visible in image and wrist_image. The first manipulation therefore fails to leave the oven closed. The views do not establish whether the robot pulls it back or fails to secure it before withdrawing; repositioning for another attempt begins at frame 114.",
+      "recovery": "Reapproach the handle, raise and gently seat the door fully, then release and verify that it stays closed before withdrawing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door returns to its open position without visible damage, spills, or displacement of surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains intact and the open door is accessible for another closing attempt; no environmental reset or human intervention is required."
+    }
+  ]
+}

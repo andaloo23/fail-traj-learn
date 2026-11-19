@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0046",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon is not placed in the drawer. The first acquisition leaves it on the table (frames 53\u201394, left_ego_image and wrist_image); a later lift ends with the spoon falling back onto the table (frames 169\u2013179, all three cameras). The robot subsequently opens its empty gripper over the drawer (frames 275\u2013290, wrist_image), then returns toward the spoon. At frame 397, left_ego_image and wrist_image still show the spoon on the tabletop; the final renewed approach is unfinished, not an additional confirmed failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 96,
+      "failure": true
+    },
+    {
+      "start_frame": 96,
+      "end_frame": 169,
+      "failure": false
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 191,
+      "failure": true
+    },
+    {
+      "start_frame": 191,
+      "end_frame": 275,
+      "failure": false
+    },
+    {
+      "start_frame": 275,
+      "end_frame": 291,
+      "failure": true
+    },
+    {
+      "start_frame": 291,
+      "end_frame": 398,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 96,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers finish closing beside the spoon rather than securing it (frames 53\u201360, wrist_image). The gripper then rises empty while the spoon remains on the tabletop (frames 61\u201394, left_ego_image and wrist_image), establishing failed acquisition.",
+      "recovery": "Reopen the fingers, realign around a graspable part of the spoon, and verify a secure hold with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the table with no visible damage or harmful disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon is accessible for another grasp without environmental resetting."
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 191,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the successful lift visible at frames 160\u2013168, the spoon slides downward relative to the fingers at frames 169\u2013173 and separates from them at frame 174 (wrist_image). It falls onto the table at frames 175\u2013179 while the empty gripper continues withdrawing (image and left_ego_image), losing the acquired object before delivery.",
+      "recovery": "Return to the spoon's new position, establish a more secure grasp, and verify retention before moving toward the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon lands on the tabletop without visible breakage or damage to nearby objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "Although displaced and reoriented, the spoon remains reachable on the table and can be reacquired without intervention."
+    },
+    {
+      "start_frame": 275,
+      "end_frame": 291,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot opens its empty gripper over the drawer in a placement-like action (frames 275\u2013281, wrist_image) and remains there through frame 290, although the spoon is visibly still on the table in image and left_ego_image. This release cannot deliver the required object.",
+      "recovery": "Check possession before attempting placement, return to acquire the spoon, and transport it into the open drawer before releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The empty release does not visibly damage or disturb the drawer or other objects; it only fails to advance placement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer remains open and the spoon remains accessible, so no environmental reset is required."
+    }
+  ]
+}

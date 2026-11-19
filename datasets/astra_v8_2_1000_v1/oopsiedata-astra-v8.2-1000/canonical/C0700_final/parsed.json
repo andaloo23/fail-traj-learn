@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0700",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot grasps and lifts the spoon in frames 55\u201390 (image, left_ego_image, wrist_image), then carries it toward the open drawer. During release in frames 154\u2013165, the spoon falls outside the drawer, across the tabletop edge and out of view (image); wrist_image shows the gripper opening beside the drawer. This is a visibly failed placement, not merely unconfirmed completion. No subsequent retrieval or successful placement is visible through frame 171.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 154,
+      "failure": false
+    },
+    {
+      "start_frame": 154,
+      "end_frame": 166,
+      "failure": true
+    },
+    {
+      "start_frame": 166,
+      "end_frame": 172,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 154,
+      "end_frame": 166,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the acquired spoon to the drawer, the robot opens its gripper without the spoon being safely contained over the drawer interior (frames 154\u2013158, wrist_image). The spoon falls outside the drawer, descends across the table, and passes over the near edge in frames 159\u2013165 (image), defeating the intended placement. Its final resting location is not visible.",
+      "recovery": "Stop and locate the fallen spoon; human assistance is needed if it is outside the robot's safe reachable workspace. Retrieve it, then align the entire spoon over the open drawer interior before lowering and releasing it.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls off the table, but no breakage, damage to other objects, or concrete meaningful damage risk is visible; its condition after leaving view is unconfirmed.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The spoon must be located and returned to a reachable position for another attempt, likely requiring a simple human retrieval; the images do not establish an obstructed landing location or a need for repair."
+    }
+  ]
+}

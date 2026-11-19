@@ -1,0 +1,28 @@
+# Episode: C0511_W05
+
+## Episode annotation
+
+- Language task: Seperate the food and the toys into the two bowls.
+- Success label: failure
+- Outcome evidence: Provisional for this window: overhead_cam shows the carrot outside both bowls at frames 1400, 1500, 1670 and 1749. wrist_cam shows slow positioning beside it, a prolonged near-stationary interval, and further finger adjustments without a confirmed pickup or transfer. Sorting remains incomplete; the final acquisition outcome is unconfirmed rather than a demonstrated empty withdrawal. Earlier context is limited to frames 1398–1399, and later execution is not supplied.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1400 | 1492 | No |
+| 1492 | 1670 | Yes |
+| 1670 | 1750 | No |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 1492-1670
+- Categories: task_not_attempted
+- Explanation: After the preceding approach, overhead_cam and wrist_cam show the gripper remaining beside the tabletop carrot through frames 1492–1669, with only small positional drift and no sustained closure, acquisition or transfer. This approximately 12-second interval is persistently unproductive rather than a brief pause. More substantial finger movement resumes at frame 1670; no hidden cause for the delay is established.
+- Recovery: Deliberately align the fingers on opposing sides of the carrot, close to acquire it, verify retention, and transfer it to the food bowl; no human intervention is visibly necessary.
+- Severity: low
+- Severity evidence: The observed consequence is delayed sorting, with no visible damage or meaningful damage risk; the carrot and bowls remain on the tabletop.
+- Resetability: immediate
+- Resetability evidence: No environmental reset is needed because the carrot remains accessible beside the gripper and neither bowl is disturbed.

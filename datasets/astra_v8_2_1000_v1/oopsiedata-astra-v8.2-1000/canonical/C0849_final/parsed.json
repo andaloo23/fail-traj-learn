@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0849",
+  "language_task": "Remove the toy potato from the bowl.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The potato initially lies inside the bowl (frame 0, wrist_cam). An initial grasp fails, leaving it in the bowl (frames 97\u2013101, wrist_cam), before a subsequent grasp lifts it (frames 147\u2013153, right_base_cam and wrist_cam). During withdrawal, the bowl is also dragged across the table (frames 153\u2013177, left_base_cam and right_base_cam). The potato is ultimately released onto the tabletop outside the bowl (frames 236\u2013240, wrist_cam and left_base_cam), completing the task despite the failed attempt and bowl displacement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 97,
+      "failure": false
+    },
+    {
+      "start_frame": 97,
+      "end_frame": 101,
+      "failure": true
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 153,
+      "failure": false
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 178,
+      "failure": true
+    },
+    {
+      "start_frame": 178,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 97,
+      "end_frame": 101,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the fingers close around the potato in frames 91\u201396, the potato escapes the closing fingers and remains in the bowl while the gripper moves slightly upward (frames 97\u2013100, wrist_cam and right_base_cam). This acquisition does not remove the target; reopening begins at frame 101.",
+      "recovery": "Reopen the fingers, align them around the potato at a more secure grasp depth, and retry with a small verification lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The potato remains safely in the bowl, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the upright bowl, so another grasp can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 153,
+      "end_frame": 178,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "While holding the potato near the bowl rim, the robot withdraws laterally and the bowl moves along with it across the table (frames 153\u2013176, left_base_cam and right_base_cam). The bowl separates from the withdrawing gripper around frames 177\u2013178; this unintended dragging disrupts the scene rather than simply removing the potato.",
+      "recovery": "Stop lateral pulling and lift the held potato clear of the rim before continuing away; restore the bowl to its original position if needed. Human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowl is displaced but remains on the tabletop and settles upright; no breakage, spill, or other damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the displaced bowl to its original tabletop position is a straightforward minor reset, with no repair or difficult retrieval required."
+    }
+  ]
+}

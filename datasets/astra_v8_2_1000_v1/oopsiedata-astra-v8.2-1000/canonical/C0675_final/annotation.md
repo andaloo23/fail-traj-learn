@@ -1,0 +1,17 @@
+# Episode: C0675
+
+## Episode annotation
+
+- Language task: Pick up the ball and place it in the bowl.
+- Success label: success
+- Outcome evidence: At frame 0, camera_high shows the orange ball beside the blue bowl. Frames 130-190 in camera_wrist_right show the ball retained between the gripper fingers while camera_high and camera_wrist_left show its lift and transfer toward the bowl. Frames 251-278 in camera_wrist_right show release into the bowl and separation of the fingers from the ball. By frame 310 the gripper has withdrawn, leaving the ball inside the bowl; camera_high confirms this state persists through frame 749. No failed acquisition or unintended side effect is visibly established.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 750 | No |
+
+## Failure annotations
+
+None

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0426",
+  "language_task": "Put the green plastic broccoli into the bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches and closes its gripper around the broccoli in frames 20\u201363 (wrist_cam and right_base_cam), then lifts and transports it over the bowl in frames 65\u201383 (right_base_cam and left_base_cam). Frames 84\u201390 in wrist_cam show release and the broccoli settling inside the bowl. It remains in the bowl through frame 108 in left_base_cam and right_base_cam as the gripper withdraws. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 109,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

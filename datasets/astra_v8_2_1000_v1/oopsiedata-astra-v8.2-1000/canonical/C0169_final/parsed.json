@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0169",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop outside the open drawer from frame 0 through frame 101 in image and left_ego_image. The robot repositions its empty gripper, then hovers with small adjustments without acquiring the spoon; wrist_image likewise shows no spoon possession. Placement is not completed, and the late sustained lack of progress is visible; no completed failed grasp or abnormal interruption is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 102,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 102,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial repositioning, the robot remains in approximately the same hovering configuration with only small adjustments during frames 53\u2013101 in image and left_ego_image. The spoon stays untouched on the table, and wrist_image shows the empty gripper without an acquisition attempt. This sustained interval makes no visible progress toward putting the spoon in the drawer; the underlying cause is not visible.",
+      "recovery": "Locate the spoon, approach and align the gripper for acquisition, verify a secure grasp, then transfer and release it inside the open drawer. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but frames 53\u2013101 show no damage, displaced objects, or concrete risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the tabletop and the drawer remains open; no environmental restoration or human reset is visibly required."
+    }
+  ]
+}

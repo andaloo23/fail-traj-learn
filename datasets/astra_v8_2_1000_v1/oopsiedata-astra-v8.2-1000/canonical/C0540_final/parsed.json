@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0540",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in left_ego_image and remains open at frames 76 and 234. The robot repositions near the oven during frames 0\u201375 but never visibly raises or closes the door; image and wrist_image also show no successful door movement. It then remains essentially stationary through frame 234. Thus the task is visibly incomplete, with sustained inactivity rather than an established failed door grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 76,
+      "failure": false
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 235,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 76,
+      "end_frame": 235,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial repositioning, the gripper remains essentially stationary above the tabletop near the green plate while the oven door stays open; compare frames 76, 120, 180 and 234 in image, left_ego_image and wrist_image. This sustained interval of roughly 13 seconds makes no visible progress toward closing the oven. No hardware malfunction or abnormal termination is established.",
+      "recovery": "Locate the open door and its handle, approach with clearance from the dishes, and lift the door along its hinge motion until closed, then verify closure. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced objects or meaningful damage risk is visible during the stationary interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains open and the surrounding objects remain in place, so another attempt can begin without an environmental reset or human intervention."
+    }
+  ]
+}

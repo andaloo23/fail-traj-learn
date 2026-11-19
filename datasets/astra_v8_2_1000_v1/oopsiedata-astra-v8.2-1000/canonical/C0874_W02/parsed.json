@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0874_W02",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the task remains incomplete, without a visibly failed local attempt. In base_image, frames 350\u2013458 show placement of the green can in the upper blue tray; by frames 476\u2013508 it remains there as the empty gripper withdraws. Frames 530\u2013650 show approach and acquisition of the pink can, and frames 663\u2013699 show it moving with the gripper toward the upper tray. At frame 699, its placement is not yet confirmed and both bowls remain outside the empty right tray. Earlier context is limited to frames 348\u2013349, and later completion is not supplied.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

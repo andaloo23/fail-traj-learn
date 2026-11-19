@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0062",
+  "language_task": "put the animal in the purple bowl",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The robot lifts the yellow toy animal and carries it to the purple bowl (frames 105\u2013177, left, right and wrist), releases it at frames 185\u2013193 (wrist), and withdraws, leaving it resting in the bowl (frames 217, 289 and 409, wrist; frame 499, overhead and right). After completing the task, it approaches an unrelated orange round object on the shelf and closes its fingers against it, slightly disturbing it rather than stopping (frames 409\u2013499, wrist and left). No damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 409,
+      "failure": false
+    },
+    {
+      "start_frame": 409,
+      "end_frame": 500,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 409,
+      "end_frame": 500,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After leaving the animal in the purple bowl, the robot directs its gripper toward an unrelated orange round shelf object (frames 409\u2013465, wrist and left), closes against it (frames 473\u2013480, wrist), and withdraws without carrying it (frames 489\u2013499, wrist). This unnecessary wrong-object interaction does not advance the completed task and slightly disturbs the object; secure possession is not established.",
+      "recovery": "Stop interacting with the shelf object, withdraw along a clear path, and finish after confirming the animal remains in the purple bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The unrelated object remains on the shelf, the animal stays in the bowl, and no damage or meaningful damage risk is visible in frames 489\u2013499, wrist, overhead and right.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable and no object retrieval, repair or human reset is visibly required; the small shelf-object disturbance does not prevent another attempt."
+    }
+  ]
+}

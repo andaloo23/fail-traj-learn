@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0225",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "success",
+  "outcome_evidence": "The robot clears the banana-shaped object from the tray and sets it on the tabletop (frames 80\u2013175, overhead_cam and wrist_cam), then places the beige animal toy onto the tray (frames 220\u2013317) and the pink rabbit toy beside it (frames 423\u2013538). Both animal toys remain on the tray after the gripper withdraws (frames 590\u2013608, overhead_cam and wrist_cam). The visible sequence supports interpreting \u201cthe toys\u201d as the two animal toys and the banana-shaped object as an item cleared to make room; no failed acquisition, damage, or unwanted collision is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 609,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

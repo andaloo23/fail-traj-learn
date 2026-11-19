@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0955",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot makes unsuccessful acquisitions of the beige and blue toys, then successfully places the pink toy on the plate at frames 621\u2013625 (overhead_cam and wrist_cam). At frames 710\u2013713, both cameras show the pink toy on the plate while the blue and beige toys remain on the table. Thus only part of the task is completed, with visibly failed attempts rather than merely unconfirmed completion. No unwanted collision or damage is clearly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 83,
+      "failure": false
+    },
+    {
+      "start_frame": 83,
+      "end_frame": 175,
+      "failure": true
+    },
+    {
+      "start_frame": 175,
+      "end_frame": 303,
+      "failure": false
+    },
+    {
+      "start_frame": 303,
+      "end_frame": 397,
+      "failure": true
+    },
+    {
+      "start_frame": 397,
+      "end_frame": 714,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 83,
+      "end_frame": 175,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the beige toy at frames 74\u201382, the robot withdraws and moves away empty starting at frame 83 (overhead_cam and wrist_cam). The beige toy remains on the table, clearly visible again at frames 144\u2013160 in wrist_cam, while the plate remains empty in overhead_cam. The closed, empty withdrawal does not transfer the target; opening for another attempt begins at frame 175.",
+      "recovery": "Reopen the gripper, realign its fingers around the beige toy's body, and verify a secure acquisition with a short lift before transporting it to the plate; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the tabletop, with no visible damage or meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and plate remain accessible and usable; another acquisition can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 303,
+      "end_frame": 397,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The gripper closes near the blue toy at frames 293\u2013302, then moves away empty from frame 303 onward (wrist_cam and overhead_cam). Frames 307\u2013320 in overhead_cam show the blue toy still beside the empty plate as the arm withdraws; wrist_cam confirms it remains on the table at frames 382\u2013396. The robot begins reopening at frame 397.",
+      "recovery": "Reopen and align around the blue toy's body rather than closing beside it, verify retention with a short lift, and then carry it above the plate with clearance; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the blue toy on the table without visible damage or disruption to the scene.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup, retrieval, or manual repositioning is required before retrying the accessible toy."
+    }
+  ]
+}

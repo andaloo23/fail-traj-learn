@@ -1,0 +1,116 @@
+{
+  "id": "resp_06630b429d4710ac016af9001a60e487d18996ca37f9b8a073",
+  "object": "response",
+  "created_at": 1794703386,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703395,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_06630b429d4710ac016af9001da6f487d19bd3bdbb2d40d8fc",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QAjYvAv9vui2XrxOZJpI7hOmbtG8SoWqEChaza0p_wc1w4i2foXiKjgjxExs68ux4UTBdPB7bXJBo4fGrgQLLWFzm1Pfu66P71Fi6FRbaSCMEYbM08c9wLwe08nH9epocl0vKF3lf9u2udD1jZUpP4voAp3Yb91LKQV8yzKD5FUau6Gh6peXfvL_5XUNFXUebB_r6E0qW3Jj9gjCuR6XzVRNJUA1YgerxuDRuSNBIY97R8M668YnfqDF4cBZ20Ek6ujBaOhHQ__kZZeo6PyILr2RDd1-vvCojGROPh3rQhwnGSon6DmT1Do9ItnzlwBX4QC-HpWZuFe3IKcsU1ZpiecMZrRagApouwpB0TsGzEO9g55gZ0qNhHTA5vqAAjBoFL-VyMYLb-w7qcKF_edouDQ70F30UlNuPJQyhB_B8kPF6_FRfAsA10BwBA-CeDNoD5NfSpl3qpVdrFK-Af1BYgMpQSfv0oyYFBwGW4mi4XWdVazWwyhl4yAqyX8SY-nZDG6py0PCO6CfVBf8SW4bV1KMaWMQN4U2D6pmJh-o88yhtxf193tMGYpijMZtuFL85dYOzb7SzRQ-OjH-q0q4J2sUAX-Y-2zoPnopToBcU7oaBD7wMjJGGUlF4Ut_mYrmZXtBJ1snu8S5Qv9i13U4R4dTs0U48rOYvIPgM_LKDcOioujbYkUu17-nVCxTd8e4UKeIpD1IOm7GXC1PszeEIiB6bUQLmBXRamO2rQbyqTi1YVkFdzkZlrHZWbgK9Lx8VnqhOfBrm-wV37VO0rBeClFGJ2ksLTdWXaN5FWjKZV1D3EtEGmYYbzKKWydqh5g5HaUg-U1NrJuXBS_kiwqCnRNGdFk5PYMc6LpPWW7fcx1va_xNofD34dKoRWLS-tHZ6UsSLCI8yl_-bVPh5HL3vud034wWhGK-UX9TbWUk1qMG6v1upkM5bxBZh1ctliWGWC7FsbbcyEgAmuh6FEBmlvV6Zn8eHnv2Yj3o17q33aOPpv2lBURNNPvst8m8vz7X6tJMGSHToj1hS_LHBVvdXJwggac_IY2PABtRVyz1U_trXrqV2U5Vthp_rI1x2q3Nl7NdjKQXZVRb1wMqk9YLA_UH9zL7rjvRC_sVotDJcyiDbOGGhzjw4mskooeEHl_faOMQyXzrV1obEGdyAyhtWAzG2Bvnhiggw-g4qkvnhMDqN0_bp3IHCzbykQ6VJol3ot6RebBTx9vWsl-uHOSPBTR3Q5JTEr2SLRRpnsUMfQiNFi4IOj6TqOwcvEiLa22PRRfeAJimwnUJKVzlupOXDeu8tfuUNgbSSOvGeLj7n2DXuow_NPAukgg1w2ZdCQXPcCQJlO2J62MVEnJH7Yk2sajomHseXpeqCbJTqmdTB2d8V8A5w4hh_ri_FgPejJEvBnygTq2vOXFR6oW3ZoxGd5rHyivBecXlNBzX0TZexEpjiv17Ep5i6urwmU3xY0jYH1a-7dBcVZXrHwvKqhnX8ArqOCQ3bkSOn7-F6tHnMGxt6vYmeyLjD2MMlQQQiRSXEMoKCNBu8khZ5inLsxO9Cn1oRjFnKJEyKw9XKMWrNa5VmtNDMbzt-2skNemBu_pAgoWfwL7XJXXbT3h_M91E0rrGy5hpU-pvna90hbYNY0r3lS7WjMEiTlm0SUMXQ6AkM-gAY8foy5zuO8w12T2QXWZss1B6e04at6SuxrCCixNd7Pk8GAhga1evd3T0k-X_2HwvRZYny7HxnAyALohO1haO9fdaDz4CRQc5Kv48ejmjf0JlMURBnPz3s0gvGfxbctmnBWaoJcsI-1Acq-s22lpNQNwTbLnZQsqBvh1HRnC_q75EsVUWroIuIJwgSdedC6bl4g2X4NQ9Oux01_Mcq9HXcoEjoBZKwTjpeDnVHRjwhNn14tsdHqfeEtWZfAiYps5MdRE5k6VezT5wWlf_CvsMLCqrPw22Yx2RtZEE2j6U-wv3Oqeb3DrRb0dEHjUQoTTXF4LAUPsYhXbeqvqOyZvfMIYUyG0MX3KtlZNXhegS2ImGjzDQWy7GiODvRg2R8XEdbm-_yvVzKwBh4YpISA2A7Trsixp59XS1XDtEuhfotb62xGAK4xw1TjAIWM1qcTxwyoEludJkwvy6kuoGkmgFg==",
+      "summary": []
+    },
+    {
+      "id": "msg_06630b429d4710ac016af9001ea71887d18009c75e2ada61c1",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0141\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The robot acquires and lifts the wooden spoon, visible in frames 90\u2013130 in image, left_ego_image and wrist_image, then moves it toward the drawer. At frames 209\u2013259, the spoon remains held outside the drawer and the robot stops making visible progress. No placement or release into the drawer is shown; completion is unconfirmed, rather than a visibly failed release or dropped spoon.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 209 | No |\n| 209 | 260 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 209-260\n- Categories: task_not_attempted\n- Explanation: After transporting the spoon toward the drawer, the robot remains essentially stationary with the spoon still gripped outside it for approximately four seconds, through the end of the episode (frames 209, 230 and 259, image, left_ego_image and wrist_image). This sustained stall does not advance placement; no visible cause or abnormal termination is established.\n- Recovery: Reassess the spoon\u2019s position relative to the drawer opening, then continue a collision-free placement and release after the spoon is inside; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The spoon remains retained, with no visible damage, dropping or disruption to surrounding objects; the observed consequence is incomplete placement.\n- Resetability: immediate\n- Resetability evidence: No environmental repair or object repositioning is visibly necessary; the robot can resume from the retained-spoon state without a human reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 50678,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 408,
+    "output_tokens_details": {
+      "reasoning_tokens": 46
+    },
+    "total_tokens": 51086
+  },
+  "user": null,
+  "metadata": {}
+}

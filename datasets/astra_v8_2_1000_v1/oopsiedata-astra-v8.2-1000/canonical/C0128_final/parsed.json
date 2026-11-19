@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0128",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "The cup is lifted by the right arm (frames 285\u2013330, aria and right_wrist) and transferred to the left arm (frames 520\u2013600, aria, left_wrist and right_wrist). After a prolonged pause, it is released onto the table beside rather than on the saucer (frames 1183\u20131240, aria and left_wrist). At frame 1299, aria shows the upright cup and saucer remaining separate, visibly establishing failed placement rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 830,
+      "failure": false
+    },
+    {
+      "start_frame": 830,
+      "end_frame": 1159,
+      "failure": true
+    },
+    {
+      "start_frame": 1159,
+      "end_frame": 1227,
+      "failure": true
+    },
+    {
+      "start_frame": 1227,
+      "end_frame": 1300,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 830,
+      "end_frame": 1159,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The left arm holds the cup near the saucer with essentially unchanged object and gripper positions for approximately 11 seconds; frames 830, 950, 1050 and 1158 in aria and left_wrist show no meaningful progress toward placement during this sustained pause.",
+      "recovery": "Resume task-directed motion by aligning the cup's base with the saucer center, lowering it onto the saucer and then releasing it; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The pause delays completion; no damage, drop or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains held and the saucer remains accessible, so work can resume without resetting the environment."
+    },
+    {
+      "start_frame": 1159,
+      "end_frame": 1227,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The left gripper opens and withdraws while the cup is positioned away from the saucer; frames 1159\u20131190 in left_wrist show release, and frames 1205\u20131226 in aria show the cup left upright on the bare tabletop beyond the saucer instead of on it.",
+      "recovery": "Reacquire the upright cup, align its base over the saucer, lower it until supported and release; no human intervention is needed based on the visible state.",
+      "severity": "low",
+      "severity_evidence": "The cup is misplaced but stays upright on the table, with no visible breakage or spillage.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both cup and saucer remain accessible and intact; the robot can directly reattempt placement without human resetting."
+    }
+  ]
+}

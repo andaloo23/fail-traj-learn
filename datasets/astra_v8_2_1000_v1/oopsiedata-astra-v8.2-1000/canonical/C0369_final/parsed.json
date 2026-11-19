@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0369",
+  "language_task": "push the button",
+  "success_label": "failure",
+  "outcome_evidence": "The robot repositions above the yellow button and lowers toward it (frames 95\u2013126, left and wrist), then lifts slightly (frames 127\u2013130, left) and makes further adjustments through frame 158. Neither left nor wrist clearly shows the button being depressed or an activation response. Completion is therefore unconfirmed, rather than a conclusively failed press; the visible alignment and approach movements do not independently establish a local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 159,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

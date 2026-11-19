@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0465",
+  "language_task": "Open the oven.",
+  "success_label": "success",
+  "outcome_evidence": "The oven door is closed at frame 0 in image and left_ego_image. The robot approaches and aligns near the upper door handle, with slow adjustments visible through frame 150. In frames 151\u2013166, image and left_ego_image show the door rotating outward and downward, exposing the interior. The door remains open through frame 180. No failed acquisition, harmful collision, or displacement of unrelated objects is established; the pauses and small alignment movements do not clearly establish local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 181,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

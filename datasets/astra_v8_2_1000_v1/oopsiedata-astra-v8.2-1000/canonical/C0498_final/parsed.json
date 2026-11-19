@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0498",
+  "language_task": "Pick up the spoon and place it in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "Frame 0 in right and wrist shows the black spoon on the counter beside the sink. Frames 89\u2013104 show the gripper closing around its shaft, and frames 111\u2013145 in right and wrist show the spoon lifted and transported into the basin. The gripper opens at frames 193\u2013200 and withdraws at frames 201\u2013247, leaving the spoon in the sink. Frames 247\u2013299 in wrist confirm the spoon remains in the basin, separate from the gripper; right confirms the counter is cleared. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 300,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

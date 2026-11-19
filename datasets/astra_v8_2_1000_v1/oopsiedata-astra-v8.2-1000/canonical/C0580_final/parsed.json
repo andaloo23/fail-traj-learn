@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0580",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is closed at frame 0 in left_ego_image. Across frames 20\u2013200, image and wrist_image show the gripper gradually repositioning toward the oven\u2019s front/handle area. At frames 220\u2013235, the gripper is near that area, but left_ego_image still shows the door upright and closed; no opening is visible. Completion is therefore unconfirmed in the observed episode, rather than established by a visibly failed grasp or pull. The slow approach and alignment do not alone establish a local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 236,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

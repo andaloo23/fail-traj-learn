@@ -1,0 +1,131 @@
+{
+  "episode_id": "C0922",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Frame 0 in overhead_cam and wrist_cam shows three toys outside the plate. The blue toy is placed on the plate by frames 825\u2013840, but the pink toy is pushed off the table at frames 440\u2013447. The tan toy is eventually released at the plate's outer rim at frames 1300\u20131320, rather than clearly inside it. Frame 1467 in overhead_cam does not show all three toys on the plate; this is an observed failed episode, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 68,
+      "failure": false
+    },
+    {
+      "start_frame": 68,
+      "end_frame": 108,
+      "failure": true
+    },
+    {
+      "start_frame": 108,
+      "end_frame": 180,
+      "failure": false
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 452,
+      "failure": true
+    },
+    {
+      "start_frame": 452,
+      "end_frame": 925,
+      "failure": false
+    },
+    {
+      "start_frame": 925,
+      "end_frame": 988,
+      "failure": true
+    },
+    {
+      "start_frame": 988,
+      "end_frame": 1088,
+      "failure": false
+    },
+    {
+      "start_frame": 1088,
+      "end_frame": 1150,
+      "failure": true
+    },
+    {
+      "start_frame": 1150,
+      "end_frame": 1300,
+      "failure": false
+    },
+    {
+      "start_frame": 1300,
+      "end_frame": 1326,
+      "failure": true
+    },
+    {
+      "start_frame": 1326,
+      "end_frame": 1468,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 68,
+      "end_frame": 108,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the blue toy, the gripper moves away without acquiring it, then opens near the plate at frames 101\u2013108. The before/after views in wrist_cam and overhead_cam, including the blue toy still outside the plate at frame 475, establish the missed acquisition.",
+      "recovery": "Reobserve the blue toy, center the open fingers around its body, and verify a small lift before transferring it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains available on the tabletop, with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "A revised grasp can be attempted without resetting the scene."
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 452,
+      "categories": [
+        "grasp",
+        "collision"
+      ],
+      "explanation": "In wrist_cam and overhead_cam, the open gripper repeatedly displaces the pink toy along the tabletop rather than securing it, visible from frames 180\u2013230 onward. Continued contact drives it toward the table edge through frames 380\u2013435, and it falls off at frames 440\u2013447. This prevents its placement and violates the collision constraint.",
+      "recovery": "Stop pushing and have a person retrieve the pink toy once the robot is stationary; then reobserve it and use a centered grasp with lift verification before transfer.",
+      "severity": "low",
+      "severity_evidence": "A soft toy falls to the floor; no damage or collision with vulnerable equipment is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The pink toy must be retrieved from beside the table and returned to the workspace; no repair or difficult obstruction is shown."
+    },
+    {
+      "start_frame": 925,
+      "end_frame": 988,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 925\u2013937 in wrist_cam, the gripper closes short of the tan toy and moves away empty while the toy remains on the table. It continues to the plate and opens at frames 980\u2013987 without delivering the toy, also supported by overhead_cam.",
+      "recovery": "Return to the tan toy and align the fingers around its body rather than in front of it; verify possession before moving toward the plate. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt makes no placement progress and causes no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tan toy remains accessible for another grasp without environmental intervention."
+    },
+    {
+      "start_frame": 1088,
+      "end_frame": 1150,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure beside the tan toy, wrist_cam frames 1088\u20131095 show the gripper withdrawing without the toy. It again travels to the plate and opens at frames 1140\u20131148; overhead_cam and its reappearance on the table at frames 1190\u20131210 confirm the tan toy was not transferred.",
+      "recovery": "Reestimate the toy's position and choose a body grasp with both fingers straddling it; confirm retention during a short vertical lift. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This is another empty transfer, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains on the usable tabletop and can be immediately reattempted."
+    },
+    {
+      "start_frame": 1300,
+      "end_frame": 1326,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After acquiring and transporting the tan toy at frames 1243\u20131299, the robot opens its fingers at the outside edge of the plate. In wrist_cam frames 1304\u20131320, much of the toy lies outside the rim on the tabletop as the gripper withdraws, rather than being placed securely on the plate; overhead_cam supports the edge placement.",
+      "recovery": "Regrasp the tan toy, lift it clear of the rim, and lower it into an unoccupied area inside the plate before releasing; no human intervention is needed for this correction.",
+      "severity": "low",
+      "severity_evidence": "The toy remains supported beside the plate with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy is accessible at the rim and needs no human reset before corrective manipulation."
+    }
+  ]
+}

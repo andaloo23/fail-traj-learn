@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0984",
+  "language_task": "put the corn in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot grasps and lifts the corn in frames 27\u201341, then carries it toward the pot in frames 42\u201371. At frame 72 it releases the corn outside the pot; frames 73\u201375 show the corn moving toward and beyond the lower image boundary while the pot remains empty. This is a visibly failed placement, not merely unconfirmed completion; the corn\u2019s final resting location is not visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 72,
+      "failure": false
+    },
+    {
+      "start_frame": 72,
+      "end_frame": 76,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 72,
+      "end_frame": 76,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully carrying the corn, the robot opens its gripper at frame 72 in right_shoulder_cam and the corn falls outside the pot. It lands on the tabletop in front of the pot at frame 73 and moves out of view by frame 75, leaving the intended container empty.",
+      "recovery": "Locate the corn before retrying, reacquire it if safely reachable, and align it fully within the pot opening before lowering and releasing it. Human retrieval is needed if its unseen resting location is outside the robot\u2019s safe reach.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is a failed placement and displaced corn; no damage or meaningful damage risk is established in frames 72\u201375, although its final resting location is unseen.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Retrieving and returning the displaced corn to a reachable tabletop position would allow another attempt; the final location is outside the camera view, so the exact retrieval effort and need for human assistance remain uncertain."
+    }
+  ]
+}

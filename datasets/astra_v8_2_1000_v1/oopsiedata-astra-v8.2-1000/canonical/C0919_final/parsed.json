@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0919",
+  "language_task": "stack the yellow block on the blue blocks",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot acquires and lifts the yellow block at frames 23\u201329, then carries it over the two blue blocks at frames 30\u201339. At frames 40\u201342 it lowers the yellow block toward their top surface, but the gripper remains around it; release and independently supported stacking are not confirmed before the recording ends. This is unconfirmed completion, not a visibly failed acquisition or placement attempt.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 43,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

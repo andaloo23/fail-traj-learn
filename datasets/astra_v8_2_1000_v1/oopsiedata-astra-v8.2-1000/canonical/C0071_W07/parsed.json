@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0071_W07",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray at frame 2100. The gripper continues engaging the blue bowl, which changes position and orientation alongside it through frames 2237\u20132449; no clear empty withdrawal or dropped bowl is established. At frame 2449, the pink bowl remains on the table and the right red tray is still empty. Completion is therefore unconfirmed in this window, rather than established as a visibly failed attempt. The slow acquisition and repositioning do not alone establish a local failure. This outcome is provisional because earlier context beyond frames 2098\u20132099 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

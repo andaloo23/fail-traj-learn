@@ -1,0 +1,62 @@
+{
+  "episode_id": "C0377",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The spoon is successfully lifted on the second attempt (frames 208\u2013240, image and left_ego_image), then released into the open drawer at frames 281\u2013283; it remains visibly inside as the empty gripper withdraws (frames 284\u2013307, image and wrist_image). Earlier, the gripper tips and shifts the unrelated yellow plate (frames 41\u201347, all three cameras), and the first spoon acquisition fails, followed by an empty trip to the drawer (frames 58\u2013135).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 41,
+      "failure": false
+    },
+    {
+      "start_frame": 41,
+      "end_frame": 48,
+      "failure": true
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 58,
+      "failure": false
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 136,
+      "failure": true
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 308,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 41,
+      "end_frame": 48,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "While approaching the spoon, the gripper contacts the unrelated yellow plate, visibly tipping it onto its edge and shifting it before it settles back down (frames 41\u201347, image, left_ego_image and wrist_image). This disturbs an object not required for the task.",
+      "recovery": "Clear the plate before realigning over the spoon and use an approach that avoids its rim; no human intervention is needed for the visible state.",
+      "severity": "low",
+      "severity_evidence": "The empty plate settles on the tabletop without visible breakage, spill or other damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plate remains stable on the table and the spoon remains accessible; another attempt requires no environmental intervention."
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 136,
+      "categories": [
+        "grasp",
+        "sequencing_semantic"
+      ],
+      "explanation": "Following the first closing attempt, the gripper rises empty while the spoon remains on the tabletop (frames 58\u201364, image and left_ego_image, corroborated by wrist_image). It then travels to the already-open drawer and opens its empty fingers there rather than reacquiring the spoon (frames 80\u2013135, image and wrist_image). The return toward the spoon begins at frame 136.",
+      "recovery": "Return to the spoon, align the fingers around a secure grasp location, and verify that the spoon lifts with the gripper before transporting it to the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition and empty transfer waste an attempt, but the spoon remains on the table with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon is still accessible and the drawer remains open, so the robot can retry without a human reset."
+    }
+  ]
+}

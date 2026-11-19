@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0850_W05",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Separation is not completed in this observed window. wrist_cam shows repeated closing and reopening around the orange fruit-shaped object at frames 1405\u20131437, 1470\u20131505, and 1536\u20131569 without acquiring it; overhead_cam confirms it remains on the tabletop. At frame 1749, both cameras still show the orange and brown objects outside the bowls, with no transfer completed during this window. This is a provisional outcome with visible unsuccessful acquisition, not just unconfirmed completion. Earlier execution beyond the two context frames and later execution are unavailable; the prior report's sorting claims cannot be independently verified from these views.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1411,
+      "failure": false
+    },
+    {
+      "start_frame": 1411,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1411,
+      "end_frame": 1750,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_cam at frames 1411\u20131417, the closing fingers displace the orange fruit-shaped object rather than securely enclosing it; reopening at frames 1425\u20131437 leaves it on the table. Further closing/reopening cycles at frames 1470\u20131505 and 1536\u20131569 likewise produce no acquisition. At frames 1620\u20131650 and 1679\u20131737, the fingers close beside or beneath the object's edge and reopen while it remains outside their grasp; overhead_cam corroborates that no lift or bowl transfer occurs. These form a continuous ineffective acquisition sequence rather than useful sorting. Frames 1398\u20131400 alone do not establish the earlier failure claimed by the prior report, so continuity before the observable unsuccessful closure is unresolved. The sequence may continue beyond frame 1749.",
+      "recovery": "Open the fingers, lift clear, and realign them on opposite sides of the object's body at a suitable grasp height; verify secure retention with a short lift before transporting it to the designated food bowl. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The object is displaced locally but remains on the usable tabletop; neither overhead_cam nor wrist_cam shows damage, a fall, or a meaningful damage hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible for a corrected attempt, and no cleanup, repair, or human environmental reset is visibly required."
+    }
+  ]
+}

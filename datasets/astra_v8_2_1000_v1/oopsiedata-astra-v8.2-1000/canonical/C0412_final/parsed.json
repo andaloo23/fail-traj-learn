@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0412",
+  "language_task": "Move the banana to the pot on the right and sushi to the bowl.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In image_primary, the first banana acquisition fails: the gripper rises empty while the banana remains in the bowl (frames 25\u201330). Subsequent contact shifts the bowl and pot (frames 31\u201344). A retry transfers the banana into the right pot, where it remains after release (frames 89\u201396). The red-and-white sushi is then lifted from the table (frames 118\u2013123), carried over the bowl, and released inside it at frame 133. Both transfers are completed, with an earlier failed grasp and unintended container displacement; no damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 25,
+      "failure": false
+    },
+    {
+      "start_frame": 25,
+      "end_frame": 31,
+      "failure": true
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 45,
+      "failure": true
+    },
+    {
+      "start_frame": 45,
+      "end_frame": 134,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 25,
+      "end_frame": 31,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary frames 25\u201330, the closed gripper withdraws from the bowl and moves right without the banana, which remains visibly inside the bowl. This establishes failed acquisition rather than an unfinished grasp.",
+      "recovery": "Return above the banana, adjust the grasp alignment, and verify secure acquisition with a short lift before transferring it; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The banana remains safely in the bowl, with no visible damage or meaningful damage risk from this missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in its original container, so another grasp can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 45,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In image_primary frames 31\u201332, the empty gripper contacts the bowl edge and visibly rotates/shifts the bowl. It then moves against the pot, which shifts and rocks during frames 40\u201344. These unintended container contacts do not transfer the banana and disturb the scene.",
+      "recovery": "Lift clear of the container rims, reassess their current positions, and approach the banana with adequate clearance; human intervention is not needed while both containers remain upright and accessible.",
+      "severity": "low",
+      "severity_evidence": "Both containers remain on the table and usable; no spill, breakage, or other damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Although the containers have moved slightly, both remain upright and reachable, allowing a new attempt using their updated positions without a human reset."
+    }
+  ]
+}

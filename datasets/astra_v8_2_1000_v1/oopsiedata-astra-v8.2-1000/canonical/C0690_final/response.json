@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c2253c2923db61b016af92218f7c487d295d4fcaaac37172a",
+  "object": "response",
+  "created_at": 1794712089,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712096,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c2253c2923db61b016af9221ab66487d29d6378ec76a5d831",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SIgyJBGFl8aE0Ee09wB76P3Xe_2KEAnb5wd9EB_HR5mHLmjcdHnF5-Bhs2lfbPsUmJK_G82AsHvz_qTgma3huVUBf7NSBKS_DFpdOfe6phkVY6x3oll20S4AFNndgGt-poIOLL0v5HImhJFSAD6fpR5sCOIx69sRmfcLD8gQ-64VL3GV9WdPbVxOk0lvaPt_tNN8vtB20lPxkqxNmSLlfEHB83z2tG239xkQBoCjEzTn1SXa5L5D2juAyECwuoEoAotbfgtX1OT5A_FRtEf4vaIzh-JQQa4-6vHAy3rjIvLHUB5C8Srx9E9xOTaSAx53XtSeJ5xT4BYXXORqhg46Y_104KNT1bDOMzIduRP90DRJpmBhiViaeemHUXEs-9NFCm74QbQXgUwgis8jDOkh5s-4jO-EMZoiVYAiUgqZprShus85dlIzFeTI9ZD9_5DjK7tcpjJnSsbnhGCYvSetj2WryItFP0CwTD0eXtZwyXVtw4bXu4NAKHg0ZiR0wZgBcQKxhMkIY3CgeQbdstI72nijIPAbuhi-r1rVdVyRffKpgpwZ_otgOXmEAH_regDrnJTR4uEkn8Sl0lWxBnj6QWSdreHdidRqyt2bQ0wLVAnhxwByjJ-npHdS6ARmnlFt-m922t_Qkb0aus3r2S5nR6wE36MH5sYrAV9WsQSSg5eNObobXHJ4uWoSLWXJiWqKIpK5HL4AbfpkH9TE28HWdQ9FGuLXr6YEfgBkt0wuF13TCdrtQBlcUzQIksZM3uJjRDPzaKY5flNMQB2KNujZjmWwTLMcv1YHuLQ7e3ngbzpnbwK9xsOOhPKOdkINOr8ifIms28xlRqATAGnMdAXDagAfPPHy5loAGZRXRwgcZYbl5niC4qx-ZFH388ArAnaadwCW-Vxpqd5YKOegRwzqmwvxUGiSg9vmqF9c_SULlW8-vPY5f-POzxcGuf1oN6y13Iu7mctrKc73WjXTFn5VCZFmfPDYC4UcLLjj2KVvXQMQ-uQEMYAM9rfHPcH8ywHGqQeu7Z8B0-BY9_G-DPUffY0oVPSYa4ssKfsS1zVNuPZAil8dLqi5CmutMwRN_Ar2a2DpsurGYohE5lGWlQz-jCG8_Lz8ltXdQYOiyOgINP8EZUbYnm0cignDpHKn2cB_0IeqG83AC1tY4Jaj0b5SHg3tyBRaN7YkNmUJeNxcMwQMyPfaWzFf8AAduf1yPjw3DZ2r8SnIh-6YKMVHZY-56xrA5jerbfL2G3OnIgBnFeQXZR7bb-uR9ZaMQ-RhCYloJGHdza0R7fR4M2LhyTBS_b9IlE7eLtUYH8HQyhBEEy4qI42i_3qdzvP8a6Kn-G_iKBJbNwbZ_rRw5EbYSHfJ3QM7NAmhIEqYFSRqb3flUDZJRWewFTMLTHdp4e3ZdjLqDg51EZVow0yJezkZdq8xIjWz4OrW0J7HgM4apXdgIskeknR7Z1PWA7IGPt6WnQzIdr0qRynrm4zvpSXiH5gaxcCU1WIjEL3SIJz096hilpWoVFRt2B0ziN76czP2rO62x7mkDS5L1gk6N44aJrIty6o_66bRCqt5vSOx-gxAOe5C9ay4N2MOD4sGH4dhSxFo2tMr4kSO3fIGF47c3NpwbEtiRnIqGLnpUpT-XLWAKT_EAnXzYJCIF-akx9sfejqZ5LOEVmNVlGaSTM-Ut4qGVZQM7TR9YqkdMVR31c8CUr6FxtAQRqjx7K_l89lSZ9A9rjGgGPD0SzaUA6rwDcdQjrd67vscbR7TeGoEUELYQ4D6FG_4QKmQAcSjQZk45v70b4R3ys0kBQh4OoMkZRkDcMvP2BDpxhTbs81cWamQgQAvJHxGUDyvyd8F5SuLFnbvXehDdbaWUQlMAPHYniyM_MTgIGjiKaEDjYEy5uEuRkXeJglBRDiqFLyj43oWWMWTETb3AQe8vcE2gpO5R6jeilrUy_115ASjB1HeUkm6IiytgRw2n6MD_brrCeUWhQuilQJyglhHqEg0uRX64pFpJMPY9E6hd7v8jhr21k_rQWKCl_wO856PYBZhx-B-pEVNzwo",
+      "summary": []
+    },
+    {
+      "id": "msg_0c2253c2923db61b016af9221b3e6487d2a720d5bca2782793",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0690\n\n## Episode annotation\n\n- Language task: put the bowl on the table\n- Success label: failure\n- Outcome evidence: In frames 0\u201338, cameras left and wrist show the robot approaching the orange bowl in the wire rack. The bowl remains in the rack through frame 102, with no visible lift, transfer, or placement onto the clear tabletop. Frames 39\u2013102 show sustained lack of progress near the rack; completion is unconfirmed, but a completed failed grasp or drop is not established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 39 | No |\n| 39 | 103 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 39-103\n- Categories: task_not_attempted\n- Explanation: After approaching the bowl, the robot remains almost stationary near the rack throughout frames 39\u2013102 in cameras left and wrist. Small pose changes around frames 68\u201377 do not produce visible acquisition or movement of the bowl toward the table. This sustained unproductive interval interrupts the task; the images do not establish a failed completed grasp or a mechanical cause.\n- Recovery: Reassess the bowl rim and rack clearance, reposition the gripper for an unobstructed grasp, verify acquisition, then lift clear of the rack and place the bowl on the table. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The bowl remains supported in the rack, and neither camera shows damage, spilling, or another harmful consequence; the visible consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The bowl and surrounding scene remain available for another attempt without visible need for environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 14292,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 405,
+    "output_tokens_details": {
+      "reasoning_tokens": 35
+    },
+    "total_tokens": 14697
+  },
+  "user": null,
+  "metadata": {}
+}

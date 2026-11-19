@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0235",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal remains on the table beside the box through the robot's approaches and repositioning (external and wrist, frames 0, 370, 650 and 720). The empty gripper then moves away (frames 723\u2013744); subsequent movements and pauses do not return to the animal. The animal is still outside the box in external at frames 1106\u20131192, and no placement is observed through frame 1273. This is visible noncompletion with sustained unproductive behavior, not an inferred drop or confirmed failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 723,
+      "failure": false
+    },
+    {
+      "start_frame": 723,
+      "end_frame": 1274,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 723,
+      "end_frame": 1274,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Starting at frame 723, the robot moves its empty gripper away from the stuffed animal, past the box toward an empty region of the table (external and wrist, frames 723\u2013744). It subsequently makes small movements and long pauses over the empty tabletop rather than acquiring the animal (frames 823\u2013990 and 1089\u20131273). The animal remains beside the box in external at frame 1192. No completed finger-closing acquisition is established, so this is annotated as sustained unproductive behavior rather than a grasp failure; its underlying cause is not visible.",
+      "recovery": "Reacquire the animal's location, align the open fingers around its body, close and verify a secure grasp before lifting and transferring it into the box; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task is left incomplete, but no object damage, displacement or harmful collision is visible in external or wrist.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal and box remain available on the table; another task-directed attempt requires no visible environmental resetting or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0546",
+  "language_task": "pick up the corn",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches the corn in frames 18\u201329, closes its fingers around it in frames 30\u201335, and lifts it slightly off the tabletop in frames 36\u201338; the corn rises with the gripper and a gap appears beneath it. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 39,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

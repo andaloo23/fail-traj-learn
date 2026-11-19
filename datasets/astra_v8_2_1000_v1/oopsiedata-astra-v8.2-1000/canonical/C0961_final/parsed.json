@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0961",
+  "language_task": "pick up the cube",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches the blue cube in frames 0\u201317 and closes its gripper around it in frames 19\u201324. In frames 27\u201331, exterior_image_1_left shows the cube lifted clear of the black surface, while wrist_image_left shows it retained between the fingers. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 32,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_07391bc33f86390e016af9311ec91487d2aba2c507f31a05fc",
+  "object": "response",
+  "created_at": 1794715935,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715946,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_07391bc33f86390e016af93122c06487d288e793f2aae07dda",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TErLpc6p2QHM99fLh_fkHtUEc1RH1AfirxAEw_fWI8I4aS7eAyJvMv9uNuCNnA6E9j47ofjwMhJJSB7QZ5fiZjShxpoxqbnlMqaKALI8R_pcREPK6eaZgoIAy3mLLEUHTyoGh8eorh78ymjHhZT00FXR5u67mol4HiD1oDfE-PpTsqe_Fi7SRCc1uuNNFM8K_BJj1lgWFEJ42kbmin6o7r_0nphbKyIhm9W9FQNoxgDoXBq9Oq2xNZPhUElhZz_ruhXQt59jDVZLP84g-WIM-u7PrD2W6uAg9Gj-EIirugc8WwEyqtyw33nNN2xWeH0O9ZTqnI27P0iIcTrfJrgW4PtyDxdFL2S6PT2tXGgJRmuX-YAmvTP7AciOEDjCh0K9Ekq_zhBEKWqBwuFtzT-QpPpTDE3-RhBWkmz3hKIzNKJaLc8IEznvijMzyv9E8lm-RgFzqnKQfLUymChjf0WtMnUua7Q4WZyFq4_eImJw5J_fhFbwvClPB8M5pr1NjMqn3UKHaPVV5sXHoGfrJhQoSinf-DZSwoAzLd9X1sgLK9iQxJrOMe1RhUna8XI_boEcd5dYXpSPHWSFozjWwwuQKRwA8BoNL6SCm9y5KvheGEv6d2EWhLK4B3ASwccQ0iRus64RQzUWPDbNYO1oXMX5NqZkK_XFU9cUZyhukaLYuyCg7ZQN5cpf0w02oShAJMxUDwJW1ebX4Bb9bbottcN4YpN-X4P7eTMWYujM6s2hk2dV4jpsLGfBsplmSP1mcRdm0oyZfsASmBYDpJuUTYP_8eZTaYSsCT73gMKjpZcWvO-HCxwsUs1pMZ38zTpzhueNSGLyw0vTKoiHUaK55PzwmLxLK-cbyUHOYlRDDo_BKSqu1-CEiTA1QsGF6byf0tUBSrqerP6f-tVckowTfJjExBgrJt68IkAPPGcOCvvn3zNPegU73LYhbpifph3XHJh7mZuT8qw4lT0Uzn9wRFIQkGZJK1UWW6AQj1bnVgAI-6C9DbrZPS6Yt_UR2HVOfJV7JYK12hjR5EXqOWxfke5sl9Wwfd1Zj-2EX7XufHbgpmSf1QDpUFifc-AO40_jmF2iToy9ckMCpvKwSV_eme80sM5YAcEjgJ1hIdP4keWfaTuZXklF83la7j_pM9MF3y5rgfomp7jd9LmMdK8HRVczQmRu2yZb9hqA9slK8VIJ47Sz5hOLIRy-EM44xZv0QlxjHH662zEggHYqWkqZAKRA9nkJf0rXhsI0F0ZMUY97ElYqG6DWNVAxA3fbr5vIJ7bxk-lluELZJttzqASpjDzN2LiUw88MK1FPLl4D1gbEVWr5DEU7e3v3fDZlZDt6UP1tFoZSEqck7qOxPCPpNpV-iJXh9a_QZX8V8nkem09PKWsd9-kD98qDc7DpjpO23KadU0resm5eG7qnLyaPeuV2QP21xBHHeCmIoNhTc73Tqz4PuRXL1lK4U2FvL4MdG62dciz3xxOkIIk5KskxOO0j8Tphxx5fA20p76qnE7d9HV5gtH4WJbdKCBPxStCp9pzlxeS77xRxq3VTvQbxhUDOlg3yxQdzp12ry9MwiQ9uP09UZL5ixwvFEjntTJ0JM_FReWGbsKp4d5bjV6i6uLqsuMDPWL_C41pPH3-iM-x6PBh9LhTGlNn2ERdj7RhRdLuz3Va7rOeYIzDjTgyFGLIPOtGKrMr7FIZhGPbrxlh_lUW3fGuHoU6bVcw51BkebsQYzC1h2NU-XAy35-gHEfBwbW-QlAGH_iWUeO9A4psIlCQzz-gFsqbuw74WzLS033IOqARsXWO7z70gLpokqD-D4GjXMgkIRxK2K14MVhokcQMeXraLFy_0jyqBP-jqoGcn5JMO_6HgU1T5eCBXJYTeAhlCb1ci73o0d-kPVSoBYiUSwHVV7brb5RJ38ZnyJx_JNMBDvVkMoSZ4KvOvY9scKG5NWkUnSGY129MpeZqX0R-Z5rZcd2rF-GFS-ZVq7xL7HAEsbVVW1UE6bPt4qqR3D0Td9xpxmdBsQCmQfJNAq-mKk_ph9OB0i2hksBrPbOEpscux7a5E1lxvnMxBL-OMRGyy-EyPGa1-eC2N6VTJIjEw3X2Pt1ARDfzFhumRj9xxQ4q0rKPtVQeG3xmCqZDNn4LTTzBh5kdQe7ROiljvjdhv-qKc4_Sd4OJTxLpsHP0V73yxN0Ft0RgIStXMT9zPKe0yTKOWZg7sE4sL31qKBN4QRMvLU7ZQ-H49ZMvsIyZMJ63W7z-x1XYIg36EdM02cDB8ASesw-X0OFVK_uMsP_dKyxhPlsnq_UzbXh3YZvtAw4J_TEh_fsgu7rBZ6dX9p7xXcEpb3xEO5qUbkPp8vN9ZXV5MxgurcSfk2iRxYb-quOQ2SRaDeBNGhphC2M1iOwAicfwlbmf0gTvmNb3qaat0w0=",
+      "summary": []
+    },
+    {
+      "id": "msg_07391bc33f86390e016af9312427d087d29f9a3ef8fe28b242",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0917\n\n## Episode annotation\n\n- Language task: Open the oven.\n- Success label: success but suboptimal\n- Outcome evidence: The oven starts closed (frame 0, left_ego_image). The robot spends prolonged intervals hovering near its upper front without opening it, then pulls the door downward during frames 344\u2013364 (image and left_ego_image). The door is visibly open and remains down through frame 376. No damage or displacement of unrelated objects is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 33 | No |\n| 33 | 203 | Yes |\n| 203 | 213 | No |\n| 213 | 331 | Yes |\n| 331 | 377 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 33-203\n- Categories: task_not_attempted\n- Explanation: After the initial approach, the gripper remains near the oven\u2019s upper front with small repeated positional changes but no discernible acquisition or opening progress for about 14 seconds (frames 33, 100, 150 and 202, image, left_ego_image and wrist_image). This is sustained unproductive hovering rather than a demonstrated failed grasp; the images do not establish its underlying cause.\n- Recovery: Resume task-directed alignment with the door handle, acquire it securely, and pull along the door\u2019s hinge trajectory; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The visible consequence is delay; the oven remains closed and no damage or meaningful damage risk is established.\n- Resetability: immediate\n- Resetability evidence: The oven and surrounding objects remain in place, so another handle-acquisition attempt requires no environmental reset.\n\n### Failure 2\n\n- Frames: 213-331\n- Categories: task_not_attempted\n- Explanation: Following a visible repositioning during frames 203\u2013212, the robot again remains almost stationary near the handle for roughly ten seconds, without door movement or clear acquisition progress (frames 213, 250, 300 and 330, image and left_ego_image; wrist_image corroborates the prolonged near-static pose). Task-directed motion resumes at frame 331 and subsequently opens the door.\n- Recovery: Proceed from the aligned position to a verified handle grasp and controlled downward opening motion; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: Only delayed completion is visible; no scene damage or unintended object movement is established.\n- Resetability: immediate\n- Resetability evidence: This stall does not alter the environment, and the robot can continue the opening attempt without resetting any objects."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 72554,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 621,
+    "output_tokens_details": {
+      "reasoning_tokens": 65
+    },
+    "total_tokens": 73175
+  },
+  "user": null,
+  "metadata": {}
+}

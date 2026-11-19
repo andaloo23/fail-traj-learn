@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0272",
+  "language_task": "Place the black spoon in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "The black spoon initially rests on the counter beside the sink (frame 0, left). The robot closes its gripper around the spoon and lifts it from the counter (frames 36\u201340, left and wrist), then carries it over the basin (frames 47\u201359, left and wrist). After release, the spoon rests inside the sink while the empty gripper withdraws (frames 60\u201374, left; frames 62\u201366, wrist). No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

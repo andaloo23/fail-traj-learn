@@ -1,0 +1,194 @@
+{
+  "episode_id": "C0889",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The task remains incomplete: overhead_cam and wrist_cam at frames 750\u2013765 show the beige toy placed at least partly on the plate rim, but frames 1471 and 1799 show the remaining toys still on the tabletop. Earlier unsuccessful placement and acquisitions are visible at frames 137\u2013150, 180\u2013215 and 367\u2013405; the pink toy is also missed at frames 1144\u20131215. The proposed failed acquisition at frames 660\u2013700 is not retained: the continued sequence through frames 735\u2013765 shows the beige toy reaching the plate, rather than establishing an empty withdrawal. No unwanted collision or damage is clearly established. Completion is not merely hidden at the ending: toys visibly remain unplaced, although the recording end does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 137,
+      "failure": false
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 144,
+      "failure": true
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 180,
+      "failure": false
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 216,
+      "failure": true
+    },
+    {
+      "start_frame": 216,
+      "end_frame": 367,
+      "failure": false
+    },
+    {
+      "start_frame": 367,
+      "end_frame": 406,
+      "failure": true
+    },
+    {
+      "start_frame": 406,
+      "end_frame": 530,
+      "failure": false
+    },
+    {
+      "start_frame": 530,
+      "end_frame": 649,
+      "failure": true
+    },
+    {
+      "start_frame": 649,
+      "end_frame": 934,
+      "failure": false
+    },
+    {
+      "start_frame": 934,
+      "end_frame": 1136,
+      "failure": true
+    },
+    {
+      "start_frame": 1136,
+      "end_frame": 1144,
+      "failure": false
+    },
+    {
+      "start_frame": 1144,
+      "end_frame": 1220,
+      "failure": true
+    },
+    {
+      "start_frame": 1220,
+      "end_frame": 1234,
+      "failure": false
+    },
+    {
+      "start_frame": 1234,
+      "end_frame": 1398,
+      "failure": true
+    },
+    {
+      "start_frame": 1398,
+      "end_frame": 1471,
+      "failure": false
+    },
+    {
+      "start_frame": 1471,
+      "end_frame": 1800,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 137,
+      "end_frame": 144,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the beige toy toward the plate, the robot opens its fingers outside the rim at frames 137\u2013143. overhead_cam and wrist_cam at frames 144\u2013150 show the toy left beside the plate rather than placed on it.",
+      "recovery": "Reacquire the toy, lift clear of the rim, and release above the plate interior after checking its footprint; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the tabletop beside an intact plate, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible for another attempt without environmental resetting."
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 216,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure, the gripper withdraws empty while the beige toy remains on the table. overhead_cam and wrist_cam at frames 180, 195 and 210\u2013215 show the unsuccessful withdrawal and subsequent opening without a transfer.",
+      "recovery": "Open and align the fingers around the toy's body, then verify that it lifts with the gripper before transferring it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition prevents progress but causes no visible damage or damaging impact.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible beside the plate, requiring no human reset."
+    },
+    {
+      "start_frame": 367,
+      "end_frame": 406,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closure, the gripper shifts and rotates without acquiring the beige toy. wrist_cam at frames 367, 390 and 405 shows the toy remaining outside the fingers beside the plate, while overhead_cam confirms no transfer; reopening begins at frame 406.",
+      "recovery": "Reopen and center the toy between the fingers with clearance from the rim, then verify possession with a short lift; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table and no damage to the toy, plate or robot is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Another acquisition can be attempted without altering or repairing the environment."
+    },
+    {
+      "start_frame": 530,
+      "end_frame": 649,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "overhead_cam and wrist_cam at frames 530, 570, 600 and 645 show the open gripper remaining beside the beige toy with only small adjustments and no discernible acquisition or transfer for approximately eight seconds. Renewed closure starts at frame 649.",
+      "recovery": "Resume deliberate alignment and acquisition, verify a clear lift, and transfer above the plate while maintaining clearance; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The consequence is sustained delay, without observed damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The pause does not create a scene condition requiring environmental intervention."
+    },
+    {
+      "start_frame": 934,
+      "end_frame": 1136,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the remaining toys, the robot holds its open gripper beside the pink toy without acquiring it. overhead_cam and wrist_cam at frames 934, 990, 1050, 1110 and 1135 establish one continuous unproductive interval across the window boundary, ending when closure begins at frame 1136.",
+      "recovery": "Center the pink toy's body between the fingers with clearance from neighboring toys, then grasp and verify possession before transfer; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Sustained lack of progress is visible, but no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toys remain accessible and the plate usable, so no environmental reset is needed."
+    },
+    {
+      "start_frame": 1144,
+      "end_frame": 1220,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "wrist_cam at frames 1144\u20131145 shows the fingers closing beside rather than around the pink toy. The closed gripper subsequently moves toward the plate empty, while the toy remains on the tabletop, as shown in overhead_cam and wrist_cam at frames 1170, 1200 and 1215. Movement back toward the toys begins around frame 1220.",
+      "recovery": "Return with clearance, reopen and align around the toy, and confirm possession with a short lift before beginning another transfer; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition causes no visible dropping, damage or clearly established unwanted collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed toy remains on the accessible tabletop and requires no human resetting."
+    },
+    {
+      "start_frame": 1234,
+      "end_frame": 1398,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following a brief return toward the toys, the robot repeatedly moves its closed, empty gripper near the plate without acquiring anything. overhead_cam and wrist_cam at frames 1234, 1275, 1320, 1365 and 1395 show sustained back-and-forth movement without task progress. Reopening at frame 1398 begins the subsequent recovery approach.",
+      "recovery": "Stop the empty movements, open the gripper, align around an accessible toy and verify acquisition before transferring it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is wasted motion and delay, without visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable and does not require environmental resetting."
+    },
+    {
+      "start_frame": 1471,
+      "end_frame": 1800,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "overhead_cam and wrist_cam at frames 1471, 1530, 1605, 1749 and 1799 show the open gripper beside the pink-and-white toy without acquisition or placement. Small initial adjustments give way to an essentially unchanged pose, establishing sustained unproductive behavior continuing through the ending rather than separate failures at window boundaries.",
+      "recovery": "Reassess the toy position, align the fingers around its body with clearance from nearby objects, and verify a grasp and lift before transferring it; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is prolonged delay and an incomplete task; no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toys remain accessible on the tabletop and another attempt needs no environmental reset."
+    }
+  ]
+}

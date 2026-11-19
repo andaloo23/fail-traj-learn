@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0990",
+  "language_task": "put the corn in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot lifts the corn successfully in frames 30\u201338 and carries it toward the pot in frames 47\u201363. Upon release in frame 69, the corn falls outside the pot and comes to rest on the tabletop beside its handle in frames 71\u201373. The pot remains empty; this is a visibly failed placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 69,
+      "failure": false
+    },
+    {
+      "start_frame": 69,
+      "end_frame": 74,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 69,
+      "end_frame": 74,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully carrying the corn, the robot releases it outside the pot opening in right_shoulder_cam frame 69. The corn falls onto the tabletop to the right of the pot in frames 70\u201373 rather than remaining inside, so the placement fails.",
+      "recovery": "Reacquire the corn from the tabletop, center it within the pot opening, and lower it into the pot before releasing; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The corn lands on the tabletop and the pot stays upright; frames 70\u201373 show no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn remains on the visible tabletop beside the pot, allowing another acquisition and placement attempt without an environmental reset or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_02a4b33e5869afd8016af8f6bbc39887d283f63f096bec2b40",
+  "object": "response",
+  "created_at": 1794700987,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794700993,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_02a4b33e5869afd8016af8f6bd2e1887d2a30b830c6c58abbc",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PbB7ZogybZ2q5SGlGzfaH3nS8d4E5NdV6S_s9rZ64Ec0KkXnhzs5S4MCD8ZVSXoUxT5MWaBV5746kEJPuOfRFgc_dAg3-QxB5SCwvDf10kj2All8HSDvUtE4a3PCZXr3KvjFVXxL6xHBBQRvaOx6Xq1bJqmSzU9qI44yjMxtHsOgKnap3P8j7vwvEmSC6AqUUy2MrNFsALggYciHYi_eyMm9sWjfw1XB49OQVIZ0buR7pd_ym7YUdMso5mxbbKFHr44Na11ld8gCGtBqiSWGeF25TR0Mjod8FllKs56qUOhqSBAAqi47HI__O4uf4jeRr2f-Lp5IFN5ikLfvOvs2Qeg2r3ad3_NIHIOXtfH8hPTdjjOVAWUVT-Vr6e7AeStlwPrKd_x3Fa4kRHylawS-3F3ArNmo0KOJyTz9wp6k4d6lNNd1JtURVFaGW_BMBGd9GFWjposZ6mNHKHcYbf5AWUiWPXGKHW3_XeoT5Lc5viWJgOaUn797MeVJbFDRXwHGmttjf88wySaROtlNkrohpcYhgTT4HNLpKh_fgw65O3ofTMkTkSGHDh2mw8bY_1_01BUMN3ExAEkHcFhdTkQMY1mS3a59QTgHWezghvKYcT0XpNgoyUfjBLxSR6-oicuCdtjtH0WvPOgzGle_1EgZAM1RJ42Lf5LA5LhYUovSVLXJj3Xa0t0mGomVly_S8BREJ4eYYBP_k_mJssxM-dECanhzw2nb1Dhe3EUyPG_5vV807NW3q3Z5Q365Hi8Cff0ZIB2S6_tv8VUponxpHNXd3JmLuPkDlRCFZ-RvsrHTtdKNzGR5xIgh2mjZAyiIc-lynFceRmPqm4MTSQc9kgEV0uoI_4X9YZCpaze_-8bFjRNpo2ePDfMrMKjh95gp0-zwgvuCEKtRG43T41twMKo9bO3dYJ2EgcNGVPWhCnaFHhaXsX0VolVWLgKZtln9eIGM5Dv1IjGdlWyW_mmiuavuMVZgG0j6MZINn0ur9fOw2hyjhFHOpM_p_qPlMogWdgbgkKvIccOHWtDpNRX5YuSVu0Ju8PF2aBDLB6vuOkYvx2rwSi6672lHWsK5o7D9udf2x493oQVj37WkOP9BVtapIXFYflFvK76kci6N2bbGc3oZsBO0l8tn-vy-18q2FF6iaVkqcww5VgHV249ow5BHHgbkAW34F5P8QLXgaREKz17eNvA7MPUit4DzMUki12lLmLssRrlkALuJ17RzRYYl_pTz9Gp5WRTfjocG4v3a4PMPF5HRNku1jj8PBlbbtdyTCoGV3hFFLpjVW3aJKonbcrvb-PMNJJnmPCD9p_ojmPBrt7KEVaFU7Y6UrBducVOGrtqUXPDRCgyCrfCCVDPVhQWyeS7VnSfm1xt73GLvIxYh-CGY-Xb2OkY568E2D8zpbFCOiQZWP6iILNvrLNeO80pnVVHIUThNJI7QOO5tmKjxwfumoZvcOxVbkkZrN-E7EQ32G9sQY4GCi5BfIwifq6WXlcu0Bhp-J1cpXxPnzhn1PGfp0WRnzfz9XYGYBn3fkbvwJPLO0jaSEMEbGtMhl1xyUJMOfoseZfiYNTnTiLOOhlIgkLVGYIkXKS-l4ugmuxZnm6co0HFH6WHXFdzuHFKIeqOBioxh3ZQm4IQapPoIXJDF8ewXdpjOYuZogubm5a84YGErpa8rMQLfOVNfobaqF390W5-jVStEWepktWfhwg_tUtKEgRG9TMGDt9iYWpKOiNIl4D1lOBS3QK26uvlWqpe9TXDDA-pVJCniT-OeCswNexP6slKUIgo1bkU-Ct2LeC0Y6Nm_IBnvC0lQcU7b3Yzxa4peOC6f2DyKkTQ60G_l6GhyMNsAV_6f_xZ84zwD-tMn9sLvjXhla1cBWkeBPLJTRRAvBph6RMtKZl_CkKewjvtORxhqyi4WpMyO7QufSmhU3MHe4-J0V6s4p7x29tYYn5dKdi-dnlGn9RCz7nwgwR4avkuS25Dk610MLzO",
+      "summary": []
+    },
+    {
+      "id": "msg_02a4b33e5869afd8016af8f6bd9ff487d288af6dd219a419b8",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0034\n\n## Episode annotation\n\n- Language task: remove the blue cloth from the yellow block\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the blue cloth remains in the same draped configuration from frame 0 through frame 69; no removal is visible. The yellow block is obscured and cannot be independently identified. The gripper approaches and repositions above the cloth, with a sustained pause at frames 22\u201357, then approaches again at frames 58\u201364. Completion is unconfirmed; no completed grasp or definite failed acquisition is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 22 | No |\n| 22 | 58 | Yes |\n| 58 | 70 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 22-58\n- Categories: task_not_attempted\n- Explanation: In right_shoulder_cam, the gripper remains above and separated from the cloth with essentially no task-directed progress across frames 22\u201357, approximately seven seconds. The cloth stays unchanged throughout this sustained stall. Renewed approach begins at frame 58.\n- Recovery: Resume a controlled approach to an accessible cloth edge, acquire it, verify retention, and lift it clear of the block; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The stall delays removal but causes no visible object displacement, damage, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The cloth and surrounding scene remain unchanged, allowing another attempt without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8048,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 375,
+    "output_tokens_details": {
+      "reasoning_tokens": 31
+    },
+    "total_tokens": 8423
+  },
+  "user": null,
+  "metadata": {}
+}

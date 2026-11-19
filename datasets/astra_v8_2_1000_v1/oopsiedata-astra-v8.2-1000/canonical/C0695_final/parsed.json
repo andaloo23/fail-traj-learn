@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0695",
+  "language_task": "Pick up the stuffed animal and place it in the cardboard box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal remains on the tabletop outside the cardboard box in external at frames 0, 700, 1400, 1751 and 2072. External and wrist show repeated approach and alignment, followed by an unsuccessful acquisition and empty withdrawal at frames 1746\u20131750. Later alignment resumes, but neither pickup nor placement is confirmed by frame 2072. The final attempt is unfinished rather than demonstrably failed; the earlier empty withdrawal is a visible local failure. The recurring pauses between incremental movements, including those after frame 1751, do not independently establish abnormal stalling.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1746,
+      "failure": false
+    },
+    {
+      "start_frame": 1746,
+      "end_frame": 1751,
+      "failure": true
+    },
+    {
+      "start_frame": 1751,
+      "end_frame": 2073,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1746,
+      "end_frame": 1751,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the close interaction visible at frames 1740\u20131745, the gripper withdraws without the stuffed animal during frames 1746\u20131750. External shows the animal remaining on the tabletop as the fingers rise clear; wrist shows increasing separation from the animal. This establishes unsuccessful acquisition, although the precise contact or retention failure is unclear. The withdrawal crosses the window boundary and is one continuous event.",
+      "recovery": "Reopen and align the fingers around a graspable portion of the stuffed animal, close securely, and verify retention with a small controlled lift before transporting it to the box; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The animal remains on the tabletop, with no visible damage, harmful displacement, or disruption to the box or surrounding environment.",
+      "resetability": "immediate",
+      "resetability_evidence": "The stuffed animal remains accessible beside the box, allowing another acquisition attempt without resetting the environment."
+    }
+  ]
+}

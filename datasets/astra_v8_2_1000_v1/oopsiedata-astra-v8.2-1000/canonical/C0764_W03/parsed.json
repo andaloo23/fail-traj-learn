@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0764_W03",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, rather than a visibly failed attempt. In base_image, frames 700\u2013800 show the robot carrying the green can toward the upper blue tray; frames 801\u20131049 show continued positioning at that tray, without a clearly completed release and withdrawal. At frame 1049, both bowls and the pink can remain on the table, and the right tray is empty. No failed acquisition, drop, unwanted collision, or sustained unproductive behavior is established. This label is provisional: earlier context beyond frames 698\u2013699 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

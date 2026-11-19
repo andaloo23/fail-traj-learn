@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0248",
+  "language_task": "move the spoon next to the knife",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon begins beside the plate, separated from the knife (frame 0, left and wrist). Following a closing attempt, the gripper moves away while the spoon remains on the counter (frames 561\u2013617, left and wrist). Subsequent actions displace the plate rather than transfer the spoon (frames 737\u20131105, left). At frame 1199, left still shows the spoon beside the displaced plate; no completed placement next to the knife is visible. This includes an observed failed acquisition, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 561,
+      "failure": false
+    },
+    {
+      "start_frame": 561,
+      "end_frame": 737,
+      "failure": true
+    },
+    {
+      "start_frame": 737,
+      "end_frame": 1177,
+      "failure": true
+    },
+    {
+      "start_frame": 1177,
+      "end_frame": 1200,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 561,
+      "end_frame": 737,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the spoon in frames 529\u2013560, the gripper lifts and moves away empty, leaving the spoon on the counter (frames 561\u2013617, left and wrist). It continues across the plate without the target and cycles its fingers over the plate (frames 641\u2013736, wrist), rather than completing the spoon transfer.",
+      "recovery": "Return to the spoon, align the fingers around an accessible part of its handle, and verify possession with a small lift before transporting it next to the knife; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the countertop; no damage or meaningful damage risk is visible from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and no environmental intervention is required to retry the grasp."
+    },
+    {
+      "start_frame": 737,
+      "end_frame": 1177,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "The empty gripper remains against the unrelated plate and progressively shifts it across the counter instead of moving the spoon (frames 737, 793, 913, 1033 and 1105, left and wrist). The spoon remains outside the plate, and the plate displacement disrupts the scene without accomplishing the requested transfer.",
+      "recovery": "Lift clear of the plate and reassess the utensil positions before approaching the spoon again; restore the plate if needed for the next attempt. No human intervention is necessarily required.",
+      "severity": "low",
+      "severity_evidence": "The plate is displaced but stays on the counter, with no visible breakage, spilling or other meaningful damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the displaced plate to its original position is a straightforward scene reset; no repair or difficult retrieval is visibly necessary."
+    }
+  ]
+}

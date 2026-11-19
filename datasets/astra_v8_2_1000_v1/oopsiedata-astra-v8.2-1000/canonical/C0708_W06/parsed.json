@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0708_W06",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 1750\u20131833 show a compact nested cup arrangement standing stably on the table, with both open grippers clear and no loose cups visible elsewhere on the tabletop. The arrangement remains unchanged from context frames 1748\u20131749; no failed action or side effect is observed. \u201cPack\u201d is interpreted as nesting the cups together, since no separate packing container is visible or specified. Success is provisional for this window: the earlier stacking actions are not supplied, and the number of nested cups cannot be independently verified from this view.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1834,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0278",
+  "language_task": "stack the cups",
+  "success_label": "failure",
+  "outcome_evidence": "Three separate upright cups are visible at frame 0 in head. The robot places the first lifted cup into the front cup, leaving a nested pair by frames 180\u2013190 (head, right_wrist). It then lifts the remaining cup and brings it toward that pair (frames 246\u2013310, head, left_wrist), but releases it off-center; it falls beside the pair and rolls across the table (frames 314\u2013350, head, left_wrist). At frame 365, the pair remains upright and the third cup lies separately on its side (head). This is a visibly failed final placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 314,
+      "failure": false
+    },
+    {
+      "start_frame": 314,
+      "end_frame": 366,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 314,
+      "end_frame": 366,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully carrying the remaining cup toward the nested pair, the robot releases it beside rather than securely into the receiving opening. At frame 314 it descends off-center, at frames 317\u2013321 it tips onto the tabletop, and through frame 365 it remains separate from the stack (head, left_wrist). This failed placement prevents completion of the three-cup stack; no corrective action is visible.",
+      "recovery": "Reacquire the fallen cup, orient it upright, align its base over the receiving cup opening, and lower it until securely nested before releasing. Human intervention is not evidently required.",
+      "severity": "low",
+      "severity_evidence": "The cup falls onto and rolls along the tabletop without visible breakage, spilled contents, or damage to other objects (head, frames 319\u2013365).",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The fallen cup remains accessible on the table and needs straightforward retrieval and reorientation; no repair or substantial environmental reset is visibly necessary."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0939",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper approaches the blue cloth but withdraws empty at frames 27\u201333 and again at frames 56\u201369; the cloth remains in essentially its initial position through frame 69. These are visibly unsuccessful acquisition attempts, not merely unconfirmed completion. The yellow block is not exposed, so its identity and position beneath the cloth cannot be independently verified.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 27,
+      "failure": false
+    },
+    {
+      "start_frame": 27,
+      "end_frame": 43,
+      "failure": true
+    },
+    {
+      "start_frame": 43,
+      "end_frame": 56,
+      "failure": false
+    },
+    {
+      "start_frame": 56,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 27,
+      "end_frame": 43,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, after positioning the fingers near the cloth at frames 21\u201326, the gripper starts withdrawing at frame 27 and is visibly clear and empty by frames 29\u201333. The cloth remains on the table without being removed; the robot then remains withdrawn through frame 42.",
+      "recovery": "Reposition over an accessible cloth fold or edge, lower sufficiently to pinch the fabric, and verify acquisition with a small lift before removing it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the cloth in place, with no visible damage, displacement of unrelated objects, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains available for another attempt, and no environmental reset or human intervention is required."
+    },
+    {
+      "start_frame": 56,
+      "end_frame": 70,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, the gripper approaches the rear cloth edge at frames 43\u201355 but lifts away empty at frame 56. Subsequent small movements above that area do not acquire or move the cloth, and the gripper retreats out of view by frame 68 while the cloth remains unchanged at frame 69.",
+      "recovery": "Reassess the cloth edge location and approach an exposed fold with the fingers positioned to capture fabric rather than closing above it; verify a secure pinch before lifting. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Removal fails without visible damage or harmful scene changes; no supported damage risk is apparent.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in its original state, permitting another attempt without resetting the environment."
+    }
+  ]
+}

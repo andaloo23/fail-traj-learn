@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0338",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches the corn in frames 0\u201312, but the corn shifts outside the left finger rather than being acquired in frames 13\u201320. At frame 20 it remains on the bare table and the green cloth remains empty. The visible acquisition attempt is unsuccessful; no completed transfer is shown.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 13,
+      "failure": false
+    },
+    {
+      "start_frame": 13,
+      "end_frame": 21,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 13,
+      "end_frame": 21,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam frame 13, the corn is displaced sideways outside the left gripper finger. Through frames 14\u201320, the fingers draw closer and the gripper shifts back without securing the corn between them; the corn remains on the table instead of being lifted for transfer.",
+      "recovery": "Reopen the gripper, reposition above the corn's updated location with the fingers on opposite sides, and acquire and verify a secure grasp before lifting toward the cloth. No human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The corn is shifted on the tabletop, but no damage or meaningful damage risk is visible in right_shoulder_cam frames 13\u201320.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn remains accessible on the table and the cloth is undisturbed; another aligned grasp can be attempted without an environmental reset."
+    }
+  ]
+}

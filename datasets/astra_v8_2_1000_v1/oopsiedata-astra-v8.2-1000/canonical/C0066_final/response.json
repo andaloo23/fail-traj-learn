@@ -1,0 +1,116 @@
+{
+  "id": "resp_0e6680a66549827a016af8fa05078c87d2aeadaada364d03bf",
+  "object": "response",
+  "created_at": 1794701835,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794701851,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0e6680a66549827a016af8fa12724487d29300dce4d4be2607",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PodibYaBZuvJ-eRSG9EuYDhACce3xeVyNiz_jv7pqQEDoyhD4CZYJIXwz6U1jIum-qgdXb8np52tGdV8EBVLAQs5MTo4DU3e-YV7QvFz7LepfN0Jl-_TquPKUC_kyyVr5FMDAjbXTgqzEJYDFXbDLtfnjwW6Vy2hsqFN-y5PXifae5dTyG73dzTjDfkDr_1gUiauwupacBc125tK8O4GWhIXK_HdCxbBSR6VCVkVV4QQUx60z9jYbdV8MFfisQf_ZXMLT1pAYUQKblEnFC4pyRkTACadY9HIS9lC5CjLVFLDVtLl8xM3Ev0T2oZ-y77t0Ll7p9hrQEqpobVGlGLinGRc3XoISjDn43dbvRID557KbrkW0z0Qgu6qzno4RVz_QvAE8X5chkyJP0kl96LcTeldERn4D_3yTHdRNp_IPCYQZMqpXSFv1iFRLgQwjttpKE_cRZHC6qsMN3RA_ztk27J9uOaz7o_P5et-9Cpi1QD7pU2QOmBXf22SceirYuPbsOB8tgbHFKUW55bi3pg_iF8284BH3D7ouBNttrFNpG4MIAy2kmEJU7Dbcs2CB3d75xkZB4ViQ6jdqy0XekQv99fwtrp9RTMRbDfznyAiR_Qc-Ejju1B5PypD5yQ1hcF_tIVCM-JJr0N5VMxxHSOMw_ifKvROinRJK2-ginYkn1tIq39hw5aUARsMnATZMjlb9nvU0flIblfUAYAqjUGz6TQdivy7uE8f7UwKW6XUKBUg3O0OobDofgSFHVV04FbMX76nXM-gxQ5_-Z3Tt9HPjtGRuWwyVOy7228UiHZg9yl2U7HThT6JW1vJN5-_y5jejt0Rv9ZNNRzQ4UcomHm2pDCaEtgH-dtHa-nHyCM58swWKwiq4Od42d9T3uW_N1gruZ5iU00TPnDGUSlaSvzXgcsPnikvoDi2ZEiTjHTNiDiMnp-VlQSrtiionqaR4rXTLiS5ccuBEPbvcLsIApM2GrzIZeclklxQHgLueUTh1NtULhPpW3iVcEyMO5aQpzyrmJim1K-o3Cu5tNiTsKvPRAopFq1jA7U7IGxdlJzZy7Xuo9HAHI5tbitCkpnt-lj89H7Il-Nk2NJOdMJl443uO8tHKKZNiSDDxOaJ6KOIzEzZhkQMfEdKZk6gx_Q3DsrMso3ZrYXv21ShcA_LZhXgmiEgrIiyYHXOb3F2CrvxNbQSCynRWrEJG4AoT6oYXJ-EyhH9ucreTTXeojdI_tKWyqlc7fDTKNTbYZqxn2aIollbvrPr9PSYSkd5idFX-NF4E_EyGCNVURI5Wy7-o9l5wGYoTz8KhcwaltnZ8q1WobJdh-uUketLWEijdBLsh-iobNMhWpN5AfToi93hEgfNkKb6G5yp-zAjr-vkwvtOhW13aYEUqz_chL4apLcFdRZSzWR7QVs6vdUzf22AwFp_2jhsBEWxaUHs6L7tAd67VQULk7obR7Ns50o-qt34EBvNyX4Q73Nya3w_WCFbB6ZABHTXlTts5qnNgojHhb8dtYY8KtOmKxfWPlY45pamta2H3xfbJTQJ2VDzZsXeCiAz4cW5i2jp6cbFqvJQ2HIx9o8avp_l5GAsn5Uo0Q1_YwnS2C5CAofRHj-T_3DqaxOHTkM_lX8uLD7JOOkUwyNYJesuCLmYXLA0Dh_XBjqDLP1H9S07QGOtnapry1YVk2IkO6NmQDGAkggVkgGihraSUaxHzw8QxcIhfXAvsuleujDv0h7dX5Tn_TOTt_dM6rI6My-2rxX-6PAX4bKUGhEYDXYFSSBPDZz8tXP1nBMrb3W8kSqRoR-A1CiLmD1pvywR9DlQrz6Z8TkVCATOMXYN-kNI2yPno6sgmpMZjxj4SoI5sGzibNKVrbG7mBb8Pi_ZvqieDOK28GdisZle5C9yNxGOB-YOfEWe4aEgNYkp9jXCjNyU9NBHKfCaYqeBL5cqnW3rjEClMmKMLGWKO5QBcowhkmtdREK7v7LqaxeFF2vOI2Nirwj3BrRyAuAqIvrVwhqf0sN5FS66OLbW0-1vAQMkcBeQsDrSmdQTnsbBIZM1zVifSyt2w9pOY-k5zOX4su_RFtl2eo8vFLaG6LTKPX8zTI5ummNdfNKife47OAGsYkjvy4z58Mme44ZIEtAxdBBZfmRmsJFV74bQppj3v_kViNWa3m1Ky-cfPj-SdMFFNQWTWwqr2sGfFYkej4Enco2MI67eFAfvNd-lz7XdG3qUnfjWkXU-ziD7wXwIqvkCNHvpdFgWQnOOBWS1c3fcImo7Nl5OLl7JWpF95-DgjEVtN-CJ6DIvpfVUJSMDfiZq6Nkjig_zkJJq80UaEbLXGFxlFdw02ayvSjWqib_HqEdHfX_reE5RWZSRBcX6KsFl1Jfj8fA3kjlltZBX3GpMXyKNMTxyz8Yynjf1uuTxh_DGy9UhOSwDkGTZLEELvIBYs-Ik-strB51-jMfeFe88Zpb2KysQLj73uF7Zqpj-eIKisVU9Pt1RUVjJN6mlVVOajoW5no7vz94IZQC1ffWfu5DJ5teThUfcyN8MReRD3kfw9e3buLsXkbhcjkvsuZprvvmtqxW7FyWw85vD13AzlmFo4sYTwziQEtXBAgDMlB3xjsikoYVho6oRtNQF69WS31OR0CdxBY06p-gvWEpAGVcioFCif3Hj1flWrlRZshVHDMfi3W_oRA7PdENk53TshaT_RR6ufm_FdQinhqnft__0Ksu6pr2vjBGNX4vhPL0iOrjJcU1vXsd0NVmK-EJa3iHF5e8YemQxkRwFcJUKKwr8ZtQyGNoztVH7joaDjWvIK03h78rlCns1j0v3TCOGG3TSuaxF4jrXIxl7tpyxf_VpBu9BAWa2TrYjYmCJyhyiyGN95ZlENpVV5OqSf5TJH_10SFY5qRGPlvq-LFm0Vv6y5V6IFVgHhjrozsGcFyOiNhDudPRYNUF8UOSmCFVrbJVylgzP2urszy05X-_1kdhcVdg_4xc8vfrO64zU8ZsF0aMyeezcynpQQpx4UW2WRusyG-p-j4E9pKmfN9_TAUN3wiXJc_EgM9brgFeJBOnrz-OZe7E693D1jFm5GlYMgX-BP41E-THUu897XVROwP8XPP2t-h5FGUEKGPHkMpyHhhPKbAVAAthT3qvTPCTdCjZL0a61WlvyPTVa1k9zumQFP7GIts7K9joSNoHRelfmtiz6q82HhEFkGbXU37bIc22ab_IJnMHDhyEiEsYIYyP23c_y6foNksN_AFFpcxKW_YzTbrI78QMj9wCr5rBNefIEs3jBF8Pzj4af3aJe8oWxkcKBkTN2FYu4ouE4AmHKUk5jsMs0g2CJA1WfbgIv1ue5C-S4MbEi3EaaCgP7eJX-Nh7tR3bHY3bFSnmCWyGkhSVon67fGY-qMUUwCSwAcfjmRZfF4Mp149BzrEhYLmvqOOI-l6HPrngEya16y822vv38w397Xkd1bv0eSrigjVFYdFSe_ATnTTwFbz3LjK0uR1nMkpo_XUIEaRhQiQAOB0yRyRxVcyaBDngmYcK7mh7PTSZqzgOZ90DgY8LjYKAr9_27Orf6IKmpSWcwQ-kATBBarbJTpbhS6mecJ7eUsNg33LZ_U-WwwkW6lENlFLMEaR2tKO83_mpb3Gkm44iT6cQcUp_6XuXPX_fjVFXdnxCAIKCBTI4L6349Kf79f5HbpOBTpC2wxkbQF04b5oxfeBgG2896cB1HYP9ShLAu78_BO4YZvrDNh0kftXg80ejwoN_vzvUUp0RQPnidJM2LPt5fHP3Jlpryq95mx28fkwZQFoztvVGzlLSJ9ByB9Vmk4xjWdOst7EtywIVMg_fgKPnY6pirdCArh6lYw93_N_v",
+      "summary": []
+    },
+    {
+      "id": "msg_0e6680a66549827a016af8fa1633b487d2921fc3a3f667671a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0066\n\n## Episode annotation\n\n- Language task: Pick up the stuffed animal and place it in the box.\n- Success label: failure\n- Outcome evidence: The stuffed animal starts on the table beside the empty box (frame 0, external and wrist). The robot approaches and operates its gripper, but the animal remains on the table after the attempted lift (frames 845\u2013858, external and wrist). At frame 1072, external still shows the animal outside the box, while wrist shows the open gripper near its head; no completed pickup or placement is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 149 | Yes |\n| 149 | 850 | No |\n| 850 | 920 | Yes |\n| 920 | 1073 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-149\n- Categories: task_not_attempted\n- Explanation: The arm and open gripper remain stationary for approximately ten seconds, without approaching or acquiring the animal (frames 0, 75 and 148, external and wrist). This sustained initial inactivity makes no visible task progress; movement begins at frame 149.\n- Recovery: Begin a controlled approach and align the open fingers around a graspable portion of the animal; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: Only progress is delayed; neither camera shows damage or disturbance to the scene during this interval.\n- Resetability: immediate\n- Resetability evidence: The animal and box remain in their initial usable positions, so no environmental reset is needed.\n\n### Failure 2\n\n- Frames: 850-920\n- Categories: grasp\n- Explanation: Following finger closure near the animal at frames 845\u2013849, the gripper rises away without lifting it at frames 850\u2013858; external shows the animal remaining on the table and wrist shows separation from the closed fingers. The robot then holds this unsuccessful position through frame 919 rather than transporting the animal.\n- Recovery: Reopen the gripper, realign around a substantial portion of the animal, close securely, and verify retention with a small controlled lift before moving toward the box; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The failed acquisition leaves the soft animal on the tabletop, with no visible damage, spill, or harmful collision.\n- Resetability: immediate\n- Resetability evidence: The animal remains accessible on the table and the box remains usable; another grasp can be attempted without scene resetting."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 129807,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 715,
+    "output_tokens_details": {
+      "reasoning_tokens": 178
+    },
+    "total_tokens": 130522
+  },
+  "user": null,
+  "metadata": {}
+}

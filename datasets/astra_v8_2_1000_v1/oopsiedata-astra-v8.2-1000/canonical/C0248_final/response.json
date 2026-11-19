@@ -1,0 +1,116 @@
+{
+  "id": "resp_0d4800ddb8036b6b016af9060964ec87d19d072dcc57465147",
+  "object": "response",
+  "created_at": 1794704909,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794704925,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0d4800ddb8036b6b016af90613fb9887d18479678abeca1890",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QYgtSkS3_mOleI1sXYD9sXGlqP47zfR1KiW6Nob7jw-9Urs3NMYS4c_bITmFKiXw4FIivxfEe_hcjiJ6MT9wTOfck-x1xJV-7bKlfRAB0T7HMoyXJ2BRrmPJP8pDkHXnXRSANBr0xtX07c8AP5lAyVRUquVbpsWM3gsGiriqz9h-wwuU9sfo8TCLlf8BjpiVTm2iT6oSbtn4011HWacT7n3TZAdcb3b4J1hlVtrPVNytV8fEN4PnNixrHm0Ojs6ihcL_HdlTQJCnRnnEFhFDTax6tcMe0ZLn2MXMEbg0ezdL0GnQ9XDERNLIHHlLPsPL5ZEErtkn-KJqzPvM2-u1I_4PNo4DbrxP_rbaf4yillpjOEz77EpuZTncCCyJxNjNvJl99Z5FHIkcRXZQ7yhVl1wmLkeAj6zy2mGwH_-JWiaXELLk5deMqk-K-tIbWhiMi8VqmI8AJAinbjcLfM-H2hkoJ_f5jjb-XvaJAc9sZnhCAwG-z04Af5SzJoqiTgWVR_77TqKUZeY75dqzM3E6HXQ5_KguKlLz89vDsTn07d0_GUXCK_F_Z4brWuhEbVLioEcC5UdMWWKu5qJFFu3fPZaMNnJ4955taB3Yo4H03WP8IJJJXGFrvdggtyUANtBJwg1m6Y8A7yTKUrWxu2OLubCiNIv0AFFbkVKcEY_2B1sIxUdqiMxG3OSb7TwwG4KGo7k8_PPwDbIjeb0I1koNQPV4Q4bmdhcCCGx9zRaiUb6pOgZJS3g5H_xgLhU8YAYzbZEcSj6WaA20KNonWHLgCN19MQ9gEdUsmL3yRgsPcOkE5mBgi2ynBvbsn_TyXBZKiLQuUjuHt_YosHDTxTt1fLOARz-T8MXA7Ci8S93k8F_v6tb5mkMgfEmv4o5FK17Oe3g0qJuFiw6Ntx7G50o7LYbFpLO_22bd31Jl7wUUcXKXqzGeB_Z6OtR3KNovwMX9hIN3qq7RtX394FYIMHpxAzEbQTP23VU79_tznZ3ErTcLgC4mvDYL5odNbWKwZfLrxYmW6g5ZwkOt36UnqjMA3CWXXiDS6ug67rfnjcoGtuoLoaFvBmI1N351pGUlm24LZky-hf2TXlRsDA1G2O1T5DnD9m3WFOmigMRuPBwCleNut71MvyokB1w_7Gr4ziZ_oMke2gddx5dAgxbl82VkR3vDXQ8siVWSv4XWoe9XAJVKSrfufxWXfBPD9nZLEjewgtKFDA_djHyE2rOMtpGHBRpExoPbP8xOvL5YBiaJ-c6maxv30kCLR3fqEkZ97dKWeAhx0N4xAUMGSrC0ZXPTcR-tf0B-D9sI3Dyg7-sbOVYjQx02F0OpiXck1AxXGrbhkZvjHp-NLdHy_5J3NbXpK86DGq4LZrKZNbuQvBVF8a-3_c0qBf2zcWcygqZhHm6XQOxvaq91MNbZTWSUc3P0Z7r1OjGYqTwFJf1o-HA8cc_mXjFYUOA7QUoMO8JrdauEMqLaMer9UuXfw9KcTKL2bjUiExveB96Xdlef1eQc1gG8QihsSxH07xgDdWSFw0Ktc4MXFBUwl76Q11WtdzTHyxzNYSq4CpAEbl5DnfnOB18miVypg5fvPXK19lENO86YCur7Q0uEAGGuPwcwzKDwCe1vMWR53fFB-QBmRf-NlPkxHZv5d0K0o5iAF74-1uNp2H0IwshVYDnppOVZdHoxtn8hFUOzSjFeZ13lOqL7xxPUMt7xBB0ECIbswvYo2tXwjO04yPbXOqTddLzCPbNre7npMaEAY9aqgC_u0Uh5dt5IPpZkKfD5feMbJkQSLCfu2u-3Q7Qz0_xemPSZMW3iiAvmx1JaUDAZ3fsI-wld9QP0ymVmoYgLzEkhk9xCVuE6gZGbRMlnCjNoi2ELNSUDKtBAs4fR-yYTi4oD2NonPOu4mqUG1TWRZ-81GNcHzlkGZJbNRhJoAvPUo9OmKRDze2JK2JpCZKPALE1NNEjQg53M4kOEDcANScB-zp-5Ltv56gTm3xH360twZXTcvv8-stajw097I9o0U7rfs4XeZti5GRM0JpQ0DlLY-fWDWuSnk9RBW_C1XARDotYMzz4Wsa0zK93g7LDbXztCFbGwiMaxEzIF6pvFClxneI9eBQs5P2d5-pVVy72waXYtT3CddJ5fQsCk8P5s62FhfuTDrSylQIfgoymbn-BV1KgpxI8s99dPOwoFok2Z_BPN-PFMTWk_fFxDKDLLdt4sDJf4rP1Z29OdRn48v_PZFKX5uhW3FArGTfkhOrEKeySIi3NQYuQfmOZMzoCCJH6p043nquCJbMTJdvUFnn2ynxB9-4eV4bODK8VSMs1OM3Nrdhj8DvCGA9vu-sn3PBU4ZLzxwN5SKqG0HOjSm4tCh4hLC4Y_vuZDZPPBnt_-rEl22FWfvk1r_usBW1gnjGZfuezk9eIZ4SK1MNzumZOByQeRotF-gzROA3zrES8ZV5BAzoaZGjZ1zY4D8KqQjld-04Nnetb2uSCmNiCkT3VeNwcJl4FQew0PgYN8ljtpZ_IsTq0xVgNT4lkoshAUVA1EOvt5QKpX-uHz-4kC1WHdVkdNH0gNraGaBoEbH0XEenaT_z6_xmvvxaXW43sc1Fl9C5d9poLGPmi7mrtQW1Qj_FElHJpK2zBBCTS2fIYu-XJ79cXtpdbZNmsPU4NAQe54aRGQseHjqT7OcbKe9NS4CCP_VQh0JIBxToj_4h4S2RYdrUqs_3foVbN5sahnnlmdcRQFI1lbpjKAfQ3zcZYM5fiWtdD5rWuoWAk1OEv_LIAogbEjKodX6tm_bW7PuxdDUqqdxGJdw8h2BG70BPX3qK69ztywjtMzouy4VcMRDxSQ1EIp8-cJkANdffCaY4iShIOYB1AM4YDQgpDEuzmoIY71jaDyKIsRqSfY_yRbmY8xzvjjl-8kPBmMre8ckx7oiMdfJNSMBbxp6jK_kTZpLMVuaxykrcQUwBNozddwYx0lRvT1MBqStu9HTZoxjsB79gcXRoFQHc2-OEJbwhkfZt64oQtdIQGdpKkRHQ9f6BnU_bM2HawpwkqN5MGqFxef43Ar0EFu5f2OHvtH_Z1mVMeeHTU_Oa_c-h3u_1XmccmNz3401n_oPCXmmsPqXKsheybqpL-SsohUaWzxs6cVNLwXKynBojhg3UgQSqwhcOUpTTASD61vxo1EIe7HIo8_2h0oxUXXkCxTR1DwLUK9tcsJ-k0HRM25ZRQTt-7aky5-lf60h5_gvrI2xWEwg9wmEsfQK2Ljg6s4_8lXVZwl6Xrlzn7f9XWE9tIHkINRCjOR--ymbT_DLjQCH4cMRx34H48WJqQCekMbBGMaDOBxNZ7UPJ__3_97zYcOwVmjQQ8CAO2e6QBtntSBnFmkywQ-506seB6fhw=",
+      "summary": []
+    },
+    {
+      "id": "msg_0d4800ddb8036b6b016af9061764e487d1b5e5e4aa60ae0ddb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0248\n\n## Episode annotation\n\n- Language task: move the spoon next to the knife\n- Success label: failure\n- Outcome evidence: The spoon begins beside the plate, separated from the knife (frame 0, left and wrist). Following a closing attempt, the gripper moves away while the spoon remains on the counter (frames 561\u2013617, left and wrist). Subsequent actions displace the plate rather than transfer the spoon (frames 737\u20131105, left). At frame 1199, left still shows the spoon beside the displaced plate; no completed placement next to the knife is visible. This includes an observed failed acquisition, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 561 | No |\n| 561 | 737 | Yes |\n| 737 | 1177 | Yes |\n| 1177 | 1200 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 561-737\n- Categories: grasp\n- Explanation: After closing near the spoon in frames 529\u2013560, the gripper lifts and moves away empty, leaving the spoon on the counter (frames 561\u2013617, left and wrist). It continues across the plate without the target and cycles its fingers over the plate (frames 641\u2013736, wrist), rather than completing the spoon transfer.\n- Recovery: Return to the spoon, align the fingers around an accessible part of its handle, and verify possession with a small lift before transporting it next to the knife; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The spoon remains on the countertop; no damage or meaningful damage risk is visible from the missed acquisition.\n- Resetability: immediate\n- Resetability evidence: The target remains accessible and no environmental intervention is required to retry the grasp.\n\n### Failure 2\n\n- Frames: 737-1177\n- Categories: collision\n- Explanation: The empty gripper remains against the unrelated plate and progressively shifts it across the counter instead of moving the spoon (frames 737, 793, 913, 1033 and 1105, left and wrist). The spoon remains outside the plate, and the plate displacement disrupts the scene without accomplishing the requested transfer.\n- Recovery: Lift clear of the plate and reassess the utensil positions before approaching the spoon again; restore the plate if needed for the next attempt. No human intervention is necessarily required.\n- Severity: low\n- Severity evidence: The plate is displaced but stays on the counter, with no visible breakage, spilling or other meaningful damage.\n- Resetability: minor_reset\n- Resetability evidence: Returning the displaced plate to its original position is a straightforward scene reset; no repair or difficult retrieval is visibly necessary."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 155837,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 722,
+    "output_tokens_details": {
+      "reasoning_tokens": 135
+    },
+    "total_tokens": 156559
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,120 @@
+{
+  "episode_id": "C0600",
+  "language_task": "Pick basketball and place in blue bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the robot lifts the basketball (frames 87\u2013116), drops it onto the table (117\u2013124), and later reacquires it (395\u2013408) but again drops it outside the bowl (489\u2013500). At frame 599 the basketball remains on the tabletop and the blue bowl is empty; this is visibly unsuccessful execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 117,
+      "failure": false
+    },
+    {
+      "start_frame": 117,
+      "end_frame": 125,
+      "failure": true
+    },
+    {
+      "start_frame": 125,
+      "end_frame": 169,
+      "failure": false
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 212,
+      "failure": true
+    },
+    {
+      "start_frame": 212,
+      "end_frame": 395,
+      "failure": false
+    },
+    {
+      "start_frame": 395,
+      "end_frame": 452,
+      "failure": true
+    },
+    {
+      "start_frame": 452,
+      "end_frame": 489,
+      "failure": false
+    },
+    {
+      "start_frame": 489,
+      "end_frame": 501,
+      "failure": true
+    },
+    {
+      "start_frame": 501,
+      "end_frame": 600,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 117,
+      "end_frame": 125,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the previously lifted basketball separates from the fingers at frame 117 and falls and bounces on the tabletop at frames 118\u2013124, rather than entering the blue bowl. The images establish loss of retention, but not its hidden cause.",
+      "recovery": "Track the ball until it settles, realign the fingers around it, and verify a stable grasp before transporting it over the bowl; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The ball lands on the clear tabletop without visible damage or disturbance to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains accessible on the table, allowing another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 212,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the ball moves out from beneath the closing gripper at frames 169\u2013178 and remains on the table during further unsuccessful finger movements; the gripper withdraws empty at frames 204\u2013211, confirming failed acquisition.",
+      "recovery": "Recenter the open fingers around the ball's current position, grasp without pushing it sideways, and verify retention with a small lift; human intervention is not required by the visible state.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition only displaces the ball slightly on the tabletop; no damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both target and bowl remain accessible and usable, with no reset needed before retrying."
+    },
+    {
+      "start_frame": 395,
+      "end_frame": 452,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After establishing another grasp, the robot carries the basketball toward the right edge of exterior_cam and away from the blue bowl at frames 395\u2013430, then continues holding it well away from the destination through frame 451. This sustained wrong-direction transport does not advance placement; a return toward the table begins at frame 452.",
+      "recovery": "Maintain the grasp and redirect the ball along a clear path toward the blue bowl, then lower it over the opening before release; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The ball remains held during this detour, and no collision or damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The environment remains intact; the robot can correct its transport path without an environmental reset."
+    },
+    {
+      "start_frame": 489,
+      "end_frame": 501,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the basketball leaves the gripper at frame 489 while still to the right of the bowl, then bounces and rolls on the tabletop through frame 500. The second lift therefore also ends without placement.",
+      "recovery": "Wait for the ball to settle, reacquire it with verified retention, and release only after alignment over the bowl; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The ball stays on the table and no damage or unintended object disturbance is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced ball is still accessible for another attempt without cleanup or replacement."
+    },
+    {
+      "start_frame": 501,
+      "end_frame": 600,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the second drop, exterior_cam shows the empty gripper remaining elevated and making small movements away from the ball at frames 501\u2013599, without a renewed approach or acquisition. The basketball remains outside the bowl throughout this sustained unproductive interval.",
+      "recovery": "Resume a task-directed approach to the settled basketball, acquire it securely, and transport it to the bowl; the images do not establish a need for human intervention.",
+      "severity": "low",
+      "severity_evidence": "The interval leaves the task unfinished but causes no visible damage or additional disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball and bowl remain on the usable tabletop; another attempt requires no environmental reset."
+    }
+  ]
+}

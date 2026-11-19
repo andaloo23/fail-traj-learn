@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0125",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven starts open (frame 0, image and left_ego_image). The robot raises the door partway at frames 57\u201370, but it swings back down at frames 71\u201375 rather than closing. The door remains visibly open through frame 141 in image, left_ego_image and wrist_image; this is a visibly unsuccessful closing attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 71,
+      "failure": false
+    },
+    {
+      "start_frame": 71,
+      "end_frame": 79,
+      "failure": true
+    },
+    {
+      "start_frame": 79,
+      "end_frame": 142,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 71,
+      "end_frame": 79,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After raising the door partway at frames 57\u201370, the robot fails to maintain its closing motion: the door swings downward at frames 71\u201375 and returns to its open position while the gripper moves away (image and left_ego_image). The reversal is also visible in wrist_image. The precise contact or release mechanism is unclear.",
+      "recovery": "Reposition at the door handle, establish controlled contact, and guide the door through its full closing arc before releasing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The door returns to its open position without visible damage or disturbance to surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains accessible and open, allowing another attempt without environmental resetting."
+    },
+    {
+      "start_frame": 79,
+      "end_frame": 142,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "From frame 79 through frame 141, the gripper remains nearly stationary beside the open oven without a renewed closing motion (image, left_ego_image and wrist_image). This sustained inactivity does not advance the unfinished task; the images do not establish its underlying cause.",
+      "recovery": "Resume a controlled approach to the handle and close the door while verifying its final position; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage or additional harmful scene change is visible during the stall.",
+      "resetability": "immediate",
+      "resetability_evidence": "No objects need restoring or retrieving; the unchanged open oven is ready for a renewed attempt."
+    }
+  ]
+}

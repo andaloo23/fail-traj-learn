@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0319",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 800\u20131000, the green can is transferred to the upper tray, but frames 1226\u20131282 show the pink can slipping away during its transfer. Later, frames 2300\u20132494 show the blue bowl moved into the upper tray rather than the right tray. At frame 2615, the blue bowl remains in the upper tray, the pink bowl remains on the table, and the right tray is empty. Thus the requested sorting visibly fails, rather than completion merely being unconfirmed. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1226,
+      "failure": false
+    },
+    {
+      "start_frame": 1226,
+      "end_frame": 1283,
+      "failure": true
+    },
+    {
+      "start_frame": 1283,
+      "end_frame": 1639,
+      "failure": false
+    },
+    {
+      "start_frame": 1639,
+      "end_frame": 1722,
+      "failure": true
+    },
+    {
+      "start_frame": 1722,
+      "end_frame": 2255,
+      "failure": false
+    },
+    {
+      "start_frame": 2255,
+      "end_frame": 2494,
+      "failure": true
+    },
+    {
+      "start_frame": 2494,
+      "end_frame": 2616,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1226,
+      "end_frame": 1283,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image frames 1226\u20131227, the pink can rotates downward away from the lifting gripper; by frames 1281\u20131282, it has settled outside the upper tray beside the blue bowl while the gripper withdraws without it. This establishes unsuccessful retention during transfer; the underlying cause is not visible.",
+      "recovery": "Re-localize the pink can and acquire it individually with clearance from the bowl and tray, then verify retention before moving it fully over the upper tray. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the tabletop with no visible spill or newly established damage; its crushed appearance was already present at frame 0.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced can remains accessible for another approach without environmental restoration or human intervention."
+    },
+    {
+      "start_frame": 1639,
+      "end_frame": 1722,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "During the crowded can interaction in base_image frames 1639\u20131721, the upper tray shifts and rotates and the adjacent blue bowl shifts left, as confirmed by comparison with frame 1700. These unintended displacements disrupt the arrangement rather than sorting the objects. The exact contact chain is occluded; upward withdrawal begins around frame 1722.",
+      "recovery": "Clear the tray rim and bowl, re-localize the displaced objects, and approach an individual can with adequate clearance before transferring it. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The tray and bowl remain upright on the table, with no visible spill, breakage, or meaningful damage risk established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The objects remain accessible and can be handled at their updated positions; restoring the tray's exact original pose is unnecessary for another attempt."
+    },
+    {
+      "start_frame": 2255,
+      "end_frame": 2494,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "Beginning around base_image frame 2255 and clearly visible by frame 2300, the robot moves the blue bowl together with the adjacent can toward the upper tray. Frames 2400\u20132493 show the bowl being left there, and frames 2494\u20132615 confirm that it remains in this incorrect destination. This is one continuous incorrect-sorting action; the partly occluded grip does not independently establish a grasp failure.",
+      "recovery": "Reacquire the blue bowl individually and place it in the right tray, then transfer the pink bowl there as well and verify that both cans are contained in the upper tray. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is incorrect sorting, with no visible spill, breakage, or newly established damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The misplaced bowl remains accessible in the upper tray and can be directly reacquired for corrective sorting without a human reset."
+    }
+  ]
+}

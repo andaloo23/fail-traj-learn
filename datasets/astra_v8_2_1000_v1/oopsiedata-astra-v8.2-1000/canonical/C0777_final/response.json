@@ -1,0 +1,116 @@
+{
+  "id": "resp_0271f638a873805b016af928b02e9087d1b14b8e272242b60e",
+  "object": "response",
+  "created_at": 1794713777,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713791,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0271f638a873805b016af928b4e7a087d1925a644bb0124296",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SjAPH7_lre6Yhpj0TSz89hCoybPDHfdk2pdjufZEghvoDkuDAKthvmvRFkTO7LmevqeTCU1JuX2OeNcJgLg5NMf1UaNlNSKQsQEMCWb3rzxfey7CPb0go5NNBgZEEeqZl1aP7yaObnSSnYiL0aDnH-yAJ4g2k7Iq_b-S1Co757M_ZbPCsJkw2ONk_utwZVxidxc3wdXHyU9qCc-oJalnlBX7dTJP2BPVxW0AtyG9wVW5HGW600na7kE0QtKzrtjDxcspTj3QK-jOamh3QJAglrfssUb55EEVG59O4jzeUYvweqybNTIP0ryEMKRBb6GU9w9cHn5qEJEOC48_ETOxKWQxCXyaQSS1OcdcJKR6mbdHSDdm2jJ2Uo5gZOrW6GNjQh0oLsURg60BvRvlGKjuYlT0lnLVCzf4yxhWCRiRQTYdGxNcsyY_7gyThyMnDxN5tT9oson8oyE4psaGmaQuDgeD7NmXZquphEviSkcW-nQFH3Onjg9BcSOjzv1rSM0UveC0HEOLxH5KbHq1OzvMxjQHN-V5V-midjcfH7JOHpQel6pG8KUP7eld7PFO8TMZ4iLSaJBJLk0X-QpkIynpCX6XubXI8F5uSBASGcP-6L-M450qNfVmgJcKo0F2-eoySQuqPZuDjEfgGJ5594cmQdlCZBip70wvFfm0y2eWtUCaVb1M29i4N1dTH1gD4oJkfjWmVk8_wAcOP9fb4Q43VTMn0KkmlqcK5WR7P4Ic4vQXEraBQkTp3aK8yBcUK1oUMDIYvr30UY1KHK1vNDiEBPExatG5Nx_TuodzAVVA_h0I4uRbPXGD8bw_QQX30NsHolJgA8W4bzFMu4p6UFHJD_aaHFNfneOQCleRu03ODoR3-GvgIBWmX8PfIrYD3lhdj56VhVo3__bJjJlVW9zfusNI66UBFC461XbDmvrr9XG5JtOdv7tPMDQo0EMkiOYneyIh9S0rbI7UZXI_97pWygOtsOhmjiD_FBOng-PdF50YCQ_22TzKYHgh8ZlZGL1PCK4t0p39BhMDuyBIySdfwlYtfoGLpS8Cz0Zwr7NXrc7o1lx8JGA-N7e6LloN_lne9q5emAfoQZxXhWtvQDx0e8iWLFkmJX21kVi_cAIQTNl4h74UT_ArCAZ8want6QobJGFCoX7RAtPkeYYpajvefn7XImq_9slvWwN_Y6LNAWAN2hExUfWXOh_qqB_XNdXP43k2JqVsQFhfh2yN80LvP0yjsToIdGw7hsVoXbSlwE_18pJ35TJDZ-8WyL2l4CStpSfsukM2KsBBvk3pQl4acLibr5VFfuGVjtYRxlP4X1frv9MxQNzFihFSlwT9iPZi-cbK0vArnTaMHj-h3CoXYMvNjA3wFt3rooDsK9td-AlcX6C21QgGuxshtZ6El8g3XcJRqytFEiCKgsFCA125aSQO3tHPDebDCQ556K8BlYyhjQ4xD-j577M_PtQHF7aOfXulJdTh3c4ELAEwwMB9dHIiSivgEvLwDQnF_YM3ZvTopq0aSwi34Abx2Bu-8nvi0R1i39zEfk55k-SgIF8M41ipZiGWoGzD4CqR-SisxZpAJY9dzf9kIa4H9mUdOL8SPURHuGijGBeuACuKdH0bnQoruNTXc2p5057TcLrrnDyhl6AqCwsbaJTvpvPmq7SCd0gNgeBQCfJpSYIxhwWqsnwu5oCwy65wde-jJ1EkSZ16_HjILTjd2VHuis3uNJ2dWe2nGuxEyQPrQk9bNQtznlIwXDu63BEEC6HkxSMFLsIY39D_4ZBggXLzWe0on5SYPGVYQsXejKjVl76jOAEyClA5IsoCfhbrM8TwUVn6At_trJaGbDLNvxMb7j-0QbIK8jq5G8ALgEKy6L8I37ejJvkrkMcabgb0jLD6cCG-vgOpKn6SSJd-ntPPmJjdo_LBaNowfkiaxJ25F6ac_-yYsc87lI5jIayjBIKSZGk-jiceytiiM5PZyE-h8EBJqmfXHg_bwnAOO6BHcIT9g0jdajk-mjQalyQJCvGHUjXXZ57UqV1V6qkb28-7i88a09Mup-Wnd3q4DRpS6qBdKKJBjxbgdJ5AsnW64v-8qjCc4kRPeM5-r776DHdeu8ZFWdnPtdyP0OX7KNJeXo-KIPGQ-fITlz1CPB1uq87HbS5cO25giM4_js4FskCtcSJPBd7F5z8C2DEYGi-4bgLxo2oPmsbgUN7VyJpWNgB0eQqzZWrP6_90FztTDzAFQMEtXJ_RGJ72fGHEnI8kkPerX4zhBApyyNu0zk9CJiAbD4opisVe-0lGMzWGmJv9V-gOq_z1_nfkMbC5e_msDxv2ss6BG8Mq3D1V92BYh1EucOSVfxAm3H_O7R82XJ1JEgWPDilWbj-JgBpafirqAAstPhASAzaZgrtxo4by5bHOe1CuHVaNNCoerDAKXS42vZUxPa0UGAZN7PDdJjiSwT6MNTqZDxQk_KltREMW-sBNb6inxKH6Flix--lFT-U6-0CE6iNz2n5Wopxx8fdBBuvSsXcSvAAeSt3zKgpnh6DfeJUSqgG4HCzn-FeJP858TCpfkQcT5lLjSuFTdmRVEwvGbDhV6eMf9plxHTCu6f3cCzmOr5ytjhEZNchquZFwYiuV_BZRhyAcruH-5fkyb0m-ICvzl2KnmDQ_xjhf3EmlWS4fVhZcQcaohaLytFNqfkJ5EypDIa1UQu8JVlLlC1DoqC_QXXBeABglyqkcCO9FvJpaN2v9mL8bScBZaiD3S49fG7bgVXdLk8vHAR5Y8ktWUQM0ZCDOXPjwzae1Ke7vcmp2uSE8BXGhfggGN7oGYmxMvCX_obS_Fe4znMui_uImCrZ9w2Pb4a3iRbTNr3ht_Fe9j83Tn3Odskw53q1sXevZELR8CbPakPXAHI4KWuWXe5gYiRYsw==",
+      "summary": []
+    },
+    {
+      "id": "msg_0271f638a873805b016af928b770d087d1b58f0a030515518a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0777\n\n## Episode annotation\n\n- Language task: stack the cups\n- Success label: failure\n- Outcome evidence: Three separate upright cups are visible at frame 0 in head. The left gripper lifts one cup and brings it above another (frames 140\u2013179, head and left_wrist), but its release produces tumbling rather than a stack (frames 182\u2013205). The right gripper subsequently lifts another cup, then releases it beside/against the fallen cup (frames 270\u2013315, head and right_wrist). At frame 333, head shows the cups still separate, with two lying on their sides; this is a visibly failed stacking attempt, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 180 | No |\n| 180 | 210 | Yes |\n| 210 | 299 | No |\n| 299 | 334 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 180-210\n- Categories: manipulation\n- Explanation: The left gripper opens while the transported cup is above the receiving cup (frames 180\u2013182, head and left_wrist). Instead of nesting, the released cup tips across the receiving cup and tumbles away, disturbing the receiving cup as well (frames 183\u2013205, head, left_wrist and right_wrist). No stack forms; the receiving cup subsequently falls onto its side.\n- Recovery: Reacquire and upright the displaced cups, then align a held cup concentrically with an upright receiving cup and lower it until seated before releasing; human intervention is not inherently needed.\n- Severity: low\n- Severity evidence: The cups tumble on the tabletop without visible breakage, spilled contents, or damage to surrounding objects.\n- Resetability: minor_reset\n- Resetability evidence: The displaced cups remain accessible on the table; straightforward repositioning and uprighting can restore a valid stacking setup.\n\n### Failure 2\n\n- Frames: 299-334\n- Categories: manipulation\n- Explanation: After successfully lifting the right-side cup, the robot lowers it toward the cup lying horizontally rather than establishing a stable nested placement (frames 299\u2013309, head and right_wrist). It opens the gripper at frames 310\u2013312; the released cup tips and rolls away while the horizontal cup is also displaced (frames 314\u2013333, head and both wrist cameras). This second placement again fails to create a stack.\n- Recovery: Retrieve and upright the fallen cups before retrying; retain control of the next cup until it is visibly seated inside an upright receiving cup. Human intervention is not required by the visible state.\n- Severity: low\n- Severity evidence: Two cups roll or slide across the tabletop, but no damage or spill is visible, and neither is shown falling off the table.\n- Resetability: minor_reset\n- Resetability evidence: The cups need simple retrieval and uprighting on the accessible tabletop; no repair or substantial environmental reset is visibly necessary."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 59837,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 725,
+    "output_tokens_details": {
+      "reasoning_tokens": 92
+    },
+    "total_tokens": 60562
+  },
+  "user": null,
+  "metadata": {}
+}

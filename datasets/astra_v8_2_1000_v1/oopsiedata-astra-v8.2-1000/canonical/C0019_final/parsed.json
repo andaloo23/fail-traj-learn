@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0019",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The robot closes its gripper around the wooden spoon at frames 57\u201364 in wrist_image, then lifts and transports it toward the open drawer at frames 70\u2013110 in image and left_ego_image. At frames 138\u2013141 in wrist_image, the gripper releases the spoon into the drawer; frames 142\u2013150 show it resting inside as the empty gripper withdraws. No failed acquisition, unintended object disturbance, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 167,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

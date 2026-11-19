@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0130",
+  "language_task": "Pick up the rigid object and place it in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the orange rigid object starts on the countertop (frame 0), is acquired and lifted by the gripper (frames 90\u2013110), and is carried toward the sink (frames 124\u2013170). The gripper opens over the basin (frames 173\u2013175), and the object settles inside the sink (frames 176\u2013182), remaining there as the robot withdraws (frames 192\u2013240). No failed acquisition, unintended collision, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 252,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

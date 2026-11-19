@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0173",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the upper drawer but repeatedly closes and withdraws its gripper without acquiring the handle (wrist_image, frames 90\u2013110, 129\u2013150, 170\u2013190, 209\u2013230 and 271\u2013290). The drawers remain closed in left_ego_image through frame 399. This is a visibly unsuccessful acquisition sequence, not merely unconfirmed completion; no drawer opening or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 90,
+      "failure": false
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 291,
+      "failure": true
+    },
+    {
+      "start_frame": 291,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 90,
+      "end_frame": 291,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_image, the fingers repeatedly close beside or above the silver handle rather than securely around it, then withdraw empty while the handle stays in place; examples occur at frames 90\u2013110, 129\u2013150, 170\u2013190, 209\u2013230 and 271\u2013290. These repeated near-handle acquisition misses never produce drawer motion, as corroborated by left_ego_image. No established handle possession is visible.",
+      "recovery": "Open the gripper, reposition to straddle the accessible part of the handle with sufficient insertion depth, verify acquisition, and then pull along the drawer's travel direction; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The attempts fail to open the drawer, but left_ego_image and image show no visible damage, cabinet displacement or disturbance of nearby objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and surrounding scene remain in their original usable state; another aligned acquisition attempt needs no environmental reset."
+    },
+    {
+      "start_frame": 291,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the last empty withdrawal, the open gripper remains near the cabinet without another acquisition or pull for the remainder of the episode, with only small pose changes (wrist_image, frames 291, 320, 350 and 399). The sustained lack of productive action leaves the drawer closed in left_ego_image.",
+      "recovery": "Resume a deliberately realigned handle acquisition and controlled pull rather than continuing to hover; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is prolonged noncompletion only; no damage or concrete damaging interaction is shown during this interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "Nothing in the environment needs restoring before another attempt; the cabinet remains upright and the drawer closed."
+    }
+  ]
+}

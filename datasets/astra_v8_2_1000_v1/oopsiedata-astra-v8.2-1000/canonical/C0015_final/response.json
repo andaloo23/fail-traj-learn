@@ -1,0 +1,116 @@
+{
+  "id": "resp_0df763a9ef5e3dac016af8f5d7ac6487d1b0e894f3122d70a0",
+  "object": "response",
+  "created_at": 1794700759,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794700765,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0df763a9ef5e3dac016af8f5d9a57487d1a56763240f9f3e54",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PXdmPxrL2d4luxKU5GfzOUYhj_vXVPpVzJhAAAcEv2Iy1HpbRPdf8yvF2gk5B3BPUmlB_n5jndQuW8xScBC2Ao0Z50_jjrNy37VCf_Dq8n_Ijrt95RmIC-hWXOergX6-i3UxnuU7lbwA2W3zvVzpaLwVn8iJ-rqfqZxl0MOmmoGRPAY7jy8WdXazrPLMX65RUInDkHjpIOh6TTgvw88Ksmtnu0U4paQTPkpFIB-HV0TyzLWHgCpKGU4rgSziI7cUMYUQmR9vZ2PuDSDEbxu0MIKFBXbtir4t0WqVXpM2ovO8Vkc1bn2rOZKREK7N8w6hycg12zH0dcX3qhxmEzK8ojAIEngxH399yGwiLbJJ_gRxX4G4vF7Gu2qFgfBH2z1gmpZ7asbjFXmjtemEAEki1Lf7sw4NTNvsQ4drX2yi4MwBZAmTeLR2uQDZaMfx-hxDmZU3TpXbwp-bEStEpkDvRaHoWQHIAV7KVoIoY7QndCfCFwslcjjH2puPivFzvLdGxJVOwvlIOedL-fw5BPRFU-fKSLB3jbPUAlt9EBbhLgHBa_zDRovrQdj-ff8GlmK-HkG2EvxOd1DyTjkz6tRVel6OAAOkGv9dyWJMr1nXjzhpJzu0BMoz1_rQebbf_akWcSOfOIh-i2RvCMnyBmaJcRrV908pgBDcQPZoabiThPRoTPVoO2a_kWcCh8Gf7DS4p--tT083fF9HLrsuCE-7-Got_VkMjtS_ISYoCrYYVw46G7A9B0ZJVcgm9wGjcGbzqQcgwGu5LL_udvFWX_E8z9uL2cXAjb9qEqo5NHOAby4pUP9ciRbgP3-lYApLXTzgaYGi3yHVl1q031CtSv34HvCnKr9NrpIIqYu-fPogfoXShCP2tWPnUVxjCI-ZUcbkC0aTzwanBctx02rxtAziyAquqZwL7j1eJHBfmCVe7mKF0_XrND4Uf8NuWJ_EuJnLk3EiVMdpbgpjzQuqRR8TbzLBBXGFcs3n1pfgWfqHIHzx8GLBMWW6BBE6AiqQ3ewmipA3tlYXI9rEorRdzCIZXMiOiKzYmByO59AoX93zYsrGCI6zLnJnXXp_kdMlx7BQxOyb_xz63to8N9AEdYo3c6t7f9umevQz3R0QUw2fXXavkt750jiklRMSVDDIYfo22VwoEnoZimCI6MPdE6-eoIGx6S-hnl0Zue4ye76MmNgm7v1FTW6VOsy9lqBd6zyTv2MoJ-Lp2EaQqj_iPC42CSfwhU9e4rbwccGc0e8HISLAwozUeMjIqq0V0y4k2zid1WA_HQ-GL9M29o9Xft9PDIqc12YMzlGavarZVQXN9G4eGJUgU0tHfP9kgIZUHNYWoDOAQPrt0Fgo95Mb6PY2Ax1LxbxmxjS8iWTjFxSEGnzqoZxcJxXh8SFCX8H4x9s_Ktwt4i60WjYrO4lcoO3RpRsp6bubwq8AY2TMFLu05ProXUp94Ga-C7NJKOqp_oee7GBX9sNwCLSTAjbwU49acSJZCnoUWUsv41yte4kquvvNnxbBPXJnm-LjnlglQtR-HF2hqjk8mRP6ntDObrO6QuNHw30aRhPAOnMVs39x5laVwCwEjdEg5HV8T92P8yOkyCgqm4QM5A5REajaNHpcj10rQwzJvM4yh8Alkc5j8IM2EB3NOnxTNwaCkVjQJDdWBcZQnMEiVDyEi4Kdus9RVPn842ASDjrOaBvpt8JlAslEk0nQOC2-9AYAGYBal7NbEcfAfTQtooOqmATzcJMppaAagwEnT8aghwz4A2ee-6n5Sp4QGME2_K4f3sK9ZIC07qXzR5f9qgAcf15ccbQoYxybcaDvdmxYyzm9lTJvVIe5r6YLccOU2MxkweSwy08-pCrMFyWuNk7cy5nUubGLuLyOjEbZHDvQbL5P0C4cuCa_GRjPbPylT-HESHfLH1_4eTfFmoItB1LnKD4lKsyW0jI9Yfk4MhcD6gb7jalm3Vvxf1fVpwxohljT5Fom-K3RLsF5k5IZrTL62j6lzvOxFzoEni319T_fsZMi9HTOVmbGbicrTjdLRMJIFpVR5xhCYvgBJUvdJW1B7TInQKFg8x5xeU9-XzBNq-sjNKP_uNnlzw5jtQgeDX5UyMlLKhNzADhb2KpuvmoCJoVqfmnVSJQ1UJWqGbg8qNy2Z3kqTLT8X3CfiyNMxHB4UO8R1SHdlalxQCa_CNtxWySGWYGZksDuDRJCnpKc_fRrnGSEdGOp6xvwm1wM6AfvsW7NCOMqomM",
+      "summary": []
+    },
+    {
+      "id": "msg_0df763a9ef5e3dac016af8f5da8d0887d19eee3da49b82a198",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0015\n\n## Episode annotation\n\n- Language task: put the corn in the pot\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the robot lifts the corn in frames 31\u201338 and carries it toward the pot in frames 49\u201366. After release, the corn falls outside the pot in frame 67 and rests on the tabletop in frames 68\u201369 while the pot remains empty. This is a visibly failed placement, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 67 | No |\n| 67 | 70 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 67-70\n- Categories: manipulation\n- Explanation: After established control and transport of the corn, the placement fails: right_shoulder_cam frame 67 shows the open gripper and corn falling outside the pot, and frames 68\u201369 show it resting on the table in front of the empty pot. The images do not establish the precise cause of the failed release placement.\n- Recovery: Reacquire the corn from the tabletop, align it fully inside the pot opening, lower it before releasing, and verify that it remains in the pot; no human intervention appears necessary.\n- Severity: low\n- Severity evidence: The corn lands on the tabletop; no damage, spill, or disruption of unrelated objects is visible in right_shoulder_cam frames 67\u201369.\n- Resetability: immediate\n- Resetability evidence: The corn remains exposed on the tabletop and the pot remains upright and usable, allowing another acquisition and placement attempt without an environmental reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8046,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 399,
+    "output_tokens_details": {
+      "reasoning_tokens": 45
+    },
+    "total_tokens": 8445
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0072",
+  "language_task": "close the drawer",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, frame 0 shows the red-fronted drawer extended with its interior exposed. The robot approaches and aligns with the drawer front in frames 1\u201312, then pushes it inward in frames 13\u201317. By frame 17, the drawer front is seated within the cabinet opening and the previously exposed interior is no longer visible. No failed attempt or unintended side effect is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 18,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

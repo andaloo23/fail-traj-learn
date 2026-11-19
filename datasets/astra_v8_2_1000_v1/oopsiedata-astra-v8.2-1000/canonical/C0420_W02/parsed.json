@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0420_W02",
+  "language_task": "unstack the boxes and put them in straight line",
+  "success_label": "failure",
+  "outcome_evidence": "In frames 350\u2013699, top shows the objects remaining separated in an unchanged, non-collinear arrangement; left and right show no discernible task-directed approach or acquisition. Completion is not observed, and sustained inactivity is visible rather than a failed grasp attempt. No stack is clearly visible in this window, leaving the unstacking component ambiguous; the supplied task is retained. This outcome is provisional because earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 350\u2013699, left and right show the grippers staying away from the boxes without discernible approach, contact, or acquisition, while top shows unchanged object positions. This approximately 11.6-second period of sustained inactivity does not advance the requested arrangement. Context frames 348\u2013349 show the same state, supporting continuity across the starting boundary; inactivity may continue beyond frame 699, but no hidden cause or abnormal termination is established.",
+      "recovery": "Begin a controlled approach to an accessible box, acquire it, and place it along a chosen straight line; repeat for the remaining boxes, separating any actual stacks first. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; frames 350\u2013699 show no object disturbance, damage, or concrete risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The objects and workspace remain unchanged and available for another attempt, with no visible need for environmental resetting or human intervention."
+    }
+  ]
+}

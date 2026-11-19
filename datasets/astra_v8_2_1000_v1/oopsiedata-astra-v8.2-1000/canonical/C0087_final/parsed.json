@@ -1,0 +1,34 @@
+{
+  "episode_id": "C0087",
+  "language_task": "put the sushi in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "The orange-and-white sushi remains on the table throughout, including frames 105, 177 and 255 in camera left. Instead, the robot closes near the yellow-and-mint cone-shaped object, retreats empty, and later picks up the wooden letter block. Frames 225\u2013255 in cameras wrist and left show the block transported to and released into the pot. This is visible wrong-object behavior, not merely unconfirmed sushi placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 48,
+      "failure": false
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 256,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 48,
+      "end_frame": 256,
+      "categories": [
+        "sequencing_semantic",
+        "grasp"
+      ],
+      "explanation": "From frame 48, camera wrist shows the gripper aligning with the yellow-and-mint cone-shaped object rather than the orange-and-white sushi beside it. It closes near the cone at frames 105\u2013112, then withdraws empty at frames 113\u2013125 while both objects remain on the table in camera left, establishing failed acquisition. The robot continues to the pot and opens its empty gripper at frame 177, then approaches and grasps the unrelated wooden letter block at frames 200\u2013225. Frames 235\u2013255 in cameras left and wrist show it carrying that block to the pot and releasing it inside, without moving the sushi. These actions form a continuous task-inconsistent sequence without visible recovery toward the intended object.",
+      "recovery": "Remove the misplaced block from the pot and return it to a clear table location, then identify and grasp the orange-and-white sushi, verify possession, and place it in the pot. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The sushi task remains incomplete and an unrelated block is misplaced; no damage, spill or meaningful damage risk is visible in cameras left and wrist through frame 255.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The block must be retrieved from the open, accessible pot and returned to the table; this is a straightforward reset, with no repair or difficult retrieval visibly necessary."
+    }
+  ]
+}

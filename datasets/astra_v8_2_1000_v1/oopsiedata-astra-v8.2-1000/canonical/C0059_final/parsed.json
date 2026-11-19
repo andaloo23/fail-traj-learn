@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0059",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is closed at frame 0 in left_ego_image. The robot approaches its upper front area during frames 7\u201374 and makes small positional adjustments through frame 112, visible in image and wrist_image, but no door-opening motion occurs. Frames 113\u2013399 show sustained inactivity with the door still closed in left_ego_image. The task is visibly unachieved; a secure handle grasp or failed pulling attempt is not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 113,
+      "failure": false
+    },
+    {
+      "start_frame": 113,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 113,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the oven, the robot remains essentially stationary near its upper front area from frame 113 through frame 399, as seen in image and wrist_image. The door remains closed throughout in left_ego_image, so this sustained stall does not advance the task. The images do not establish handle possession or a mechanical cause.",
+      "recovery": "Resume by locating the handle, aligning the gripper, establishing a secure grasp, and pulling along the door\u2019s opening path while checking for door movement; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but frames 113\u2013399 show no damage, displaced objects, or concrete risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains closed and the surrounding scene is unchanged; another attempt can begin without an environmental reset or human intervention."
+    }
+  ]
+}

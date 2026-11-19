@@ -1,0 +1,116 @@
+{
+  "id": "resp_0fbdd44a33330868016afbe57d07f887d19901cdd276e32b15",
+  "object": "response",
+  "created_at": 1794893182,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794893192,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fbdd44a33330868016afbe5819b0487d18919e19b0038a3ec",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--WJrt21kpcntrpafDhwwG5vcoCb7OkQgzTpympSPBgE8Z5pnKJJfPfYezw97l4KaBOFJqpyT3wNa43rpfV4Xde7mGZkx83V8PLHKJ1gGKIhdohJvrSCqAV6IjsYtuDgnPJyJxEUnx5nJCBaEZVx0_YNFH8itE2KCtclriXUS1gRgOOsEGUgPqZvm1Gn9nM11px82mALiJHM6cNpwAunGqV36KuPaxBdnw1WOCVv_IWscF4lzB37JMvQxqbs80j3NlKHR2GTcBvaWXroQ_DaAA5P-b85cfnOw5hFRCS6O1VGpgtHnymNi4VL71loy_MAByX68ZH58XTH9W647e_E_ntAuKRm1DEEaBYrs6_oVUtzc6Dy_ICS-puJrE1ae7VtfgB1fz4TTFWK1QdKYsvCydWC2JG7c4mvDA0Q5KbxzfSlIm0RGJw2MB6uRpL5_Fou9Q0AGhmJ2Tsr9Wkt5OMkxq-AiyRN6E3da-YIdWE85ehXkISiXTxO327j6iow99cjjDHlNmVb17VrsOnQpKwP_rCniD7edjwVHwkCMhmhyW3KUF6d1dl5IvKKHJu4LsxU5Djo8hte3oTJEEUkSQtyigrEuCWsUnB5Fo7qOYE93WW0wG2uY09KmvBeAy-FXz67K6vl6iVrM0uWD1VinEli2rcI-tWyHCNT-eozd4FT5IAjql5GLX0_34BcleadK6avg4czRAQ-xFgfBjtcDnoOUTvUp88ssVrSL0ir8gnZ1cPij5iIyB_EZAKyjlyG6zb6aI8jKuq_F7i-Zvf3cs8ARWq_JXqnNXqT8DPiWgp5u1aWvnYMbN6_FKiJAi2hvcGkRQdC5cZFnfXWCFsuqJKEhAtgejfMnEmRxTTZdlp0tmcl5SPJ1xiyFkh16z6M7kLsVqV0ru0qjY2kuRqxtdn1d9LeZmWGiZjgy_4AtcOLv_NvU_xXjTmWXuaLkqw1bx5z1jDjIPzlHebtigDH5_AXv8Z6WQwN0m3SEfg49xPo0I80L2OfFbWz_WZ6lNkmVwwppLDmzB1xGmAflBRq5IvgpWdnHQKmbAhtNegwCBc7Jjq1cupFC0_6pv6qCyFvW3LFNa7Ne32ZobhjlEGMdWyF2Y3GbXRVmL0wd29XqCk_W-baQxps7aw3a-BFOBV0rnKTzMfTWb_LLPCU4NfZeRw6jnnxr2x7r2QT2NWyzhmpceBfN8AuFrqQqEh4bDea74-JnGdT3QD92Kzj9PljQIHZNEnHYkdto6jtVDRDIEqN5mRAAFo1sUSKOMDj_zbSJm-0M_uGXjcngV1z62iDnC1-YgbSmSglwc4QsZUoU6JKMle0C8KoVcENyjklbKDdkV1DSc0L7szp1n5rgHphNheRRyssm_lHqSYaNW1dTKEp3OR_-r633zSkPCAsRM6YqfwtzRoluU7MJK0W4coO9GesGiCbT21BRLctyhmV0FGeyYu9mwjgd-18PS3qSHqH9DGK86A0-BgOlQuGtAXDCyopHgClWmYDkvGdJGr4hac8x273RnWswE77sJbrJkLQRebo8u11se77Xz4uPnNJb3JwVFNS4mKfWuieLSIZwIwrylv2vPGvo2D3jYC186gfTmdf5bBGpaeAstAvrJWUJzuU_HaHTr9enR3Ze-KoHziSavlTuLTQSeAE040Yy9NTmP_H-h_KRCbt8q6d9xY_lUuzkHlQfh0b3oL_DjZIQ00vuZo16q1C8QKmUdUy3L-TIKtrYikZ50YpZkYJuqhemYpdmnogZkC6teD5k-Iuqu2EfBlH_InOCHs5swA-mkhQ75Zn2F2dguljIkWitAng11mXLy6RkM229kZwFjSY83tYeQ8AXcCRX9tymH4GmRHhlN5D9BBHDDYdrIMKlG0gqIPXnpDbdCQ7hW924HBE3MhCCO2q6l602D6KxRzIdfEvsWIKGQ4dKgSxltY6nD-22H-ywZQzxqVmTOtJz5SodYbyk3718ckRPh1fCns9xPCC35srEfArMnvh0d86w0JoiekJX7FMOte4P9sSTDuAEc26HfivgtN51QFlZCyg01mB9YXECApjP8SrvuVph8XMJ6TcTt6wQcYlorjwAx6iJUgkKP_5H4-uPT5frJgSUtAVb4dyFcS2b60KV1onL8hKVRdQKm73VcTUzpHqnDfPbdq8rzX47lvZ5NwHzKaeKrqgVqw2jGtQlHmcmMAnwZTN_ek_zaNlW2tdsycRQJW1PDeZgRg_RYqNFTKW_jpsVvTWmum9LdiLxeKpNFYc3NNCUJqRZQbTTMD-8YnolVMH1KN1f8fuUgsJZzjI81DnlTwuFCQSmlwqZdqSx294tYgHmgMe_I1r6k0LmFNIPD9z-hopHWLYMke_c_s8pgx43pBg4nhFsY79A2kqWF_X9YA0tAgx8QtHNJ5JwOrGEwJFxRw2sa0-IdStwW2CX906B5lqJBhrdR21WaYyUoH-Xee7PxIy5oJJegbLGyc8poAdYKAhrwe0jhsgD8CStwO-ON1zTfW6IFDgoiciH2sS_GZ7nOYPF7x8P047Uo0gXDiNFhZ9ggK9dhUjwDJBp8EbN41NEmQcwKmEYWYYpjywihIbGespUtFog6x3alZYtnI0-ctfPkN5-gpFSF9OQ_yKR3bDYak0n1idi1WqP3rpAd1s8BTIuRMO74ACRpIF_897RFwyHXH-HmcoJZRt_onnx0U0FhkGGm1rcEynjg12Xv_iSKBqLr9EFLE1prVh_fcqqxnAA_rLvv2ACQX-ENiJgoYt5qw3rUmN-gbBy_MOxSheRa6d6qVEwilzs4hZG_E5LLEnk28sq9QVXjfIji2BEsWUp7Lej2OCSiffVWV8MsN24EDCESC2jrGMGF-unsMh5B1LEqW36j_7zpK8r_ozXBbTU-QtB3PnkselCorD6d8m1wKYeDAV3rhzcDIZROc5vAOIqHYmg3KYzYrjKV5AYX0DaBiDUNQyhjffhJa-AoSLNlMplT74vcffzfb4yEiLh5ZsLNPUdFFw8nbPJUFlphgJdpIh0jRvBafK5HmjE6ZoPi-8TpfEw_1pA7K7A1MFAhzHaD2-XUbGhOFsxCeeVBY9RN9YnQaUM5r4STkX9CsTD1YCQg-AfLWpdEy4P5b2AHLfEVHX9OZOGylY7LCuKFp2t_VzIy1m1d2n9xaBbirji2NiG9AXXKRljuG_NsZZoKrMDMpswoMT8nqrYBWP_JFZ-fZ_TuvIy0BqfoHeXm-QLwF3FMQlVoHFTM2w7njLLd8p8NbdXM72MxlWI4LgkP0CV-IblnJXhx71ouv311wocwZ7jlhOXMQLsUN95JtnS7xYBfbs_YhEm6EutaUNtV6pSbKENQli1S5oEaNodr-Qk55CmbVQDAMSCCWb8E3EXszbPnu2xkzF1cnAcdFPwA3EG2QzQUJ2",
+      "summary": []
+    },
+    {
+      "id": "msg_0fbdd44a33330868016afbe58367ec87d1a420d46183ae15c5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0889_W03\n\n## Episode annotation\n\n- Language task: Place the toys on the plate with no collisions.\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window: wrist_cam at frames 737\u2013760 shows the beige toy resting partly over the plate rim after the gripper opens, while overhead_cam at frames 800 and 1049 shows other toys still on the table. The robot approaches those toys but does not visibly complete another placement. The supplied images do not independently establish continuation of the preceding prediction's failed grasp: the beige toy is visibly at the plate rim, and its earlier acquisition is outside the available context. No unwanted collision is clearly established. Earlier and later execution are unavailable; this is a provisional window outcome, not evidence of episode termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 700 | 934 | No |\n| 934 | 1050 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 934-1050\n- Categories: task_not_attempted\n- Explanation: After approaching the remaining toys, the robot stays with its open gripper beside the pink toy without a discernible acquisition or transfer for approximately eight seconds. overhead_cam and wrist_cam at frames 934, 960, 990, 1020 and 1049 show only small positional adjustments, with the toy remaining beside rather than enclosed between the fingers. This sustained unproductive interval may continue beyond the window; later behavior is unavailable.\n- Recovery: Reassess the toy's position, align the open fingers around its body with clearance from the other toys, and perform a verified grasp and lift before transferring it to the plate; human intervention is not visibly required.\n- Severity: low\n- Severity evidence: The visible consequence is delay without observed damage, falling objects or a meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The toys remain accessible on the tabletop and the plate remains usable; no environmental reset or human intervention is visibly needed before resuming."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 45034,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 516,
+    "output_tokens_details": {
+      "reasoning_tokens": 83
+    },
+    "total_tokens": 45550
+  },
+  "user": null,
+  "metadata": {}
+}

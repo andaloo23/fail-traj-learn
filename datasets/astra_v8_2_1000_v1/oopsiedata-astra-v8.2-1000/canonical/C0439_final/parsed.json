@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0439",
+  "language_task": "carbon fiber layup on concave surface",
+  "success_label": "success",
+  "outcome_evidence": "In camera_0 and wrist_cam_0, the blue tool progresses along the carbon-fiber strip on the yellow concave form, from its starting end at frames 0\u201318 through the middle at frames 40\u201375 and toward the opposite end at frames 89\u2013118. By frames 133\u2013139, wrist_cam_0 shows the tool passing beyond the strip\u2019s end, while camera_0 shows the strip remaining laid along the form. The visible layup pass is completed without an observed failed attempt, displacement, or harmful side effect; internal adhesion quality cannot be assessed from these images.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 140,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

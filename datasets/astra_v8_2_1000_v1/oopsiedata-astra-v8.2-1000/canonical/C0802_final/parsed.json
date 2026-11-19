@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0802",
+  "language_task": "put the purple mug in the basket",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In wrist frames 121\u2013127, the gripper closes beside the purple/mauve mug without acquiring it, then reopens and realigns. A later grasp succeeds: exterior frames 208\u2013225 show the mug lifted off the table, while wrist confirms its retention. Exterior and wrist frames 273\u2013300 show the mug lowered into the blue basket; frames 301\u2013303 show the fingers opening and the mug settling inside. The task is completed after an unsuccessful initial grasp, with no visible damage or unrelated-object disturbance.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 121,
+      "failure": false
+    },
+    {
+      "start_frame": 121,
+      "end_frame": 128,
+      "failure": true
+    },
+    {
+      "start_frame": 128,
+      "end_frame": 304,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 121,
+      "end_frame": 128,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist frames 121\u2013127, the fingers finish closing beside the mug rather than securely around it; the mug remains outside the closed grasp. Exterior frames 121\u2013127 confirm that it remains on the table. The fingers reopen beginning at frame 128 for another alignment.",
+      "recovery": "Reopen the fingers, align them around a graspable portion of the mug, close securely, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The missed grasp delays acquisition, but the mug stays on the table with no visible damage, spill, or harmful disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "The mug and basket remain accessible in a usable scene; another grasp can be attempted without human resetting."
+    }
+  ]
+}

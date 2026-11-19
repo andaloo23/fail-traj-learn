@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0422",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray by frame 213, the blue bowl is released onto the right red tray by frame 282, and the pink bowl is released onto the blue bowl by frames 373\u2013378. Frame 423 confirms all four objects remain in their designated trays. However, the robot unintentionally displaces and rocks the pink bowl while transporting the green can (frames 68\u201374) and while acquiring the blue bowl (frames 225\u2013244).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 68,
+      "failure": false
+    },
+    {
+      "start_frame": 68,
+      "end_frame": 75,
+      "failure": true
+    },
+    {
+      "start_frame": 75,
+      "end_frame": 225,
+      "failure": false
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 245,
+      "failure": true
+    },
+    {
+      "start_frame": 245,
+      "end_frame": 424,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 68,
+      "end_frame": 75,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 68\u201374, the green can and gripper pass against the pink bowl during the can transfer, visibly shifting and tipping the bowl rather than placing it in its destination. The robot clears the bowl and resumes transport toward the upper tray at frame 75; subsequent bowl rocking is a consequence, not continued failing action.",
+      "recovery": "Lift the held can clear of the bowl before continuing to the upper tray, then locate the displaced bowl before its later pickup; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl rocks and shifts on the tabletop but remains accessible; no contents, breakage, or meaningful damage are visible in base_image frames 68\u2013100.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains on the table and settles upright, so the robot can continue from its updated position without environmental intervention."
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 245,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 225\u2013244, while the gripper aligns with and acquires the blue bowl, the robot also disturbs the adjacent pink bowl, pushing it left and tipping it markedly by frames 240\u2013243. This unintended contact does not advance placement of the pink bowl. At frame 245, the robot begins carrying the blue bowl clear toward the right tray.",
+      "recovery": "Clear the neighboring bowl with the arm and gripper before lifting the blue bowl, allow the pink bowl to settle, and update its pickup position; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl is displaced and rocks on the tabletop but does not fall off or visibly break; base_image frames 245\u2013287 show it settling upright.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced bowl remains reachable on the usable tabletop, permitting another task-directed pickup without a human reset."
+    }
+  ]
+}

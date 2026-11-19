@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W05",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, not a visibly failed attempt. In base_image, the gripper finishes acquiring the pink can near the tabletop (frames 1400\u20131530), then carries it upward toward the upper blue tray (frames 1540\u20131749), establishing possession through coordinated movement. At frame 1749, release into that tray is not confirmed; both bowls remain on the table and the right red tray is empty. No failed acquisition, drop, or harmful contact is established. Earlier context is limited to frames 1398\u20131399, and later execution is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0764_W07",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: task completion is not visible, rather than a clearly failed attempt. In base_image, frame 2100 shows the cans in the upper blue tray and both bowls outside the empty right red tray. Frames 2200\u20132340 show the gripper approaching and aligning at the blue bowl\u2019s left rim; frames 2350\u20132449 show the bowl shifting with the gripper as acquisition proceeds. At frame 2449 neither bowl has been placed in the right tray. No completed failed acquisition, drop, or harmful collision is established. Earlier context beyond the supplied preceding frames and later execution are unavailable, so eventual completion remains unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

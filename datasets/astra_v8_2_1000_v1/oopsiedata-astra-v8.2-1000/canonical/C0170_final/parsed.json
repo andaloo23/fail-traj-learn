@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0170",
+  "language_task": "Stack all the bowls on the table into the middle bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "Frame 0 (head) shows blue, middle pink, and orange bowls separately. The orange bowl is placed into the pink bowl by frames 133\u2013150 (head, right_wrist). The blue-bowl placement misses and destabilizes that stack at frames 225\u2013252 (head, left_wrist, right_wrist). At frame 383 (head), the blue bowl remains separate from the orange-in-pink stack, so the task is visibly incomplete following a failed placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 225,
+      "failure": false
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 254,
+      "failure": true
+    },
+    {
+      "start_frame": 254,
+      "end_frame": 317,
+      "failure": false
+    },
+    {
+      "start_frame": 317,
+      "end_frame": 330,
+      "failure": true
+    },
+    {
+      "start_frame": 330,
+      "end_frame": 384,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 225,
+      "end_frame": 254,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the blue bowl toward the stack, the robot releases it off-center rather than nesting it; frames 225\u2013234 (head, left_wrist, right_wrist) show the blue bowl beside the stack and the orange/pink pair tipping. The bowls continue rocking and separating through frame 253, defeating the placement. This follows established transport of the blue bowl at frames 194\u2013220.",
+      "recovery": "Wait for the bowls to settle, verify that the orange/pink stack is upright, then securely regrasp the blue bowl and lower it centrally into the stack before releasing; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The empty bowls rock and shift on the tabletop, but no breakage, spill, or meaningful damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "All bowls remain accessible on the table, and the orange/pink pair settles upright; an autonomous retry needs no environmental intervention."
+    },
+    {
+      "start_frame": 317,
+      "end_frame": 330,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the renewed blue-bowl acquisition attempt at frames 289\u2013316 (head, left_wrist), the left gripper lifts and withdraws empty at frames 317\u2013329 while the blue bowl remains on the table. This establishes unsuccessful acquisition rather than an unfinished finger-closing motion.",
+      "recovery": "Reopen the gripper, align its fingers across the blue bowl\u2019s rim, close securely, and verify that the bowl follows a short lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the bowl on the table without visible damage or disruption to unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blue bowl remains upright and reachable, allowing another grasp attempt without a human reset."
+    }
+  ]
+}

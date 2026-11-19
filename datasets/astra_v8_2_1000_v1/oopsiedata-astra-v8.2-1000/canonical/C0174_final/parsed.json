@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0174",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon is acquired and lifted clear of the table in frames 52\u201364 (wrist_left and wrist_right), then transferred between grippers in frames 95\u2013105 (ceiling, wrist_left and wrist_right). The robot lowers it into the blue box and releases it in frames 120\u2013135 (ceiling and wrist_right). Frames 140\u2013155 (ceiling) show the spoon remaining inside the box as the gripper withdraws. No failed acquisition, harmful collision, or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 156,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

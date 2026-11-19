@@ -1,0 +1,116 @@
+{
+  "id": "resp_038ea282920483f1016af90c7e4e2487d29c0d8cf657b62781",
+  "object": "response",
+  "created_at": 1794706558,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794706565,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_038ea282920483f1016af90c80da5c87d2b00d5bd0d22190b8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QyFqXtTE03NEhfvPDWyhTkm7mDwO5L1nBj-PJqT0TjFI5MNp3bEc-AxAydKt6sXFnciGN_5go_hHL7xG97bhcAgNo66HGdVBe6VffQ59Xm0eZG-xgY5l5yuhFMqVcdyVidB57CQU1I_xVqM4mbv8DF48BehGOxPFQXRIbarHLK4MbMVMR1Dcnn9_owVwH0lCXHNyGlTMzWcu67OFE_JA1065-Fg4Bl75xkbZOZJyok73HsiqsB2nPuNx6FbWjsU3bBNJmFmw6xVDDJsp1WzMs78Eghwmqk6PihtA048JxNfRuqZJdM9tCTvzdQYh_1ey4equLUnovgQ0rCgh8rBIJF08_C1KGM5qRnTQOiMajYuCYnk-aKpRiOfm1Os1mmaa5JrB3mUDTfEX5G8QS33I34JuJj_oZuEYlcWMlP_JG0-AjOo9YnO3aOLLvSKeKFXgYN9YaG3hYa-UQbk9WqmSNcs8tOTCjv4Gdc7EW5UFT3xsWpfHWuK7NU90P1EPGmgnBfOJFJvOG0e99lDfwTGr6q5J0XsqU36KKSkrYLxqIhHRCXJWl0BAa_6Yghgs46FfpY6MZX_wFrkH5IudNyvJeJv02QFfnHYs5svtely4IpMSRNFTkSP6ub9yGvCsyyF208d6Gp_kXA06gewDFmhWxFuqhplH9F8mgI00cHkRllzqEXSkyNk90oieO3nWm2ILSjT5XQ_jdboK1Ppltfr-d-iJUO-4mx1dPr6ynvcVyjF9bjpQ40nhpe9UWjJb1k1Q9EULNfIdZ3AUtVjdOWVdUzv1KLz_i0_r_JJluQ2TdsGv3thF1xxnoVpgpqqDtb66m4Lsk-0hXRUSyi57v5F3z6JfAklNsoUgDy7b31WNuA1LIdX5kWzE-X-Zg3dBNqmYTvkZJR_tKaH8oX9FME3psJLOoJqlY9PF6Bci9M-0aMNZCQ30vQ28OcAvOb_QYeG_qmUOZehIc5O_b9QYarzcqtHfuy8Qnf_OiKa_yT_9FphxJpqv1kAAQCjGOGL7bCV5SErs5wP6x0SjMZjOoIzJ4UQLiee28jLefpPCJYL_kX3KZTQiaXMw1rs-FLMf8L8O8ar3eV2TQkL4J33G_fdkOMJg2zxiNqDyb6laKp1Nj-Ex9w8w7mqQ289ENnDO0KOvCu9M2T8PBTEsW5DQ2aTP5oFWuY77mWb4u0jO2yE_ruN2HaZW9KAshLLY2VUWuPMSjj6N9uwQcCbfF2N4iNQ8gdlbvqqAM9RFG2Uyu4maVCHYcXqZXPqzruYMKBxWlX2FPe5bHj1NsvifiBxmBpXGHHvRcSa2fUr8vks_20MoICP0yqwymkX4Rz3sS9lFOP_m_CsigWhrSHDHdokER-NRxULJmewEUkrvtOxBZsl7S1kxjS-aCY2uz3dtZcYFb9wIbRhH0qCyzeBXmF8YY_6YbD8L2ys_L6PxPW3XNLCaL4xeF3dDKHAjbrJLKvyzJk5Rpy-HwzsErp5U4ItSyth99loD06HrMGdhKkmtm0tjrWCq6H7l-Jh6yDTl4x8vSJSfV4yfbsWcTwWszCIS45DiIc_dVpuTg5nakKum4IV5qPWCK3aOLD7dZZB98LTrezcd5uZU_-vReN9uaR8z5Ylgcck1kzouRGy-21-kmYOMlDzZu5otvacSrPAEDNO5p2FnS-oN4f3SzzIUKgiVtoRbVG6WMduJchZ52uMH0x1ZxKc7yY5cQbi5nQMfbhu1pSHjQwoY7lCY3nJDuUIuP2vojPLNUdVcYmRtX4cgU0z_59I1EAsnATVYy7BBxu52vN77Uj2s9ylp1ySxne3bUFyB5K0YE5TgQCnHK3EcQyKbB6K8fqkNqg94Xol4ZJvweBK_0WcUrhe4uXe_N4_XeGwhVUOPfjDWXSI26kKCMWxbAeMtZEBOP6-8U2FAMChYCYuu7REVXfHmlKWjChqkRNXcOiBTXWr9ynSQPXquT5yF_gL0KqUJX8MjnxZFgp2aZboA3hByEd1whvT3m6_1etYLRxOAdwApSrUJr5zdbPJ4_y-60kNOBwH8VxgAHBwzFGEWKpRyC4bS1twtwGCKHXCSeX6HWCVOj76oYd61GXvgfCJMtrBdPKqB8xYrlz4VodLzus27-DTNEbo9fRBRiU-yXyrSNLlxmSu__-H_yLcikjO6gOnrPJmOuP8NfkHsb_ObXSy9niAhJJHDDhVWpFf3833mCL7iXYWdwVxcUsIZkl_IU0I9T9gsBg7h9N45B84MCKzSjnEHy-lz19ZaXpP32r1eKyTh9dL0sPd_2vsLn3d6IPM_C8mud-Ii274XN3XQiFE3Gv_Rl19P7hDbcYUxAE_hF6rMwseouY_NR5qu1Dg5_8IsqDV6r5939FjpuE14aLjIv2I7r7WeoEiuGFlNODazO4lxqsvL-L785cVTv7Zol2CHJadX3O8L0uSkoFOJ9ul-_vDG7JiGmyPJCdct3Qi3b4nFF_WLe7YH3wRRJBQypnp5FdiAwepBtxA4C7TTUeAGvyg-u-rXy_RW5qORYVJwzhecUpZUtgMuDWU2KX5sFOuRw_7p-KeS_qGI3aTp3Dpo7yNOSUD9wOnK4H2fygRSv2GNC5HgMHgBVxiyOcagSTx75P6s-SWwvSUv-uj39gbc6Nr52HO-Ye-A5DHxTo9QBa7S77Ta86Uf1azq7DXC71hBqhPb8h3NywxoSxmDoF7OODWcOCDF1eLyzNugHKb_k8PY_J7v-MhXqYUR2Jx4PzwcnTSSd4BIbc077oiw-BM",
+      "summary": []
+    },
+    {
+      "id": "msg_038ea282920483f1016af90c830db087d28b4f7906e90f902d",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0324\n\n## Episode annotation\n\n- Language task: Close the oven.\n- Success label: success\n- Outcome evidence: The oven door is open in frame 0 in image and left_ego_image. The robot approaches and adjusts its gripper near the door before raising it through frames 120\u2013132, visible in image, left_ego_image and wrist_image. The door is upright against the oven front by frame 133 and remains closed through frame 156 as the gripper withdraws. No clearly failed acquisition, harmful collision or disturbance of unrelated objects is established; the earlier positioning motions do not independently establish a failed attempt.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 157 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 31414,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 263,
+    "output_tokens_details": {
+      "reasoning_tokens": 92
+    },
+    "total_tokens": 31677
+  },
+  "user": null,
+  "metadata": {}
+}

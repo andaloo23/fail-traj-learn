@@ -1,0 +1,116 @@
+{
+  "id": "resp_02a6c1f1ebdf917a016af91ce1b17c87d2b1087d3852c86cc2",
+  "object": "response",
+  "created_at": 1794710753,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794710761,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_02a6c1f1ebdf917a016af91ce5a06087d2828d476745d471dd",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RzqahOrgBZ8gFdPHqUWVD44Ig_pE3Log0WoJ6-L-Ey_lgK_E8V_1khSnxpG2FNi6xI-pVeSLWY_WvZ9vH6MfljPkcKQITA00R5FJVtVCyVdtUG3NNUKdnb04He-NMrf_SHCAG_2h9edbmyQhWVviKZYpiROln6p_0-QAswAowD9nbkEjfuhDm4oyDqu_XY6T1o-fKWC0Y_Gi5i6NTEkdHvuLaZB9aodkXXpa5LSLDNXTdOgzQGAV8OcHl0VNzUCKl9T_g19FLT0vMDctLQUqPeYnJt2PFCt3i_Ijy4TH-PXCoEIjdipeJZr6EFZwG4xDuB09o6gYKsY7irYQK5LcLUgQMUu5tOv-L-saW6avy-RV5JWIS4KkL7lwGp8Y_POMzB150GdWNXMBmEXzffb5LvyWxMtPE0VMlmf-SUzJg_omRLYdzpyynOWXdKnQ0163iMl26f4fG3LNJemQGXRG18JG8JK--W4UTrKROW0lHaqemGpMGJtVrBTqzaUvLFVKoWf5eSB1L8g7rabYCX7Ow-lM8MPHTUoxlq1fyhEwXGsEPXGAHjdC-T_d_VdnZKsHDYLUlkmio44YSO7wOdSYF-x2fs6dF0VL5A5Ji7-1pniYWxTye3fW6twim_BbbmvFgqnxcQOKA_hRHAflzoZMRITJ9byEGYM5xKmRMLCK2aHaWhWTE7sRf7w6Du3J3Y3f6ohSEvdmxmDcxtBhau0Osp6Gk6SB1J2FAQoCqNuwcyJVwXA1-8gz0pKXGrnvzMEeaRNHyk25HBkGCqPnOve_Aw_TEi93cI6zqS2A4hdVxl90exvnfIBHQN_Gnj4j3wxBwdzWI5n2EZUjXwkYNgNpU5wNdDGWYRgUjf53ZD1Gf1w04l8y4G1xqnieAHTrOXKDrgItOsGOkn1OIPX6u-5HM-g5qUU7SGKmLzqcwtt95xdbPATtqdvhHYNp6RkPH3uQOefJcvTM3FVXRMXP5UcioHYODf_YRPggGubfcB3Aj66d5F3Q9ngIXlD7ZnFNDyRUeWpjvWjBB1sqX6SW4GNCfSHWJvzijioeCFKTNS_jnbiRxvZJJdzPEiNUjBzTtXvxytDeroPKUQaRHwP8X5dP1ohwpQtviwfOzlGKDoz-M4lW--qF8584sYs5SuPTykaWz3-DpwPcc3NAPl4Q8XlGy6fKGBq8GuzhQWEC2CBuvk1IAsnz_JHitRiRlWIaCn0YAXW7f--lGZLh_uqgXsXQRIPnrpWgFEhoBbpsGz67c0cZaxnJN3-JhZv0GzpmCfQw_-vybXShO4MJikAWQymqA8W0F6eV5OWU4vgoZRhMT4KU30-n4DFSN17F5zLom3S4dbSEc4_iOS_iai6P201mXhzKFKmDKjzArT0twPAkhf6un8fvtOIUsJ2IbolGI1KbDPyeaJoNMsqL4i9dzkEyJfeIApr7xhRwbhkFeCveIJwIMNNCRw_xsE5dTY9QKCwGtUidARhgspo1SHQIDh1E9bBgM0vu17nycWW_bgUaMzVYZ7s29CC0Gd848fNoH1es2aIFLCjbTGoAWofnc-7GlCoZ5KR4naQmXSBGoYmv0XFBTe_IUIPCnF0nbNTsHU6B48Z386SyXvBItPSsWRDRNUhCS99Tm4AtFM-cPB3pfaDuCpDM9O2xmBTKMAkNWTxfs2RlvWOM5X0mvZva4YrU6idz7toq3aqJa95vnrPdNXs4pQXuiR2dyj9vCFupQGedhbYVYpCtYvRGozcQtJRjisCis84DhLkeCD0j_CRYiiut3RLWGvB88SFrdy-6w1N5VmLc1TSpvc26VXkM85vShZiE2jKcsRSYoIVpuVY2wtNfK9OZdeh3fYDbiH4XCFVLAOy00TbcoI0eyzvnJ8N6mfM39wc6JmRFtrIZMd3z2QBa9sw9rqslWt63CX7BjCnDPYaX3XQj57bdO1j1wnYXkotwNpjNsdS3CuWmWinaXdCUDJfJ1ZqwfAO7JDOO7lbpvRezgMPGGn9-kGTzJPTJIrFt030NffzIL8W_bC__ayhhFxCbk0L1adKduosfSjpO8I9YUIuqX9e4YhK2JmZId3Lu6OTjb7tjCJVNgdcN4UerLP_qDRJFlIvfDuUbl8NdtUEnO5M4cCtm5cQ2vLfv3cfNStEx-ACWOg7FdViFo25IoX2QLLMju8Z1d_1i1zwraYq_h30hSKJ6BJwIXKgFxsMn5AgeEvJzQ1ggoXYvs8wodXC57TmVSY4bW7gnBVy3np6KLhp6kXiEUM4XxG6isiReGGt4I7hSGsEt9_6cfDYeM9998wlInNN0GlLdnYi13owlez1VCyAMrk91SemaG5tBJbcPso5uQI6xn_nV0RFSq4=",
+      "summary": []
+    },
+    {
+      "id": "msg_02a6c1f1ebdf917a016af91ce6ebe087d2b2a0d40ccf5b9bb4",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0577\n\n## Episode annotation\n\n- Language task: Pour a bowl of M&Ms into a bowl of skittles.\n- Success label: failure\n- Outcome evidence: The blue bowl contains yellow M&M packets (right_wrist, frames 60\u2013100), and the green bowl contains red Skittles packets (left_wrist, frames 39\u201360). The robot lifts the blue bowl, transfers its support between grippers, and brings it over the green bowl (head and wrist views, frames 117\u2013210). Tilting transfers at least one yellow packet into the green bowl (left_wrist, frames 224\u2013245), but yellow packets remain in the blue bowl at frame 280. Full completion is therefore unconfirmed in the observed episode; this is a partial, unfinished pour rather than an established failed acquisition or visibly abandoned attempt. The scene contains packaged candies rather than loose candies.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 281 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 50679,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 58
+    },
+    "total_tokens": 50964
+  },
+  "user": null,
+  "metadata": {}
+}

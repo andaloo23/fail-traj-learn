@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0140_W06",
+  "language_task": "stack the bowls",
+  "success_label": "failure",
+  "outcome_evidence": "The bowls remain separate throughout this window: the turquoise bowl containing an orange object stays at the right gripper, while the pale bowl remains on the table (left, right and top, frames 1750, 1850 and 1999). Small initial adjustments do not lead to stacking, followed by sustained lack of progress. No failed placement, drop or damage is visible; completion is unconfirmed rather than a visibly failed stacking contact. This outcome is provisional for the supplied window; earlier execution beyond frames 1748\u20131749 is unavailable, and the window ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1795,
+      "failure": false
+    },
+    {
+      "start_frame": 1795,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1795,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial small bowl-position adjustments settle, the robot sustains essentially the same separated-bowl configuration for approximately 6.8 seconds without transporting either bowl into stacking alignment (right and top, frames 1795, 1850, 1900 and 1999). The left view changes gradually, but no acquisition or stacking progress accompanies it. This supports sustained stalling, not a grasp or placement failure; its hidden cause is unknown. Whether the stall continues beyond the window is unknown.",
+      "recovery": "Reassess both bowl positions and the held bowl's contents, then resume a clear stacking plan with a secure grasp and unobstructed nesting alignment; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed, incomplete stacking; the bowls remain upright and no damage, spill or harmful collision is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring reset is visible; the robot can resume from the existing separated-bowl configuration without human intervention."
+    }
+  ]
+}

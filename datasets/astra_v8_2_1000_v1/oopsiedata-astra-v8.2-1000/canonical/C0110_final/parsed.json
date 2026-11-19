@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0110",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the gripper approaches the blue cloth and closes at frames 0\u201314, but subsequently moves away without carrying it (frames 32\u201358). The cloth remains draped over a raised shape at frame 69; the yellow block is not directly visible. This is a visibly unsuccessful cloth-acquisition attempt, not merely an unconfirmed completion at the recording boundary.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 15,
+      "failure": false
+    },
+    {
+      "start_frame": 15,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 15,
+      "end_frame": 70,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing over the cloth at frames 12\u201314, the gripper begins withdrawing without lifting the cloth at frames 15\u201316 in right_shoulder_cam. It continues moving across and away from the cloth through frames 32\u201357, with only slight cloth displacement and no established retention. The visibly empty gripper opens at frame 58 and remains away from the still-draped cloth through frame 69; removal is not achieved.",
+      "recovery": "Reopen and reposition the gripper around an accessible cloth edge or fold, acquire the fabric, and verify that it lifts with the gripper before pulling it clear of the block. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The cloth remains on the tabletop with no visible tearing, object damage, or other harmful consequence in right_shoulder_cam through frame 69.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains accessible for another acquisition attempt; no environmental restoration or human reset is visibly necessary."
+    }
+  ]
+}

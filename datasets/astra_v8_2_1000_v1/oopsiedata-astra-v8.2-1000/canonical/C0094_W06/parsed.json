@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0094_W06",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this provisional window. At frames 1750, 1925, and 2099, aria and right_wrist show the right gripper remaining at the cup near the saucer without discernible placement, release, or withdrawal; left_wrist shows the other gripper open and stationary away from it. The approximately 11.6 seconds without visible progress establish sustained stalling, not a demonstrated failed grasp. Earlier pickup and handover and the later outcome are not visible.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1750\u20132099, aria and right_wrist show essentially unchanged cup and right-gripper positions, while left_wrist shows no useful movement of the open other gripper. This sustained inactivity does not advance the task. Context frames 1748\u20131749 show the same configuration, supporting continuity across the starting boundary; the stall's earlier onset and whether it continues beyond this window are unknown. No hidden cause or abnormal termination is established.",
+      "recovery": "Reassess cup possession and saucer alignment, then complete any necessary lowering and release only after confirming stable support on the saucer before withdrawing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed progress; no drop, spill, damage, or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring reset is visible; task-directed action can resume from the current configuration without human resetting."
+    }
+  ]
+}

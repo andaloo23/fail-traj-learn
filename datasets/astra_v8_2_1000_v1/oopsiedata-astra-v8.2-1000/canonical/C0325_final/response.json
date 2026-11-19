@@ -1,0 +1,116 @@
+{
+  "id": "resp_0bda11b29df5b6e6016af90c8d831487d19fd27f5a550a9930",
+  "object": "response",
+  "created_at": 1794706573,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794706585,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0bda11b29df5b6e6016af90c91265487d192211c98645c1b80",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QyaLqxZXJI8xxdNuR426VDGRzIQfpmZee4d5qAQiGxuVfmhyupw6WU5J3pUfusnncWJiatRZVvcucuK0BYFOtEtC47jWU8FERu7n8ZuyoYi9wDVJ-o-CO0eHyiLw0YuHDNRjMOrRwX8tXNU0ZoqqZyaz8TQWlzGtaQ8H5UfSek2rySgv8d0M4jglQDDVOZMOhZw-_wte5KlfyRFu4wLXTJ9XqEn0R4WBFtFrP8c6dbGj0l0lIxBGsl5Pl2xX66cdVusopvHbGuzA3LWwMWYVE-nVniJNc9twPecG7kZhL7bCu5xpAMvm_0UX5TIQ76kvtwSv8je5d66to3HGVpD_3LNPBuIZGHqiOb6balYPjuAOdt-ofyJcCXwkMJaPcJADzA6Iu-ToLGgRLE-whptyvotlCQ2kvDQmhdQVVHuCDG6jN1QOWAX3nJgyWu_xVw2xckwat38RdHVSfbr49Z1E2f15urI-zdkS-_LOsumLu3zIQmdNz5_NRYOBDqq5Lboz8mAgWVQKzyEyB36u1dGIVTjmqnMtww2ekvTsZTU9VuOUaOyAbvbuyMSb__8INFSLn3TxsmT1bUzty_CK5j472nt1smCkba2jsucuLWpkaE_gDCGFuiubWcyp5kkFA2Np1aLIdoy8pCHrm76nhp1wbd6sJeA3mwUsTXa_e0fgrX3mf65WRtvAmaGVMT4tjmQECkyfJj19BDG1uSaJBICqIJusu3t2zybuDcwDBuvKBDC1oM59XtmHqwgzGFxQoh-TsmJMejCMP_kl4DaJ1M3YGN9BFPLBjoxlhX121532jRcrPv1qMDstH58XwNNMZIFaN6YpVECGmz24r_VRpeEzO9Oi1zsf334VyvHO1O7Bk6_IwYhmxl1MPsa3NgS5azAawEUcYoIOE-5o0kM0gYZ-oXJcoYubG7aeoIol5PSkmldLiiturZdJzzFAjqulm_OkXUPINDI5hpoEJRX3mA_tp9T32EuYI28NGNORCJtmc1qDPsVZaFnRWGOgEZkkXWdpKKrOS6KDuAWNppaFtZOKjQn621_c-2VuxbpC1sZ2RVYzSoHO_eCz2ypEXpSIF56XhtUktn_4Og9j1YSe59RJJBwz4ZHarKIoRhxdgs11FO_zw2izGtaWmvoqvzq820RHEXz83-wBD2SzCdc16hyos5a75PhF46V-PGISj0yh9-c3GzRXQNxEz2SN2LeQgVubg0TZ53Ha_uv-oOeUMLs7GocjOJHZZDRygQsSRVWVfGho9MzPULDDKd_QLLu-UqWLbtsMHkTaRAE2jkWoBj-SsrrGFf2ZWL0yaXI6iZOxJ7gqY4jw1zFi2ET0LGDqYnSctHF9Dp_mTmjNDkB62ZMClChpq32BIlrhwAFgTghuQ1EQoxkycpx3H15y6Hv_IK0jgaAFIYgSJb1Luz3LQOWqzrYtLAY67iGV5Fzt2VeSSmeOr-zwLZr-N3ph5me2jLcIpXDKtdVfpHrJRT_eRWD7LDRbBsQ5ET9SwAe7lVHgRSZnA6MbUojj5eCUWq06uULY7uWnx1-tWE-9Jyd7OBmNdGHELhfUT2Xf6iEWvKUNQvm7J8jUcG0TrKaozZHy915-y0RBWRuiYHTcyrQfXG39CWNjmXqnbiEbquYpDOIQPLTqNzOQqbz8OTD1-IdWe78c79swQK7wUEHbgzpPbE6RmK03cxN6vEfOMrbMV39L0IILOEe2ECTT4bT1yQuS1WmkkPnjBSOOA_l297xSjsAGPzrD5XoqhvUbDy3d-XPd8MRLk8Z7vSUhYBpMb0hj8DeUwQEoYUXed2QYQfPJWewfi42Po6P5jKJhzxitwxYL3sUNGbGto1ZivSzcXpXMhRS3q1jEGxxoXqFANOsZqHYrxjrSbz2dwSuYSr0aPHk6Aw8KuBrJIO_3YUlJeoNJVGzs5olq_urv5vJoS00K-ScYwORFNrM4GMxxZVE1jn-SGe9UtZ1MHJzwclFivsUlDZ1kN0fqg1JTqo5B5jl4GdjfQWHZSCotjSYrIce4fGf_i3mHDmP8275cYlnJdMeKD4Zn8aN2wihELCN3mBICgTvKM--i_GdFD8z-l1IKStgMCfgCRtzrgia_ZP7Q3Lf-x8rYfFH58x9MR4cOYOdI1Z3sHylOzCLQau_AphW2bUD6q5yEzAk4eOLz4HBt8hWLfbhpsjsaS_YOiSCPPq1HetO-TXAka3fCR-Mm1sj0L6LtLD4I6u2jenSGUMvr0l-WxvBXZj-f69p0ytrBjcGU2COU9XyAdPX75RK2gB7a_4N8KakiPfh9AlUhl3V4dvZI6w8E_gOqNb1QpQhACkBqvGvzrhufrAroQ1hk-2NFrbGVjEsGqBUPLsyqn07qclYQj8hiDL2ebepobKC5BPWl5qQ00Sg4tow2UBhWB6xAcpbRB31nho6XfrCt4Vj-7LEnN_yjJYx3NDJuyWIQJi-0erz8pds-6Ip17Vobso0RgwyZ9O708Jzakb3xogBFLoI-ShIK2U9fn9xpxgUUY-r1sYzFJsJCg==",
+      "summary": []
+    },
+    {
+      "id": "msg_0bda11b29df5b6e6016af90c93081487d19aa4dc95e2634099",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0325\n\n## Episode annotation\n\n- Language task: Open the drawer.\n- Success label: failure\n- Outcome evidence: The robot approaches the upper drawer handle, closes its gripper near it, and withdraws empty without opening the drawer (frames 69\u2013123, wrist_image and left_ego_image). It subsequently remains away from the handle with only small movements and gripper cycling. The drawer is still closed at frame 324 in left_ego_image; this is a visibly unsuccessful attempt, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 80 | No |\n| 80 | 123 | Yes |\n| 123 | 325 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 80-123\n- Categories: grasp\n- Explanation: The fingers close beside the upper drawer handle starting at frame 80 in wrist_image, but do not retain it. At frames 91\u2013123, wrist_image shows the closed, empty gripper separating from the handle, while left_ego_image shows the drawer remaining closed. The acquisition attempt therefore fails to enable a pull.\n- Recovery: Reopen the gripper, realign the fingers around the handle with adequate clearance, verify acquisition, and then pull along the drawer\u2019s sliding direction; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The drawer remains closed, with no visible damage or displacement of surrounding objects in image and left_ego_image.\n- Resetability: immediate\n- Resetability evidence: The handle remains accessible and the scene is unchanged; another aligned grasp can be attempted without an environmental reset.\n\n### Failure 2\n\n- Frames: 123-325\n- Categories: task_not_attempted\n- Explanation: After withdrawing, the robot stays away from the drawer handle from frame 123 through frame 324, with prolonged hovering, small movements away, and occasional empty gripper cycling (for example, frames 132\u2013135 and 181\u2013186, wrist_image). No renewed approach or drawer movement occurs in image or left_ego_image, establishing sustained unproductive behavior rather than a brief pause.\n- Recovery: Resume a task-directed approach to the drawer handle and perform a verified grasp and controlled pull; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The consequence is lack of task progress; the cabinet and tabletop objects show no visible damage or disruption.\n- Resetability: immediate\n- Resetability evidence: The drawer remains closed and available for another attempt, with no cleanup, repositioning, or repair visibly necessary."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62830,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 620,
+    "output_tokens_details": {
+      "reasoning_tokens": 72
+    },
+    "total_tokens": 63450
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0840",
+  "language_task": "Stack the yellow triangle on top of the purple cube.",
+  "success_label": "success",
+  "outcome_evidence": "The robot acquires and lifts the yellow triangle (frames 75\u201398, left_base_cam and right_base_cam), then lowers it onto the purple cube and releases it (frames 148\u2013166). After the gripper withdraws, the yellow triangle remains supported above the purple cube (frames 174\u2013200, left_base_cam and right_base_cam, with wrist_cam providing a closer view). The stack remains in place through frame 240; no failed acquisition, collapse, or unintended displacement of the green block is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

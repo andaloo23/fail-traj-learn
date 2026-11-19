@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0926",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The robot grasps the wooden spoon at frames 71\u201378 and lifts it from the table at frames 81\u2013100, visible in image, left_ego_image and wrist_image. It carries the spoon to the open drawer at frames 118\u2013157, then releases it at frames 158\u2013169; wrist_image shows the spoon descending into and resting inside the drawer at frames 169\u2013172 while the empty gripper withdraws. No failed acquisition, unintended object displacement or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 186,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

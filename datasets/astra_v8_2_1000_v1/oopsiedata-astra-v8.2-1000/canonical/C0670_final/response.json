@@ -1,0 +1,116 @@
+{
+  "id": "resp_0be9158379ec7567016af920e8b6e087d2b9bfe4fb03c006a2",
+  "object": "response",
+  "created_at": 1794711785,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711796,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0be9158379ec7567016af920eb6e3487d2800233047cf4ffb4",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SD1ua01-IuDEO-KrqxV9u0SFtQ-IZsM8nt7milQWkusqaRYzhjK5RfDLAngLTuR6SXeTX7JJ357m_Ib_M1E3zTJX5V1qR0RuSbsfaXR6ZlnZLZT4MzSPZvwflAcrldJpmlio8rXBk0HF9pxyGBKJnmG6sPT-KZZS6vEQf6tuGmEVEBHyoExpoNEKGgZ5zDvm722b7ma3c1bPLAlKytog-eH6pHUWzz5zHFPro0QeauTL2L4G0SuM9fvyCiPNVSF4dsupR7E2xZkPX8k4_b6wT8OlLoFXc98-xXSvQc3ZWdRShMcuiCWbFtErgUZUy31iLYkTRUQX-ezRbLUN2iNME9b7yDw65f48bGyZv364gQA2q4SxOfrvO6Nb0kM6n96dW7FOhtlCGRIwN9NIuLuRremwCnz38b3BXiBi92DaNPsOGyxaPKhvOsugVePFzgXEXDEyc2st28kKkhClz_Ybrff0MBDNq8ouJvI-PX2BNgEQmZKsopcsLhx1z29eiMYCZPS9bFZ-bg4F0EV65eWJWYPIDaVIPSgAinOSJ1PRazKfzosgw04j-iyr32_vBiBL0xJf_SPFcTIMyW3bvZBj1YIZmRTyzbIiEqRw4SHJf0xAyUMAHKEW3Y4ZtE1CyeVF0Z8CQX5q-CXEzg6x846IEY17yUqWkS1h0LxxCfIk3kQ1mdjMSAjWjULXxI4p0XqKsXdqd41811hupTY27UTHNCtZ2Ll6k2nPWc70J8m22GOmBET_uXduHfx-VhDCd8zjk9qA6E95jaAY630nDIdyE-PU67FmJm4Ir-L--d8aNqQeistOGrT6_MB19hZ4F1fcGN50VFB9JL6HD-ysWsXDYd5pf34xHQWaEH80-YZzOyD9GH5_XeS7OvdaJJzPzLAVC2hxqnaNaW8jkFGzDxeBS7AVJqmszRk-LfVrKDQkYd78fsL5HReVp6qa-NlthOiOumPlQ-x_em2yq1qtFB8c5VCE1qVCSdSrwaRzSeJqZFvaeAxln-CYc8BjwOKQAsXaZtoWYPesh5ONi-g6nKNbptt-9gyNo9VVjjmcgd9afJqagAnbrHW2XpvYI8Tf5NzW2Hu7VYlwiFq_FKRchMyyPNOgztTtCA1BH-RPSLZItVLQMNmfbOwU9HTK0sHwH2tTX7Z4lWEbxXf5P8cBoWdsjfhXE7eHq4sWRzbV6hyfKlFAnLLpoDW05lfjYr38GTrgZZgd-AbD0E9M9bEmgMaUvF7D-VKiJ-Q_0j4JmJbaCkM8mmHdYOtxAAniFCmxInKyvs0PPMZNjPqlcPdwXJ6sCPy3WNZ2WdL245ayy-tXAunFXchYNduNuJsGdt4XjYdGIO6vxZUvx4iV-6KHAlOCd-pnhU42Z_e9ZDAIloraxP6iiu0IGqNUi7ePUtR3Y_Clis-LOiKHfyD8_g4ps6EF2F6XEO0xrzOC0FLhv29eT0kRxoIY_ZSb7Bc-TcikyfOezwBKEwXWC7lU_f8Tz-r7KvDTJVow5Eqc6mA2VELdRmuuSVO48iNQkxYia7ZeD9ztkRMfU42a9hRHWpAaPz04WU47aPxsuNOmXOjPUv7T60ML_WEo-tXTtLA9uli48cPwh5s8xJumarNNTcSzmtCmwKwAw2FFR2mweOVDuHxgHl0PrfjCw_moUCrZq0DRFXaYZgUWBSIlc1QS-UhjyiNljjfenke8LNIUBO9-lOtZsmYB5uweTpWNhsULHHoGD21cTqdDutmRgYFT9eMr4O3KUiJ4kdQMdii6DbnWkmgSU0IOIdTu0joof_OuB4IWuAIwKzFNMaGxzkmLaCNCL5PcAi22m8kHxHwhjvTRU4YqUw8Ab9YwP3nFSufK7enxIZmQ3SuHmg0WqG-_7RGha0BUTk1OL7eRZpuOX_O-ZFcqszbvfeDZF7q9TbMAGMzLEf9FJV-Iuz5AESGbV88s0gq716_wRfr9f0pN8Ne-ZNGERZ4kcTKog1Iobol6-3W8WwYURgv1tJjdvJbqh1bOiCXTOl6TCgZqlaTFBwpXj1yyDRl-YwcEhtdTZ5S8yhfYdbgHsBSLZXghdPZLvfQqWeVGahGjasoG9eHzAwvLBT3QBN9doQS6ff-vf_aEjtZJ0R_q6AmKH7x5bXV4V5zd9_CvWCnczf4786yDHH1mbTzeIlZ3vkqki7mSoP7WbpRjGCFDFtQ9jONoyO8ALf6YHgcH8pjZpW-w7g31MsAvnL9WiBy4jPZ0ZPATkMPS4pE0nPIDFd31TY7KvO1oklig_1Bi-EPRnMhIH7Vg_MjXJtJvz8W1xAV0WQ2MA1jSPi5makhYfvpdqF6dc6CdpO7Z1jHQP3QYoFN6Kygs3vfqMqzZsvihH1DFVV2o-kuVm-F8AVj0PqLlzZ6qdi0Vddxo-6YlzsNB1k8s-9OikiRh5iyKVhoPF6JwX-LIfrcTcBeGzwC78mwnAgnmb6Gjouf--LKGswyJ1hLHX03LoVPs7PNm8kJxnx9f_ZZ1CX5N-QcAjKTUIrr46hlSzot23io-jXMkS0vgp36h7WP0nTp_ryrGIq0AGAiB8k3gS2wWEr_dBdKdN8IAOpdB_mXoRO-l51wWe3Rna9hPDEt3QLPZMd0hc4LyflissWPGdbo4A9dUe0qSkQsodOy_AirmPYdYUKp2SCI2CULheaTAbuQAfCvXe2Qcc2HcxpM_vnt1ZFPzAXJvio1snoeSXCipN1RimJYVae1cTKCq84hYoBoZcz0Hf2vNWyo0FE5REuqAFt6HUlbO3iu6Y2Q9gOeDIIZob5s3sT7jCTRCelkIziFPwHQVsrMuU_SrD6wtVi1CNbwHae6S8eIg29Y-NIzV9TMq8fj1LCxKoa9X5lvCvVil7Zz0k6_ODMiGUQMKHqT20mJw3epEv0pPoaaCxP1F-jy2DFybKH-VJUM3xo6hSOIccEgn9lK-OOEixf5ZkMpT6Ak1C7kPHfsOFgEB7xYPivryWnIPQS08c35LW6ROPQBSBM0lLQftGfknAA9vN9bmf9Z6a-Ko1N0pswDaosHSTIlbx9FcYWdQdADBzL-hjCzImLnSAblBaM=",
+      "summary": []
+    },
+    {
+      "id": "msg_0be9158379ec7567016af920ee3ce087d2a75b2490fc39b022",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0670\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: Frames 0\u201360 in wrist_image and left_ego_image show approach to the wooden spoon beside the orange plate. Frames 70\u2013179 show the robot lifting and transporting the plate and its green contents along with the spoon. At frames 181\u2013191 in image, left_ego_image and wrist_image, the plate is tilted at the open drawer and the spoon remains visible near the gripper and drawer edge; a completed placement of the spoon inside the drawer is not confirmed. This is an unconfirmed core-task completion with a visible unintended-object handling failure, rather than a confirmed successful placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 70 | No |\n| 70 | 192 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 70-192\n- Categories: grasp\n- Explanation: Starting at frame 70 in wrist_image and left_ego_image, the orange plate tilts and its green contents shift as the gripper acquires the plate together with the adjacent spoon. Frames 90\u2013179 show the unrelated plate being lifted and carried toward the drawer, rather than an isolated spoon transfer. At frames 181\u2013191 in image and left_ego_image, the plate remains tilted at the drawer opening. The unintended additional acquisition disrupts the requested spoon-only placement; the exact contact arrangement is partly occluded.\n- Recovery: Lower and support the plate and its contents on a clear tabletop before releasing or separating the grasp, then acquire only the spoon and place it fully inside the drawer. Human assistance is needed only if the objects cannot be safely disentangled autonomously.\n- Severity: low\n- Severity evidence: The plate and its contents are visibly displaced and tilted, but no breakage, spill, or other meaningful damage is visible through frame 191.\n- Resetability: minor_reset\n- Resetability evidence: Returning the plate and its contents from the drawer opening to the tabletop and separating the spoon would restore a valid attempt state; this appears to require straightforward repositioning, not repair, although the final support arrangement is partly occluded."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 37962,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 572,
+    "output_tokens_details": {
+      "reasoning_tokens": 100
+    },
+    "total_tokens": 38534
+  },
+  "user": null,
+  "metadata": {}
+}

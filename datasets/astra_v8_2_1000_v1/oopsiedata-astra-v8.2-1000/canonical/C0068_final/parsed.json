@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0068",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the isolated purple cube in frames 15\u201331 and closes around it in frames 32\u201335. The cube leaves its original tabletop location and is visibly carried between the raised fingers in frames 43\u201346, establishing successful pickup. The robot subsequently moves toward the right-side tray and returns with open fingers in frames 72\u201396; the release location is partly outside the view. No failed acquisition, drop, or unintended side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 97,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

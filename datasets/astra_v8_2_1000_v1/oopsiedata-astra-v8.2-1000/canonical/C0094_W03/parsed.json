@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0094_W03",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not a visibly failed placement attempt. Frames 700\u2013740 in aria and left_wrist show the open left gripper withdrawing while the right arm retains and transports the cup, also visible in right_wrist. Frames 750\u20131049 in aria and right_wrist show gradual positioning of the held cup near the saucer; the right gripper remains around the cup at frame 1049, without a confirmed release onto the saucer. No drop, failed acquisition, or harmful side effect is established. Earlier acquisition and the full handover are outside the supplied images, and later placement context is missing; this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

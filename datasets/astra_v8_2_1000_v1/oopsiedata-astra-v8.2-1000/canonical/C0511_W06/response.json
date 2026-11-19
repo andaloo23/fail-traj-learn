@@ -1,0 +1,116 @@
+{
+  "id": "resp_0a1e364569a13621016afcb900a5ec87d2a88242c462a11db7",
+  "object": "response",
+  "created_at": 1794947328,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947333,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a1e364569a13621016afcb902401c87d28546456b2f1c2d44",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq_LkF4lNF-pmgkdt8kUid_62oI21ikJcr5C-YTwSLgvnba0--NQsS3DHB8PMZwxp4j0Ae31umtuTPVtOJcu4LkjRrmW3P0k50GTpct8-c9M1HE5nqK-sCnFpeMO1cwLdrHdhCpXHw_7m1dy-1oHgYaFy9H7NaSO8S00FZ0cER2DcJHHkB-JtLazr2pkKqs8VXBRiPiYDXDtihsBDDW1zUNCT8LGvrWHITIfvJzNb15Zlzx46t4c9n3obdJ0ksf1qHmTOLfmOtxY2H1nCMDmv00k19Jyc4VIQWA8WdxVh2oDAIf5QxGYwF6Pj_LQCn76MYcsdqtV4BOeQzUXFig-T9BIbUXHiD3YI5bi34rPownIJhd4iWQdhSRnRpfgBpkRdVG2rCWTY4LpbR4CVaUqltAvE-zO2n5GfF8dRd8GSjAAn0XDJl-CXSTu5iCaRLCDno9NcSxS-p1_L-7GUb0qcyVpnb4bs_TDkBGAzMMqEw9JI4xd1w7Jp7llJsco2-kt4ptlK9eei8epaj59iQZlmqc_BlpVgQvRJlc9YVkoSBQpIZ_ghhBJuQxhq2Hn4L7fxRfYlV9gugHKJfKxbSXMu_4-RYAzfVSwRRhLW-qLaEioE48ykrUFmRYreKGU9nWd0-eMOZqKk__Uz5CnH3GcQqAODvfBI2sSsjwzeZCAyQVSlLw2R3O9uRJ-WXmCPZp5P_SKUi1LZpGJHWNJdqEjJwpPCp9K2lZBL5lFXy8vo-rmPC8DcuvB8oFsJ0_PY08iZH7bGzIAvyIJ131RCmSZ3kJ26KqCSwS1cKHrG_qlq0_EenJNtdR_9vtu-WEhxZDp34nzLGZQl1Z3dOb_k7BpNG4_a2FhDIVuKWs6HvPQiojKlveXFdoAEkmUVu61AxO8xaGDIgk2V8YjdQbmno0qoQIbrq34ep_t0yJ6NDeW8z3z-7xt3bSQ__KQsUJc84UDEp7tDcDqdhDU9QerO4icgyzRCt9k2iduBvJJCQF7iNFHH2mG8Eo8RHEPis3POFGMTmgRbTZ1qpIWFZVhlY8J0wRtIrsdBvRlBHopuxbWlRyTHVVY8Jk0w-GVpkwYrANOfCbqEDXNKO6LdLfghfui2fDuJli_qFLURQw1SKkhgDRp7oGm_qa2MopmhDVCib_JNfYHpLtA2P2JaWvxlPX1yHWT7G5aQsKka79vBi5XxHc4kbUPef8orl4BbCIMkaoRUQwEqcxJgde4EWl0BlT_ShdO7aaSFT83OWGNdGRYEg_pHwu1rpzGLbKw2PfP5f4RFSpJ-aEEAfDLT-lB1ztUa9xM2MsqKQa48SVFN2PO5rmNotYz-AtwY_iqEONoq_4hLpxTbYemfBHJodwNKMQcEu3rtjzCtsynEji_1Uw5flcICzgq66KdAMue61eTfyUp7pFUL825t08b1Kz9VrtvVYtyf9fy24JzsWGET_Tizr0o1TkK8YBQ4Msnh1kIQU5CSzbQocJMK74yAyO9L0tl9bsAFN5g14CmKXrPxyAQJTsYA4B2umYodbJbv2bpQAfZHsX9-WilTrGOKpuGtt8QLQeaCTcG2i6WX1MmpvsRYpTfct2EXmPigE--DLZ9eTDKfgi9CRjV4T749iBjDDhsws7ppKrpwyxLCpTsetz65ZKYPZJtJhCykglCQ-29wyxki6M3tEogfScQN5UAnAtTM-E96vOPO_cVumhfSB_h_BMtqFgHAD0SALWaLQLRc3o3EQNAY37gneLD9MfOvx2VE5b2wfhH6LTOy245IJBiIIwtndq0Bd9XDqfAd_hzxt2DkUUxvShnavmjHy0OmsrH8b1uwxOwZa88zndZj0y8SEKbBhLMIQLeGLRxa8CrIBUhnb_Pp6VG6Y-VzahBdsHl0IbXWY4Cc3qjjPp44JAF1e4phtRyc96NmH3isFj4mpo_y7nGRmV0b-KaQeb4wKV7UUF2Dm2Fl1FUAu3c_j0nURVs0BiKORNrdQYyaSMll7NNM-5vY_r55nphFV9WlTV0sip0xMNQVc9HpIKXRgVULxVQNUOcPMiBFyTevr-q_NxD0zKYeE-eJYrhiPsninvjPdAQbmBCNKonNfwLaEM-IR0JurZjSXI8IC8kpkd52_MqNwtdLuoG89IAoGmpiDQzWYCT-fgXDjsrnK9BIGDrCHFuR89VDxhWhGhkkeT0Ed2ZBKlvNecSgj7_D9B2CPUq-vmIDdfyCMqn0fTOk1acPDCvzmSURkgC91rVrcaU67Xh9UGa4G0kW-4SLJ4BwVj4jGyHBT0726EmG2uIq9sixSNg9SeQOgchcIhmifs-9rUpMbu1Nn4v3UG9aKS1H6Hbo_ATo1E2TeFrGuLASwxfqokqZ-gbCnD8YK1HYxNYKzYZkHdc4WrFXwGLUq-MPU4aJMahav2_eBreUDuZPiEcyZwgi2Ry5lEoaHCxV5rZB0zy46pr8gQKvahB1f3vmqrZJLKGE2N9NjZMujTokOddP62JqK2354YxjVP2OeLaje8hXiXx8_KK0V8gUFY04NorYHaw-DxLU_agONgiUs1pICTITupHU440M4RMX9ZZk_mdu7mBnjkujQk37Zs3e6gQ_b9e3YWuPJJUNCwYet6qAGih3J3L_te6qfgTxgDXzWfqJsqqb3FR0O58DWHOJK1hCR5eUB9gzWCMg83HG9h5CUrz6jsIZD3tXbn-ranbR8pZNOKzNo",
+      "summary": []
+    },
+    {
+      "id": "msg_0a1e364569a13621016afcb90276dc87d29dd8737006a4d677",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0511_W06\n\n## Episode annotation\n\n- Language task: Seperate the food and the toys into the two bowls.\n- Success label: failure\n- Outcome evidence: Provisional for this window: overhead_cam shows the carrot beside the bowls rather than sorted into either bowl at frames 1750\u20131799. wrist_cam shows small alignment changes followed by finger closure around frames 1774\u20131788 and reopening through frame 1799, but no confirmed retained lift or transfer. The acquisition outcome remains unconfirmed: the views do not establish a completed acquisition followed by empty withdrawal. Sorting completion is not visible, rather than a definitively failed pickup being established. Earlier context is limited to frames 1748\u20131749; no subsequent action is supplied, and the window boundary does not establish abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1750 | 1800 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8984,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 228,
+    "output_tokens_details": {
+      "reasoning_tokens": 20
+    },
+    "total_tokens": 9212
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0946",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the mushroom initially lies beside the green cloth (frame 0), is acquired and lifted (frames 27\u201333), and is carried toward the cloth while the gripper changes its orientation (frames 34\u201364). At frames 65\u201369, the mushroom remains held above the table and the cloth remains empty. Placement is therefore unconfirmed in the observed episode, rather than a visibly failed release or acquisition. The visible positioning movements and brief pauses do not establish a distinct local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

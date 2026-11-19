@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0297",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first acquisition misses: frames 74\u2013110 in wrist_image and left_ego_image show the closed gripper withdrawing empty while the wooden spoon remains beside the orange plate. After realignment, frames 196\u2013225 in left_ego_image show the spoon lifted and transported toward the open drawer. Frames 248\u2013254 in image and wrist_image show its release into the drawer, where it remains through frame 267. Completion follows one failed grasp; no unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 74,
+      "failure": false
+    },
+    {
+      "start_frame": 74,
+      "end_frame": 121,
+      "failure": true
+    },
+    {
+      "start_frame": 121,
+      "end_frame": 268,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 74,
+      "end_frame": 121,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frame 74, wrist_image shows the fingers closed beside, rather than around, the spoon. During frames 84\u2013110, the gripper rises and withdraws empty while the spoon remains on the table, clearly visible in wrist_image and left_ego_image. This completed acquisition attempt does not move the target toward the drawer; the gripper reopens for realignment at frame 121.",
+      "recovery": "Reopen the gripper, align the fingers on opposite sides of the spoon handle, descend and grasp, then verify that the spoon lifts before transporting it to the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the tabletop, and no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible in its original area, so another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

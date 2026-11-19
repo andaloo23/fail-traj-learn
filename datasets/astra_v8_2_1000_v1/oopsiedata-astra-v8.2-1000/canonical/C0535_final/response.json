@@ -1,0 +1,116 @@
+{
+  "id": "resp_0fc216d7cef387fa016af9199f5bc087d2b467467902f65c59",
+  "object": "response",
+  "created_at": 1794709919,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794709928,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fc216d7cef387fa016af919a3258887d2b6bbf9ede9e00d64",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RmpqBbvAM_3GV7VIrgWOxq2USOoPRJ-lDhMWdfmwd16miMi_I7ezKusc-DndbFB1bbOQVigrgvmWP1kXhIjOo1v7AXb66brEBmFTLTTxyr80Tvv_x091Krj6BiptZbRG7Lch32mqMVv8yFLIlvKRx7VkN2vGzEfgW8ImhcrpMIr_WGQaijkqmmY1qNnLP9H5d2zbbypLm-MpTPIiXMbyAjfo0cnO8sYKZc7ZTEk6LDTDXqTKclFiaCBciMbLfhk7L8pBfxszgYR6ZSJIQ25IgrzVAevvg3WsTBJwTeo3Xaz08TC7poQS7TvE8w_x7g8ANlRv3Qzl-utMuWy69vR1MFdvgpVaUfEqsg1eTXMQn_NugOJ9X-0qcbH5uEY-1_V1i6aWyoB2KkZt9gznxKxQWgZy68qNecElbdOPLp2uAcJbr8ofW4459BQfnkJRs3FW-d3QIgrkkeX9Jma0YZLG6DgYR4QSushBami-yAx4qVU0Cyh42P9ugu-SXYGgwbluZ5i7WSnVyExg8JJiRMRiQCNXVIEe2EgAMZwHbvwUIeNkVAKu9QcCMHq5b_eiym2KY2cq7xLZwsKm1Q5PSfkx3BSZPE1xwxqmWh-m65HW4cGFKzekK4q-I6O2C3eHmGLDGiDLpzVA_6KlOIvU9CtC0XExy22M8Lvpl9Y612GaIKaNwN11FO9wATZft1bKky7dzIWe11FCPFos5v_IzeiVx62bAFn-gmodssUderLolUx6N0lQuUHTumafkl0eZC-E0t1IVBMMdxNGoVLx1075OATtGDuHDs9k6WoO01Gdm3Z5KKKd805NkxoBcCS1s4tuR9ZV5SFQ6JHGi_nc7fSCZ23P2C_YIhMyAv5-S0bs3WAza30AIUJMPUbvIfUT_aC-TF-NmErlMHVHYa6b4EQBBHcnN4Wes3J0OrYoIcrOgTFIb7B4nI_beaSx7_MDGWeAnTKPJciYnC2ljxWBXPCq4AIHK37S_kvC8j2jnK7pBMWPP-meGbl9h8Fpl8TmziqhgILc0z1xqHPV5hnKOayQS9Y3aygMToFezkCR53VBqZv_nMsObSKzz0LCgJvcRjQOqopNucJFj5IaVqqgWI8kErFIdo5NgSDXtxBFdWxuXs_X9XDd99-IdEXRj6mhT5_UBGoDpEq5ByuPndsGxFRwyIu3cp_VKD__TJLidJj5xkV__Wrx6akZ-WtGvMv8haAF_7ONBwwLpqZU_5R8mnxsGciRknKDzT2D_P_RFWqcU-QqjktHjqG2FdMcNUt-y3oKhXTKg3_ztx1pryBIoc0lCd46OJS2_hJsobRvrNhVTdOvakCZRhmU_n0jbEJJjgX2k7IErgPqIPDlZ7NK2l2xgq-ePAwQtt4fhZbU9t0jMx2yNXb2melCAupDWmsnHyBDhz6vGVAN8rAPr8BpW37gBCl69EMywHeDzmSVy2XoYgrp-2zC6PyPU6G-rWAvVeMEmADwBl8IhFi4O79zgiOr5TJJhXbUUn2qLeS5oWN8UsAn_n4zak6NJUj4SMBH3BK2Ojl9WyQBjtgNIQstz74JQV3ZeBzuVb_atzTz0sQATVKrDFIAW5Zh-uaJhOfNiY7AKxqy1KxZiFxttZ0irUalIMuAqx0b0Ld7RycI4_WZzqzr2cD87xB77pmB-_DLSANlvrMC75Sxa685YlFWwA-pcGakikhceRMTIUgombdM18mYLUYy26J7lt02lcFrWKqVe8ltaOUUhyhNBkcU6zgO-wHU7lidutdsk54b4SJ7nOEEb4ghPOJqTiZLAbqtCayQrqxKJZADetO4Ak4dbDVoA_-ffgoKdfhQbNifm_uQJUIFyyNwtRrS1iW_5fzTkL0ruh2qsLLWYs7XfJvbbSt9MZ_oojV-WYX-vdEPAiMjMTkpk9ZZLCTICkp83VqMO4dihqgCw9zQ0PrKmugCr_PG-gYs7QvO8vklQ2w-ho4gk7L5FcbR3xCCVia5wIk0_k_RQ6WFh6Pa9tQJxNlAEn7FJ6JU_uDnaM2S0LziVKW1juVvUWVaJbM9fv8BHhOICHvKO7_rcjDREOKDQKOijPleTN-AFaJU-jdXETJ-2emMvSJpiEaHTifLIabwPAozD00Dtl0PrunHd1u-FPDYxQ2aKrbcLIFCkuDGTzu3Ixe3QLhilDsL4ntDF0Z_aAJXtX5amIZ-26AMv4QKwU3jHxMDBQXTo1fuq3uf-A4WvA44d2dLW8=",
+      "summary": []
+    },
+    {
+      "id": "msg_0fc216d7cef387fa016af919a3fbe087d2852944f1b375c348",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0535\n\n## Episode annotation\n\n- Language task: Pack the cups with a single arm.\n- Success label: failure\n- Outcome evidence: In base_image, the robot approaches and grasps the white cup, then moves it toward the right (frames 63\u2013136). It subsequently remains holding the cup beside the box without placing it inside; the two blue cups remain on the table (frames 240, 400, and 573). Packing is not completed in the observed episode. The visible local failure is sustained stalling, not a demonstrated failed grasp or drop; no later completion is confirmed.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 240 | No |\n| 240 | 574 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 240-574\n- Categories: task_not_attempted\n- Explanation: In base_image, the gripper continues holding the white cup in essentially the same position beside the box throughout frames 240\u2013573, with no placement or acquisition of the remaining blue cups. This prolonged lack of task progress establishes sustained stalling after the initial productive approach and acquisition; its underlying cause is not visible.\n- Recovery: Verify the held cup and clearance, then resume a controlled transfer into the box, release only once supported, and pack the remaining cups with the same arm; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The task remains unfinished, but base_image frames 240\u2013573 show no dropped cup, visible damage, or other harmful consequence.\n- Resetability: immediate\n- Resetability evidence: The cup remains held and the other cups remain accessible on the table, so the task can resume without an environmental reset or visible need for human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 51387,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 425,
+    "output_tokens_details": {
+      "reasoning_tokens": 48
+    },
+    "total_tokens": 51812
+  },
+  "user": null,
+  "metadata": {}
+}

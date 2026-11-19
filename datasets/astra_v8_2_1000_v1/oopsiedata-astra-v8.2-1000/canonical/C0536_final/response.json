@@ -1,0 +1,116 @@
+{
+  "id": "resp_05abaeaefcc0f5b6016af919c9183887d182c29ec19ea571f0",
+  "object": "response",
+  "created_at": 1794709961,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794709974,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05abaeaefcc0f5b6016af919cb213887d1ba165f90d10fa987",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RnXdddLG3tAxxQ4rX5obDgYAdFzqjxdtUaZ37vvubyGuftp93C4WHrOC-cROKSoKUN4ucHTp0q1daazhOzx3z4QWq_9QClwRzPY3L3mjtH_zEOiFBCPyc_L-m0wRxFSS7iS7kSoN_FEZySZnmt_sFYrRkIVpWM2uMWmrH3OFa91jA9naKDen8kcESB25463yS8x3oKl-zIvLJIBVbjibaDLE9PGg7fUartoVrSKwSJ5u_5Q41Ni98AKIN_Vp81iHXv5oEuQpYorFXWamQ3oJZFktfk0IJITfD4cdzLD7oR9vxJy3tntu0rImoxJybj1fkmKgkdgc4ic4Ba4Bm3uK-GTgVrw1K1Js-YE3YaZRSCs00Aw2nsf6EHt2z_XTXzowW2HCZy92OHhGfPeXA8TuLceVdNALoM9VN83Zm8mkfftM14P4Xg-YqUA47AUPaCMSkdQHD7-RSDzLMQ4txaLv3uVxr663JR35Drnvu741Dc6oS6V4PKkpLViV3i9MXjnPC5482zJjuvwjRM4QLWB8rqok4iJyrYiqRJ6UfG7r3ksh21mRDZEzjHXct6wNq_PoLV2Lpembpd2mj8QLZRJkUfYovkQ6xuSSzcrJKxVUY6MEeFLY2c-_KXBPZODuCPvfXAn9H5Pa-eSp0FR3y0EE3l_sh4ULC-YOlVBjLSw_fsdYeHcfrUElxeEBGyx6aYnYMjKdptgfmvgJcLiOwhYjdtUs-Jw3PPAowtwDZGJtAXCbXi_dqf3GamCk5KTigVUp_B6WMcPpHlI8iw7RzPHMRDPF5UfzleHXlYawf_dTG-H6gUfO-BCAfp9i1ATE14O5rr84zBHrubNEfsBuBK0tP7VICWRw-lhoGXV9GLwfElfS3dI_CkzISwSusq9jrATVrvygdg5GwX5pWFmVn7C3zjq4Mt_A62Nv4H0Mvlc81tRqBKrisThP5TahCbOuCHbIEEUYTCNQ3IocYi4dfL_UVoePOE4oNE2atjozQ0Ji1xnGxBrsCdlQZef9K2GEE5gTDWRAh-TgeO3Ypikk7_p7mSl-U35KuOzb_ItJAKauTWhyJyQifO7NrrKAdSszJSIUkEQa3soWywOmjQZ0Ys27Cs3NOXv9mCDSavM_7vw0f2Hb9fVyKoggnOxSHKfEgYaWXOXs36hhyxq8Kb22gER8IO-gHr_r7wd-s3vtCmXjxo0AtDfVnglUqcD0w6iFn97KKDhmDFyGDfb_QW13aHdwf6gxdi67y8rIBrnxu7pS__hgJiNi3uPyIgE-1HITFMXUhz5vTmfzRq1ZJDrN1kiwNfyHiCSGeaG8Z5G2q44aePmPboQMXvZVrG9V7aSXbSomqUQNBjsYU4UIKfCq-SRsJr0PgU-XmVT6GrPgPk3kt_9PMkDBolg8gAgsSALdupc0ZqfbGNYfYlXt_3TzsSFQcCgwWpBqQkD79MXE0sBGvpOJBZRT5dURY-vtP5bisfj6_HBVSzmIO6DM_D6A9V5fiBEPibHzSijfxZSE3eiuedizfQv-9P8ocJYlyVYE85LAmAA0dzYOsm6TTW4kFfcrEtfk8wOhaPE8U2SyQAdMagEpfh8eq46_C400Eok4lEGSReJ3w2JnH8Iq7So6NUH9Kn8jRRL9Xoblnhljy9NwFnpSBcNs2RrqIut9iatqUCMff4mlE6TtAJ834Ockm0wUBJUpK4GNuoygVmB4MtdcGA3g_FI7uxIskib5gR_sAT3rx8Ve0FQ9S0RrUmu8lUUVz8NAZ82AL_LzMA2m6YoIEymcTt3raND6ZxYNd1MdIKPvNDgIxj5fhwGbFbd7t4c9z7UE53wC2l63aTBPWnwF-ZhHgaW5z6NcEb4MJP1kWB-S7-XCXU25qFqfc7bBQVr0rRq4XXcH26-xLGSizk1N0-sgcHwYBwYUwVVHchLLoxBpFqcMSa0aUT3pfRXmUh73X9d7o9XDfAZ270TykYVY8YgyGlOW_offSQMy4U7zIiF_Y7X3mSKqi8KzfzgVdAnetyKl-pfsPI2yP5AY24OlcITwWrE-AtER8pEkxJ4xbl4dWHdsInv79sweL1YNIrpCXAQdcNMPAcjW9s_bGgfKSSppLQL7DU2X1PYm9xpihxc92jDlCOzEXRvUyx6h15MsHTdsJmYH8UZJt_wWZrV6QwMvj-SCY13sTNH3qZhtlqqSg5P62OV5HGzuhUweNrOvPtQe8cTNZlJCY1ofNND3XwZk9jWRVB9s2_yJ1WOG2LRfyfNY1_Zf3ib4OjJl0RvbPlwjtcw4haJhyAx1WbF1eoYcUuWhwEU3Vn_O4ibEJpYJ1Jzf3w2MPMD33iFaon2TYgB4l8q2XSx0n6qol4XyWHEt3LjJxMj89WNcNNTTRkGYHQ89PXNxMkXG9smSVVVUEPUlaRoLpFTUwbY6alnm4ES5odVDaxLnh0fgcG706qsriNgrHGcQEmPpbdEdz_e6br5xQ_Eq5j3sgGb8D1JXE6cp6k=",
+      "summary": []
+    },
+    {
+      "id": "msg_05abaeaefcc0f5b6016af919cc464c87d18a4173d20f9a6dec",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0536\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: failure\n- Outcome evidence: In image_primary frame 0, the left toy is blue and white, and the largest bowl is the central white bowl. The robot instead lifts the pink toy in frames 16\u201320 and leaves it outside the bowl at frame 21. It later attempts to acquire the blue-and-white toy but withdraws empty in frames 70\u201372. At frame 90, the intended toy remains on the table and the white bowl is empty; this is visible noncompletion with failed actions, not merely an unconfirmed placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 6 | No |\n| 6 | 22 | Yes |\n| 22 | 30 | No |\n| 30 | 51 | Yes |\n| 51 | 70 | No |\n| 70 | 72 | Yes |\n| 72 | 77 | No |\n| 77 | 91 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 6-22\n- Categories: sequencing_semantic\n- Explanation: In image_primary frames 6\u201315, the gripper targets and closes around the right-hand pink toy rather than the left blue-and-white toy. It carries the pink toy in frames 16\u201320 and releases it beside the white bowl at frame 21, relocating the wrong object without advancing the requested transfer.\n- Recovery: Leave the pink toy safely supported, identify the left blue-and-white toy, and grasp and transfer that toy into the white bowl; human intervention is not needed.\n- Severity: low\n- Severity evidence: The unrelated soft toy is displaced on the tabletop, but no damage or meaningful damage risk is visible.\n- Resetability: immediate\n- Resetability evidence: The intended toy and bowl remain accessible, so another task attempt needs no environmental reset.\n\n### Failure 2\n\n- Frames: 30-51\n- Categories: task_not_attempted\n- Explanation: In image_primary frames 30\u201343, the empty gripper remains essentially stationary above the table between the target toy and white bowl. Small back-and-forth movements in frames 44\u201350 do not establish an acquisition approach or move either task object, forming a sustained unproductive interval before the approach resumes at frame 51.\n- Recovery: Resume a directed approach to the blue-and-white toy, align the fingers around its body, and attempt acquisition; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The interval delays task progress without visible damage or hazardous contact.\n- Resetability: immediate\n- Resetability evidence: No scene change during the stall prevents an immediate renewed attempt.\n\n### Failure 3\n\n- Frames: 70-72\n- Categories: grasp\n- Explanation: After closing around the blue-and-white toy in image_primary frames 63\u201369, the gripper lifts and retreats empty in frames 70\u201371 while the toy remains on the tabletop. This establishes a failed acquisition rather than merely an unfinished closure.\n- Recovery: Reopen and realign around a substantial portion of the toy, close, and verify retention with a small lift before transporting it; human intervention is not needed.\n- Severity: low\n- Severity evidence: The toy remains safely on the table with no visible damage.\n- Resetability: immediate\n- Resetability evidence: The toy is still accessible and requires no manual repositioning for another attempt.\n\n### Failure 4\n\n- Frames: 77-91\n- Categories: sequencing_semantic, collision\n- Explanation: In image_primary frames 77\u201386, the gripper again descends around the pink toy instead of the left blue-and-white toy. During this interaction, the white bowl visibly shifts left and forward in frames 78\u201385, indicating unintended contact-driven displacement. The gripper withdraws in frames 87\u201390 without completing the requested transfer.\n- Recovery: Lift clear of the bowl and pink toy, reassess their positions, and approach the blue-and-white toy without contacting the bowl; human intervention is not visibly necessary.\n- Severity: low\n- Severity evidence: The bowl and pink toy are displaced but remain upright or supported on the table; no breakage, spill, or other damage is visible.\n- Resetability: immediate\n- Resetability evidence: The shifted bowl remains usable and accessible, and the intended toy remains available for a new attempt without a human reset."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 9942,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 1015,
+    "output_tokens_details": {
+      "reasoning_tokens": 75
+    },
+    "total_tokens": 10957
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0765",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left stuffed toy is blue and white, and the largest bowl is the central white bowl. The robot instead handles the pink toy on the right, lifts it in frames 55\u201362, and deposits it in the white bowl in frames 63\u201365. Frame 99 shows the blue-and-white target still on the table and the pink toy in the bowl, establishing wrong-object execution rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 11,
+      "failure": false
+    },
+    {
+      "start_frame": 11,
+      "end_frame": 66,
+      "failure": true
+    },
+    {
+      "start_frame": 66,
+      "end_frame": 100,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 11,
+      "end_frame": 66,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frame 11, the gripper is visibly aligning over the right pink toy rather than the left blue-and-white toy. It continues handling the pink toy through frames 18\u201355, carries it toward the white bowl in frames 56\u201362, and releases it there in frames 63\u201365. This physically successful transfer uses the wrong object and leaves the requested target unmoved.",
+      "recovery": "Return the pink toy to its original table area, then acquire the left blue-and-white toy and place it in the largest white bowl; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong stuffed toy is relocated, but image_primary frames 65 and 99 show no visible damage, overturned containers, or other meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the original scene requires a straightforward relocation of the pink toy from the accessible white bowl to the table; no repair or difficult retrieval is indicated."
+    }
+  ]
+}

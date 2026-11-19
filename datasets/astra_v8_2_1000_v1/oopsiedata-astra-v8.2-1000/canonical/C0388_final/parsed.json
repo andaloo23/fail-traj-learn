@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0388",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In base_image, an initial can acquisition fails: the gripper lifts away empty at frames 64\u201372 while both cans remain on the table, then travels to the upper tray. Subsequent handling succeeds: the green can is in the upper blue tray by frame 162, both cans are there by frame 241, and the blue bowl is released in the right red tray by frame 312. The pink bowl is subsequently nested with the blue bowl, and frames 400\u2013424 show both cans in the upper tray and both bowls in the right tray with the robot withdrawn. No damage or unrelated side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 64,
+      "failure": false
+    },
+    {
+      "start_frame": 64,
+      "end_frame": 105,
+      "failure": true
+    },
+    {
+      "start_frame": 105,
+      "end_frame": 425,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 64,
+      "end_frame": 105,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the pink-labeled can in base_image frames 53\u201363, the gripper begins lifting away at frame 64 without acquiring it; frames 67\u201372 show both cans still on the table. The empty gripper continues to the upper blue tray and performs an unproductive placement-like motion through frame 104. This does not transfer a can or advance the sorting task.",
+      "recovery": "Return to a can, align the fingers around its body, close securely, and verify that it moves with the gripper before transporting it to the upper tray; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the cans on the tabletop; no damage, spill, or meaningful damage risk is visible in base_image frames 64\u2013104.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both cans remain accessible on the table, so another acquisition can be attempted without human intervention or an environmental reset."
+    }
+  ]
+}

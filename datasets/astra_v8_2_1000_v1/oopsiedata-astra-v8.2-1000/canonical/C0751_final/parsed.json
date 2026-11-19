@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0751",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The drawers are closed at frame 0 in left_ego_image. The robot approaches the cabinet during frames 1\u2013103, but neither drawer visibly opens. From frame 104 through frame 399, image and left_ego_image show the arm remaining beside the cabinet with no meaningful task progress; wrist_image does not establish a handle grasp or successful pull. Completion is unconfirmed, and sustained stalling is visible rather than a clearly demonstrated failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 104,
+      "failure": false
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 104,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the cabinet, the robot remains essentially stationary beside it from frame 104 through frame 399. In image and left_ego_image, the drawers remain closed at frames 104, 200, 300 and 399; wrist_image shows no discernible acquisition-and-pull sequence. This prolonged lack of progress constitutes sustained stalling; its underlying cause is not visible.",
+      "recovery": "Re-localize the drawer handle, align the gripper with it, establish a secure grasp, and pull along the drawer\u2019s opening direction while checking for movement. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, displaced unrelated objects, or meaningful damage risk is visible during the stalled interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in their original usable state, so another task-directed attempt requires no environmental reset or visible need for human intervention."
+    }
+  ]
+}

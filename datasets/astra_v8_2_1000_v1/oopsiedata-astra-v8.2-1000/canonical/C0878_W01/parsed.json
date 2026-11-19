@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0878_W01",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, not a visibly failed attempt. In base_image at frame 0, both cans and both bowls are outside the empty trays. Following brief initial preparation, the open gripper approaches the pink bowl (frames 204\u2013349); at frame 349, no object has been placed in either tray and acquisition is not yet established. The visible preparation and approach do not establish a local failure. Later episode context is absent, so this outcome label is provisional for the supplied window.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

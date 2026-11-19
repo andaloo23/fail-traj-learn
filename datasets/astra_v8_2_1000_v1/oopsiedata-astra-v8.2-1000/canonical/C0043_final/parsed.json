@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0043",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The wooden spoon is lifted but falls back onto the table twice, at frames 92\u201397 and 195\u2013202 in wrist_image and left_ego_image. At frame 374, image and left_ego_image still show the spoon on the tabletop, while wrist_image shows the gripper handling the separate green object. The spoon is visibly not in the drawer; this is an observed unsuccessful episode, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 92,
+      "failure": false
+    },
+    {
+      "start_frame": 92,
+      "end_frame": 98,
+      "failure": true
+    },
+    {
+      "start_frame": 98,
+      "end_frame": 195,
+      "failure": false
+    },
+    {
+      "start_frame": 195,
+      "end_frame": 203,
+      "failure": true
+    },
+    {
+      "start_frame": 203,
+      "end_frame": 331,
+      "failure": false
+    },
+    {
+      "start_frame": 331,
+      "end_frame": 375,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 92,
+      "end_frame": 98,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After lifting the spoon, the robot loses retention: its handle slides down out of the fingers at frames 92\u201394 in wrist_image, and the spoon falls onto the table and settles by frame 97 in left_ego_image. This interrupts transport toward the drawer.",
+      "recovery": "Reapproach the spoon at its updated position, grasp farther along the handle with secure opposing contact, and verify retention with a small lift before transport; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls a short distance onto the tabletop; no damage or consequential disturbance of other objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the table and can be grasped again without environmental resetting."
+    },
+    {
+      "start_frame": 195,
+      "end_frame": 203,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During the second lift, the spoon again slides downward relative to the fingers at frames 195\u2013198 in wrist_image, separates from the gripper, and lands on the tabletop by frames 200\u2013202 in left_ego_image. The robot again fails to retain it for placement.",
+      "recovery": "Reassess the handle contact location and finger alignment, acquire a more secure grasp, and check that the spoon stays fixed during a low test lift before moving toward the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon returns to the tabletop with no visible breakage, spill, or meaningful damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The dropped spoon remains within the visible workspace and available for another attempt without human resetting."
+    },
+    {
+      "start_frame": 331,
+      "end_frame": 375,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot aligns with and descends toward the separate green elongated object at frames 331\u2013348, then closes its fingers around it at frames 360\u2013364 in wrist_image. Meanwhile, left_ego_image and image show the wooden spoon remaining on the table through frame 374. This wrong-object acquisition does not advance putting the spoon in the drawer; no physical grasp failure of the green object is established.",
+      "recovery": "Release the green object safely onto the table, return to the visibly distinct wooden spoon, and securely grasp and place that spoon in the open drawer; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong object is contacted and grasped, but no damage or hazardous displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "No damaged or inaccessible scene state is shown; the robot can safely release the green object and reattempt the task without human intervention."
+    }
+  ]
+}

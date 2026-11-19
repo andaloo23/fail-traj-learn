@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0256",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the corn initially lies left of the green cloth (frame 0). The gripper closes around it (frames 25\u201329), but subsequently moves it farther left rather than onto the cloth (frames 50\u201369). At frame 69 the cloth remains empty and the corn remains between the fingers near the tabletop. Placement is not completed in the observed episode; no drop or abnormal termination is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 50,
+      "failure": false
+    },
+    {
+      "start_frame": 50,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 50,
+      "end_frame": 70,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In right_shoulder_cam, frames 50\u201354 show the gripper and corn moving together leftward, away from the green cloth on the right; this displacement continues through frames 62\u201369 without a visible lift-and-transfer toward the destination. This sustained wrong-direction handling does not advance placement. The images do not establish why it occurs.",
+      "recovery": "Stop the away-directed motion, verify a secure grasp and tabletop clearance, then lift and transfer the corn over the green cloth before lowering and releasing it. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The corn remains at the work surface between the fingers, with no visible damage, falling object, or disturbance of unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn and cloth remain accessible on the table; the robot can correct its motion or reacquire the corn without an environmental reset."
+    }
+  ]
+}

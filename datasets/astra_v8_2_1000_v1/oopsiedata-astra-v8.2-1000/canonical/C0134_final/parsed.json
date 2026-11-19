@@ -1,0 +1,34 @@
+{
+  "episode_id": "C0134",
+  "language_task": "stack the yellow block on the blue blocks",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches and closes its fingers near the yellow block at frames 8\u201327, then lifts away empty at frames 28\u201333. It subsequently moves above the blue blocks without the yellow block at frames 34\u201346. At frame 69, the yellow block remains on the table beside the blue blocks; this is a visibly failed acquisition and incomplete stack, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 28,
+      "failure": false
+    },
+    {
+      "start_frame": 28,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 28,
+      "end_frame": 70,
+      "categories": [
+        "grasp",
+        "sequencing_semantic"
+      ],
+      "explanation": "In right_shoulder_cam at frames 28\u201333, the fingers rise empty while the yellow block remains on the table, establishing failed acquisition. Rather than reacquiring it, the robot continues toward and lowers above the blue blocks at frames 34\u201346 without carrying the yellow block, then withdraws slightly and hovers through frame 69. This empty continuation does not advance the stacking task.",
+      "recovery": "Return to the yellow block, align the open fingers around its opposing sides, acquire it, and verify possession before transporting it above the blue blocks and releasing it onto a stable support. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The yellow block remains on the tabletop and the blue blocks remain undisturbed; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The yellow block is still accessible beside the blue blocks, so another acquisition attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

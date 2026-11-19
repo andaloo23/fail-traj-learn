@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0473",
+  "language_task": "pick up the red block and put it in the bowl",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches and grasps the red block, then lifts and carries it toward the bowl (frames 119\u2013162, cam_2_scene, cam_3_wrist and cam_4_wrist). It releases the block into the bowl at frames 163\u2013168; the block settles inside and remains there through frame 195 while the gripper withdraws, visible in all three cameras. No failed attempt or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 196,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

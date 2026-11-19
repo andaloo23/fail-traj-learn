@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0175_W02",
+  "language_task": "take tape measure out of bowl and put it in bowl again",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window: top at frames 350, 525, and 699 shows the tape measure remaining in the green bowl and both grippers away from it. left and right show only slight viewpoint drift, with no discernible acquisition, removal, or replacement. The visible failure is sustained inactivity, not a failed grasp. Earlier context beyond frames 348\u2013349 and later execution are absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 350\u2013699, the robot makes no discernible task-directed approach or manipulation for approximately 11.7 seconds; top at frames 350, 525, and 699 shows essentially unchanged gripper positions and the tape measure still in the bowl, corroborated by left and right. Small viewpoint changes do not establish useful progress. Context frames 348\u2013349 are consistent with continuity of this inactivity across the starting boundary; it may continue after the window, and its cause is not visible.",
+      "recovery": "Begin a controlled approach to the tape measure, align the gripper while clearing the bowl rim, grasp and lift the tape measure out, then lower and release it back into the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress; no collision, damage, object displacement, or concrete damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright with the tape measure inside and the workspace unchanged, so another attempt requires no environmental reset."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "validated",
+  "model": "gpt-6-astra",
+  "usage": {
+    "input_tokens": 62881,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 355,
+    "output_tokens_details": {
+      "reasoning_tokens": 13
+    },
+    "total_tokens": 63236
+  },
+  "completed_utc": "2026-11-17T02:53:16.570620+00:00",
+  "batch_mode": true,
+  "request_sha256": "01922d06817133b2b6799c06329ecd8a1a5d7aee05bf0e0119c3cc0519a2127d",
+  "original_episode": "C0982"
+}

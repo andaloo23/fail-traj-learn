@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0608",
+  "language_task": "Move the banana to the pot on the right and sushi to the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, frame 0 shows the banana in the cream bowl, the empty metal pot on the right, and the red-and-white sushi on the table. Several banana acquisitions fail visibly. At frames 158\u2013159 the banana begins lifting with the gripper, but transfer to the pot is not shown; the sushi remains untouched. Completion is unconfirmed, in addition to the earlier visibly failed attempts.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 49,
+      "failure": false
+    },
+    {
+      "start_frame": 49,
+      "end_frame": 53,
+      "failure": true
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 67,
+      "failure": false
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 70,
+      "failure": true
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 92,
+      "failure": false
+    },
+    {
+      "start_frame": 92,
+      "end_frame": 96,
+      "failure": true
+    },
+    {
+      "start_frame": 96,
+      "end_frame": 140,
+      "failure": false
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 144,
+      "failure": true
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 160,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 49,
+      "end_frame": 53,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, after closing near the banana at frames 47\u201348, the gripper rises at frames 49\u201352 without carrying it; the banana remains in the bowl. This acquisition does not advance the transfer.",
+      "recovery": "Reopen and reposition the fingers around the banana, then verify a secure grasp with a short lift before transferring; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The banana remains contained in the bowl, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the upright bowl; another attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 70,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, the gripper closes near the banana at frames 64\u201366 and withdraws at frames 67\u201369 while the banana stays in the bowl, establishing another unsuccessful acquisition; reopening begins at frame 70.",
+      "recovery": "Adjust the grasp position to capture the banana between the finger pads and check retention before moving toward the pot; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No object leaves the bowl or shows visible damage during the failed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl and banana remain available for an autonomous reattempt without resetting the scene."
+    },
+    {
+      "start_frame": 92,
+      "end_frame": 96,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, following finger closure at frames 90\u201391, the gripper lifts empty at frames 92\u201395 while the banana remains in the bowl. The fingers reopen at frame 96.",
+      "recovery": "Reassess the banana\u2019s position and use a better-centered grasp, verifying possession before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is another missed acquisition, without damage or displacement outside the bowl.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup or object restoration is needed to retry."
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 144,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, the gripper closes near the banana at frames 138\u2013139 and rises at frames 140\u2013143 without it. The banana remains in the bowl, and reopening at frame 144 begins another attempt.",
+      "recovery": "Reposition the fingers around a securely graspable section of the banana and confirm retention with a controlled lift before carrying it to the right-hand pot; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The failed lift leaves the banana in the bowl with no visible damage or harmful side effect.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and the environment remains usable without intervention."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0094_W09",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: task completion is unconfirmed, rather than a visibly failed grasp or placement. Across frames 2800\u20133149, aria and right_wrist show the cup, saucer, and right gripper in essentially unchanged positions; left_wrist shows the other gripper remaining open and stationary. No discernible task progress occurs over approximately 11.6 seconds. Earlier pickup and handover and the later outcome are not visible.",
+  "segments": [
+    {
+      "start_frame": 2800,
+      "end_frame": 3150,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 2800,
+      "end_frame": 3150,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Frames 2800, 2900, 3000, 3100, and 3149 in aria and right_wrist show no discernible change in the cup or right-gripper configuration, while left_wrist shows the other gripper stationary away from the cup. This sustained inactivity does not advance the task. Context frames 2798\u20132799 show the same configuration, supporting continuity across the starting boundary; the earlier onset and continuation beyond this window are unknown. No hidden cause or abnormal termination is established.",
+      "recovery": "Reassess cup possession and saucer alignment, then resume the remaining task steps, verifying stable support on the saucer before release and withdrawal; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delayed progress; no drop, spill, damage, or meaningful risk of damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring a reset is visible; task-directed action can resume from the current configuration without human resetting."
+    }
+  ]
+}

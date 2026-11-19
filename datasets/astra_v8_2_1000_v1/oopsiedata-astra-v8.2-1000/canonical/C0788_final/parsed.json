@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0788",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon remains on the tabletop at frame 399 in image and left_ego_image, rather than inside the drawer. The robot makes multiple acquisition attempts: wrist_image shows the spoon separating from the fingers at frames 85\u201387, and later empty withdrawals at frames 313\u2013320 and 374\u2013391. This is a visibly unsuccessful episode, not merely unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 85,
+      "failure": false
+    },
+    {
+      "start_frame": 85,
+      "end_frame": 91,
+      "failure": true
+    },
+    {
+      "start_frame": 91,
+      "end_frame": 303,
+      "failure": false
+    },
+    {
+      "start_frame": 303,
+      "end_frame": 324,
+      "failure": true
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 361,
+      "failure": false
+    },
+    {
+      "start_frame": 361,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 85,
+      "end_frame": 91,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing around the spoon handle, the gripper loses engagement at frames 85\u201387 in wrist_image. The spoon settles back onto the tabletop in left_ego_image while the empty gripper rises through frame 90, preventing acquisition for transport.",
+      "recovery": "Reobserve the spoon\u2019s shifted pose, align the fingers around its handle, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the table, with no visible damage or disruption to unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible for another grasp without environmental resetting."
+    },
+    {
+      "start_frame": 303,
+      "end_frame": 324,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 303\u2013308, wrist_image shows the fingers closing against or beside the handle without securing it. During the subsequent lift at frames 311\u2013320, the fingers separate from the spoon while left_ego_image shows it remaining on the table; the gripper withdraws empty.",
+      "recovery": "Open the gripper, correct lateral alignment and grasp height, and confirm that the spoon moves with the gripper before proceeding; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt fails to lift the spoon, but no damage or harmful side effect is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon is still on the accessible tabletop and can be reattempted directly."
+    },
+    {
+      "start_frame": 361,
+      "end_frame": 400,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 361\u2013364 in wrist_image, the fingers close beside the spoon handle rather than enclosing it. The robot subsequently lifts and retreats empty at frames 374\u2013399, while image and left_ego_image show the spoon remaining on the tabletop.",
+      "recovery": "Return to the spoon, realign the open fingers to straddle the handle, and verify a secure acquisition before moving toward the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only task completion is prevented; no visible damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon and drawer remain usable, and no cleanup or manual repositioning is necessary for another attempt."
+    }
+  ]
+}

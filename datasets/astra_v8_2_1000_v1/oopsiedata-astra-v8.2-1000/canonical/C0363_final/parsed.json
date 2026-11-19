@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0363",
+  "language_task": "Close the oven.",
+  "success_label": "success",
+  "outcome_evidence": "The oven door is initially open in frame 0 in image and left_ego_image. The robot approaches the door, then raises it toward the oven during frames 50\u201363 in image and left_ego_image. The door is visibly upright and closed against the oven by frame 63 and remains closed through frame 80; wrist_image also shows the door close to the oven during frames 63\u201380. No failed attempt or unintended scene disturbance is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 81,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

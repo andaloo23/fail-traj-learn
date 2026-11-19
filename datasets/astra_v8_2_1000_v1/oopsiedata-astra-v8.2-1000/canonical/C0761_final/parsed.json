@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0761",
+  "language_task": "Snug the pillow into the case.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The pillow starts separate from the case (frame 0, ceiling and head_left), is positioned over it (frames 111\u2013190, ceiling), and is progressively tucked under the case edges (frames 350\u2013570, head_left and head_right). By frames 794\u2013823, ceiling and head_left show the pillow seated within the case perimeter, with its white center visible through the opening and both grippers withdrawn. Completion follows a sustained interval without visible progress.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 611,
+      "failure": false
+    },
+    {
+      "start_frame": 611,
+      "end_frame": 650,
+      "failure": true
+    },
+    {
+      "start_frame": 650,
+      "end_frame": 824,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 611,
+      "end_frame": 650,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The robot remains essentially stationary around the partly fitted pillow for approximately four seconds, without visibly advancing the remaining adjustment; compare frames 611, 630 and 649 in ceiling, head_left and wrist_right. Task-directed gripper movement resumes at approximately frame 650; the reason for the pause is not visible.",
+      "recovery": "Resume a controlled adjustment of the remaining loose case edge while stabilizing the pillow, then release and inspect the fit; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay; the pillow and case remain on the work surface without observed damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The environment remains in a usable intermediate state, so adjustment can resume without an environmental reset or human intervention."
+    }
+  ]
+}

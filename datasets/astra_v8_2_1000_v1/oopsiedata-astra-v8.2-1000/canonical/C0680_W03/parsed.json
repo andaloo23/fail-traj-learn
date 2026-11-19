@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0680_W03",
+  "language_task": "flip the small box upside down",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, not a clearly failed completed flipping attempt. Frames 700, 850, 925 and 1049 in top show no visible inversion of the pink rectangular box or the orange box-like objects. The left gripper repositions around the pink box, while the right gripper adjusts near the orange objects; left and right show changing approach angles without established possession or a completed flip (frames 820\u2013925 and 1018\u20131049). These movements do not establish a local failure. Which object \u201csmall box\u201d denotes remains ambiguous. This label is provisional because earlier execution beyond the supplied context and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

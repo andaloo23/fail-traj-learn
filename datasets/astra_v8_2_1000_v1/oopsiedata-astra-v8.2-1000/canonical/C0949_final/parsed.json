@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0949",
+  "language_task": "Pick up NIST rod and insert into corresponding hole on the NIST board.",
+  "success_label": "failure",
+  "outcome_evidence": "In side frames 0\u201312, the robot approaches the upright rod. In side and wrist frames 14\u201317, the rod tips and ends up lying on the board rather than securely acquired. The robot subsequently approaches the fallen rod in frames 18\u201326, but no completed pickup or insertion is visible. The initial acquisition visibly fails; completion of the subsequent attempt remains unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 14,
+      "failure": false
+    },
+    {
+      "start_frame": 14,
+      "end_frame": 18,
+      "failure": true
+    },
+    {
+      "start_frame": 18,
+      "end_frame": 27,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 14,
+      "end_frame": 18,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During acquisition, the rod visibly tilts between the fingers in wrist frame 14, then falls onto the board in side frames 16\u201317. By frame 17, it lies separately from the gripper, establishing unsuccessful acquisition or retention rather than a completed pickup; secure possession before the fall is not established.",
+      "recovery": "Reposition the open gripper around the fallen rod, acquire it securely, and then align it with the corresponding hole before insertion. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The rod falls onto the board and remains accessible in side frames 17\u201326; no damage or consequential disturbance to other objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The fallen rod remains on the accessible board surface, allowing another acquisition attempt without a necessary human or environmental reset."
+    }
+  ]
+}

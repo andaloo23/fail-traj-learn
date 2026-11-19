@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0980",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success",
+  "outcome_evidence": "The robot transfers the beige, blue, and pink toys to the plate in sequence. In wrist_cam and overhead_cam, the beige toy is released onto the plate at frames 103\u2013110, the blue toy at frames 270\u2013280, and the pink toy at frames 391\u2013400. Frames 410\u2013426 in both cameras show all three toys remaining on the plate as the gripper withdraws. No failed acquisition, unwanted collision, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 427,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

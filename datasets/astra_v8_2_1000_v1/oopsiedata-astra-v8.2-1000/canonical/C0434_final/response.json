@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c74bb48568a37d3016af91430366087d1b8ac18f403b7f13e",
+  "object": "response",
+  "created_at": 1794708528,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794708534,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c74bb48568a37d3016af9143314cc87d190532df6df8f56a8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RQ3b24ZePISofAiJgtZ1p8N0N-Ao1cUQkkQoPTOGikM4Z4gBQ30iIQfZVYuZJCqi1PqiJgXBAd9LkPc7cwOrR_7QrxhWymgBu3ZviSJARjKlGP67I5hHeVe1TmO48S3-XryrDY2I7NxD2S8UUQ4YaleuSTXB6GRNcOMhD2ka772BbAcrl1YvG7vWFRcckmaJux8AnZ_FT8DeBM3HSnCsA1rrZDYuvYrBYuxfQGvRyfHtARNW-yNaPnhhuEf2iqyqIOP5vwQHOrA972qJ3gT8iRTZ9fzxJG1CZ8dtxROtQK1e6yyp5ca3bLpkFCPKBOvzJrpEpBTa7bzvlUIDX0DMbW1tiNRakiTgPEbPx2luXvt0BsqtAfwgUd8rwtr071mH6yJrft14gwk-hQp-zLKqHRUMfy8qpStt6ThaNlsVnIpROCA3FqfeOts71B7tI9vWwgdUJZ0PRKO9QuNncnvjf2R-vWAsJTO39xFFd7OT1_UeegPGAk3PpnlypQvtw7cjig7rYHT3aEpFxwwtuBdJ9YC14vGnONqDZGHyp9bba1qgRn-viAPmxGe-5kMQofvw0jnseB_T76xfrWCLYe021Jhv3a3SLLXuMCVzHoCLQ3hNIycnHTt1otzQKNnrtMNe1Pe4-QWTRcK4pOEvQT4Hg5DxNCrOp7oija_yvSM1kiYmhYkc7vQ-qyxwi9PSnTRcNMEYvjwpp6zihAEwFf6pOZmpww2nEj1DYfqTq1MzE0HOgoY7vOF16MOqeNzCi2SksREbNVQHoxKnNa3yYwIbELImkmyZdTA4fyrcnzaRuU6vwOmtH5zn4LzzTRVyG92gBC6ly4NDB2k9TMbw4vWDL8pI-fNlKKV-kbtHL0pIUQXauLxOsJeKsabxTttACDLYkJ4F-xykfiDbqfZtWwa_wc1BDE9NPK4K3xPchWc4rbG_aEQXAdHy-VTHuTjy3PE53ePpjX_-DKP_3A6ilp2-1Xo-HzIYWFpu9_kQ9KS2GEKKcXFo7D8tgEDQ2NaRjeS48fBZwr39450IKZsq0uTZ3yHuUqsbH5hBX2qkjcmVlCKwgNYJF4QWG0C3uU1mtmsSJM4zKro7geXPK7w3abMYpUqcOJvFsQAmyUvgi2TsMIkQAqN5FUYCHwQBE8RJIzxNdAbjOrZx9nz1qu0DWkYJG_VtkcBcDikRQxNO2b2E8X8PB9POjbQdL_NF15kzMmclWJivvlNA3PWwMIA3mue6nkcIPkJtQa_ZmPkI7mJ3-9TE0cp_jgsLTMwopAssmyNEzn9_f5UoikgtjDwCGUdLaDrULAOIoNU6QfBxCpbhiRZb_WNKBnhsnU_KdHnYWwMbphUHZQznNN83Zj6qszoUKybcfUAwXnmixRAMKwro2fvRrx2LoOY4NNP11SUxbVcXrJ-mjQVm2c9qyKCD6MHcTLNoOPBAcyIw36LbiO3lxDk_cATMk3_37H1Opd1yC9V8BeDubzYAEsxlX-_yhq5xGy_JtariNMqOp0abMkpQnJkzbuoLeJEnW0kfxoT_YMHr91V_xC6DKH-8jiCPt33WWawCY37MLCQcCYQHMLZhfsmcuRuJqQ6AJ2JdK_T28xfbc4T9C0TaZmkBkHxAd5FcQfv2x0xcIzHMb8H3wQCxzZcEwAkpsvOfN9JCG4cxBZ7yin_XLa7Myr7kb9mWgT-uaSSh08j6mWF_Nrf7Av7eH9IVSRmk6PVA1ZLA9j6AfHUz0QzITwXpfi5HLeL7MLIKyD6rZ99c6P6uygo63eldKy_GPyCMjp4FLKmj0GQ-zt1lfLkHTDJ5Z9XY4RhktyEx3zogkhJoelIfkyL7II28uvpd3tC_LvCDBBvhHiDZR_iKtVJBVrosZ149CeyeqN4knj1PXQ9VCOMb5xmxf1kwyAxIfPBHfqPDZKuszeIKcVCVyv3ej-RRjXDS040yWImS-5Yyoa-3UPCBv_jdI81jN10Hxqi4IZzMikly6b6dvbg2_-pGBEFekNGNLobrMr-qpMjID63OwwSpFWM3ds_o9jHxECczo7HXoeMI96a4lORtjjiNWcDBS588_Qyvake7UDYAgWE3j1mFA83rCW3ESfsYqgPiszxDWfUM7x0AAouQHvilPTRix_MtydhKc7GRf4dnPVcj6A3dOQ8H-omQlGyJmfdXQZHZET8JZP4gmNYde33yD3y4PzFy3bXWEbu8ppCp_RBsYi6R7qjuAhMlsO0_BcfllR9GPo3fqDpcpuKmoRFGkNcr2ThW_QJwIvDTaUF7DgLuQ4ZnpXYBNfjivINiAspZLOmtQspH_jMxOEA6TeSiexQCAfnffRxaCcMFaH6PQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_0c74bb48568a37d3016af9143407b887d19ca7144f945ce2ca",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0434\n\n## Episode annotation\n\n- Language task: carbon fiber layup on concave surface\n- Success label: failure\n- Outcome evidence: camera_0 and wrist_cam_0 show the blue tool progressing along the carbon-fiber strip on the yellow concave mold, from frames 0\u201363 through frames 64\u2013163. In frames 164\u2013189, wrist_cam_0 shows the tool near the mold end with the strip extending beyond it, but no clearly completed layup or final withdrawal is shown. Completion is therefore unconfirmed, rather than a visibly failed manipulation attempt. No clear slipping, damaging contact, or other local failure is established; wrist_cam_1 primarily shows the tabletop and does not resolve completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 190 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 34938,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 242,
+    "output_tokens_details": {
+      "reasoning_tokens": 51
+    },
+    "total_tokens": 35180
+  },
+  "user": null,
+  "metadata": {}
+}

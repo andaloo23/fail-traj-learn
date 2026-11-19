@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0391_W06",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 1750, 1850, 1950 and 2099, the robot remains at the blue bowl without discernible acquisition or transfer. Both bowls and the pink/yellow can remain outside their destination trays; the green can is in the upper tray and the right tray remains empty. Completion is not observed, with sustained stalling visible rather than a confirmed failed grasp. This outcome is provisional for this window; earlier execution beyond the context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across base_image frames 1750\u20132099, the gripper stays in essentially the same pose at the blue bowl for approximately 3.5 seconds, without productive alignment, acquisition or object transfer. This supports sustained stalling independently of the prior prediction, but does not establish a grasp failure or hardware malfunction. Context frames 1748\u20131749 show the same pose, consistent with continuity at the starting boundary; the earlier onset is unavailable and the stall may continue beyond this window.",
+      "recovery": "Reassess the bowl and gripper alignment, make a controlled acquisition, and verify retention before transferring the bowl to the right tray; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed task progress; base_image frames 1750\u20132099 show no new damage, displaced objects or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains unchanged and the objects remain accessible, so another task-directed attempt requires no visible environmental reset or human intervention."
+    }
+  ]
+}

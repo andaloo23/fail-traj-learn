@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0572",
+  "language_task": "take the spoon out of the mug and place it to the left of the plate",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon initially stands in the mug (frame 0, left and wrist). After unsuccessful acquisition attempts, the robot visibly lifts it out at frames 92\u201395, but releases it onto the plate beside the mug rather than to the left of the plate (frames 104\u2013109, wrist and left). It remains on the plate through frame 119; this is a visibly incorrect placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 31,
+      "failure": false
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 54,
+      "failure": true
+    },
+    {
+      "start_frame": 54,
+      "end_frame": 66,
+      "failure": false
+    },
+    {
+      "start_frame": 66,
+      "end_frame": 85,
+      "failure": true
+    },
+    {
+      "start_frame": 85,
+      "end_frame": 104,
+      "failure": false
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 120,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 31,
+      "end_frame": 54,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the spoon at frame 30, the gripper withdraws empty at frames 31\u201335 while the spoon remains standing in the mug, visible in left and wrist. It then lowers beside the mug and moves its fingers over the plate without the spoon through frame 53, making no placement progress.",
+      "recovery": "Reopen and align the fingers around the exposed spoon, acquire it securely, and verify that it moves with the gripper before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains in the mug, and neither camera establishes damage, spillage, or another harmful consequence.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the upright mug; no environmental reset is needed before another attempt."
+    },
+    {
+      "start_frame": 66,
+      "end_frame": 85,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After another closure at frames 64\u201365, the gripper lifts without extracting the spoon at frame 66 and makes further unsuccessful movements around it through frame 75. It opens and withdraws at frames 76\u201384 while the spoon remains in the mug (left and wrist), establishing unsuccessful acquisition rather than merely an unfinished closure.",
+      "recovery": "Approach the exposed spoon with corrected finger alignment, close securely, and confirm retention during a short vertical lift before proceeding; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt does not remove the spoon, but no damage or spill is visible in left or wrist.",
+      "resetability": "immediate",
+      "resetability_evidence": "The mug stays upright and the spoon remains available for a direct retry without resetting the scene."
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 120,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After successfully extracting and carrying the spoon at frames 92\u2013103, the robot opens its fingers at frames 104\u2013105 and leaves the spoon resting on the plate beside the mug, clearly visible in wrist at frames 106\u2013112. It withdraws through frame 119 without correcting the placement; the requested destination was to the left of the plate, not on it.",
+      "recovery": "Reacquire the spoon from the plate, move it fully beyond the plate\u2019s left edge onto the counter, and release it in a stable position; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon is placed at the wrong location, with no visible damage, breakage, or spillage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the plate and can be picked up directly for corrective placement without human resetting."
+    }
+  ]
+}

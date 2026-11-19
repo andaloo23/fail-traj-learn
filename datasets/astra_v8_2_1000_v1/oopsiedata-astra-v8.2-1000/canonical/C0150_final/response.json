@@ -1,0 +1,116 @@
+{
+  "id": "resp_099e5297a32a43c7016af900b0126487d2a5ab615ee598fb11",
+  "object": "response",
+  "created_at": 1794703536,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703545,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_099e5297a32a43c7016af900b2534487d2b4de5c472a279400",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QC6NlrmUlrAJDppFurlZ4-QHKIbnpNLuy6gWOD48u1jt-uUKO22RXoheNXVmec4hqVg8ql-srPR0oa4eiqAkvPYAAafL2PMwyw9JfaVjEKGN9xpdHhk9QMJaEcSO8NsF15qg4AUd-dfRs6sV6u5JCAPSYBoc19H8r3qr28lVm_R7FpBSr_FlKvHPyv2Ta61tjuA47dkag-Yn67Cgt1TRIbXssxoNVAxyw_ZWvf6re9zjtfQ_UV_m7zSyQmKOH4ZVuhddEunNyYnWoFb5t-De_nUIJNmTtc88PjK8PSojh6fKWiWk-Ll0UMu4o8O2ABLG-G-jZfFYn4E5nZ3coH87_TTMpHLLr39Qwo-vfq4tlPEAGYeijafPNeC-NutJVK1QGFqiXhfOIWo2qLm_brPk21RA3us0AF-pqWf9pZzgt3xQm2qLR6zcUXqljfj0PR6Fa0fQLt5AyLcTZY8yGiexnTXt4MuIvw3iV5b2PVrFl1Nvx9ZhCSHGhn3Oqsq2QWfV9GVZB3Ti3xM84ixMmOcodDd4rMUh7h_Mf1lRb48Ej6mCKPMqCiJQRUieif9xXBzj2GHhYtzFgZoe6fvTvO5s67TbONZyI0x4Blwzsksi8cloC_pqCAYkaEPTemcXIld2l8969RRPLpg7WnMqarRzLu7U1IqHlls4_E9iiawaG0EGiLQrTQPQLIUu3WLF5nsG2O5dTtSsebA-6UhyJRBDMFnLVMw7QQQ_PpK1t0sgVK0hhy-X98caPasLIaPOw4QLZP1XLmrhYY33CepdU0hqWNRGOgmc3aZN8xMMkKpq3kl0mY4pTVf9qRRIrLF4_7YEOWfjcbMz_DafryNd36n2jN3ml81Psan0pt02Gz6c_SKhTFbRw2T71sEKplpcu082UhnkkRWBrPNWR2Vo8d7Q9N_BD93WfxkvWJZ-M4pZh4q0NcchCzkvw_irEPfdGBIg58nT9tGfjvHiVTKqvENUUM58oZfayLQyxV9sM05l1uCNdp8uwAR8yKwY1Hpnzq157a9HE6O9t_-q6xMBtR736kTAl9aHMOPsxDkz5muIgEHI8tu_vZGFQ9Tcw96LxAC3j-Azjh0ocIa82Oj67DuQpaIcJW6HxLneMyd4mEYVLBwkXAhOlrAuZ-GXvawB3Htliuq62nsvSE4gRe_7j5akGZfAMLvDFt-4cOmydjdd-uy1kzS--3xtA7ZP2tlndY6ep3H8xtw0wmOm_Q-tHedKRFQQw8NUqB1M92O-HXojq-RgM9txrnSx66S03hXoL0jkID6Z7yajORaH96A-yslDG7ArOvmRI0AioRqm5IUL3WQipCWI7LBrJ0BCfTy1WK2SkNPMIBkGBMUXv9eMUgn32PToOyYTH3FH1GeRoY0il1mtJ0tvhoPhQLlWulGwAv1pWVWSRBM0-_ck0kYGbWQOwKLddrJWRPdfrjO9CNCf2wxjv0ZSZVEVgNqDEOTf1MymUkg15FO6t0QSxQllhhB-vZbLjSufF2b9QPcosENf2N6PikFc2tXycCKVfpHktagIMdw4REb5TbYd0Y8tUJM2yrSg0FiGlVyLzbhypx2BAjgwj4vq1LidWfZCjxewJEgBdYsudBERLEXLJMLhsmQ97eAXOndlQHhKcYU_kPVa9Kh1pqBmPOxt0P0NrKNthVzBLRC_W1r0ffFvny0tVasyDZOBMVW1vmAcLYaypMrGmbwQ1TxO9uWXyQkHJCNlZTeQ_4Jcg3A5JfHKin1HdTimA47Fh6CPW97jHR6OCI4bh0HXAGIdV-l2BEtGdF3BgTnO_KYqAV2GW8SIq2oUEvINm_WhYR2BPnX0JGDg_w_4V7NYcLryxP2n3DMz_71kc5QSo9Sd1CpztzgHkLOWF8-YyNKYQ9Bzo87ecV426H6ntftEaxOR9Y5p_U_HFFUGT1xM4SddabbMiENh8ZBf9DRduCNvNBoUbtuZ91eQ8nfIeHvfNBRFc1VPmlVnIUFHZNHUKSUfv6R8PKIecLry6NYDjV0UsnscWXTElR7h3pboFX13GRF5Q6gVaMfHZXTK2ICK6OGg7-ZuA2o3nFudcSaD7qv2btX4c_TNx5eMkUdMsSgrY13aWVp1eFHFUU6-uMeV4GwTvpEkUHf9xC3cZq3bTyr-g23LuM3xED_fkJfagJ7TThP2sFBEW3SIEIX00S7jp2-Iy-T7gGLSizi-bA3afBPh0lzizURu9V3zuv1l_N33rdpHXA8KFZr4HuXnxjf_fH3WdEwMT3wEvWjv4Xb-Vp8hUHdu2Ytd1YAGjXUg2NiBgt93ZghEBhfDRiXnatF9Tat5nZVh60zW1Wqnsho_gLIj9rbpe6ZJFM1IkUYqncd4VSTPDcSx69_u9XTIHhpLWrTguHxo-zsD7Bi8Tvj5_WrhW6Nku2kPTMqGBU-ri--MCziJrTZo7vystceVCHsIOKD7XPeuIWSqH2LGNwARhMoDLuquOsXA-kS2FsK-A5j5it78Z0yZup4XZDsxTFl3tQ-cauMZWtzQ5H9hxWn_tYPPfUk7Gc89dh9jHXpaabtA9IA49ipNt9hp7vO05PPtvefZq1XRLBrIGkxbN4pbIEXsChOffLatecTkxgs_gwO-NytasWgkuNm8kV_MjgwPh_euLmxiNgfdnC0ZW-eIQQybzBnmlk3lSA0Fv3uroq3xtpEf73ES4lkaONb3fIAFkfVDja3Hxn0bdHgkRxBEQjjRgTX0gk_7b1KttFXpwHsNHy0RFYhWL9_Z9os6-AWQJbf2ys1e9mZydH7ZDrKoi4ZL0ZxBv9KU4CwkO-7dLKplhIVUECKXY7D-6e4GB5zCn62edmcbm6rlTX3vUt3wlJamuHo2ogR4Qk-782fk5u8z74z3nRnUCp7pBV_tRz0iUlsJp7b1lxzJCv7ZSzju9A2lQfejZF0p0VoCxxRYDCLkJQ7U9SwWk15_NEA3Ww5mfpoAVmLVTRRMsgMeXsG47ln1PD6MNiqVOaxA47z-V3LfLw=",
+      "summary": []
+    },
+    {
+      "id": "msg_099e5297a32a43c7016af900b49bc487d2b733130de1d3bc5e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0150\n\n## Episode annotation\n\n- Language task: pour the coffee beans into the cup\n- Success label: success but side effects\n- Outcome evidence: The robot acquires and lifts the light-blue bean container (frames 30\u201380, left and right), then tilts it over the brown cup on the black base. Beans visibly accumulate in the brown cup during frames 145\u2013167 (left and right), but others scatter onto the surrounding tabletop. Some beans remain in the held container at frame 167 (wrist), so complete emptying is not established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 148 | No |\n| 148 | 168 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 148-168\n- Categories: manipulation\n- Explanation: During the pour, beans escape beyond the receiving cup and scatter across the table, first visibly evident around frame 148 and increasingly clear in frames 151\u2013167 (left and right). The robot retains the source container (wrist), but does not fully contain the poured beans within the cup.\n- Recovery: Rotate the source container upright to stop the flow, then realign its lip closer above the cup before continuing with a controlled tilt. Collect the scattered beans; human assistance may be needed if the robot cannot collect them.\n- Severity: low\n- Severity evidence: Dry beans scatter onto the tabletop, but no damage, broken containers, or meaningful damage risk is visible.\n- Resetability: minor_reset\n- Resetability evidence: The spilled beans need straightforward collection and return to a suitable container; the cup, source container, and work surface remain usable."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 31115,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 454,
+    "output_tokens_details": {
+      "reasoning_tokens": 94
+    },
+    "total_tokens": 31569
+  },
+  "user": null,
+  "metadata": {}
+}

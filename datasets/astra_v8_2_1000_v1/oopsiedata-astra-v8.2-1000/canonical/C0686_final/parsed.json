@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0686",
+  "language_task": "stack the blue block on the yellow block",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the blocks are separate at frame 0; the robot approaches and closes around the blue block in frames 9\u201323, then visibly lifts and moves it toward the yellow block in frames 24\u201330. At frames 31\u201335, the blue block remains beside the yellow block with the gripper still around it; no completed stack or release is visible. Completion is unconfirmed because the episode ends during handling, rather than showing a clearly failed acquisition or completed failed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 36,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

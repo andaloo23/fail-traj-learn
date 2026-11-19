@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0548",
+  "language_task": "Open the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The drawer starts closed (frame 0, image and left_ego_image). An initial handle-acquisition attempt does not open it, and the gripper withdraws empty (frames 180\u2013189, wrist_image). After realignment, the robot pulls the upper drawer outward (frames 252\u2013274, image and left_ego_image); it remains visibly open after release through frame 315. No unintended displacement of surrounding objects or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 117,
+      "failure": false
+    },
+    {
+      "start_frame": 117,
+      "end_frame": 210,
+      "failure": true
+    },
+    {
+      "start_frame": 210,
+      "end_frame": 316,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 117,
+      "end_frame": 210,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the initial closing motion near the handle, the gripper makes small unsuccessful movements without drawing the drawer outward (frames 117\u2013179, wrist_image and left_ego_image). It then backs away without the handle and closes empty above it (frames 180\u2013189, wrist_image), confirming failed acquisition; the drawer remains closed. The interval ends when the fingers reopen for renewed alignment at frame 210.",
+      "recovery": "Reopen the gripper, align both fingers around the handle with sufficient insertion depth, establish a secure grasp, and pull along the drawer\u2019s sliding direction; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt delays opening, but no damage, displaced cabinet, or harmful contact with surrounding objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and handle remain in their original usable state; the robot can realign and retry without environmental resetting or human assistance."
+    }
+  ]
+}

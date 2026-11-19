@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0245",
+  "language_task": "Put the toy strawberry into the pink bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The robot acquires the strawberry and lifts it from the table in frames 49\u201368 (wrist_cam and right_base_cam), transports it over the pink bowl in frames 76\u201390, and releases it into the bowl in frames 91\u201397 (wrist_cam). Frames 100\u2013115 show the strawberry remaining inside as the empty gripper withdraws. The bowl and other toys remain undisturbed through frame 240 (left_base_cam); no failed acquisition or harmful side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

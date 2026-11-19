@@ -1,0 +1,116 @@
+{
+  "id": "resp_05a6d55232ee4d8e016af925d33dd887d1b4763ea1028cb154",
+  "object": "response",
+  "created_at": 1794713043,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713050,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05a6d55232ee4d8e016af925d5a61487d18f735b2fd71e856c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SXaQZzmULYS-HUVBxmxhNpw4SftFi8saklEnlq_-6-SaRWD7fA1MBNRYSOkzMSNMAssbW5WbD4kcBp2z9Y08Mn25wDovqazoiQGYJNtrY6KXUEIiinbvhVdNS2ZHHtHwAs3mk0oe5w3r6oy5YzIN0SK5MhZvE-lcufDCOYzFN-9LgwY_mAyNxAOy7cT1H_-Ji_5QewPLf0TdQucBFwt2dfjpeteLPia0rGYyQT7isQghX5NBIweLAkGMRsXFzBIdvtEu_rJ87y_U0yalIBe93WtyXyLEhLn3aUofstGbBxd6Yp7z0WgZKqDtmW4D85JeNw3WjLqWbp1NUJ7SZWdujjhWm517OG0GJcNqszCQxXlV2pIvweJlKXxHCk14HIcYgQuWeecNDTgVIvhfKZcPTw6NoMEEBjgG425qyP7L9eDira6iS1RuZybEffy7o5fPnCFxkl6ZgW0bNd2Hk4TtQwyAXwYpXTjvOPwd-OxRP0tmZT96O0Zc1V4tZqryK4Hsf3HCVL3HQTd3fzSvvp042EtCHgSGJ7MOWZ1sAewFoHh7On66HXsmGCFB9BfWzhkXsPzEQKw2aXbcXnIs1CJ1SVna6RKBmpbFR7kTQQk0Ugbjvp4YJuCN7dB_tbm5NnpKT0Y08GGb5RfztfcEV0Il8xc5_T8t11lTNSAMnAx0cW1Bwm7P2gNhRULSSxFjpjnDuDSsxpQ7fYA4gZ6-DQFu0QzzEaEB_POx7q1naP4tYEAGbvY69BfZxhJRssXUpTPMUILLIa9vjPx0TURIVZbJjiN7OipSjnIblbhjYcYgZB30AgQyh7e0iovhLyZKhDz3zaPsai3h8Y86--nz8lTfIEGiwjhIMz2iTK58_uCx3RVsxYgEmO2asAlBXp__CmI7l-1dT32aPOAFltM2vQmv3cOh47O-JaAZ6ugX9i_Tfh3UjoZE-k9GALXkiFkssc8xhifQMxhOuVuKQDHMcRMJobvPaZXbXAMr0wybWM8nuURRIlSQsPmtNPE9J-YRza9HnMwbgbQwL2kH6oZHW7U00eRtPkRul6U44OUCZG2bKOROqda_ABAvQM1vtw2gltY03hXeTFBQ2jFZ38RmOrvEaG_qqxoRm4nLr_EZrHfPF6oXvLBEfWl6Gh9eeau6cxQxAQ9XF3Z6WZY2BLIuTydVfgSnf_zOwV_Blpx0gMSBN_plQP6wdlVYhKvuSrxVY4yZZzcnRNF35O9tZZ84TpblSbI3oPV4Y5MljBBBf_jSeF1b7NuTz2q3JdBBj70lYZr6Se988JoWvLOIM7QQ2oZxz4mWw4fSIt2IhXe_ra8lsaoo4LFzsXsuC0Q7VXhc3nkUhJmIOxxOAEwq7y4rI0adCf36SmllVwje69RjgBwN_KDjzjIZIJ8XQcynGKRtpuoPcumtkuXNG7aoeXp7j6zPfb3IfKxEQxWDrKKrFw_Z2kU-_q4L85B0voTrY_ve4WorifCN-ZflfI8vxHU9Pec89V_W9kTaFDRZBQSWl7ff_YyaLJ9jAMmHP_PeOuR-arVvoY4rYRlBU8aRFiu9VkiDZj5B3ZvF8NTSOZxqM95UwrM05P3EIvoSPnT4JTDEsO6Q5TvMEEHjCfi-VnS9wjmfiPmlZ508usW37f_Xf0068Z4sbiupBeQRDO6rrwhh6KFXQKDSO9BeYHE51v7u4hV1jRZY66YR4xjBex8maMUQq2MBx-Z6_RuBZCPeJ1A1oq7Kqy7f8jPe4-KgU-MoTq4z3BaaFwPmG5uN8TP3RlpBigvp3Ow3xKYmuKbbZvgqUnE9n_5QKPsxRARmbelW5igKBAqqOFwQSgD2sAglqD7MzXGYldA4l3tUk4t3mOtIllzJFqbiac95SdE3QblAqA2NoNCVhvZchTPzFxdY9znOuJLMPzPi5lO8YN_EEdLAxxsCHYJ6Cf_MiztKI3q-fiqSvY6y5IDFB36kKed8ocl8-g8C_ZdgdAu-dvZMwKfExzj2tMV",
+      "summary": []
+    },
+    {
+      "id": "msg_05a6d55232ee4d8e016af925d5cc8c87d1bb87be208cc536d4",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0736\n\n## Episode annotation\n\n- Language task: pull out the block sticking out\n- Success label: failure\n- Outcome evidence: In front and wrist, the orange block remains protruding from the wooden stack throughout frames 0\u201361. The open gripper approaches during frames 0\u201327, then repeatedly makes small back-and-forth adjustments without acquiring or extracting the block. Frame 61 shows no completed extraction; this is an unfinished task with visible sustained unproductive positioning, not a confirmed failed grasp.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 28 | No |\n| 28 | 62 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 28-62\n- Categories: task_not_attempted\n- Explanation: After the initial approach, frames 28\u201361 in front and wrist show repeated small advances and retreats around essentially the same position, with the gripper remaining open and the orange target unchanged. This sustained positioning does not progress to acquisition or pulling; no completed grasp attempt or definite harmful contact is visible.\n- Recovery: Reassess the exposed block\u2019s position, align the fingers around its accessible end, and perform a controlled grasp and outward pull while monitoring the stack. No human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The block and wooden stack remain visibly intact and unchanged in front through frame 61; the observed consequence is lack of task progress, with no supported damage.\n- Resetability: immediate\n- Resetability evidence: No object displacement or environmental damage requiring a reset is visible; the robot can reposition and attempt acquisition without human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 12203,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 383,
+    "output_tokens_details": {
+      "reasoning_tokens": 30
+    },
+    "total_tokens": 12586
+  },
+  "user": null,
+  "metadata": {}
+}

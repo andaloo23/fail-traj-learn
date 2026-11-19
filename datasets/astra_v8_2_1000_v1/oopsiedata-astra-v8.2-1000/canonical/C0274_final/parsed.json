@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0274",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 in left_ego_image. The robot moves toward its front during frames 76\u2013102 in image and left_ego_image, but the door remains lowered at frames 103 and 153 in left_ego_image. The final interval shows sustained inactivity rather than visible closure; no completed failed grasp or established door control is evident.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 103,
+      "failure": false
+    },
+    {
+      "start_frame": 103,
+      "end_frame": 154,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 103,
+      "end_frame": 154,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the oven, the robot remains essentially stationary beside its front from frame 103 through frame 153 in image and left_ego_image. The door stays lowered throughout this roughly four-second interval, with no discernible closing progress. Small wrist_image changes do not establish door manipulation.",
+      "recovery": "Reassess the door and handle position, establish suitable contact, and move the door along its hinge arc to closure while checking clearance; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The oven remains open, but no damage, displaced unrelated objects, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable with the door open; another closing attempt requires no visible environmental reset or human intervention."
+    }
+  ]
+}

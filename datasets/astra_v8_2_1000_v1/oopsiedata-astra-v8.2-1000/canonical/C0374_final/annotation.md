@@ -1,0 +1,28 @@
+# Episode: C0374
+
+## Episode annotation
+
+- Language task: Remove the green plastic toy from the blue bowl.
+- Success label: failure
+- Outcome evidence: The green toy starts inside the bowl (frame 0, wrist_cam). During the attempt it changes orientation but remains inside; the gripper subsequently rises without it (frames 221–225, left_base_cam and right_base_cam). At frame 240, wrist_cam still clearly shows the toy in the bowl. Thus removal visibly failed, rather than merely being unconfirmed; the final renewed approach is unfinished.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 94 | No |
+| 94 | 235 | Yes |
+| 235 | 241 | No |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 94-235
+- Categories: grasp
+- Explanation: Following the initial contact attempt, the gripper lifts slightly without acquiring the toy at frames 94–98 (wrist_cam and right_base_cam). Continued small movements around the bowl shift the bowl and reorient its contents without securing the toy (frames 109–220, wrist_cam and both base cameras). The gripper finally withdraws empty at frames 221–225 while the toy remains in the bowl, confirming unsuccessful acquisition. A renewed approach begins at frame 235.
+- Recovery: Reopen and reposition the gripper above the toy, align the fingers on opposite sides with clearance from the bowl rim, then grasp and verify possession before lifting out. No human intervention is visibly required.
+- Severity: low
+- Severity evidence: The toy remains contained and the bowl remains upright on the table; no damage or meaningful damage risk is visible.
+- Resetability: immediate
+- Resetability evidence: Although the bowl has shifted on the tabletop, both bowl and toy remain accessible and intact, allowing another attempt without an environmental reset or human intervention.

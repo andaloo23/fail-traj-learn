@@ -1,0 +1,116 @@
+{
+  "id": "resp_0efdbbe7194f32d9016af9066715d887d298a93ed9ea71afed",
+  "object": "response",
+  "created_at": 1794705001,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794705015,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0efdbbe7194f32d9016af9066ecdd487d2ad7416d871b87e94",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QZ4o8h53WiBP87dh43nxCRCXZ2l6KtXK3h538v35H-SMoJhy5jO_dk6wHy2yOQHeLAPWeDjwQjZWN8x91CiQvOlMzeofL3DPWgh-pUHvJSLnHty5zDBh8R9ojxcVVe3yhkjKk9cnQbD9TFhvxMZNfXfs9bd6346-QmBSbJPliR5MGVIlO4Ez0EnM0BmxBZJEUqlZ0aHTMd4c-CM79UdgzwTYLiwGvQ-zDA_pkhfo1oc9F5CeUjtGDcT6Ac98_P9TAe7CzSbXTogNFXptgF9MNqbhtk-6QmR1tbKnWZHOaJc_V-Hd0tciJTCKS7GVY5F0I2Mheg_3OQhhHMrb9R4toroqC0Q0Xuwm9OyerNK9WEBVQzaumXdfNkI9FWn8s-zPVJyh_nzXWKo2BHBRryh99Yx7aS1fGyNbSLp-lysWdHtMi0IsFRpXWIc-6930ga1UtIlPI4ttF3DP0mzQPMtnAge--_3I-RpJ59SrTNijNEFqHWRi9r5StwmmCyJSV1MdOCjfHQ6jVNz_YvvAnv9oQjoBC54voc3Oz13uoUM6cGM9g6zxl7nGYqnVnuoTj3_pHAOv2CKLxrQXMGwEvTUKDmvIo0t4UOzpy0lOK31sVo4mvuBXB7ulFGep43Zq1WyLVGl5WFcG-oyG5MPRPohqIacR8_fZ4EshbQGomWs2RzlFy6COURTSWFwQ9wCL8WZAG19HqCkryHrmyMbX9Wh-Q11hF7h3oUu8A9oOnuH5GcqolY7KrQwKXk3vT7OAGPTzC8xAJlBvjVZ2RM115HzCr8nmgwaJg_40nkB7YDdUQREgB2BtAnq9m-n-Sw0VjzWKoP_8cJDDfHmFcTsRmTakOrCKavSSTKRqHSjQTchNxPff1NO1gaAWkMHOD--rH-pQD6yoYVLY-Cs5D_imT2qtwa_8GaSrAN8grThi_hma4crP5Bc-WePpQOos_Qwzpnw0unk7r-xmNvGRvGIAoXR3tEyWeptCM3-lhVlA6QXZg58m8WEp_VkiF3OpA6I555rO08dwZcAFl2XiKqafxSt2-bphwXAs22i_r8j_aJn_NGZS1cYy18YxoevfKiHEqrj0TW8x4MadVUuw1DILqNalx8Bq3i1c9FRBZp1WrbIplwpjXgLe7WodRmeU_orrDE-7EZu5YsIMyhoi-u5cM4cOOiRSWg3Z_Ynb-iIFZvJ20W6BolKh8U1tRdvdvJjOq-EiQA6mnM1t7AANqmVlhFbEEALq0fcGaDlu5DDBCHDRjKM2WNH-R-XNdjihx8C0Ob-6L0pjuLTiDwD-f0O2rtRC0okqXGZgmcuyJnfsWKD6yGRj9DDfBFXX1E92ajP1eXquUeph5D7OiLtgdmr60b5ThMyd0f9EcrUnIbcQkO5BUFM_ksLdQuOasAYi8pIFuoBWa4Yk6vpXTUmf08FMuzQ011iY_JtBrV8VHeZ6JU-qAMozuIsBRcgBqs33cuRHdLKVC7Zrn5rW_Zn4RczJ0LojAOeQTtUXK08TqHAmkGEME-Dc38K99r50Rk4aC-TStNxuY3nTpBxBQFN_q5neMGf5tkw3QtORLOiw1TDXDLZ-OQ-80l69uECDJE7LQmnJ1inJGDB6BaNpQZXpytQA3C2EgUMFwFE-Z2X_VqlplZ7i8rc_AWpv2U0bWVZkhwXvfaBI9ZNh4XEF9C87ZEZlG7amMlzSYfBGU4xaTN-rEoYvFkgwLA4sYaBvC-l8rZb-GnbNUAHUMU82Yf3YiDGj13OOfG90lujZQ63BIMyZ1rHPo246snyc02L9Eoo49xOfbrWpkZMyuO-wEpeVaB95lS5nsIVNKaKInZEBqxqS57_3l9pISbG-aoIqJo4z_DcpvzNZsVOhn6YTfItyZHYK_paenIx-jYPCHUs-3tqJD02cBprFZ1_QVMwsZ1t8u9t5uEmsFsZ17TkGlZEChXaS0Ud9kFnOE5EMu2HIbCyLn-zI_1OhYsOQArIIkN03MVUapyqWuhdIxKTQK9RpXv5QHiJZ9fwo8Cl1StLUXF5xVSNVLx3y3HtLzwlyEG7End9TrS-90DeONcPt_ZWfDbMpIkI4xiU8nYPOcwcICwwQ7OBDvyJAQB57TdALZQzlEc8U3dxppLzMY-qkrDpUD_G-YUun2qhcvuMl6bMdNjTUHdx-wh0Vo6Bl2NB0rwB9ed2y8Oa9tWuO_15ObYDI7CEMjNqskTNPSbT6rMWwGztl9nGqLOJBSwOnDaO1JM-CIjpMho5NjHpML7LEiZ9DVadNaz-SqXtEFQtBW8HPPEuv4HPYzAjU6YAE7nr4SPbK-EGbFNdYVScbS4UdAU-Rk1SpNef08oIgWO90WQtv0MghbNRJJmyAH9g_eYJ1Cn1caANcxFf8W94vGGbbfaw10wGJ5_24VgW7Q==",
+      "summary": []
+    },
+    {
+      "id": "msg_0efdbbe7194f32d9016af906704fdc87d2bf9593b9a0d22d36",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0246\n\n## Episode annotation\n\n- Language task: Pick up the green cup and stack it on the purple cup.\n- Success label: failure\n- Outcome evidence: camera_high and camera_wrist_right show the gripper approaching the green cup, then withdrawing without it during frames 169\u2013204 and 284\u2013355 while the cups remain separate. Further positioning and acquisition activity follows, but frames 583\u2013599 in camera_high and camera_wrist_right do not show the green cup stacked on the purple cup. Completion is unconfirmed at the recording end, in addition to the earlier visibly failed acquisitions.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 169 | No |\n| 169 | 205 | Yes |\n| 205 | 284 | No |\n| 284 | 356 | Yes |\n| 356 | 600 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 169-205\n- Categories: grasp\n- Explanation: Following the acquisition attempt near frames 155\u2013168, the gripper moves away empty during frames 169\u2013204. camera_high shows the green cup remaining on the table, separate from the purple cup; camera_wrist_right shows the cup receding from the gripper rather than being carried. This fails to acquire the required cup.\n- Recovery: Reopen the gripper, realign around the green cup, and verify a secure grasp with a small lift before transporting it; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The cup remains on the tabletop, with no visible damage, spill, or harmful collision.\n- Resetability: immediate\n- Resetability evidence: Both cups remain available for another attempt without environmental resetting or human intervention.\n\n### Failure 2\n\n- Frames: 284-356\n- Categories: grasp\n- Explanation: After the renewed approach and gripper closure near frames 270\u2013283, the gripper again withdraws without carrying the green cup during frames 284\u2013355. camera_high shows the green cup remaining in its tabletop position, while camera_wrist_right shows changing separation between the cup and withdrawing gripper. The repeated acquisition does not advance stacking.\n- Recovery: Return with the gripper open, correct the grasp alignment, and confirm that the green cup moves with the gripper before proceeding toward the purple cup; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: This attempt leaves the cups separate without visible damage or a meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The green cup remains accessible on the table and can be approached again without resetting the scene."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 105870,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 618,
+    "output_tokens_details": {
+      "reasoning_tokens": 59
+    },
+    "total_tokens": 106488
+  },
+  "user": null,
+  "metadata": {}
+}

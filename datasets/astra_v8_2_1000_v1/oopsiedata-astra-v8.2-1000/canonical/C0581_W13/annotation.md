@@ -1,0 +1,17 @@
+# Episode: C0581_W13
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: success
+- Outcome evidence: Provisional for this window: base_image frames 4200–4227 show the cans contained in the upper blue tray and the bowls stacked in the right red tray, with no target objects loose on the visible tabletop. The empty gripper remains clear at the left, and the arrangement stays undisturbed throughout. Completion is visibly maintained, although the placement actions and earlier execution are outside the supplied window; no local failure or side effect is observed.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 4200 | 4228 | No |
+
+## Failure annotations
+
+None

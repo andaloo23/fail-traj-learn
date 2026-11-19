@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0094_W04",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this provisional window: aria and right_wrist at frames 1050, 1200, and 1399 show the right gripper remaining at the cup near the saucer without a visible release or withdrawal confirming placement. The open left gripper remains away from the cup in aria and left_wrist. Across the roughly 11.7-second window there is no discernible placement progress, establishing sustained stalling rather than a visibly failed placement or dropped cup. Earlier pickup and handover and later outcome are outside the supplied images.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In aria and right_wrist, the right gripper and cup remain in essentially the same configuration near the saucer from frame 1050 through frames 1200 and 1399; left_wrist also shows no useful movement of the other gripper. This sustained stationary interval does not advance placement. No failed release, loss of possession, or mechanical cause is established. The two preceding context frames show the same configuration but do not establish when the stall began; it may continue beyond this window.",
+      "recovery": "Reassess cup alignment and support, then carefully complete lowering onto the saucer if necessary, release only once supported, and withdraw the gripper; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed task completion; no damage, spill, drop, or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring reset is visible; the robot can resume the placement sequence from the current configuration without human resetting."
+    }
+  ]
+}

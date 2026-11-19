@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0221",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot grasps and lifts the mushroom in frames 17\u201322 and carries it toward the green cloth in frames 23\u201329. It then spends an extended interval hovering with small repeated movements rather than placing it. Frames 59\u201369 show further orientation and positioning, but at frame 69 the mushroom remains in the gripper above the cloth. Completion is unconfirmed, not a visibly failed release; no drop or damage is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 29,
+      "failure": false
+    },
+    {
+      "start_frame": 29,
+      "end_frame": 59,
+      "failure": true
+    },
+    {
+      "start_frame": 59,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 29,
+      "end_frame": 59,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam frames 29\u201358, the robot holds the mushroom above the cloth area with repeated small vertical and lateral movements, without sustained progress toward lowering or releasing it. This extended hovering constitutes stalling after successful acquisition, rather than a failed grasp. A distinct orientation adjustment begins at frame 59.",
+      "recovery": "Maintain the grasp, align the mushroom over the cloth, lower it until supported, and release before withdrawing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The delay prevents task completion during this interval, but the mushroom remains held and no damage, dropping, or harmful contact is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth and surrounding objects remain undisturbed, and the robot can continue placement from its current grasp without an environmental reset."
+    }
+  ]
+}

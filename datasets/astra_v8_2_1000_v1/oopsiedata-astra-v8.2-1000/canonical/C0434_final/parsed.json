@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0434",
+  "language_task": "carbon fiber layup on concave surface",
+  "success_label": "failure",
+  "outcome_evidence": "camera_0 and wrist_cam_0 show the blue tool progressing along the carbon-fiber strip on the yellow concave mold, from frames 0\u201363 through frames 64\u2013163. In frames 164\u2013189, wrist_cam_0 shows the tool near the mold end with the strip extending beyond it, but no clearly completed layup or final withdrawal is shown. Completion is therefore unconfirmed, rather than a visibly failed manipulation attempt. No clear slipping, damaging contact, or other local failure is established; wrist_cam_1 primarily shows the tabletop and does not resolve completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 190,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

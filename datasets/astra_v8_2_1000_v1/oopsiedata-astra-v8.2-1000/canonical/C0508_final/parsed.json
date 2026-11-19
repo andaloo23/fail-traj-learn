@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0508",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon initially rests on the table beside the blue box (frame 0, ceiling). The robot grasps and lifts it clear of the table (frames 44\u201348, wrist_left and wrist_right), transports it over the box, and opens the gripper to release it inside (frames 72\u201376, wrist_right). The spoon remains in the box after the robot withdraws (frames 89\u201395, ceiling). No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 96,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

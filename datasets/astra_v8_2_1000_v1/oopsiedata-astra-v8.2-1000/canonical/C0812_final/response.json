@@ -1,0 +1,116 @@
+{
+  "id": "resp_009f656cef5265ff016af92a2dc0b487d2b78fe292c36857d8",
+  "object": "response",
+  "created_at": 1794714158,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714166,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_009f656cef5265ff016af92a308a8487d29395d6d9bd5f8011",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-So2lyZeKjN58vzRfw9ECRxAfsNZvs1mkH6EZ1SXerkNydSq-vUYWQXJAaTfy5_4Zylgl965gCMI-kaNMX6K51W-DX_O-Sj-HY5f3YBOmL1uxk6IS_1H6Dy6jxnUpjJVkevUwxKbD2adJyzMXTFkqR3QZC85JW7gpoesDf504VQcso_oc2b3BjwOUU6Sa52NOSNP-CJGyrhgYe0VSC3F3pj45KgRiWuIBDuoHfYd_cGotqfwGlYfaw3fn4WflF2dvxRF3R5yAzGuvEBuSDbrM5Ivn49kQHMRGvn4SWpo-mKzrIW2rkwnnKDa2BbhqqKFDmbzBXWW4c644BOFkxwrisrUqeBDW6deyMY3v7xZxTvnFcPgnzyXMvrARwiTCQQtDxwKsosmE1EuPtN6N24FMzEJuS-BoIuddWnIpJ2l4GVlTj05sd1_p0XzlcLmFpTWFO6ccJrZ7VlForIZd1DvTQYtT-dfbuj14QrEW993FjaaNWz1SO4ltB3EMRowu3p21hVpGWf-GtUr7Ko8eG-Obhr_fyV0DcZdiPcUOGiRWXBdkv7ytxXugkHyPIL4Y8bR9pgpl3kbQNPpGAnyTMO2eNngHYEc5oPWgtcy-kAXpfm3Gzd33c9TmgL0v_e7PFyM1OWaPVldHcOKDVKNSk7bjsVi4s_XHOFLYldweG9ssmzi7LpvpZ9PkFWPMMtjYde7GmIk8A3g1is1zPp7KCbxkQKGdx219Ab8fui2Ls6Vsw5hguQprTdhUVJTHQRx3fy_8QFHkaJBt-CR0h7fWytAcr7Wwtfjoh95tdbr5jeK-UV_XO8s_Yh8dttQsXD5PUIma6CLpWGot2oACZlTLW4mMwk_2YahAd1zlCBYIDX1nnB8ApZo5zkDVWyKckxYsWJRFP7AJl1cxRn3tasnrmU1SX_kh_YpSd-U7aD_M73s0DMS-7__F0iF3rWvuoAZyl2qBw5VNRMNERaLsgKq2njMe0QJRhPYmGeIdJvXWTV9XAebfCSIJwMDgt8yEmcaAqfbgrMUvuX7Eqf4XeQYU39jIeTAKSVzumuB9zs9Inzco4zCfyWPyA6O9bZhGmiuqt6-74Y6-YCVqO4Aqz0PRdubLVOp04XLce9GTAsH134DwRBdRJPTy2j0eiTBN7yeD0JqpbR_c1UeKxbt8WP-3-FTVXuZ-uhO-4t9sILTZqHwDT5ZSImqAeRcB8kojfLBzshwSGpD_xRPtKrd3z2jxsjrSYzcWf5Etnb4j0BfyLSiveHEz9BCEtgMgKgud6H7NINAbVIivu8naYx7Kzz0HLHvWmFg-KZ-7OlSPTasrm7q503icN8Mbrx4TRSSMfpR8oL1-6GSOwDBG6v5mCRa3ad9M_LNHWbGMgIJmdzro16kmMH2I5T12A_hD7s1Zdj9O5qClAJHlo80g6jfZFpCE913EH1BcuvhnKN8RU7eCIWH6EWFH37gJPAgYE8KYGVR8LB1KrKZk7_FJgBFspmZq-XakHJ7feil8nWJ6kbeN_k3a3ByjriIaqxfoMND-CKcUebnWDoxfGW4IjyoS2ue11xbtp_uV6TgyUoQAPf8ZlPGrCDF-qkt0nocMvQtnSZvQSA39fkzx4Cl8whRz1GqyiLDaJC2NKBCsPz9mJoznspQN6EFY2Ohj6uLleSJLULtJbBmbBisNo42ifBgLJwQuwNvsHId-hl4HK6gIHv8xkNAHCpatxIPERzoPGx37zeAh1DJHmaJgUiGj8DCGJofCTRQX_A8tVVIrIp82flSwL3cPi9J_Aljjj-XLQnulYdp8NrBIA-wiH4ClOFSpy4sUNELl-mKziAgSTJfRWfClLG5ivLROarOq5UOhazrn-vWAHIZ6lfvx2MlwQ5EU_ApkKN9hvo4lpeCsrdqwJTt8C6aQX-esAmR1DYkoCtWZFEsFd5CiSLSOCPePN77f4pMNBRI_V64Stpm0_BXgrUdJ5HIFG3qcIv8bNTWyMRjDGEK4Kf-IXeZTEGBY3D79X0BbocBSzdLckOblS4hrBgSM4ExtMF6aVGjrMy2ESD0ppkvoKltAUGm",
+      "summary": []
+    },
+    {
+      "id": "msg_009f656cef5265ff016af92a31526087d2909f289710291188",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0812\n\n## Episode annotation\n\n- Language task: pour the coffee beans into the cup\n- Success label: success but side effects\n- Outcome evidence: The robot acquires and lifts the light-blue bean container (frames 36\u201384, left and right), then pours beans into the brown cup on the black platform (frames 121\u2013144, right). By frames 145\u2013163, wrist shows the source container visibly emptied and right shows beans in the receiving cup, but also several beans scattered across the tabletop. The transfer is completed with spillage.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 127 | No |\n| 127 | 145 | Yes |\n| 145 | 164 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 127-145\n- Categories: manipulation\n- Explanation: During the controlled pour, beans scatter outside the receiving cup onto the table, visibly established at frame 127 and increasing through frames 130\u2013144 in right, with scattered beans also visible in left. The robot retains the source container, but the pour fails to contain all beans within the destination.\n- Recovery: Return the source container upright and set it down securely; collect the spilled beans before another attempt, using human assistance if the robot cannot reliably collect small loose objects. For a subsequent pour, position the source rim closer to and centered over the receiving cup and tilt gradually.\n- Severity: low\n- Severity evidence: A small number of dry beans spill onto the tabletop; no breakage, equipment damage, or meaningful damage risk is visible.\n- Resetability: minor_reset\n- Resetability evidence: The scattered beans require straightforward collection and, for a fresh attempt, reloading into the source container; no repair or difficult retrieval is visibly required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 30423,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 419,
+    "output_tokens_details": {
+      "reasoning_tokens": 34
+    },
+    "total_tokens": 30842
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0759_W01",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the pink toy is released onto the plate at frames 150\u2013160, but the tan toy is released onto the table beside it at frames 264\u2013270, and the blue toy remains on the table after an empty-handed withdrawal at frames 325\u2013349 (overhead_cam, wrist_cam). The tan toy is also displaced during the initial pink-toy approach at frames 46\u201349 (wrist_cam). Thus the supplied window shows unsuccessful attempts as well as partial completion; later episode context is unavailable.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 46,
+      "failure": false
+    },
+    {
+      "start_frame": 46,
+      "end_frame": 50,
+      "failure": true
+    },
+    {
+      "start_frame": 50,
+      "end_frame": 260,
+      "failure": false
+    },
+    {
+      "start_frame": 260,
+      "end_frame": 278,
+      "failure": true
+    },
+    {
+      "start_frame": 278,
+      "end_frame": 324,
+      "failure": false
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 46,
+      "end_frame": 50,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "During the approach to the pink toy, the neighboring tan toy abruptly tips and shifts away at frames 46\u201349 in wrist_cam, while overhead_cam shows the gripper descending among the toys. This unintended displacement violates the no-collisions requirement.",
+      "recovery": "Pause, establish clearance from the displaced tan toy, and realign around the pink toy before continuing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The soft toy is displaced on the tabletop; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced toy remains accessible on the table and can be acquired from its new pose without human resetting."
+    },
+    {
+      "start_frame": 260,
+      "end_frame": 278,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the tan toy toward the plate, the robot opens its fingers at frames 260\u2013265 and leaves the toy on the tabletop outside the near rim, rather than on the plate; it remains there as the gripper withdraws through frame 277 (wrist_cam, overhead_cam). Possession was established earlier, so this is an unsuccessful placement rather than a failed acquisition.",
+      "recovery": "Reacquire the tan toy, lift it clear of the rim and pink toy, and release it only when fully over the plate; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy lands on the table beside the plate with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains within the accessible workspace, so another acquisition and placement can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 350,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the blue toy at frames 312\u2013324, the robot withdraws with closed, empty fingers and moves toward the plate at frames 325\u2013338 while the blue toy remains on the table (overhead_cam, wrist_cam). It remains empty near the plate through frame 349 rather than correcting the missed acquisition. Whether this behavior continues beyond the window is unknown.",
+      "recovery": "Return with open fingers, align around the blue toy's body, and verify secure acquisition with a small lift before transporting it; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The blue toy remains on the tabletop, and no damage is visible; the consequence is a failed acquisition and empty transfer.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blue toy is still accessible for an immediate retry without human resetting."
+    }
+  ]
+}

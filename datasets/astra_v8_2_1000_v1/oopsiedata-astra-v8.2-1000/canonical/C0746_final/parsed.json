@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0746",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In base_image, the green can is left in the upper blue tray by frame 2700, both cans are there by frame 4600, and both bowls are stacked in the right red tray after gripper withdrawal at frame 6200; the completed arrangement persists through frame 6671. Three unsuccessful can acquisitions precede completion: empty transfers are visible at frames 900\u20131100, 1700\u20131800, and 3400\u20133600 while the respective target remains on the table. No definite damage or harmful side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 786,
+      "failure": false
+    },
+    {
+      "start_frame": 786,
+      "end_frame": 1121,
+      "failure": true
+    },
+    {
+      "start_frame": 1121,
+      "end_frame": 1581,
+      "failure": false
+    },
+    {
+      "start_frame": 1581,
+      "end_frame": 1824,
+      "failure": true
+    },
+    {
+      "start_frame": 1824,
+      "end_frame": 3285,
+      "failure": false
+    },
+    {
+      "start_frame": 3285,
+      "end_frame": 3700,
+      "failure": true
+    },
+    {
+      "start_frame": 3700,
+      "end_frame": 6672,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 786,
+      "end_frame": 1121,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, withdrawal from the green can begins around frame 786 following acquisition motions; at frames 900\u20131100, the gripper is over the upper tray without the can, which remains on the tabletop. The empty transfer continues across the window boundary at frame 1050. The interval ends when withdrawal to resume task-directed work begins around frame 1121; the exact transition is less clear in the selected visual checks.",
+      "recovery": "Return to the green can, realign around its body, and verify that it moves with a small lift before transporting it; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the tabletop, with no established new damage or spill; its visibly dented condition already exists at frame 0.",
+      "resetability": "immediate",
+      "resetability_evidence": "The can remains accessible for another grasp without human intervention or environmental resetting."
+    },
+    {
+      "start_frame": 1581,
+      "end_frame": 1824,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the gripper withdraws from the multicolored can around frame 1581 without retaining it. Frames 1700\u20131800 show the empty gripper over the upper tray while both cans remain on the table. This unsuccessful transfer continues beyond frame 1750, ending around the start of retraction and renewed approach at frame 1824; the exact recovery transition is approximate.",
+      "recovery": "Reapproach the can at its current position, align the fingers around its body, and confirm retention with a small lift before transferring it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The target changes position slightly but remains on the table; no spill, new damage, or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced can is still accessible, so a new acquisition can proceed without resetting the scene."
+    },
+    {
+      "start_frame": 3285,
+      "end_frame": 3700,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the gripper closes beside the remaining multicolored can and begins empty withdrawal around frame 3285. Frames 3400\u20133600 show continued movement over the upper tray while that can remains on the tabletop. The failure continues across frame 3500 rather than ending at the window boundary. By frame 3700, the gripper has withdrawn clear and subsequent frames show renewed approach; this endpoint is approximate because the selected checks do not pinpoint the transition from empty placement motions to recovery.",
+      "recovery": "Return to the remaining tabletop can, correct the grasp alignment, and verify secure acquisition before transferring it while keeping clear of the already placed green can; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The missed target remains on the table, and the green can remains within its destination tray despite some repositioning; no spill or new damage is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both cans remain accessible and the tray remains usable, so another attempt requires no environmental reset."
+    }
+  ]
+}

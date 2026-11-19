@@ -1,0 +1,116 @@
+{
+  "id": "resp_0b2345e016f2a245016af924fbb97c87d1a41379f76769598d",
+  "object": "response",
+  "created_at": 1794712827,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712838,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b2345e016f2a245016af924fe6b0087d1b04ccba5af10d136",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SUG_zIHcAfqmiTLyB-ehsxwOJEhvdhDyO4VkZACxb40_7iS_lv5ye5r4orYC19JaEB-rSc5i_rJNUSv96WVVgm5-bsZoLMIE6PZqurrYOriOl4vNpg6nZ2arWPFKCEJ67Ia2Dhbh-5z3o-S1WoMuxBbWir483OIUZ853QJNBIRHXynyQBxmJ0dQxQOy7aAa_vA_rtjkXuTsvcIAbELayrzge1FZvy2MOdsJh0bMHczfnNDVI9KiXa37odUntdHDIViQ9HPo3YyfQ7dMbH9YjLhlxGDOoZNdvo7NxXwZZIVj1U_hLG2ZVg4nNNb4-IUw2E7rbCvsM5DltXzh3Mx0Ihex_9AHXGXT-MDzLzQ39jEjGr_qiFUmlKekWJfMpRiNtIm_YbFpLHS3hMne4h7kjGUnklyOocy8BKUdWObIeNjv9tfw1g1iZ0ZXnoguS1p3ElhvQvqjVdc2j4LmpMoNhoGmXJQKgSGwDqnPe0XhAjS5qPs0NOZzg72C-i0H-on54BEGPbpPNqg5F8hDvYICUBiFO8H-kj47cH5QTozLMLQ81tqtA937BDCkmM4GMaPJVTmFLf5OfUOHYlQkathQcF5puWeT6t5Zd5JcDdb-CoxOFQFPRA5pdP-Ws02HuC9IgccfjVRqigdo1jdfVqkJGAj0GRKSUFPAFCm6kqq8qxnx-sYH3PVGIIDHHSJwGoGXRb4ImgPfa_CNwtyxEt_M-4QMZ51iuP3K8QykrgzcMAoFEF9-HwJExVp-JHq8xbjh76ZY2ZJYuDhDTLqGgn77SxBMff5nyWAkqbCosH36TscFkDPpJXB6H6skpcmS0sklB1E8nFZgkADIc0FKojqV-zFon4m9dyEkeCjecvA9unDahjqjfbVPOTuCPVi6hzvBJh98sE0yqnAnUdLKmsNuWVAKJgmrB3nKMZleCvgmJSiSrFVZlit-C7DVMIqXPSZsichCXtnMxs4o1cq0slEHclfFLYQFXoIexb-889v6C32PbvSBLxtigxE9f8cYSXUvfCdVzcK9UigJY6GKcAbXvIJX6lXC2HgVMtLM-xIkpOVKRok0rU7F8c3_M3igNwn5qPdqDCmn7SfOpM76FRhEjBkarEsUfmSTVJQFsh-X5pXmKH_88oiBnSRR2oH0kEVF0DOTY0LVpAKVd2eFSnIIdS5s5Q2G0_XqvLbIjx24zkQqgbdU06pjKSH4vgme8nfmuYnLQPVQwjXv3daGocPl6YsnD8YsWtKSTAQB55BV3DRZKD1X_3FbBjyFYnFG6tyHzkXOE3UMKde84lew1fIVf7VqgRKsmBw51P6NL6xY6KnmV-Nz9UFuV8rcYCKWVp4Yq3N8XxhJKoFT1VkhKrC6RlziXXejWDk-nxuhmPInj7LGqLR8IVRB_wwsm9a9kgqV_PHX1Xx7EvXHWjeF_poTsvDOY4KbXG2GnOEsn0l_bpP79dD46IaDQkOZKveQ9rzGvwD4lWq2Q1Bec-0iRxHje80Lfvi17NJUa1HclG-8u57kMyti1elxcD4A0n18ZxcC_1GnQOV3DGBDIcuQmk30w2pJhpqj1xx2MqtP0jQcUQka-q--WDkk9FG7DIz4eVIvDFWrd9Fm3skULRKokEUYEHDBRJvX0MMQX47iaieFgb7GS6eWvcG3cukTsS6XCQjX62A_6hKCPYA3Crprkjylr3815Vb5oYgF-bj6kvDvzaD54TH2drp8BGHMuLnnAZlfOQS_nMv1e0pc6IaDXGboOup2UnRu2k2cboklRuF-N_6RfSqIZDDjRi1M7ASOO9dS5cGPDp-5lBcIdY6yjD99-KkrSN1xtiehoyoWCU_ZEkpaU90ubpDz5pLo-nNVNcGmMgK0DGGtbuULVV4jlNXrwoH49Te_eT2L6GWF9bj9sLH_0W91MCAQ-45LR0pCREaJbwoLw8lwV3Pm2jCEMmX91ork3yHCeskCkdqqWh4FRQTVpKBArCalghoAJV3To-ksUT9576T40sPkCIa9UOPKCN6Wjt_tKdVW-1Mn-YmeGJf2Alz0pqdIG-vIsAG4zWj_06jFekXWBvxg5db4L3yAU05DfR6foW28g7WYQD9xXoNpKfPvQ0bW9lWpbWcheU_MZ0o0hUrdXM3UtOpXAK7UGYs2WEgzVh5Vx9lz8Ev0w6YCruiUsm8kBa2kf-bcBZcNKVAfpwJP7SroG0sslHqv55sY0RqSeaWF0IK5CymjJazPRrRtM5BuUGYNUQ84n--8ZnVq47Hz_XVUOLHinhYMmil_PTIrcxUVc50FlYmHT2fvmc8vg_xs9E0hPW6_QXixXBczqfbXHlf6UFmd3R7GqJ-q6jVMI0U7mFRB0sISI4ruhVHWmoyBVTcyQjEfUGZvntd-1rJpIVZ2HC-P8xTY3HDY_OjQgcq91r281xxNDTFTQvPdp31pvTei5MiJg7x9dU77B91ktSY-xQaqI9ToAAVXG4sS5cZQbL2-sMxrYKevxgaY61LtDE6nhY4Bbw1VbHVLSxotS3ds1RGFK9GLVk0xf_tHfdky63Rs6O-z-4eMYrW7G4a1YyA8waO102uHSUTmnk6dYkDoBkbwu6gWFW9KxnTGaGdw7fb4gx61n9ES4MnL9oY3BZL5suhWaQG87yXnrr5_FEw6_QVSOKH3OvEPLy3ekRf_RlIc7RsHDOkXfA1ujucF0_hOJXRcl0NzKmfyeV_qFh2yZBJFyIlLpubiFVokXIEF4NxiW7bzWd5x4T_DHtSoetjcdr_BKsdfzR27pA3NxjdNzgCruDH50Iw36pVddoYS7alRhNm2eVGjXJ_0rRDfvNB-k45BQdnMT6PgWthSa0X97BZ_6AZ_3Fs-k9rFPDEAa5HWR0TwY23KPs2FzeNjSg_gBpHjz-J_hk91WFRSxSiLHjSmB-eLKoJxiik0j_xuwamvQSVXnxIS2Xl7LidBdzjgo0AHCE50m53YaXQOip5UGDCzcnM3nhHRI8ztUe7sx65rY_B2xEtL8YTumMIDeOUg00goWQSZl_D4eSxMkM1DN52Di5T25ZjeK7tCrdvqhMJ0fg_zW4X3WWHN_V3-qWvfYR28EwkGlbEkJklwxcbUYuVN1nOs4XLTSt3Ho6kz7pUmlw-bUB2qJBq8ErsCWJxhOWJzrv2PHFIqMm2k4358aaFAuze_SXwZI-C3d9D0j2AY54-mDf3TG_td_SUf9L9d2YyK_07oZh2HqTLg1GwgOtidt_3ei8tgVSlENatiyHoPlJ0Xdo2Y2HU6TKDnYJe0U3kzwnYdwoWT4jeHE55CEryE2N9i1Tt-Mqw18f_ggmzKdqtaTdZnX0I9eH_WayCasvp9SQowt5zC0J9jy-ZENs8iHpn5CUwNU6k7M2LGW2vqQKpSD8auKfzC-YvaK49bJXb1bq5SisOeRgLyqS9TwwpO8b7-OKnHgajjJDxeWJ0-iFA3sj7zeRjiPLKIZitHYNP8rsMXJD7c",
+      "summary": []
+    },
+    {
+      "id": "msg_0b2345e016f2a245016af925020fec87d1862e36b302d29789",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0727\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: failure\n- Outcome evidence: In image_primary, frame 0 shows the intended left toy in blue and white and the largest bowl in white. The robot instead acquires the pink toy on the right (frames 28\u201345) and releases it into the white bowl (frames 63\u201365). The left toy remains on the table through frame 99. This is a visible wrong-object execution, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 20 | No |\n| 20 | 100 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 20-100\n- Categories: sequencing_semantic\n- Explanation: In image_primary, the gripper moves away from the left blue-and-white toy toward the right pink toy starting at frame 20, aligns with and contacts that toy in frames 24\u201342, and lifts it in frames 43\u201345. It carries the wrong toy to the largest white bowl and releases it in frames 63\u201365, then remains above that bowl through frame 99 without returning to the intended toy. The acquisition and placement are physically successful but do not fulfill the specified object selection.\n- Recovery: Return the pink toy to its original tabletop location, then acquire the left blue-and-white toy and place it in the largest white bowl. No human intervention appears necessary.\n- Severity: low\n- Severity evidence: The wrong soft toy is relocated into an upright bowl; no damage or meaningful damage risk is visible in image_primary through frame 99.\n- Resetability: minor_reset\n- Resetability evidence: Restoring the original scene requires moving the pink toy from the accessible white bowl back to the tabletop; this is a straightforward reset with no visible repair or difficult retrieval required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 10725,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 553,
+    "output_tokens_details": {
+      "reasoning_tokens": 147
+    },
+    "total_tokens": 11278
+  },
+  "user": null,
+  "metadata": {}
+}

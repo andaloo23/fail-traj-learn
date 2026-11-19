@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0066",
+  "language_task": "Pick up the stuffed animal and place it in the box.",
+  "success_label": "failure",
+  "outcome_evidence": "The stuffed animal starts on the table beside the empty box (frame 0, external and wrist). The robot approaches and operates its gripper, but the animal remains on the table after the attempted lift (frames 845\u2013858, external and wrist). At frame 1072, external still shows the animal outside the box, while wrist shows the open gripper near its head; no completed pickup or placement is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 149,
+      "failure": true
+    },
+    {
+      "start_frame": 149,
+      "end_frame": 850,
+      "failure": false
+    },
+    {
+      "start_frame": 850,
+      "end_frame": 920,
+      "failure": true
+    },
+    {
+      "start_frame": 920,
+      "end_frame": 1073,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 149,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The arm and open gripper remain stationary for approximately ten seconds, without approaching or acquiring the animal (frames 0, 75 and 148, external and wrist). This sustained initial inactivity makes no visible task progress; movement begins at frame 149.",
+      "recovery": "Begin a controlled approach and align the open fingers around a graspable portion of the animal; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only progress is delayed; neither camera shows damage or disturbance to the scene during this interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal and box remain in their initial usable positions, so no environmental reset is needed."
+    },
+    {
+      "start_frame": 850,
+      "end_frame": 920,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure near the animal at frames 845\u2013849, the gripper rises away without lifting it at frames 850\u2013858; external shows the animal remaining on the table and wrist shows separation from the closed fingers. The robot then holds this unsuccessful position through frame 919 rather than transporting the animal.",
+      "recovery": "Reopen the gripper, realign around a substantial portion of the animal, close securely, and verify retention with a small controlled lift before moving toward the box; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the soft animal on the tabletop, with no visible damage, spill, or harmful collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal remains accessible on the table and the box remains usable; another grasp can be attempted without scene resetting."
+    }
+  ]
+}

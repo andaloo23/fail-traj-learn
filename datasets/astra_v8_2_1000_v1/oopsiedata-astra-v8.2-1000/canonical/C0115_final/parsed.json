@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0115",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot moves the yellow banana-shaped object aside, attempts to acquire the brown plush toy, and subsequently places the pink rabbit on the tray. Frames 584\u2013600 in wrist_cam and overhead_cam show the rabbit released onto the tray. At frame 649 in both cameras, the brown toy remains on the table, so packing the toys is visibly incomplete, not merely unconfirmed. The yellow object's removal may be preparation to clear tray space; its intended inclusion among the toys is ambiguous.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 254,
+      "failure": false
+    },
+    {
+      "start_frame": 254,
+      "end_frame": 346,
+      "failure": true
+    },
+    {
+      "start_frame": 346,
+      "end_frame": 650,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 254,
+      "end_frame": 346,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing around the brown toy at frames 243\u2013253, the gripper withdraws without it: wrist_cam frames 254\u2013280 show the toy remaining on the tabletop while the closed gripper moves away, corroborated by overhead_cam. The robot continues empty toward the tray and opens its fingers at frames 337\u2013345 without depositing a toy. This completed acquisition and empty transfer do not advance packing.",
+      "recovery": "Return to the brown toy, realign the open fingers around its body, close, and verify that it lifts with the gripper before transferring it to the tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the usable tabletop; neither camera shows damage or a meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The brown toy remains accessible for another grasp, with no cleanup, repair, or human reset required."
+    }
+  ]
+}

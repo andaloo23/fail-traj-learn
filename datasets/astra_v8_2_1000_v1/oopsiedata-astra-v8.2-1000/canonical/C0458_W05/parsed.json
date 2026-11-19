@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0458_W05",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 1400\u20131446 show the right gripper releasing a green cup onto the table and withdrawing. Frames 1452\u20131548 show the left gripper bringing its cup over the stationary cup and lowering it into a nested stack. Frames 1573\u20131606 show the left gripper releasing and withdrawing, leaving the cups nested together; the stack remains stable through frame 1749 with both grippers clear. \u201cPack\u201d is interpreted as compactly nesting the cups, since no separate packaging destination is supplied or visible. This success judgment is provisional for this window; earlier execution beyond frames 1398\u20131399 and later execution are not visible.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_05dd68556ea3f30b016afbc5ee057887d29a0c3d845bbf0765",
+  "object": "response",
+  "created_at": 1794885103,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794885117,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05dd68556ea3f30b016afbc5f99bd887d297c50fb6bc71bf3e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-8X-lNRoFkUdpl8sX8yWqM3VqILJbXDA0S2AZ3Irb_9tQb4QWqOuQz634sTeT5urDKtZNNIdOjOXetPqA9Rs8B6JYpobbEwxTbewqf571aFcWr3gmO6qniIUL6glcudZcIi4cp6rERCiplpOVU6Qyyj48UhwiVds0P8Dxx2rqWAzNHze0xLoT82aIn0lBorQD3GnlXlDbYvkeq4AGboC5z9A2QXVVyBNfVXp5ndTdsqiJtYOCWX6tInYxRZaaTaVFJZj1uqLsFLmAdibA4LoDTbnYlM3c748zlc7QaDJippTG6a1dJ5_sDzwI4LfeZQuyUDJuMVeLrHKMCT02I4RntuqgVBTIQS6FjcKLULidOeFHoJ8DkXH147Wbw08xANKVjWdCbB5QXKVYoy4V7WjGgb0e3E35plj5LkfBp8DBxAEP-m687JhqwOlT_-wGLLwZ3oZtaK-2ptz_F5U4ukHrXgTe7B3je8V_WYUcV3YiSE4W4KLFFP7xJZ_LhqphKKhKYlibLLK9iUH1xueWVSXGBrst9-kyLtweBDWrf9YD_s6n2UMl2qqbeFSv8-OV1h68rrKpqHIzdIudPhp_TEjLdjsSo0U7MVt6ZSVrefiOaMcr6ZkL-xW0bjqrDp4KKRTjG7d48Ge4Zfr6czYurg_BR1dJg4EJMXWXwSPCH61J82I06ovDx9wS_9ePARUgExlKxBgayvOBssUSDUgRaGuECDqenYxQ1dIZjOgUpGN5aF9BJWQLChN3R_fOtt7O3Qx8eu2XI9Zz563NQQo8f4RgeomkrceJAekFnWqdsqY67AgpywYmydzn96e-H2DZo4rjFJYnrA-3MaKhwZSp2vWUzm3nk5aMmkvKx-0_8TXyCPDGR-pbOoP7OeW2T2a2E0atMe5q04ofqkGVNuaFMTwKxbP_VHxg6j_XyfzSLAk1NHBKx-Q7_UVwChfbsFktuCKdXgK2JLZK4a6ywftPuJav4Yh4JRU-OG4lSgzHS6SlzXtd57QE2kxyI0O1MpmlDqLN1CsGikyRR7yvAUrug14rtndfuulUX6ysDWPOPIAB5_bQJbY2FEZr1w6fRcEftKbkldsAFXFlwANZkRKzQOEfHvcatAtoAWMhxVGYkx9HNGTZJ6F5V6zKfwASEJK1OyIi5c5PlTRzP_nIdbse2i4jOT5gzkXrDsIOat9baHi-Qn2bmg8Szj_LvfEfayEN7Bi0txTrfaIODXkzN1oBCR-6NoA11mmmAuh7HxGU7UnDVyejqM_w7a-Q_UzxWsnDzgnq0dGbx277N6BtHojZW4C5IuBb2ryfKXvGpGmlG56nfUxS96mnTRvFyPb1pw9H0y4F1fokmdt2tRAjruhCtLmwI4joIN0a-r8icOhvQUjfkzd7FfVkQMaSpbbN0RhNpdsXWYzvqOvKmGn63LB72FaTDQocvdnXuWhh9SZH1M_y5usGKGpKGUsoOIEIk-H4hDeQnUuxXj14YFd8bF4MbKrSlGKz69U1TY7Uz9iK8s6E3xUmBe59GZ1IL6f7nPbTIZcFs35mjMpwUh2mwSRXykpGI8bz56N-jNC-iikqKZcQy1Eg5CVng0Zoi6UNOSpHYd05_9_-8_-vQAykyYATrK3qsSoUVeZ2kd_6U2Av1Rmsd-QAYBKHZbB-oXHSuq_34TuQZmjCCGYqp6k1br8WwCb1CJtKthD3JNio-yAPpFvauWtlTjHgQCQKLX9dKCC8I3K7MWAD7GYyn88taDbuxF-JUgM97002P8dGbNcmhYqqumBtb74DTWHGxPR9za0dXF-FaENUgzVR1k64cLLwhheZmsopC99Xwxneokg-m3G6MFQ25nEKBDfgtekqlrP4IuzfDivryx25V5BvTxqUOzSY6jlGUI3_4pzkWI5_-RfRltYUafceD8RuXCZYgWmu6Hltvo9pjUBTrPJGdmlGjMgMgs8AOPMzL74BvjjEAWTeqAJ3Q5ip72kf9NKo5gDcaVNzxc4qTC3wHGh4q0QW2GmCixxoXBqrccz4ua8LuDYCG1Cw2CLkqVzUByhVrJeBbxNE5KyAXcTF5qVivaJmVWwy20vxv5Jh1HaoDfQ8OTEhOa9qFA7ZDZCQMD3aXyAUoimc_5QdwnKF6f6t-HMLOjhxbxXkcadW6D7ubl1VYfgM0ma3wMEGXpo2VLeVmwAh7lwXivQCQKZzSDNcaBaOeRaoIg1IHYqbbExUuVg6Acc9Sc3WUt35fqGcB3_JruU73qDrkpk2GcIZs_qsccTVohcKOPY2quORUvdj-UaonP132ItkJWkhRmqLWFQ5XNe77r-kRGELLL9fx5JuuS-wx7ShTMqg73iQMrRNkfGjk8yoc3yM-nWhmKTGg5_0EggJOCVjqacCKzfgdIO1fnoYQhxRVXInXT1f7kzj8TY0jeizY2fiZ9TiRJDMJZHrq8K2jbLprg-MHbXe6lNRABVAtXqo4xmf8zj8C_Zy9xEVYi4tNlAKmsDNIMryb86o2iLCL0m_HKj_vDkD4CWIbiWGsjRUOtTOYLn0k1Bdyjwm6ToZ_dVUpoHmNTrV3qnOixs4qZ1VrpLZA2OH1r2PfDtm38EaxM0lNLf6ITUGxZtMd1jLW_HP00z_9ji35ZiRE0kWKBcq5bhXPq-614XV-kr4Kkk0Dp3TnPYPzoquoZtlwyTzB1B2EaYkdGB1JbWAGdOqBmN25wbHlDQkkvq7mHguIIgHK8iftCEd1ih_-hGgfkQoP5z1Zb2crA-d2pwHSsBTVsVAXnx7RhtBj4P4NbokNtKHgUIsyxl-F5J3FO-EoTRLmxuN_8sFPNFsIOPL8iE6zdVwbToF2pJysHDb1FuUUQ66DCkttC3M4RX3oUINfE6RAFeWzGCZ-oW50SHI9Y5ZNNcqf_Jt84_tc2YhS6xYajhRurxoXKQJr7jA7hhhUQBoRZS1hUAJixMoTzJBTEfdUaXycoy_pQ6d6eG1WuL7dhg7JieLw==",
+      "summary": []
+    },
+    {
+      "id": "msg_05dd68556ea3f30b016afbc5faebcc87d290fbafa5c0d0ad59",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0140_W04\n\n## Episode annotation\n\n- Language task: stack the bowls\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window, rather than a visibly failed stacking attempt. The turquoise bowl moves with the gripper while the pale bowl remains separate (right and top, frames 1050, 1100, 1200 and 1275). Further repositioning brings the turquoise bowl closer to the pale bowl, but no nesting or completed stack is visible by frame 1399 (left, right and top). The orange object remains inside the turquoise bowl; its placement occurred outside this interval. The observed bowl transport, orientation adjustments and brief pauses do not independently establish a local failure. This outcome is provisional because earlier execution beyond the supplied context and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1050 | 1400 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 64033,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 251,
+    "output_tokens_details": {
+      "reasoning_tokens": 43
+    },
+    "total_tokens": 64284
+  },
+  "user": null,
+  "metadata": {}
+}

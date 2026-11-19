@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0254",
+  "language_task": "Put the kiwi into the bowl.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The robot grasps and transports the brown kiwi in frames 89\u2013138 (wrist_cam and right_base_cam), releases it into the bowl in frames 140\u2013145 (wrist_cam), and withdraws with the kiwi remaining inside in frames 150\u2013240 (right_base_cam). After completing the task, it descends toward the unrelated yellow-and-green corn and closes its fingers around it, visibly nudging it in frames 196\u2013240 (wrist_cam); successful lifting of the corn is not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 196,
+      "failure": false
+    },
+    {
+      "start_frame": 196,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 196,
+      "end_frame": 241,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After the kiwi is already in the bowl, the robot begins a further descent toward the unrelated corn at frame 196, approaches it through frames 200\u2013215, and closes its fingers around it in frames 216\u2013218 (wrist_cam and left_base_cam). The corn shifts during this interaction and the subsequent movement through frame 240 (wrist_cam). This unnecessary wrong-object interaction does not advance the completed kiwi task; possession of the corn is not confirmed.",
+      "recovery": "Open the fingers and withdraw clear of the corn, leaving the kiwi in the bowl, then stop the task. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The unrelated corn is nudged on the tabletop, but no damage, falling object, or meaningful damage risk is visible in wrist_cam or either base camera through frame 240.",
+      "resetability": "immediate",
+      "resetability_evidence": "All objects remain accessible on the tabletop and the kiwi remains in the bowl; the robot can disengage without a human environmental reset."
+    }
+  ]
+}

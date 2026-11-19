@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0752",
+  "language_task": "Close the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The door starts open in frame 0 (left_ego_image). The robot partially raises it, pauses for several seconds, and the door returns downward at frames 145\u2013148 before a renewed closing movement. By frames 219\u2013230 the door is upright against the oven front, and it remains closed through frame 356 (left_ego_image), with the gripper withdrawing in image and wrist_image. No unrelated object damage or displacement is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 44,
+      "failure": false
+    },
+    {
+      "start_frame": 44,
+      "end_frame": 124,
+      "failure": true
+    },
+    {
+      "start_frame": 124,
+      "end_frame": 145,
+      "failure": false
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 159,
+      "failure": true
+    },
+    {
+      "start_frame": 159,
+      "end_frame": 357,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 44,
+      "end_frame": 124,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After partially raising the door, the robot remains essentially stationary with the oven still open throughout frames 44\u2013123 (image and left_ego_image); wrist_image likewise shows no substantial movement. This sustained pause does not advance closure.",
+      "recovery": "Resume a controlled closing motion along the door\u2019s hinge arc while maintaining suitable contact; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed completion; no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The door remains accessible and the surrounding scene unchanged, so continuation requires no environmental reset."
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 159,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The previously raised door rotates back downward at frames 145\u2013148 and remains open through frame 158 (left_ego_image and image), undoing the earlier closing progress. The door edge also moves into wrist_image; the images do not establish whether grip loss or deliberate release caused the reversal.",
+      "recovery": "Re-establish stable contact with the door or handle and guide it upward until fully seated, verifying closure before withdrawing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door returns to an open position without visible breakage, displaced contents, or damage to nearby objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The open door is still accessible for another closing attempt, with no cleanup or manual repositioning required."
+    }
+  ]
+}

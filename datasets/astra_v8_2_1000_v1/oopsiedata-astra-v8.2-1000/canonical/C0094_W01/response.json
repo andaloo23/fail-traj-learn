@@ -1,0 +1,116 @@
+{
+  "id": "resp_0ecc64ebb21d64ea016afbb7393eac87d2b53e87c2ff3dfa5a",
+  "object": "response",
+  "created_at": 1794881339,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881348,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0ecc64ebb21d64ea016afbb7427b8c87d2af1b57cf42d3e1c1",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7dFMEIoDWeknt6tUME2d4pHnEnBDANYqxauaTqbDraxS8AnpLrZ1-ahvCO_HrR0x9b1us8KTA64kJm8zHhO3dNh3hlwUpU6nEQdknd_CnCyetQROvzbzxYyCqxW8OOVV08N6xXrAeH32pA3icDnRBYX7bau2CbGj1apq1pb0SUedpfrBNrx8cPR6Togh1QVgwVlKZ7KWI5GKJYC0K3jWeV6eB0jK8UcuGxdp3AukPyb-duj3g1OvoZCgHRLrn2huQ96qvk5BZ_jBdoZqIuzj2e2p2sji_IUNdqPPNBAOKnqio-peFDHCuRxztYhJvmsym_48X9DsxopgTN7XNjHH7XoEfmVt41LiFa4goucOwK0WvnGSkdPHZRrFNCrLg26n2A-CflnqUoLYsnNKRACe5wu-kNHZKn30BMBTM-YCUrjrecysxS9zGT8fIBb86tuVIu91knbsvKnC5B9d3YhVpp_HezEq3f3Gofrid43-VVaIiZi0NjwfqfZiCfWAgkUnYkYHCPH6NxXrjL7UySdEQwKMtS7A1ecUnbXI1-nSFZbLGrPmhP9I4q293htAUDu_AT4plpp-BY0jlar5HrWDqEM7F2el532aofslW2F19BK9pDHtKWcL3gFvn4Tzs8zMujQrr0LDf8NLhWpoyOXOtDvsZ19BHGsX6IolomjoqZ9QH7FQJ8U8CglGXVEmkNYudxZKKCfdca6v-9dI9K6uS9b_z5dYmdYhznb2TXISO9AjACshfmgWXYCwbnNcfhQ3k2PS1l4BUKEK7kuT1XMXWZnhb1TKNh9XJzuwheGdwW2wkDfxpftQfmTzrpK5EfbvfaaD1u-a4T313k_o9SkHnByQ53m64r3CpGltD1AkbXhlEg9gP7EAmA5FQUlq9_AcQ9AsAiAFHF_Skabeg0IJl5gfsv4lyIKu9GerX_beo0uIgf8ey_U-bmtq6r1-9HU_URdZxth0Tve8d5Rkg6eRt55WV7mzglz7RsToHELksFQeWxWAMJwPDq2pzSa-bNfZiUtqEXe2L5ITL5rHChCVJ7iI86WRTXKiorX01Bue9INyzAyLBeF4BRQcgg_qcAHqTsLGD74ZVMlk-0uDKnk2-Jlmcc27i6MC0glM4tLFfLxHC6GoFKsoPmM02oqX2deQr-Q7GXW_-AocmfI9lxPGr9Ep_jcx5Vkb_WmneUfB1TDWMIO5lTuKyfLxi8m-2dzgh0tXrr1QeBHq7RTJR1cGDA-0dJCXEWo3eshHk8VXtNUrV5-X8ultidsXhfOSmzTu5gcUbneGmaJy4Tf9Yw7Rbq3s706VcX4IKd1T6EFWOGz4rIyfdsz8KgbcYmaUiQH29r2miey85Ci3YKlc4UFVsjmOXEIsVrBxkYnQN-UYsJ-dz8bx9X9aVfwZ6Xm8N2qh4tpQdrXjTGMzIClo1wlOu6yU7GyhgJzGN-fafIfdn6GhxYsdyUG-6PTN6Co5bCBnxBPAVajOAYlqOcBFNF8_a3W1meUDMY2Azm2pOGF54FHV4xBsgsTyRChAp7YC1O_6b5fya3AFgrkEG9-kk662BXCSW6g1ieCLXLWf6lug7DhRAH9PfZG51VouK3bsRZoyt8DwPZ_yr1HQqXbn65C7OROzxbxZSB8h-QHUqXoyFnhmuEvb_ofTfb27fa277oeB3dEcIxBIbrFEohm5jBUxVc3O2yjxyHfhL7S5xd7QjEn3m_Y0j641IUsNgNjpOwQzImPh9FRMtLOtu4x6DR10Awo3U_ECs_d1sQIcTvszyNhWBSUU6aWhlsnsFP8zHA57qkXGUZ7AJaS7A1i3trxPx3y7vhnh7Ets_OyRbwZHI4JHHP5eNmoX-IiMbY-OxfQ0FYOqLfDw7Nbo9jqzp-DWaHJlFhYCf34BBOV8J_XE1CV5UjrsyaZqD976UszjL3qKwmPKZJM6Zwiy7a6PG6bQkvqf75fw--fIpXyh3NUYy5EC-ZslK2c_ogcXHRENUydQdMVKRgQGlVmM8HKLrGTiGcypioxq-GuKg9_TVV-DVPSrGk_I81H5v0Us52fIASAd1Ru3s71XeaNEUn0pd40ELqBNGX0y5MzThDOcyaJpeB9QJ-wgB89nZxMYI8EZH3V1ng2LqiD-LVU3EAe-RRhEzyyfTzEl6IAYkHnRgEkrlvcoNLv38yZDzi0fRrm2wAdH-epTm5aeM9tr-dkfonplSSVN8K011aYSbuQaoyGyy7-NVzZCXtIHYr3GL9xDP5QBBHuSEuVmFaLtxXkIGb6aLwiYLIu8d_2Os2uSB7w_LUNzuiJtDw_YYEliHNxBIRqwlJ6RNaH2B8WoASyT6K1T3fCYBpekof1WPFoRJvgY5xK4dQc2XR75TtpWxFLcHvWaNpgbUOBuiVetxjCbZtsn19Nut5Uo0ak4wYOOLCiHjb6r8KBpUGocXuz1cKijunHHEuuoOM_-nvyGiL3SJbQyA3WACE4JUbwmW0EwYWLGz1Zf9XXPAuuWimeqCaF-7qFLBOMMFt2QJ3gbLAeZYie9bNRdvQU2LAcYjUS_qdOlLD00GruqO2UEp4hwf4kfAHUzYqsIkVTlk8rN-UJ2r9mR5teag==",
+      "summary": []
+    },
+    {
+      "id": "msg_0ecc64ebb21d64ea016afbb7429bfc87d2bde44877b9e1954c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0094_W01\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this initial window, not a visibly failed acquisition. In aria, frames 0\u2013179 show the left arm approaching the upright cup while the saucer remains separate. Frames 180\u2013349 in aria and left_wrist show small positioning adjustments near the cup with the gripper still open; no completed grasp, lift, handover, or placement is visible. right_wrist shows the separate saucer and open receiving gripper at frames 0 and 349. The observed approach and alignment do not establish a local failure. Later episode context is not supplied, so this outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 73741,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 11
+    },
+    "total_tokens": 73962
+  },
+  "user": null,
+  "metadata": {}
+}

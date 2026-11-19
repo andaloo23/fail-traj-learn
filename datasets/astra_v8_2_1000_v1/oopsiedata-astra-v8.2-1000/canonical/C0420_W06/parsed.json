@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0420_W06",
+  "language_task": "unstack the boxes and put them in straight line",
+  "success_label": "failure",
+  "outcome_evidence": "In top at frames 1750, 1850, and 1999, the boxes remain scattered rather than arranged in a straight line. Across frames 1750\u20131999, left and right show no discernible approach, acquisition, or placement. This window shows sustained lack of progress, not a failed physical grasp. Completion is not observed; the outcome is provisional for this window because earlier execution beyond context frames 1748\u20131749 is unavailable.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 1750\u20131999, left and right show the grippers remaining clear of the boxes without discernible task-directed action, while top shows unchanged, noncollinear box positions. This approximately 8.3-second interval of sustained inactivity does not advance the task. Context frames 1748\u20131749 show the same state, supporting continuity across the starting boundary independently of the prior prediction. Inactivity persists to the window edge; whether it continues afterward is unknown, and the window ending does not establish abnormal termination.",
+      "recovery": "Approach and grasp an accessible box, place it along a chosen straight line, and repeat with the remaining boxes, separating any remaining stacks as needed. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Frames 1750\u20131999 show lack of progress without visible damage, disturbance, or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The boxes remain available on the tabletop, and no environmental change requires resetting or human intervention before resuming the task."
+    }
+  ]
+}

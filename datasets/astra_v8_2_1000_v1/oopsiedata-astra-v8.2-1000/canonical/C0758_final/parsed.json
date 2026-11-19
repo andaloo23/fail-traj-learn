@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0758",
+  "language_task": "close the drawer",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is open at frame 0. The gripper works around its handle through frames 4\u201340, then lifts away without the handle or substantial drawer closure in frames 41\u201357. The drawer remains visibly extended with its interior exposed at frame 69. Thus closure is visibly not achieved, rather than merely hidden or unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 41,
+      "failure": false
+    },
+    {
+      "start_frame": 41,
+      "end_frame": 58,
+      "failure": true
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 41,
+      "end_frame": 58,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right_shoulder_cam, after closing its fingers around the handle region in frames 27\u201340, the gripper rises away in frames 41\u201357 without acquiring the handle; the handle stays on the visibly open drawer. This completed unsuccessful acquisition does not advance closure. The subsequent opening and repositioning beginning at frame 58 is consistent with preparation for another attempt.",
+      "recovery": "Reposition in front of the drawer and establish a stable pushing contact aligned with its sliding direction, then gently push it closed and verify closure; human intervention is not visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains open, but right_shoulder_cam shows no damage, displaced unrelated objects, or meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and handle remain accessible and intact in frames 52\u201357, allowing another attempt without environmental resetting or human intervention."
+    }
+  ]
+}

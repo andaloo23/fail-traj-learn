@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0683",
+  "language_task": "stack the blue block on the yellow block",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the blocks are initially separate at frame 0. The robot adjusts its grasp and lifts the blue block visibly clear of the table at frames 36\u201340, then transports it above the yellow block at frames 50\u201354. At frames 58\u201359, the fingers open and the blue block remains upright on the yellow block, visibly completing the stack. No failed acquisition or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

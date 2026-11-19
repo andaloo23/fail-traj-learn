@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0880_W01",
+  "language_task": "take tape measure out of bowl and put it in bowl again",
+  "success_label": "failure",
+  "outcome_evidence": "In frames 0\u2013349, the left and top cameras show the tape measure remaining in the green bowl, while the left, right and top cameras show no discernible task-directed gripper movement. Neither removal nor replacement is observed. This is a provisional outcome for this window: sustained inactivity is visible, rather than a failed acquisition attempt, and later episode context is unavailable.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 0\u2013349 (including frames 0, 150, 300 and 349), the left and top cameras show the tape measure unchanged inside the bowl, and the left, right and top cameras show the grippers remaining away from acquisition without discernible approach or manipulation. This approximately 11.6-second interval is sustained inactivity that does not advance the task; its cause is not visible. It reaches the window boundary and may continue beyond it.",
+      "recovery": "Begin a task-directed approach, align the gripper around the tape measure without catching the bowl, acquire and lift it clear, then lower it back into the bowl and release; no environmental human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No contact-related disruption, object displacement or damage is visible; the observed consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tape measure remains in the upright bowl and the workspace is unchanged, so an attempt can begin without resetting objects or human intervention."
+    }
+  ]
+}

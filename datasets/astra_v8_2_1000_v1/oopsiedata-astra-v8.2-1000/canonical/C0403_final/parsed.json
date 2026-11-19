@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0403",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the orange cube in frames 14\u201331, closes around it in frames 32\u201335, and lifts and carries it toward the right in frames 36\u201348; the cube is visible between the raised fingertips and no longer occupies its original tabletop position. It is subsequently released into the cardboard tray in frames 58\u201360 and remains there as the gripper withdraws in frames 67\u201387. The pickup is visibly completed, with no observed failed acquisition, harmful collision, or other side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 88,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

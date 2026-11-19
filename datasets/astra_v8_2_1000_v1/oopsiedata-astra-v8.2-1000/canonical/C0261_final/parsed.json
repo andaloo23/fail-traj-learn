@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0261",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot places the carrot and brown food-shaped object in the green bowl (wrist_cam, frames 223 and 817) and both plush toys in the lavender bowl (wrist_cam, frame 580). However, the orange fruit-shaped object leaves the gripper before reaching the green bowl and lands on the table (overhead_cam and wrist_cam, frames 987\u2013998). It remains outside both bowls at frame 1130; this is a visibly failed final transfer, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 987,
+      "failure": false
+    },
+    {
+      "start_frame": 987,
+      "end_frame": 1054,
+      "failure": true
+    },
+    {
+      "start_frame": 1054,
+      "end_frame": 1131,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 987,
+      "end_frame": 1054,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After successfully carrying the orange fruit-shaped object, the robot loses it before placement: wrist_cam shows it separating from the fingers at frames 987\u2013989, and both cameras show it landing and rolling outside the green bowl at frames 990\u20131006. The empty gripper subsequently continues toward the bowl and opens there at frames 1045\u20131053 rather than retrieving the object. The images establish failed retention/placement, but not the underlying cause of release.",
+      "recovery": "Locate the orange object on the tabletop, reacquire it, verify retention, and carry it over the green bowl before releasing at low height; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The object falls onto and remains on the tabletop; no damage, spill, or meaningful damage risk is visible in either camera.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange object remains accessible on the table, and both bowls remain upright with their previously sorted contents; another acquisition can be attempted without environmental intervention."
+    }
+  ]
+}

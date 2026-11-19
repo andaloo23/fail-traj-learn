@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0167",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "success",
+  "outcome_evidence": "The robot places the orange-shaped food item in the green bowl (frames 114\u2013120), the pink and blue plush toys in the light-blue bowl (frames 333\u2013339 and 497\u2013503), and the carrot and brown oval food item in the green bowl (frames 662\u2013668 and 815\u2013820), visible in wrist_cam and corroborated by overhead_cam. Frames 840\u2013846 show all three food-shaped objects together in the green bowl and both plush toys together in the light-blue bowl, with no objects left outside and no observed failed attempts or unintended side effects.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 847,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

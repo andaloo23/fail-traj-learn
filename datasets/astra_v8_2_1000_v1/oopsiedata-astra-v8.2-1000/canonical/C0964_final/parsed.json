@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0964",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The tan toy is released onto the plate edge at frames 110\u2013119, and the blue toy is placed on the plate at frames 353\u2013363 (wrist_cam and overhead_cam). However, the pink-toy acquisition fails: frames 170\u2013175 in wrist_cam show the closed gripper withdrawing while the pink toy remains on the table. Frames 386\u2013391 in wrist_cam confirm that the pink toy is still off the plate. Thus, the task is visibly incomplete, not merely unconfirmed; no unwanted collision is clearly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 170,
+      "failure": false
+    },
+    {
+      "start_frame": 170,
+      "end_frame": 225,
+      "failure": true
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 392,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 170,
+      "end_frame": 225,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the pink toy at frames 163\u2013169, the robot withdraws empty while the toy stays on the tabletop, visibly separated from the fingers at frames 170\u2013175 in wrist_cam. It then carries the empty gripper toward the plate and opens it at frames 217\u2013224 (wrist_cam and overhead_cam), completing an unsuccessful pick-and-place motion without advancing the pink toy.",
+      "recovery": "Return to the pink toy with clearance from the plate and other toys, realign the fingers around its body, and verify possession with a short lift before transporting it to an open area of the plate; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink toy remains on the table, with no visible damage or meaningful damage risk; the consequence is a missed placement and wasted motion.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible on the tabletop and the environment requires no visible resetting before another grasp attempt."
+    }
+  ]
+}

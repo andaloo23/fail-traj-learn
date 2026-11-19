@@ -1,0 +1,116 @@
+{
+  "id": "resp_03516db509a88e13016af8ffdccb8c87d19327f0c97bde332c",
+  "object": "response",
+  "created_at": 1794703324,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703330,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_03516db509a88e13016af8ffdec1a487d1bf71ccb293d9c55f",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-P_ikYL_F-aLAzRUqWkBsO65uSHYn7FrdOUuPSgylvQrICYumcRm4J6P3vCnwvPOGBWCRYxCjYISqf1U-_VOPuKyTPKXMZ8SNvbHN0Xoa_5wfy8oRaK9nx70N-6SWuHtBxqKmIUN1PrhqUne0a_6Fg5rf6F5O2R_-POD5jJ6p-P69B1SAPY6TU9IbZW_7kOY_yhgr7u2eK9jfvf5R9q40_4Wg0EPww-LiIXCwO7B2Bj3IgeVe7BqQ70jz0YBmzw823CN5qyDYyoEW7wPnVupFTH-uxvHGmJGwqPeeuqT5q-ZfvyoHohUGYjce-f9TJg-iqn3pNPJQJ549A9jINKoY4Vs54MJ81pbummsvo93aEIR0x9SH0-kx8rDYz2kmPsebn9STdiSjLQRPse9Mv0gIvrtInTd3fS6KBiIWtlq8OeYI9ATHoLByi1dAmGAfo4D0XBtpoTDMrHY5WhFsBs4uvM6f32LyWfuPd7UQNNVroHF8qq0VXqbrl2g82VrSQb_9d7C0KZu_ThwFmVmtixGFZEWq4iMzaln9Mz0izWFZ4bZED8OMbh0e6gXHU5FjQZiHIG_q8SuJCSPZef9wgZ7btrTdePsqCegbUA67Rjr10-g4If6htfvAmClivt8E387tc2OhGivQnYDHGcoiT84CPFpxaHQepNYpAp4GTZAdtQcKFcHwc838f9VRm3V4kuq5JLo8y1X36SN0DCdprZzBQJaOoBBj33c8kMbfrdLY3rFXnXvMXS3ouIAZLkTz8QjCDqHdsFFWLDCKM57VQ7r8Bs_lPgnTskZBwLX-bypdAmSgHyS8jH1IQhHn84tMKQUkYoxctezmCJv7jx3fmu8QWm4zhn6SVLeN3cePyF9tvLPsnlulWgU1gONFQyqt7EUUd-N_ytt2CE59fqFO-eSSplgrOOuP7ZA5Go9vbat0qtq7gxKWERjRnozfHnNdlaaHD6SSTfxTiAPmIj6dwox7cAQ12hbSzw6j6F0kbpjIaCUfhtbQJH8xu0u6U9m1_pJx-s00DvGXZH-eG8yFCp8jzlmtbLzvrADjM-c3Nn_H5l97d0dGrFoc2K594MaKAPLn6h9fehpz0HnBCPI4ZzQEJoWMVL1iupJJx1DDATcxO6ueTh-HO8j7WN7ZrcXZexswaqHGRNNiSaDuhVc-6RgpiRpo3EdzdpnEpixbjo0k25YMp9rl_-0StYdRBUhU5JiokuLIe70mlgs-fYHSswIS7uxMff2hkBLJZas4GnYKj2aqZA2Cqu91gvlD0Lf854v1tchYX_YkNQTc_e0scMPtp3Ys9KgncBtR_bsg_FuDgcZVat5EMSFdpf4S71rFAl8DkHbkPA0421zMyFiRoFzAJprMYRujMSqD2a7d6dfDUXeG6rlc9R3QYChURP-_UM1_-Xpzt5WC1fDRkyOUcJxhY-knQVf4OS2aQSZMsPdL9yL-dwjtK1jmGDYDc2L1JwbaOMtRp_T_hdQOppCWTPTG9mhLw7Bs3V9BbGouczIrgjDRWISkNtwTB7V_cYSfmYEZxgB_STZIniEuHpIJchl9C2a2OC6omHcEPOTqcPzEEWdLQh6YjefFcXBhsVxq1zwspsW4e-V6ep-57jzgneYuEBxAl6r59bdbvGVXFQqitjyimkjwqo5qQtNwF_AlOo7usu01KVBJMMiXq0w-HwVECO_X-gXYsfiuCbud20ZqcRctQbOKFmaXBl-DYsyhfpO6vf8QJDrGydpxHg8IXGSW5pd6C1gvVTGNeUCKQ88RlBXz4uDyerAZ-qNAl10vt0qpwVuCSvNTLtKhuMKsWgMGE5VSQ3zZUBNWPSmXQWpTSkPOpDvsjGoy1G0VyvaAdS7pcPVcP8_BK9uIoXmDVOt-4EVcHxaHfG4fYbxkgIIjY3jPj9pwGhidAqT7Oplp7NeAHdw20xCpCWLv4GcFGxA-VuNq_4RsynhvbYa7yS4hLbuQfMPAfqYai5JnEcvWfmQGuNfawfzAtD76cySoU1Bkoop8U5U92VpaSF5DwbP9jY5RD0XQnkZDqhteniORKSCcfEAcT03HT5hce-ndO5V4OhwLItR3Q2_xVR4cYvyy8g-XF8q5Zg_n39Gd77A48IOtfxx154S9Lc7xrUL9ETuOdpAAsKdrfJuaWo6PvItlYkO3Hf6YHm7zqb7M1WubJo_yVZtiEMFuVhGcI5JSi8h9W1XKlQ_a6lEWMZkfGgqw7PsIYa-D0uVV7Cp0mKEl3KuNRNakf8oJWDo0io-Dh_WGhbz0cNeW5lE1eEU0-m2FafiTqKdV2oPAfOLYxWeyaE5ZYP7FcpFsnHB4tiJQZF0m76IRPuewASazyIIBHpqN1y3rzhaHPDnUTmOn2c9NMTqEywla8Sa_4LoEoiAdfL1qjh1IAA_9qOBgVi1cjUxcWBcj37LinqEsN_ae_l1lL2zkqZgBMmq-__3--M8DKxyF1IrZXG8t4Rpp248z3XltgD91s4tiQ9Iz01RjPuzatbX2SZJxNvMoPTZCvEIJliUnxmC6bnYQE9VvmpIiNBzRgIUUdYRYL3HW4QRJsil43W1oq8WtvZbKPzBJJfEOywtybm4b8OsWYAEplErKBixE5DTWV3Yb9Wqj42lAqC8zqfJpEvM",
+      "summary": []
+    },
+    {
+      "id": "msg_03516db509a88e13016af8ffe07ff887d1a6079ccc25d45fb5",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0137\n\n## Episode annotation\n\n- Language task: set the mushroom on the green cloth\n- Success label: success\n- Outcome evidence: In right_shoulder_cam, the robot approaches the mushroom at frames 0\u201318, grasps and lifts it at frames 19\u201326, and carries it toward the green cloth at frames 27\u201338. Subsequent movements adjust its placement above the cloth. At frame 69, the mushroom has rotated down out of the gripping pose and rests on the green cloth beneath the gripper. No failed acquisition, harmful collision, or disturbance of unrelated objects is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 70 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8047,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "reasoning_tokens": 78
+    },
+    "total_tokens": 8292
+  },
+  "user": null,
+  "metadata": {}
+}

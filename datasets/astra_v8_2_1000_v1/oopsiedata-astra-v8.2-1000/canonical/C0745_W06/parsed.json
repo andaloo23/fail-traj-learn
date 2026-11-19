@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W06",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot positions the pink can within the upper blue tray during frames 1750\u20131935, then withdraws its gripper while the can remains in the tray (frames 2000\u20132099), supporting successful placement. However, both bowls remain on the tabletop and the right red tray is empty at frame 2099, so the full task is not completed in this window. This is provisional incomplete execution, not a visibly failed attempt: no failed grasp, harmful collision, or sustained unproductive behavior is established. Earlier context is limited to frames 1748\u20131749, and later execution is not supplied.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

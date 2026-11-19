@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0708_W01",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, rather than a visibly failed attempt. In base_image, frame 0 shows a green inverted cup-shaped object on the table; frames 100\u2013230 show the grippers approaching, with the right gripper aligning around it. Frames 250\u2013349 show continued acquisition positioning without a confirmed lift, stacking, or packing. No failed withdrawal, drop, or harmful side effect is visible. Later episode context is unavailable, so this outcome is provisional for the supplied window.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

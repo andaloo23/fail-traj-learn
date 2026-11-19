@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0867",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches the drawer and aligns its fingers around the silver handle (frames 30\u201374, wrist_image). It pulls the drawer outward, exposing its sides and interior (frames 90\u2013110, image and left_ego_image), then releases the handle and withdraws (frames 116\u2013172, wrist_image and left_ego_image). The drawer remains visibly open at frame 172 in image. No failed attempt or unintended side effect is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 173,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

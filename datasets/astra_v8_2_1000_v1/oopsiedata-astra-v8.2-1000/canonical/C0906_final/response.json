@@ -1,0 +1,116 @@
+{
+  "id": "resp_08433401d317d89f016af92fb59dfc87d199306338e3ce47e2",
+  "object": "response",
+  "created_at": 1794715573,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715583,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_08433401d317d89f016af92fb7d26087d1bdd64bf0d3274609",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-S-_8YPbvIvbN0qLBz3Kv4cNKC0_kBH0TVJSke6QxbUxRQ_elTCFfwy829VoTxaxwvHMYR5aiD2gdyOg-0a6tV7PJeT9jGKXz0WZ1CdLrPU_qElzooA2NST_2MfgvtwwCpcJZ30JCjMa-VZrLv7PGEgXlTxrFlV8IH3LouXLSlwQJVRmq7HJq-iECYhlw8eh3QojWzB9L8kkbO9lUgMGqddKRdqo4zmNcXk8lwk-L5N9lUPeI7DXeC6rKZL_walE1uqQ79ZXkt4aJHuUwnjxhWkfz17_LYBcgFK2P5QvAyfh88g_nqcphhrsvomoM9o5AtR62BfRcKbVhPRyRn6wHx15kLrCYTLFgyiKHHhn5n4PTtdVZU7n3smk2ajveUQlKCT5SncsBCgfbqRrDjZAi5OCF_I7M6wgdYrm7Gy4pRhJHznoj6C7xVZH_4qjlu_JqT5svYKsfDFPoR9TxIQJwyNyeUGZajCQl22XMgAkczgl1w8uMH3fRQoOWI-IpVhfW9xeq9a_BCZtSrVHP1ctutk-i6DLyuuFRM3KeOqw5vYwuagNouEm9hYV9mq3gQh8VSglNtP1LbBlHI-iV-fhAjqleJggkepDubXvlhb_dJ-P2d-Pu-SLs2lQ9LF-4oYyQUsoMmMKKEBAdVwgQlDqarPD0WQMAmklSikei4Dwwgwx540ZpzK93JV0J_mYBwd3JN-k38bs-I8_XtS_tYLhzpSnUDCp5P5LhJjCoJjkxnRszvbVOl-QVKPkyXjp5DR7tAKl-dlWyZRH-2ToNmgQyoNgf2dBfIU1AOiaTQfc9Mja1ji0ClCnoDAEJRj98QdXvt4D_1lQyL3RnffvGyblNQEkzVN5zjludJaLNzpIyo_tLsyk2l0FrJmK2nGd9MDnX2LKmEQuJJhOXEXMQv9sT-RqwxJu2CGyPSbfS6VcRADKcpSEg4hu19DUR_uvCOnpTLKjrefqxBPP0OcKqxq159DZk-fyjhEMEYrE9pBUCvMltpb3MvU8pMwZjROiyH-JkImw2KVwLhj56VZsx2IjwsVVaG1zyIDSbYaGpFc0fE7igWIKwRw3KNKiNF9r309wiI3HrNBPBqLw13UKwyQ5TU-c1WBJ_2DL7MIF2vA4mNluQqMjhL-49a4LmxEqh3817N_2tuhceMyiz2JDkHNWOd76NjesXkBcHCORLBtSygHPv4jO_qbQrMXfjGTAqu5xLgShhIRnutSXC7xHTAZ621fkO9cFVzTnDEaeTsl238osINfA9NQ3U-kMCXELMHjRK99ZGTBreQ6oINKwPZZyGdMTxGdJ0HI9SYaakK6P714SZxRIbHVHjw-E-GsOGS4oCHJa-Rgs7LkksafD7I6EUAM_h2cAwSv-Q5cmI_R7-nDOU7kKAeAjOAS3ehoDamy3Ra2iygyey8CGgVlJtsVTskFd3o8n1rIRT6TxiTI7HB9LmSeHhblP_ZyekwXKdToXQGmDsrFKA7mtB4LvXhehYPaOjMTK_7yB5XxZlzx66SadpISm9RYUt2-LkHv39cykMORhH3NeUDwnP9glM9sS6bYlpPuomN7LM6d76TkHvbciQa64yGrx8osiJpTK_IQA-oPWscQ86IBCpn-1FqusXPARFj2EOGZG3_nda7zt5mlE2-euok-dwCo4ObR_ZHXLlzi2Bu5AVYU4cDsPz5KbxX4Bn85QzRejn_7sRRS80pCsgWyF53tfjf4QX1icnO-L4OALBadjJrDDnfz_jfR0t1omuYa7LHAea83jUwtDuvzrnkRDQjg6dtxRZv3GT92st5VMDg8q_qXy0BL1B8lrgcn_ijCMoGSSqIn3e85HX5xcXs5OwEZPIHb8PvPSmvb3VucqcGCHQunkDvEBlrkMaGtE1vfyl1iVMicW7VJG-SEGTPfUvNmlIs78jUK-QJwYtOQtZejiPnij9ac0ZdeTbiEGXV9yXbquVYwhlHt-yHd3AHpK4VTxccB-pAUDBqQJxVd7S9xUTfRavzcGrWJj4GgHIMCLlQSPRvctqxmiYeEFIxjdfN0yRqDX7F0D_jSSYGVEvGvbF2xze2yVo5oGO5jwjYI6zkkWHsStd5yuUsrS7-fIObEBMsQ10jpD17Ntueb6-wNuwOjVqJB-I8st0a2yJdZIr4nBQThXTWaJ6tgsbwvSGqkbgFJJeVudVIXiD_lNjIO7lfcX0ItO1-YmMHFJSdWnb_1eusC-0mWH99lMBHSwhMNJXio70BWNHT5SSJm9sPqq4xX9TXvMdQ21BQNc7pLFPKyrT2QiacFuHqaN2qWmcV0KApl-sCIwPKhGlr98",
+      "summary": []
+    },
+    {
+      "id": "msg_08433401d317d89f016af92fb911f887d18e428413490548eb",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0906\n\n## Episode annotation\n\n- Language task: Move the left stuffed toy to the largest bowl.\n- Success label: failure\n- Outcome evidence: In image_primary frame 0, the left stuffed toy is white and blue, and the largest bowl is the central white bowl. The robot instead lifts the pink toy from the right foreground (frames 24\u201328) and releases it into the white bowl (frames 40\u201341). At frame 99, the intended blue toy remains on the table; this is a visible wrong-object execution, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 11 | No |\n| 11 | 42 | Yes |\n| 42 | 61 | No |\n| 61 | 100 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 11-42\n- Categories: sequencing_semantic\n- Explanation: In image_primary frame 11, the gripper is descending toward the right-hand pink toy rather than the left-hand blue toy. It acquires and lifts the pink toy in frames 21\u201328, then deposits it into the largest white bowl in frames 40\u201341. Physical handling succeeds, but moving the wrong toy does not fulfill the task.\n- Recovery: Return the pink toy to its original table location, then acquire the left white-and-blue toy and place it into the white bowl. No human intervention appears necessary.\n- Severity: low\n- Severity evidence: The wrong toy is relocated into an upright bowl; image_primary frame 41 shows no visible damage, spill, or meaningful damage risk.\n- Resetability: minor_reset\n- Resetability evidence: Restoring the original scene requires a straightforward relocation of the pink toy from the accessible bowl to the table; no repair or difficult retrieval is indicated.\n\n### Failure 2\n\n- Frames: 61-100\n- Categories: task_not_attempted\n- Explanation: In image_primary frames 61\u201399, the empty gripper remains near the white bowl with only small positional changes for roughly eight seconds. It makes no discernible approach to the intended blue toy, which remains untouched on the left. This sustained inactivity does not advance the still-unfinished task.\n- Recovery: Resume task-directed movement toward the left white-and-blue toy, grasp it, and place it in the largest white bowl; also correct the earlier wrong-object relocation. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The stalled interval leaves the task incomplete but causes no additional visible damage or disruption in image_primary frames 61\u201399.\n- Resetability: immediate\n- Resetability evidence: The stall itself creates no environmental change requiring reset; the robot can resume from its current pose. The earlier pink-toy relocation is assessed separately.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 10725,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 653,
+    "output_tokens_details": {
+      "reasoning_tokens": 63
+    },
+    "total_tokens": 11378
+  },
+  "user": null,
+  "metadata": {}
+}

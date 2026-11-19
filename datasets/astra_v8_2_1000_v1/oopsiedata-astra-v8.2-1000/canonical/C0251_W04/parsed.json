@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0251_W04",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisionally for this window, the pink rabbit remains outside the plate despite repeated acquisition attempts. At frames 1137\u20131141 and 1305\u20131315, wrist_cam shows the fingers separating from the rabbit without carrying it; overhead_cam confirms it remains beside the plate. A later attempt briefly raises the rabbit at frames 1345\u20131360, but it returns to the tabletop outside the plate at frames 1361\u20131364. It is still outside at frame 1399 in overhead_cam and wrist_cam. Thus unsuccessful attempts are visible, not merely unconfirmed completion. Earlier execution beyond the two context frames and later recovery are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1120,
+      "failure": false
+    },
+    {
+      "start_frame": 1120,
+      "end_frame": 1127,
+      "failure": true
+    },
+    {
+      "start_frame": 1127,
+      "end_frame": 1279,
+      "failure": false
+    },
+    {
+      "start_frame": 1279,
+      "end_frame": 1301,
+      "failure": true
+    },
+    {
+      "start_frame": 1301,
+      "end_frame": 1361,
+      "failure": false
+    },
+    {
+      "start_frame": 1361,
+      "end_frame": 1365,
+      "failure": true
+    },
+    {
+      "start_frame": 1365,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1120,
+      "end_frame": 1127,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 1120\u20131126, wrist_cam shows the fingers closing beside the plate without securing the pink rabbit. Reopening from frame 1127 and empty withdrawal at frames 1137\u20131141 establish the unsuccessful acquisition; overhead_cam shows the rabbit remaining on the tabletop. The earlier alignment is not itself labeled a failure.",
+      "recovery": "Reopen and align both fingers around the rabbit\u2019s body with clearance from the plate, then verify acquisition with a small lift; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The rabbit remains on the table, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible beside the plate and requires no environmental reset."
+    },
+    {
+      "start_frame": 1279,
+      "end_frame": 1301,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During frames 1279\u20131300, wrist_cam shows another closure alongside the rabbit and plate rim without a secure acquisition. The fingers reopen from frame 1301, exposing the rabbit still on the tabletop at frames 1305\u20131315; overhead_cam corroborates that it was not transported onto the plate. Proximity to the rim alone does not establish a collision.",
+      "recovery": "Withdraw slightly, center the grasp on the rabbit rather than the narrow space beside the rim, and check retention before transport; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt leaves the rabbit outside the plate without visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rabbit and plate remain reachable and usable without resetting the scene."
+    },
+    {
+      "start_frame": 1361,
+      "end_frame": 1365,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure and a partial lift at frames 1330\u20131360, the rabbit separates from the fingers at frame 1361 and settles outside the plate by frames 1362\u20131364, visible in wrist_cam and overhead_cam. Retention is unsuccessful; the images do not establish whether separation was an intentional release or a slip.",
+      "recovery": "Reacquire the rabbit around its body, confirm a stable lift, and move it fully over the plate before lowering and releasing; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The soft toy returns to the tabletop beside the plate, with no visible damage or significant hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rabbit remains accessible for another attempt, and no cleanup or manual repositioning is necessary."
+    }
+  ]
+}

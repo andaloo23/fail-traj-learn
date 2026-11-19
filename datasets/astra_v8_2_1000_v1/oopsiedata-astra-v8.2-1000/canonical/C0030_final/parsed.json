@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0030",
+  "language_task": "Pick up the ball and place it in the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The orange ball remains on the tabletop outside the blue bowl, including at frames 250, 500 and 749 in camera_high. camera_wrist_right shows the gripper moving away without the ball on multiple attempts and the ball still outside the bowl at frame 749. This is visibly unsuccessful acquisition, not merely an unconfirmed final placement; no completed transfer into the bowl is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 201,
+      "failure": false
+    },
+    {
+      "start_frame": 201,
+      "end_frame": 297,
+      "failure": true
+    },
+    {
+      "start_frame": 297,
+      "end_frame": 478,
+      "failure": false
+    },
+    {
+      "start_frame": 478,
+      "end_frame": 505,
+      "failure": true
+    },
+    {
+      "start_frame": 505,
+      "end_frame": 643,
+      "failure": false
+    },
+    {
+      "start_frame": 643,
+      "end_frame": 657,
+      "failure": true
+    },
+    {
+      "start_frame": 657,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 201,
+      "end_frame": 297,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After positioning and closing near the ball, the gripper starts withdrawing empty at frame 201 and moves toward the bowl without acquiring the ball. camera_high shows the ball left on the table at frames 219\u2013250, while camera_wrist_right shows the empty fingers over the bowl at frames 251\u2013294. This motion does not transfer the target.",
+      "recovery": "Return to the ball, center the open fingers around its sides, close and verify retention with a small lift before moving toward the bowl; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The ball and bowl remain on the tabletop with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains accessible in its original working area; another acquisition attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 478,
+      "end_frame": 505,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another approach and finger closure near the ball, the gripper withdraws empty beginning at frame 478. camera_high shows increasing separation while the ball stays on the table through frame 504; camera_wrist_right shows the ball outside the fingers at frames 494\u2013504.",
+      "recovery": "Reapproach with corrected finger alignment and grasp height, then confirm that the ball rises with the gripper before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "This missed acquisition prevents progress but produces no visible damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both task objects remain accessible and usable without manual resetting."
+    },
+    {
+      "start_frame": 643,
+      "end_frame": 657,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The next acquisition again ends with the gripper lifting away empty. At frames 643\u2013651, camera_high shows the fingers separating from the ball while it remains on the tabletop; camera_wrist_right shows the ball passing below the empty fingers rather than being carried. The subsequent return toward the ball begins at frame 657.",
+      "recovery": "Recenter the fingers around the ball and check acquisition with a short vertical lift; continue to the bowl only after visible retention is established. Human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The ball remains on the work surface, and no damage or other harmful side effect is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed grasp leaves the scene ready for another attempt, with no cleanup or object replacement required."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0511_W06",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: overhead_cam shows the carrot beside the bowls rather than sorted into either bowl at frames 1750\u20131799. wrist_cam shows small alignment changes followed by finger closure around frames 1774\u20131788 and reopening through frame 1799, but no confirmed retained lift or transfer. The acquisition outcome remains unconfirmed: the views do not establish a completed acquisition followed by empty withdrawal. Sorting completion is not visible, rather than a definitively failed pickup being established. Earlier context is limited to frames 1748\u20131749; no subsequent action is supplied, and the window boundary does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1800,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

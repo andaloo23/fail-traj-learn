@@ -1,0 +1,116 @@
+{
+  "id": "resp_00ed88e4f0263edb016afbe4bad14c87d1a487d5097f94fad0",
+  "object": "response",
+  "created_at": 1794892987,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794892994,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00ed88e4f0263edb016afbe4bfd41c87d1bcebef432b05a725",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq--TE435CJK0EMWtVb91z6xyLUbD984YTwV1zVpAT0QNnQVDk3yy7NlXmbE8WMUiEoSbgXy0p9ixu_SBPG7awfaT43v87ofvufAllsAlSlmGbGKqBrn81LyMYjCBnAvQ_HOp9vhpsGAHnWUnzBPaYGaF7f4fTJ0ZURvlrwrcmdmqPuFHUNg6iFSXTA6ygYtsktRFHqHB4PPMeuZ8MZ3x_EE0Va79zXlo82z06F8vhmfO6TbvB4dEEYynfCnxzKF4f1sd0V1ZVyusUwt62hT7_VDmmKeyPfUvzo97tu1rc7QqF2LIrGCelsK43Z3AWBtXqd0EOhXcahlhN31Lv3wLVCu3Z3Er7A2J7pDMzyv6qjTYU31aGEa6FtEwhrFBHUfTaTkTSAEO3H91if_pXRkWnV4wKH6GtSKlzzqFfIVwb-zv4ZnLKxzPvq2WOlMdVjvJvkHq2rWv9Jml0EXZLokHvj3vCQ-krg9SoYlaP--B5yKEFYcbw6o_O_faG-45Bep8C_J8UBBzCkfcmfpuG6T2vHOmQQZktVHTHEz44U_i41rKIC0pdKqjFj7GqQLqW1NxvwZeZh7gWEgjyhPphtihny9DaeNIvVNBC_snyBvkOeenc4DkbuoBqx1teJ9EKb7Z0NvF18pmVfzoxwP9csyD6oGi34813iZaL0Wq6tTmd4A-cTYnH9RK3ISu9cmwdOTP0bt72dTSFgFuR98RfHi-3k-pXiE596ATGZN6WvwUxBl7kF3AZA69e6naTOYeKXQkS68VXKuFJ3QmLYUgxMLpqfBf4kZ3Nac_Pf3MDbvPL1UEgXRlotQyCnD_paBTrqpUKx65yLx67zSIcW4zXJH-M6AZtySDj842kPGwh-qjtlcjTNS5NX6sPHSO-4Sv_HJIJ2NYF4RdFuLJ-bOXfLjtyFQzs6yxS_OgwkdLVk6qOyehszyI_n0YKoP8UpDTEH4owEr3BzFHwRwvDvNR_2HGMjBLuZO0Z3KfMZGYgWLSicyvTC4Ntdl8Yx6DHLf38l5ngATWwwB2TD23XkVZHjo8ju1Kssl70ccOXQ4JbVkYHHOfrLRbiqBSquFu75iYb4kFOxQv0gS0RRiJ0C7UWieK1KBur50V2zcJExPFk8562X0ZUfNT15D4BR9TyYpAIan6ZzQEbCaeNaoxklfxdML8MTk3WnsFVnJUj2GWmIBU2Ler0XrFnxwlrXe6GZ0ldDCP9t1Qvh-eSH4SVKO6cXiXbZkRr5KYPjfOb7t9buHSXYoQresGnNt4yvWwIfZSJDuyKivBoeRc8U957YtgZBc9l3x5Ni9k2ytVmO6UuJfpyQCaiIcgrnKMu8dXQHjexn3Y0X_Z5MWWPmZ84J_RyBQlKmdw0rBf_kVrXk_3nUAGYX-g6ohawpUBSUdUEzuXoVwnitufSq9mYlhbYauiET9mQgACUSUj6UGDSF0_hZn9G0IUfRVGb8XQlSsBstO-BtfVhv0v6M_sEcKnIkDXNrX6WiDchqqHxiv_rwg2CnlfzoA4l6QvVrfE12VTecWuFHQoRGCMn_7CiDw_Hk_w0MUulXodNVcRYnTiwrNSkuvjFIkfzSMOpw40raNBZTjVL8JYGtZmqcGiYCZXRbYZYN51zBZBATscxqsBU-U0toD4y0kXexLSIq5ORTRMu7WCMF2yoRLGYKj3HFE7o2NumIeCJLF5IGm1udzea9ALtrnKca2v-bQGY-lbPzXc4s2JOCnKL1hOXKzrPibrIKZu7bT5FwDVuU7HaDZRdKs1CFOGGoU188opdL372cPWVQ-qQMSoSdDUGTGBorJVhsm4sLa3Q0jhkcMBjaD3QOkI3jb_-pzzlz7-MnzQDxNMffVWGfb9cBQsdPAGkfqMnCRWXvDsURxgAvG1Hl74AoPap-e24LcSb81cx0r5NWij0JAkYCkDr6D9ddj9k1jfJ8tY9t2zyUBhUxcjBg-dR28Q39GZNNgzQNL3RlxRR3Kl-hXJqwFQ7KtKEUzjA2QMyLsV3FOcTN_yd5wLKAuJcH0W_crM8Azuybm9uvoX4hwDG3YGvMMGXB5rE8oJPQNpaGTry66wgLFwEAwgY88Tbx05wLF63_LsJrilScMgCN3KO4GAbvhQseT4pXA_5EbNshunJTbC1idkaV_moNBpdRJluJk5zLgTIqHC02P1t25jhuD9BhxDmj3_JhhSheGVmY17bD3pj9y9dLbeiqdoqmhV1U0hyCTFh8k5-b-Ask8OLn5E5V9gfj4VsgJO4YEvXojXgrGh8oYEVnzYEi7tOg5KKukW-BgX0VeDKITmgFTMPKPtjId7H9MAcxxjnShn0pwQBXgexZwEZsLKMEVe2EGAAwC5jIBuUElHxs_WWVpuBHfpu231P9K6iY_qbf8HHpX7VV-JI5nSNkvj92m_UCJwFzzXFonNTU8cZUTZtwOkQFo9KXdD33N2j-hiJXxwkjnNeDbrZvcUg6dkhHOvMcKcNUsLifFjdVpbMHr21ORhBuKRPtnVbEr9MI6LCoesdWAI6xBhuOe7FBCKdUPhYpeVudqIx03LXBLu-wLM_jDpiX3yP7x2e_PMabh5WBfopNodrTbNQ0-aKhgt7MS6h4aHtv4mK-9zDBDO7snR-oOlbt5FdNBQBSecl_MkNtU_I5qdGTYuv76gaRU5wuEaYToTqXcjuMSIW74yJW5r00qqRTvMlZiVB-xi6Oxj9XEGun48OWB8WrlyG6kjHyQ9Zdgv6yuOOsq0W6nSEZ3NsTlZN89ShRDY0IlzQY-3dDbuCoP5usIylwqcx-Q==",
+      "summary": []
+    },
+    {
+      "id": "msg_00ed88e4f0263edb016afbe4c0253487d1a788acd262b494fd",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0695_W04\n\n## Episode annotation\n\n- Language task: Pick up the stuffed animal and place it in the cardboard box.\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this observed window, rather than a visibly failed acquisition. The external view at frames 1050, 1186, 1288 and 1399 shows the stuffed animal outside the cardboard box. The external and wrist views show incremental approach and alignment at frames 1080\u20131095, 1170\u20131188 and 1270\u20131288, followed by finger closure near the animal at frames 1366\u20131383. The animal shifts slightly during this final interaction, but no clear full lift or placement is visible by frame 1399. The intervening pauses do not clearly establish sustained failure rather than paced acquisition preparation. Earlier context beyond frames 1048\u20131049 and later execution are unavailable; this outcome label is provisional for the supplied window.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1050 | 1400 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 44800,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 266,
+    "output_tokens_details": {
+      "reasoning_tokens": 25
+    },
+    "total_tokens": 45066
+  },
+  "user": null,
+  "metadata": {}
+}

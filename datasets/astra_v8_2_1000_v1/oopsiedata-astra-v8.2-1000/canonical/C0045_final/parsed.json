@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0045",
+  "language_task": "Stack the small teal block on top of the yellow rectangle.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot eventually carries the teal block toward the yellow rectangle (frames 99\u2013150, wrist_cam and left_base_cam), but releases it beside rather than on top of the rectangle (frames 222\u2013226, wrist_cam). After withdrawal, the blocks remain unstacked at frame 240 in wrist_cam and right_base_cam. This is a visibly unsuccessful placement, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 36,
+      "failure": false
+    },
+    {
+      "start_frame": 36,
+      "end_frame": 44,
+      "failure": true
+    },
+    {
+      "start_frame": 44,
+      "end_frame": 222,
+      "failure": false
+    },
+    {
+      "start_frame": 222,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 36,
+      "end_frame": 44,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the initial finger closure around the teal block at frames 33\u201335, the gripper lifts and opens without retaining it at frames 36\u201343; wrist_cam shows the block remaining below the fingers, while left_base_cam shows the hand withdrawing without the block. The acquisition attempt does not advance the stack.",
+      "recovery": "Realign the open fingers around opposite sides of the teal block, close securely, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block remains on the tabletop, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and the scene requires no intervention before another grasp attempt."
+    },
+    {
+      "start_frame": 222,
+      "end_frame": 241,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully transporting the teal block, the robot opens its fingers at frames 222\u2013225 with the block beside the yellow rectangle rather than over its top surface. Frames 226\u2013240 in wrist_cam and right_base_cam show the gripper withdrawing and the teal block left on the tabletop next to the rectangle, so the intended stack is not formed.",
+      "recovery": "Regrasp the teal block, lift it clear of the rectangle, center it above the rectangle\u2019s top surface, lower it onto that surface, and release only after confirming support; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful placement leaves both blocks intact on the table; no damage or hazardous displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both required objects remain accessible in usable poses, allowing another attempt without an environmental reset."
+    }
+  ]
+}

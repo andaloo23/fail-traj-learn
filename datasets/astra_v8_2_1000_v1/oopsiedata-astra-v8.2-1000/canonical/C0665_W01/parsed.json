@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0665_W01",
+  "language_task": "take the tape measure and stretch it until it encompasses length of towel",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, rather than visibly defeated by a failed attempt. Frames 0\u201384 in left, right and top show the retracted tape measure resting on the towel; subsequent frames show arm positioning, including approach toward the tape measure in left and top at frames 138\u2013160 and closer alignment at frames 300\u2013349. At frame 349, left shows the gripper beside the tape-measure housing, while top shows no tape stretched across the towel. No completed acquisition followed by empty withdrawal, dropping, or harmful contact is established. Later episode context is absent, so this failure label is provisional for the observed window only.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

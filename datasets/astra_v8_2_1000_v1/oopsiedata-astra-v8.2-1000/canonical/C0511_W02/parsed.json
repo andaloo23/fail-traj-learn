@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0511_W02",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: overhead_cam and wrist_cam show successful acquisition and transport of the blue plush toy at frames 431\u2013499, followed by release into the green bowl alongside the pink plush toy at frames 503\u2013510. An orange-shaped item is also visible in that bowl, so separation is not established; adding another toy alongside the existing toy does not independently establish a new sorting error. The robot next acquires the brown oval item and carries it toward the bowl area at frames 635\u2013699, but its placement is not visible. Items remain unsorted on the table in overhead_cam at frame 699. Completion is unconfirmed rather than a visibly failed acquisition; earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

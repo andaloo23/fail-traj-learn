@@ -1,0 +1,102 @@
+{
+  "episode_id": "C0315",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "overhead_cam and wrist_cam show the blue and pink animal toys placed in the lavender bowl by frames 150 and 300, but the carrot-shaped food item is then released into that same bowl at frames 801\u2013807. The intended distinction is interpreted as represented food versus animal toys, since the food items also appear modeled. At frame 1799, food-shaped objects remain on the table and the green bowl remains empty. Thus separation is visibly incomplete and includes an incorrect placement, not merely unconfirmed completion. Sustained unproductive positioning near the orange item continues through the ending; the recording end alone does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 422,
+      "failure": false
+    },
+    {
+      "start_frame": 422,
+      "end_frame": 438,
+      "failure": true
+    },
+    {
+      "start_frame": 438,
+      "end_frame": 529,
+      "failure": false
+    },
+    {
+      "start_frame": 529,
+      "end_frame": 666,
+      "failure": true
+    },
+    {
+      "start_frame": 666,
+      "end_frame": 801,
+      "failure": false
+    },
+    {
+      "start_frame": 801,
+      "end_frame": 808,
+      "failure": true
+    },
+    {
+      "start_frame": 808,
+      "end_frame": 960,
+      "failure": false
+    },
+    {
+      "start_frame": 960,
+      "end_frame": 1800,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 422,
+      "end_frame": 438,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the carrot, the gripper retreats empty while the carrot remains on the table, as shown by overhead_cam and wrist_cam across frames 422\u2013437, especially frames 435\u2013437. This establishes failed acquisition. Reopening for a renewed approach begins at frame 438.",
+      "recovery": "Reopen and align the fingers across the carrot's body, then verify retention with a small lift before transport; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The carrot stays on the tabletop, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The carrot remains accessible for another grasp without human intervention or environmental resetting."
+    },
+    {
+      "start_frame": 529,
+      "end_frame": 666,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "wrist_cam shows repeated closing and reopening near the carrot without acquisition at frames 529\u2013585 and 630\u2013645; overhead_cam confirms that it remains on the tabletop. By frame 645, the carrot has rotated and shifted instead of being lifted. These unsuccessful acquisition motions continue until the renewed wrist reorientation and approach beginning around frame 666.",
+      "recovery": "Reassess the carrot's changed pose and approach across its wider body rather than repeating closure near its leafy end; confirm a secure lift before transport. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequences are failed acquisition and tabletop displacement, without damage or an object falling off the table.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced carrot remains within the accessible workspace and requires no environmental reset."
+    },
+    {
+      "start_frame": 801,
+      "end_frame": 808,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "wrist_cam shows the carrot released at frames 801\u2013806 and settled alongside the pink and blue animal toys by frame 807; overhead_cam confirms placement in the lavender bowl. The physical transfer succeeds, but mixing represented food with animal toys contradicts the requested separation.",
+      "recovery": "Retrieve the carrot from the lavender bowl and place it in the green bowl, maintaining separate bowls for food-shaped items and animal toys; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The carrot lands inside an upright bowl without visible damage; the consequence is incorrect sorting.",
+      "resetability": "immediate",
+      "resetability_evidence": "The carrot remains exposed and accessible in the bowl, permitting correction without a human or environmental reset."
+    },
+    {
+      "start_frame": 960,
+      "end_frame": 1800,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach to the orange food-shaped item, overhead_cam and wrist_cam show sustained essentially unchanged arm positioning from frames 960\u20131050 through frames 1200, 1400, 1605 and 1799. Intermittent closing and reopening, visible at frames 1290\u20131305, 1500\u20131515 and 1740\u20131755, produces no acquisition and transport or meaningful sorting progress. This is one continuous period of persistently unproductive behavior, not separate failures at window boundaries. Finger motion and occlusion do not establish possession, a dropped object or a hardware fault; the precise transition from approach to stalling is approximate.",
+      "recovery": "Stop repeating the same finger motion, reassess the orange item's pose, and reposition the gripper for a deliberate grasp; verify retention before transferring it to the food bowl. No visible condition requires human intervention.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is prolonged delay and incomplete sorting; neither camera establishes damage, spilling or a meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The item remains accessible on the tabletop and both bowls remain upright, so the robot can resume without environmental resetting or human intervention."
+    }
+  ]
+}

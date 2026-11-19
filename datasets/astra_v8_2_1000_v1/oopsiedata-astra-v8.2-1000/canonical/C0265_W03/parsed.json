@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0265_W03",
+  "language_task": "find the cube under the green bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than established by a visibly failed acquisition. In left and top at frames 700, 725, 775, 850, 925 and 1049, the robot changes its position and viewing angle near the green bowl, but the bowl remains inverted on the table and no cube is visibly uncovered. The open fingers visible in left do not establish a completed grasp followed by empty withdrawal; right supplies no additional evidence of completion. The movements and brief pauses do not clearly establish a local failure or harmful side effect. Earlier context beyond frames 698\u2013699 and later execution are unavailable, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

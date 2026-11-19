@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0472_W02",
+  "language_task": "untangle the cord",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: top shows the cord remaining in the same overlapping-loop arrangement at frames 350, 525 and 699; left and right show no discernible task-directed gripper movement. Untangling is not visibly attempted or completed during this window, rather than a physical untangling attempt visibly failing. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so eventual completion is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 350\u2013699, the grippers remain beside the unchanged cord without a discernible approach, acquisition or manipulation; top at frames 350, 525 and 699 shows unchanged loops and gripper placement, corroborated by left and right. This approximately 11.6-second period establishes sustained inactivity that does not advance untangling. Context frames 348\u2013349 show matching poses, consistent with continuity across the preceding boundary; the inactivity may continue beyond frame 699, and its cause is not visible.",
+      "recovery": "Approach an accessible cord end, gently acquire it, and separate the overlapping loops while monitoring their movement and avoiding excessive tension; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No displacement, damage, unwanted collision or meaningful damage risk is visible; the observed consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cord and workspace remain unchanged, so a task-directed attempt can begin without environmental resetting or human intervention."
+    }
+  ]
+}

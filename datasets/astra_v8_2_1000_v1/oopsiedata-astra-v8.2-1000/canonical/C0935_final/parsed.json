@@ -1,0 +1,57 @@
+{
+  "episode_id": "C0935",
+  "language_task": "Move the banana to the pot on the right and sushi to the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, the banana is transferred from the bowl to the right-hand pot and remains there after release (frames 30\u201357). The red-and-white sushi is lifted (frames 76\u201380) but released outside the bowl (frames 93\u201399). At frame 159, the sushi remains on the table and the bowl is empty, establishing a visibly unsuccessful sushi transfer rather than merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 93,
+      "failure": false
+    },
+    {
+      "start_frame": 93,
+      "end_frame": 103,
+      "failure": true
+    },
+    {
+      "start_frame": 103,
+      "end_frame": 113,
+      "failure": false
+    },
+    {
+      "start_frame": 113,
+      "end_frame": 160,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 93,
+      "end_frame": 103,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In image_primary, the robot opens its gripper while the held sushi is outside the bowl at frames 93\u201396. The sushi settles on the tabletop beside the bowl at frames 97\u2013102, so the established grasp does not result in the required placement.",
+      "recovery": "Reacquire the sushi, lift it clear of the rim, and position it over the bowl interior before releasing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The sushi remains on the tabletop, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The sushi is accessible beside the bowl and can be grasped again without environmental intervention."
+    },
+    {
+      "start_frame": 113,
+      "end_frame": 160,
+      "categories": [
+        "grasp",
+        "collision"
+      ],
+      "explanation": "During the renewed acquisition in image_primary, the nearby white utensil is visibly displaced and rotated at frames 113\u2013116. The gripper closes beside the sushi and withdraws without it at frames 121\u2013129, establishing failed acquisition. It subsequently moves within and above the empty bowl through frame 159 while the sushi remains on the table, without a successful reacquisition or transfer.",
+      "recovery": "Withdraw clear of the bowl and utensil, realign the fingers around the sushi, and confirm possession during a short lift before transporting it into the bowl. No human intervention is required for the task retry; the displaced utensil can be restored separately.",
+      "severity": "low",
+      "severity_evidence": "The failed grasp leaves the sushi on the table, and the utensil shifts without visible breakage or other damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the displaced utensil to its previous position is a straightforward minor reset; the sushi and both containers remain accessible and usable."
+    }
+  ]
+}

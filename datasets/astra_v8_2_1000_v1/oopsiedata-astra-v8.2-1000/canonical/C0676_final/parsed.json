@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0676",
+  "language_task": "Stack the orange blokc on top of the green triangle.",
+  "success_label": "success",
+  "outcome_evidence": "Frames 65\u201378 in wrist_cam and right_base_cam show the orange block acquired and lifted toward the green triangular piece. Frames 116\u2013125 show the fingers opening and withdrawing, leaving the orange block supported on the green piece; the stack remains stable in right_base_cam and wrist_cam through frames 140\u2013240. The robot subsequently approaches the other orange-colored block, but the episode ends during finger closure without an established additional acquisition, displacement, or harmful side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

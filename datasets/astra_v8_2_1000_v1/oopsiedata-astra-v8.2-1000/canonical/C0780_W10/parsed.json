@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0780_W10",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this observed window. In base_image frames 3150 and 3499, the pink bowl remains on the table, the blue bowl remains in the upper tray, and the right tray is empty. The robot lowers and releases the colorful can in the upper-tray area, leaving it standing inside the blue bowl as the gripper withdraws (frames 3308\u20133425), then approaches the pink bowl (frames 3448\u20133499). This unfinished bowl acquisition does not establish a failed grasp, and no new local failure is clearly visible. The blue bowl\u2019s pre-existing incorrect location is not a new failing action in this interval. Earlier actions and later completion or correction are outside the supplied context, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 3150,
+      "end_frame": 3500,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

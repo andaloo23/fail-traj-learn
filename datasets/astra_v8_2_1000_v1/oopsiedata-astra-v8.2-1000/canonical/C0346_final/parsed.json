@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0346",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven begins closed (frame 0, image and left_ego_image). Several small opening movements are followed by the door returning closed as the gripper retreats (frames 101\u2013118, 162\u2013188, and 240\u2013258, image). The final attempt opens the door substantially at frames 324\u2013333; it remains open through frame 349, exposing the interior in image and left_ego_image. No damage or displacement of unrelated objects is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 109,
+      "failure": false
+    },
+    {
+      "start_frame": 109,
+      "end_frame": 118,
+      "failure": true
+    },
+    {
+      "start_frame": 118,
+      "end_frame": 173,
+      "failure": false
+    },
+    {
+      "start_frame": 173,
+      "end_frame": 188,
+      "failure": true
+    },
+    {
+      "start_frame": 188,
+      "end_frame": 247,
+      "failure": false
+    },
+    {
+      "start_frame": 247,
+      "end_frame": 258,
+      "failure": true
+    },
+    {
+      "start_frame": 258,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 109,
+      "end_frame": 118,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following a slight outward movement of the door at frames 101\u2013108, the gripper withdraws without retaining the handle and the door returns closed at frames 109\u2013117 (image and left_ego_image). This attempt does not leave the oven open; the exact contact failure is obscured.",
+      "recovery": "Reapproach and align the fingers around the handle, establish secure retention, and pull along the door\u2019s opening arc; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door returns closed without visible damage or disturbance of nearby objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and accessible handle remain in place, allowing another attempt without environmental resetting."
+    },
+    {
+      "start_frame": 173,
+      "end_frame": 188,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The door moves slightly outward at frames 162\u2013172, but closes again while the gripper moves away empty at frames 173\u2013187 (image, corroborated by left_ego_image). The robot again fails to retain the handle through the opening movement.",
+      "recovery": "Adjust the handle grasp before pulling, verify retention through the initial movement, and continue opening under controlled motion; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Only the opening attempt is defeated; no damage, falling objects, or other harmful consequences are visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The closed oven remains usable and accessible, with no scene restoration needed."
+    },
+    {
+      "start_frame": 247,
+      "end_frame": 258,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Another slight opening at frames 240\u2013246 is lost as the gripper retreats at frames 247\u2013257, leaving the door closed rather than carrying it through its opening arc (image and left_ego_image). The images establish unsuccessful handle retention, not its hidden cause.",
+      "recovery": "Reposition for a more secure handle grasp and maintain it while following the hinge arc until the door is stably open; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful attempt causes no visible damage or meaningful disturbance beyond the door returning closed.",
+      "resetability": "immediate",
+      "resetability_evidence": "The handle remains available for an immediate retry without moving or repairing anything in the environment."
+    }
+  ]
+}

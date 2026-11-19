@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0423",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The drawer starts closed (frame 0, left_ego_image). The robot approaches and closes its fingers around the upper drawer handle (frames 60\u201375, wrist_image), then pulls the drawer outward, exposing its sides and opening (frames 88\u2013110, image and left_ego_image). It releases the handle and withdraws (frames 111\u2013140, wrist_image); the drawer remains visibly open through frame 171 in image and left_ego_image. No failed attempt or unintended object displacement is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 172,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

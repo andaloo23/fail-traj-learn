@@ -1,0 +1,116 @@
+{
+  "id": "resp_050c8aab8e173d69016af930f1c39c87d1bd8b94e42471ac11",
+  "object": "response",
+  "created_at": 1794715889,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715896,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_050c8aab8e173d69016af930f492a087d1b4e6caddb6ade685",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TD5EkCTvaJUj5aSP-HhpCHOo6i7kj1ksE8E5X4kznaMWamqsMgUGmyPveul6gB3SMQaKtlAwjPVJWBzA_5YWDIAVJ602jNHgQfqv4IW74wp0GO2LdTNnktNJHzXb-WhXWnfhKQc9-dSxSloq0WJQEcjwKzQ4ccw1pAmRxfUjCPZJNY9lVdCTdv1_ZEYftirvaIp4e2p1w2R1qeR2_-wLhx9Jp0d3DG3sbZQjrJ1uQH1QA1ILJz4j3arkJMInyqmB4kx_OHFbpwWxLl2MKNy1D172-D_NP10upkzonbXM_gZrQ7WyES3vP9KeuDxZBTWc8pfFY-kVCt5oFuHiUHm0WINdaM6UkvVu2j3UKjTuKS7hc6D0OIVgYUlaJLfQOXT8a2HZwazUN4sWCPWfRaFfaAokV0mP7kEXBHPZfI5Lw72TohDN5oWdyiK6zI2nepWcIMFgAzMNPHLPkKAy5AB3Lg6GQH2n0I81DHYTYxeOpXgvE9bVTcQJAw7Atrw0JRBPkWu6UqJpVPWY9X-fz7orbd-pDebDfevTzyJbicawMereaFxsoSL0wpYWY1zcEJJ-WNPy72TG-iyPguABiRFv8S55Kxqs4arfvcJYqObu10yVIovM4QpapPU6YI_wMkm6OjLOftqICsKwQAzd-nXKyb03nQ3-_utTUz0vm-ALIGsFjGcU1mJU6TABaq8H0kKXFRfDL653iWmTaOYb3Y4kiV0YgVJ4Cw3pLY9yWZO5bD-lRVsPSUdSKp3rVmRkiWOuPfeGmfB7x0UEpAMaeDW_w4EoyAgDMDGf4Jgjs-sVIwuDEIFCr-W36rp-7BDxk8e9mMD4aUmAEJPFYFikcbaH9G6VF1DE4-5MA8n_7q8l9r7llICYIZTibjoVdQwepzx1Wpozh3_NpBfVVqnKIiVpjPNCArSSXBwg4jjv0UZcelemclaivZJcHvCAORaOB1oMuLYlD4naadA0pw59UL1nupJWjedBGPtrzUF6t1LB3wQJTV6K52Z-4Aq59Ijx6XZei-ekFnIXIbJJiRpTos97bJW_j3ETWc0wfh3NGyytZZnC4-LSuUsPKHIZVr_DLed1vpZ3hpsXimJjXoo8PPAqvfq_6F0tsi4ovTgLX7_I1nV_coQnv9vOHX_UbWZOneW8vl1Wj3SsFSHrMUbuBzI22vwq7XjJOwsD8B5Zs4Q6sJJcBff4WPQCbk4SmpQk-meWbWlLB0XMrDx_JM0MupX3i69saJw6y1BRMNSu-YpPd9qgAuAHAmBr-z2ARbQzeS_SmINzSHQQDqcJ_BGq7T0uv-wn8wa8mTOtTJf9RFK3GXY5WRf2vkQYvNwUathXXmhNwqBYm9iKSIhW1u1fYhEi5sVu0LDKh0m7ydxxuP-nSZ9eIprwJEzKU7TOAEnG2s07dQvtf3BZQn9lFxTMXmIUxAVf3QkFacdSQVXh6A0kXWTKqEQYQIVU-B2tX4qtikCPgEdpYFYCWRQ3s14ntl-OC1TIRQ3SFj-6WxXMKR7Wr1-QYdmnfBhGRQ0BBDcdnLLgvyPI0AcHE6oak23Ydux01VhcNWFY4fhw_-myg3NQWypqxlIjp0ONf0cd7JHvYXvbVk7Wo_EfQGBaySfxT1YSO8vmrz75uNYJoAmUXx2MGnUlOUrMuMgk2GAxNIQo-0e4RBMV-vW8BrgDV7jU0mbaliL6h_e3wCOb-mkgpCDdQNlRwnRKbimb7HtqxhwIIBZBdi0i3GIgkq-k-8gCLi1BsvHSjstwnm_SpWt_4O5kY17dORJ-pP0mk6OCgBjp9zOJ4kKfJpsfdmgKC-cp_jCflF_29Jq1vPApsgzwe6no9eFkS9tXktbZr2Ko2moadKHl6mVXi2zOw9CYTzmupaHM5qg_AJahsuoU3AtmtWFQbzoBTfXDxJgqaKDNvoiTIpYAd2yj22kxJ7lDWFWer850fA6yF849j5FzekqJBkteb133UEz3X2KJFTlfzahbzBCxtzyfs15zFuh_j5wtfSPRGDxUvr0G3X09tbyP1AWbMQcf0rmiAG10_uMIN4Ze5dZEYDLTvtQVpIhsmHnmUh2V4VFLxUdeE9-ynfRTU8CAeu0FA6RdI-ugu5TY4ciFnof8hm8B4d1Pp1utWfQXkUq7CYAVySnBRERLQJPKJEX_r9hfI0RPG06ftYRm6bNoTL3SS6gt4ECkhbKCJFQhaaDLFQNTuJO49pANZtC3Rgj_rTjzxzpwdHT6YiXSCVmcHS8K56SOXLAO0YyFBwfUecjaM_2_ujvJb6ubBpl3xeSYPeGIAxD_GooLaUZQnKfLgX4P5_B4KxAllvsERclai9D_2exCNEQuKyACwQNR8_i9p-4AUTWkknb8Z7icF_YWhp0uoY9",
+      "summary": []
+    },
+    {
+      "id": "msg_050c8aab8e173d69016af930f5bd5887d1bc9d4260cce18b49",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0937\n\n## Episode annotation\n\n- Language task: Open the oven.\n- Success label: failure\n- Outcome evidence: The oven door is closed initially (frame 0, image and left_ego_image). The robot approaches and progressively aligns its gripper near the door/handle area (frames 40, 160, 240, and 280, image and left_ego_image), but no door-opening motion is visible. At frame 297, image and left_ego_image still show the door closed while the arm remains nearby; wrist_image provides no confirmation of an opening. Completion is therefore unconfirmed in the observed episode, rather than an established failed grasp or pull. The slow approach and alignment do not independently establish a local failure.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 298 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 57781,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 254,
+    "output_tokens_details": {
+      "reasoning_tokens": 60
+    },
+    "total_tokens": 58035
+  },
+  "user": null,
+  "metadata": {}
+}

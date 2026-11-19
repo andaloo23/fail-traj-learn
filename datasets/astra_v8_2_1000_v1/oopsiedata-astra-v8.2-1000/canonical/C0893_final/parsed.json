@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0893",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The upper drawer is initially closed in left_ego_image at frame 0. The robot approaches and aligns with its handle (frames 30\u201386, left_ego_image and wrist_image), then pulls the drawer outward: increasing extension is visible at frames 108\u2013126 in image and left_ego_image. The gripper releases and withdraws at frames 129\u2013150, leaving the drawer visibly open through frame 188 in left_ego_image. No failed acquisition, harmful collision, or displacement of unrelated objects is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 189,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

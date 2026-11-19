@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0604",
+  "language_task": "Pick up NIST rod and insert into corresponding hole on the NIST board.",
+  "success_label": "failure",
+  "outcome_evidence": "The rod remains upright near the board center throughout frames 0\u201366 in side. The robot lowers its gripper near the board\u2019s right edge, closes without acquiring the rod, and withdraws empty (frames 52\u201366, side and wrist). This is a visibly unsuccessful acquisition attempt; no rod transport or insertion is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 52,
+      "failure": false
+    },
+    {
+      "start_frame": 52,
+      "end_frame": 67,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 52,
+      "end_frame": 67,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In frames 52\u201356, side and wrist show the fingers closing on empty space near the board\u2019s right edge rather than around the upright rod. The gripper subsequently rises empty in frames 58\u201366 while the rod remains stationary in side, establishing failed acquisition rather than merely an unfinished attempt.",
+      "recovery": "Reopen the gripper, move clear of the board, align the fingers around the visible rod, and verify acquisition before lifting and attempting insertion; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The attempt fails to acquire the rod, but neither view shows displaced objects, damage, or other harmful consequences.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rod and board remain in their original usable state, so another aligned acquisition attempt requires no environmental reset."
+    }
+  ]
+}

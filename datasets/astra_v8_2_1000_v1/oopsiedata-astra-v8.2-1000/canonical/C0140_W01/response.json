@@ -1,0 +1,116 @@
+{
+  "id": "resp_09413555022e3496016afbb717b44087d2b7e708a28381f290",
+  "object": "response",
+  "created_at": 1794881305,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881316,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_09413555022e3496016afbb72079f487d296e100e32d70f173",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7cluOTxCbaHxdMlShoUsJuWPRrxGqBQc2PMp1q2TPmRnrSGRBPyU1fvWpUkQz7QtnFbv6ct_B4hDRojOB-p65I7Gi8pZFrU3rpQsELLWL7IID9TopwCx0_U_vPDC7G_Z6pQy3uKzpCwrjLxiAQ4vrQIUwzl00EXMaw37D0MXT-Qx2LyjQxxIIy2dB2E9AnFca4RfxU0-sCnyC9p62n4jveH_32tDdWcSKkd4yLJi-IDtYjOOjFlk95-9JjltA9r7vD8yyZWrNeehcuFEMWV6DTQd0cNLZAYQd65n_4Mj9norU5nfRikIWxmDSi0SJd8_U1-K5UG16-D_MzIGS7lC2HnR5937kT2vDBcVuUsKZGq5wEnz5elFHZPuhJrs56dcLJm5t2vHM32qD2yyOz91_zxZYfe0a9w5h52Q6585IaMeTpxqV_cBhDsvI_97Ee7q2kmad0qKGUb6cqXow79VQ5ZU8wCQqBY_wOiVcqRql5GJ49xX6zKC6OsoXIlUphEDfgdSh-8f3x8K6rhZWWIimjCWxY9GNrQpQD46IEgvchApDA4Nz8iyWgwyQrnReRI3bSFxvzkDkCMcC7S9xGHt6PHDixGPL-c5wdok4tfIH6ap5gvlX07no9oQ3It_wylPTVxDfgOg2P9Pcz7lpe7dUPJIC2xG8mzDygW8lMkH7tFCkuejfqZVES_dFWj9DHNHJ09K-XyEZk1eHlICv0eMNMkEbDhYqFoa--16p7xQbdilk05LMxt_a3a8SgVd5MpAGmT8oku9tU2qXqJOO7HoEDGLlj9JCXoxTVSpRTvniGEcyxaMPGszNm0i9k7qHaloIiDlIpDWH-6n8LLULXzFWbX0VJmEQ7L52FpPyj0fWgG1rJgUK4oF8JqEZ72chvw-0tZhOp5khqME2Vqkrc0yBBF9BQCagTQoROLDk7dGy8xyyzMWwENL_Gp_YZhxgwMRgwM-OWTZj6ObNN1BXt0lLGmLd5293DHGfm_C4bmKBltJEioJ0LIEsrGfugE-ml1w9n2Zt7DNhWVhZhHqp884pxOONXES-TM4cJnrEMA0LrSwnXreyn3mbeOLAnB89hqqgt3lToflW0EoqYcU2mVU_rsq_vNLDS_XNBV4QWd35RfckHut1Jimqtno_ALf2w_6O_Fwv9SF07Kukej6vUaoYY4QvZ6S_iNv4SPDnSU_MtMb-EJTCs6rz9dtX2-0IoUv9NyFoaDPreeUql66_gJ_m6Tef0eo32ArC6CgeY3CV83rMAnbTsLrDRdLCCqWgAoo4Vr4ufPY3YhQpSUZhhvUu1N77mKw7vPnyPndCmOkRpo3zLI3QM9khZRCYfUK0lWPx7TOUv4SYkkycjtXDByzGZfJdwHdQFYOdcq3MFh9FaYNvSzbDCZ0ahz22VLF73VrQfqHQdI4V4N4Lkts2Z2ztS9YPax4LRSOiQlAPFUT7w0FTJntHdhlqFB-oeVyjwxRoGZ29rk0npkwUG02vKEUesZjbc-qeRFu6Jieak8WsTKS9SGd6MHjQ0M7Uhdd6ZEGXAT-7w1tzSFVKnAWNJ7hjMN_MmmC72wrfgJIJ0HtlgmHAjixij73KhxGP6EhJN6k7m2lzk4msKT1ZHZZHYy_fZNDI8Fea1IzgcjS-TSqFW-Q6isfD1dedoKh2gU86ylzzfmF6s_7xwq9cqGzT11KruMuEeV8GJPtFyIAPRNmOBwQ0CI9UDASCEAGVWDX4II7b1BFTvoskMV68t9qZ9gNGGuo74ScnHquhyyTlLYWi_giNMEcqnxayTik-DVgbMuc-iKFOf1jI_kn1mZmiuq9rXERXaaBHU47fQY1EjwkPCafEbYczp6gorCvvCAoajs-XkoCwoOElVeurzL8iyEpGOe_RyBX3OkckYmEkBYJNpqe2H9bq9jIX3dmdbCklS6g6DxW_FtkVKN1aynRmeIzfb2yRh1CB16WylpYbcmaRr18O7aIbk01HirhK9brRwvY1vSCSSZ__OLzyoohJ3vQI5W5-TwPwdMVRVkjdlyGgv873vPsVffzYfFW-1xSedEKTea9HKa1sxh2_v9Xm_XbjlwGrw1_sURvhjqs-PbmBrDtSE9YGuApvbbquye7_KPEYbn-hpxza6Pz7yadLKVrQL6HU03t3ld5ehVOCovHs9W9yQ3YUW7bLxsN2725x2bp5aGRb1jTG8GrvECU3dqIKJGa0mNDkndK3ngEK0gEjJns7OmuZE-eiS9GVmrFjZtU3Rkq0m_tSu2D1IDDHWjtrE_S_lBlDJLNuh3rtkfqmCgOtiKF2b7G0HaQJ7Yo-UFigs7zxKFGBTDKd69QNqKVPXP4QaEVbOSEjrjY_fsHiUM2fjfHVbTcf4hyMkpb6xQsevbVE1d_nDrrY_50ysfVMdSyKlgeRIURY6iuRo7HIlMJubFWr-JpaxekqYOX3_OxV_iMufMzNpU_PssO01aeCZkfFG4M7Xou8OT2AI09vIi2lZ2QgLwBExLQxg0D8NJsLkexm0mX65wmngtvMrRK0jbYv2hNfv_uIMMcyylFuFtAZfNv9JQXvAE1VsSr-b2OhSqXafek68FXOWDdKMiYEbb0vtkHmcnzyDUc3Ph7_DMYKIAoK1KWaF28jzbJidBsGekc9-uB_34cXnEZeX2DeLBmN9-qhNrhqLsN79j3vSnmbZ2cXgbo0pexKB3lvcoAlVD",
+      "summary": []
+    },
+    {
+      "id": "msg_09413555022e3496016afbb72102b487d29279892196df25fc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0140_W01\n\n## Episode annotation\n\n- Language task: stack the bowls\n- Success label: failure\n- Outcome evidence: In top at frames 0, 175 and 349, the two bowls remain separate in essentially unchanged positions. The left and right views show no completed acquisition, lifting or stacking during this window. Sustained inactivity is visible, rather than a failed physical stacking attempt. This outcome is provisional: completion is not observed, and later episode context is unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Across frames 0-349, top shows the grippers and separate bowls remaining essentially stationary; left and right likewise show no discernible task-directed acquisition or transfer. This persists for approximately 11.6 seconds without advancing stacking, supporting sustained stalling rather than a brief pause. No hidden cause is established, and the inactivity may continue beyond this window.\n- Recovery: Begin a task-directed approach, grasp one bowl securely, and align and lower it into the other bowl before releasing; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: No damage, displacement of unrelated objects or concrete risk of damage is visible; the observed consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The bowls remain upright and separate on the table, with no environmental disturbance requiring a reset before attempting the task."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62870,
+    "input_tokens_details": {
+      "cache_write_tokens": 2206,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 2206
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 354,
+    "output_tokens_details": {
+      "reasoning_tokens": 20
+    },
+    "total_tokens": 63224
+  },
+  "user": null,
+  "metadata": {}
+}

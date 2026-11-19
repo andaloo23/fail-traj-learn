@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0090",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot separates the initially nested cups (frames 212\u2013358), builds a small pyramid (frames 548\u2013562), and then begins nesting them again (frames 658\u2013815). Packing is not completed: the last cup is released beside, rather than onto, the other cups (frames 872\u2013887), and two separate cup groups remain as both grippers withdraw (frame 905). This is a visible unsuccessful final placement, not merely unconfirmed completion at the recording boundary.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 872,
+      "failure": false
+    },
+    {
+      "start_frame": 872,
+      "end_frame": 906,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 872,
+      "end_frame": 906,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In base_image, the left gripper opens at frame 872 with its held cup offset beside the existing nested cups, then withdraws empty (frames 880\u2013887). The released cup remains separate through frame 905, so this placement does not finish packing all cups together.",
+      "recovery": "Reacquire the separate cup, lift it clear of the table, align its opening over the existing nested cups, and lower it gently before releasing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The cups remain on the tabletop with no visible breakage, spill, or meaningful damage risk; the consequence is incomplete packing.",
+      "resetability": "immediate",
+      "resetability_evidence": "The separate cup and existing nested cups remain accessible to the robot, so another placement attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

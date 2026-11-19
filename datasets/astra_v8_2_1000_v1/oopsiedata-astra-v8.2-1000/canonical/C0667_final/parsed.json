@@ -1,0 +1,148 @@
+{
+  "episode_id": "C0667",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "The pink and tan toys are placed on the plate by frames 140 and 240 (wrist_cam and overhead_cam), but the blue toy remains on the table after repeated unsuccessful acquisitions. At frames 1322-1334, wrist_cam shows the blue toy falling off the table onto the floor; it remains there at frame 1366 while overhead_cam shows only the other two toys on the plate. This is visible noncompletion, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 309,
+      "failure": false
+    },
+    {
+      "start_frame": 309,
+      "end_frame": 341,
+      "failure": true
+    },
+    {
+      "start_frame": 341,
+      "end_frame": 389,
+      "failure": false
+    },
+    {
+      "start_frame": 389,
+      "end_frame": 510,
+      "failure": true
+    },
+    {
+      "start_frame": 510,
+      "end_frame": 560,
+      "failure": false
+    },
+    {
+      "start_frame": 560,
+      "end_frame": 636,
+      "failure": true
+    },
+    {
+      "start_frame": 636,
+      "end_frame": 641,
+      "failure": false
+    },
+    {
+      "start_frame": 641,
+      "end_frame": 780,
+      "failure": true
+    },
+    {
+      "start_frame": 780,
+      "end_frame": 817,
+      "failure": false
+    },
+    {
+      "start_frame": 817,
+      "end_frame": 1316,
+      "failure": true
+    },
+    {
+      "start_frame": 1316,
+      "end_frame": 1334,
+      "failure": true
+    },
+    {
+      "start_frame": 1334,
+      "end_frame": 1367,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 309,
+      "end_frame": 341,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the blue toy, the gripper retreats empty while the toy stays on the table (wrist_cam, frames 309-324; overhead_cam confirms its unchanged tabletop location). The attempted acquisition does not advance placement.",
+      "recovery": "Reopen, center the fingers around the toy's body, and verify acquisition with a short vertical lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the tabletop with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target is still accessible and no environmental resetting is required."
+    },
+    {
+      "start_frame": 389,
+      "end_frame": 510,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The second blue-toy acquisition again ends with an empty retreat (wrist_cam, frames 389-405; overhead_cam shows the blue toy remaining on the table). The robot subsequently travels to the plate and opens its empty fingers at frames 444-452, without delivering the toy.",
+      "recovery": "Confirm that the blue toy is actually held before moving to the plate; return with open fingers and align around its body. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful attempt wastes motion but causes no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blue toy remains available on the table for another attempt."
+    },
+    {
+      "start_frame": 560,
+      "end_frame": 636,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching and adjusting near the blue toy, the robot remains beside it for a sustained interval without acquiring or transporting it (wrist_cam and overhead_cam, frames 560, 600 and 630).",
+      "recovery": "Resume a centered acquisition rather than remaining beside the target; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only task progress is prevented; no damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable without any object reset."
+    },
+    {
+      "start_frame": 641,
+      "end_frame": 780,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close beside the blue toy without securing it, and the robot moves away empty while the toy remains behind (wrist_cam, frames 641-665; overhead_cam). It again visits the plate and opens its fingers without adding the blue toy (wrist_cam, frames 700-724).",
+      "recovery": "Reobserve the toy and grasp across its body, checking retention before leaving its location; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "No visible damage results from this missed acquisition and empty transfer.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy stays on the tabletop and can be reattempted without intervention."
+    },
+    {
+      "start_frame": 817,
+      "end_frame": 1316,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Acquisition becomes persistently unsuccessful: the blue toy remains outside a secure opposing-finger hold while repeated small motions displace it toward the table edge, interspersed with prolonged pauses (wrist_cam, frames 817-890, 948-998 and 1100-1247). Another closure at frames 1248-1258 is followed by separation without lifting the toy at frames 1259-1264. No blue-toy transfer occurs.",
+      "recovery": "Stop the repeated edgeward motions, retract clear, and replan an opposing-finger grasp from a safe approach. Request human repositioning if a safe grasp cannot be made at the edge.",
+      "severity": "low",
+      "severity_evidence": "The soft toy is displaced and progress stalls, but no damage is visible; proximity to the edge creates a fall possibility rather than evidence of damaging impact.",
+      "resetability": "immediate",
+      "resetability_evidence": "Before the subsequent fall, the toy is still on the table; a changed grasp approach does not inherently require an environmental reset."
+    },
+    {
+      "start_frame": 1316,
+      "end_frame": 1334,
+      "categories": [
+        "other"
+      ],
+      "explanation": "Continued motion beside the blue toy tips it over the table edge rather than placing it on the plate (wrist_cam, frames 1316-1322). It visibly falls and settles on the floor at frames 1323-1334. Secure possession before the fall is not established, so this is an accidental knock-off rather than a confirmed dropped grasp.",
+      "recovery": "Stop table-edge attempts and have a person retrieve the toy after the robot is safely stationary, then reattempt from a clear tabletop position.",
+      "severity": "low",
+      "severity_evidence": "The small soft toy falls onto an unobstructed floor area with no visible damage to it or surrounding objects.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A person can retrieve the visible toy from the floor and return it to the table; no repair or complicated retrieval is indicated."
+    }
+  ]
+}

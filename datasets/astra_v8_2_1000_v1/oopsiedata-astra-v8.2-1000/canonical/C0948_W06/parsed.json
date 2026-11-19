@@ -1,0 +1,51 @@
+{
+  "episode_id": "C0948_W06",
+  "language_task": "find the hidden stuffed toy and put it in the bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is not visible in this window: the spotted toy is inside the pink storage unit at frame 1750 in left, and no toy transfer into the bowl is shown through frame 1999 in top. The robot instead remains engaged with the blue-handled screwdriver (right, frames 1750\u20131983), while the pink unit moves toward and then disappears beyond the far table edge (top, frames 1943\u20131956). This is a provisional window outcome with visibly task-inconsistent behavior, not merely unconfirmed completion; earlier episode context is unavailable beyond the two supplied context frames.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1943,
+      "failure": true
+    },
+    {
+      "start_frame": 1943,
+      "end_frame": 1984,
+      "failure": true
+    },
+    {
+      "start_frame": 1984,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1943,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The blue-handled screwdriver stays between the right gripper fingers as the arm makes adjustments beside the pink unit, rather than acquiring the stuffed toy (right and top, frames 1750, 1800, 1850, and 1942). The toy is visibly a separate spotted object inside the unit at frame 1750 in left. This tool-directed behavior does not visibly advance the requested transfer. The supplied context frames support continuity of the same engagement across the starting boundary, although its earlier onset cannot be independently assessed here.",
+      "recovery": "Set the screwdriver down clear of the loose leads, then locate and acquire the stuffed toy from the compartment before transferring it to the bowl; human intervention is not visibly necessary at this stage.",
+      "severity": "low",
+      "severity_evidence": "These frames show unrelated tool handling and lack of task progress, but no visible damage or established meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental repair or human reset is established; the robot can disengage from the tool and redirect to the toy."
+    },
+    {
+      "start_frame": 1943,
+      "end_frame": 1984,
+      "categories": [
+        "other"
+      ],
+      "explanation": "As the right arm moves at the pink unit, the unit moves over the far table boundary, tips, and disappears downward from top across frames 1943\u20131956; it remains absent through frame 1983. This displaces the container that held the toy rather than extracting the toy safely. The precise contact mechanism and landing location are occluded, so a particular grasp loss or collision mechanism is not asserted.",
+      "recovery": "Stop movement near the edge and have a person locate and inspect the displaced unit and toy, then return them to a stable accessible position before resuming; do not attempt a blind reach beyond the table.",
+      "severity": "medium",
+      "severity_evidence": "The unit visibly tips beyond the work surface, creating meaningful risk of damage and disrupting access to the toy; its landing and any actual damage are not visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Retrieving and replacing the displaced unit and locating the toy appear to require a straightforward human reset, but the unseen landing location and condition make the exact effort uncertain."
+    }
+  ]
+}

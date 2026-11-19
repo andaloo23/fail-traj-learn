@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0326",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "success",
+  "outcome_evidence": "The robot clears the yellow banana-shaped object from the tray and sets it beside the tray (frames 120\u2013196, overhead_cam and wrist_cam), then places the pink plush toy on the tray (frames 386\u2013405) and the tan plush toy beside it (frames 550\u2013572). Both plush toys remain on the tray after the gripper withdraws through frame 611 (overhead_cam; wrist_cam also shows both toys on the tray at frames 570\u2013580). This interprets \u201cthe toys\u201d as the two identifiable plush toys; the images do not establish whether the banana-shaped object is also intended as a toy to pack.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 612,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

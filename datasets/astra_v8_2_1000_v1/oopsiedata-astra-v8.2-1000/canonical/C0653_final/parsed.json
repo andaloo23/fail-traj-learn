@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0653",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the upper drawer, but its gripper closes without securing the handle and then withdraws empty (frames 91\u2013130, wrist_image and image). The drawer fronts remain closed, with no visible outward drawer travel through frame 194 (left_ego_image). This is a visibly unsuccessful acquisition attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 91,
+      "failure": false
+    },
+    {
+      "start_frame": 91,
+      "end_frame": 131,
+      "failure": true
+    },
+    {
+      "start_frame": 131,
+      "end_frame": 195,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 91,
+      "end_frame": 131,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers close near the upper drawer front without enclosing its silver handle (frames 91\u2013100, wrist_image). The robot subsequently withdraws with an empty gripper while the handle and drawer remain in place (frames 108\u2013130, wrist_image, image, and left_ego_image), establishing failed acquisition rather than a successful pull.",
+      "recovery": "Reopen the gripper, realign the fingers around the drawer handle, and verify secure engagement before pulling along the drawer\u2019s opening direction; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the drawer closed; no damage or displacement of unrelated objects is visible in image or left_ego_image.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and handle remain in their original usable state, so another aligned grasp can be attempted without environmental resetting."
+    }
+  ]
+}

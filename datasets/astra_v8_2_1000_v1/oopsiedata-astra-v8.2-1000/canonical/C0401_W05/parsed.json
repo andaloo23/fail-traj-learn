@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0401_W05",
+  "language_task": "stack the bowls",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "Provisionally for this window, the turquoise bowl is already nested in the lavender bowl at frame 1400 in left. The robot subsequently tips the nested bowls rather than leaving the completed stack stable (right and top, frames 1525\u20131546), then later restores a more upright resting position (top, frames 1675\u20131749). The nested rims remain visible in right at frames 1631\u20131636. An orange object is already inside the bowls at the window start; its reported earlier placement is not independently established by the supplied context frames. Earlier execution and later outcome are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1525,
+      "failure": false
+    },
+    {
+      "start_frame": 1525,
+      "end_frame": 1547,
+      "failure": true
+    },
+    {
+      "start_frame": 1547,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1525,
+      "end_frame": 1547,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After approaching the rim, the right-side arm tips the already nested bowls onto an oblique resting angle instead of maintaining a stable upright stack. The exterior wall becomes prominently exposed in right at frames 1525\u20131538, while top shows the stack tipping and remaining tilted through frame 1546. This destabilizes an already achieved arrangement without adding a bowl. From frame 1547 the gripper backs away; subsequent repositioning is treated as recovery rather than extending the failure merely because the tilt persists.",
+      "recovery": "Carefully stabilize the nested bowls and lower their bases flat onto the table, release the rim, and withdraw without disturbing nearby objects; human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowls remain together on the tabletop, and the orange object stays inside; no breakage, spill, or meaningful damage is visible in right and top.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowls remain accessible and nested, allowing direct autonomous stabilization and repositioning without a human reset or repair."
+    }
+  ]
+}

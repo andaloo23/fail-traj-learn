@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0911",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the isolated purple cube at frames 15\u201338, closes around it at frames 39\u201341, and visibly lifts and carries it above the table at frames 42\u201352. The cube subsequently appears in the right-hand tray at frames 66\u201385, and the empty gripper withdraws at frames 84\u2013105. The requested pickup is visibly completed, with no established failed attempt, damage, or unintended disturbance of unrelated objects.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 106,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

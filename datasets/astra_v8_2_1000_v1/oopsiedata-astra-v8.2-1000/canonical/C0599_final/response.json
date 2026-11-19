@@ -1,0 +1,116 @@
+{
+  "id": "resp_05f5bed3f9591e89016af91d96962887d2a6525b86aeba0acb",
+  "object": "response",
+  "created_at": 1794710934,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794710940,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05f5bed3f9591e89016af91d993fd887d2a24050da513a6b45",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R2dzUT4JB5H0E0g0gU05QbRbKg3Iw6urW3uypOyZzbk57yXz1K1wdofhCm9QGS9vNixh8jJH6kM6uzgN3utKqsJWVS768XvVUgNMel1ftSAJ_cQI9Bz3YWa0DTw2sHD8H_egRlYUWveq3V09AneEruHXa6-_JW8cyg6VuX2QgcjCw6ZLn-aBc2azqLINcl_UgpVLc-Ep_YhrARC2-QUI9jA5k-hmZGsXuahdxc6D7dsVI6O4NUqvTUiD8-4LLi755ORz-F42XHH5hsjK60W2aNVzXxy8TvWX7NBTWQdvspAtDKl4yXXZTc3l7q-s4AIp6Jpr7Fk-GAr0Ks5KJr4mHa6-Gyq0i1Nva8IR-rFA1S7qCqxVTw4KJmqCgELzJPNzcsRYvYRYumhm3vQseYVrPFsditzMfZAh9FM5RInUlifyllGXH-FrucYugUfxgsjP7hJJteWed2Z3IXdFWpDexzTcMk1mm-_hHYCOPNVIDB0ri0Jj6HIiCuvQ7igLbMZL4ZbXgPzL5bCxl6YM8PTDVNlKT8IHVTATgDCglRD6KLVH4I6WSj9ffw9i8q6pCQDioe9W4aKV03HWb1JnFZtJJxO39zZD3TnHz88ghV9QJ0ezjxr_sQ8MEZaZd01fAf7XWQHMDSmPCTFiUn55VLUIBEYxOqut2TvRtRDzAA5BugGjbqKWGJIhNcRbcfTFA20T7DE6Ov42O9Y0hcTk3BA8tJr75Fud3-bY2zux_cowdCvhObqT8mkWN23UJKyOVgJ_sFM_aYTZL484OwgrmUQky-Fz8tZQK_uofYr6iD7KuAfhvRIA5nY8-8ct9HSBLkDFAyRpMYwRBGdi5S5rrTuXVQcEpBhPVav8bGWjZaOeWb0T4jpy5RMYUZFBnIfzOFlwkvtSL_7VPXG13Vq2WBj66fJGqulVj2m0nkYe26xizdk5M6k4g74VTSqA5Np-O43ZlJoyejh98IZFPngPqFKziy7lXdoSblIkaINb6zwq4pZLmJDarG4LKJ9WxbG-Y-KnX3qCJ11jH1JypokZJ25kv7FhvG7LOc-UvTjo6-VNk8ZNbw7a0EzCyp-Nl1BVrBZs_9AiFAL6fk_A2NrD3fS5ArPABukIlna9gP2Qnygi0l-UDjAjREJgg7qMPDtjjZFe9tpovqkE6fib0KGZ3no8QmTyuyuhFKkZ_FXmgVUS03VnjicUXwvS1Tm_hagiZpvHSvvDdM92dJbfv7ODuFzj3U4y6QPbdruKOqrzdZ4rnjdHV_a5SH6s7w1wLgUyWgCaqf4JUqq1mRBfhn9QG2iDhatTCkjBqi7ppMw7E04T-uI4X8CDukCxQqqhKrn6qG93XNhAx3fciHgivrgDcQuhFi0IMyLlmDu1eMtwm41WDuKS7Jl2C2C8AOlmt-sAXr8PN7Fd_tNGB96q8KpV45H1vB0B64Dyp-xtG-aedIRgtXxnGL7jXT3cnrd8mxNFdsVn0cQSsj3QUDoEzY3jG1999TBr33IFjSeoGxXRLnyIhA50BiHoDHxjNjEjdmEf4zfqVeirkBY5WcNN1RiFPSghOw7mWgA9hOPE8bLtunB0a-8gKFN_xRnu9790Z6ePCeI92QuQTasP2RMf90iEzT4ReL6jsxv0u-l2RRRAKABmXp92-f_-CQlVjzD-LS1ULH9uluKK5VSlY7WWy5k3Q7AkAyebed5hPLXoblatiY4cnFRJEgV3GwtB73hq3EJaRpLEHUeR9pMBrg-jaar6Cepg0XiWn7IhZidLOOFutzyzf3wb9I14EcjN5JWP6wToGvZ8RgqbPEwbmDjInW8Lx7UQLNJ5DnPIR6F4IL1p8PVqCet_horz9GTLg6g7adZUg2U8wlKLVHnN0vQW8J61ajnsaY67V7rC3GUQOjzorEz7oJw5S9dUYMVZmIhdfYr4d_iBUoObeEhPwcNIjMYeRwyxRRUSaUVuTZLeSzd2uZjGa5vmrpFKBbUtSmB2LzT6TBT4Vsb",
+      "summary": []
+    },
+    {
+      "id": "msg_05f5bed3f9591e89016af91d99b87487d2967e7d286d59d43a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0599\n\n## Episode annotation\n\n- Language task: Put the red plastic fruit into the blue bowl.\n- Success label: success\n- Outcome evidence: The robot approaches and aligns around the red fruit in frames 0\u201363, adjusts its fingers in frames 64\u201382, and carries the fruit toward the bowl in frames 93\u2013127, as shown by wrist_cam and right_base_cam. Frames 128\u2013139 show release and settling inside the blue bowl. In frames 145\u2013154, left_base_cam and right_base_cam show the fruit remaining in the bowl after the empty gripper withdraws. No failed acquisition, harmful collision, or unintended object displacement is established; the finger adjustments before lifting do not alone demonstrate a failed grasp.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 155 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 28878,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 222,
+    "output_tokens_details": {
+      "reasoning_tokens": 28
+    },
+    "total_tokens": 29100
+  },
+  "user": null,
+  "metadata": {}
+}

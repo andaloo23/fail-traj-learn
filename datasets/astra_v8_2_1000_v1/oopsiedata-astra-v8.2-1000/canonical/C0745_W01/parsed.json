@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W01",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, rather than a visibly failed attempt. In base_image at frames 0 and 349, both cans and both bowls remain on the table outside the empty trays. Across frames 150\u2013349, the open gripper moves from the left toward the upper-central workspace without visibly acquiring an object or causing a side effect. This short preparatory interval establishes no local failure; later execution is not supplied, so the outcome label is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

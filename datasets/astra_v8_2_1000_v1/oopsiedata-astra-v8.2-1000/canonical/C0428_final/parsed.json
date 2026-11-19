@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0428",
+  "language_task": "Pick up the block and place it on the cardboard.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first grasp misses: camera_wrist_right shows the fingers closing short of the green block at frames 199\u2013225 and withdrawing empty at frames 228\u2013254, while camera_high shows the block remaining on the table. A later grasp succeeds, with the block carried toward the cardboard at frames 473\u2013530 in camera_wrist_right and camera_high. The fingers release it at frames 576\u2013584; camera_high confirms the block remains on the cardboard after withdrawal through frame 749.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 199,
+      "failure": false
+    },
+    {
+      "start_frame": 199,
+      "end_frame": 256,
+      "failure": true
+    },
+    {
+      "start_frame": 256,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 199,
+      "end_frame": 256,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In camera_wrist_right, the fingers close short of the block at frames 199\u2013225 without enclosing it, then withdraw empty at frames 228\u2013254. camera_high confirms that the block stays at its original tabletop location, so this acquisition attempt does not advance the task.",
+      "recovery": "Reopen the gripper, realign the fingers around opposing sides of the block, and close before verifying possession with a small lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block remains on the table, with no visible damage or harmful displacement in camera_high or camera_wrist_right.",
+      "resetability": "immediate",
+      "resetability_evidence": "The block and cardboard remain accessible and usable; another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

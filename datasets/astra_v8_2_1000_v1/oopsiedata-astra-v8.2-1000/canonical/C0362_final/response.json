@@ -1,0 +1,116 @@
+{
+  "id": "resp_0ddd4d293cb84642016af9108679dc87d2996906fce9112f40",
+  "object": "response",
+  "created_at": 1794707593,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794707606,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0ddd4d293cb84642016af9108f390487d28e095a31fe5c40a5",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RCXL07Fh6D9E1n6OPDUwzTJe6AdhEIMhQbwrxje4o4Z4IYWhXfPC_XTIOEanmLWXcLO2OlfVC42s1bPfbMgmEzHelGtZ0ugLISMkLS_DUrZR_ZCTp3BL-QplfMizdHapWhzDmsOep3oXNTMzgIUVTJNeQxpPl_mRjrY5p2R36Jpi765JkJPho5dx078J6YCj0mpMM5AsRGVOaHl_WMlbc2HRaMSAB_yw3shAiLXWHGKWg9qpKmpcCrhB8RS_4HIaMl1RJc4saGvH13OVX5mIkhN7qq7bzfhq96JYWxYvNy7UJIa4RTJkxdwDqeRBmVnhvgOO-g3lfl_L_cvfHuGXeZPyDhRaojjfY80CKCetZhflODA15Vp1mus3nrA4HEimbNpoumDjWKw2ArAUcsGtCcFzrN2vbbgLQjvZaVE9A9WKbscY1tO7m33_nXd_VId9kf2am8oqWA7t6oD0UOFmP5qoA-LH3fPY11VQKXy4xTR2HK5JDI9cC3GM_5rUefcBnQbTKVm6d3tWPAHPhuMEZeYkXbfdZZU6nJFrSTkgfI4OlVG5uJ5e-JjGiiv2S7LYS6F7-TsB6yaabFa5VaIUE3VrjBhA60DzZ4YT4PrqbWmaLicBySZTZL4mVDHrm_Tkn36vxcz9Lhg-MTwrzVmKes0ZFgbmOEh5gTi_l_aiqOIfxnrhz-ObLvQ995avMIWNG21zDYmtUttg3q60wi6amixXQOOXJq9l-W20r5Ee3KERcQST_JenGF0nF3rpHiM_9EM4mEKXi763NhnVx5u33_oqSdhe7eO2qL1IJSjXGIRbHI7bd0lPL4s7IM6UMU5tOilXtWrtsRUG1DVFD3IAiwVWlpOmU9tQ3LzAtome9gbNXhFRxsJFP1GmNxx9Og4mi6snYTAZQtl4Dy9M4acj1Y23Xz76oN0WB11aqFTjubilAxSrU5CwjOIGna03ffiyhVPsAoUBfjQMNpnAOv2TE0sgqTLIQxKRv4ZZ_1rhhctg58EOJE1_YKJHJwvf8mcORr0H_LhWjSD8IUxJHUTKmLLg7paV7Xlj3saP25vJq_6TpCGxWYePnP2l1CZEdqaNGiFmWmkfywQ-rcV0tESyNN_683Lw-mPH2ryFYlukjTWy0Op4nH4aX_UhodJJqtdsK_LXnPHn44RBctNRHnuX9PgoCN4hH-iOLarZbOY0Kdo3CHOW_oRttWKe5JcOtGkFDMMrqrQhJUA10XgtNfF0Cqp6bDFiii6X3XXkjXbKQljQ_qAaSVEwSB_Jit4Kc9bdQTElVTmim7o7XDtnpbbQyYJDzaZkdjYX3xuSthCZb6q-nD5BwPyCdCKZ6EiClI4swRF_6qVsE-riiqyRWNxO9KkgUDlspThh1rSwctAAlXslKHjD26wauDHiJfJ14gtGIjZkJKzXqbLd_tNEJXUfNyF8dNilFFjs9uHtsutBl7O7tzUoNnGSKOmLop2L8KAaYlSCIB9RJJN2BPPXlkPzEPCJe79DEl-A7vZ2fhEH6vVA6UNVx4rN65wuCK4NU-ZTnWHgFY1vTfVVQqul10CDYMgDIM-nqHe6aLfsInS1UHDgROo4KV4EBpvoyKch6CHwQIMDDx-u-bbZ-24IQp8fwpQQKYkYLUi08j_Cyq38y1A0YTA5fJ7-aDgyEd3xsHl3GAX-TjweoplWpD0uVmQdvE7FWzA1v5HvQx8hVn4UpCMQh9aErmZ_6JQzp5IieHmtM6GNpLt2aw95-J8EOo0ZTVJ0UOdbCmghs8xvRAm8YZ-k9kmS8XONpc9-vhXimhZwSSoR_HWbYjLwuBbstfHY102ETV2Gj26NkmOT7RFeKdpSf1xMy5vjU9PpY7pgQ46CA1J1vjGzOJHQ4-V4fVoTnPUkqGUp8jcrxgvNaXCgCBNBfPcuJacfCHe2kdiRwkNYW7tzeVeDS0YqC1TPkIIQcqQGG3a9LavMfy0dMQEs3fPqEmAgkZbaf7Rmf9uecQhhBpWbF0vamlLwC4xVz8O2LffLK9r_CjugAFQRgGdTqMFoeN2PvbbY0VD-sSJtd1ev9XW_RJkuobuWcOBMOyUby6Cs3iazHhIDmO3ICk80DMULfdEVxnJq3Aal1Je9GQtu6flnZQohkHEOXbBE1p7-Jr6aH9SDhiEQqeXULTCUulPVZD0JLQOC_rCqCsXFkAxj0vSqN1Ht9YXrbXKQ0XEKh5FsTHcbNCaExzIiba0WihAeH-vX8eyZoPfF7MVc1kVL2MgOI8Wm8CfD9dCd5BBbgiWrJmQppj-hiJFsOCtp0MPRNcVmpui6vdbP0czx0ZaZZQWXzGz06VCBYZC2QOYrhSnn0Bhu7ZeKvLQ3WHuW3bfd-Ods8KfOd8gbh070_ycGWgUdB6KBJX-VwNZ5lLxV90a_h4p0MxAxZNTXc7j-lnGw9DQcKKJrWxApmGCvKDKP3ham4_2MytPqqniuO_sJyiL_MQ9mTVIsTE3SLtpFbH_XwcSNCtq4Y_jg3CZT0rrG9h5NLL8nrFxnh30kVhMgVsQBw2ttAKkdrF3W5PvivOTuqdw9WOKkGBmvv0qWdZ15S_msPI-pO98UhCL7CbEkQXfA7fwXXmm7XVVLF8WL4vltURbbwimfqTZgYx0E9EBh5sC8cL8Kjb7Aiti-CqbuDF7cHhx0YD8dSJeU5lCmqo9AcIuxpvbKEDAhtnZw-D8uT87QzKZst0_1gIwjnwVDAGjsEwl-BkSfvidWL3XZnC_QR74Y4820gqLRL0Q4OQV7eHW",
+      "summary": []
+    },
+    {
+      "id": "msg_0ddd4d293cb84642016af9109118f887d283c52512780ad04d",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0362\n\n## Episode annotation\n\n- Language task: flip the cup\n- Success label: failure\n- Outcome evidence: The cup remains on the table without a visible flip, comparing frames 0, 250, 400 and 499 in left, right and wrist. The robot repeatedly changes its empty gripper's position and orientation without visibly acquiring or turning the cup. This is sustained unproductive behavior, rather than merely an unconfirmed final manipulation; no completed cup-handling attempt is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 57 | No |\n| 57 | 500 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 57-500\n- Categories: task_not_attempted\n- Explanation: After initial positioning, the empty gripper rotates away from the cup from frame 57 onward; wrist shows the cup leaving view by frame 99 and the camera facing the shelving by frame 137. Subsequent repositioning brings the cup back into wrist view at frames 236-250, but further motions through frames 337, 400 and 499 never visibly acquire or flip it. The left and right views show the cup remaining on the table throughout. These repeated empty motions form a sustained unproductive interval; no hidden cause or failed grasp is established.\n- Recovery: Re-localize the cup, align an open gripper around its sides, establish and verify a secure grasp, then lift slightly and rotate it to the opposite orientation before placing it down; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The task remains uncompleted, but no cup damage, spill, unwanted collision or other scene disruption is visible in left, right or wrist through frame 499.\n- Resetability: immediate\n- Resetability evidence: The cup remains available on the table and no environmental restoration is visibly needed before another attempt.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 150062,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 492,
+    "output_tokens_details": {
+      "reasoning_tokens": 87
+    },
+    "total_tokens": 150554
+  },
+  "user": null,
+  "metadata": {}
+}

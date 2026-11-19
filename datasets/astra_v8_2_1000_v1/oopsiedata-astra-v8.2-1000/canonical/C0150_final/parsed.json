@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0150",
+  "language_task": "pour the coffee beans into the cup",
+  "success_label": "success but side effects",
+  "outcome_evidence": "The robot acquires and lifts the light-blue bean container (frames 30\u201380, left and right), then tilts it over the brown cup on the black base. Beans visibly accumulate in the brown cup during frames 145\u2013167 (left and right), but others scatter onto the surrounding tabletop. Some beans remain in the held container at frame 167 (wrist), so complete emptying is not established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 148,
+      "failure": false
+    },
+    {
+      "start_frame": 148,
+      "end_frame": 168,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 148,
+      "end_frame": 168,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "During the pour, beans escape beyond the receiving cup and scatter across the table, first visibly evident around frame 148 and increasingly clear in frames 151\u2013167 (left and right). The robot retains the source container (wrist), but does not fully contain the poured beans within the cup.",
+      "recovery": "Rotate the source container upright to stop the flow, then realign its lip closer above the cup before continuing with a controlled tilt. Collect the scattered beans; human assistance may be needed if the robot cannot collect them.",
+      "severity": "low",
+      "severity_evidence": "Dry beans scatter onto the tabletop, but no damage, broken containers, or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The spilled beans need straightforward collection and return to a suitable container; the cup, source container, and work surface remain usable."
+    }
+  ]
+}

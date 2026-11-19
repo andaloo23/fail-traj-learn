@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0800",
+  "language_task": "Move the banana to the pot on the right and sushi to the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, the banana starts in the cream bowl at frame 0 and is successfully deposited in the right-hand metal pot by frames 148\u2013151. However, the sushi remains on the tabletop and the bowl remains empty at frame 159, so the full task is not completed. Earlier banana acquisition attempts visibly fail; completion of the sushi transfer is unconfirmed rather than an observed failed sushi grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 43,
+      "failure": false
+    },
+    {
+      "start_frame": 43,
+      "end_frame": 62,
+      "failure": true
+    },
+    {
+      "start_frame": 62,
+      "end_frame": 101,
+      "failure": false
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 118,
+      "failure": true
+    },
+    {
+      "start_frame": 118,
+      "end_frame": 136,
+      "failure": false
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 138,
+      "failure": true
+    },
+    {
+      "start_frame": 138,
+      "end_frame": 160,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 43,
+      "end_frame": 62,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, the fingers close at frames 43\u201345, but the gripper rises empty at frames 46\u201348 while the banana stays in the bowl. It then travels to the pot and opens there at frames 58\u201359 without transferring anything. Task-directed return toward the banana begins at frame 62.",
+      "recovery": "Return to the banana, adjust finger placement around its body, and verify acquisition with a short lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The banana remains in the bowl, with no visible damage or meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in its original container and another grasp can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 118,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, the fingers repeatedly narrow and reopen around the banana at frames 101\u2013106 without securing it. The gripper subsequently rises clear at frames 114\u2013117 while the banana remains in the bowl, establishing another unsuccessful acquisition.",
+      "recovery": "Reposition the open fingers to straddle a graspable section of the banana, close securely, and check that the object follows a small lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "No object damage or spill is visible; the consequence is another unsuccessful pickup.",
+      "resetability": "immediate",
+      "resetability_evidence": "The banana and containers remain usable and accessible without a human reset."
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 138,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In image_primary, the held banana/gripper assembly passes against the bowl\u2019s right rim or handle during transfer at frames 136\u2013137, visibly shifting the bowl rightward compared with frame 135. This displaces the container unintentionally; the exact contacting component is partly occluded.",
+      "recovery": "Lift the banana fully above the bowl rim before continuing laterally, and update the bowl\u2019s location before placing the sushi; no human intervention is necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowl slides but remains upright on the table, with no visible damage or spilled contents.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shifted bowl remains accessible and usable as the sushi destination, so restoring its exact original position is unnecessary for another valid attempt."
+    }
+  ]
+}

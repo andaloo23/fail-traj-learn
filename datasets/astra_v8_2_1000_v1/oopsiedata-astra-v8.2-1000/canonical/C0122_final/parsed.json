@@ -1,0 +1,107 @@
+{
+  "episode_id": "C0122",
+  "language_task": "Close the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven starts open (frame 0, image and left_ego_image). Several approaches and empty upward withdrawals leave the door open, and a prolonged pause occurs before another attempt. The final lift rotates the door upright against the oven at frames 321\u2013333; it remains closed through frame 354 (image, left_ego_image, and wrist_image). No damage or displacement of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 84,
+      "failure": false
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 112,
+      "failure": true
+    },
+    {
+      "start_frame": 112,
+      "end_frame": 136,
+      "failure": false
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 156,
+      "failure": true
+    },
+    {
+      "start_frame": 156,
+      "end_frame": 178,
+      "failure": false
+    },
+    {
+      "start_frame": 178,
+      "end_frame": 211,
+      "failure": true
+    },
+    {
+      "start_frame": 211,
+      "end_frame": 248,
+      "failure": false
+    },
+    {
+      "start_frame": 248,
+      "end_frame": 263,
+      "failure": true
+    },
+    {
+      "start_frame": 263,
+      "end_frame": 355,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 84,
+      "end_frame": 112,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After positioning at the door handle, the gripper lifts away without bringing the door with it (frames 84\u201394, image and left_ego_image); the door remains down through frame 111. The wrist_image view also shows the door separated from the rising fingers, supporting failed acquisition rather than a successful closing motion.",
+      "recovery": "Reapproach the handle, align the fingers around it, and verify engagement with a small controlled lift before continuing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door remains open without visible damage or disturbance to surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The handle remains accessible in its original open-door configuration; no environmental reset is required."
+    },
+    {
+      "start_frame": 136,
+      "end_frame": 156,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another approach, the gripper again rises while the door stays open and stationary (frames 136\u2013153, image and left_ego_image). The separation visible in wrist_image supports another unsuccessful handle acquisition.",
+      "recovery": "Lower and realign the gripper with the handle, confirm secure engagement, then follow the door's hinge arc; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt only delays closure; no damage or harmful side effect is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding scene remain usable without repositioning any objects."
+    },
+    {
+      "start_frame": 178,
+      "end_frame": 211,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The robot holds essentially the same pose beside the still-open door for approximately 2.75 seconds, without visible acquisition, door movement, or useful alignment progress (frames 178, 192, and 210, image, left_ego_image, and wrist_image). This is a sustained unproductive pause rather than the preceding approach.",
+      "recovery": "Resume deliberate handle alignment and a controlled closing attempt; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The pause causes delay only, with no visible damage or environmental disruption.",
+      "resetability": "immediate",
+      "resetability_evidence": "No scene changes occur during the pause, so another attempt can begin directly."
+    },
+    {
+      "start_frame": 248,
+      "end_frame": 263,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The door briefly lifts at frames 244\u2013247 but returns downward as the gripper continues upward at frames 248\u2013258 (image and left_ego_image). The wrist_image view shows separation from the door, indicating loss of engagement before closure.",
+      "recovery": "Reengage the handle with a more secure grip and maintain support throughout the upward hinge motion; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The door returns to its open position; no breakage or disturbance of the oven contents is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The open door remains accessible and intact, allowing a direct retry without environmental intervention."
+    }
+  ]
+}

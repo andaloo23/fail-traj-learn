@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0764_W12",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success",
+  "outcome_evidence": "Provisional for this window: base_image frames 3850, 4000, and 4199 show the cans resting in the upper blue tray and the nested bowls in the right red tray, with no loose task objects on the visible tabletop. Throughout the interval, the empty gripper stays clear of the objects while moving slightly along the left edge and then remaining still; no failure or side effect is visible. The completed arrangement is already present at the window start; earlier execution and later context are not supplied, so this does not establish whole-episode success without prior failures.",
+  "segments": [
+    {
+      "start_frame": 3850,
+      "end_frame": 4200,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

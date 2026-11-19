@@ -1,0 +1,116 @@
+{
+  "id": "resp_0fb89e404497736c016af903c7313c87d2b8a50b3e53f4add0",
+  "object": "response",
+  "created_at": 1794704327,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794704333,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fb89e404497736c016af903c8a2a887d281fc206b95e7809e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QPOvDYUaWehlLt18BWeMr5VopJdEN-BkHjrGlh3egH0U1Op2nC8NbYOJvhiYRnvcjTHTMljoR_8d9UQyurQ2RnYEphxO8VFM8JrOOn0Vo1Jl87Nr9-WQAKr9-Ib3ZiTLgdb8YAQ8eHVzgwsUXHG13veAHQNoFUvBVMA1TinUn7Jxo3z3vg2Xb_pewW2Pk8Be_SKQQKnH7M8nLIzOrPjLCeeUl9Bp1potR-SeCQYwL7T1SLjsUV4eYo3GyJxUfB2t5GznhmlOQMO6RV9JYpvjRvVbzre_A-PeZY_JvDgbw7WXXQVDoTqFdClss9keT9E-sk3CKWdA34Xa18b_1SMgZ3_487hGtcZffONQq391ag17f3dS8t3cJMaf34cABqBGUfoTgNbo5fYzyo0ph_ARGQk_woVAPei_zlV8W1r7002fNUeSX8XFzBDZMLM4nM3YsahnZhmFweCtF5XLYj047sNKd9LQC2P7dpVGygCowhJsUSOXjy6DFuK0CrngeP-IpGjuZ15W7TNUGuCI2dnnm7DLBkSUBqMS85_XeDg8sPB1UKMlRPEk5PwSfmTT6LDweXpZn25OWOWW0UXBYFsYqlHhEKkGabAT_o3iiaNG1Tjx73STT77qtUoX7bqz2jR6896ps-vsBH9hCitJCOdbg_mVrC919RG2vkiKc06syqqAUKravgL15EHxizDFhkp1GBdjHOwSZla3kAgSWoLC2RhEI35NmsmXJseRximgnNtAp2XyRaCwjTT7ssDvhaGr05zqF7sHrhmXcIevp_h_3zxETi2eB5feoSvMegHy8GUA4NPt7Oisj2gsWShLaa2pDg6H2Fl0MMp4T15_PJKIgmtHHhYPMlyyIaoZsYW0Bk-cPQdNXrU2DhOZYgRFUt57gn-A19Gsx871aHIXi9lXJ6P4pUdtI9dn-ZCQTb-UGkALLjYrDZnCZ9jTEYP6pdeYbNzbI3F5TY0lL7b7SDfM8BA57CTZBVq051cCq-P2-Xw69QkZR6UYBGi74wYpf7Mi3mf3X9i5CCNLC4OczcACxNyVX9RsAsbD06osM64VZVxGquXGsSwme0llHJu9UAIS7w_9RhYkI56qXnsEOayqA6ef8WuRIu4aF2KlmrqpVWAC0XhbFVQ_0dNAdVNPfH2fHYmkuvddPFi4qomJKMHWEj4CyVwJxB5-1dECopqGiBGG2zEq383C3nKDoQPLUgiI2zwij1aT42-3oeOvun5H5FRXtA982uFcCt2TUAE4bTyXwjo5XwlxbMufcalY_7rVnQQ-a6Jz_lJ70LKqCHpTUY8PTFr1GGC5ehiSNsL2aP9CF6o0TFDaZlAu0fYWK0GWJRVA6Q6M1F0zNQTRoEmHH1neXCEeRnnlwKEkSMn8y_OGlYCVEvb7UAaCp-qkzPTF339gv9SbjzX0VRdY3Gm-WagfYQ4sXYv3MLI47C4YwJI4lPVNJP4zN0Y-fIkys_uHWznsoAynD6zSYYghY7_tdZWPCT05-ViR787xPL_gGOvOvjf0TzrHu9xctlXmFdFGO5JNx12Rv_mRoQ2ubYWcnwYxhcqSJuX0DjTEARDZVFtCNUi_5rCQQ6dhi-0begL6UxI2MTUyk1M3NJyBDcK4XuDIKI0Gon14lylEEgvXUuqhQfOwQ7f1BXT-r8i6hI-kIw6LLEAZSWIyIwh5cR3Q9EBnZP_Qn-_2wvZyasqJROl7hLuojO-DziHRGkjn8VpuZi_AabMwUiifSC3Rslhu9orlmFEYfpJtPETGkN38SBJ4iozPr70FO32JDjVpaHoYow2jWRyzUE1kTS-2jE7R5maUOVaa1InXZokEvAM7pcsTj2lkqnWBhLCaHFRDdCjs0xtPkJLI8RaJX8BxKzCY87qtQ2HT5DEJ1fGx9N1RXgUjQpXGf8BQyRh9JtZAiUBp_jeKhCpA7BEtfhFgJ-H4tNAqgWCtvoZLtpEpvDEdxQeFJk6zXDDO83lzDXVP1fE0Q5C8IkpZpsXPG3DhuiBS8wNsSQTJGM9FDh8CThkfHPVqoe-nfg3haML7wr1e_h92rgG6UMQOBNgnTzBaaQ4ok2UzACkmj_5jwXJOxfahiRcavSPmHAi9w-Srg2BEYKcD81p",
+      "summary": []
+    },
+    {
+      "id": "msg_0fb89e404497736c016af903c947d087d2b071a7e9ed9a9a84",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0224\n\n## Episode annotation\n\n- Language task: stack the yellow block on the blue blocks\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the robot grasps and lifts the foreground yellow block in frames 27\u201339, but carries it toward the bowl and lowers it among the bowl contents in frames 45\u201352 rather than onto the adjacent blue blocks. At frame 69, the blue blocks remain bare and the gripper remains at the bowl. This is a visibly wrong-destination attempt; release and any subsequent completion are unconfirmed.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 45 | No |\n| 45 | 70 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 45-70\n- Categories: sequencing_semantic\n- Explanation: In right_shoulder_cam, beginning at frame 45 the robot transports the acquired yellow block toward the bowl, then lowers it into the bowl contents by frame 52 and remains there through frame 69. This uses the wrong destination instead of stacking on the paired blue blocks visible on the table. The images do not clearly establish whether the block is released.\n- Recovery: Lift the yellow block clear of the bowl if it is still securely held; otherwise reacquire it after checking its position, then align it over the paired blue blocks, lower it onto their top surfaces, and release. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The block is diverted into a bowl of other blocks, but no damage, spill, or meaningful damage risk is visible in right_shoulder_cam through frame 69.\n- Resetability: immediate\n- Resetability evidence: The yellow block remains accessible at the bowl, and the intended blue supports remain in place; no environmental repair or human reset is visibly necessary before a corrected attempt."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 8048,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 434,
+    "output_tokens_details": {
+      "reasoning_tokens": 34
+    },
+    "total_tokens": 8482
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0858",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot acquires the corn and carries it toward the green cloth (frames 20\u201352), then lowers it onto or near the cloth while retaining its grasp (frames 53\u201355). Instead of releasing it, the robot lifts and carries it toward and beyond the cloth\u2019s right edge (frames 56\u201369). The corn remains in the gripper at frame 69; placement is not completed in the observed episode.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 62,
+      "failure": false
+    },
+    {
+      "start_frame": 62,
+      "end_frame": 70,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 62,
+      "end_frame": 70,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After bringing the held corn over the cloth in frames 53\u201361, the robot carries it beyond the cloth\u2019s right edge without releasing it in frames 62\u201369 of right_shoulder_cam. This visibly moves the acquired object away from the placement area rather than completing the requested placement; the preceding lifting and repositioning alone are not sufficient to establish failure.",
+      "recovery": "Move the held corn back over the center of the cloth, lower it until supported, release it, and withdraw the gripper; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The corn remains held, and no damage, dropping, or disturbance of unrelated objects is visible in right_shoulder_cam through frame 69.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn is still acquired and the cloth remains accessible and undisturbed, so placement can be reattempted without an environmental reset."
+    }
+  ]
+}

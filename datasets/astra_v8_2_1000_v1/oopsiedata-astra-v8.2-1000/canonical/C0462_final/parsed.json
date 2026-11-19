@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0462",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches and grasps the corn in frames 12\u201320, lifts and transports it in frames 21\u201343, and lowers it over the green cloth in frames 44\u201350. By frame 54, the corn lies horizontally on the cloth after release, with the gripper still immediately above it. No failed acquisition, unintended object displacement, or other side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 55,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

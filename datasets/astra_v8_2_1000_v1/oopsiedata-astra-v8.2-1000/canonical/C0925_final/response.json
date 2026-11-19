@@ -1,0 +1,116 @@
+{
+  "id": "resp_059af8d29f2f1127016af9308c8d0887d28268b3aee7d2c754",
+  "object": "response",
+  "created_at": 1794715789,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794715798,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_059af8d29f2f1127016af93091485c87d28640fa4d2d253621",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-TCYWkiavO3TfpmVoMpL1C2qBgMDvRvhuroe0ukNJMD91FlaHlGEX2Y4CfpbJVf5rRAZ9wQjohhrttVPT-qVcWEzH6aDxwNMUed3IFaG9RK4hGdEslFfrT7UdJQOjGg5mcTEVG6lsENcsMET3XMMQwSwCtgnBFFaX2nRWVO4Fc89Kek_IYaxFH09wXFwtAdK12XvwesRqAP9jwsijL4Y5mUZuH9mOwQQidg82M1E5q5rVUfmTaAOSD_kgEicbGLPjYCAvYPRGOXBNruzsBMOa42KmxgnhDcbr2rO1QOFJunx4WM_NM1xEbF4FVPCj2zCHV6aBPRVGmfC_yswVmMLxnkSvjFlQoSQuYdk-g7UhhvI5v_-mh_ISt7HmocWnUx-aMNtQ2BRJT9ZYTbBaR_cvy3Hd6b0KVxi3NfRZsSmcDMQR23MlikwQNhUPRL4vYqjMClEXVf63dMDtbL9xpEforg6zBc_8VPIJXRdvydYaFd95sPS7Sb-QJ9XJZoGeG-k8zgdehIl-8bEc6IjddSF16Ohe2Q9D8tJjZ6iwvoC6vkZ466a-gEpZDQ9JHj9m4CrF-SxabeXeg2C7Q-R9Ne12RVjzaCB1-W2UwOa_IklBzOfsa5iiLOiKqgJyM5yYta6CguNqfevLN6doDUxv7_zKb3dPzCfVO4eCeo8vrrtFDXGfMJT51ITfnTYZopznI3Wzxx_k3rZ3wo7goNTog2HAEK97493c3lUtgNkUGu7nA99Zajm_dL0IHasqZrWCA0T5bxataw2DQnHuSOT7VyHNaPAMsNreI5lJ5V-wAgwxHe2sV3iEnWTPRafanTdxgh98tzAv_o6ejQQKhK-OfP_09fLTgz_V34VvTksZwDqGvO-baizHXzqrseUIoDeeApMKq2-Da1bi74hSOysTmdXEBLooHNnEZ6wPzxJ5OEZ8bIWoJX7ogWqARBlyssVZoNJ_q55MbDtfQqQzXmr2H7Hanao6JaM6dB5UIaPFaCyQUH4Vnn6jD-dA5ZFZiGqIpo5UwKedwOs_IKImDex07xtmhmGC48YZi6u4q6VT0MLwHr0PrAIastcp7UiGxIXfRwYJENhGf8nAl3DZJDbD2Pz-brLm0OstU8aEvWIjNXdOBJitDbWcxqDV2B2rRDeHYdNpPoAczP7X2Tmq4o7pD1fiXR3he9qXzPoX5Jsp0THRecCNtw6xqSE1a6gKNZXjmyxbixOmFDNEEf_1UAbJ6waAzVwtNqKyFcpVKr6LZ4nboI4NCggiFh0RNDBRZATDwfqIZnR6NvJ55ivt8wg-EmnDRZRcGglN91xuO5NwPd8R9HdMAp5p03OBR9Hey_VzTagpL19OEe6pBOvDAGSFoIAoO7Jobnl6CZsAIZtAV6HgOOqgEpty0RzRqdCV3Z2ylWAo_1tUHrH_tzIZR8BvqWriludFCfzYpf_wPZZrAIpM9SI3YZGkcblhTqJ6Rh4KC5wNlDAc1aafhphePpVt7o1YyQYid3gt17ff70Cs4L-sX9XT6xSaxlhlton2KeN6ImFb2iN4EeyOh9tZRxlDv1l2GP18gS31Fmay-A601HKIsoEZDTK6_eIO24sN808NuGsLnRlkhNA8q1fGYNZ5IYnsEWD50HwbTPShFKCND3H-i82a5kYkYWysVJpLS-xUiPpjYoV_g1EqlP9KnvtsSTMQyVAFySvfgjp_9ON4ZA9UB0190jDmP7cog8VtJTucDnIIpb0ZvYhf2TepaFewOBFtR_eekPJ2qSWuIlopms0Ja5_UKMmkiuC-gBZ1TSdJHio8LuHN8wpAoD01MlnwBD-O0r7nKhUSYcz7vV17E081EyhssW4Hw0UaWUMk27Rrsn-nWFP4fdNL9ecrDFe0zdWqOlYScfUpqJee8WM3Y_fgVPV6Jbd80L8sJsoruU7bRM4Cf5chUOzgKPtZd2y6z_zZUsIzpVvBuVd938EG73d-WlFhX1n7dTCjtGjomSOOtR4N-vMQaRi1qTh02SSwCH1h0NGEfXElF1ZsCG196ddY0uUVCA6PMz84AyJIjDOVHaIlYg9lWbWikyvFX_JdffUI6kNZg==",
+      "summary": []
+    },
+    {
+      "id": "msg_059af8d29f2f1127016af93091effc87d28f937b39a29e57c1",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0925\n\n## Episode annotation\n\n- Language task: put the purple mug in the basket\n- Success label: success but suboptimal\n- Outcome evidence: In exterior and wrist frames 260\u2013279, the robot lifts the purple/mauve mug, but loses it onto the table in frames 280\u2013289. It subsequently reacquires the mug and transports it into the blue basket (frames 470\u2013549). In wrist frames 560\u2013574, the fingers open and withdraw while the mug remains inside the basket; exterior confirms its placement. The earlier drop necessitated a retry, but no damage or disturbance of the yellow mug is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 280 | No |\n| 280 | 295 | Yes |\n| 295 | 575 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 280-295\n- Categories: grasp\n- Explanation: After lifting the mug in exterior and wrist frames 260\u2013279, the robot loses retention beginning at frame 280. The mug falls away from the closed gripper and lands on the table outside the basket in exterior frames 281\u2013289; wrist also shows the now-empty gripper. This interrupts the transfer. Task-directed repositioning for another acquisition begins at frame 295.\n- Recovery: Locate the settled mug, realign the open fingers for a secure grasp, and verify retention with a small lift before transporting it into the basket; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The mug lands and settles on the tabletop, with no visible breakage, spill, or damage to other objects; the observed consequence is an unsuccessful transfer requiring a retry.\n- Resetability: immediate\n- Resetability evidence: The mug remains accessible on the table and the basket remains usable, so the robot can reattempt acquisition without human resetting."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 75636,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 441,
+    "output_tokens_details": {
+      "reasoning_tokens": 36
+    },
+    "total_tokens": 76077
+  },
+  "user": null,
+  "metadata": {}
+}

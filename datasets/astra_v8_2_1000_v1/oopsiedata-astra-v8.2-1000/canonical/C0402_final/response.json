@@ -1,0 +1,116 @@
+{
+  "id": "resp_02065458dad09984016af9126f2fbc87d2bd8630023998ab69",
+  "object": "response",
+  "created_at": 1794708079,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794708093,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_02065458dad09984016af912744d0487d292b89c416d84e06c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RJ_szwxkrWF_Xo0R388Tcv020lNEQ7rP2xFRRVl8naGbIK_BzLtSg9h7loZnq21Ll6js7EBENZCYnOu0U1V7vhf7mKc4CZfm9ZBYlkRoI_HCHi14d7q5M57jk-xo1Azhl_UJIPPcWvX57OfRcZIwGK64akVjU_4ZrecdgTbN_yuWwHOgsTVBowZ_TCWy5iDbsGvPSdhj6b_VsJfDPhWekyPc7Skf0RgIRck_lmhnd7iapoiA1cBQoFFEP0jSZB7yaSB3UCrhdBXZQff2_4F6uvKoXnVv114Todpl1uLQlNYpi7FjIZyGarZHbTHYaKAHKH1nSTUcqAM7DFABswhtjLhwRQfAUkAz8L3pjJA1cH6oNQRhX-N2FEh4fTL4CoyFkUReyTTNXhAxM_UIanW9Q5eGGq105ML5-BXyh-hq-FhgdRt8mhdZOdnT3PZ_d1HBruzYb2DxxfWnL4ODFX_N6-43c5FyfMPbp_VemdrWV01Km1hDg4BFJPanJgWzfFbIqF-wC5760EjqTQ--lUXzpXWuULSncIp_8mKDUXwt0w_KkkhF3QbjkqTmbmr6oKgDQjf3nGW1Vse6qOnEdBYgE_MHFNq9esOeZHC2TFWd94LbQG7wfaIXgFmOFIgoEywpxECCHZdOqKIk3vSBgJhGyYeW9-2AUOP0Xm8ySJGCv16-iddL68Whqt_Mvu4xq7XkTb254IIxuQPtyQ06XR6MWk9S_1RSw5La4_mL33kkKaAwQShTCwaTyTmOfkahmAeSFVlATbyffztgq4z2uHB2CW1cLsejL-DL0nikEWjPT64h8FkQBuMcw-9A9cR-71eQ2wp1SUALyMv8V0tkBsoEAKoY1b8GEaPvXRpJLgwMHuTdCKH0-bsTnaLu-J3w3q4vDybgY-dnnhRpH-WHjPdYWLX0HGupi--zEM-IkreqGd8jWKohviPVut6Sy41G7C_0JbUxWIFQnLTOG5jKoHJ4CKdL4zTAVAH2o57uEGQGERbiYyY9Y_gLsAcb7S-fGFJvbTPvpxStKwauT8QvEPgCdyWQnwxMvTrsZECegxSPwFkTbAGSDsi_6T_fTmbQWJVeSq4siL7u6WDh0-4TM32NsecGsupwg2Aq2XXyz9kxB3373w65cGxjKXJiKDn0cF8V0BXaQbnTDdoYCiWE_bnGrEOepNAa6bU3qpHhm9AF1X1fenq9j2OytiGznEMooMNk27CjnZVx6Mee5wC9ibvkMivvp72agu6wCU-Atvp8qrPv0aEpmmF8McKrCJPlDrwbeo9bLmIVvn6AM3nYd_71V3s4TqHfzqEOwh4UPLRb7T2EZFqWVJvtqtlJMsfQho2iefKyk_U6nWr9R5pj2i-rXho5CnVIx3udfUliJYB9JiGaPxu4pm_RhbsuuU3PZNkQ3TPNlJpLnk9VAjcGWnhmd3JPa-dRIp4sSIjLZ3RF3sP77d7Ps2Bu37_56s7sMSNJfylWMV7T395D2-2KQFUstvjVxno_tBW42tptDx46YXDiI7O4aaMHF1QL5qswO7Fubpw23CJLQKLVzA8tOKNrPmkQE5PnE-SM-VGT_8XwknslQ2jl95vYCiVQOl59Q6lw2OAy6KrIZVh6aC0CnIPFqtd3X4AXWggGlJVxbJA6wxlkDayjK1jKd_1mQPt-wNRGYrEwM8XoEKMkMtPDjaaFbVxZCYlVx53aSRB5VTUOFT8h82MLw5eCrqvOhK4RN9rOG_LeF1vVQh3iuR4H3lqLvFQHybO_OW0A3o4dtdH5N4FklHVhG8jsdtcKCWHqdrBu9vkxCwbyPIUuCBRQWsSrd5bJ-ehaI5XQ6-gYh7LMjLwIFdWLCCdujWuJIIIh0xulWhWgIRJjl3nEuavde5fQ8pKl-SxnwGHNnKDrumRvk0FlSQxkSb_k0YUszgcNrGwf1htr6CNBEZUopWcjxGlXTUtaQFkKIQhpR3zUalPPVFVIa40gOiHiYmwX_VBQjLtEV_kFz4NtZRH4fwAZvNEgdM6Z7h6XHwEgxgdkBGEZBMpIDHIbTdOFzbwu56HGqtcAWBKh2Mn4JBPgjHBdSRfl4U0DhzUogNJx0aa_joD3dd_7apCekFUtiaDMQT3irL2rEStfGOdZFmx5eDDDGxS8oWj_UL7GfzawOJg_wG3jw4wcMeTr5rQRi76WZ0nuH6yUyx21SGmoDHDDA7MvSrUBU3IACBcDhrLU9ZDyn47cakaYq1sY1H_LafO5gi3-J-oJHuHIBLqlKmEvjjtYARX8iWhk2TWi-BJtIkZoUxpF_yVhgCBOnN7dU1Adpm_r8wRUsqH-4vkM03IyO6KsuskclAZZj-vVKlWpmGSJQaNH1_1zJ1s9M6fSfS_OdWgzBu3pNYbRIj_Bdmxw34RcsHm5D7aE5eEhmT5etxALXlPJPIzPxYzyd0AoAOcjaqEnJJTFKNGWIslFDWv5-P2GVFkcZBDSu3Cu5_7Mgk5yAgZ3P6DDCs9ytPKK5KSpSnOrVMRF_GIKSpeqb8foggb2hSdj6HF5-qM2pVMaRHutQ-8LABInQWyi_NNxOhvkcEGBrGnQuB637SekLworTIIJzPp2SOB9t6OlJW_OcN5R43GU_W60YgnUF3JMM4Vov1nI9J344mfvw0YEp1HPSGLOMrbSEtW0J_aKW3Gi0xsDbGcvv7tv7hCGDB0JefbZ73oQtCqNLmPsPkjiQ8Z02D_JYm165uMKzu0ebgH8wp_BizBaJy75IYiz-iLQcj0GE3X4eThvi3NwqQrX351o-DKDpA9ai2LcF-x48Y0r3wjqXyUE2mC76JE0sLo89YV7EoMw12T77FKHpXMFMyJjeXWhSFHx1Ohb0n2SSwhlUTl9WO94P970_tno15UkSiQYaywNlwM3zdAE_Y5pkqYgZAZtpucyzscsoHgSvTl5qDc0O5fXaOtqWLxOxVnokz0rX5Qsc6pSpJ9y2RgTHCR3UWAXOVcvP_Bi3QjxvRI-Gy4rtXNTE945tD_ZfAcOu2DVMLBPzalHGQLkNQb6MFZCVWMtH4L18br2Zio0UBhocQna_hexOmiHlZS8uFezf8ZmZG7SmPUhFEBPSENbNM1-Feh_lRecxT2-xfKxTu8FLTWrCH6MfyWoFz7rpsOSYToCdbSFVDXz9W31IlAGmlu1QpxiwMTwcHmDXuLL6Wil6v_XTUdmatX_X7-rSOAL0ClXbFl2sNm5qeO0DeuDwl0EqOIu2L8MSH5CtB_Uy1bfOyBBNShZckyN2z44tPQMJhZzJf01Bs9Lg5XHSHg4XFZowvfoEZEIT0iB56ARQtR6HLonUlZxkSoBGVPZ8IUiYBIhILRNY6T2zWj32GtWAUcULDalynXRyrm7lKo0PIrkA47a1PuTiBvveVEVwKxhX2D4HjWnOoUZRn6",
+      "summary": []
+    },
+    {
+      "id": "msg_02065458dad09984016af91278168c87d28c53b1acbffb6ce0",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0402\n\n## Episode annotation\n\n- Language task: Pick up the red bowl and place it in the grey bowl.\n- Success label: success but suboptimal\n- Outcome evidence: The first acquisition fails: frames 57\u201365 in right and wrist show the gripper withdrawing empty while the red bowl remains on the table. A later attempt lifts and transports the red bowl at frames 197\u2013217. At frame 241, wrist shows the released red bowl nested inside the grey bowl; right confirms the gripper withdraws while both bowls remain together at frames 257\u2013301. This completed state persists through frame 599 in both cameras.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 57 | No |\n| 57 | 67 | Yes |\n| 67 | 600 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 57-67\n- Categories: grasp\n- Explanation: Following the closing attempt at frames 41\u201356, the gripper rises away without the red bowl during frames 57\u201366 in right; wrist shows increasing separation between the closed fingers and the bowl. The bowl remains on the table rather than being acquired. At frame 67 the robot begins returning toward the bowl, subsequently reopening and realigning.\n- Recovery: Reopen the fingers, align them across the red bowl\u2019s rim, close securely, and verify that the bowl follows a small test lift before transporting it; no human intervention is needed.\n- Severity: low\n- Severity evidence: The failed acquisition delays the task, but the bowl remains upright on the tabletop and neither camera shows damage or a meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The red bowl remains accessible on the table, so the robot can reattempt acquisition without environmental resetting or human assistance."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 73441,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 534,
+    "output_tokens_details": {
+      "reasoning_tokens": 144
+    },
+    "total_tokens": 73975
+  },
+  "user": null,
+  "metadata": {}
+}

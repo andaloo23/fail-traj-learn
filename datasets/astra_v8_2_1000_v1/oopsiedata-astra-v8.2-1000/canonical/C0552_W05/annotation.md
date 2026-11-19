@@ -1,0 +1,17 @@
+# Episode: C0552_W05
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: failure
+- Outcome evidence: In base_image frames 1400–1530, the arm moves down from the upper tray toward the central tabletop, then makes small adjustments through frame 1749. The green can remains in the upper blue tray; the pink bowl remains partly obscured beneath the arm, the blue bowl remains on the table, and the right red tray remains empty (frames 1600 and 1749). Completion is therefore unconfirmed in this window, rather than a visibly completed but failed transfer. The gripper is near the wrapped item beside the pink bowl, but occlusion and the unfinished action do not establish acquisition of a wrong object or a failed bowl grasp. No definite local failure is visible. Earlier context is limited to frames 1398–1399, and later execution is not supplied; this outcome is provisional.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1400 | 1750 | No |
+
+## Failure annotations
+
+None

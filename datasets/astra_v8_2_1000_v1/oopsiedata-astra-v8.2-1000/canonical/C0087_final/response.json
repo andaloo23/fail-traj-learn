@@ -1,0 +1,116 @@
+{
+  "id": "resp_04e9844f92053ca8016af8fc898d9c87d1829445603dd982f0",
+  "object": "response",
+  "created_at": 1794702473,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794702486,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_04e9844f92053ca8016af8fc8c482887d194407a596ebc3620",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PyXum7xIClIICMmyXNfGAPqXpt7vC01ArGiLCxiINco1mZpno8cVnhr3n-owMae9meZnbWY54oHcBd4y2kl0EqvE_Yzdeq8vqtsvfCoyP9Kmxo6z7uXAUcTxRX42Cs2-GjM5NKPfiHpdB0GmOEdoZtI13rKxnFZqmBGWs48NOvZ-cS2wiRmY7brVX9CBZrVTEQasvJxsmcMx1MuUK2d5avt83ZsPAdu_UtxPd1JulxGgavvLQ7w2I6RkKgLuAogDXB0JHES9FnSVar-MVdTphW_lYWpwz51vswK5vkrpNCP6L_v2drXeVLhO1HoDJPDWr7ID9OCp9_-kTHp9KKq15FyreIeF_Brt0QH0fIW7cs-QsNKnfcXFJt1KyBmHuqxrJUiPkYQSSY8hPNQRUYwVq2a4F6vTQoR12JtTW1N0mrd1kA1ni3GMP11Z44Xm1VLqKtzEP0Xx0ZdVNfsUF7a-ckK6HOe3-NHeYHJt83DT7scVmsQkjT5AFF4AMTb6xR4pYtjNK9WOBPEu_8vhnFDZlCbvlOhB14tLa3OFWAWTuIY9XPLWogTzDa4TvR-lLsfU5dvcloE3Rf14zuwSmKonRJUdTru7zO4jACD2MoRhIAkAnAdqypOk5rcTEbC92Q4Zp9yuPmrmDWB6AEiD_3DLsBwiRLyTKgLN_dkdIOHFkXfRrd1xi6CYj9R-gNAbeMrjcZg4iuE7SMXLGuaj8ZjFK12wU_bMPiJ-pARdhuHaQqj-zmzesk3W5YQxN3PUL6oN4trc1QoIhQdvEEy2h4ddu-x1I2rwM5eTX9mwPwvlpL1PqKGd4M7bEX-LsSTl-sD3QnN5BoTN1UTX_UitTozA4vdJkQibe49i_7FcUaZCK3Sya1atB4W1GRBli88LkYDkpWQHhYJuYNndWeNTk8SDbXV65Ws6Je0ja1GCY-QnIVddYu2jkHX6oZhOARbFXAlW_j2e0iim6fQDEicbkDVevdb9OMYi-FOmRj9V3f5FloqRRf2hrTc5iyHcTsFYLePctJNVimGZIZvVqh8Z-SDSW6qXsS-sYgUe6aLuJc3CPL6_ZaFRVLcqFd6tJ6UZL_Q0AznUbhok-PtTPxlotJZ6cY3T-YImcnYnt2WyA3AXIR6BVrsM58_KQxx3cYG-pIcP_4K21DGzue0pMJnwC08mWuW1uoNI6Aryp72i9F3LT19uuXXKc9cvB4Q1Q7q_ANnhcj6XBUQHtAupVT_xwMKYjCGrY10cXeZLaHrynY-yURbd9jEbW8O4gzP3sQkkFns23OlkhEGdQzvZoFgIbhMpJ_cxrbDPtEZwUbfjeb5gb_gFC1RJ8lSZWCSB9te9CJhtS7LZH-298UbO-ZAu71W8lrhMwAjrAVQh9GYNVm0RgnFQzC9WAEDVnXqyXqPhI1fxChD5HctXPktmivhitJZVHcM4yZFbetSMr-_yFcpIY322szxVD6iuyPUX02xOj3MkUGrSZrglZC2N68U1kTh89_HwUaZay_Lxr5kJliCQY2_7ykhNgucd44OYuIiSEncwNE0xegFh9m9_Q2vWJf1ptlVe7yOTKwDdW5-HPSqXaid2slcwlNlDpz_UO3Nayfy2wlaFF1CdN9yIFE0FEGKSB8e1S9sjKfRzHhILCpnJZEnPTz9kysG6n-6VxkHvX-e0WNRC9ciAZ1qdbY5_2NK-VDiNgYNfxkJmzneorqAgZGW2R1JSAHiFWGwNz5-iGw6_8YUeUsMJ1gqx8Q8MZBrJtLNGtWvDcwA9v30AcxJZ_IToc4xFdl-5pxoxfZt128NLoSK6PwL-mutMiOByFLuBwP_lLVaAKAYM0McDKsiC3LXCqBqnZN6Gj9p6PeZRs6oQM_DLtUEZZYizwD_OtjzfZMC_9WlMa7zx8zViMkoxBN99T2KO4Tg6Tkow2sQEjmDkCLSye3FQWmnhgqsIUW2zMQmZcre06rxgWt_cXZiuRkl8nMuOu_VaYkk5FGe-WMkbd6Wzm5L7mjASaFw7QQKFwUXAA1RLAkgXSf4aaLNFen6thJ4RjD6AH4TYi455MWQt3RqYEJhDV3DZ1LaXF_S6JL4dv9v_J2D1jl14-5Hkfq56ON1XsD88F7cgbc4myBLKMBPrUyRhEjGy2WKNfGt53WqNoF0LmsQHaf5kFO3N57t-gEkzyyXt2hra7tW5bvabF10OUL7mB6TS2UXRbi6zjbLLTOcHG1rb4qMWdPZllVOog0Y4JuNpnj50bNTLx5IxyGwlgOHBHJnSmRjZyMt2tRbmZG757c9ZLOiOOmw2LUcgSMSpXdq8jXwgXFnfWEHqhpP7R3jlCLuBNef4ycc5M1hsL5WbEP-T3DTuYbNJgE49hmM1Qga0B6NCS-oojJsWpphVYkAnAGURxmAoneB5-E1786VCY6RlmyYdmhm6OOiQV_qvXlrHUvjbG30BoWbDe0TcrSAS_odpcvglYaT_SLJy0_i9DDX-Z607DbQwaF_0VrUMxnRJRYB7aiAd_Tp3ix99_5gE7vvfdEiPYbDLpx83ZaDXbxf9OiKcRQuZd7FVSKYvZPVTyZ-4vNnjXNpGh-r7Czyk5myawUCy5FR4YUVXcpza5xQP794ZsoloZVU3kQVpJPQE0O5DG54Sz5drc-YqnkykPVOOGrB3-5sXamckapw_0bINLiWvI28TpgxCW0bfSvtfbfSi23WlL3OcnZaFiQdhfsaVpqXISJ83opFrz_BrSGjRtDkfzAU-dayX_oyNZo5dm7-3lElAlv2HIxkTk06RZwrS06nVO1r0Hb6c28C_HOUU8OFRoFCdMjP_TMWwrZivD8Sor6W79yUHz8CN4J3DuTVpp9gNmLM_oXu8-XJH3AfTv6QRW1Iy3EsWVrFJRKxGMZdSQQXF-TdJQBGmKOKd0RdtKhEhGsvWSvJNMcfU-Z-qfbgC7SsFck04_M_z6MGSmztzfcAOMiyIKzwjMP8SCA5gkgF5mjGjetHLidaNrMZSrlYir4H4cqW4Cz4NuoBVkzEIogxfiqH_Msu4sv0O0YMx5psqIOHc4edOfOLSMfc_RBbeQcbQwOxj1XgeUpdG-szu0Om1flE_rkrsDl8eXq4ZOj3Ot7-CpYc1HuEyTbbe8UdIC94C5XrfMbmHgj22-NQrAY0I6gfcqbBSNmVYU6lcM2xrgDLWQpwPeYLF_DQ5ck5wNNyX09VK4ZMeGOr41mK4-H2XNJe3nu7RzZhZat7BIDJNi8PODTVsAHKs_HZ7zUWsdedduzSin68lBmZpV7lpAkkCLxr2PZibggaVnfmBwTD7KBUftxTsfUq7RxllZ0z0yHU5-coZska23QnGROGTMSVISSOVan4iX6hBzYtw-f_FS8KKdXXUYIeL747LpWS0f2Q9_yydDTJ6jFQLRJDbJH_sLR0ERS_uQHUbg6x-4N7YBiB24JNY0OpcGzHCX_8N7myj41CYzb48Flq1uTUQK7uriTs7893G6eO1XzG5xSRy-_OYtOtvBvJwDHQMwsRcRkDGqTlzO60WJi7pktdtlTeiNH5Vs9rjRsK_EIUAggpiZrBBROheQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_04e9844f92053ca8016af8fc90417887d1be8254e952292db3",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0087\n\n## Episode annotation\n\n- Language task: put the sushi in the pot\n- Success label: failure\n- Outcome evidence: The orange-and-white sushi remains on the table throughout, including frames 105, 177 and 255 in camera left. Instead, the robot closes near the yellow-and-mint cone-shaped object, retreats empty, and later picks up the wooden letter block. Frames 225\u2013255 in cameras wrist and left show the block transported to and released into the pot. This is visible wrong-object behavior, not merely unconfirmed sushi placement.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 48 | No |\n| 48 | 256 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 48-256\n- Categories: sequencing_semantic, grasp\n- Explanation: From frame 48, camera wrist shows the gripper aligning with the yellow-and-mint cone-shaped object rather than the orange-and-white sushi beside it. It closes near the cone at frames 105\u2013112, then withdraws empty at frames 113\u2013125 while both objects remain on the table in camera left, establishing failed acquisition. The robot continues to the pot and opens its empty gripper at frame 177, then approaches and grasps the unrelated wooden letter block at frames 200\u2013225. Frames 235\u2013255 in cameras left and wrist show it carrying that block to the pot and releasing it inside, without moving the sushi. These actions form a continuous task-inconsistent sequence without visible recovery toward the intended object.\n- Recovery: Remove the misplaced block from the pot and return it to a clear table location, then identify and grasp the orange-and-white sushi, verify possession, and place it in the pot. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The sushi task remains incomplete and an unrelated block is misplaced; no damage, spill or meaningful damage risk is visible in cameras left and wrist through frame 255.\n- Resetability: minor_reset\n- Resetability evidence: The block must be retrieved from the open, accessible pot and returned to the table; this is a straightforward reset, with no repair or difficult retrieval visibly necessary."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 32499,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 601,
+    "output_tokens_details": {
+      "reasoning_tokens": 132
+    },
+    "total_tokens": 33100
+  },
+  "user": null,
+  "metadata": {}
+}

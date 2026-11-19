@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0103",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The drawer is initially closed in frame 0 (image, left_ego_image). The robot approaches and aligns with its handle through frames 10\u201368, then closes around the handle in frames 69\u201375 (wrist_image). Frames 88\u2013102 show the upper drawer moving outward from the cabinet (image, left_ego_image). The robot releases the handle in frames 112\u2013118 (wrist_image), and the drawer remains visibly open through frame 124 (image, left_ego_image). No failed attempt, harmful collision, or disturbance of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 125,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

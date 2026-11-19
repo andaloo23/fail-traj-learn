@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0736",
+  "language_task": "pull out the block sticking out",
+  "success_label": "failure",
+  "outcome_evidence": "In front and wrist, the orange block remains protruding from the wooden stack throughout frames 0\u201361. The open gripper approaches during frames 0\u201327, then repeatedly makes small back-and-forth adjustments without acquiring or extracting the block. Frame 61 shows no completed extraction; this is an unfinished task with visible sustained unproductive positioning, not a confirmed failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 28,
+      "failure": false
+    },
+    {
+      "start_frame": 28,
+      "end_frame": 62,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 28,
+      "end_frame": 62,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial approach, frames 28\u201361 in front and wrist show repeated small advances and retreats around essentially the same position, with the gripper remaining open and the orange target unchanged. This sustained positioning does not progress to acquisition or pulling; no completed grasp attempt or definite harmful contact is visible.",
+      "recovery": "Reassess the exposed block\u2019s position, align the fingers around its accessible end, and perform a controlled grasp and outward pull while monitoring the stack. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The block and wooden stack remain visibly intact and unchanged in front through frame 61; the observed consequence is lack of task progress, with no supported damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "No object displacement or environmental damage requiring a reset is visible; the robot can reposition and attempt acquisition without human intervention."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_06b9d37d979fa03f016afbb9eaa7f887d2a93bfd993bb717a2",
+  "object": "response",
+  "created_at": 1794882027,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794882039,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_06b9d37d979fa03f016afbb9efc3a487d2b093fae74748942c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7n4VOm5OOBcEpoFd7zijoC0GPAz9uLAGnm0Hk4pieRdWymiCQSPiuX-Hn3B-B5okFfzPeAZV4L8kehmqgs5zLgha5y0trVp3WJ_xux5GG4sHPrTWg2wTTP6W_RBPuDvYsryw42mWzHlokjYuZhb_eq0kt6NrzKQDbwBK6QbNLc3gi-wdtxgry3vNBg_99qGkc22Co8lUxX2yIqf4rYJ3ckh8WEZQ2J_qQmv7rv3dN_fXlIsd0I5L4wp9oSE7MHq9Tt_SqeFdb5fegL46sW4a-oGKZ8fZt-bddzidA48UdzIxU1R4z2OodnTzYucv6jVsyJoBJPEgD0ANyucKvc-qDafWpVUYa1OQ1l11pEnQcDhMt5NjqCru6LLbHJT5txrXV3rKsS4EXvmveIJrOqGo1SndClvSkqnoWqMd3vvVNRm66rj2INi2Sme4a6JgjUUnOU8CW7hSQL9RRVMexqJCLkwIAmBJ6eYTOH-cIciwz_oxz-LzMecK-qo7-ZK1D1g9JHrCjSy7igvQbubN4_UwXcCW6GxSoFKpKxU6ReIfWNGBYyH4UiQzkIZqW9VM-FcYPElw2fI6Aqxo16gRHH7NtxR1oX1YPa4s1ZdQx5zvTrKqYKSSC3h0D3TU0IEK_JO1c5crD7unP_r6l3V8gxcLVbyb8VpFimtEhXwMXr3moj4OdO1UPJfBNeJMwClJFVeM76ZRalFo1gLV2yv7qFTd_vKho3yucYtaR4w8dO1Nz6QoKdET_BEEpBr2idQrDoBX24CvvOiSSir6XEFx0x429QXyVr-0fJPBmC4QkZBAcgp2VFXxU2puTICMnna7qNBMUVkWcouUsXj5TLTP2KZtp48BjtSlxMEzZcNmYAhoNYft6MhSgnSlHATfaQ9RSpjhzd3bWX9ufP6HFAx8PjlCzh2WjecdknacUr64UCLcibgCvwnk-oOIeMFMu7lftG6yb19bzZLD1MOnsAITbhxENSbqYkV0_M9Dred4NTGzEKVU6j5vORr591ZrgwJPETnSIAGTkkUR5A4AZOqXZWwGO0w4WLsHhlQZWGUEB6DdbiFcW36KWx2QjvH85-pOrWe7emRTCczuH9H0C9Xf28XqzlCgqSvucXapkicn6zR2MpxmTf0UmCut5lz__jv5aEXVEkN6NVefWnJZ8bsv39P4d_et12pBXjwuiLR8D7c8Bugdb523SfJkTGIURgcC95tgZwbhdQHZ4VqIPSRrgEMAd0sIBxTmuXb45cT85TVXuVvRFqx6gaKTcnbWE20QXrUuwidg_NnFCkT1eAbFeFYUzxiZ2nE_NmFjzWQ-QbjWW8-PQB3HqB_pRJjSgIm3CMz5dAdF9F0A07-hcHHqtFA_C4VQ9Its33hzSGtdNFaH_dKIr6HS4DUy8O9W_Ra9K3srFePiTr1OXHWSlV57KkL1ACLH0Ng1BNOW2bJBaWIYr81xtNkpNQ6l1O2mrrrl6m68UiUw1Dkp6TEu_YRgH9Z8lnU66xovBZ_1NhTles4JEz8nEQqElT5XdGnx36MOrWMESARllolKfPkrG9Bu1EYxi6hwaS3Ki7CeAy53bXDBpNxdF2G5Ux9MwHldaxqyomYP7V540T88vKX2oJOWifuVx6X-h1kRNE0lDU3U7BMO014pLHoarUmwhs0ugrlTWOlXSpKkG0sHdzVWeyKsq1BmFFfUigwkaginTAoapsvEep1iOZGO-fct66fm3NPM8uS1hH1wMtZG4B5G9xYpYtaEHNIkJEka7rOaSWi1P4M3gDbVCHERWlFlTHvcFCCWFsfEgYN4N-ppKf6JaBxElZGUikZKYMmMVRDeX7Jo9a7BdruZ_wY1gPC0T2VU0a_F9DLlSTJ7RhLXxv4oTisB2wc1DQTaNN46pxSHDecdlzalSdc3DIJa4dRjreVUEymxl8BLVIZqJ0MbaSWj-HHnhYHK8xsHY9j0U3o9tOa-xHbGYfhSwA30vXH-0L-mjPqVeuGyuo_59MzBKPlFIused3ztJN-I8ur7duip11IoL1wdDeLd4cqU-1l8pQw_5tQWATY_xOG14IdnCMfG5SiUdVlBKae7_7hkKRvAmZrOW2FzaSAPBBzwTVRwnrpQ6-lZIt9jW_hy-PqTCRTfG6OPUmVZ0dKPVuzpP8nXX1tqfo8M_LR0-5M6cmXUZKSEEehLwK87LW9xSZUQMqOfdgE4nFamiNb7hgpRz9oLtg8T6WWID7MqHh98JO5efb9kwR1PXVEUDp3L2qUHfMzCzAB4--r9CYqd9HNWmI7FtiHv0YwSW0nqeCV0vE7SOIOMvd2BzrtP4bE0rw2CoGveU9-lZUls2rnjVU3Elbn_y84CFXyiYNsLwRZCLiJfkRZGQkEnvMJ4blAdo--TOjrvTOkqIcGGJvwMNUSdBhS5aiAkc_wbInKEFabpUUSAnw4BoJkUJMe4zMDfe3R0WJZ3vs27a319j_FNRlEpVM9Zl02L87vAmaeJQT3Xb8N3KotWci7_0amJlrVHBoD4Jv0SpvSTJOQuDdblulZ6HWkpiDubKW77dda1OuyYdr4PatfQYNsHWADay4KHdK0BTXAIhiQXgRM4t8aFuJK7jswzOWax0x5CMhsIym5FExXPQCLcq-bljxTyeM-4Lpcn2hH_UGGF4-D-kdGz5_ZKeuOiHnCs0bHVOQfd3parKL5CahwaN-_5o5iP4D_b2b_yhMo8k2BLDY16z4MCEW3yRMSdRFUF-8kl6LkWF_AT2OR858sZj2sxLpShXfczqpjG0PhQ4sLDapHTJLua_883GOEPMdlc6AN6Twk6ry0FVaXvWy0syuzTps84nGEnCEaN6uM-hw8qeLMfA6RGQ5rMiHDujCTSqCSGevEX4IkiH6F150-yfq-YZQDDmXbmpExAcyWsLz20utEzZZhft8fzsTX8Q7m-eHCzTY2SMWR5AnjF25mXgc3k-5TxGN2EFcKdJMoXmXU0Pj5Csl-MW8xO4lRaL17B3og6v_Cl2B935GnCbeBAudaWod4EEQ8jbMYsdJLNPvweyTLuXaIAA==",
+      "summary": []
+    },
+    {
+      "id": "msg_06b9d37d979fa03f016afbb9f12e8487d2907db8ecc6267e20",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0850_W01\n\n## Episode annotation\n\n- Language task: Seperate the food and the toys into the two bowls.\n- Success label: failure\n- Outcome evidence: Completion is unconfirmed in this window, rather than a confirmed whole-episode failure: overhead_cam and wrist_cam show the pink toy transferred into the purple bowl at frames 259\u2013274, but other objects remain unsorted at frame 349. The green bowl is unintentionally displaced during acquisition of the pink toy (frames 181\u2013203), and the brown object escapes the closing gripper at frames 343\u2013349. Later episode context is not supplied.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 181 | No |\n| 181 | 204 | Yes |\n| 204 | 343 | No |\n| 343 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 181-204\n- Categories: collision\n- Explanation: While positioning the gripper beside the pink toy, the robot displaces and rocks the green bowl rather than leaving it stable; overhead_cam shows the bowl tilting and shifting at frames 181\u2013200, corroborated by wrist_cam at frames 190\u2013203. This is an unintended disturbance during acquisition, not required sorting contact. The bowl settles upright and subsequent lifting of the toy advances the task.\n- Recovery: Clear the bowl rim, reassess its position, and use an approach to the toy that avoids the bowl; human intervention is not visibly necessary.\n- Severity: low\n- Severity evidence: The empty bowl rocks and shifts but remains on the table and settles upright; neither camera shows breakage or spilled contents.\n- Resetability: immediate\n- Resetability evidence: The bowl remains usable and accessible, so the robot can continue using its updated position without a human reset.\n\n### Failure 2\n\n- Frames: 343-350\n- Categories: grasp\n- Explanation: The brown object moves out of the closing fingers at frames 343\u2013344 in wrist_cam, and overhead_cam shows it rolling away to the right of the gripper through frame 349 instead of being retained. This visibly unsuccessful acquisition does not sort the object. The interval reaches the window boundary; any continuation or recovery beyond it is unseen.\n- Recovery: Allow the object to settle, locate it again, and realign the fingers around its center before retrying with adequate clearance from adjacent objects; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The object rolls a short distance on the tabletop without visible damage or falling off the table.\n- Resetability: immediate\n- Resetability evidence: The displaced object remains visible and accessible on the table, permitting another attempt without environmental repair or human resetting."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43978,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 627,
+    "output_tokens_details": {
+      "reasoning_tokens": 47
+    },
+    "total_tokens": 44605
+  },
+  "user": null,
+  "metadata": {}
+}

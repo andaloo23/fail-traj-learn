@@ -1,0 +1,116 @@
+{
+  "id": "resp_0be88dde42f9bf64016af9261b137887d1992c2225851cd6e0",
+  "object": "response",
+  "created_at": 1794713115,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713123,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0be88dde42f9bf64016af9261d6fd487d1bcf80fd0f6e9cfdb",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SYj78ZmCYD8dgww7pDF9NPmDvAuA4DbXYR0cJ1GnI0Nws6cPp78lQxGftFKhwuppIz7C3JQk_03HdjSlxejdHyCBjGqidwoso0wKvplbhs3Uv5jqXTUQucH3aSiO7-WbFwXSsWx0LoGFXH0V5X-T1gGcASWZllgpGj_kT9ITxxomMnSV6CPngoPQk5oqVbxRdWDe-MvBh0r5Jm1aHjzn_XKqf9IHBvZqj8prB-2Yl40qBija9q5QqgQBlwD-PunKPLZDPnibmFTHsA9ACYI7_vofQadKkYH9upzkZ1opWIL8537HrXCEwV7eNH6OxKF0bX7dnYkseJKlyA3TTw6dPLpBeMGJk24e8zGg6bOWCGrihmPoG6Xh9Ie2gpa3neqPg5lZmoMDbYMUr53BErKTWhudsH6I6hy3nmMxVdkL6zjeSFor0oqE4Tck5U7auSDwT5T-vSkBdVxr2fqbYTiltYADScjhgAR7-h7pcVZVzyk9fYqDxC_hjK31DUUjMpHLjLkUZ1Qs6Gr36Rx-SmAukzYeqOn2TVAzihlbT-rNIcEh6ztkH60M3QsYUkLIQdIjZeHfs7toZd82ihvALC5OX74_keJDp_auuKueJuNSe5gA3nyiYjRO8Jw_34ACWg20w72YFHthTG7C00Dzcl-NzTAcmRO5x01cONSBptZ8TQHiuk-QcKjH9OxgiAfVTB2MSKh85oEO3TXast0927SYT7PhAP3tadfQa5VLQFw0spzYSZvjWaIaBsCc8hqFVIKgcZvCKFGAexJOuz7HnemKGrWCg6qJpCRMBMTAMsOQzdueNz_Y2uWMMUF-1DJ93DwqY6Nqh3w-TBkqBX2j-8952l-P3pExtnMQL0td4l1r1POkujNM6U-9BPH0GdPNmbcIIAO4J8uiPIN5wXokStD9ChMa_6RWKHAqCuUr0gE7-S4FzKK5vMGNDZRV_XzBlbp8nvjItX_zvxXhAF04KNFoIjpc7f4uUJGyqZ8yCZbp-6rXl6ZZA9NfYXBKTze5S-5Kqkc0NnoZkA5tssTzArQDrUSknLDnBl0aBlQfqw8VPajTqEXosNsKpuAaphm_4edqeXduPLmrfQylhW13P1bVyTF7VpKxY9qHpd_rd4vVu3E58VHd5Oj1zt0VYZ2AH0IEi8Un8kOX2dufMIk585RFkmccBY1Mm1LfsJ0Dbn1boc02f1M72lXeEjmoVwQnHDa6pcb0cZikH3Mxs04sMexFMICdG6g2JkMZW3OgxeLEBjy_F2Cl_I0JPS-mhyZ0x_pnipxUcYn2SRcH3eEg4Kc-Z0TVi6wJ0rWYqjR-B_c9TEtUJymsE3tufKCNGjIhfXHsUWurN6It5NXG6uVGTJi_kzVZt-U71qBqkSOxcuTiioP8_YJ3EaRhzAG1UIUeI02VgvZucRs87AjTF8L6vhqO9pxZb6vo9kPeDrwoVfSyB4GFKvoyIdgZDcK3sN_APBFF6zGi66rUSiCBz15Ia_HIluY-07HMNjG-78ao_ztN_GelWHWbBwmQbRSxK5D2oP9G37Dabo0X0B29slRJZk1EbpVz_RLRAsg2ZWUIPZpNNbIj73GB2clM4oPQoS7NUbmxDI2vxyOXq5YaRxQnan06GISPuy4va96H4FzeTlu95uThgCwhGaScE0MEcMjEXc4JL03LeMoik9OoRSJ2AbcZrRD4HtrnwpTR2ZdRSaEUfJ7eXj7I6fi76Tk29bqSCsfiKXmpL67OAF_9jE4TExAxmrh86BSfUxJ3VUGuApY2t36ViLjZp4LtJxZvhbiT-pMCp7oSISvIOeKnA68K5P77b7c6ej4BHubT6CJEpasamowlyKfyGPav4iPNGp1qhAV2DJgJ0SZtT5iiJOyAs_i9qmJMxqrTf5sEuvL9z4oTtL2DGY4qeHQtMG0Yx0DS5muKuRyWxPE1C1olIxL6V4K54h3bFCjkNu8PxJiOZH-6VbK37OxCHv16CJiTX138VBnyKqNkoY_PkKus9iYjlh_TMlcqNrL4UX0aZ65TIoCZMRxRjR3wGAa9hGr1Lv-AUrIiyUdM0aV6eJfGj6zXp4JycVFzDOKNUJlvflATz8ctiw5_Q-FPgroJq-J5X4-SId6d-yPl6W1-dmSKVRLKIIVoEnd_pktVksfZ8jJP15RF7mc1xkM-1c7vBNAT3ApjukTHixqsGgFkr2DdMhT0juNDNgI24N5B5LJWKivYqKPp5jI8bXJIQsP_7zjMHYRirZRtJSG9Dp7MT-IRPDnNrfoUcjdWAN1drdfhT4ArmWlTNXy7aj42kBjJ6XGAQiZsD3RD1q5utbMx_nJHKAo0IA4LOPmRlz7PIAqTPi83hc7mZ_4GzdIH7FddmJqQrm8qSBhDmPQQ4oQMioj_GM5kPohH4pbmmSiRPYD0qc76grRrjJoPa-yH_xVPg4OJGztr3QnGfO91SgDsT2ME3GTrIweVxt9sYLYDYJyrOeDjESh2DMiEdiZyrIHfqQy2QdFdoZUKBVIy9Dw6t0mf8c2tIrdpSDXaqbS2EviPUoXkWw09erNbboP-HGFgf92dXOYTHuhylzAt_xYkOFiW1UCkxkN2rRlljjWX2Nl_08_nkmjHkJ729I=",
+      "summary": []
+    },
+    {
+      "id": "msg_0be88dde42f9bf64016af9261eabc487d1967db75f579dcf45",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0742\n\n## Episode annotation\n\n- Language task: put the sushi in the pot\n- Success label: failure\n- Outcome evidence: The orange-topped, white-rice sushi remains on the table, while the robot picks up the separate yellow crosshatched object with a pale green base (frames 40\u201356, wrist and left). The yellow object is released into the pot at frames 113\u2013119 (wrist); the sushi remains outside the pot in left. This is visible wrong-object placement, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 24 | No |\n| 24 | 120 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 24-120\n- Categories: sequencing_semantic\n- Explanation: By frame 24, the gripper is aligning around the yellow crosshatched object rather than the orange-and-white sushi beside it (wrist). It closes around the yellow object at frames 40\u201349, lifts and transports it at frames 53\u2013100, and releases it into the pot at frames 113\u2013119 (wrist and left). The acquisition and placement physically work, but involve the wrong object; the sushi remains on the table.\n- Recovery: Remove the incorrectly placed object from the pot and return it to a clear table location, then acquire the orange-and-white sushi and place it in the pot. No human intervention appears necessary.\n- Severity: low\n- Severity evidence: The wrong object is placed in the pot without visible damage, spilling, or meaningful damage risk; the intended task remains undone.\n- Resetability: minor_reset\n- Resetability evidence: Returning the yellow object from the accessible pot to the table is a straightforward reset; no repair or difficult retrieval is visibly required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 16315,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 459,
+    "output_tokens_details": {
+      "reasoning_tokens": 72
+    },
+    "total_tokens": 16774
+  },
+  "user": null,
+  "metadata": {}
+}

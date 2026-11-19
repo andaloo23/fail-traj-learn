@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0731",
+  "language_task": "Pick green block and place on cardboard.",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior_cam, the robot lifts the green block and carries it away from its initial position (frames 68\u2013110), but drops it onto the foreground tabletop rather than the cardboard (frames 137\u2013140). It later reacquires the block, visibly holding it in frames 518\u2013599. At frame 599 it has not placed the block on the cardboard. The first transfer visibly fails; completion after the later acquisition remains unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 137,
+      "failure": false
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 140,
+      "failure": true
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 600,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 137,
+      "end_frame": 140,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In exterior_cam, the previously held green block separates from the gripper in frames 137\u2013138 and falls toward the foreground tabletop, appearing at the bottom of the image in frame 139. This loses possession before placement; the cardboard remains farther back on the table. The images do not establish whether release or slipping caused the drop.",
+      "recovery": "Locate the block on the tabletop, approach and regrasp it securely, then transport it over the cardboard and lower it before releasing. Human intervention is not evidently needed; verify its location and reachability before retrying.",
+      "severity": "low",
+      "severity_evidence": "The block falls onto the otherwise clear tabletop; no damage or impact with unrelated objects is visible in exterior_cam frames 138\u2013140.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced block can be reacquired without restoring other scene components, and later frames 518\u2013599 show it held again without visible human resetting."
+    }
+  ]
+}

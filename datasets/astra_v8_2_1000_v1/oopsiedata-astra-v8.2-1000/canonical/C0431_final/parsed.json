@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0431",
+  "language_task": "Put the plastic banana into the pink bowl.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches and grasps the banana in frames 35\u201368, then carries it to the bowl in frames 69\u201390 (wrist_cam and right_base_cam). In frames 92\u201395, wrist_cam shows the gripper opening and the banana settling inside the bowl. The banana remains in the bowl as the empty gripper withdraws through frame 120, corroborated by left_base_cam and right_base_cam. No failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 121,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

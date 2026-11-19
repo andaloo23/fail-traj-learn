@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0777",
+  "language_task": "stack the cups",
+  "success_label": "failure",
+  "outcome_evidence": "Three separate upright cups are visible at frame 0 in head. The left gripper lifts one cup and brings it above another (frames 140\u2013179, head and left_wrist), but its release produces tumbling rather than a stack (frames 182\u2013205). The right gripper subsequently lifts another cup, then releases it beside/against the fallen cup (frames 270\u2013315, head and right_wrist). At frame 333, head shows the cups still separate, with two lying on their sides; this is a visibly failed stacking attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 180,
+      "failure": false
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 210,
+      "failure": true
+    },
+    {
+      "start_frame": 210,
+      "end_frame": 299,
+      "failure": false
+    },
+    {
+      "start_frame": 299,
+      "end_frame": 334,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 180,
+      "end_frame": 210,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The left gripper opens while the transported cup is above the receiving cup (frames 180\u2013182, head and left_wrist). Instead of nesting, the released cup tips across the receiving cup and tumbles away, disturbing the receiving cup as well (frames 183\u2013205, head, left_wrist and right_wrist). No stack forms; the receiving cup subsequently falls onto its side.",
+      "recovery": "Reacquire and upright the displaced cups, then align a held cup concentrically with an upright receiving cup and lower it until seated before releasing; human intervention is not inherently needed.",
+      "severity": "low",
+      "severity_evidence": "The cups tumble on the tabletop without visible breakage, spilled contents, or damage to surrounding objects.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The displaced cups remain accessible on the table; straightforward repositioning and uprighting can restore a valid stacking setup."
+    },
+    {
+      "start_frame": 299,
+      "end_frame": 334,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully lifting the right-side cup, the robot lowers it toward the cup lying horizontally rather than establishing a stable nested placement (frames 299\u2013309, head and right_wrist). It opens the gripper at frames 310\u2013312; the released cup tips and rolls away while the horizontal cup is also displaced (frames 314\u2013333, head and both wrist cameras). This second placement again fails to create a stack.",
+      "recovery": "Retrieve and upright the fallen cups before retrying; retain control of the next cup until it is visibly seated inside an upright receiving cup. Human intervention is not required by the visible state.",
+      "severity": "low",
+      "severity_evidence": "Two cups roll or slide across the tabletop, but no damage or spill is visible, and neither is shown falling off the table.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The cups need simple retrieval and uprighting on the accessible tabletop; no repair or substantial environmental reset is visibly necessary."
+    }
+  ]
+}

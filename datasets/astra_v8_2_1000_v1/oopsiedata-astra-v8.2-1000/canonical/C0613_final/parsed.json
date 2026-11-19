@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0613",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The first acquisition fails: at frames 66\u201395, image and left_ego_image show the gripper withdrawing while the spoon remains on the table. A second attempt succeeds, with the spoon visibly lifted at frames 166\u2013185 in left_ego_image and retained in wrist_image. The robot carries it to the open drawer and releases it at frames 253\u2013258; wrist_image shows the spoon resting inside the drawer beneath the withdrawing, empty gripper at frames 258\u2013264. No unrelated object displacement or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 66,
+      "failure": false
+    },
+    {
+      "start_frame": 66,
+      "end_frame": 101,
+      "failure": true
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 269,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 66,
+      "end_frame": 101,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure around the spoon's bowl region at frames 49\u201365 in wrist_image, the robot raises and withdraws its gripper without acquiring the spoon. Frames 66\u201395 in image and left_ego_image show the spoon remaining on the tabletop as the gripper moves away empty. At frame 101, the fingers begin reopening for the subsequent approach.",
+      "recovery": "Reopen the gripper, align its fingers on opposite sides of the spoon handle, close securely, and verify that the spoon rises with a small test lift before transporting it to the drawer; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the table, with no visible damage or meaningful damage risk; the consequence is a failed acquisition and delay.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible on the tabletop, so the robot can realign and retry without environmental resetting or human intervention."
+    }
+  ]
+}

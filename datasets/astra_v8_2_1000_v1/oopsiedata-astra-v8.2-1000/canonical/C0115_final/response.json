@@ -1,0 +1,116 @@
+{
+  "id": "resp_0e764c525f8b83b9016af8fecfca4887d2be7ed66a5b8943c0",
+  "object": "response",
+  "created_at": 1794703058,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703069,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0e764c525f8b83b9016af8fed7255c87d28823365605fa2870",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-P7eY7UyfPbNkYScVN9g9qxxW5lB6K8wHPqMlhcl-PnrUw63OTz35-AcbAa7LxP5ys7Uk7FcBpOKTk4eeXRlZUcXBaXPsQ2Q-R-nKfeH12NohsmZrw_PHo6hF2OT_-bSdGk4uuzfonaQAenMOuHcWfb0_Nmg3uEL3v_bdsksb3theCzFXdcy6ABWErt7-tPmCzPoTdRwrtPQ3g_ZbXgBFmSgUVKdO4tW1I_1WFzU7DRfHtpF5dbxSgUDw1N_dBa-2VZh-mh0XUGjWxY-4tYbDyGp5qXkTwConnt_mAqPdFIBRocmX59LIjrDYr_U-fzgB1UEbLctAjbDyIdjnfRS-kkJcBZyuQRedjQnLiaE9vLkWXPNa36Bn7wJE6gtoMszvv7u9xTyIasGZCDHHg-U48o4Blig0W-ENmS3e_bOyMXVd2s8GMkb1XswqPoD7NoJBquMvBPAoWmwqAkoreQle5epYjCMJhZ98R6az0NWtyO7OjoqmFz0uVsy9Efrvqky-NWWfUv3iwgGKVyMRmqT645YZ_4RvqKhs2_8Z1EegWCW4OaTvEzabrNs3qXeED9LKDlsAO1Y-TQQuksxAYEHR1slITln7K0ZS0b0L0MDAuPgf2-Hrj7b6u2HWtuPL1bEhCUO2JYndZJGrKogg9ka4gT-3N3AoOjpQ1PQZBVlfkNGf2_w-54GR8Q33ThK3S1U7Nt8HMDQRCi3RjNHwSPkBWgTnW1u_bEUxSOaz9XZ-izu-ZdplTzO8UbfO3X3wmDPGVcK6conGYRhytMVOvr_V_U80ru-uLbwrK_ucQqbF7EiRbmW36q_FXHtFZ6ptwZgPWY8zcRWD3QImk-3Da7_ozLGo2JNs8ZolVVf175aU0PjOLhNCWZSeIV_OYinOFGJpaRAOzNn76u3w-3NC_xkqCCostIXzpfLdHVtoSmZTTqjoeTkA7zNalnfFLxvsciKoKAiwOcQ2jhWBrTeIa6tGuSQlzngJjpULRNSBsphd7vEpLUp_vh3lbisXBbLljZUfOHfytSDQOYvJf8ILHC7Tazv4RdDb0VavzzJmoSsE2Pd6OLtVJwzaF17nLh8v69OOYtbPdGe0s43cipRL3AVchftgVSuuxz_BkHV--l0KOlLKYwEJx6Z2-jybBSCXMCLSyk7GcFA2fopbYk5Xz-KqSb3NMfUEm2dRyTehcAjPbj1y6Y6YhMQJHGk1Jde4LvsrJ1pdSQ2Fo_9CnvAKr0amm5IF5VJ1QGL-EN27YB6fPppKFqS7eq8sfF9sxUfThFWhIozsjMMH9PlhZnVSSc8ZWuWHR2wnNi_KqloO6zUsYuKsB5zcvkKCVzNiia006hpIgSknaMkiRHfkXl60Xe5cqcCWdM552INSgnf26WVpBs805batntSlP889q_cm6UlA6kk5Dqsw2X3YU694PvNdXEveJcveq1lXOdnE9I6EkWm6c1YDYGb3ajVJsXZu3X4lCByNT5CiLUBFf-pWrx7GUDWEvQAUIyBdJOfXDPDc1ZkyykDVd8lp4hSZawaZGmlf8WwbNJ003xDTH7agkE9XegkNfB-htNFay_1KualhZj3NYX_nUUSv2wcGVpNW8YmCsEYtuqS3Dlf81a5cKSDNf0VZ7gOn7cFhlQFglGkShocoibYefbBsSA0IGmzf9ITBH_lVfouQoG1r2PL6gtzkjBmcRzcHkUaG8N-QXzdIAbvzHc4er22drx4g49sPVlWV-13jaaHYFOPbojc2kbxvn6EIVzb8D4JqislElJzUy9PUfKM1mkjRxUGXXhd4V_RNMffw6_zAEmknSphdphAME2KxyOxwJSMAKqHd3qBkYI5gKfAubwlpJPzzjr0iKAAt7pFTemn2A8kRG3UCP4iFiWGGNqmdQnUBjbR8OMOpE0pEiB5DVIHA5e_6418kNoxEHnGRoZZMh9-rhT7TFeKmFlshVtqJmWD34k2SWJ1zyX29Otzf8-FscWXDTHDqtN5wt0XCPnUUOMeo5982m52xqlKKYpL_esYFJ86XHwfWHIEc-6sVCVHXLt2ih09IABiqhuqatbvzrBrEAWTvrOMdSxlam7qiwLjZ15EzMMUwhHhJYL5OFr-_art7-HBTW9IotNgfwAuAeoanePYC8cad62plfN51R43ZLoGQnVNOzweE7n_QdjjJb2M7Zho5W2H09HVvLqwa37h_zvQ-orK-CpR1W5eivQphf-iSBEDWQLu_X_H0UZfeQMtvj7tObTcxfE9dSG6ZDtq7twM77oxrh7putbE-lOM8qDs1nnOojGWEBJMSLvZhC8H6iABfJI5iMVkKbDHvdj1vHE9RxcraF4C4b3o_Gc7fHMpNItNz2_21nIQiVJYTQyvNrEnLMOLLak2KA4ObBsB-4BZIji2zSBn9o-p8tgXPm7l3VM5uAeesiDldpHIiKI-Km6PV3lnp7A-",
+      "summary": []
+    },
+    {
+      "id": "msg_0e764c525f8b83b9016af8fed8814887d299146013a3a8d61c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0115\n\n## Episode annotation\n\n- Language task: Pack the toys onto the wooden tray.\n- Success label: failure\n- Outcome evidence: The robot moves the yellow banana-shaped object aside, attempts to acquire the brown plush toy, and subsequently places the pink rabbit on the tray. Frames 584\u2013600 in wrist_cam and overhead_cam show the rabbit released onto the tray. At frame 649 in both cameras, the brown toy remains on the table, so packing the toys is visibly incomplete, not merely unconfirmed. The yellow object's removal may be preparation to clear tray space; its intended inclusion among the toys is ambiguous.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 254 | No |\n| 254 | 346 | Yes |\n| 346 | 650 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 254-346\n- Categories: grasp\n- Explanation: After closing around the brown toy at frames 243\u2013253, the gripper withdraws without it: wrist_cam frames 254\u2013280 show the toy remaining on the tabletop while the closed gripper moves away, corroborated by overhead_cam. The robot continues empty toward the tray and opens its fingers at frames 337\u2013345 without depositing a toy. This completed acquisition and empty transfer do not advance packing.\n- Recovery: Return to the brown toy, realign the open fingers around its body, close, and verify that it lifts with the gripper before transferring it to the tray; no human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The toy remains on the usable tabletop; neither camera shows damage or a meaningful damage risk from the missed acquisition.\n- Resetability: immediate\n- Resetability evidence: The brown toy remains accessible for another grasp, with no cleanup, repair, or human reset required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 79390,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 453,
+    "output_tokens_details": {
+      "reasoning_tokens": 59
+    },
+    "total_tokens": 79843
+  },
+  "user": null,
+  "metadata": {}
+}

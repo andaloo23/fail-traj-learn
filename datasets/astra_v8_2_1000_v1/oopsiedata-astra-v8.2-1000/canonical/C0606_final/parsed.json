@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0606",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The drawer is initially closed (frame 0, left_ego_image). The robot approaches and closes its gripper around the drawer handle (frames 78\u201385, wrist_image), then pulls the drawer outward, exposing its interior and side panels (frames 98\u2013114, image and left_ego_image). It releases the handle and withdraws (frames 120\u2013150, wrist_image); the drawer remains visibly open at frame 172 in image and left_ego_image. No failed attempt or unintended scene disturbance is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 173,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0006",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the robot separates the initially nested cups (frames 44\u201399), builds and releases a stable three-cup pyramid with two cups below and one above (frames 126\u2013138), then gathers and nests the cups again (frames 160\u2013225). Both grippers withdraw, leaving the compact nested stack stable on the table through frame 238. \u201cPack\u201d is interpreted as nesting the cups; no separate packaging container is visible. No failed acquisition, topple, or unintended side effect is observed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 239,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,17 @@
+# Episode: C0025_W05
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: failure
+- Outcome evidence: In base_image, the gripper acquires the pink can near the pink bowl and carries it toward the upper blue tray (frames 1453–1705). At frame 1749, the pink can is positioned over the upper tray beside the green can, but release is not clearly confirmed; both bowls remain on the table and the right red tray remains empty. This provisional window outcome reflects incomplete task execution, not a visibly failed attempt: no local failure is established. Earlier context is limited to frames 1398–1399, and later completion is unseen.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1400 | 1750 | No |
+
+## Failure annotations
+
+None

@@ -1,0 +1,74 @@
+{
+  "episode_id": "C0578",
+  "language_task": "Pick up the cloth with the mobile manipulator and put it into the sink.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot approaches the cloth at frames 44\u2013127 but lifts away empty at frames 131\u2013160, leaving the cloth on the counter. It moves toward the sink without the cloth at frames 157\u2013225, then remains there before returning at frames 337\u2013419. The final acquisition attempt is still unresolved at frame 457; no placement into the sink is visible. Thus an earlier acquisition visibly fails, while completion of the final retry is unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 131,
+      "failure": false
+    },
+    {
+      "start_frame": 131,
+      "end_frame": 157,
+      "failure": true
+    },
+    {
+      "start_frame": 157,
+      "end_frame": 225,
+      "failure": true
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 337,
+      "failure": true
+    },
+    {
+      "start_frame": 337,
+      "end_frame": 458,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 131,
+      "end_frame": 157,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image at frames 131\u2013156, the gripper rises away after its acquisition motions, while the cloth remains on the countertop beneath it. The completed attempt does not acquire the cloth; no prior secure possession or dropping is established.",
+      "recovery": "Return to the cloth, align the fingers around an accessible fold, close, and verify that the cloth lifts with the gripper before transporting it; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The cloth remains safely on the counter, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cloth remains accessible and the environment needs no physical reset before another attempt."
+    },
+    {
+      "start_frame": 157,
+      "end_frame": 225,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In base_image at frames 157\u2013195, the empty gripper travels away from the cloth toward the sink, then moves its fingers near the sink at frames 205\u2013224. Proceeding to the destination without acquiring the cloth cannot accomplish the required transfer; the cloth remains clearly visible on the counter.",
+      "recovery": "Stop the empty transfer sequence and return to acquire the cloth, verifying possession before moving to the sink; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "This is an unproductive empty transfer, with no visible collision, damage, or displacement of unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "Neither the cloth nor the surrounding environment requires resetting; only robot repositioning is needed."
+    },
+    {
+      "start_frame": 225,
+      "end_frame": 337,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In base_image at frames 225, 260, 300, and 336, the robot remains essentially stationary near the sink with an empty gripper while the cloth stays on the counter. This approximately eleven-second interval shows sustained lack of task progress rather than a brief ordinary pause.",
+      "recovery": "Resume task-directed motion toward the cloth and perform a verified acquisition before transport; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay only; no damage or concrete damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable and unchanged, so another attempt requires no environmental intervention."
+    }
+  ]
+}

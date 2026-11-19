@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0745_W03",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this observed window, rather than a visibly failed attempt. In base_image, the green can moves with the gripper from beside the blue bowl toward the upper blue tray (frames 719\u2013817), establishing acquisition and task-directed transport. The robot then adjusts the can over the tray through frame 1049; release and independent resting placement are not clearly established. Both bowls and the pink can remain on the table outside their destination trays at frame 1049. No local failure or harmful side effect is established. Earlier context is limited to frames 698\u2013699, and later execution is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

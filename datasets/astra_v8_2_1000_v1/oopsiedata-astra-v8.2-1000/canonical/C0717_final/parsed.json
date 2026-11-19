@@ -1,0 +1,74 @@
+{
+  "episode_id": "C0717",
+  "language_task": "Pick up the pen with the right hand and its cap with the left hand, then insert the cap onto the pen.",
+  "success_label": "failure",
+  "outcome_evidence": "The supplied task ambiguously says \u201cpen cap\u201d for the right hand and also \u201ccap\u201d for the left; the visible objects and handling support the interpretation above. Frames 350\u2013430 in left_wrist, right_wrist and top show acquisition and bringing the pen and cap together. They do not become securely assembled: at frames 910\u2013963 the cap tilts away and ends up separate on the table while the right hand retains the pen. Frames 991\u20131072 show the pen being released, and frame 1399 shows no subsequent assembly. This is a visibly unsuccessful attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 664,
+      "failure": false
+    },
+    {
+      "start_frame": 664,
+      "end_frame": 902,
+      "failure": true
+    },
+    {
+      "start_frame": 902,
+      "end_frame": 963,
+      "failure": true
+    },
+    {
+      "start_frame": 963,
+      "end_frame": 1072,
+      "failure": false
+    },
+    {
+      "start_frame": 1072,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 664,
+      "end_frame": 902,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After acquiring both pieces and aligning them, the robot remains essentially fixed at the insertion position without completing the fit; compare frames 664, 750, 840 and 900 in left_wrist and right_wrist. The subsequent separation confirms that this prolonged insertion effort did not securely attach the cap.",
+      "recovery": "Maintain possession of both pieces, withdraw slightly, reassess their axial and lateral alignment, and retry gently; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful insertion costs time; no bending, breakage or other damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both pieces remain available at the hands at the end of this interval, allowing realignment without resetting the environment."
+    },
+    {
+      "start_frame": 902,
+      "end_frame": 963,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "As the left gripper opens at frame 902, the cap is not retained on the pen. It tilts sideways at frames 910\u2013918 and comes to rest separately on the table, visible in right_wrist at frames 919\u2013963 and supported by left_wrist. This loses control of the cap before assembly is complete.",
+      "recovery": "Locate and reacquire the cap, verify its opening orientation, and repeat alignment with the retained pen; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The small cap falls onto the work surface without visible damage or disruption to unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cap remains on the accessible tabletop, so the robot can reacquire it without a human reset."
+    },
+    {
+      "start_frame": 1072,
+      "end_frame": 1400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following release and repositioning, both hands remain essentially stationary from frame 1072 through frame 1399 in left_wrist, right_wrist and top, with the pen and cap still unassembled and no renewed acquisition or insertion attempt.",
+      "recovery": "Resume by locating and acquiring the two pieces, then align and insert the cap; human intervention is not established as necessary by the images.",
+      "severity": "low",
+      "severity_evidence": "The sustained inactivity prevents task completion but causes no visible additional damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental change during this interval requires resetting; the available tabletop objects can be used for another attempt."
+    }
+  ]
+}

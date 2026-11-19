@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0780_W02",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, not a visibly failed attempt. In base_image frames 350\u2013500, the gripper moves from the upper-left area toward the green can; frames 550\u2013699 show continued alignment and closing around it without a visible completed transfer or empty withdrawal. At frame 699, both trays remain empty and the bowls and pink can remain on the table. These task-directed acquisition movements do not establish a local failure. Earlier context beyond frames 348\u2013349 and later execution are unavailable, so this outcome is provisional for the supplied window only.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

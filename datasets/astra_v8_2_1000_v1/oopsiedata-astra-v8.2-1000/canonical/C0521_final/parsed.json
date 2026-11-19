@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0521",
+  "language_task": "Move object into or out of container (ex: drawer, clothes hamper, plate, trashcan, washer).",
+  "success_label": "failure",
+  "outcome_evidence": "The supplied task does not specify the object or container; the visible approach most plausibly targets removal of the orange-handled utensil from the orange mug. Frames 0\u201360 in left, right and wrist show the robot approaching and aligning near the mug and protruding utensil. Frames 61\u2013103 in wrist show further alignment and gripper closure near the handle, but frames 104\u2013113 in right and wrist do not show the utensil extracted from the mug. Completion is unconfirmed rather than a visibly failed acquisition: no completed withdrawal empty-handed, dropped object, or other local failure is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 114,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

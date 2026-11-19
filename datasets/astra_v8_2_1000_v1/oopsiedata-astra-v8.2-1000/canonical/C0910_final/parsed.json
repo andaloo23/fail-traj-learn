@@ -1,0 +1,52 @@
+{
+  "episode_id": "C0910",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left stuffed toy is white and turquoise, and the largest bowl is the central white bowl. The robot instead handles the pink toy on the right, leaving it in the white bowl by frame 47. Frames 50\u201399 show the left toy still on the table and no further task-directed movement. This is visible wrong-object execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 7,
+      "failure": false
+    },
+    {
+      "start_frame": 7,
+      "end_frame": 50,
+      "failure": true
+    },
+    {
+      "start_frame": 50,
+      "end_frame": 100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 7,
+      "end_frame": 50,
+      "categories": [
+        "sequencing_semantic",
+        "grasp"
+      ],
+      "explanation": "In image_primary frame 7, the gripper is aligned around the right pink toy rather than the left white-and-turquoise toy. It closes around the pink toy during frames 14\u201321 but withdraws empty in frames 23\u201324 while that toy remains on the table, establishing a failed acquisition. It retries, lifts the pink toy in frames 33\u201336, and releases it into the largest white bowl at frame 47. The entire sequence targets the wrong object and does not accomplish the requested transfer.",
+      "recovery": "Return the pink toy to its original tabletop area, then acquire the left white-and-turquoise toy and place it in the white bowl, verifying possession and release visually; human intervention is not evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The wrong toy is relocated and an acquisition fails, but image_primary frames 23\u201349 show no visible damage or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the initial scene requires a straightforward transfer of the pink toy from the accessible white bowl back to the table; no repair or difficult retrieval is indicated."
+    },
+    {
+      "start_frame": 50,
+      "end_frame": 100,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In image_primary frames 50\u201399, the gripper remains stationary above the white bowl while the requested left toy stays untouched on the table. This sustained inactivity does not advance the still-uncompleted task; the recording end alone does not establish abnormal termination.",
+      "recovery": "Resume task-directed movement, identify the left white-and-turquoise toy, and transfer it to the largest white bowl after correcting the prior wrong-object placement; human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The sustained inactivity leaves the task incomplete but causes no additional visible damage or disturbance in image_primary frames 50\u201399.",
+      "resetability": "immediate",
+      "resetability_evidence": "This idle interval creates no additional environmental change requiring a reset; the robot can resume, with the earlier wrong-object relocation addressed separately."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Episode: C0401_W02
+
+## Episode annotation
+
+- Language task: stack the bowls
+- Success label: failure
+- Outcome evidence: Completion is unconfirmed in this observed window, rather than a visibly failed bowl-stacking attempt. In top at frames 350, 550 and 699, the bowls remain in the same overlapping arrangement; left at frames 589-600 shows their nested rims without a new stacking operation. Instead, the robot handles a brown plush toy, visible in left and right at frames 395-450 and 589-600. Earlier context beyond frames 348-349 and later execution are unavailable, so this outcome is provisional.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 350 | 667 | Yes |
+| 667 | 700 | No |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 350-667
+- Categories: sequencing_semantic
+- Explanation: The robot continues directing its gripper at the brown plush toy rather than the bowls: left and right show alignment and closing around the toy at frames 350-408, followed by transport with the toy held near the gripper at frames 425-589. At frames 597-600 in left, the toy leaves the fingers and settles on the table beside the bowls; whether this is intentional release is unclear. The gripper then returns toward the toy at frames 617-665 before withdrawing from frame 667. This sustained wrong-object behavior does not stack bowls. Frames 348-350 support continuity across the starting window boundary, although the earlier onset is outside the supplied interval.
+- Recovery: Leave the plush toy on the table, identify the bowls and assess their existing nesting, then grasp and place the appropriate bowl to achieve the requested stack; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: The plush toy is relocated on the tabletop, with no visible tearing, broken bowls or other damage in left, right or top through frame 667.
+- Resetability: immediate
+- Resetability evidence: The toy rests on the usable tabletop and the bowls remain accessible; a corrected bowl-directed attempt does not require a human environmental reset.

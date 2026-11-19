@@ -1,0 +1,116 @@
+{
+  "id": "resp_05cc1d1d0d8b44b6016af91e69fd8c87d1af0e216c117a9564",
+  "object": "response",
+  "created_at": 1794711146,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711152,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05cc1d1d0d8b44b6016af91e6c712087d185538ad5650ba969",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-R5xBrqY354iImGPS5PEdfiFDO-Kz0kvmUBlTCLl_vWf2EJnetzn2w2hV5ry2Ddwd7vvmHIM7XV9fR3-T_NUIdd2SU-ArSImy-C-7WRhI0el12TdaX6sqXaDoPhjYxl0qqbJI5Uz68fn_GTxibWSl2faGUc17VqS_hbdV0I5mQQJVfIXJmGEkfol9Wm6tTAV2rA4mw7HkmbF4hS5INT2pyl9nI2OGvQRUzvUC5w2xIeW3nv10wthQhjPkQZoa0IMcdrmT6VChFQdzyXxbP-tn7rprU56wJlAVntAEqheI9gRZjVsi2ZNXbetH4ooIV7uYiuxyRsy3nu08UXF7KkZ5uMGQhzUKmR-UBcIgsbCW22QDxQpWakK2lCfQlqDki8sbBi-vQK9hPMn_NDEHfaoVgNveJkhayqG44SvTCCSEBQTpNFIytc3X_Nkq40p_TYaAHxuDbPr0C7NSPK3m9FdpPhbFC-PBjlcEIla5fW4TggLvKHKwR554p6fkH-PH1evYyz41oIeJDIOMKauxAYKcnejhj5G2zktPUjr3Fs17hfturkD2itz4834YsaceLDum3EzIdtIQ7xMG_x3qFOcaOIzXqqLxHI-77zCcl_PppWxGRWnTuQC3b-3OIYAK9oFoAmc_nrzxP7iGEhTRWWmuyEVHpju0GwIHUuB-m94iGUKnRxfEUo2Y8U9lvBiSYOZ1L-vS0lPYARCPC8yCd2npqdGteWQpA6tzy11NqT_F5NGKicDwJOmFmz-8yH3au68fwurBMK5NWMI4QfkD8cvkx4b7BEWwYlpkWHK1lkWg6x2F31gbActYdiF0PcQ_XG-4TNYkR9RyF4cRMAoDy5uykKfL85flR-jNlEpjXS1PdR2o3revZsx3SpLKboiR1Wz2lW0vj9PaEkZk2cVlObECFFfpxHkPO9--wdXM4zJG7Q1QYv05ZaAaqqaANMa13VHwaGml_rR0jjvsfSUdJmZFie_1RAxxO_dbjV21qMSqSh_dRIHWpcQkt_4uPnrZUcQ3uPx264jppDEYP9uKu3RXOoslWBu1_x7ZDHK9dOmecL5gGi9W80BapRLy7x6536UR1hJ_rJuTS2i70x89Co6g_jiUF-S2F0t418mdWxvjxo4Z65SKvXYt9XcqQ1UrrlK6OyU1-P-Xet1dzCx44qvti7w5as8X542RUWRXzZoqH2kRtbVtFoMIxzUimcBa_4vICOpyKP4SvS84zKeevUR2fw9aItN_e1oJwFH6U-SxcyW219Hcx87wU_5UsWC0SSSmH3UvJOS_NgaCBeuSbgXvK7sbzP-PRYuBnmmXWph1KAkiSJM2odSJU2n09gjRjhjG-YVKmfRaH_OcOm6p9OEWkExP_FvssSXNq_dixophIXlKDOc8GoLXF7xTRl_DKHqBzmKWwm4ZJ-C0_PRfPZjD6tuViCMn5qn9T33_50dIUtHKxdlyvP5iqq6P_sZDpZVon9_LVAkgqpAPfykBKAUNyzntRsk5d2h3Vli3f-I88wcw1pQ70fEH8n1ScRaeTAs5htTL7ndMoQyK5JFZIgy_bfYBOpHkPfhmjbLRvUzaC6nlABGDNgbV8qHAz0ou5Gz6hooWHLlE0D7wEitPKhjd_gKJfv_cFr1ip_MjxPxHPDAvK6zazBIV00ZZEvWnqDlxYG4E5ZyvUPSVzu77-zhHCg_06EkvI47aiQ_oCr0fPIOl-ueTb7mbjo09khSWjdTv2qgzdQ2kCNlHRGkuE28-Un6i0LuiNVaB0-G-HbT4ir8jRIr11pvKOuj_HlZgYXzOdR5q_9EPSHlaTRd5pOyrEzNWh6qvt14Gfbxo0VtuA55LFxP8Msryi61NQmxP9HEgJj0EY7rjSTp1Gb4amP2zxvKFCTLWK0nWxsLWKn4DNG9s2KyCnzi2WbLoq7njIZHO7dqDXBO_xWOaQZDpZoHDszN0GdG8VapLVqvqIy19-yFz3dlPFuFDDIlGWKquKgywU7EVPQfkCZZj0fFB_UdoIRzMBJ51UD_CO1xGOZvZLbIq6U2qIY-tivohw0-rEyRDctrmf2g5u8uwNxzLpS4rkKlybmN6d3paMgN562IcP2x1qHc84h7WhvnZoGcuzwNvEfdLJ343_t7wZ4U9WeE47gjkE6qbKB3YqZaQfOq1wXr8if2xODycmo0tN66fSSElvD0VYQzuS3CvM-xLkdiOSKlkn3ZKFN2eERrQgXQ9UR1JlM-0tGCJ7hXObd8U1JmSVXlPlV2WJGs9LeTvGoCUKafvv4olZxkjrv_R8tyH3K2RCf9SH3blJfCJQ-FCb_aoNupDeHKu46dgBRKS9p1lKI5xjsFPyDJwOSwZnUFrP0fzzhRCTvTtQneo3y6rvgTUgSC8vTBOu4C0LCYi5T_7lHfAWRW32ij27dX9Vk7Un_OWRgwaAmDEWPbJOWOX-nxnA5VKaHWTHBQiCLtColPCvSq8bD8zeoqcdLypkjp0fzP3T2IW5mL416RFy01aH5CNWaHWYKnBGc68VLCQoOr1EuMdvwTVRbWAeZx5PM63pLfWC-gRzvteBPy-9DAd9mYq2-oVHxMBeIgzpIIjyfoMfeR-mBJtzaamB6XQTUWMLR0bspUseMaBZAoW-5SuAOA9HTi9UGu7g66UXT2r2e7G4fP7dvYCZ7VKF6U4hqiJkCwHDFlTwjcOyV9fls_Wc-p-Uo88CdWMWm7oINnQuxNwZ-NA61zD9xZbFMKKTzeZ96yxpgvee2pM4jDdkMYfbSkOKOhiEleXqWMV2dX0xkJ6rGkXDoUAV7-T0iBcSN8IXVoItxKRK6JsOis6Ub8-vcXwyFwzKC37hrUfRg-tE_G99pMajQa6slxSxPawho92sretuVXJNGUjnodmTb7IkZ1JmZippuPVKrONf_dTnhNfqjaxVZHehhbsLW3tmMHhFgoq6K4JtXLKcoTmuRilMh6w_EDqNcSeHPro75WY7qzySUcrQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_05cc1d1d0d8b44b6016af91e6e769087d1a94ffc483e5cfcf6",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0619\n\n## Episode annotation\n\n- Language task: Place the yellow block next to the blue rectangle.\n- Success label: success\n- Outcome evidence: Frames 0\u201361 in wrist_cam show the yellow block between the gripper fingers during positioning. The fingers open in frames 62\u201370, and the arm withdraws in frames 72\u2013100. Frames 80\u2013100 and 240 in left_base_cam and right_base_cam show the released yellow block standing on the table beside the blue rectangle; wrist_cam also shows their neighboring positions after withdrawal. The placement remains stable through frame 240, with no visible failed attempt or unintended disturbance of other objects.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 241 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43756,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 277,
+    "output_tokens_details": {
+      "reasoning_tokens": 100
+    },
+    "total_tokens": 44033
+  },
+  "user": null,
+  "metadata": {}
+}

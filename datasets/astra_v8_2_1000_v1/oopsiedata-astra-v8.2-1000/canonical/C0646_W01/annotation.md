@@ -1,0 +1,26 @@
+# Episode: C0646_W01
+
+## Episode annotation
+
+- Language task: align one of the two cubes to the top right corner of the box
+- Success label: failure
+- Outcome evidence: In frames 0, 100, 200 and 349, top shows both cubes remaining in the box without visible repositioning, while left and right show the grippers remaining outside the box without a discernible acquisition or alignment attempt. Completion is not confirmed in this window; the visible issue is sustained inactivity, not a failed physical grasp. Later episode context is absent, so this outcome is provisional.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 350 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 0-350
+- Categories: task_not_attempted
+- Explanation: Across frames 0-349 in left, right and top, the grippers remain essentially in their starting positions and neither cube is visibly manipulated. This approximately 11.6-second interval shows sustained absence of task-directed action rather than a brief pause during an attempt. The reason for inactivity is not visible, and it may continue beyond the supplied window.
+- Recovery: Begin a task-directed approach to an accessible cube, acquire or controllably push it, and align it with the requested box corner; no environmental human intervention is visibly needed.
+- Severity: low
+- Severity evidence: No collision, object displacement or damage is visible; the consequence is lack of progress.
+- Resetability: immediate
+- Resetability evidence: The box and cubes remain undisturbed and available for an attempt, so no physical scene reset is needed.

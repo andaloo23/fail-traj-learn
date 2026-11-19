@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0561_W03",
+  "language_task": "spread the folded towel on the table",
+  "success_label": "failure",
+  "outcome_evidence": "The towel remains folded and unchanged in left and top at frames 700, 850 and 1049. Across left, right and top, the grippers remain away from it without discernible approach or manipulation throughout this window. This is sustained inactivity, not a visibly failed grasp attempt. The outcome is provisional for the supplied window; earlier context beyond frames 698\u2013699 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 700,
+      "end_frame": 1050,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 700\u20131049, approximately 11.6 seconds, left, right and top show no discernible task-directed gripper approach, acquisition or unfolding; compare frames 700, 850 and 1049. The towel stays folded in left and top, establishing sustained lack of progress rather than a brief pause. Context frames 698\u2013699 show the same state, supporting continuity across the starting boundary; inactivity may continue beyond this window. Its cause is not visible.",
+      "recovery": "Approach an accessible towel edge, grasp a layer, and unfold and spread the towel over the clear tabletop; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress, with no visible damage, disturbance or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The towel remains accessible and the environment undisturbed, allowing another attempt without environmental resetting or human intervention."
+    }
+  ]
+}

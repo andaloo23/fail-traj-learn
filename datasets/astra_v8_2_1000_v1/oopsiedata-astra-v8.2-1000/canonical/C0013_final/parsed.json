@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0013",
+  "language_task": "Fold the yellow cloth.",
+  "success_label": "failure",
+  "outcome_evidence": "The cloth starts spread on the table (frame 0, overhead_cam and wrist_cam). The robot acquires and lifts part of it at frames 310\u2013333, but the subsequent placement leaves irregular overlapping flaps and a bunched section rather than a completed fold (frames 405\u2013418, both cameras). The cloth remains in that state after the gripper withdraws through frame 470 in overhead_cam; this is a visibly unsuccessful folding attempt, not merely an unconfirmed acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 340,
+      "failure": false
+    },
+    {
+      "start_frame": 340,
+      "end_frame": 414,
+      "failure": true
+    },
+    {
+      "start_frame": 414,
+      "end_frame": 471,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 340,
+      "end_frame": 414,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After establishing control of the cloth, the robot draws the lifted portion into uneven overlapping flaps rather than aligning it over the remaining cloth (frames 340\u2013377, overhead_cam and wrist_cam). It lowers and releases this bunched arrangement at frames 398\u2013413, leaving a curled section and misaligned layers instead of completing the fold.",
+      "recovery": "Reacquire an exposed edge, spread the cloth flat, then bring one edge over to the opposite edge and smooth the fold before releasing; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cloth is left rumpled on the tabletop; neither camera shows tearing, damage, or disruption to other objects.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning to a clean starting state requires spreading and flattening the cloth, a straightforward reset that could be performed by the robot or a person without repair or retrieval."
+    }
+  ]
+}

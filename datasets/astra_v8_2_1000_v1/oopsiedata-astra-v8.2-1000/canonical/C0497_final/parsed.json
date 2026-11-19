@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0497",
+  "language_task": "Place the black spoon in the sink.",
+  "success_label": "failure",
+  "outcome_evidence": "The black spoon remains on the counter beside the sink in left frames 0, 27, 64 and 74. The gripper approaches its handle but withdraws without it; wrist frames 18\u201325 and 63\u201374 corroborate the acquisition attempts and separation. Placement is not merely unconfirmed: the spoon is visibly still outside the sink at the end.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 20,
+      "failure": false
+    },
+    {
+      "start_frame": 20,
+      "end_frame": 25,
+      "failure": true
+    },
+    {
+      "start_frame": 25,
+      "end_frame": 64,
+      "failure": false
+    },
+    {
+      "start_frame": 64,
+      "end_frame": 75,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 20,
+      "end_frame": 25,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the fingers close near the spoon handle in wrist frames 18\u201319, the gripper rises without lifting the spoon in left frames 20\u201324. The spoon remains on the counter, establishing an unsuccessful acquisition rather than transport toward the sink.",
+      "recovery": "Reopen and realign the fingers around the handle, lower to an appropriate grasp height, and verify that the spoon lifts with the gripper before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon stays on the counter with no visible damage or disruption; the consequence is a failed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible beside the sink, so another grasp can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 64,
+      "end_frame": 75,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following renewed positioning near the handle in left and wrist frames 54\u201363, the gripper lifts and retreats empty in left frames 64\u201374. The spoon remains on the counter, while wrist frames 64\u201374 show increasing separation rather than retained possession.",
+      "recovery": "Return to the spoon, align the open fingers around its handle, close securely, and confirm a successful lift before moving over the sink and releasing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition leaves the spoon on the counter; no damage, spill or harmful collision is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "No displaced obstacles or damaged objects require resetting, and the spoon remains available for another attempt."
+    }
+  ]
+}

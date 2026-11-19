@@ -1,0 +1,17 @@
+# Episode: C0552
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: success
+- Outcome evidence: In base_image frame 0, two cans and two bowls lie outside the empty trays. The green can rests in the upper blue tray by frame 1300, and both cans are there by frame 2300. The blue bowl is released in the right red tray by frame 2900; frames 3600–3700 show the pink bowl nested inside it as the empty gripper withdraws. Frames 3800 and 4143 confirm both cans and both bowls remain in their intended trays, with no loose task objects remaining on the tabletop. No failed acquisition, sustained unproductive behavior, or unintended side effect is established across the episode.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 4144 | No |
+
+## Failure annotations
+
+None

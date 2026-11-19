@@ -1,0 +1,62 @@
+{
+  "episode_id": "C0902",
+  "language_task": "Pick up the pen with the right hand and the cap with the left hand, and fit the cap onto the pen.",
+  "success_label": "failure",
+  "outcome_evidence": "The supplied task redundantly says \u201cpen cap\u201d and \u201ccap\u201d; the visible pen and separate dark cap support the interpretation above. Frames 205\u2013358 in left_wrist, right_wrist and top show acquisition and bringing the parts together. The insertion attempt does not join them: at frames 583\u2013641, right_wrist shows the cap lying sideways on the tabletop while the pen remains in the right gripper. Frames 664\u2013772 show the pen returned to the table, still separate. The robot then remains stationary; a person repositions the parts at frames 1267\u20131399. Robot completion is not visible, and the unsuccessful assembly attempt is visible rather than merely unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 487,
+      "failure": false
+    },
+    {
+      "start_frame": 487,
+      "end_frame": 583,
+      "failure": true
+    },
+    {
+      "start_frame": 583,
+      "end_frame": 772,
+      "failure": false
+    },
+    {
+      "start_frame": 772,
+      "end_frame": 1259,
+      "failure": true
+    },
+    {
+      "start_frame": 1259,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 487,
+      "end_frame": 583,
+      "categories": [
+        "manipulation",
+        "grasp"
+      ],
+      "explanation": "The held pen advances offset beside the cap rather than seating inside it (frames 487\u2013535, left_wrist and right_wrist). The left fingers then open (frames 543\u2013558), and the cap appears sideways on the table by frame 562 in right_wrist instead of remaining on the pen. This unsuccessful insertion and loss of cap retention prevent assembly; the views do not establish a hidden cause.",
+      "recovery": "Withdraw the pen, reacquire the cap, align its opening with the pen tip in both wrist views, and insert gently while retaining both parts until seating is confirmed; no human intervention is inherently required.",
+      "severity": "low",
+      "severity_evidence": "The cap remains on the tabletop, with no visible damage to either part or the environment.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both parts remain accessible to the robot; a new grasp and alignment attempt can be made without an environmental or human reset."
+    },
+    {
+      "start_frame": 772,
+      "end_frame": 1259,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After returning the pen to the table, the robot holds essentially the same open-gripper poses for approximately ten seconds while the parts remain unassembled (frames 772, 900, 1100 and 1258, left_wrist, right_wrist and top). No discernible acquisition or assembly progress occurs during this sustained stall.",
+      "recovery": "Reobserve the separate parts and resume acquisition and alignment rather than remaining idle; after a person enters, keep motion stopped until their hands are clear and safe operation is verified.",
+      "severity": "low",
+      "severity_evidence": "The stall delays completion but causes no visible damage or additional object disturbance.",
+      "resetability": "immediate",
+      "resetability_evidence": "Stalling itself requires no physical reset; the parts remain on the usable tabletop for another attempt."
+    }
+  ]
+}

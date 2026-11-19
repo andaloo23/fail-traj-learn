@@ -1,0 +1,116 @@
+{
+  "id": "resp_038a6bbfea60c542016afbbeec89f887d2a3162259100d35d8",
+  "object": "response",
+  "created_at": 1794883310,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794883322,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_038a6bbfea60c542016afbbef5f40087d2b379562a478c6d8b",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-777Y1ffNHaZOI9AQlPoT51vE1FQMdw1YvaWRXlNWiwqGTdNhJYF2032weZOngSKbXjt1tQ4dLhgJqGudlgtTUllvJJ14XoQ6wqQIVPQA8qYEgyoM9xizVyq_SRIgrGI7rUVLaADzeJXtWSn2pWA5Fh2hrei_IpYXd8ZeJLqv4WoYwPLv4v9p0WUwU6hO2p2lNOxMnnhIq2iCssd3pTHA9n9d0HhpO4qkHEba89wEir45rxePNNFewy7o7xG_LfXkOqvpnkK1CA2UvxrOlorHS_AzrXeJ7lkMwOE9zQJ5dFJ4gO-KCO6x_Gk77pwOouYJw92yMyG8m437chk5sF2PId87yWWUkgzbyAUk-xjxTkWBzJlPy-OLfocHex4Q5EOmYL3HtThqI1uq_LyOQf_sAnyx41-op8L5r6wUvT7F6nKy1qHhlLhDMi6lT77bpBprw0ydcY8TILV5YrRMtyhXocTpYtLRaEJXs9rUj8ERXOWak8ZaFvgfjRFkG0RMm1tRs8r79f2m8XAwyYiheGuIIwceWs_wdl0VqUJdwkTSen7GJvswhl8ODGHmG9Ud2BxyLRL3-Q223GzKrzP3q13Yv7gGspm6jDVC1S6gMCFjDMS45Ya_TYzEtB4O4-YgvWX3WiAQF8utqAzavvwkZRonu7Ma-LbTQlCgSxirHbAdu46TuBfHDG6cF1gkbvIQaCz9l5uES6QQ6SALcM0vdOGqctwSolBSoq5GZ_yQRmY_5hL7rNLPU8Hu4zyO1ub-DnYDR0xK0uBVIq8EOvir8XCCgCLJCvMgfEOqvi6tqy33vKQ5pbPuLAq6AnFrXk0lJoV9keMD6J1Gk47iJBlWxecx8e3m7fxqgClWXGdaNYTDjFRlweFthGC3BswgPuNTap4yVDMzgPj-2fE6epkRM3HsWIv7syqocLELqnZv1YIcBvKjtqWvLhju40iVX9nlOnahwxq69Dyvh6lAT1HIV1bLLFFvdtQq0OjO1gs_MghIjm6-ke4WkEDoc6mYxK49VlnAXt23L0xcn4h8fUoE1yPByTDdcxcQKqkMC6L2Cjay9ZTXNN-riSpSrSQB5Day_lqdSqeTog4RSSuFMu_v9ZZ781f1adaCi_AaPaULsWsgwKctgUBIFMEdIp5aIiFALs_AHTIGzYEOc2x1131_tdvCOE9jrzWzSF-7ShK_KIAxNaL3MHrR3FmggOlhMGy09aD09sDU0PEGh2PB1N3LqwvHprCvFHe8lURPhtBrxqO4GXqjUl_4QNtGGbbtthMULhZcJF0Tt7gbHIl21nD2EWSmaTTw_BxlXF0bQd9cnxm-aoydduixybG5oKTpQpGHHrfA5_dAUEQwB4smrtNx-1U1oLE36S8fzUgY-gjsTeqXsQSs6oMWHb2dQrO-IhNsg9g9RC-1CS3n5SVDuHpLUMbJQ3YFpEOVOLE5gYsFxFDT0B4iGD_RCIHH6A9S-p1AV8pxD015v1Kk7yfGTq7MboMAcNFgbGvdlp0sBd_AThJeNKC9c6S-67sz8JmjGlBKvYdjSVgfdGNr9l9EPha-_m5t44-RKEWLWura_o7gFrnS6zAMj2olOVIfrOWD-aiPt92fqk_RAeCooI4KwuoHLyRO5F4z-CP_dka9Y3xuHUxRY7Yng6DMAxduHtCgLq7PSZTyMwG3g-wm2MNi9SCFKIirjZWoPPQZhFkJPx0545Bfp2VfsY9y_pIKg--xdb7yABmJY44rWxK6e0VTPw6XTxBYJkV_ULDHXBtmfaJIqoO_IcGpDdZxxhSFJMGG_Ehb7bKqriuRar3nESfQY_QJWcLPlhptaJL9QJmhnQ3xuKZ1d9n8bTQ4X7uPvcahTNWaQNVKkVgKXCcd4Pxu9xqei0b_drxitwAN4B0spjfAAw47qYJeor-2ogPatJxKEPgv6tQN2KpcvMASq5AEZqAezhm_YeheaO9zN174eSQV5CAozmd3yvG0mstT85HAvOyAUQTJ1F9A-voiu7fR9ucEY_BvuIAjnON5exVa3WKD53VI328FzRIJrnp--4mu_rq_kHbS2WcU6a7H9XVG3v6qTcUltb3q2h12zdTPTGMfuFKYx4K9ZIdiee9EBc81j_IVNmUedODZ9v5ooBlKqul3Z3WbN5NqhwMiQCMV61tu6uE9HnL4To2hFbqEVDTayZpGnOtLQerbOrot_C_zjw638Oymu3W3vaCBcA_v_b0hgj6U-Tbg4G7TrJNdF5Z5NBOOwH8j2z3wShBrBxn9puqvsk9y_0vAC4ivRdPWBMHYwIIajPQzqaaiQVyMLOzoYaLeY0ObEzeDL-okIKD4_-FaI4-jVL4qYK3Ys4KmWzlRgNgZ0WUrYLfdt3Xa5fpEZGoS7dflJax50R2Lv9xVMb9WBQYIlmRwUQ-zv6J9Q8VqGAgmFTesPWOtTCmWUkWWPhoqDMjuv4M6B3aii9mwFhWyNJ9jMwJb24yzGNl8qvX1kFGSrs-mE_yPfoeV9Xg1Piojk3IP5Z-tbvNbc73b7Sorb0zvSuBEvAUjW68-i9puhcB6XgqnOQOMMzauXbEoO1g_pwMpH78mHUJuZd9iW8Bab6vw0NqFQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_038a6bbfea60c542016afbbef61e3887d299d38ca94c5b2602",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0561_W01\n\n## Episode annotation\n\n- Language task: spread the folded towel on the table\n- Success label: failure\n- Outcome evidence: In frames 0\u2013349, the left and top cameras show the towel remaining folded in the same location; the left, right and top cameras show no discernible task-directed gripper approach or manipulation. Completion is not observed in this window, with sustained inactivity rather than a visibly failed grasp attempt. Later episode context is absent, so this outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Throughout frames 0\u2013349, spanning approximately 11.6 seconds, the grippers remain away from the folded towel without discernible approach, acquisition or unfolding; compare frames 0, 150, 300 and 349 in left, right and top. This sustained inactivity makes no visible progress toward spreading the towel. Its cause is not visible, and it may continue beyond the supplied window.\n- Recovery: Begin a task-directed approach to an accessible towel edge, grasp it, and progressively unfold and spread the towel on the clear tabletop; no environmental human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The towel and surrounding scene remain undisturbed, with no visible damage or meaningful damage risk; the observed consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The towel remains in its original folded, accessible state on the table, so another attempt requires no visible environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62874,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 373,
+    "output_tokens_details": {
+      "reasoning_tokens": 13
+    },
+    "total_tokens": 63247
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0892_W10",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: completion remains unconfirmed, not a visibly failed acquisition attempt. In base_image, the green can rests in the upper blue tray and the bowls remain stacked in the right red tray, while the pink can remains on the tabletop (frames 3150, 3300, and 3499). The empty, open gripper withdraws leftward and reorients beside the remaining can across frames 3150\u20133499 without an observed grasp attempt, collision, or sustained stall. This short repositioning interval does not establish a local failure. Earlier execution beyond the supplied context and later completion are not visible.",
+  "segments": [
+    {
+      "start_frame": 3150,
+      "end_frame": 3500,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

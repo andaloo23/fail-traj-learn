@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0889_W02",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisionally, the task is not completed in this window: overhead_cam shows the plate remaining empty at frames 350, 420, 530 and 699, while wrist_cam shows the beige toy outside its rim. Gripper closures followed by withdrawal without transferring the toy establish unsuccessful acquisition, rather than only unconfirmed completion. No damaging collision is established. Earlier context beyond frames 348\u2013349 and later execution are unavailable; the window ending does not establish episode termination.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 367,
+      "failure": false
+    },
+    {
+      "start_frame": 367,
+      "end_frame": 406,
+      "failure": true
+    },
+    {
+      "start_frame": 406,
+      "end_frame": 530,
+      "failure": false
+    },
+    {
+      "start_frame": 530,
+      "end_frame": 649,
+      "failure": true
+    },
+    {
+      "start_frame": 649,
+      "end_frame": 660,
+      "failure": false
+    },
+    {
+      "start_frame": 660,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 367,
+      "end_frame": 406,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After finger closure at frames 361\u2013365, the gripper shifts away and rotates without lifting the beige toy during frames 367\u2013405. wrist_cam shows the toy remaining outside the plate, and overhead_cam shows no transfer onto the plate. This is an unsuccessful acquisition; reopening begins at frame 406.",
+      "recovery": "Reopen, align the fingers around the toy rather than beside it, and verify a clear lift before transferring it over the plate; human intervention is not visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the tabletop, with no visible damage to it, the plate or the robot.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible beside the plate, allowing a corrected attempt without environmental resetting."
+    },
+    {
+      "start_frame": 530,
+      "end_frame": 649,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the preceding repositioning, the robot remains nearly stationary with its gripper open beside the toy for approximately eight seconds. overhead_cam and wrist_cam at frames 530, 560, 600 and 640 show no acquisition or placement progress; small adjustments do not produce a discernible advancing action. Renewed finger closure begins at frame 649.",
+      "recovery": "Resume a deliberate, clearance-checked approach and grasp of the beige toy, then verify possession before moving toward the plate; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is delay, without visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "Stalling does not visibly alter the scene or require a person to reset anything."
+    },
+    {
+      "start_frame": 660,
+      "end_frame": 700,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure at frames 649\u2013659, the gripper rises and changes orientation at frames 660\u2013699 without carrying the beige toy onto the plate. overhead_cam shows the withdrawing gripper and empty plate, while wrist_cam shows the toy remaining beside the rim rather than securely moving with the fingers. The unsuccessful withdrawal continues to the window edge; its continuation or subsequent recovery outside this window is unknown.",
+      "recovery": "Stop the empty transfer, reopen and reacquire the toy with clearance from the plate rim, verifying that it rises with the fingers before proceeding; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "No breakage, spill or damaging impact is visible; the consequence is another unsuccessful acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and plate remain usable and accessible, so a corrected attempt does not visibly require an environmental reset."
+    }
+  ]
+}

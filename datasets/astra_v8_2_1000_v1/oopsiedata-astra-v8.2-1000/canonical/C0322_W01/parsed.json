@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0322_W01",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "In overhead_cam and wrist_cam, the robot approaches and grasps the beige toy (frames 40\u201370), but releases it onto the table outside the plate (frames 155\u2013167). It approaches the toy again and closes the gripper (frames 200\u2013250), then opens beside the plate again at frames 345\u2013349. The plate remains empty and the other toys remain on the table at frame 349. This is a provisional window outcome with a visibly unsuccessful placement; later completion is unknown because later context is not supplied. No unwanted collision is clearly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 155,
+      "failure": false
+    },
+    {
+      "start_frame": 155,
+      "end_frame": 168,
+      "failure": true
+    },
+    {
+      "start_frame": 168,
+      "end_frame": 345,
+      "failure": false
+    },
+    {
+      "start_frame": 345,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 155,
+      "end_frame": 168,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the beige toy toward the plate, the robot opens its gripper outside the rim at frames 155\u2013160 in wrist_cam. The toy falls onto the tabletop and moves farther from the plate through frames 161\u2013167, also visible in overhead_cam. This release does not place the toy on the plate.",
+      "recovery": "Reacquire the beige toy, lift it clear of the table and plate rim, and position it fully above the plate before lowering and releasing; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The small toy lands on the tabletop; no damage to the toy, plate, or robot is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible on the table, allowing another acquisition attempt without environmental resetting."
+    },
+    {
+      "start_frame": 345,
+      "end_frame": 350,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "Following another acquisition and movement toward the plate, the gripper opens at frames 345\u2013349 in wrist_cam with the beige toy still outside the plate rim; overhead_cam likewise shows the gripper beside rather than over the plate. This repeats an off-plate release rather than completing placement. The release is still unfolding at the window boundary, so its final resting position and continuation are unknown.",
+      "recovery": "Stop releasing outside the plate, reacquire the toy if necessary, and verify that the entire toy is above the plate interior before opening the gripper; no human intervention is established as necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is another unsuccessful placement beside the plate, with no observed damage; the final landing is not supplied.",
+      "resetability": "immediate",
+      "resetability_evidence": "The visible toy and gripper remain over the accessible tabletop, with no demonstrated need for human resetting; the final release outcome remains outside this window."
+    }
+  ]
+}

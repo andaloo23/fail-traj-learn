@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0880_W05",
+  "language_task": "take tape measure out of bowl and put it in bowl again",
+  "success_label": "failure",
+  "outcome_evidence": "Frames 1400\u20131749 show no discernible task progress: the tape measure remains in the green bowl in left and top, and the grippers remain essentially stationary in left, right and top (for example, frames 1400, 1550 and 1749). Neither removal nor replacement is visible. This is a provisional window outcome with sustained inactivity, not a visibly failed acquisition; completion outside this window remains unconfirmed because earlier execution beyond frames 1398\u20131399 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1400\u20131749, approximately 11.6 seconds, left, right and top show essentially unchanged gripper positions without a discernible approach, grasp or lift; left and top show the tape measure remaining in the bowl, including frames 1400, 1550 and 1749. This sustained inactivity does not advance the task. Context frames 1398\u20131399 visibly show the same configuration, supporting continuity at the starting boundary independently of the prior prediction. No cause is visible, and the inactivity may continue beyond this window.",
+      "recovery": "Begin a controlled approach to the tape measure, align the gripper while clearing the bowl rim, grasp and lift it out, then lower it back into the bowl and release; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only lack of progress is observed; no damage, unwanted collision or meaningful object displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright with the tape measure inside and the workspace undisturbed, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

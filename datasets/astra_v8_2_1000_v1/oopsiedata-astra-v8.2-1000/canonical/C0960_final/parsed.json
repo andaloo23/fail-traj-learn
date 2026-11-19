@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0960",
+  "language_task": "set the mushroom on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the mushroom starts on the bare tabletop (frame 0), is acquired and lifted (frames 23\u201329), and is carried over the green cloth (frames 30\u201338). The robot continues adjusting its position and orientation while holding it (frames 39\u201369). At frame 69, the mushroom remains in the gripper; release and independent support on the cloth are not visibly confirmed. This is unconfirmed completion, not an established failed grasp or placement attempt.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 70,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

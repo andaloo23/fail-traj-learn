@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0269",
+  "language_task": "put the corn on the green cloth",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches and grasps the corn in frames 10\u201325, then visibly lifts and transports it toward the green cloth in frames 26\u201346. In frames 48\u201350, the corn appears to contact the cloth but remains between the gripper fingers; release and independent placement are not visibly confirmed. Completion is therefore unconfirmed in the observed episode, rather than a visibly failed placement attempt.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 51,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

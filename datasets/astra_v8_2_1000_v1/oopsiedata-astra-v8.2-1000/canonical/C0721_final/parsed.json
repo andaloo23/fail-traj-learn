@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0721",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot places the carrot in the green bowl (wrist_cam, frames 177\u2013185) and the pink rabbit in the purple bowl (overhead_cam and wrist_cam, frames 301\u2013306), but then places the orange fruit and brown food-shaped item with the rabbit (wrist_cam, frames 529\u2013536 and 716\u2013723). The blue toy is also placed in the purple bowl at frames 975\u2013980. At frame 1290, wrist_cam shows food and toys still mixed in the purple bowl and only the carrot in the green bowl; this is visible incorrect sorting, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 503,
+      "failure": false
+    },
+    {
+      "start_frame": 503,
+      "end_frame": 540,
+      "failure": true
+    },
+    {
+      "start_frame": 540,
+      "end_frame": 688,
+      "failure": false
+    },
+    {
+      "start_frame": 688,
+      "end_frame": 724,
+      "failure": true
+    },
+    {
+      "start_frame": 724,
+      "end_frame": 1011,
+      "failure": false
+    },
+    {
+      "start_frame": 1011,
+      "end_frame": 1291,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 503,
+      "end_frame": 540,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot carries the orange fruit toward the purple bowl containing the pink rabbit (wrist_cam, frames 503\u2013527), then releases it into that bowl (overhead_cam and wrist_cam, frames 529\u2013536). This mixes food with a toy instead of grouping it with the carrot already in the green bowl; acquisition itself succeeds.",
+      "recovery": "Retrieve the orange fruit and place it with the carrot in the green bowl, checking category assignments before release; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The orange fruit remains contained in an upright bowl, with no visible damage or meaningful damage risk.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "A single straightforward transfer of the misplaced fruit restores the appropriate sorting state; no repair or difficult retrieval is required."
+    },
+    {
+      "start_frame": 688,
+      "end_frame": 724,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot carries the brown rounded food-shaped item toward the purple bowl (wrist_cam, frames 688\u2013714) and releases it beside the rabbit and orange fruit (overhead_cam and wrist_cam, frames 716\u2013723). Its matching split construction and food-like form support treating it as food, though its exact food identity is unclear; placing it with the rabbit does not separate the categories.",
+      "recovery": "Move the brown food item into the green bowl and correct the earlier misplaced orange fruit; verify the two groups before proceeding. No human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The item lands inside the bowl without visible breakage, spilling, or other damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The newly misplaced item is accessible in the purple bowl and needs only a straightforward transfer."
+    },
+    {
+      "start_frame": 1011,
+      "end_frame": 1291,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following withdrawal, the robot remains stationary with an empty gripper throughout frames 1011\u20131290 in overhead_cam and wrist_cam. The mixed contents remain unchanged for about 19 seconds despite sorting still being incorrect, establishing sustained unproductive stalling rather than a brief pause; the file ending does not establish abnormal termination.",
+      "recovery": "Reinspect both bowls and transfer the orange fruit and brown food item to the green bowl, leaving the two animal toys together in the purple bowl. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The stationary interval leaves the task incomplete but produces no additional visible damage or hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "Stalling causes no additional environmental change; the robot can immediately resume correction of the accessible mixed items without an external reset."
+    }
+  ]
+}

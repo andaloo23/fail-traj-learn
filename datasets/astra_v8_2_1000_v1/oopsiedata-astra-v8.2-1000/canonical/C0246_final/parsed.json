@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0246",
+  "language_task": "Pick up the green cup and stack it on the purple cup.",
+  "success_label": "failure",
+  "outcome_evidence": "camera_high and camera_wrist_right show the gripper approaching the green cup, then withdrawing without it during frames 169\u2013204 and 284\u2013355 while the cups remain separate. Further positioning and acquisition activity follows, but frames 583\u2013599 in camera_high and camera_wrist_right do not show the green cup stacked on the purple cup. Completion is unconfirmed at the recording end, in addition to the earlier visibly failed acquisitions.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 169,
+      "failure": false
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 205,
+      "failure": true
+    },
+    {
+      "start_frame": 205,
+      "end_frame": 284,
+      "failure": false
+    },
+    {
+      "start_frame": 284,
+      "end_frame": 356,
+      "failure": true
+    },
+    {
+      "start_frame": 356,
+      "end_frame": 600,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 169,
+      "end_frame": 205,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the acquisition attempt near frames 155\u2013168, the gripper moves away empty during frames 169\u2013204. camera_high shows the green cup remaining on the table, separate from the purple cup; camera_wrist_right shows the cup receding from the gripper rather than being carried. This fails to acquire the required cup.",
+      "recovery": "Reopen the gripper, realign around the green cup, and verify a secure grasp with a small lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cup remains on the tabletop, with no visible damage, spill, or harmful collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both cups remain available for another attempt without environmental resetting or human intervention."
+    },
+    {
+      "start_frame": 284,
+      "end_frame": 356,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the renewed approach and gripper closure near frames 270\u2013283, the gripper again withdraws without carrying the green cup during frames 284\u2013355. camera_high shows the green cup remaining in its tabletop position, while camera_wrist_right shows changing separation between the cup and withdrawing gripper. The repeated acquisition does not advance stacking.",
+      "recovery": "Return with the gripper open, correct the grasp alignment, and confirm that the green cup moves with the gripper before proceeding toward the purple cup; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt leaves the cups separate without visible damage or a meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The green cup remains accessible on the table and can be approached again without resetting the scene."
+    }
+  ]
+}

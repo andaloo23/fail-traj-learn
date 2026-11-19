@@ -1,0 +1,116 @@
+{
+  "id": "resp_0511dcf56ca7bfc4016af920afad8c87d280a71bc983dbb829",
+  "object": "response",
+  "created_at": 1794711727,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794711731,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0511dcf56ca7bfc4016af920b0ecf487d283d271e6e7b0bfde",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SCzIazXOjpiSaOUhStCjXiNdeoATxAlXEI-5_pTE7eblJvUcG98zlyqoXoEylYweotmS7R-tMShNovFDQ8OleMLkN9hgOuOWnCIXH99hGyoqtBrr79qvzlViIcvYpfbNUh-g2mJhdyfPvEYqgiQ-YnFFIY83YksoKS4_5EYTTsAhwGe1MY8WrWNIC2Ag76ByCMBTFXNg5BXJxtQSda6oujNexJJLMsmJ6kI8c5HXn1MfFyhEq6Zhh0Rooujd-Iy8vn_s16CPeoSetdUmdaecD1OF4b73CO29qbH7gxHWeYGS2eQsSe1j7HXA6bM_ZN6lNjBuPpVg6B-6QJtE44D-KRQSvpi3Atlorpc_kV1mn2PbOnEw9qVtaBJZ1UuJK774iPSHa5fcVD6Qhnc63tmBo2NY7CpwBaVskUQ0ct5p1qGjsiVkxwngFXLM2KNFu3askJqqU8n-rF0vzULljKqciKNJ7coXzE4SH5UgFnqS8LnXPvXACvwmjvMyX14ADJ1_IAqSLwrSxFL7wWMKFclQaXStGohyy2_g9UFbzsYsF0TyLG2c8nPlHGUd8vnDdRFk6FolJivDy06ItcnmDIMGosbn0EoxXjNeTSoIndOv0UNSIJTVZuHl0opvs1tzZiNlQucUFNmzy_RG7T-x_6mtR7o0lEydWgWAqk0l0m2wQPjFpeDmbe3ommhk62ThSgW4W_EXYkgVe7EW_-Tu_KsCPXHvMCiRTh_0Esko-huMhZtwTddyq3SrtgQvc2LAtTTK7M7uj0YWwSbSWbuiSNXdZYfoZfBnlzOYmw5S6va4ZOyx-AFwGxSeiEfGvQcqx9JBnXnhgQRUfPPRJW70Z7ZxMDh3er_lLTEHyzcHvGD6loFkR7eH-bt-yzbRkh9s_60pQlA07dB-6Ri4OvF4JkG7novJdmi8jAlCHEVRrdpqAmKxkBywj8Em22lQUjB4vAboketUwHWcuKSFLHcLiDgFAXI3XEPSH_D1ie3F1AHE1E445amLJc5LjHDHNqatkX6KWl9jqjNCwTWtLJbqF2luUYPDQ-gkn3gl_wdPHfSNVh8NGMcdHD39ddRNUFeanFtJ_UWVE7p8FzguTvOhUv9KXXwPMIzTgBPXajjr6zkYSe8yW1omfDxOb-M5UElS_PpwlgQud1ytJL1kHpvYXDuTVKYCFk7aCkV8EHa2PY29O9XWHvvCeUHs6G5Rf-cE2Tqxv3jIQroCZ5f4wd0ixQH_kEQKwBgcHBMluY5FrKZ2TUzlF7vcI4MvfSdvS62qG_2ywpGgIYxLqfvvnvj8XtLM4q-IUmOwRjhyrJGtJh-ubNFgI-5bZTLpOYuN3t8bSicPa8WOK2j5s7lYVP1UU2o-LSYuo5ucTlDRdt-lXwCUWF42gLif1Zs94RNTGBZGM8wz04jP8G6pXEvN0XmieMecdqE0dbrBW_4HZtzGAHd2jMqfx4yjYOEqLbc3_YUH3zEMDGkEFBxeq8UueARGuJa7BcG794xDiR8ihVdZTQ3zWdCfq6Ab6nmz3cLhsRMtGt4MzmSpPOeMDaasTvWsEv_94KHY66tsHNS5Zoim3nbmp4Aa1cq6xlCvVBkPinQ0SiHzNeb5UR3gfpAf3kpwIlVHTHiEQu5F0L_SncLUqD7UiWVYpmT7Q1drcZsQj5cN-HzRCbUfBGOQbkDPCGAWcg4VnWDajP-xwWWfeepIyVPFz2z9jnVsnuV2vGfd08Hr5tiPxVb_QR-Xwoxvlc3Jdp3U0azmXHvadcYvaY4dLpEafBImgbbqxQW4i1lVHs2_TVSIXeFIAfrOJ0WHiQtyOv1HHlDWLRuTI--dzI89ktaqgdZG3qr3nGUVVRNXtqx_aEel-Jsy_lmdyNhZFcO-6XnMxsaNWBwurfUpSP5cCpJ1-H7xsnrq2jv4FDY-dFDNwOSMShUdfhRFVk8xKgM4oO8ZmH7_mAvcOK2kTSXDcHecZ24beg=",
+      "summary": []
+    },
+    {
+      "id": "msg_0511dcf56ca7bfc4016af920b168b887d28f46606f91e444cc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0661\n\n## Episode annotation\n\n- Language task: pick up the corn\n- Success label: failure\n- Outcome evidence: In right_shoulder_cam, the robot approaches the corn during frames 17\u201334 and closes its fingers around one end during frames 35\u201340, changing the corn\u2019s orientation. Frames 41\u201349 do not show a clear lift free of the tabletop; the corn\u2019s lower end remains at the table surface. Completion is therefore unconfirmed, rather than a visibly established failed acquisition: the robot does not withdraw empty or visibly drop the corn. No local failure or unintended side effect is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 50 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 6324,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "reasoning_tokens": 25
+    },
+    "total_tokens": 6518
+  },
+  "user": null,
+  "metadata": {}
+}

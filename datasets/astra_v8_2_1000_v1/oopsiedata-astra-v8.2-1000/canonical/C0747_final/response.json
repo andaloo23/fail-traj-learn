@@ -1,0 +1,116 @@
+{
+  "id": "resp_00edd68bf2b63d36016af926811acc87d1bacd47cb7a7cd77c",
+  "object": "response",
+  "created_at": 1794713217,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713226,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00edd68bf2b63d36016af92685881887d1b5b2173231aabd95",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SaL21-BgFYRj6_LOl2NY-pTF6jI7t0ozS9SHIIbAyO6hmTnm9E8tKVrbNc4DbzDcc5uWuCDhFKbiPzy84X4c7Cz7MhvZjZhT-1fv2RAiMryRYKmFNx7R6o2LpPDE2EmkDdD5t8Lx0UIOmTnFHovIPayZ6Z9-pXfpfSyzGBAa-GszJ-eFtiZBpzIEzV1alZwhE987qVR5r-_lcVEIgkCF-OlRVcKn7cWw4WmC4plMuyRSO1xtvTw3aWuLk5vDZ0kSbNLgPVRMMLKMo3X5xRzOM_8G69i0mNK5giZzTrvtAstg6YCuX6maOiybrEw8sKQEPB5F9WvXEJKfx6n-YMvZ7cduVoBhQRbXGx-rDz79TrSfg8mDgHke0zB4_oedvdm9A0KyTI2eqDPR1sRbHIvtLWNGDakzCnx52DWCpu5oKTfcVl5u-tdsCPiDx4VuHwEC22QN7IlCdsj-5_RoSpHksWQlMB0MeZpFrDMsBUhQ7yx3ufAO9Cr6vg1-fJtYAb3jopFOCIer52KfaWJ3oXnFXNo-mOJ9LFUFtwWKB6hrzZUKhJfA0zMMfCfKDYv92ZCMD2q7wUe3tG8iqJTOZSLmpWxQOZz49gdvkDCMVP7Vbi1OGXyJGRirXJ9a9YW-2Eb9fA9kfoyFCJ1l-85lHQqK0Y_qkMORZzWSWnvG2aRO9zIJ-qDlAyhKDo1I9UXtNIz5q0Uq_uRds0k1Df0Reeq5WGQcQdbjJa-7evDNmOS_jOiNnIUQgVKRnfCyvW5s0r_9X8OSdV1ieqoVfA03Vg-8X6Ftn3fIGkmBd3KpIjyKdnUgOcKPhsRdhM1o-p8NNJgwnYmLrhTtJJOBgpU22p2Blq_tRfGkXFKZAR90mX9pCxXJ4loWPgbvfa-IDvZ6RjpNix7ffo_SAuezw98nYzrqh9mHzwoOFdX6Uyaz8j412rkNQkSXIbKNo3RT6Wxy4QueAGtcJ2ZRAdPuPc7pVzjS3GIn9v0GGn-dOg8J4Qqn6D7wQc_nHFoVWptBnqOSVmU22gc5eAKs0kKcb_pqifj_wbAQYH0i27jUJQwsJG_Yo_P-ouneN2wh2JX4Y92sWDB5ZQmJtFd7w6pkgi_J3jczvQXs4Ms-71W7IVyWMQ6Q5K7N9Fh40fPBctUbS1oxNbW7ZKguzXfszHw7ZblwBfumyfVkwH-ztlIvHH4MOOcHIu3j2ENSsSCyLIO7xjZ12QksLzSrg-e4Mi-erINDvudpQrcNiWD7z20H2eE03MSXF6chJagl3XHZAEGVeu_c8wRLNxAIGr9wX3QjiS8BNqD4BWXwW7z8mxKtx-ZuDsB9-WW-4zPN_h5P7kCpdholi-FBOVMXkr9U25iHpn_1_aL_Mka2wDFwFxuxicLVTvBNMv_kIKfXiFTiw0CuDU_LA7AkpynGZZDBntdAJB9qm6tT6i3EbedAR9q8ha5u859MAY9SjqSp6jIlMzM8bY1GmR_V3qBXpROm1zTIKtGz2YCip7Q4y_COzyTMf1no9fiFBsPsJB_tB3YPW5mxun-tjO7KGnlJXseSjI580crVezMMWhYs0DoYzoH57gws9sJYmaSUsBvtkDekk_gEosvOE2R07c-A5KHtSn3v-olOn9Uj7IB1m-JaAyFlqSGg-0EfJoKEcP9KeUl857ZMDBfCbeb0ZxqsrQ8bo0S-vCnGYR3WXwgh0MDGrd2mLptBihLdng9beTapc6utDSOB19oNC636P86u5tBzufpeQwetkSJ73d88IoJcaAPDxxW5djOPTikPHJihazCAxBCkpz-fztpkJztKJDxye3LTvFWAkS3qP4W0xOAtdpJDBR_eqaIB2R93KNSrnFj-H9pntJ83auwnA25E7Aptm1mij34ezo26imP8vstjNF_EpwvWXDnMEH9B1aiHFO2Q3-FaybJfv8yjuxtsxxV5oI8WCjiWpKW3Hr8pk_xP-qMpEAYxhq0c_e0fZRmPxua2_R_97EX2AEQYltlt1muxiW3hawyC4haSHZ5Kx-R0qnd5uJhDw_mi4SwQUARwGJ8LiMcICRAHZmXLCqB6abZ8vaJ2rwllr3liEAGFIN6KBQZpDW8NsLeAGoJrWeVWXFSX37NrCavoLo4IeC1ML2dDc-JjRnw_GWTEUiHaL_9T4fB3vv0cBqb14TOfA2d8YjM5TRUF6x6eApwkSg6opKxdxi6E47glYXALNK7s-wgtz-S5py2RMINJwbXNvmDFR-AcF8nBzvWEfcgK8F8xFR9TQFFLBPcm7Taht7PZGPMESaWwtNdtVDlG3MynMwTdPpR-oR4aKftUg78ABah2Oe1zAWi51CtBgBjADSPasTX_p4f5HIdC_zh2pEQUhEU6aguJWgbqvGd80fiSYCTALgC0boT0HKEhS0EHSpVfoUHR9vGwNkhiFVxfYD7fzA9L6f6oaioKnQ84Ni0rZ9I3b8x_vBzkbmhdrjAQM4kYlwEq5PDLkDc7nuobcsDmBEwY8iwWi7XND78u3z0QSj412hgp0b-hPS-pu909x417KOCrSD643oCkRbGHmHSwpcPAbxJrlesZeHC2UJygvvYeeD2gj7vrhrHImAjfPzSH4BvU1wXTN_Arcx0SvFnyQclier5HjtqtmCgSyzkmkmb73enA9XN2R9vCqoPgOQsOs5wv7hxP0B-XKAZqiPsjjydfZVfy8zFwqAmzoPral2Xss_TKNadiocWZEVx5dIdyOE64Vj2zygQMV8dtSstyv5Yw_dQgUaZDqldMBIn8va5OsAyNEQReS5QGf7r8bU3W3Z_avygGSEoATnyPrne-V63-RMufgQ607cLEZkL8B6alY2mWZ9bD3P6oGMawmkMWyEFobv-ddmodVF863t1FM68K3Kc-ymPJtY6_kHQ1M_u",
+      "summary": []
+    },
+    {
+      "id": "msg_00edd68bf2b63d36016af926873e6c87d190fdfc39e278f69d",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0747\n\n## Episode annotation\n\n- Language task: Pack the toys onto the wooden tray.\n- Success label: success\n- Outcome evidence: The robot first moves the yellow banana-shaped object off the tray and sets it on the table, clearing space (frames 48\u2013125, overhead_cam and wrist_cam). It then grasps the pink plush toy and releases it onto the tray (frames 153\u2013205), followed by the tan plush toy (frames 248\u2013332). Both plush toys visibly rest together on the tray after release at frames 332\u2013334 in wrist_cam and remain there through frame 350 in overhead_cam. No failed acquisition, dropped toy, or harmful side effect is established. This interprets \u201cthe toys\u201d as the two plush animals; the banana-shaped object's inclusion is not explicit in the task text.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 351 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43809,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 299,
+    "output_tokens_details": {
+      "reasoning_tokens": 88
+    },
+    "total_tokens": 44108
+  },
+  "user": null,
+  "metadata": {}
+}

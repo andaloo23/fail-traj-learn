@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0227",
+  "language_task": "Pick up the green cup and stack it on the purple.",
+  "success_label": "success",
+  "outcome_evidence": "The cups begin separate in top at frame 0. The robot acquires the green cup and carries it toward the purple cup, visible in right_wrist and top at frames 139\u2013194, then lowers and releases it at frames 232\u2013269. After the gripper withdraws, left_wrist clearly shows the green cup stacked on the purple cup at frames 325\u2013349; the stack remains upright and unsupported by the gripper through frame 749. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

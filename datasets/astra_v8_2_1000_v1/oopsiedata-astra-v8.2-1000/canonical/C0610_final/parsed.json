@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0610",
+  "language_task": "Pick up the green object and put it on the table.",
+  "success_label": "failure",
+  "outcome_evidence": "The green object starts inside the pink bowl (frame 0, wrist_cam and right_base_cam). Two gripper closures are followed by empty withdrawal while the object remains in the bowl (frames 60\u201368 and 166\u2013171, wrist_cam and right_base_cam). At frame 240 it is still in the bowl, not placed directly on the table; this is a visibly unsuccessful acquisition sequence, not merely unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 69,
+      "failure": true
+    },
+    {
+      "start_frame": 69,
+      "end_frame": 166,
+      "failure": false
+    },
+    {
+      "start_frame": 166,
+      "end_frame": 172,
+      "failure": true
+    },
+    {
+      "start_frame": 172,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 69,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following the closure in frames 47\u201358, the closed gripper withdraws without the green object during frames 60\u201368; wrist_cam shows the object remaining in the bowl as it separates from the fingers, and right_base_cam confirms it remains there. The acquisition therefore fails to advance the transfer.",
+      "recovery": "Reopen the gripper, realign the fingers around the object's body with clearance from the bowl, and retry acquisition; verify that the object rises with the gripper before transporting it. No human intervention is evidently needed.",
+      "severity": "low",
+      "severity_evidence": "The object remains contained in the bowl, with no visible damage or meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in the bowl, so another attempt requires no environmental reset or human intervention."
+    },
+    {
+      "start_frame": 166,
+      "end_frame": 172,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After a second closure in frames 157\u2013164, the gripper again rises empty during frames 166\u2013171 while the green object remains in the bowl, visible in wrist_cam and right_base_cam. Reopening begins at frame 172; no successful retention or transfer is shown.",
+      "recovery": "Reassess the target's position and grasp depth, approach with the fingers straddling the object rather than closing short of it, and verify retention with a small lift before moving toward a clear tabletop location. No human intervention is evidently needed.",
+      "severity": "low",
+      "severity_evidence": "This attempt leaves the target in the bowl without visible breakage, spillage, or other meaningful damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable and the target is still accessible; no cleanup, replacement, or manual repositioning is visibly required."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f1eae071682c394016af90756479087d1a37e419b44198caf",
+  "object": "response",
+  "created_at": 1794705238,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794705245,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f1eae071682c394016af9075919c887d19be689432fb5f68f",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QddS6t24SsGRuSQhfpiGGn63v2l4mQL0DOjQtXR6G-VI5KROTBwUQeNfTkLSupsbPig_K9blgI1FLDRbQn1gc2JYrQjkLM1darHdZJ85f__HASDP1y_geH5XS1Mp23ovwb5Xy3LxBRlSBaRb08LE9NUj8DHZu3gZnzyl71oJfVzJuBhlSB8cY7yFXl4X3MLPO3ERyfzfPpjkRUEe1r9mJ8l-6MJ4JYZmi4RCIJjvRaxPm11r_g9RtqA6q4ciPLecfKKEYP7WbIlfuticzI8apphPq1YwCoo6ew97AhFUsOcD384pZh4eTK71DVvIx3r3X3erq4ambcO7iUfcz4lRfqPJEnIaFhjV4iqRrn89-BT-UCoP1Hw2ll9S3bXnhyaiXu6LT6CpgGLxZyN0baKRetqI0y747immiJjGM2Mi4T3b9yk9hbPi4bfgH-H498Lk4fjUxROFiBh10Zvnhr1OhGtX7CFpLkKzC1YYPCjnHTSZ8Kj8CSIukSM7tLn0aYH2l7efwAZbRkp7CK5FtIpzMOflUfwIjxb_C39gwEO_eaWdHpNY9o-vNt-3K9ROLnG0F0r-YbNMtoEAw6YaTiBXNHzcTJYq-Ry-l_lIrxWtyn4sBKDMwqi5RQNkbPmsNhPPgxYYZsTPYZM8eB-cTSIc11OLrE4jkx1dUaDneuA-W7LMgvNNTA2D3u_5URSdsP6FJo3jQv82g78KMemLPl4PMwELYV41ohctr9nIF260_ELVJd6AfxnsZR701pQKI6Fa860pw-ZJE2oKigCo9LOZ4eWSBuInaf_4W2ws4ODIX2YIXlK8X29tU0BCUFCpULJZRVDkJkYvYqkSQqKl8I_D5YfNcfX69H_Lyeeqz-o_1_2ln8eRir9XAiEZBCXhLzMpamMZWwQVXQSSf1r_oY90VJrvwuR-GWtE46I0ZYEomoXRv_TNfI5I-trbgdLbWgqxTaMrgeVJKF-Dz5gZgEVQzAbsO5aQanZS3bfh9B5x7mCa2ou1wpg1M949wvhkkLM-QvSv-1bahbOOzQZayb4rV910V0tG2a0_06kFu_6veAeQapMMGNEU4Be0g4BKnno8IZ80W1th9x9e3GtviXwVURiTJsnoPp7YFrVFPc8692VhG1cYVEz0-fHTQA6K6TCQHsO4HHk2tgRNGrnWKVIAT8F0utQASxZh797NOo7TuN13d_lxYpfvVIsf_s0ogCoOEm2wK5YhuchNgbfMcFOCYZc6GRBxa8Zmt3i7sk0jC_wgpBibAHvpv1W8sYjpYOJ3a-uRDlRVgVn_FBc00YZKcUdgIC2obBc_5M7ZrLtFQlGp1OpcWyqtpeaAGrdPwtmWNPBH4aTKJFuGQokK90ATiXHxMpl4IJvpG7kp95pnq3LZkZk72D80pPslnqQD0SlnmHmA8uqPeZxVeS_Rwn9exiXa4Xixil3mn-jiWy-t3zD2uuEsMMWSkD78IovElxFXsmWOP7ycCZwIdXy9lIJzU7FxrYRrNo2WPWvajfpA1k1N_9V9oTs-KyP4zugE_5eT7q2nwbT7LC2oCn2UEslFcUnLLlg66yAE_Q5XmFcnNk_gzJdMUFnVW0WoC0S7mnKq_VI52rt_CJa09cBL_u4INZBw0cMoA2hMO74dMwZgLVfsbaTMPTJM0zZiZrQWrtsJs_kmwlUCNSDLy1z7WDIv2qIXSU-n0r5IBTA0Tp2aptxwoTIIFIG3tNW-NJcjt38pcAuBsqqN3YmQgoC5Aoo4l9bQt-p4wjr6-7KSHOd12zF9QGxQ9ebGSeCgRhcsVBDo4kPQigMxDpeM490ff9jGsb0QQuZWz6Kupn8PGLj8sXMDTXfEcVQ-pKUtM0BkKN6lFfU7ORqx25BHKCx_f-B3vb8cAO7vp96Oz62bMJSxeUU5K4t4BvnnyxVYqlTKjBnV_c6zOyLO7IuTeCu8O6VhzJPop6xO-JkST5Df7YHr96f2qywNY9seIrPIh0ReySOv9wXrOk6MFuwVsrQe_T07e3JrhQy37wUt9A7DMbtXhVjMztBR6MloVhQw_yqGYNfEbffPFDk1JiEZXdavYeSQUsUZ2i8SAPtjZr7CFsGig1JyDmqNtkvm0nbI4YeXHDMlRww7-YnNtAw7nxhg36WWvI0oCRr8rrQmOKIOfHNoTDPCuvQ-uoYlu1ifP7f34mRLQMUOTQnmYBt0PgW-Ayqqhf74xXlpiDDYM5O8U-SqF6D38BloF-wWlFXEf_RNyXj9dOXHm7MtZcJWiWeoIv-mapGQa68WoJO7PKK5OxSRgMkc3HLQjHbxe7AvEaWdILh4Y8Z-HebzYZGSqwO3BiW7OOlH1uj60UOwcARkVVTJIwfPJfrQCSO6ibk5Xtd3QbfFH52Krjg_9MZRfBTXMbOvupYG-HgJen3kF6aoWbCcynijFCqaWK01ekkgi44SSG5kR7rIFOBXe3M3YwG7BQaBxBRHaIOyi2yVKQ_S7coTWbYYvwowBkIQ1gVF_3ZY1B7IsymCNjIJKxw4fFns5dBqvnkJWUMoYCrwiHE8adQ4OyBcGT7ZZZbE5VIAdXzoXbewtQFiI8HXqNmrrb8nCmxRIboAzwDD8G9gMZyo-ucmDSHKLyQ5tfhoVsGf123KD_dAdJJoyCQLWTmIpSM6Lp3PS1O_nL8Wo1ZWz_kFZzu6gB40IASMxDh1l5fsOIVFG25QZkaaQzhOFQtLnSx61_ap1XXaM_z1J-Y4cgMgsNP5hZY_es=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f1eae071682c394016af9075b59a087d182a04969f5a12d3b",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0262\n\n## Episode annotation\n\n- Language task: Open the oven.\n- Success label: success\n- Outcome evidence: The oven door is initially closed (frame 0, left_ego_image). The robot approaches the upper door handle, then draws the door outward and downward: separation from the oven body is visible by frames 120\u2013130 in image and left_ego_image. The door remains visibly angled open at frames 200\u2013230, although it is not lowered fully horizontal. No failed acquisition, unwanted object displacement, or harmful side effect is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 231 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 45252,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 243,
+    "output_tokens_details": {
+      "reasoning_tokens": 86
+    },
+    "total_tokens": 45495
+  },
+  "user": null,
+  "metadata": {}
+}

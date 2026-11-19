@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0917",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven starts closed (frame 0, left_ego_image). The robot spends prolonged intervals hovering near its upper front without opening it, then pulls the door downward during frames 344\u2013364 (image and left_ego_image). The door is visibly open and remains down through frame 376. No damage or displacement of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 33,
+      "failure": false
+    },
+    {
+      "start_frame": 33,
+      "end_frame": 203,
+      "failure": true
+    },
+    {
+      "start_frame": 203,
+      "end_frame": 213,
+      "failure": false
+    },
+    {
+      "start_frame": 213,
+      "end_frame": 331,
+      "failure": true
+    },
+    {
+      "start_frame": 331,
+      "end_frame": 377,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 33,
+      "end_frame": 203,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the initial approach, the gripper remains near the oven\u2019s upper front with small repeated positional changes but no discernible acquisition or opening progress for about 14 seconds (frames 33, 100, 150 and 202, image, left_ego_image and wrist_image). This is sustained unproductive hovering rather than a demonstrated failed grasp; the images do not establish its underlying cause.",
+      "recovery": "Resume task-directed alignment with the door handle, acquire it securely, and pull along the door\u2019s hinge trajectory; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay; the oven remains closed and no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven and surrounding objects remain in place, so another handle-acquisition attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 213,
+      "end_frame": 331,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following a visible repositioning during frames 203\u2013212, the robot again remains almost stationary near the handle for roughly ten seconds, without door movement or clear acquisition progress (frames 213, 250, 300 and 330, image and left_ego_image; wrist_image corroborates the prolonged near-static pose). Task-directed motion resumes at frame 331 and subsequently opens the door.",
+      "recovery": "Proceed from the aligned position to a verified handle grasp and controlled downward opening motion; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only delayed completion is visible; no scene damage or unintended object movement is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "This stall does not alter the environment, and the robot can continue the opening attempt without resetting any objects."
+    }
+  ]
+}

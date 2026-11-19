@@ -1,0 +1,116 @@
+{
+  "id": "resp_0b5bdede30f0f059016af927e23f8487d1ad0a30e796c7cb5b",
+  "object": "response",
+  "created_at": 1794713570,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713579,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0b5bdede30f0f059016af927e493b487d192aee2ac8183afad",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Sfr8mnPASCqDClrAm6tD6wkloiudOPLuzspw0xYcAcT4yasmOGXloTqH92yu4yllXgpR_i6V4qR2MWOsc63UHXc169GCLFzkDxMdFCAdbrgHTvdN4sxwGgOMcA99TdsjHonTjTQmTyoYNNRgX0pPFR0xErb8NM4aDipue928iZp6FC0FRzQcwFPachSYg2uP62VZ0DvMM1sVSw-NsnIMclk2G9c8jVth9lJL2excNJtOKsCDbXAek65i5val1i9UvV9CVKqpTFcSFM1rwgjb8ytccaHZ1R2JlgUglY_IJarVbFPpXat7a5LKVhs8cLx285OHdaUMDzQyUFPKcnQlpJPCD3wjWSVCNAPe_mZ-ZG6aRyP4XOJ60CbjW_LLcLbwkIN8qHcgzx2RL1RqEZuJg6Gd5iwfYU3f57CZqIb_ocR_O82ZFAVhoHY_HZ5nXfnJX1hQAbB9TBZHGwQUiyOGoigs2xtKRGA2Q-S65Xs2QgQH_iz1n1pmVzqtHbq7s6ycTj-MJyHgskR2cSOKCTS97vDodwviV_Hlahsh-MPRoI9MgHkcTIZ8gty8qqyEJQ-D8nOBZVqQATq2dfjc-KA213WfpzHiB07ooLUn9D79YeMCV6NPUgyJK8VnRP4ibVEpJ2iO8ij6viCTYzRgHdPUS8a3e8dB1Dyh8yMcKLIdNv5jWH4QVn_MxoOfTCmLa0t_fQMlRIAY3sATmD6mGJ7QJclOwWCW6NOLUCmyUIofa2QtlwBhmNcApCtD-8gfXJr2d1CIV1OKE0fgYqQGupleqfUfQcdkDNkRbW3XJwTrYsbAcFeWSxLjhPSYN7xqjqbRvIHCqldGA3Q6FVPG3Cy85BVujEdJZd29AITdTd5fB_CFwSNEmcsdJocPA2jct05mVlu7q71iuIY6PwAcEQBWUvRvRMqU9goRhRmGJCNfokWcd8ePi-7V7IDuiJiOb4WqTk5e2txCRa9TPih6Y5h6St3SJb1V70iHqNkp-U07LPDoHGB9h_2HaPtroIwZnHVyDFvjjMeiIhxhKK90EoZjK1G9dbQrTKIfwmubaksrwaJwNlZlRSbRInSUrbMpdQHKB2-nGaixDpWjP5wji_TrotLSEYH6VX4fBFNHjF1ivewIK25HkTcYO1hBsVFboLrgrnGdRAZ1A0o_kfxlsZ9_SYHQO5DTH9v_077A1l6xcmUT6iZLSIMV695pu46IzbsoksjAw8hrTKOcT04D-jJGf5zBQz5rqJYNTP7gNyBJjDxOjUZe3xs0lklUiljJibUUzxvJaiQvUwnmGPTmKf9zobQnjs2ozPv0Q44qZX0c9zNcFXwVCbOGdvGmL5VCo3hD9RKBl6clwlDg6tzJ_rE6v_GRFD8Pelz6B0wxF2FgAajnUV0AoBBnkfzZJyWro_zWY4Ekh7VK9I20LxrVCegf_LVgfGF9uGhdrBPuECjZjDcC5VBnYYmGkM2aQheljY86zAYdo5g8KCkfeJkUh31NzXJRNIskfAM7WY49JeZxTS1tSUtk1C98cNg2zHgT_BMM5y8KgaCTJloHdrdH-wz_blNyaHr1443aRNMV6xoW7f_qKVJ9fUG2B1R8T4URDqIOspp8_38DHFAwKHVIaPJaXSfEfbeYF7Rcc4LmlqZapSR0QVubPDSGfsqniwM9H0NS6fDMmfdNKnNjUs21Bl8SNAr7VgEGmMce8_SemolwczLfcX8NtUG4Xb7QzJfuOJfyMIyPSi02_FV3WR5NEmlkhVZPD3T6ZqB4DTtCgfiEXXhzJBo_Nzl9Hlt5d1VPGq7kQtB9ssNZtYbmKFr7NA81UbOrJN8Fz0Wa7ZSMEnc6H-S00N7ZPM7j7c1ExmhBlTxOo9kU3hspNlTFJnSZmP5cqVyWcMdgdV34xO5FjMBFmvo3CNdy3KOxuwEnrTwHXNuKMiIjOgAO40C_dBzqULJVqxZ4FFpas9q9d96aBPho_QQM4h3H6wzSgsV_zXol_PenLv9ZTfZU1qK70tbZ7oef_hD5sKVgJI8YgIq5kENTtwnYaM3-sSF6ObQgS1RgZasrhiW3eFK3IFzPDQbptHcP5ALbA==",
+      "summary": []
+    },
+    {
+      "id": "msg_0b5bdede30f0f059016af927e52fd887d1b388c1921c44837c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0757\n\n## Episode annotation\n\n- Language task: Pick up NIST rod and insert into corresponding hole on the NIST board.\n- Success label: failure\n- Outcome evidence: Frames 17\u201328 in side and wrist show the gripper acquiring and transporting the upright rod. It lowers the rod toward the board in frames 29\u201332, then repeatedly makes small adjustments without visible insertion progress through frame 196. In wrist, the circular hole remains offset beside the held rod, including at frames 115, 143 and 196; side shows no completed seating. Completion is unconfirmed, with visibly persistent unsuccessful positioning rather than merely a recording ending during initial acquisition.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 33 | No |\n| 33 | 197 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 33-197\n- Categories: manipulation\n- Explanation: After acquiring the rod and lowering it toward the board, the robot repeatedly shifts it around the hole without visibly seating it. Frames 33\u201368, 98\u2013136 and 137\u2013196 in side and wrist show the retained rod at approximately the same board-level height while the hole repeatedly appears beside it. This prolonged unsuccessful insertion behavior does not produce visible task progress; the images do not establish a hidden mechanical or control cause.\n- Recovery: Lift the retained rod clear of the board, reassess the hole and rod-tip alignment, then approach vertically and attempt a gentle insertion, stopping if it does not seat rather than continuing repeated board-level motions. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The rod remains held and the board remains usable; no breakage, displacement of unrelated objects or new damage is visibly established.\n- Resetability: immediate\n- Resetability evidence: The robot can withdraw and realign the held rod for another attempt without environmental cleanup or human resetting; no visible jam or damage requires intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 27260,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 450,
+    "output_tokens_details": {
+      "reasoning_tokens": 32
+    },
+    "total_tokens": 27710
+  },
+  "user": null,
+  "metadata": {}
+}

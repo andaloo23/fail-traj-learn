@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0592_W06",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the full task remains incomplete, without a visibly failed local attempt. In base_image frames 1750\u20131931, the gripper positions and releases the red can in the upper blue tray; frames 1990\u20132099 show both cans remaining in that tray as the empty, open gripper moves toward the blue bowl. At frame 2099, both bowls remain on the table and the right red tray is empty. The placement and subsequent approach advance the task; no failed acquisition or harmful side effect is established. Earlier context is limited to the supplied context frames, and later bowl handling and final completion are unseen.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 2100,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

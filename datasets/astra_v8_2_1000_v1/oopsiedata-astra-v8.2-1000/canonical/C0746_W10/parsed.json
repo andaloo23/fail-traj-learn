@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0746_W10",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, frames 3150 and 3499 show the green can in the upper blue tray, the red-and-silver can still on the table, and both bowls outside the empty right tray. The gripper closes beside the remaining can and then moves away empty toward the upper tray (frames 3285\u20133499), establishing a failed acquisition rather than merely unconfirmed completion. This outcome is provisional for the supplied window; earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 3150,
+      "end_frame": 3285,
+      "failure": false
+    },
+    {
+      "start_frame": 3285,
+      "end_frame": 3500,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 3285,
+      "end_frame": 3500,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image, the fingers draw together beside the red-and-silver can during frames 3210\u20133240. From frame 3285, the gripper withdraws without the can; frames 3350, 3414 and 3499 show it continuing toward the upper blue tray while the can remains in its original tabletop position. This empty transfer does not advance can placement. The unsuccessful behavior reaches the window boundary, and its continuation beyond that boundary is unknown.",
+      "recovery": "Return to the remaining can, align the fingers around its body, and verify a secure acquisition with a small lift before transferring it to the upper tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The can remains on the table, with no visible new damage, spill, or disturbance to the bowls or trays.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible in its tabletop position, so another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0851",
+  "language_task": "put the knife in the mug",
+  "success_label": "success",
+  "outcome_evidence": "Frames 0\u201383 in left, right and wrist show the robot approaching the orange-handled knife on the plate. Frames 94\u2013160 show acquisition and transport of the knife toward the mug while the spoon remains on the plate. Frames 195\u2013218 show the knife being lowered handle-first into the mug. In frames 229\u2013245, wrist shows the gripper open and separated from the knife, which remains supported inside the mug with its blade protruding; left and right corroborate placement at the upright mug. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 246,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

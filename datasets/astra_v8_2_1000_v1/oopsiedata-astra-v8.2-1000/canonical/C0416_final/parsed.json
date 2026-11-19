@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0416",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, the robot separates the initially nested cups (frames 81\u2013183) and builds a small stack with two lower cups and one upper cup (frames 250\u2013264). Subsequent handling disrupts that arrangement: cups tip and separate during frames 364\u2013384, and the remaining held cup is released without restoring the stack at frames 414\u2013429. The final view shows scattered cups rather than a completed stack or packed arrangement; this is a visibly unsuccessful attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 364,
+      "failure": false
+    },
+    {
+      "start_frame": 364,
+      "end_frame": 385,
+      "failure": true
+    },
+    {
+      "start_frame": 385,
+      "end_frame": 414,
+      "failure": false
+    },
+    {
+      "start_frame": 414,
+      "end_frame": 430,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 364,
+      "end_frame": 385,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In base_image, the right gripper lowers and shifts its held cup while another cup beneath it tips away (frames 364\u2013374). The gripper then opens, leaving its cup to fall onto its side (frames 375\u2013384), disrupting the previously established stack rather than packing the cups.",
+      "recovery": "Reacquire the displaced cups individually, restore stable orientations, and align them for controlled nesting before releasing; human intervention is not necessarily needed if the robot can safely reorient them.",
+      "severity": "low",
+      "severity_evidence": "The cups remain on the tabletop with no visible breakage or other damage; the observed consequence is loss of the stacked arrangement.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The displaced and sideways cups require straightforward repositioning or reorientation, but remain accessible on the table."
+    },
+    {
+      "start_frame": 414,
+      "end_frame": 430,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After moving the remaining held cup toward the other cups, the left gripper opens in base_image at frames 414\u2013423 without establishing a stable stack. As it withdraws at frames 424\u2013429, the released cup tips onto its side, leaving the cups scattered.",
+      "recovery": "Reorient the cups and rebuild a stable stack or nested pack, verifying support and alignment before opening the gripper; human intervention is not inherently required.",
+      "severity": "low",
+      "severity_evidence": "The released cup tips on the tabletop without visible damage, and no meaningful damage risk is established by the images.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the newly tipped cup to a stable orientation requires a simple reset; no repair or difficult retrieval is visibly necessary."
+    }
+  ]
+}

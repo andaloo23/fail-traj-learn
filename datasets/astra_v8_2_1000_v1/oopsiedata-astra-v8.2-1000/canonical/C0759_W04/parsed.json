@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0759_W04",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: the robot acquires and carries the blue toy toward the plate at frames 1088\u20131172, but releases it outside the plate at frames 1173\u20131182 (overhead_cam, wrist_cam). The pink and tan toys are visible on the plate, while the blue toy remains beside it. Another acquisition is underway at frames 1393\u20131399, without confirmed lifting or placement (wrist_cam). Thus a failed placement is visible, and eventual completion remains unconfirmed; earlier and later execution are not supplied.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1173,
+      "failure": false
+    },
+    {
+      "start_frame": 1173,
+      "end_frame": 1185,
+      "failure": true
+    },
+    {
+      "start_frame": 1185,
+      "end_frame": 1223,
+      "failure": false
+    },
+    {
+      "start_frame": 1223,
+      "end_frame": 1333,
+      "failure": true
+    },
+    {
+      "start_frame": 1333,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1173,
+      "end_frame": 1185,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying the blue toy toward the plate, the robot opens its fingers at frames 1173\u20131176 and releases the toy outside the rim; it tumbles and settles on the tabletop beside the plate by frames 1180\u20131184 (overhead_cam, wrist_cam). This is an unsuccessful placement after established object control, rather than an unconfirmed grasp.",
+      "recovery": "Reacquire the blue toy, lift it clear of the rim, position it fully above a free area of the plate, and lower it before releasing; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The toy lands on the tabletop and remains accessible, with no visible damage or meaningful damage risk established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The robot can retry from the toy\u2019s visible position beside the plate without environmental resetting."
+    },
+    {
+      "start_frame": 1223,
+      "end_frame": 1333,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following an approach toward the misplaced blue toy at frames 1185\u20131222, the open, empty gripper moves away over bare tabletop at frames 1223\u20131255 and remains there with little change through approximately frame 1332, leaving the toy beside the plate (overhead_cam, wrist_cam). This retreat and sustained unproductive pause do not advance acquisition; movement back toward the toy becomes evident from frame 1333.",
+      "recovery": "Resume a direct, clearance-preserving approach to the blue toy, align the fingers around its body, and verify a retained grasp before transporting it onto the plate; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The interval delays completion but shows no damage, unwanted object displacement, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and plate remain available in their existing positions, so another attempt requires no scene reset."
+    }
+  ]
+}

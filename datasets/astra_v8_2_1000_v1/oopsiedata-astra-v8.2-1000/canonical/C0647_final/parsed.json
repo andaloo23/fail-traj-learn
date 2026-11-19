@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0647",
+  "language_task": "close the drawer",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is open at frame 0 and remains extended with its interior visible at frame 48. The gripper approaches and repositions near the handle, but no drawer-closing movement is visible. Completion is not confirmed; sustained unproductive hovering is visible, but failed acquisition or established handle control cannot be confirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 20,
+      "failure": false
+    },
+    {
+      "start_frame": 20,
+      "end_frame": 41,
+      "failure": true
+    },
+    {
+      "start_frame": 41,
+      "end_frame": 49,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 20,
+      "end_frame": 41,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, frames 20\u201340 show sustained hovering near the drawer handle with only small pose adjustments, including a shift at frames 30\u201331. The drawer stays extended throughout, with no visible progress toward closure. This interval is sustained stalling rather than a confirmed failed grasp; more substantial repositioning resumes at frame 41.",
+      "recovery": "Reassess alignment with the drawer front or handle, establish suitable contact, and apply a controlled inward push while checking that the drawer slides closed; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains open, but no damage, displaced unrelated objects, or meaningful damage risk is visible in right_shoulder_cam frames 20\u201340.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer and surrounding scene remain in a usable state, so another closing attempt can proceed without an environmental reset."
+    }
+  ]
+}

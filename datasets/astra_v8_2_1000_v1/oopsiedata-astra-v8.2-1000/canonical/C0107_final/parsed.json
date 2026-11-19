@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0107",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The blue toy is released onto the plate at frames 176\u2013188 (overhead_cam, wrist_cam). The first acquisition of the tan toy fails, with the gripper withdrawing empty at frames 295\u2013311; a retry places it on the plate by frames 490\u2013534. The pink toy is subsequently placed and released at frames 700\u2013737. Frames 744\u2013746 (wrist_cam) and 780\u2013892 (overhead_cam) show all three toys remaining on the plate with the gripper withdrawn. No unwanted collision is clearly established; the failed tan-toy grasp makes completion suboptimal.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 283,
+      "failure": false
+    },
+    {
+      "start_frame": 283,
+      "end_frame": 313,
+      "failure": true
+    },
+    {
+      "start_frame": 313,
+      "end_frame": 893,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 283,
+      "end_frame": 313,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "At frames 283\u2013294, the fingers finish closing without securing the tan toy (wrist_cam, overhead_cam). During frames 295\u2013311, the closed gripper lifts away empty while the toy remains on the tabletop, confirming failed acquisition rather than an unfinished grasp. Reopening for a retry begins at frame 313.",
+      "recovery": "Reopen the fingers, realign around the tan toy's body, descend with tabletop clearance, and verify retention with a small lift before transporting it to the plate; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The toy remains on the table, and neither camera shows damage or a meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The tan toy remains accessible on the tabletop, so another grasp can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

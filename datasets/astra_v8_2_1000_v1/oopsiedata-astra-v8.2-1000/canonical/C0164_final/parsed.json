@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0164",
+  "language_task": "Pick up the ball and place it in the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The right gripper approaches and briefly lifts the orange ball (frames 140\u2013155, camera_wrist_right and camera_wrist_left), but the ball separates and returns to the table (frames 157\u2013165, camera_high and camera_wrist_left). Subsequent empty-gripper movement does not place it in the blue bowl. At frame 749, camera_high and camera_wrist_right show the ball still outside the bowl; this is a visibly unsuccessful attempt, not merely an occluded or unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 157,
+      "failure": false
+    },
+    {
+      "start_frame": 157,
+      "end_frame": 305,
+      "failure": true
+    },
+    {
+      "start_frame": 305,
+      "end_frame": 560,
+      "failure": false
+    },
+    {
+      "start_frame": 560,
+      "end_frame": 750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 157,
+      "end_frame": 305,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The ball separates from the right gripper during lifting at frames 157\u2013159 and is visibly left on the table by frames 162\u2013165 (camera_high and camera_wrist_left). The empty gripper continues toward and over the bowl through frames 175\u2013275 before withdrawing, without transferring the ball (camera_high and camera_wrist_right). The visible failure is loss of retention; its underlying cause is not established.",
+      "recovery": "Locate the ball again, align open fingers around it, acquire it securely, and verify retention with a short lift before transporting it over the bowl; human intervention is not needed for the visible state.",
+      "severity": "low",
+      "severity_evidence": "The ball returns to the tabletop and remains accessible; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both objects remain upright or usable on the table, so another grasp can be attempted without environmental intervention."
+    },
+    {
+      "start_frame": 560,
+      "end_frame": 750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After repositioning, the robot remains near the ball and bowl with only small gripper or pose changes, without acquiring the ball or making sustained progress for the rest of the episode (frames 560, 600, 650, 700 and 749, camera_high and camera_wrist_right). This sustained unproductive interval is distinct from the earlier retention failure; no abnormal shutdown is visible.",
+      "recovery": "Resume a task-directed approach to the ball, center the fingers on opposite sides, and verify a secure grasp before lifting and placing it in the bowl; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but the stationary ball, bowl and surrounding scene show no damage or supported material hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The ball remains accessible beside the bowl and no cleanup or object reset is necessary before resuming."
+    }
+  ]
+}

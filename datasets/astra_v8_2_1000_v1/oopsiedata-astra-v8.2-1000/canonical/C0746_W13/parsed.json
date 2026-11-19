@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0746_W13",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 4200\u20134369, the robot moves the red-and-silver can farther into the upper blue tray beside the green can; by frames 4440\u20134549, the red-and-silver can lies within that tray as the gripper opens and begins withdrawing. This is task-directed placement, with no clearly established local failure or harmful side effect. Both bowls remain on the table and the right red tray remains empty at frames 4200 and 4549, so the full task is not completed in this window. The label is provisional for incomplete observed execution, not a visibly failed placement attempt; earlier context beyond the supplied frames and later completion are unavailable.",
+  "segments": [
+    {
+      "start_frame": 4200,
+      "end_frame": 4550,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

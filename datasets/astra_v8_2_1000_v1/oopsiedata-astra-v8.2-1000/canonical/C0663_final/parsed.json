@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0663",
+  "language_task": "Place the black spoon in the sink.",
+  "success_label": "failure",
+  "outcome_evidence": "In frames 0\u201334, camera left shows the robot moving from above the sink toward the black spoon on the adjacent counter; camera wrist shows alignment with its handle. Frames 49\u201355 show finger movement near the handle, but neither view establishes a secure pickup. At frame 74, the spoon remains on the counter in left and wrist, with no transport or release into the sink observed. Completion is unconfirmed; the episode ends near acquisition rather than showing a clearly completed grasp followed by an empty withdrawal.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

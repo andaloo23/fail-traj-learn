@@ -1,0 +1,116 @@
+{
+  "id": "resp_012af3c906ff2a2d016afcb9ba577087d2825d83dba9c212ce",
+  "object": "response",
+  "created_at": 1794947516,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947525,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_012af3c906ff2a2d016afcb9c0c7f087d2bb5f2d947d354ae7",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq_LnF6Bojgr7BFjJ8fNK1SpiW3BIa-iqW61xwJQue01viTIYB0ZirUlFouZf0Kdo8CMna2OmM-XOFKp2kvDW8Eb7KVd9uk8xfWg7yJwgS0pddMwFF_z66Dw7WTuiVrL8xnacx_gByqNOAXY9kjCYARGQa1J9S7TjQk8WSkQ2ILCQLv6t1gpHm3EZZgHYsX2Uf7b8qNS13wscnSHfHXk2RlFjBq_O1S5bgUXqR-7WnSalmfUbKAOKp49L1hPsNmBfzqiSZJcuh_WxekiKuyS2JfzdKWr16Uad74XfoIny_cHvDEiYn6s4srzjF71xv54H0hUjnYb7GeRn5F1YSbaxQqu_2HV3d9AbTlQPQFf33BpkzRC8ASlcW_20rpFzWpsvAZ-RlLvL5iEkPgObl1RtkIc-jkFYt2WYc6RgpchIJt7Dtv1sUb5LDD9n2Z0vyWuJf83Ft_EhK5-IKZPttDgv96YXCRQU-Z1XP9YySyvaYgL4l0L41NfqxqMupiKtR_5S1peSx4iVawQrAEIkP7avNWKRhTiGUHDbWeOkI3VB0mNEheL1uLfBUn2ZA5GumV38iupB91PJC8Cn-KvexfQ3c2aai7MxAjgOF_8RXZOGUl5jrg3qwHYOGaJmIHvJMYvkOBBGz2YCGuPvmIdVhp8278tZs0r_j8as36msx1bdcH02kEke263XH_BgVa5oxPpqSp3_l5OjD_zppbFg12ZD6CuY1plqaUQa09GqieWenqyYuh2ddC22U73N2Gr_84H6tgO-D7HnseeeRl8RBYEqQVnpUZCV60wS-stTP1qnQqwu8MoUPqOIphXLMvV5cBwUyD8nk1FBl6kDiXyILHm6__3vzXGI1srr9rDsABnw-AtrGHeTTzLYE50oXZLUlzzpdgPTCFfvhLHLogm9A-XeT8ShDspUTgGXr8sLWGoP6g7Hrrl1Zq7TgOhoqjm1ibAYTR5ziG3u6BGCN2MjldOmT8x4bacSjkBPEsyERoqntEHK1lb2OUsp94dkXYUz1qwXHst8E-3zsj5RW2lsIHyOk_pBqsHuz8OcfW6D_Mi06ZFtLZuK9DiJg9cvJjTdp9gfEwvYj8t821KogXHe11NHy1LX7jE6-GDOl2PCoPRQLjWmyBOGba_TwCzuW1Kksci1r3PfXhu8mC1-7O9JOLqvPP8MXJ3mOEONMpoCLdOXxSlMoH1QLeGehgoybmLzJt1-92WtBQzK0HlQJ2IXHjNhnWO-jT0ZV1WnBgjU67QZ6JHE_-S0mE98VSMQSdrkrGiCeRisPeSWMF9_VgcbpfeEb86guRe7Q_LoL8laIClU_eYXnZuPS77jpa54MlKguCn_a0uuCFGm83YXky6ktF2ysaBtUhYM4rTKKIcF-SqF3pOVdN5UZLwChcQ0aqV3sU659fXrlmM2rIbs5NgHsU8IDvWhc1UZnpNa1oKiAEAJR3EDdM_LL9E6ChHTzrk9a1T6NYZ1IWad_GEWabOd1O37LweszLyJEn1CNUfkZXYhzIkUZpwezPuKVa39s_lOjWEbzUCMdJuMWbPaDpYfCONXrN7U3DaOv0jqfXsYKoY5nFgMG6lyrkiG27FWcHL0Cdb9UotXz3idxoVBs-nTqgPxg5uAoaVGIGOB4Q8b2Vm-e8jtXaWUtNm_1vA-ihLGIrmBfPmHoKE-qRcab-bzYI3Q7wbSMgz37gd-eq6qQ-D5Bbw6QFqUGL9p2BTI2TugLhPcryXwxc_T7x63ohkyDu-RWC8yStUXUaYtba0YwKFXjqHkGVoucNdiNGWkJkSIhrtZQMAh5xb49jcGzR7wQ1MXvpcyyO7jDFjRHg47RwRWJFKBXecC0IudlkHac_eo0YgDrYHswWwmH1wteBkMzPZMTmCTB2WR5le1B_7XwkluwOwc08O9BBGxWQNdcSdKxQ03D-wmgRP203IKgwdBZmqEqKcf0LvCVHBwAVFl_aJXsVDHimncjj1pGtJtgzFRzkR0EqVb2Ry0KHAB1hewJiOKFvutRpUax1cH-BRoksf6vQiUShzU0Uoi1AyQj28fKR_UU3rE7BIrD6JUZuZHnwFySCssxUduMns95VmhVkbt8H9N_kO8arSN_ijulXS_7dyf1QDteWOqU1HNFLpU5FA6s1GZov39snk8ihgmrgmI-MGxZ69XJmMiGj0wYf9NzwQSAz3ScV98vwCABpVMlCwLhq7hXQP5UkXI21mCnC62Tp_LfdfBFlD14WwDDHRczbffDtXMsQh4lxp81kZ_MKxzd0b07PLwCJq7_fO21lIbKCCOk2f4oU3TWhFvOhLaNfGGcBd6R_3PYNKBy4Sh4xe954BlOyRmkMBe0vnhtick9uZcdyK-RCvaTil5VWiTpzDxYd5O4H9UKQxSGreE2b9u7haOgnw4G9OqxhMrY50mBnDHB4vaSNvGnyl3ZXfJQ685ToCyt-tVpIWpTVcmzlrHGWwZY4AmnI207rleYrU-F0BhFls8nRoh85PvQK-9yW9zb2xJCSbeJHLhpaeIY7JP3L8_FTJ1IohVJj9DnZ83WcY1zGajpvQuwIKm939KLHgKS5O_rFqD5YeXVPLihLguk8q_QcIMHvfCqymKfGDdh057d4nEdoahs0abHFLxu7bN5U4V4grtMl0cyTHJdtKUgf0cuPyFziE3AFmzAb-eTI2QNG2AN3P5O0VH-eSkwmwbCO3t7K8YkQuoI9iVvOu5lBh0VhKzifzCCPt_wjd9-AiNqRYHgPbgtwfV2L2x-NRBeE7hQc5R9Sptlj_-ntr_Sjz8QhqTv_m-Mv_lGefeg0ilPu89OWc_yXvqlSqKgchsHSYxzrl0AV6jAxqWmL7_zIlaIIg==",
+      "summary": []
+    },
+    {
+      "id": "msg_012af3c906ff2a2d016afcb9c17e3087d282bd64a2ec993404",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0517_W06\n\n## Episode annotation\n\n- Language task: fold the shorts\n- Success label: failure\n- Outcome evidence: Provisional for this window: completion is unconfirmed, rather than a visibly defeated folding attempt. The robot adjusts near the layered beige garment and withdraws, leaving it at the upper-left of the table (frames 1750\u20131839, left and top). A person introduces and spreads a separate dark pair of shorts (frames 1885\u20131918, left, right and top); the robot subsequently aligns its grippers near its waistband and leg edges (frames 1920\u20132099, left, right and top), without completing a visible fold. The task does not specify which pair is intended, and the beige garment's earlier folding history is unavailable. No clear failed acquisition, damaging contact or persistently unproductive behavior is established. Earlier and later context is missing, so neither the introduction of another garment nor the window endpoint establishes a final episode outcome.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1750 | 2100 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 86318,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 277,
+    "output_tokens_details": {
+      "reasoning_tokens": 31
+    },
+    "total_tokens": 86595
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0441_W04",
+  "language_task": "take the small silver cup and pour its contents into the blue bowl",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: no pour is completed. In right and top at frames 1050\u20131075, the gripper withdraws without the silver cup, which retains its red and green contents. The robot subsequently acquires and repositions the blue bowl near the cup (left, right, and top, frames 1175\u20131350), potentially preparing for another attempt. At frame 1399, right and top still show the contents in the cup and the bowl empty. A failed cup acquisition is visible, but a failed pour is not; eventual completion remains unconfirmed because earlier and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1068,
+      "failure": false
+    },
+    {
+      "start_frame": 1068,
+      "end_frame": 1076,
+      "failure": true
+    },
+    {
+      "start_frame": 1076,
+      "end_frame": 1400,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1068,
+      "end_frame": 1076,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In right at frames 1068\u20131075, the fingers pull clear of the silver cup without carrying it; top confirms that the cup remains on the table beside the bowl with its contents retained. This empty withdrawal establishes unsuccessful acquisition rather than a successful lift. The close interaction was already underway at the window boundary, so its earlier history is unavailable; the failure is labeled from the visible empty withdrawal, not from the preceding approach.",
+      "recovery": "Realign the gripper around an accessible cup handle or suitable exterior grasp point, close securely, and verify possession with a small controlled lift before moving above the bowl; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The cup and its contents remain on the tabletop, with no visible spill, damage, or meaningful damage risk from the missed acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible and contains its contents; another acquisition can be attempted without environmental resetting or human intervention."
+    }
+  ]
+}

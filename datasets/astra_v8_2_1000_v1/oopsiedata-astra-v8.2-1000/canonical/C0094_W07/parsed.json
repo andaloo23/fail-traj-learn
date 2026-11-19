@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0094_W07",
+  "language_task": "pick up cup with one arm, hand over to the other arm, and place it on saucer",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this provisional window, rather than a visibly failed acquisition or placement. Across frames 2100\u20132449, aria and right_wrist show the right gripper at the cup near the saucer without discernible movement, release, or withdrawal; left_wrist shows the other gripper open and stationary away from the cup. This approximately 11.6-second interval establishes sustained stalling. Earlier pickup and handover and the later outcome are not visible.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2450,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Frames 2100, 2200, 2300, and 2449 in aria and right_wrist show essentially unchanged cup and right-gripper positions, while left_wrist shows no useful movement of the open other gripper. The sustained inactivity does not advance the task. Context frames 2098\u20132099 show the same configuration, supporting continuity across the starting boundary; the stall's earlier onset and continuation beyond this window are unknown. No hidden cause or abnormal interruption is established.",
+      "recovery": "Reassess cup possession and saucer alignment, then resume the remaining task steps, confirming stable support on the saucer before releasing and withdrawing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed progress; no drop, spill, damage, or meaningful risk of damage is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental disturbance requiring reset is visible; task-directed action can resume from the current configuration without human resetting."
+    }
+  ]
+}

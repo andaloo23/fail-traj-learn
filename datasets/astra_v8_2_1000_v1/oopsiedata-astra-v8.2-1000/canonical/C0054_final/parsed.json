@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0054",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the purple cube at frames 26\u201354, closes around it at frames 55\u201361, and lifts and carries it visibly between the fingers at frames 65\u201375, completing the pickup. It subsequently releases the cube into the cardboard tray at frames 91\u2013105 and withdraws; the cube remains in the tray through frame 251. No failed acquisition, unintended collision, or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 252,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f187b1f75b73cf8016af8ff96973487d1a7a6139b1c1af806",
+  "object": "response",
+  "created_at": 1794703254,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703264,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f187b1f75b73cf8016af8ff98b95c87d1b4181dc71ad73a21",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-P-hjeuS0ljRXT3MbeF6kCqC-j6CLEPRoMTMPcHsyafu43jDeRyMH059rBXvufolxlZf2XsqZhm40wJklntdfitme05I0pw-zwiN0vCbDM74Yo90jzvBcH06J0qsIS-8dSAV_CqZGTjsZwLUOVUdAPooTm6B9vFzGPpoxj64fXsjwMfxxEuN8HeoVZ29wRNVcH_5R9gOSKj42zlOwaHCySSOtpk4nr_nPoUor24HWXGEhTVd76Zf7It76IP02_lEWPqjS-NlpConYbSgIJu9QbfiCdfbPcHArs3MWWEbaezUfUpZoC-nZ_An3TzLQMDShPwdz_aOY6_Fjt7Qz2EPiwzbqOp_iHdrbnoBO4VbvBJwbvLIq8wAp43-VUiEOLO-jsRktOt4UNCC0X9s8Nd8RUElPMYGKHgt6LEpRF_vJMHW9k4yOTC-jJv_rEcnOSjy7hbENVcF6EOonwAA2pZloPc9P_cs85qUb6U59PHUAg1eylIeeeauDo-rq1Abb7QLzpmBqcD1SXFyrEnUt4slIWKN9zTGnjn-nyn4JRDFwqzySmh7VLosbpAczi2TqCaA3JG4xTeIzzM-CVPE0HAenTL_NBanE8ZmgzZkuXuXEhqQGyTbNGiPXEGGHGcOMKthDkxhbiOonxb3rfAxvmD0gPPQXQbbP8fQJvNhhdFRrEK3tWmVPsQUA5cYJQtNVHNe4r01UIMS74JhhVv4iTbM-69WoJAUlkWuwaECf6DVlcRttgQ_j7xRRaaN-FwO1jGp6o7buwKtCWDm-EqT40pQm81KegA3I3YPiey6hxGheHVwAycSqzC5qTdmM0TXccbnMy00LylhJ5Wz5fDsLQe9CCz6kI4SUoGDjPwK63zys8hajT4GRRlgbTbpV678Kjsy68ElebVUulKFF51N9bqMjvK27vk2zL9-uptP-v7fVHQwAW2zo5MlMQsljP4UDVUuS9eAERGsbdaL3PDr3XEEcsOU-GUscuoG4vQoxK3Ok1ynrtD8r1IQ0x4WALdOfPU0RjxvSeWYH9yJnVlyZqB2ny10P7tMOMtm9XBAKIgOIDnc5k7WL8l6SvZurm6nuqO_fkr-qoW8SQSs97-ffA6Lt8xN38Qg5POaPblhE9a1bdkHhRHfBOcissgG9BkOsgfSpkvloC1cDdDqMqbOesVaOkLCa8mRRT2xhW3pZ6wsVzhL6neCnvHc0Z8qNAIAjsVXdtpa0Tp7mCBI5gFxgkoAF9u6Rb2ywYvDW_QJArFGl_IfwLaWdjs_gS9y9chlxEISkbSrs-k405jqV_vml5arETCaXZxRheyO55YJJ8YUTs8eSC1YTYi2y5JV-ULsohqbXdm73akYXPGGRiKcYSBoBMO685BXmvdxxBhrZFk7QZFtIlacqpOsVzYSUDNLSRguqBp3d5M-W5ITCYSZd1aRH53YhoYb4qU6U5qA31VNS5qUUK4Wu4BNtlfoZvJfCqx_a11HdGq6zelqt7-EkgWmnq8gpICCBhFSImBtESJVFEtxAZumSEFMAss4Ybhvo4W50m01JxUo8nWRukCPQWnJEtqCMlt0HGYn87PQYW9FMCHbUrAMCMppfh_VSmZ0Zcfg1j9sckgK4gZ2DpLxV7OhJ3ONJ-yCzQh3kERQzwFr_Y8EaG1gdfWr_7UtbL9SNC6HqnPbpXB7JFQ4BQCK_2EXIE6vtqoEJfcbR-3kbBHXIUyXJREJZiLzMu3QPJsKJtzsvH7-wMhcv73tDpVG-Mbz8W_OFu_T7IKcMWU_Rujmxn3vMlHP0It20Iam6CDMfC0tGtGnYPDDH4VVepFwNJ7uRICEKYmYcs48CWOhdh_ku6rm5vwF6zVWRR7i6soXM97bcm49xqdIDyHXu7Q7EtppegZMmNCgoH3Tlrzzw1mJTiuObYUboLN91XKTrPkZeglL4Lsoni2689n2KN5BLVo7oESzQut7sszwKAENw4NsCiAi-cS4MwcIkCE8GizpiszPqQF4aacCFOYBclclWohF7iJGusmVRSDzR_bO1_sehSa00IPWG3R_0-N1h-V91WoEjlCAqOzaWS_Kp4MJefWAwHN1NwKY0o8wXzkzPsHbuJx8dYuCII2K02HygGavYbEruuW1rmkvxUCCuhUIjboYC3JUab8uBPRebZvLHPY2bNdsKT_Lp7i-Bi0B5YoP5TWoFr64Tob81gmROUc2-tiEQSbZ5dyMeijwfGNwM7vogp_eb5rHj_R3ohQNmd32h1K2LIPlCku98RVNeMlstOJ9Zx5F0zHv86VQ622CwA08WXMhC41Q9OvinBrjM1RZzdxn4IVLerEcKC7oxmw24KcUVs793wtfqc2D4c5IpQx3ZcHgj366JEbXxM2L5i04wg8gXiaLwR27z41dOvN__BUMj_5nayjJxJX4Ox8SKlOaj4wSFe-_wt4sNApVaS_Z_ZkaevLwvxvgrnnES_J3vF04wzXTsVqwe4q_dquhw2Ro9kSBRa-JIbKviWGL9vhOPLDqS8VsaI4_IqVTzlc7BKQNa-UptU82iLujBPDQPeSEM5eXR4zqNqGyb6rwPbeqG9CWvAmUNmznsGyhgcxF_5kFIqX4qHMthCtZDk-fFVTm10eaQH6sQAHhVzvHmEHHi0m4xc533zGnBSc1yjjlCQqKQTX6YEU5-HV1PtQ_aUUmY0JGkACT0TadXbww1yKZcYRH0vg3WijbfrwrgWBjmD5S0Y7HfhEQ9BwGSkoQIbwjRHZEx2fLRQqLgNt6hlNRpdN5mB-Q3ZaJxduUoZ8NESqYzpwcCJrJ9X8eieCQii5YSxGxgU7c1G2CGTzmIiSUXHqcVg7ebjvwBdVfw499mTb_P6dkS7A6wGPYHkv-tckrKpIA0WKz8kcpv5TiMy6rmRxIci2V9Hw89QYSgwoJ2taJ7rV7CYX66EzwVAsqnliMMC907hxgtlEgq37NPlcitv1UlyAhpOIMybr-xVCofVNoRprVtA2rHuhWVRnHiaFC-p3ARPdQlhge8KE_oRjJZA6VKLUujz4TWdgP78KkUjFdKJMJrEfC0kgJYTVU3_fcIHSBAcnLqYkaFpUytEC8t_p8PtQtL78g8GuOInVPTmLRpATXh0Hl5yaUUdt01gvbX4RQOtk=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f187b1f75b73cf8016af8ff9b4ad487d18a6a62dfc7d6e078",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0125\n\n## Episode annotation\n\n- Language task: Close the oven.\n- Success label: failure\n- Outcome evidence: The oven starts open (frame 0, image and left_ego_image). The robot raises the door partway at frames 57\u201370, but it swings back down at frames 71\u201375 rather than closing. The door remains visibly open through frame 141 in image, left_ego_image and wrist_image; this is a visibly unsuccessful closing attempt, not merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 71 | No |\n| 71 | 79 | Yes |\n| 79 | 142 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 71-79\n- Categories: manipulation\n- Explanation: After raising the door partway at frames 57\u201370, the robot fails to maintain its closing motion: the door swings downward at frames 71\u201375 and returns to its open position while the gripper moves away (image and left_ego_image). The reversal is also visible in wrist_image. The precise contact or release mechanism is unclear.\n- Recovery: Reposition at the door handle, establish controlled contact, and guide the door through its full closing arc before releasing; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The door returns to its open position without visible damage or disturbance to surrounding objects.\n- Resetability: immediate\n- Resetability evidence: The oven remains accessible and open, allowing another attempt without environmental resetting.\n\n### Failure 2\n\n- Frames: 79-142\n- Categories: task_not_attempted\n- Explanation: From frame 79 through frame 141, the gripper remains nearly stationary beside the open oven without a renewed closing motion (image, left_ego_image and wrist_image). This sustained inactivity does not advance the unfinished task; the images do not establish its underlying cause.\n- Recovery: Resume a controlled approach to the handle and close the door while verifying its final position; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The task remains incomplete, but no damage or additional harmful scene change is visible during the stall.\n- Resetability: immediate\n- Resetability evidence: No objects need restoring or retrieving; the unchanged open oven is ready for a renewed attempt."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 28609,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 611,
+    "output_tokens_details": {
+      "reasoning_tokens": 111
+    },
+    "total_tokens": 29220
+  },
+  "user": null,
+  "metadata": {}
+}

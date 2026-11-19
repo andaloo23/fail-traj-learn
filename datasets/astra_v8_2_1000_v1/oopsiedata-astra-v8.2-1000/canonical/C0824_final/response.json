@@ -1,0 +1,116 @@
+{
+  "id": "resp_0097b2e48dd7f17f016af92ae4769487d1b37f1d77b16da429",
+  "object": "response",
+  "created_at": 1794714340,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714349,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0097b2e48dd7f17f016af92ae7043487d1ad2ee096447fb0cb",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SruexU5WvmEtXh0_iyWafFCiNyVKy2vOP7OPcD6tJb4Y4mg4A7xCFd-ZAy-Ka_vBVRAQYeycMWTn1HgU5tCt2L8mMrZA_V_s7_DQI1Um_UNzkTI4Gh4MixJAyk7M9ZJUgzCeEcmu9LeAGRFU8c9ejiElG7e5d0-YBnlofKt3VgMNgIIj8G5jNUgjh0Ou9vIUdGioS6ZRGeU7eZjzGxC4pkii0m3PaMQb50onDo2nvOMsVN-MigbYcWbjtsI1Ovrbhq-CmzYinHZkVle90LOuuP-WnasArV4DPoNCOpOdt1KJOWj4bATmWaWBv9rEv2h6oPOcDMbRzOMDccwTbrAuFnR7Zfo2oRfl4QvBXYLtzcduRii6Pz2bPWn5dQYLRo2lZ3gZGTPGE-DeYu2rqbyBYG2t1-fUXmLFoFyaPd5npmhI1ajSUSNxK0bdnQ0CV7EQJpX_EY76Lwch545_vFJP1c7Z8AMkAAJ8JVdfHC-BslgRSOmQGLoa5bop1Bdp-FxfqEHKUkBthIebFJlRNMQCRbsIxe6C047FlNTb197gYrgQbEO63OHysRmpKoIpQnNoPW-CEhH3GgdUgeoqVFB934oBNzJFIOji46R0392kKpGmJem5iow-I7h5X8A0qXHqLUMtcZ3eTCvks5pbrq6PyiGemDNjU12IDjB6IYyeFvmnZcKymilFhzLCvY7mD3BNYJhXQslnKLVyYLRqMbYwOl84B8_QyGe8NrICbMVmKgOhVCzy4nrM1Cd58J7cuQzRr8gcO3NIG5GT00Et38J6Kv-M3T77WOXvl_k0U2ZHB_HkRElMzRiw3vsvttz_wcX8MHIASLG6CMoErZ2tOU55eezPjSeV871bw-kub8hvmetCNUltPORZORDus3pLaL2iFzXJuO5Nmcvv1yjEjhuigN9ymnHWFnkIRzlHo5fVzmZay1xs3HkwUJXdOSA2UljUjsAYse6Qd98ZxOHBcana1xACkzNSDmhNNyfPcxYsF7cyL8Op_qRiDFLdQcry6an8eyhco13Wxnj_01cS-ff0sHTCnmGHu1ZQUX-6ZM4V9tzyvuIqTbRu83Hm5gX6v4MMHmDzONkR9n5QrvzWznAtnAK0JgfDktaXpiRvbqovIDkwNkuoN60Tbx8K3fZ0Rmd6NXDl3UIZTqLNMWgfeRqB0J82Sfxb5729sGRNhymYN8WBRg-a9HKCs_3lfuyY_UscGPJl-GA5j1G1hXK_HRf4mdqVlluSFWB3fdpsiVj8ogm6CPfIu9tzFLDyZSvGvUC-tvkBZWfZ-W2p9Zt1M0cy4A3LA88YR6tSwY-VfLLL5npgE84dEPfmxxMxaVG44VOOF7DYbqNM1BKct25x7lkuIbBNfr773j8ulITXComf68qnwslEePOnkOrCI16mTCl2pgX8jGSX5KKIMY3r8KZ1rGJKJpzbKy8k-1UoNkrYLaPfr1kYjmuP0BSYgQvjZetJUNVdQIo23eSRPXVBc6rej8vGjFzMmxTO7dwHUeC6A6iMGyRGfGxp_yGZtbXC7OU_mN4VoMgeq3AMU0FminTTZJXT2M3KK0BoBiyWn_pDEHRnUHMGnGXaqJUNvV3j7d94QHm7GAWzErQ-mWqwxU5z-KkZkLn3HTl8qFIIZaxANyk1_3x8wsJgDTG-xwNArpG41X9DUtUa9Akyv66gX_0b-okVykuokLLdXmpAssxmyuke0joOY29GbiGo1gaiiYb5sFSL3nKZnZ-wjYC1jFVUxVDp0yhMp7dpPN3LNE30J2yYINkPCPemdVF8r_zxYVdspi47y4iqOxn-m5hsvsKfwFv-TiItnzCRhvOZqw443C5zSvlzMRnilUDXxdlOCFQsYZxUgWGqIKo1ab18eTLFymUM51NHQ046oou-LcZCzTGGImqxFa7A9CUbql53lVRCCRXScY9OFyUCh042zHu0q3ijF2sZ5aSNTRPbaLoHqEj2cciIo-cg4kfoGpsARi6_vUWr9cT7wrFZKBxSuDgLH_fH7gijutk6vlZP-idEvbrgNBZd1v40Th_FZqwIfEubxz7KrYQEzj12YJl_1ncsu1q1PS6X2kA3dueU6TAsKp6YkdtQkzvzm_mCcPeydL8SpvhJIrU5OgXv6zlZgFoJuTfUIZpIeFthWnBfdw0rqz3OEePLZtHFNvhbp33UNpziKMVFgzawEN1D7nwmgznZO0M5n1Tbs7NBknIg-xaMQmpJ1YFU_A6VxnvPYa1rq_BtM0CniwfoH2mBE2Of9zgLegQph_TMoVQ0WTLdXvW2Atqbt8coDETS7m6GyEcgpvmwTw-aabhYRcBuXTUTcnbgMmdzVCuDBXct0zANHhA2eRhfyVtXxk4b2QigqMgDbH1pcZRYbu2WE5c9SvAu6IprWBJviawR7HFMjkeQ7kh7_644SNH1G3PWKWoZ6Sai0w-dorgY5owvV3DmPzjenopLUfNsVW8hJhwdZld-DDtAcngXPvTNN01S-XQhD9hhAeFJVdPAdNRTOkXRprXWicExT6thKEZrfZ5ROVyjnzIip4n9V55pZ9myKcfDx7fyDhPiBfrDITt8zM9pIW3HsrLkTxOg8aypCvPtgXliInlTnKvVAGIYEldPQcGZ7hhmj7czWlyDxpnvCg9N9fNEN5AUTe0aN3evtalIt9xi5QA6Y-65QxLpu6JKYdr2c3_u_BMHqP5RXnxjMGAiwtgHYXDg6QnVGgIPQPMx50R94AZc_mdnsCRhpfk9IdUlvgPuLmAJAxCG4-FSh-i2jSgX3KK90hYXQ==",
+      "summary": []
+    },
+    {
+      "id": "msg_0097b2e48dd7f17f016af92ae8f91887d1944a9244cc026d32",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0824\n\n## Episode annotation\n\n- Language task: pour the coffee beans into the cup\n- Success label: failure\n- Outcome evidence: Frames 26\u201355 in left, right and wrist show acquisition and lifting of the light-blue bean container. Frames 98\u2013117 in right show beans entering the brown receiving cup, but frames 118\u2013141 in left and right show extensive spilling across the tabletop as the source empties in wrist. This is a visibly failed transfer with partial delivery, rather than merely unconfirmed completion: a substantial portion of the beans ends up outside the cup.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 105 | No |\n| 105 | 142 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 105-142\n- Categories: manipulation\n- Explanation: At frames 105\u2013108 in right, beans begin appearing on the tabletop outside the receiving cup. The robot continues tipping the held container; frames 118\u2013130 in left and right show the falling beans scattering widely beside the cup, while wrist shows the source becoming empty. Some beans reach the cup, but the continued pour loses a substantial portion onto the table, with no visible corrective action before frame 141.\n- Recovery: Stop pouring, return the source container upright and set it down securely. Have a person collect the scattered beans and reset the supply; then align the source lip close above the receiving cup and pour gradually while monitoring the landing point.\n- Severity: medium\n- Severity evidence: Frames 124\u2013141 in left and right show widespread bean spillage requiring cleanup and disrupting the workspace; no broken containers or other physical damage are visible.\n- Resetability: minor_reset\n- Resetability evidence: Collecting the loose beans and refilling the source is a straightforward cleanup and reset; the visible containers and tabletop remain intact and usable."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 26617,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 485,
+    "output_tokens_details": {
+      "reasoning_tokens": 84
+    },
+    "total_tokens": 27102
+  },
+  "user": null,
+  "metadata": {}
+}

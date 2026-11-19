@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0299",
+  "language_task": "Open the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the upper drawer handle and closes its gripper near it (frames 101\u2013110, wrist_image), then withdraws without opening the drawer (frames 120\u2013146, wrist_image and left_ego_image). The drawer fronts remain closed through frame 175 in left_ego_image. This is a visibly unsuccessful acquisition-and-pull attempt, not merely unconfirmed completion at recording end.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "failure": false
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 176,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 120,
+      "end_frame": 176,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the upper drawer handle, the gripper moves away while the handle and drawer remain in place (frames 120\u2013130, wrist_image and left_ego_image). It continues withdrawing empty and subsequently opens its fingers (frames 140\u2013175, wrist_image); no drawer opening results. The images establish failed acquisition, but not its hidden cause.",
+      "recovery": "Reposition the open gripper around the handle, confirm secure engagement, and pull along the drawer\u2019s travel direction while monitoring drawer movement; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains closed, with no visible damage, displaced table objects, or other harmful consequences in image and left_ego_image through frame 175.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cabinet and surrounding objects remain in their original usable state; another handle-acquisition attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

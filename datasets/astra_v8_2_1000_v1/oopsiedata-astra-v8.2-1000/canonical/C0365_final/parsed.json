@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0365",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success but side effects",
+  "outcome_evidence": "In base_image, both cans are in the upper blue tray by frame 2000, the blue bowl is in the right red tray by frame 2700, and the pink bowl is released onto it by frame 4400. Frames 4549 and 4775 confirm the completed sorting with no task objects remaining on the exposed tabletop. However, the robot unintentionally disturbs the blue bowl while transporting the second can (frames 1610\u20131676), and makes two unsuccessful pink-bowl acquisitions before succeeding (frames 2985\u20133034 and 3555\u20133603).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1610,
+      "failure": false
+    },
+    {
+      "start_frame": 1610,
+      "end_frame": 1676,
+      "failure": true
+    },
+    {
+      "start_frame": 1676,
+      "end_frame": 2985,
+      "failure": false
+    },
+    {
+      "start_frame": 2985,
+      "end_frame": 3035,
+      "failure": true
+    },
+    {
+      "start_frame": 3035,
+      "end_frame": 3555,
+      "failure": false
+    },
+    {
+      "start_frame": 3555,
+      "end_frame": 3604,
+      "failure": true
+    },
+    {
+      "start_frame": 3604,
+      "end_frame": 4776,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1610,
+      "end_frame": 1676,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image frames 1610\u20131675, the blue bowl emerges tilted and displaced from beneath the withdrawing arm as the robot carries the pink/yellow can toward the upper tray. This is unintended disturbance, not a bowl transfer to the right tray. The precise contact point and any earlier onset are obscured; subsequent rocking, visible at frame 1700 after the arm clears, is a consequence rather than a continuing collision action.",
+      "recovery": "Maintain clearance from the bowls while placing the can, let the disturbed bowl settle, then reacquire its position and transfer it to the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The bowl shifts and rocks on the tabletop, but no breakage, spill, or meaningful damage is visible in base_image frames 1610\u20132000.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains accessible on the table and is upright by frame 2000; no environmental restoration or human reset is required."
+    },
+    {
+      "start_frame": 2985,
+      "end_frame": 3035,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following engagement at the pink bowl\u2019s rim in base_image frames 2983\u20132984, the gripper withdraws starting at frame 2985. Frames 3000 and 3033\u20133034 show it moving away empty while the bowl remains on the tabletop, establishing failed acquisition; the underlying contact mechanics are not established.",
+      "recovery": "Reapproach an accessible rim section, align and close the fingers securely, and verify acquisition with a small controlled lift before transport; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The pink bowl remains upright without visible damage or spill, and the other sorted objects remain undisturbed in base_image frames 3000\u20133035.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains accessible in its tabletop position, so another attempt requires no environmental reset."
+    },
+    {
+      "start_frame": 3555,
+      "end_frame": 3604,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In base_image frames 3553\u20133554, the gripper is engaged at the pink bowl area; from frame 3555 it withdraws without transporting the bowl. Frames 3600\u20133603 show the empty gripper separated from the bowl, which remains upright outside the right tray. This is a second failed acquisition, separated from the first by repositioning and a renewed approach.",
+      "recovery": "Re-align around the pink bowl rim and verify secure retention with a small lift before moving toward the right tray; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The failed attempt leaves the bowl upright on the tabletop, with no visible damage, spill, or harmful displacement in base_image frames 3600\u20133604.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental restoration is necessary; the bowl and destination tray remain accessible for another attempt."
+    }
+  ]
+}

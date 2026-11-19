@@ -1,0 +1,21 @@
+{
+  "status": "validated",
+  "usage": {
+    "input_tokens": 43761,
+    "input_tokens_details": {
+      "cache_write_tokens": 43758,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 43758
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 646,
+    "output_tokens_details": {
+      "reasoning_tokens": 94
+    },
+    "total_tokens": 44407
+  },
+  "model": "gpt-6-astra",
+  "completed_utc": "2026-11-14T23:18:02.034493+00:00"
+}

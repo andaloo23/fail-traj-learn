@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0455",
+  "language_task": "stack the cups",
+  "success_label": "failure",
+  "outcome_evidence": "Three separate purple cups are visible at frame 0 in head. The left gripper lifts one cup and nests it into the central cup by frames 139\u2013150 (head, left_wrist). The right gripper then carries the remaining cup toward that stack, but its release at frames 235\u2013240 misses the opening; the cup topples and rolls across the tabletop (head, right_wrist). At frame 278, the two-cup stack remains upright and the third cup lies separately on its side. This is a visibly failed final stacking attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 235,
+      "failure": false
+    },
+    {
+      "start_frame": 235,
+      "end_frame": 279,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 235,
+      "end_frame": 279,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully acquiring and transporting the third cup, the right gripper releases it without seating it in the existing stack at frames 235\u2013240 (head, right_wrist). The cup falls beside the stack, tips onto its side, and rolls toward the near-right tabletop area through frames 242\u2013264; it remains separate at frame 278. The placement therefore fails to complete the stack.",
+      "recovery": "Reacquire the sideways cup, bring it upright, align its base directly over the stack opening, and lower it until securely nested before releasing. Human intervention is not inherently needed if the cup remains safely reachable; otherwise, a person should reposition it.",
+      "severity": "low",
+      "severity_evidence": "The cup topples and rolls on the tabletop, but no breakage, spill, or damage to other objects is visible; the existing stack stays upright.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The displaced cup needs to be retrieved and reoriented for another placement attempt. It remains visible on the tabletop at frame 278, supporting a straightforward reset rather than repair or difficult retrieval."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0503",
+  "language_task": "Remove the fruit from the plastic bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The green and yellow fruit remain in the bowl after unsuccessful acquisitions (wrist_cam, frames 49 and 95\u2013121). left_base_cam and right_base_cam show the gripper withdrawing without fruit at frames 89\u2013150. The robot subsequently returns toward the bowl, but fruit is still inside at frame 240 in wrist_cam. Earlier attempts visibly fail; the final attempt remains unfinished, with no confirmed removal.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 31,
+      "failure": false
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 44,
+      "failure": true
+    },
+    {
+      "start_frame": 44,
+      "end_frame": 81,
+      "failure": false
+    },
+    {
+      "start_frame": 81,
+      "end_frame": 152,
+      "failure": true
+    },
+    {
+      "start_frame": 152,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 31,
+      "end_frame": 44,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the green fruit at frames 25\u201330, the gripper retreats without lifting it from the bowl during frames 31\u201343 (wrist_cam; left_base_cam and right_base_cam). The subsequent opening and view at frame 49 confirm that the fruit remains in the bowl rather than being acquired.",
+      "recovery": "Open the fingers, realign them around the fruit with adequate clearance, and retry while verifying possession before withdrawing; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt does not remove the fruit; no damage, spill, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains upright and the fruit remains accessible inside it, allowing another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 81,
+      "end_frame": 152,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure at frames 65\u201370, the robot lifts and withdraws an empty gripper starting at frame 81, leaving both fruit in the bowl (wrist_cam, frames 81\u2013121; left_base_cam and right_base_cam, frames 89\u2013150). It continues away empty until opening the fingers for another approach at frame 152.",
+      "recovery": "Return with open fingers, adjust the grasp position to surround one fruit securely, and confirm that it lifts with the gripper before moving away; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The fruit remains in the upright bowl, with no visible damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup or object replacement is required; the robot can reapproach the fruit directly."
+    }
+  ]
+}

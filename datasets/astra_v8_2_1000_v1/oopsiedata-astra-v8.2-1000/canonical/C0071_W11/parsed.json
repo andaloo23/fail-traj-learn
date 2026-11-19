@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0071_W11",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image frames 3500, 3675, and 3849, the visible cans are in the upper blue tray, but both bowls remain on the tabletop and the right red tray is empty. No discernible task-directed movement occurs throughout this approximately 3.5-second window. Completion is unconfirmed, with sustained inactivity rather than a visibly failed grasp. This outcome is provisional because earlier execution beyond the supplied context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 3500,
+      "end_frame": 3850,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 3500,
+      "end_frame": 3850,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across base_image frames 3500\u20133849, the visible robot parts and objects remain stationary; neither bowl is approached or transferred to the empty right tray. This sustained inactivity does not advance the unfinished task. Context frames 3498\u20133499 show the same state, consistent with continuity across the window boundary, but the earlier onset and continuation after this window are unresolved. No hidden cause or abnormal termination is established.",
+      "recovery": "Resume task-directed acquisition of a bowl, verify a secure grasp, and place it in the right tray; repeat for the other bowl. No environmental human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of progress; base_image frames 3500 and 3849 show no damage, displaced objects, or supported risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both bowls remain upright on the tabletop and the destination tray remains empty in base_image frame 3849; no physical scene reset is needed before resuming."
+    }
+  ]
+}

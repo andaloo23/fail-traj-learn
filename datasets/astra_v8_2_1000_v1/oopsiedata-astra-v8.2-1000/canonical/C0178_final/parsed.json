@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0178",
+  "language_task": "Pour a bowl of M&Ms into a bowl of skittles.",
+  "success_label": "success",
+  "outcome_evidence": "The green bowl contains red Skittles packets (left_wrist, frames 58\u201370), and the blue bowl contains yellow M&M packets (left_wrist, frames 126\u2013130 and 345\u2013355). The robot lifts the blue bowl, transfers it between grippers, and positions it above the green bowl (head, frames 110\u2013300). It then tips the blue bowl and pours the packets into the green bowl (head and left_wrist, frames 332\u2013356). At frames 356\u2013363, left_wrist shows the blue bowl empty and head shows the transferred yellow packets in the green bowl, with no visible spill or other side effect. The visible contents are packaged candies rather than loose candies.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 364,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

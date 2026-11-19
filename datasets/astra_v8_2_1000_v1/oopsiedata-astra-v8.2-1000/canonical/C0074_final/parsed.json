@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0074",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the gripper approaches the red cube in frames 14\u201338 and closes around it in frames 39\u201341. In frames 42\u201352, the cube moves with the raised gripper toward the right, leaving its original tabletop location empty, establishing successful pickup. Subsequent handling near the box is partly outside the view; the gripper returns open in frames 78\u2013104. No failed acquisition, dropped cube, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 105,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

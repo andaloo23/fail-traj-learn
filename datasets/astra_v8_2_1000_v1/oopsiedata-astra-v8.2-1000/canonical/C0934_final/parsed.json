@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0934",
+  "language_task": "Pick up the blue rectangular block and stack it onto the yellow object.",
+  "success_label": "failure",
+  "outcome_evidence": "Frames 76\u201390 in wrist_cam and right_base_cam show the blue block acquired and lifted; frames 110\u2013163 show it transported toward the yellow object. In frames 164\u2013240, wrist_cam shows the blue block remaining between the closed fingers, while left_base_cam and right_base_cam show no completed release or withdrawal from a stable stack. Completion is unconfirmed rather than a visibly dropped or toppled placement; the final prolonged hold does not complete the task.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 164,
+      "failure": false
+    },
+    {
+      "start_frame": 164,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 164,
+      "end_frame": 241,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the yellow object, the robot holds the blue block in essentially the same placement-area pose through frame 240, with only small adjustments and no release or meaningful stacking progress. This sustained stall is visible in wrist_cam at frames 164, 180, 200, 220 and 240 and corroborated by left_base_cam and right_base_cam; no hidden cause is established.",
+      "recovery": "Reassess the blue block\u2019s alignment with the yellow support, center and lower it into stable contact, then release and withdraw after confirming support; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The block remains retained, and no dropping, damage or disruption to other objects is visible during frames 164\u2013240.",
+      "resetability": "immediate",
+      "resetability_evidence": "The robot can resume placement from the retained-block state; no cleanup, object retrieval or human environmental reset is visibly required."
+    }
+  ]
+}

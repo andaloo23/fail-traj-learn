@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0924",
+  "language_task": "stack the cups",
+  "success_label": "failure",
+  "outcome_evidence": "Initially three separate upright cups are visible in head at frame 0. The right gripper lifts one cup and brings it above another, but it falls sideways during release (head and right_wrist, frames 138\u2013150). The left gripper subsequently lifts the rear cup, but that placement also falls beside the remaining upright cup (head and left_wrist, frames 274\u2013285). At frame 308, head shows two cups lying separately on their sides and one upright cup, with no completed stack; these are visibly failed placements, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 138,
+      "failure": false
+    },
+    {
+      "start_frame": 138,
+      "end_frame": 159,
+      "failure": true
+    },
+    {
+      "start_frame": 159,
+      "end_frame": 274,
+      "failure": false
+    },
+    {
+      "start_frame": 274,
+      "end_frame": 309,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 138,
+      "end_frame": 159,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully carrying a cup over the front upright cup, the right gripper opens and the carried cup tilts away rather than nesting (head, left_wrist and right_wrist, frames 138\u2013144). It falls onto its side and rolls toward the front of the table (head, frames 145\u2013158), leaving the attempted stack incomplete. At frame 159 the arms begin repositioning for another attempt.",
+      "recovery": "Reacquire and stand the fallen cup upright, then align its base centrally over the receiving cup and lower it until securely nested before releasing; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The cup falls and rolls on the tabletop; no breakage, spilled contents or other damage is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The fallen cup needs retrieval and reorientation, a straightforward reset on the accessible tabletop without visible repair requirements."
+    },
+    {
+      "start_frame": 274,
+      "end_frame": 309,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "The left gripper carries the rear cup toward the remaining upright cup, but releases it offset to the side; it tilts and falls beside the intended receiving cup instead of nesting (head and left_wrist, frames 274\u2013280). It rolls leftward and settles on its side (head, frames 284\u2013300), with no subsequent recovery visible through frame 308.",
+      "recovery": "Retrieve and upright the fallen cups, then retry with the carried cup centered over the receiving opening and supported in a nested position before opening the gripper; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The second cup topples on the table without visible damage or spilled contents; the receiving cup remains upright.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "This failure adds another sideways cup requiring straightforward retrieval and reorientation; no inaccessible object or damaged component is visible."
+    }
+  ]
+}

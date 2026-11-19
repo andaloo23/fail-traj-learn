@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0448",
+  "language_task": "close the drawer",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is visibly open at frame 0. The gripper approaches, then remains essentially stationary beside the drawer during frames 9\u201330 without closing it. Movement resumes at frame 31, and frames 40\u201343 show the drawer sliding inward until its front is seated against the cabinet at frame 43. No unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 9,
+      "failure": false
+    },
+    {
+      "start_frame": 9,
+      "end_frame": 31,
+      "failure": true
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 44,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 9,
+      "end_frame": 31,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, frames 9\u201330 show a sustained stationary interval of approximately four seconds with the gripper beside the drawer front and the drawer remaining open. This interval makes no visible progress toward closing the drawer; its cause is not established.",
+      "recovery": "Resume task-directed alignment and gently push the drawer inward, checking that it seats against the cabinet; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay only; no damage, displacement of unrelated objects, or meaningful damage risk is shown.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer remains open and available for continued closing, with no environmental reset or human intervention required."
+    }
+  ]
+}

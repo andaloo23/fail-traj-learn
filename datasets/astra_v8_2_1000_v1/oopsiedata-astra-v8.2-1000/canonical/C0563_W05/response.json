@@ -1,0 +1,109 @@
+{
+  "id": "resp_0ae2ff5647429d20016afcb9ba6ffc87d29497bd00cf7d3910",
+  "object": "response",
+  "created_at": 1794947516,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794947524,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0ae2ff5647429d20016afcb9bfbb3487d283bea2765bfb0ef7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0563_W05\n\n## Episode annotation\n\n- Language task: put all the fruits and veggies into the green bowl\n- Success label: failure\n- Outcome evidence: In frames 1400, 1575, and 1749, top shows the green bowl empty and the produce remaining in the light-blue bowl; left and right show no discernible acquisition or transfer. Small posture/view shifts do not establish a task-directed approach. The task remains visibly incomplete during sustained lack of progress, rather than a visibly failed grasp. This label is provisional for this window; earlier context beyond frames 1398\u20131399 and later execution are unavailable.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 1400 | 1750 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 1400-1750\n- Categories: task_not_attempted\n- Explanation: Across frames 1400\u20131749, top shows the grippers staying away from the produce without acquisition or transfer, while left and right show only small posture/view shifts and no discernible task-advancing action. This approximately 11.7-second interval is sustained unproductive behavior. Context frames 1398\u20131399 show the same arrangement, supporting continuity at the starting boundary independently of the prior prediction; the inactivity may continue beyond this window. Its cause is not visible.\n- Recovery: Begin a task-directed approach to an accessible produce item, grasp it, and transfer it into the green bowl; repeat for the remaining produce. No human environmental intervention is visibly needed.\n- Severity: low\n- Severity evidence: The observed consequence is lack of task progress; no damage, disruptive displacement, or meaningful damage risk is visible in left, right, or top.\n- Resetability: immediate\n- Resetability evidence: The bowls and produce remain in a usable arrangement at frame 1749 in top and right, allowing another attempt without an environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63972,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 413,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64385
+  },
+  "user": null,
+  "metadata": {}
+}

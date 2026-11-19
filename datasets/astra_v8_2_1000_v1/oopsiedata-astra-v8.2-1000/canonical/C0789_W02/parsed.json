@@ -1,0 +1,102 @@
+{
+  "episode_id": "C0789_W02",
+  "language_task": "Pick up the stuffed animal and place it in the box.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this observed window, rather than a visibly failed grasp: external and wrist frames 350\u2013699 show incremental approach, closing around the animal near frames 605\u2013615, and upward movement with the animal at frames 680\u2013692, but no placement in the box. Several sustained stationary intervals interrupt progress. Later context is absent, so this is a provisional window outcome, not a final whole-episode failure.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 408,
+      "failure": true
+    },
+    {
+      "start_frame": 408,
+      "end_frame": 425,
+      "failure": false
+    },
+    {
+      "start_frame": 425,
+      "end_frame": 508,
+      "failure": true
+    },
+    {
+      "start_frame": 508,
+      "end_frame": 525,
+      "failure": false
+    },
+    {
+      "start_frame": 525,
+      "end_frame": 593,
+      "failure": true
+    },
+    {
+      "start_frame": 593,
+      "end_frame": 616,
+      "failure": false
+    },
+    {
+      "start_frame": 616,
+      "end_frame": 675,
+      "failure": true
+    },
+    {
+      "start_frame": 675,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 408,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "External and wrist frames 350\u2013407 show the gripper stationary above and separated from the animal for approximately 3.9 seconds, without acquisition progress; approach resumes at frame 408. Context frames 348\u2013349 show the same pose, so the pause may begin before this window; its earlier extent cannot be established from the supplied images, regardless of the prior No label.",
+      "recovery": "Resume controlled alignment and descent toward a secure grasp; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only delayed progress is visible; the animal, box, and surroundings remain undisturbed in external and wrist frames 350\u2013407.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains accessible and no environmental reset is required."
+    },
+    {
+      "start_frame": 425,
+      "end_frame": 508,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the approach, external and wrist frames 425\u2013507 show an unchanged gripper pose near the animal for approximately 5.5 seconds, with no closing, lifting, or further alignment visible. Task-directed descent resumes at frame 508; the reason for the stationary interval is not visible.",
+      "recovery": "Continue careful descent and align the fingers around the animal before closing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delay, with no damage or meaningful damage risk established in external and wrist frames 425\u2013507.",
+      "resetability": "immediate",
+      "resetability_evidence": "Neither the animal nor the box needs resetting before the robot continues."
+    },
+    {
+      "start_frame": 525,
+      "end_frame": 593,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "External and wrist frames 525\u2013592 show another sustained stationary interval of approximately 4.5 seconds with the open fingers close to the animal, but no visible acquisition progress. Movement toward the animal resumes at frame 593; proximity alone does not establish a failed grasp.",
+      "recovery": "Complete alignment and close the fingers around a secure portion of the animal, then verify retention with a small lift; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No damage, dropped object, or disrupted surroundings are visible; this interval delays acquisition.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains suitable for continuing the acquisition without an environmental reset."
+    },
+    {
+      "start_frame": 616,
+      "end_frame": 675,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After the fingers close and the animal shifts at external and wrist frames 605\u2013615, frames 616\u2013674 show the robot and animal stationary for approximately 3.9 seconds, without lifting or transfer progress. Movement resumes at frame 675 and subsequent frames show the animal rising with the gripper; the pause does not establish failed retention.",
+      "recovery": "Verify a secure hold, lift clear of the table, and transfer the animal into the box; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "Only stalled progress is established; external and wrist frames 616\u2013674 show no visible damage or harmful side effect.",
+      "resetability": "immediate",
+      "resetability_evidence": "The animal remains accessible at the gripper and the box is undisturbed, so no environmental reset is needed."
+    }
+  ]
+}

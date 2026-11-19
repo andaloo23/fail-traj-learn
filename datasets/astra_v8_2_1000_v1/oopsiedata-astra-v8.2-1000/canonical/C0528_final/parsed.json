@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0528",
+  "language_task": "roll down the computer mouse wheel",
+  "success_label": "failure",
+  "outcome_evidence": "In exterior frames 0\u201316, the robot lowers its fingers toward the mouse; frames 17\u201382 show gradual finger and hand adjustments over its top. The wheel is obscured or too small to resolve its rotation, and no scrolling display is supplied. Downward wheel rotation is therefore unconfirmed, rather than visibly disproved by a failed attempt. The images do not establish a local failure or harmful side effect.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 83,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

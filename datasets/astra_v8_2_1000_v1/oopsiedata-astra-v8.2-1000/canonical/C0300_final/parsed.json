@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0300",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door is open at frame 0 and remains visibly open at frame 300 in left_ego_image, corroborated by image. The robot approaches the door, spends a prolonged interval nearly stationary beside it, and makes later small adjustments without completing closure. This is a visibly unmet task, not merely an occluded final outcome; the images do not establish a completed failed grasp or abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 90,
+      "failure": false
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 198,
+      "failure": true
+    },
+    {
+      "start_frame": 198,
+      "end_frame": 301,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 90,
+      "end_frame": 198,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching and aligning beside the open door, the robot remains essentially stationary without advancing closure for roughly nine seconds. Frames 90, 120, 160, and 197 in image and left_ego_image show the same gripper placement and open door; wrist_image likewise shows no meaningful change in the gripper\u2013door relationship. This sustained stall is distinct from the preceding approach and subsequent renewed adjustments; its underlying cause is not visible.",
+      "recovery": "Reassess the handle and door geometry, establish a suitable grasp or supported contact, and move the door upward along its hinge arc while monitoring clearance and closure. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The stall leaves the task unfinished, but no damage, displaced unrelated objects, or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains open and the surrounding scene remains intact; another task-directed attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

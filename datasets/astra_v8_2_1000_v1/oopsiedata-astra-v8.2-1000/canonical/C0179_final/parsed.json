@@ -1,0 +1,84 @@
+{
+  "episode_id": "C0179",
+  "language_task": "Pick up the spoon and place it in the sink.",
+  "success_label": "failure",
+  "outcome_evidence": "The spoon begins on the counter beside the sink (frame 0, right and wrist). Repeated acquisition attempts leave it on the counter as the gripper lifts away (frames 81, 145, and 265, right and wrist). At frame 299 it is still outside the sink; placement is visibly unachieved, not merely hidden or unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    },
+    {
+      "start_frame": 75,
+      "end_frame": 84,
+      "failure": true
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 137,
+      "failure": false
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 148,
+      "failure": true
+    },
+    {
+      "start_frame": 148,
+      "end_frame": 217,
+      "failure": false
+    },
+    {
+      "start_frame": 217,
+      "end_frame": 267,
+      "failure": true
+    },
+    {
+      "start_frame": 267,
+      "end_frame": 300,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 75,
+      "end_frame": 84,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the spoon, the gripper rises without retaining it (frames 75-81, right and wrist). By frame 81 the spoon bowl is visibly separate from the fingers and the spoon remains on the counter, establishing failed acquisition rather than successful pickup.",
+      "recovery": "Reopen, align the fingers around a graspable section of the spoon, and verify retention with a small lift before transporting it; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the counter with no visible damage or harmful side effect.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible for another grasp without environmental intervention."
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 148,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure and attempted lift, the spoon separates from the fingers at frame 137 (wrist); the gripper continues upward empty while the spoon rests on the counter (frames 138-147, right and wrist). This attempt does not secure the spoon for transfer.",
+      "recovery": "Reacquire the spoon using a better-centered grasp, then check that the entire utensil follows the gripper during a short lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon shifts on the counter but remains intact, with no visible damage to the surroundings.",
+      "resetability": "immediate",
+      "resetability_evidence": "Its changed position still permits a direct autonomous retry; no manual reset is visibly required."
+    },
+    {
+      "start_frame": 217,
+      "end_frame": 267,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing again, the gripper makes repeated small lifting motions without lifting the spoon from the counter (frames 217-255, right and wrist). It subsequently opens and withdraws empty (frames 256-266), with clear separation visible at frame 265 in wrist and the spoon still on the counter in right.",
+      "recovery": "Reposition the open fingers around the spoon handle or neck rather than repeating the ineffective contact, close securely, and verify pickup before moving toward the sink; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition costs time but causes no visible damage, spill, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon and sink remain usable and accessible; another attempt requires only robot repositioning, not an environmental reset."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_098940a651c08d27016afbb8bb475087d2af97bab852a956c3",
+  "object": "response",
+  "created_at": 1794881724,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881736,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_098940a651c08d27016afbb8c4e6fc87d2977bf4dd00fd8bef",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7jKSdgyiqYG0l5fN6ZaXi9T5WALkORLFAYpjxZ7vgohigG16D1wZqSypm7Tzcee4UBHJQxtzfdR0JSSEhADbQKLNbcb-9xRzDbFMiQ0Pw67cbtQKSHAjFVJg9NQ1p1oadrnFSAnsBTiRYOh_0ztFstiZ8P0SaMBqrrTd16t-beUHHxtWmx8si6o7rI7SKf0wC2uN7DJIZ7PGPp-Eyzyp5MXMBTCFkOwlySgvXq2S9EcTaYW_LOA_mbIDOeH1Vk5NVFZnIwK4Ig5jedx-bAKWwpcKjKaMAROsFFMUbq36Yqria-9f0v-LWRfRCdF42z9UnKmY-vUQ89Zjm01ZjAA5yp5tL5AAnI2H8ia3Oqh_1XWHHzBy3IqvnPEGFx83KTQbIQTBG0R8_g7T-QIDa6KshIbTBiMkHfZDgGLyoyVbBVqV2SGIaS3mnr_LHbJwcGh_x3LaUtrX8UDWuq0dmhHc0c1QnhVUVvMXFMEAh__NxSjwFUGLXkMUgmm0x8ltx73fg3uUkf-_l8hfwa7ryOjP9PEwA7XeAXQW-mrFyHYpN9KobtsbjDaPi98T19VVirl-P2nGmuDpAcxCxwvZCc5T-qFYhPAHnSLGaipl307M9uQo8uDH53S8uiMXn8oBIW1Sxq4Iv4oehqETHHOKXdOGInLSJjMYWpKxO45sTWu8KSfs1FtwhCDU07DbkFJCiAQWpVCOwWlOmsX_lLlIRsfo5QZnluSzxXoyMANG7ymi0q6gkRlXDrKEY6M6_1nj7vtCe5r-q6kML4fPGp5cBc73XRL_8Cmp4mdG_P3tZ48mjD2wlPE6vGAL1dpTA-nmgApSXRzfVuAv_OExtNkm22aI4dVfMt-4vfp8aYeW6AI2HOyY5A0KcXaoW0sUzItRQ3V_rDVya6hW9Usf9qB-4oKtue0hkWjGVBxmOavEUx3sH95lxmwlyhXhGwQZImmQXWdJWUkPCcZlNCQENntphwe6gcyeKKoV9P_lhmDva_sylTIM4gbDGC_SuCcHNY3X6Jdj6z60vSwLtWOes4_BMe7PBeuKGTSjPYn1ViZQUG04QogGGljxYH_gVDf5p2LiPDAD0hk4OukhZgjEhJ1JIXM_siAw50-as_LhR9cxY049RL1D0Lw_Wwt5tsDa0LVP4ytR_PHIK6jfAMUJTKklm2YZzWYYQBxInqsEJGrXTGUdwA4zr8ezIFMe_iyRk4m352a550F3SLH8xEHrRs0g-JMeTyshQ_jZzy1x60GA-cQ7dCNn7Kj3UD-ZnNa94jZpesefYs-IX0lWwhZ-96HDFvVyAGMSEJ7xpg9iNML501BTJltGFnJJzXUk3rh8LurGrS7DbGR1whuxuvTNOKBmifdNJoxEV67xhhcgbLLzTgBzAoGt5KAIiD4Ao2JeQvLLQ96O3pVgNyIKAGYN71fxm15Pm7YIsxlZsBfBpIUtgN3NaGOQBXMzk7KPOaVFoj7GQb2QbdqnY8yt0ThrERWTmEBovG7aIO1O4N4x23Gq7PvmAqTgQn1ORFBxdmq6VorgQoxWwprI-1AutfI29JNrWU71mzpu1xkiZvU7kMy7Q71TBcqnbQPDqZxLu-iB1AF1FLdgGpx7HTyQJNTdLrp4IMUJCRxvXoe6rOMsddFh_0l5ZdQeHCwcSx6ipkt1AozNa-RzcGIk8wVWeBmWuRa0jpCgFd491KhYhTNi7XsP5hdS2AmLyJDZqMP9aJb2ysUZQVjL2brVjQxiOFsLWY4PotaSW4_-Auyp4SQOskynt6s6yurhcGnCTX0ucAoXwBy-wzOmUK2gTVLsFqLnPo1vwEch5PdzMKIceo7GFtRZSN9yS_D27ewPvDZe6xxlyaDRHsKG68UJgnO3xKcUR-yClNydO5cXNd-lRFgWVwVZ1-2pjpFm06um7n4zx3JIUsO8An9XAQHnIMDn3ZaQDEhRj3UbDDvaubiCvKz-MGFxYIeOzMGNKJy3mm5daLPSRNJTCHm0PXRdddJG9tArbSIgF70VpOBkXtNuF5slG7bPmianuJik7WttH8vUaVpZ7eigBgKpJ55fwjsg3h8RkY36OpD_8854P4rbLoXe5-lVr89vgXDyd5fBtLnP3vx732DRv1Qd6ovhPU-Q0otzUcDpaxpeZVaz6rs9J7sDHLruS1MPX1x7hCKk-HF22elSyi9tmB0veOfK-g6N5atSxLqfybnTMgd90dImFGlOh6jRyhpWcn4_7PzjgmXb9y-dqVOlEH0NOsH7Xw0NUEUdcfgskzqrjxxv55Pfwq3QEhA1ES5HWW3lbUWYK6zGkbij-YmEuv4oRz2crkyuk2eodN-Ry4ZNRl_8dlj3vTcgyh8NR7oR7eJ3xwFROgELPSV-2B2xbL1-vuxmNjKAf_R4szwiTn3gFZ23uN1EQb7IZOrldUcyvNAEvegNwSP6N7M0DqB9101OSSeg9XiqtyieuWJl_6TuRv_Ve5qurtBTkrjW9cTos6vHDJmexLcy5DkZg3lx9kXA3TqrYNxbYnrQBia-jBQCi_PKHLecXL0h0yT44rVc3rEnycUBHWd8IBYY2V-gXrQoqr-ysIakpE8dM_w0H69yl9zoh7zOJCEa5G-Rh2RXuLY1_9X_GtIn9MYuh9DrPoClEmv",
+      "summary": []
+    },
+    {
+      "id": "msg_098940a651c08d27016afbb8c5256c87d2b123c7007f00ca5a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0450_W01\n\n## Episode annotation\n\n- Language task: take all the veggies out of the bowl onto the towel\n- Success label: failure\n- Outcome evidence: In frames 0, 175 and 349, top shows the veggies remaining in the bowl and the towel empty; left and right show no acquisition or transfer. The robot remains essentially stationary throughout this approximately 11.6-second window. Completion is unconfirmed, with sustained inactivity rather than a visibly failed grasp attempt. This label is provisional because later episode context is absent.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Across frames 0-349, left, right and top show the grippers remaining away from the veggies without a discernible approach, acquisition or transfer; top shows the bowl contents and towel unchanged. This sustained inactivity does not advance the task. Its cause is not visible, and it may continue beyond the supplied window.\n- Recovery: Begin a task-directed approach, grasp an accessible veggie, and transfer it onto the towel, repeating for the remaining veggies; no environmental human intervention is visibly needed.\n- Severity: low\n- Severity evidence: No object displacement, damage or meaningful damage risk is visible; the observed consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The bowl, veggies and towel remain in their initial usable arrangement, so an attempt can begin without resetting the environment."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62878,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 356,
+    "output_tokens_details": {
+      "reasoning_tokens": 17
+    },
+    "total_tokens": 63234
+  },
+  "user": null,
+  "metadata": {}
+}

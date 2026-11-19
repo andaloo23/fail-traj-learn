@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0803",
+  "language_task": "Pack the toys onto the wooden tray.",
+  "success_label": "success",
+  "outcome_evidence": "The robot first moves the yellow banana-shaped object off the tray to the adjacent tabletop (frames 72\u2013175, overhead_cam and wrist_cam), clearing space for packing. It then grasps and places the tan plush toy on the tray (frames 211\u2013310) and the pink rabbit toy beside it (frames 372\u2013462). Both plush toys remain supported on the tray after the gripper withdraws, including at frame 523 in overhead_cam and wrist_cam. The banana-shaped object's inclusion among \u201cthe toys\u201d is not explicit; the visible sequence supports treating it as an obstruction cleared before packing the two plush toys. No failed acquisition, harmful collision, or damage is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 524,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

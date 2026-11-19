@@ -1,0 +1,17 @@
+# Episode: C0892_W05
+
+## Episode annotation
+
+- Language task: Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.
+- Success label: failure
+- Outcome evidence: Completion is unconfirmed in this provisional window, rather than established by a visibly failed attempt. In base_image, the empty gripper moves from near the pink can toward the blue bowl (frames 1400–1600), then adjusts near its left rim and closes its fingers (frames 1600–1749); no completed lift or withdrawal establishing failed acquisition is visible. Proximity to the pink can at the preceding boundary does not establish a can-grasp attempt. At frame 1749, the green can remains in the upper tray, while the pink can and both bowls remain on the table and the right tray is empty. Earlier context beyond the supplied boundary images and later execution are unavailable.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 1400 | 1750 | No |
+
+## Failure annotations
+
+None

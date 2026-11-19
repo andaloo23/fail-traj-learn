@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0842",
+  "language_task": "close the drawer",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the drawer is open at frame 0. The robot approaches its handle/front during frames 1\u201320, but the drawer shifts farther outward at frames 21\u201322 rather than closing. It remains visibly open at frame 27; closure is not merely occluded or unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 21,
+      "failure": false
+    },
+    {
+      "start_frame": 21,
+      "end_frame": 23,
+      "failure": true
+    },
+    {
+      "start_frame": 23,
+      "end_frame": 28,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 21,
+      "end_frame": 23,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In right_shoulder_cam frames 21\u201322, the drawer front and handle move outward with the gripper relative to the stationary cabinet, exposing more of the drawer interior. This moves the drawer opposite the required closing direction. Subsequent frames show repositioning and slight inward movement, but not completed closure.",
+      "recovery": "Align contact with the drawer\u2019s closing direction and gently push it inward, then verify that the front is seated against the cabinet; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The drawer remains open and usable; no damage, tipping, or other harmful consequence is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The drawer remains accessible in its cabinet and can be pushed closed without an environmental reset or human intervention."
+    }
+  ]
+}

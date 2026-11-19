@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0827",
+  "language_task": "Pick up the cube.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, the robot approaches the isolated red cube (frames 160\u2013390), closes its fingers around it (frames 394\u2013435), and lifts it clear of the table; the cube visibly travels with the gripper in frames 475\u2013527 while its original location is empty. The robot subsequently releases it in the tray at the right (frames 627\u2013651) and withdraws empty (frames 707\u2013850). No failed acquisition, unwanted collision, or damage is visibly established through frame 1102.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1103,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

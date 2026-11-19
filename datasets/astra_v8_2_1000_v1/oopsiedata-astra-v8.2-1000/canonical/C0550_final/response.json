@@ -1,0 +1,116 @@
+{
+  "id": "resp_00557efa5f634d04016af91aeacdf087d1b6d60945dcdcb49b",
+  "object": "response",
+  "created_at": 1794710251,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794710263,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_00557efa5f634d04016af91aedd5d087d1828ce1798edbf2a5",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Rr4is-b_UynLoAkg3a1uLPplWwzgvIFjfujIW0manxMf8ObKP4Wug5ZEiazOg_6QOAyEC2lrvFFTThX9cXSuS9MGUFp4M4ENMor8CYT9XGsAgKPw7Mqnsp3jZJC6jUc3fuQx5Qzd54W8gI0XThgXPl0VQ3GnQ-J1HCCl6hBnLK9eyNTSxD59NPlUDurXbE4mgMi3euCXhtkXCwNdR-Hb56LA1-276dozI7r3E60t4fuWPR3ChnDylteoTf46edW5_Om_EWHue23bWYe_qLifFEtDGPXCqCxIcjhhYJv9FF9ZxBww3TD_wqqII3ECc0xQe1ZXLtUCreqXXO_vvnvpgKWk5InnusNRv0FDqFcsz84dDJxuA3B-JlS40HiFJKSO-MkfefyDPoqFyOcUS1puMnNH8uFtfnaOWCgDLfEhGe94xrSkaJ_t9Zw9-waTC0BeRdvILbZJVLaFmW9fg4pYu8sOlkSQr8HGt52UIjtpfneQVGLIiKPc92PuzMK9lN5sWD-72B7mtDn7AulmVQ-ojcvu9JVpEYnNVHJJecW3zkAFyVjkhI74gYNAb_IWOrFPO4M_4wCBFWhHEZ2G6xGV_wM4JkRZvkm0DGEJcQriJdy3DL3FTi6W8r2MQQ95lg8Rmrw-cuvd9udVlfEwsmfno8bbYQvvquBZqG76uhClQh2nMwfN192udEYqnQQ-N0n_IzPMX4dIRkMELagLeibkw_kv0coNe3BOBcPy14NCfPOZKrS2_FsRVu0UL2eLLFczByLrfXPPCY4a-grb0515ULEOVZtxZwd-JW0yjZliTOELrr6geEuJ4cwRNj8IS4TG4GoCM7UzqsnA5TeNWbnJ4FrOvMr7FDCi3ZhDg4mZjuywTvEe-Zb5SqCy4AL_1vNxssh__4In2cr24DdYE2AquVdhVg_qEKy-I6-219UB-0oStPlmqbT833QotxSaOkx-ITbUeFuMF2YFTRiiqhMBP2eNO5yD790DaHrvP6_EeFnj4PhZV_XWnIViMBEJ2zX6f080IMWOfu_E9s-mP-9VEIuyhx3Gxy8l2YzbUfMZL_8Zec_G3oVeOj7AFPCiPM7G8Wuu45ouboffrU7gS0fsYHWeqdNl20BxfnZ7G5o6g35_E63GwRs4QfCId6JIwKcvANvQqCWxhJIGuoIg2QAIBfBW1wg-Ow3uZcojSy2mrscyGY45X6JyAKJn0dpp6-Iqn6D_DqTdg3buwVlbfJuHjqB7LStWgzhNB-Yiz4TWodCSuKn1DYRwCJ16-7R0b71oOFltI8a31BHl8ZTWQdD2E0GQG_eU3sP997Kvx_eC15Tqcyw7HYsUkMoc-ozBIXNhzMXhWmAx45DguXDUXp1Xw2RYbrJH3h9pWOkIJBS58QnkjDdYCFmtfeel_jMmk4CxON0qh4jyolFOnsabyESzo3SjEaY7oG0yyDqeerL1STT-biZJh6WN_NMGFicx7S4zbu_nX_Y-PpoMySXWVT0ApyALA8AbqaN9TsZo4rpeg0-hCg93SsAhVFT9UbOl-Ddv_hIP0T8Cu61iwfuBBHq2RK4ZYGrLbZUe39ds3Zjh4_Mya2fh0lAOKJEloZaNdFANCgUCPyLGLTcbK6J0q4RKOc3qFY-GO0rGy7wuNLJkCdKgHs540lSBm2knXTaubITAEp2EMGIkT2sZzeCLJ9BZKDAY58FU5aWrkz0qt98c1Qq06WeZUJlwvPH09o6gZy9rNsGRBhFn9M1FH34uDX9Mv605mdbpmQgB9rVdQ36tQBGIRA31uLaSFStauyvOeg7St96W3xytce8T7QHoAeBqa4Qot0GrqqWVb3Y1VCcMkAl-MKVQOJNkTCI88ukwtuXzORUYPAOIDkg2XOODpm1BpqZOFSwTKa-oQAtEGOgspgQxQkZBN0jWIX_dH6W6AnHo3hWBDszS8gV77yQumTNBx9_kKyTenNMy1BObdQNt_SPAzMoZJ5kjUzNV4JvA_RFB8kfjwPdWjxGC8IFl7svsWxAlJ3tn79fzPPWOAZeF1QI2esrrbhIDP15j8O8DryCS1-OkeqpAXSb_S2cAoLwKIfZanRpgEBRRnF7mqWxJHVZKetNC3hbLwUiJOqLXxHVvhYsY0XaLAzGLe-gmpw_LLhUHC7VdaVVYCLDNz33YA63-DtJl9iGmYOTR14HN52--60NKxcu_uobC6FhsLYQGsM4Zy0GwzHDK7AsO4TKWj_KTxt3jCjBLZiQHRgdGYyqxm4Sfv_Cl9YZUAsiYucfpEf807GtQT6hexunNE0U_Kmn9qB90SCywX3xtGSJ4H_tdwBqHR1dU9pdrynVdKBSiTuo2spye7I16rgrz3y27QTMsrSwXNasDgD7s-zaOSQxV7hvnLNstKmUIlJ6DkGWv2nBKItxl7TSJMff6cQVj5sasblsvYWrv4toJK-MINJ0Dh7azDbIdsxfGpQd8tKIoOETui33IM_cqp9BEpsR1WCOVb-6XFo_VsgKV-FY-lSKFK4nDzckRQGyjzr1FAOoKabKmu2Y8CfEKSpCFS0tuEe-QDnNGvsu9OUoxGqjPRtIgBU0xNEXpYkkThU3yRAOn34iltXMi_Cv9-Y7Y2nwvnYvcgG49enlWl8NvX19-buhfGb_uoapvvZMWZzB79pagiM2LPWwjxHD6_wmUWKEjgD33AXRRmKno-2PewxxJheaFe1VOMRiBuCP2OjfJv2h4uH9O7ttnzwdacNf0NWc-ASZc3lZ-47lyrkRbuqr1Pi2ooW0AMiLn8aX7pxtTLvdWq7WlA6NcmHaOQXY5rTjRpK_gIylX6FtBvb5OlFZeS2UDUZv79e12-wPkeEcQpcLuS4M2ta2YKu4XNqDZBhsnpP64YjtOg9AFBsB9P3f7OLIgJsC5mV-HLqr2bGHjg5x8noV7JFIulkTWwdCwwkc-ioAtAQHu4Kmfhn34hEWBjOnneKM_EWhEmUMug6-1EpZgzOTWiwyysgMDOaiA486kPuug4jMPwnvg2feswDHEmZaMxO98gaWYWedBJ8I6nCd6yt6LH-diLm6d4udc_oAU_AnYzVDu4aiCgP7C-YAKXEO3aiCM0k43w-2la19ifNQzm97MkWjbQhCb9SmAI1dgGCbFb47E99Z6TcaMqkYGEuRoLZo5xsz3xcWX6wVxoM0Xw_eiI2IOCUZ3e6TMSIw6aTg6NARN4r7k08zZ5dJ8yoqsHaU1m7dsyCuGQg5yfcDaY45yfY0rA7xqv2esyIbZ2f8akQzFSmuoo0vXUVaOH82oFypgkqWEPv200Oz_xwe0vchg2MtkgSZIOoQyZJUkkNOHMs0E10IkldIU_gt6RFLPtl6bHBQkKf0SF0ofJZpVTVWLEbQpO-lhSgC6bW2eft9eqh3wZ7AGUhNxW_jnSKjjQ69AK89rDE7jJZvd4EzoYW18Pjn8jESW6kXDon3XzViw7GyuAWQJYmvg6qX--bHBLfPptISHo80ioPsHww_rNqbrvXRXy1IAYELAdsznIQszMret35582z1cf7q1ik-l-IIfI7ZOAEEL-M9dDIE6lP-qQWP1vaqMQJfBhBRYCnuvJ1JdpXQOug-wfbBjlw0MWHLBXp5NTOmnBrfdGDIIUwk2X4r4wNs4IxSIF3_Vh2eVUlfr4IU7R49_Y-OcTuP-eVKJjHD3nLp3lqyUmcl1N92EA==",
+      "summary": []
+    },
+    {
+      "id": "msg_00557efa5f634d04016af91af185b087d1a7a7ce84efc0146f",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0550\n\n## Episode annotation\n\n- Language task: Move the purple object towards the center of the table.\n- Success label: failure\n- Outcome evidence: The purple object remains in its initial position relative to the yellow and blue objects and tape markings in left_base_cam and right_base_cam at frames 0, 60, 120, 180, and 240. The robot repeatedly repositions above the table without visibly moving the target; wrist_cam also shows the purple object remaining on the table. The observed task is not achieved, rather than completion merely being hidden by the recording ending.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 44 | No |\n| 44 | 241 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 44-241\n- Categories: task_not_attempted\n- Explanation: After the initial approach, the robot begins withdrawing at frame 44 and continues a prolonged sequence of hovering, changing orientation, and moving back and forth above the objects without engaging or displacing the purple target. left_base_cam and right_base_cam at frames 44, 60, 120, 160, 196, and 240 show the unchanged object arrangement; wrist_cam corroborates the lack of acquisition or displacement. This sustained unproductive behavior does not advance the task; no specific hidden cause or failed contact grasp is established.\n- Recovery: Re-localize the purple object and the table center, then execute a checked approach to grasp or gently push the purple object toward the center while avoiding the other blocks; verify its displacement before withdrawing. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The target simply remains unmoved; no collision, object damage, or other harmful scene change is visible.\n- Resetability: immediate\n- Resetability evidence: The objects remain on the usable tabletop in their original arrangement, so another task-directed attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 43757,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 564,
+    "output_tokens_details": {
+      "reasoning_tokens": 147
+    },
+    "total_tokens": 44321
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0118",
+  "language_task": "close the drawer",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, frame 0 shows the red-fronted drawer extended with its interior exposed. The robot approaches and adjusts its gripper around the drawer front/handle through frames 1\u201361, then pushes the drawer inward in frames 62\u201365. Frames 65\u201367 show the drawer front seated within the cabinet opening with no exposed drawer interior, supporting completed closure. No failed acquisition, harmful collision, or other side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 68,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

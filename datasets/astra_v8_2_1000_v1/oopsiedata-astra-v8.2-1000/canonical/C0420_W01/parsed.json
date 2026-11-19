@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0420_W01",
+  "language_task": "unstack the boxes and put them in straight line",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is not observed in this window: frames 0\u2013349 in top show the objects remaining scattered rather than arranged in a straight line, while left and right show no discernible approach or acquisition. The visible objects appear already separated, so the intended unstacking component is ambiguous; the supplied task is retained. This is a provisional window outcome with sustained inactivity, not a visibly failed grasp attempt; later episode context is absent.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout frames 0\u2013349, left and right show the grippers remaining away from the boxes without discernible task-directed approach or contact, and top shows unchanged object positions. This approximately 11.6-second interval of inactivity does not advance the requested arrangement. No hidden cause is established, and the inactivity may continue beyond the supplied window.",
+      "recovery": "Begin a task-directed approach to an accessible box, acquire it, and place it along a chosen straight line, repeating for the remaining boxes and separating any actual stacks first; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "No object disturbance, damage, or concrete damage risk is visible; the observed consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains unchanged and available for an attempt, with no visible need for environmental resetting or human intervention."
+    }
+  ]
+}

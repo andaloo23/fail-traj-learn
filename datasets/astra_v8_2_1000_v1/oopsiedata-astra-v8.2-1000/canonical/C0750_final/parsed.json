@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0750",
+  "language_task": "Open the oven.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "The oven is initially closed (frame 0, image and left_ego_image). An initial withdrawal leaves the door closed and the gripper empty (frames 80\u201385, image and left_ego_image), followed by another approach. The door subsequently swings down through frames 111\u2013132 and remains open at frame 150 (image and left_ego_image). No damage or displacement of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 77,
+      "failure": false
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 86,
+      "failure": true
+    },
+    {
+      "start_frame": 86,
+      "end_frame": 151,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 77,
+      "end_frame": 86,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After positioning at the oven handle, the gripper withdraws outward without carrying the handle or opening the door (frames 77\u201385, image and left_ego_image). By frames 82\u201385 it is visibly separated from the still-closed door, establishing an unsuccessful acquisition; the exact contact mechanics are unclear.",
+      "recovery": "Return to the handle, align the fingers around it, establish a secure grasp, and pull along the door\u2019s opening arc; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt leaves the oven closed, with no visible damage or disturbance of nearby objects (frame 85, image and left_ego_image).",
+      "resetability": "immediate",
+      "resetability_evidence": "The handle and surrounding scene remain available for another attempt without environmental resetting or human intervention."
+    }
+  ]
+}

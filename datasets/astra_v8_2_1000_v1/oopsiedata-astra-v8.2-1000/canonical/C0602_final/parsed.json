@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0602",
+  "language_task": "Pick up the cup on the table, and hang it on the mug tree.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot picks up the light-blue cup and lifts it toward the mug tree (frames 180\u2013235, head and right_wrist), then makes extended positioning adjustments near the pegs. On release, the cup falls rather than remaining hung (frames 746\u2013755, left_wrist and right_wrist). At frame 801, head and both wrist cameras show the cup on the tabletop beside the tree and the gripper withdrawn; this is a visibly failed hanging attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 746,
+      "failure": false
+    },
+    {
+      "start_frame": 746,
+      "end_frame": 769,
+      "failure": true
+    },
+    {
+      "start_frame": 769,
+      "end_frame": 802,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 746,
+      "end_frame": 769,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After carrying and positioning the cup near a peg, the robot releases it without establishing support on the tree. The cup separates from the open gripper and falls onto the table at frames 746\u2013750, then tumbles away from the tree through frames 751\u2013768 (left_wrist, right_wrist, and head). The intended hanging manipulation fails; the precise handle-to-peg misalignment is not fully visible.",
+      "recovery": "Reacquire the cup from the tabletop, orient its handle around an available peg, and lower it until the peg visibly supports it before releasing and withdrawing. Human intervention is not visibly required.",
+      "severity": "low",
+      "severity_evidence": "The cup falls and tumbles on the tabletop; no breakage, spill, or damage to the tree or other objects is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The cup remains accessible on the tabletop and the tree remains standing, allowing another acquisition and hanging attempt without a human reset."
+    }
+  ]
+}

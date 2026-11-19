@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0626",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot places the carrot and orange-shaped food into the purple bowl (frames 118 and 265, wrist_cam), the blue toy into the green bowl (frame 444, wrist_cam), and the brown food into the purple bowl (frames 730\u2013733, wrist_cam). However, it releases the pink rabbit beside rather than inside the green bowl (frames 605\u2013614, overhead_cam and wrist_cam). The rabbit remains outside at frame 780 in both cameras, so sorting is visibly incomplete, not merely unconfirmed.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 605,
+      "failure": false
+    },
+    {
+      "start_frame": 605,
+      "end_frame": 614,
+      "failure": true
+    },
+    {
+      "start_frame": 614,
+      "end_frame": 781,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 605,
+      "end_frame": 614,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After successfully carrying the pink rabbit, the robot opens its gripper with the toy positioned outside the green bowl (frames 605\u2013610, wrist_cam). The rabbit is left on the tabletop beside the bowl as the gripper withdraws (frames 613\u2013614, overhead_cam and wrist_cam), failing the intended placement.",
+      "recovery": "Regrasp the rabbit, position its body fully above the green bowl interior, lower it and release, then verify containment; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The rabbit remains on the tabletop beside the upright bowl; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The rabbit remains accessible for another pick-and-place attempt, with no cleanup, repair or human reset required."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0a7e4519cd81e7d0016af924aed1a887d2ab0acb0b0f58de4a",
+  "object": "response",
+  "created_at": 1794712760,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712776,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a7e4519cd81e7d0016af924c38f1487d2b73a37292b4ccd6e",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-STMnHWm8yHLf_1BfJuWKWOAwqMCUCSbABaZz4QnobxpmOsjCl2bBtQPlaBd7qW-AKD3SWjUlJrv16xNyzbNIypc5HLVqWl7x48Uva2dX9trFuEww5h3yDBo1XfvnCAfx9gNGCOujtJlXncVir-ewg2asvjWT_g7mkj0ihjYFdWF6lYHGi2zo9W0jO1GVfc-JlPEUaZjQZivo9-L24X5rPjfH7ZPTMjVbPsnanqdrG8zZMRag5vTDK0gQUGC_ZRuUgoE97wAwPJyGws3DP58iswH2LrCfO4D58ZKBGPvhKB9zLMtL1LH_KgdZKelKwcR7Aq-maMsKLCpDMwBsolAyh5jYPBXxxnI-XTs43PsdfGj-vQgmQynLlzalvNocte7GeNsaC8Y7EXfdMeqj5NJbbPgVNTd9qFsJ6wI6ONCbOtTsX6g0B9Lc2P48ZIiq2QZXharNyx_fXItNgyAMsyiJ_IGoXFU-SnpPPoG9KOwnLJr58kfnHH5EK3oSYR9FAjEk1Tgh3rSs7Xr2NtRUwWswrY8H2yujrw58CVxEZcUd0tkjWdFBBFY8bxqPILmalFqDObji1p9EFyoYsLYKbQXopgzoQbPQydACoB0-SYBcWEjOVGTyiuy1HgvWhgxE3JOgXR8qPepmB6DeOzk_kSxFM9Sx8JVd-QKHY5U5U5IWvaxfn8GDU4oECSvsQ5krn2tEdXj9U6yHArp8oHzVFgJsXMF-RZvsBVWC_VST7FcKpBq1xANe-Lj3VCsb5I-obs9LiWuQ96F_PlFTjkfQD84rpaREIFIMn4CQTQM3SCkPSkOhp58ptVtTLkV8gsfGz3Sh9wK21wVlLBec83n-JPl1XNOMnYBReYhhDnx8j6EliMqkzhy8n2nVu3w6QV2VLCtCYenU31iEIkTR--H4FYKRLsdOHOFNlDp619AEsO_lxegdeIPatnPC1XCV8cmQtyG-eK6Vg6izycwm0kSGkHzGPRb5j3rLAkr236g97RBFeB7QZbknqeLF59J6PplzBfpupmTXNrdwnnaJJKBZdDSxDTNnjGg0bNTfuWRB3Ybfc6vI8_EN8_E7kVu_2mAQFTto3ykouZQN_oN1NVrUlzCI0NQqnnsqWou7aiNDGQ5onMO4h-DN9Qxq7nTbJpIes41rxF0ETz5VK3_t6qFdY6Jrum3CIr6KbuH2V5PiERdnevEXaSH4tbLwfSngn7IIqW49aLufMV9SBdVAzspbbGZuszGT1K7TAPCdeVBoBUodurBtZ0cYfj3RKJmwt2QjYvAn5Ddm8i2-5uESrNHMEKPuXXNNKONe19VX6Hr9pzKnQaBFN0NzKnKnAcc0nqQE29gkWrVXrrBrJf4mXbr_Hhf1oH0cpfLdL2Q81RQ0zmFcUd_JaMxWKYkNaV8aiV3fPrvDvfvUOLvLfmyItqiSMuep7jAU5Gj43QnEqT8vjw1P614RDU0uS3AQ5xL3v5WVpdxksyvF7_gfZP51JdaaljLXzVJcTWwZRHZSzRy4eCTiERuOyxlBNPlR25zRkop7fswoLF_rkmnalm36W9PwLw1e8qDjClvJ0_jFra-mR8P_DyEntVeFwT-hyHJco7qqiBgF-m9Qbu-P9m0hV5FLIx3NrnJef97VpTolEa3moegxgNN_2s3zEcTbWCaKqB5cH7-VHDf4q6BEuECeM3qWzj_lhYc8jw8eOurYHiNlIlhsm-OHLwGZ0g0QSOyYU9UjNfyCTw7vLKEzrVBfChR36sRpzSgq8tpK_ZLCUkTeV6UDQ3NWw0sAGYGzIZAht_UhgkyYZfJFAnWVw4q5UYDcRF92iY90RmbJK8wUOmg3Z4BEpBOpjj8BEF5oxmxBudbttkvf3hIcyd8XcqUEOcrIYeoxjITOuDqlW-eLLV6RFDNNj10wjAkyZKHhxxHVWTSrhgFfH48tO4HkmlSZala6w5pet6V9RWP4lpT-EoQzS64Xi7-ETxPbauqDBpWZP7HhPWxZiTssNzHko9pA8rvRnQbK2YniyUg5ayqD_amjlLDUCJ_Vd1iGzoAHGsR-0p8zvQBdM6bF3oGJ5Dzt4LOdoLanlTtSbw5pJOkm2yyfznxz_QgnH5M9djXfWysEgK9G0d7iSGlSJBT5b2omcuMqrqsnRxNocz5b-YUpO1AKsfX6F0jI3IVNNjoZT6AyMGT-O9Q2GM42GULX1WxXhnVmV-m1VYuPaAutUWdTYE5Hf449uQoyexDKqlGJmqmd1ALiO2AaC37RCx5_45UIMm_Ewp3rrQcO-kVbVAcEVheWpYKN4eD2Qx9sfNf3igc6TyPiSnc0PneiMHeldo23Kmrvki57Z18y9iyZx5Cy3_qnN4Me-g_PyGLxg3aWEwI9rWJpv4r4lIavgPX4UL-g0t24LxkS9dtNOdW5nbp-OyBmFXqcNpf-Lc=",
+      "summary": []
+    },
+    {
+      "id": "msg_0a7e4519cd81e7d0016af924c4f8b487d2a1618255e92ac167",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0723\n\n## Episode annotation\n\n- Language task: Pick up the pen with the right hand and the cap with the left hand, then insert the cap onto the pen.\n- Success label: success\n- Outcome evidence: The supplied task ambiguously says \u201cpen cap\u201d for the right-hand object while also assigning the cap to the left; the visible episode supports the pen-and-cap interpretation above. Frames 191\u2013300 in left_wrist and right_wrist show acquisition of the short dark cap and long pen, respectively. Frames 358\u2013562 show the hands bringing the parts together and inserting the pen into the cap. At frames 640\u2013680, right_wrist shows the dark cap remaining on the pen after the other hand withdraws, corroborated by left_wrist. Frames 692\u2013774 show the capped pen being lowered and released; top and both wrist views show no subsequent disruption through frame 1399. No failed acquisition or unintended side effect is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 1400 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 244674,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 306,
+    "output_tokens_details": {
+      "reasoning_tokens": 65
+    },
+    "total_tokens": 244980
+  },
+  "user": null,
+  "metadata": {}
+}

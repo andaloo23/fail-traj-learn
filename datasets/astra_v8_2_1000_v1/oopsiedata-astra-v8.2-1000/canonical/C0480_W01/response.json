@@ -1,0 +1,116 @@
+{
+  "id": "resp_01e1ca68fdd1e3a7016afbb883d4b887d285538b6ba682557b",
+  "object": "response",
+  "created_at": 1794881669,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794881678,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 8000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_01e1ca68fdd1e3a7016afbb88b6fc887d2bf3d43dbb44d92d2",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-7iP1OSTKeWcCY9TQW-PGITRmNmJgpDvd_O1llz4D3DcEVyQSrH6VuY789jEudXC7SldPdqhDLdc1KXmCBx7ugD10sVFohZdCg-RomkuTgi-PvoQ6zSc9SGfNq02YxWsMSgDKjSJFV-O_Gx0gW2U1gjnbbKWDufksBsLGw0eGDgKvMXJJvBaCDv9RFT9BAQrmlhJsycRSI4XQNj2-Fp03BNmQ2Ue3aBYbYgR0QLy5VsLDz3juKqc5cvA6HrXo_AmKBgrxqG0V-Hjx2Km57mHLx879beDZm08kKhZDlWFHyHfWFJItS1jmaRL4lffHWYfXuvOJri85GVP11YWi8_48dUnSRyQSr3h2wBHZ4iZApqAOrKZUP1ebSV_l_i3lVTA_0us_HL4ost3mrD85YT82uf5D1w4KxqLX2WTNRTNIGTIf_reHHLxx3tKzIUbMA_R44uT_d9i1qcLrRM6jgL1oXBFiVB0yPBhgGMhZPFuIuJA0rWuh7z1iWHVZOSNcC7RQsN6rp3UKapkSVG8rMJVMbYKI5v1I2dmGwV6XV7JTKplfwmQjib5wOAJMyurezYcBQgt2mytOnkfAyxCmBw5MB3fUll5S7OpRFNeGVVJWxNo_IMKBSxLMgIgTbZBI7QE_Ofjq0agEcziMafOoco940__dPUGS7Ccux0qPGdNWd1auea5gqSeFj_PdJo8nE_Y0WfgDSFVAc79oELTLE0-UTPoRH3ODF18Rf398KjIramAgp2eh-nHmVs1-6PndSC65j2mwlQ55PMR4iJoBLvfDkWt-9vvZu9txrkQfg4xSPEWZ20E6BwhTmX0ywQchQQYdoOytv-djpyZLKEQD2G14PDqEJrY6xR3qTBdT1lFFJJA3s-fSK95xllicL62hXkJAhUqwxquu6H7ppcivXryB3kF-Kkv4Tts1pdyZm7nsrZvvFksyuWaSasoAvGDQ0vhEn0Mfp3ks5Q6NpEjUhZpQDsRruRNRFOH-R9BcIkAr4Kvb8JpCIXo2FmxDPqo5k8s2v2qXF9gJPeS0GQdM3ukItCCm8S5Cc8sM7RcIEHEZHM9QU_ld-8tsyYcfwx9ukY9Uf_VDYtsfGrtMOIDOBwIV0ZWoPBYnNhNCkOft39F3ljQyxZl6MvVtQ56jEoP0NBSB8aQCTBps1iUSUh1IBKt6W3UWCCUPmZF0j3VzCO7gKNdYXUGvximUbqx7_xTqkWkaKKQRxd8ylQG2yiMfPbZBgG-eI2f3g9KVQkCkGXJuQuChzQ2agrVJinAaXvADnSR-gux3SaFP9rlxdP0yDS21tFjfv6FuRBPcfc-Vszp-5sl6zGtCqx4lVT1nA3MlU07FKcGxJDtphhczB5BgCsSCwmY1ANDXoA_Hq5iyEwEUhdHiVu7k2y1nPwCSEheZT_09lVqAxwZXvGJbrt6ReDiFN_JmBzfP2AaKChHTQmBaXfQd3qiCJRhuu6EZ77WVys8AWNg5RmnyhjGcfyP3JoQh3K6-3y49DX5pbezpmdJci3S076Vcs_IlwX52G_8YwT30mzp4R9bQmtz3-6vHrBE5XqL8ktH7AB6S5cTEFcMlr2TypfdVKGv_nE5FlqkT1iXkPd0s6G4OUXHLeFMnD95_I-gDv5F7CBG-eILatOAyzxnnahfe5-z8GHVADwDJfj7UEopDElMbsQamXe_gofL1CVGV3YCXy6rnfPNQozaF9W_tof7wgfCwatzklRzEcsgJ_rPkM9swBTpuTkJn63VWZzYJQmSKEeuYr2iB8c4Aa_iol0y2q19pD0G1Mq6IWqTJdJqfUko8tL_pzKIMNFubZqjYNrmV_7Tm0nB1sCx6zlMb7fHx-yhsrgrWOKlw7VhSovquebAVtDIMIYphcH1vsLPTW6bXRY07c51LIW3dRT93K4szGzcSagHCTA_B_-7YkrHtA8_pS1ID75X_aSEHzpWXA7WZvDGXh9d4yGE6HlnTzAqdnbRh4hPFBVb2Ey40mKTWJQ3kwvw-eZ20suY1LIoIo7Ec52tKIS5LdRi5ILTKRHaLBmSCA9ETLjujB9eMNs8I3hDXR5ct1d4IvFTHyrMzhhW4l1vnKDLScFFDrbNtAw_G68bbmmeePYWC8Sg_wW0_HwmugrmT8VI6_iUKfbSDC9yYw21ehiMsrL7Fru8wLwXrbNOyHgT6TXMxNWRcaBs-IQ8VW6vApVfVyQywzA-xJtZtU49piUg0VS6ms0urCVmeN4s1iCnb-RrfBcGGZuazh6h1CludrsqY4dfvNLHBue6OLb8LQ3IETYi6VtaACcPIXe-FyLKo56cv6dz2xqUqihxo0o-qabJ9wt3s1Fyby-C5Wx136fAw9XV35kmtlRXJQA8VnBF0SkXXw6OZZ3U-CHQ4ND7Jlpu0bGF5m7y6YnENyEpp3-VEPDA8Rc67jRpFOksb34owtxC7nwNWklDUze08UonHcfw74Jo7TuNKAA1T2fYokisw9ofFctg91EaXcIjWMuHfbS8Q4KPO5VMeElk38tuZNsOattcvPodcyEnzRWm__EfRjFMKzt2cKHpTZVQ_0vkrYcJsZlkCzJOnTC3C8P8_hEssf_9_PI-DTqqpSB_G4E_AzVxaV64dxg=",
+      "summary": []
+    },
+    {
+      "id": "msg_01e1ca68fdd1e3a7016afbb88b93b087d2ada76c5b331161c4",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0480_W01\n\n## Episode annotation\n\n- Language task: put the orange from off the towel to on the table\n- Success label: failure\n- Outcome evidence: In frames 0\u2013349, top and right show the orange remaining on the towel, while left, right, and top show no discernible task-directed approach or acquisition. The task is not completed in this window; this is sustained inactivity rather than a visibly failed grasp. Later episode context is absent, so the outcome is provisional.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 350 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 0-350\n- Categories: task_not_attempted\n- Explanation: Across frames 0\u2013349 (approximately 11.6 seconds), left, right, and top show the grippers remaining in essentially the same positions with no discernible attempt to move the orange; top and right show the target unchanged on the towel. This sustained inactivity does not advance the task. Its cause is not visible, and it may continue beyond the window.\n- Recovery: Begin a task-directed approach to the orange, align and grasp it, then transfer and release it on the bare table; no environmental human intervention is visibly needed.\n- Severity: low\n- Severity evidence: No object displacement, damage, or meaningful damage risk is visible; the consequence is lack of task progress.\n- Resetability: immediate\n- Resetability evidence: The scene remains unchanged and available for an attempt, with no physical reset or human intervention visibly required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 62878,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 2206
+    },
+    "output_tokens": 353,
+    "output_tokens_details": {
+      "reasoning_tokens": 15
+    },
+    "total_tokens": 63231
+  },
+  "user": null,
+  "metadata": {}
+}

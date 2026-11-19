@@ -1,0 +1,57 @@
+{
+  "episode_id": "C0273",
+  "language_task": "Move the hammer to the plate. Then, grasp the mushroom.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, the robot acquires and transports the hammer in frames 37\u201344, but pushes the plate away during frames 45\u201352 and leaves the hammer beside rather than on it, visible in frames 62\u201364. It subsequently grasps and lifts the pink-handled spoon in frames 96\u2013110 instead of the mushroom. The mushroom remains untouched through frame 119; this is visibly incorrect execution, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 45,
+      "failure": false
+    },
+    {
+      "start_frame": 45,
+      "end_frame": 55,
+      "failure": true
+    },
+    {
+      "start_frame": 55,
+      "end_frame": 73,
+      "failure": false
+    },
+    {
+      "start_frame": 73,
+      "end_frame": 120,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 45,
+      "end_frame": 55,
+      "categories": [
+        "manipulation",
+        "collision"
+      ],
+      "explanation": "In image_primary frames 45\u201352, the held hammer/gripper moves against the plate edge and pushes the plate toward the lower right instead of placing the hammer inside it. The gripper opens in frames 52\u201354; subsequent clearance in frames 58\u201364 reveals the hammer resting on the tabletop beside the displaced plate. The exact contacting component is partly obscured.",
+      "recovery": "Re-localize the displaced plate and hammer, reacquire the hammer, lift it clear of the rim, and place it inside the plate before proceeding to the mushroom; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The plate is displaced and placement fails, but image_primary frames 55\u201364 show no breakage, spill, or other meaningful damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The hammer and plate remain accessible on the tabletop, allowing another attempt using their updated positions without a required environmental reset."
+    },
+    {
+      "start_frame": 73,
+      "end_frame": 120,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "In image_primary frames 73\u201395, the robot approaches and aligns with the pink-handled spoon on the left, rather than the mushroom on the right. Frames 96\u2013110 establish successful acquisition and transport of that wrong object, followed by lowering it beside the hammer in frames 115\u2013119. This does not perform the requested mushroom grasp.",
+      "recovery": "Safely set down and release the spoon, correct the hammer placement if still needed, then approach and grasp the mushroom; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "An unrelated utensil is moved, but no damage or meaningful damage risk is established in image_primary frames 96\u2013119.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon can be safely released on the accessible tabletop and the intended objects remain available; no human reset or repair is visibly needed."
+    }
+  ]
+}

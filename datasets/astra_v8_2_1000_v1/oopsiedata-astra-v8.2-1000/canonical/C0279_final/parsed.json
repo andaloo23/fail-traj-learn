@@ -1,0 +1,34 @@
+{
+  "episode_id": "C0279",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary frame 0, the left stuffed toy is blue-and-white and the largest bowl is the central white bowl. The robot instead handles the pink toy on the right (frames 15\u201321, 42\u201351, and 73\u201394). At frames 96\u201399, the pink toy rests on the tabletop in front of the white bowl, while the intended blue-and-white toy remains unmoved on the left. The observed task visibly fails rather than merely having unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 9,
+      "failure": false
+    },
+    {
+      "start_frame": 9,
+      "end_frame": 100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 9,
+      "end_frame": 100,
+      "categories": [
+        "sequencing_semantic",
+        "grasp"
+      ],
+      "explanation": "In image_primary frame 9, the gripper approaches the right-hand pink toy rather than the requested left blue-and-white toy, then contacts and moves it in frames 15\u201320. The pink toy returns to the table as the gripper lifts away empty at frame 21, establishing failed retention independently of the wrong-object selection. Further attempts remain directed at the pink toy, including movement in frames 42\u201351 followed by an empty gripper at frame 52. Frames 81\u201393 show sustained lifting of that wrong toy, followed by its return to the tabletop outside the bowl in frames 94\u201399. This continuous wrong-object behavior never advances relocation of the intended toy.",
+      "recovery": "Leave or safely release the pink toy on a clear tabletop area, then identify and grasp the left blue-and-white toy, verify retention, and carry it over the white bowl before releasing inside. No human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The wrong plush toy is displaced and repeatedly returned to the tabletop, but image_primary frames 21, 52, and 99 show no visible damage, overturned bowls, or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The intended blue-and-white toy and white bowl remain accessible and unchanged through image_primary frame 99; the task can be reattempted without a necessary environmental reset or human intervention."
+    }
+  ]
+}

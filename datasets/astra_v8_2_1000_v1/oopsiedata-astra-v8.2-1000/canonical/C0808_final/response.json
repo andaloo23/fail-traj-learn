@@ -1,0 +1,109 @@
+{
+  "input_transformations": [],
+  "id": "resp_083e78e1e1e110a1016af929e363dc87d196bb4e1a9c03f8d8",
+  "object": "response",
+  "created_at": 1794714084,
+  "completed_at": 1794714086,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "moderation": null,
+  "model": "gpt-6-astra",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "previous_response_id": null,
+  "instructions": null,
+  "output": [
+    {
+      "type": "message",
+      "id": "msg_083e78e1e1e110a1016af929e56ca087d1bebba7f024c1dfcb",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "# Episode: C0808\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop in image and left_ego_image from frame 0 through frame 33; no placement in the drawer is visible. Across frames 0\u201323, image and wrist_image show the open gripper repositioning above the workspace without visibly acquiring the spoon, followed by a brief pause through frame 33. Completion is unconfirmed in this short observed episode, rather than a visibly failed grasp or placement; the images do not establish a local failure or abnormal termination.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 34 | No |\n\n## Failure annotations\n\nNone",
+          "annotations": [],
+          "logprobs": []
+        }
+      ],
+      "phase": "final_answer"
+    }
+  ],
+  "error": null,
+  "incomplete_details": null,
+  "tools": [],
+  "tool_choice": "auto",
+  "parallel_tool_calls": true,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "prompt_cache_options": {
+    "ttl": "30m",
+    "mode": "explicit"
+  },
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "top_p": 0.98,
+  "top_logprobs": 0,
+  "temperature": 1.0,
+  "reasoning": {
+    "effort": "low",
+    "context": "all_turns",
+    "summary": null,
+    "mode": "standard"
+  },
+  "user": null,
+  "usage": {
+    "input_tokens": 8416,
+    "input_tokens_details": {
+      "cached_tokens": 1912,
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_30m_tokens": 0,
+        "ttl_12h_tokens": 0
+      }
+    },
+    "output_tokens": 167,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 8583
+  },
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "input_tokens_details": {
+        "text_tokens": 0,
+        "image_tokens": 0
+      },
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      }
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "safety_identifier": null,
+  "store": false,
+  "metadata": {},
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "service_tier": "default",
+  "truncation": "disabled",
+  "image": {
+    "context_compression": "disabled"
+  }
+}

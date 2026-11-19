@@ -1,0 +1,56 @@
+{
+  "episode_id": "C0214",
+  "language_task": "Close the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "The oven door starts open at frame 0, rises partway toward closed in frames 38\u201348, and returns to its lowered, open position by frame 89 (image, left_ego_image). Subsequent adjustments do not close it; it remains visibly open at frame 296 (image, left_ego_image). This is a visibly unsuccessful closing attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 55,
+      "failure": false
+    },
+    {
+      "start_frame": 55,
+      "end_frame": 118,
+      "failure": true
+    },
+    {
+      "start_frame": 118,
+      "end_frame": 143,
+      "failure": false
+    },
+    {
+      "start_frame": 143,
+      "end_frame": 297,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 55,
+      "end_frame": 118,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After raising the door partway in frames 38\u201348, the robot moves it back downward beginning around frame 55; it is open again by frame 89. Small subsequent movements around frames 106\u2013117 do not restore the closing progress (image, left_ego_image). Door control was demonstrated by the earlier coordinated lift, but the closing manipulation failed; the images do not establish a hidden mechanical cause.",
+      "recovery": "Reposition securely at the handle and guide the door upward along its hinge arc until it seats closed, checking that the gripper clears the closing gap; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The door returns to its open position without visible breakage, displaced surrounding objects, or other damage (image, left_ego_image, frame 118).",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains upright and its handle accessible; another closing attempt requires no visible environmental reset."
+    },
+    {
+      "start_frame": 143,
+      "end_frame": 297,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following wrist and gripper repositioning in frames 118\u2013142, the robot remains near the open door with only small movements and no meaningful closing progress for the rest of the episode (image, left_ego_image, wrist_image; frames 143, 180, 240, and 296). This extended unproductive interval is sustained stalling, rather than a brief alignment pause.",
+      "recovery": "Resume a deliberate handle alignment and controlled upward closing motion, then verify that the door remains seated; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is an unfinished task and prolonged delay; no damage or meaningful damage risk is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The open door and surrounding scene remain available for a new attempt without cleanup, repair, or object replacement."
+    }
+  ]
+}

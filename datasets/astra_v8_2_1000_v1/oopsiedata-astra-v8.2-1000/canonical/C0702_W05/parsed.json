@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0702_W05",
+  "language_task": "Stack and pack the cups.",
+  "success_label": "failure",
+  "outcome_evidence": "In base_image, frames 1400\u20131484 show the left gripper bringing a held cup toward the standing cups. During release at frames 1487\u20131509, that cup tips sideways rather than nesting successfully. Frames 1512\u20131628 show it rolling toward and eventually beyond the lower image boundary while the standing cups remain separate. This is a visibly failed placement, not merely unconfirmed completion. The label is provisional for this window; earlier execution is unavailable beyond the supplied context, and the cup\u2019s eventual location outside the view is unknown.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1487,
+      "failure": false
+    },
+    {
+      "start_frame": 1487,
+      "end_frame": 1509,
+      "failure": true
+    },
+    {
+      "start_frame": 1509,
+      "end_frame": 1629,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1487,
+      "end_frame": 1509,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "In base_image at frame 1487, the cup begins tipping as the left gripper opens over the standing cups; by frames 1504\u20131508 it is falling sideways rather than remaining nested. Frame 1509 confirms the unsuccessful placement, with the released cup lying separately on the table. The subsequent withdrawal clears the objects; the cup\u2019s continued rolling is a consequence of this placement rather than a separate failed action.",
+      "recovery": "Locate the loose cup, reacquire and reorient it, then align it concentrically with the standing cups and verify stable nesting before releasing. Human assistance is needed only if its eventual location is outside the robot\u2019s safe reachable workspace.",
+      "severity": "low",
+      "severity_evidence": "The cup topples and rolls on the table in base_image, frames 1507\u20131618; no damage or spill is visible. Its disappearance below the image boundary does not establish a fall off the table or damage.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The loose cup needs retrieval and reorientation before another placement attempt; this appears straightforward while it remains on the visible tabletop. Its final location beyond the lower image boundary is unknown, so additional retrieval difficulty cannot be established."
+    }
+  ]
+}

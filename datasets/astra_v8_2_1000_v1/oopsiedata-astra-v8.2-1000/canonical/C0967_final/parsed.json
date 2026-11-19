@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0967",
+  "language_task": "Pick green block and place on cardboard.",
+  "success_label": "success",
+  "outcome_evidence": "In exterior_cam, the green block initially rests on the white table to the right of the cardboard (frame 0). The robot approaches and closes its gripper around the block, then carries it left toward the cardboard (frames 129\u2013145). The block is lowered and released onto the cardboard in frames 193\u2013201, with the gripper opening and withdrawing above it. No failed acquisition, unintended collision, or harmful side effect is visibly established; the slow alignment and pauses do not clearly establish a local failure.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 202,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

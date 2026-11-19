@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0359",
+  "language_task": "Open the oven.",
+  "success_label": "failure",
+  "outcome_evidence": "In left_ego_image and image, the door moves slightly outward around frames 78\u201382 and more clearly opens partway at frames 130\u2013137, but returns closed by frames 143\u2013148. It remains closed through frame 399 while the robot stays near the handle. This is a visibly unsuccessful opening attempt, not merely unconfirmed completion; no damage or unrelated object displacement is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 83,
+      "failure": false
+    },
+    {
+      "start_frame": 83,
+      "end_frame": 94,
+      "failure": true
+    },
+    {
+      "start_frame": 94,
+      "end_frame": 138,
+      "failure": false
+    },
+    {
+      "start_frame": 138,
+      "end_frame": 148,
+      "failure": true
+    },
+    {
+      "start_frame": 148,
+      "end_frame": 173,
+      "failure": false
+    },
+    {
+      "start_frame": 173,
+      "end_frame": 400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 83,
+      "end_frame": 94,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After the door moves slightly outward at frames 78\u201382, it moves back toward its closed position during frames 83\u201393 in left_ego_image and image, undoing the initial opening progress. The images do not establish whether this results from slipping or the robot's motion.",
+      "recovery": "Re-establish a secure handle engagement and pull outward and downward along the door's hinge arc, checking that the opening increases; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The opening progress is lost, but no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The oven remains upright and accessible, with no environmental reset needed before another attempt."
+    },
+    {
+      "start_frame": 138,
+      "end_frame": 148,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "left_ego_image and image show the door partially open at frames 132\u2013137, then returning upward and inward during frames 138\u2013147 rather than continuing to open. The robot does not preserve the achieved opening; the precise contact or retention cause is unclear.",
+      "recovery": "Secure the handle again and maintain controlled engagement through the full opening arc before releasing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The door closes again without visible damage, displaced surroundings, or other harmful consequences.",
+      "resetability": "immediate",
+      "resetability_evidence": "The closed door and handle remain available for an immediate retry without scene restoration."
+    },
+    {
+      "start_frame": 173,
+      "end_frame": 400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following the small repositioning movements through approximately frame 172, the robot remains essentially stationary near the closed oven for the rest of the episode. Frames 173, 240, 320 and 399 in image, left_ego_image and wrist_image establish sustained lack of opening progress rather than a brief pause.",
+      "recovery": "Resume a deliberate handle-alignment and opening attempt, verifying door movement rather than continuing to wait; no human intervention is indicated by the visible scene.",
+      "severity": "low",
+      "severity_evidence": "The sustained stall leaves the task incomplete but causes no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "No objects require restoration, and the oven remains accessible for another attempt."
+    }
+  ]
+}

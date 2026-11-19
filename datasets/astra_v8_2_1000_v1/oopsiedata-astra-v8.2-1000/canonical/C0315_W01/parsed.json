@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0315_W01",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than a visibly failed attempt: overhead_cam and wrist_cam show the blue toy placed in the purple bowl at frames 147\u2013154 and the pink toy added at frames 296\u2013303. At frame 349, the food-shaped objects remain on the table and the robot is approaching them; the green bowl has not been filled. The observed actions advance sorting without an established local failure. Later episode context is not supplied, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

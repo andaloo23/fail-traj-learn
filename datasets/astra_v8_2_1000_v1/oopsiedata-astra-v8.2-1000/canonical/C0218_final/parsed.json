@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0218",
+  "language_task": "Pick up the orange and put it into the bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot lifts the orange in frames 113\u2013127, but it falls back onto the table in frames 128\u2013130 (right_base_cam, wrist_cam). The robot subsequently reacquires it and lifts it toward the bowl in frames 218\u2013240 (left_base_cam, right_base_cam, wrist_cam). At frame 240 the orange is still held outside/above the bowl; placement is not visible. Thus the episode includes a visibly failed retention attempt and an unfinished recovery, not confirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 128,
+      "failure": false
+    },
+    {
+      "start_frame": 128,
+      "end_frame": 140,
+      "failure": true
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 241,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 128,
+      "end_frame": 140,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After carrying the orange above the table in frames 113\u2013127, the gripper loses retention at frame 128; frames 129\u2013130 show the orange separated from the fingers and back on the table (right_base_cam, wrist_cam). The empty gripper continues toward the bowl through frame 139 rather than transporting the orange. Task-directed return toward the orange begins at frame 140.",
+      "recovery": "Return to the orange, center the fingers around it, establish a secure grasp, and verify retention with a small lift before transporting it over the bowl and releasing. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The orange falls a short distance onto the tabletop and remains accessible; no damage or meaningful damage risk is visible in right_base_cam or wrist_cam at frames 129\u2013139.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange remains on the unobstructed tabletop beside the bowl, allowing another acquisition attempt without environmental resetting or human intervention."
+    }
+  ]
+}

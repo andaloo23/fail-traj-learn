@@ -1,0 +1,116 @@
+{
+  "id": "resp_05433af8a1f9a612016af923910b8c87d2bc9f15a1e39565df",
+  "object": "response",
+  "created_at": 1794712465,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794712469,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_05433af8a1f9a612016af92392c9b087d2922d180ae17e40fd",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SOVuy7IjMbcb7YurzjB047o8JFuhlg1UITeWCtjeIMeYF4KCxBFVeZMYeu6cp-Hdu1d27tomIEw0KHssNQyGfo553KuS_vr1Yr2YhhLGHL5ni6i5az3ZYZypHfM5i89hY9m2t-VeIJXmrnwYtqi_mSVOxQH6_VQLee4PV6ZuneEbj8ptb0_BQ1owG5G7UYi2cBndSvK2EqDie0S5x0D9C0wNuw39BU-mZIgxPqepBsMm7VTq0pPO0vwJ71DS-ekKbr67OOyer4ktSPFTaUmzVtxoU8NhmhnvKMkc38rukR1B-o2mPN8Ye813fM-cXb8Nied1YxFUPqKJSZHjos7nIK869PDFdXjskBm3QqARrQ8J7pqk41zZErZHWOPyY7qXNRLJ0mOmOlTpZRsTmFEJVEABVcvz1_TAVFwjW3dQ5agM68OkuHvssGqXBMbtt06fjbp7dDR4exuAasU9AAYDnzTY4JD-3SrAysF-XgUA9J6I6nzYNUc5xBc3gB3-jnH8qh9vpGTYFNkAy677QbkF1ltO26cSWAVnTBbvYo8qfgpPBiyEOECNPCaX5pz3J1rzHrSjnrm3APgPskCmu4ur0OpRJywhXS_UP4i_j-jckCzHLuVWTsG1p20yIanmK4XG8ZXMBN2uvnUyl8nf8xXmTvv83IKw7C-ck42Gi0N8-Wxmn54LG1BmJREOyJY8DEr38muBYXTVHyVKFH1VrOLJANMEuwZfVhBvqO-1opRGvukV64h05F3Z0GEaFDTrYpubAQoVirUQlylpBkATAzvkDl-PljBqyI9Wi_mulu41KN0OnXRHQVkoIFOJC_WZ9aImQmmsyVe4IzaOD37TqBDFHuTMVFphAPtzLpk3PY79TP-t9J0JtbxnJ1okqtc-LAzXczDW1boNqTVWfEYvqiwu0jZChC4HBSZEhTEv_Cb-eFt3d2hTHxYYvCwRYGBrvAas0Fh2vJSKo7bn4ZxcFEwNoZHisOaBbn0w79dZrM6CdqoU45Vw69iRwa3aWoRrBQDtT_-GMvqzpUh7__Y2dxvEjteluHEnZhLbBYSoIlh4QhTEcSSloPBNr0VJ1P5ssg-dMvkffWIBfo3g8mCN5eKK-MoVyAkvsAfOGmlebWjBtCodYHt4QZ_od_pCEiangzqiIrZEtnGsPmHxqagWxB-DRR09IqcrdSORIEtxd7zLZ8JBgVdIP9R3mVnfgtO08gQMNdypmIUm7yWPb5zjgmFuMpLNYjPk9RbgLZIIY0D1jAKL-lNIdYXLcXrPpzy4656M4q5wIRgPA9c5avP4VXK8X0sW3k_N71odAJn79NuFGYmZ34ncJfsTHtilXEcmcyhtoFvJbmNcaNrYkBV1shKcrz1Qn8SNSwYxiT_mU24KWkfNQZC-K4QmNQ75DT3jUfJmgdW3eFIIIo86pU9eAJQC0Wc1_9VjK8XMPQBaeukMCdWriAXrbLhdHhLIU680Cu7vkIrDw0ofSRXFwF1iGTm2KJEajr0uh4EPW8VPPcVcUx8HV3wSsDJepxOaYTSvwzMBqdBhf2t-6eGA5jjC6Hx6yvg4ifkm41rnAEZLWK17ZRrI_QsIAJMYZn4bm26hrEySlSTc9Bm02Vi_kR6OHlZd3Q4OC1_Ozcr68ZamLDVc0bYBEw6-PJO_lR0byHiAPGZXOh4fAHO32pYd8CBfeSRkWkgr6e0lP2CjTHdJqH6TKtMisqRPcU1pFTeF535SZEJPN_S5NypzZ8BdmQTzopHtcSg0XBNcELMBwthFi6NA1owP4nhfHgo2c7G5gEIjbxh1I_0XSuczfUExWPFN9HVmhB84BNYXUOY37PzZmf0T8fAKVzFI0WuKO7PKuEA2wuQ2fwExMaM1_YvM_47JvuLoGEzgdY9fIYiz3aXYYgvQu1KqIHB-77IeUo4hRbEKgpYuCH9g19WKb-1sJaRrcOIDoGs8JfLlmW1FsY8o5rNH1-rExAxlzKtEjYuiUEY4hk8gwM0zJ9MXVKVDqx5oZB47x0H81EGDvzptWXUzmhUVTdfUoIXX6T83IUat3-pRuZhXXhfjGQtnltfw1RVWqi20WHNdYFiUB4XRRiWMLAWcLyJRKzlja7JCAGYmEkw7lPtvbCC3xyliyBckirEsr5EZthRnC_AnIy7xtBrIuv327UuLRVpuNoV3krXsNpfNTBB7rWxTJd_glbVxDZGHpE4bxD9oYH9k9xJUAFWlKMuQx6_rLmMewrbfDcy5O9NN8s4moYaIp2QBjpHmQRwb-9l3HnTQxUVwF4jL2QcUoH45F2ivZehptzpv9cnf5vXeEt-zyF7msfaWKCTDBGZqmrQ2VqGEFAe0ccu7vPo-JonHQtOTjCc4LToTynYYW7_-VzRZVcyGIVwy3Gh49Ixnzwbv1ACMD2K38ay9_e-x2iAKnIk2BLG0xg6Yfiu4yKzIZz3kF4_QktAa-CWG1v7Cj-9A_q9WUKzBA45Zyo5zYQuBRUl1Sebu2GBFCwYRBs0kV-GYaRbCvr7CeVOR-J3gAwl3mdo5afdZv1BXwAXHSMnjtlLp4jerQH5Mpfpicg_4gDPLPp69pwc_ueH_5TyyCwxM5qqSRtF_e9qLtuAT7JWXPfXgvdZ-pK4T9tTITKYV_MdhQejxYO0V2UNgLoqe1Avi495yc9sIVt-zR1-quLlFF0YI8Y_AXKR8XDzLLVK4Bvh2kb_FsBVNtVr9EnZk62wMA6E-vd66sIDSKOr4vvkA48ZsOytCdxAnEmNp34J2yj4skvNchBlA7E9m3LXT8Oe6PAOrg==",
+      "summary": []
+    },
+    {
+      "id": "msg_05433af8a1f9a612016af92394880487d28165eb6f411705be",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0704\n\n## Episode annotation\n\n- Language task: put the corn on the green cloth\n- Success label: success\n- Outcome evidence: In right_shoulder_cam, the corn initially lies beside the green cloth (frame 0). The robot acquires and lifts it (frames 27\u201333), carries it over the cloth (frames 37\u201348), and lowers it onto the cloth (frames 49\u201354). At frame 55, the gripper opens and begins withdrawing while the corn remains on the cloth. No failed acquisition or unintended side effect is visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 56 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 6843,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 249,
+    "output_tokens_details": {
+      "reasoning_tokens": 89
+    },
+    "total_tokens": 7092
+  },
+  "user": null,
+  "metadata": {}
+}

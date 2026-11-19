@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0315_W02",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Sorting remains incomplete in this observed window: overhead_cam and wrist_cam show the carrot-shaped object left on the table after an empty retreat at frames 422\u2013437 and further unsuccessful acquisition motions at frames 529\u2013645. At frame 699, the robot is approaching the carrot again; no additional bowl placement is visible, and other food-shaped objects remain outside the bowls. This is a provisional window outcome with visible failed attempts, not a final whole-episode judgment; earlier context beyond frames 348\u2013349 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 422,
+      "failure": false
+    },
+    {
+      "start_frame": 422,
+      "end_frame": 438,
+      "failure": true
+    },
+    {
+      "start_frame": 438,
+      "end_frame": 529,
+      "failure": false
+    },
+    {
+      "start_frame": 529,
+      "end_frame": 666,
+      "failure": true
+    },
+    {
+      "start_frame": 666,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 422,
+      "end_frame": 438,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing near the carrot at frames 405\u2013421, the robot lifts away empty while the carrot remains on the table, visible in overhead_cam and wrist_cam at frames 422\u2013437. This establishes failed acquisition rather than merely an unfinished closure; reopening for another approach begins at frame 438.",
+      "recovery": "Reopen, align the fingers around the carrot's body at an appropriate height, and verify a secure grasp with a small lift before transporting it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The carrot remains on the tabletop and neither camera shows damage or a meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The object remains accessible on the table, allowing another attempt without environmental resetting or human intervention."
+    },
+    {
+      "start_frame": 529,
+      "end_frame": 666,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_cam, the fingers reopen at frames 529\u2013545 without securing the carrot, then repeat closing and reopening near its leafy end at frames 559\u2013585 and 624\u2013645. overhead_cam confirms that the carrot stays on the tabletop; at frames 634\u2013638 it rotates and slides away rather than being lifted. These repeated unsuccessful acquisition motions do not advance sorting. A clearer wrist reorientation and renewed approach begin at frame 666.",
+      "recovery": "Stop repeating the same near-end closure, reassess the carrot's changed pose, and approach across its wider body with sufficient finger clearance; verify retention before moving toward the food bowl. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is unsuccessful acquisition and displacement of the carrot on the table; no damage, spill, or object falling off the table is observed.",
+      "resetability": "immediate",
+      "resetability_evidence": "Despite its changed orientation, the carrot remains within the visible tabletop workspace and can be approached again without a human reset."
+    }
+  ]
+}

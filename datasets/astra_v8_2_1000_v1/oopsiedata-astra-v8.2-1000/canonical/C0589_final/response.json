@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c12ca4213573a22016af91c88367487d2977d6d50cb1381d3",
+  "object": "response",
+  "created_at": 1794710664,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794710678,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c12ca4213573a22016af91c8b78f887d29cffe4e574b7ed5b",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RyW4RMMk16I7M6p-LkQA-bfTXDb4e7Gb8KQd7f0z0fNMJG_Qg6cmZMFveGOssQG0s3gGkSmG4bORANSR0BG7Ic5Bwmax-dYlokk687QsF-qeWdPSm0ZvCULyV12TuGWlh0pxAqaBAG4u25WBZaptsaiHm20iHAvs6Q8kAGxrz8dKjVHBAagVuyACoPjOVEL6M_VmvB_g9M6vyW14utNoluPUga5Zj5yrScj3Haz8AFc9a7y-SWLAxuIpoiYQHbiQAwb-z612t_3E2z9ljoS4vZyCupRDetyc1SEKgUgWf29poPvQ9p8SbUzmBn87BLE8yjX4mT9zc82CG30mOZInlvF-AB3PbFmjXmZQn21CyXd90aU3qa9D9h0bLBp1hfU_dJGqKpBLBxmFNZsLUUMl3VaabdDI3E1jQzNBe-OFtnGf1VTGPgZa0bloQxDnsmDykmTEwsOfU4Gt7TdKShTbTB3Fw4aE_8-p751ubn1lRj1SUkSlbfgWYHPX7XCfBbZm4BlF2dm_Jpe80MrIfBGV-nHQXuV7nt_4rvQ_2H1BYL9ZyBrP1t0FhOjo9jv5D2sDe23JrXjUAWOHRk3VRsCvfCn4HJLcgE35eQe6i7SPx7R4DLdCeovVdrCPPGTFe84ZzufrJ-uijlUPuhMuM-aOsF9iiyOn0G0X1XMl8JYyS7RvfcBYbMfwTF-smXNbAFlElnGL3-N3aVTH2pJsfkZAbNyf4oUvjcUpjdRHoJwm3p8fiANtQr2v35JL4-7sKTWuKzwpEt5e3r0N5p6EzeVcQ6mT8B_IUc8ZKrfAI_Tk_3V8rqF99bJSgCsFwEyHFkm59L98xA5O5e6LiCqaLDXcMydYxNss32vlq-ixd-z6IV7Z-L-5g4yDtrJmtdUiKylUEgFQzqpp4vS4GeDyxmE4-Xs6jPdfZp0ZNuzDmjmKAMWB3-zWEnsRTMBHAV1Cql2f_n-IRIXyM53ccEUqfM2rHFW3Eh_yEr5qwqldTmXw2oi61rYSoI9mqp2a1bhh08qc6LQIQaPv5HOoE9py3l4Xrf8PsCqBDIsEZyyIqP2x16mhbikndZxeojUhdlcNX9nZ3xToffksopfMPE22zxu56eibwI5z2x_qDeLqKUjDp23pUfACjXk4uEmJkVezjmfRSPgwmN38GHxYk81g7aNg4aJCUo8guEgWDAcON9oZ65Tqk2plPsNnp01d5BM3XHwloZrFjfi5Rdz1rtB1SJWLVp6ZUBGCJSeHR9Dx3iRR-MawHtINLBlGeW3Qqzb9l1cQXAfCfJ_Iye7mLGYpgQ6ZgT7UobENnRuZsqUbfDS45Gsre44ifwyNUPyk4n-vsZgCrMGibMYGVr5RUDc_tmweYNs2TtrX6awAnA8-8yqMszE9j_uYyJpEVLiID2QWyEzzahltpnU5HzOvTgbyezCzqQJcLf352Fwxq_wMBGxV5tzMi_anEKClI3WNJiOUeXJhWaIvsbwbkXk0oqFhLtdL24HMGVRqZLolBf9HzoSOqLHW4fRZyWWYAMorPAmG_Ndc78Cdzs3Z7ZIDFbgi58VXeT6xtJDUgo47vAfaxT-88k7y1h9MeHyMDQK0N4VLmImuSHLV6q6WzTvbhVjXxdCEq4yYTRemIztHP4jCwsCfGOHqqPJNXWU805MCpxLKh7U6SWabA2XLQiKr_M0_fvlFHMZqiAh_TaDKzUEW84WjXlKxHNK7zZ0YPoEIaL_Js8jyFxzwsPVRKW4CmXlzSfIIjGX5AHSiuDFWpx0Ion9rI5pUvI3QlnZv2ThBfumYl5usmFgjgmAycq3mJnOsJuRFWdsmnI_xDC-2PYYupVR1VDet6kwbYMqIW1Vk_Hqik0V2wTaIU-LqdB1Xwm_sLRVHIpqPQ8lS83JY2dB-P-ehvWlrhDCm0XwFY6JxwWOrKnrbEpbUNllUkVJU0E-FLmlweMK7W5a2GaOYCW5s85kN0r1hKc1UP-L2B7C7rxrrSfj4Inv0l3LvF6aqBlmY4go4wuNQoTnLo78n5F3xi_bX1CWphPUEOapbvU9MGE3ZjgAnbe7ZvB0qSHyc7p2PQFjuzG55KMI27yBiKW6dJcHrtxAc9QT4x04B6AaiXLS9CYvX9hwxuElIzjTY6Vyu588zqEIzkRze5_dJ1W8Fp4aJq8I8emwAmrgnDSbvDELuIapT6ksgava1Jy9kiFgKvFb2T3TgLnkOQaoMs7XLD47h-yUiuWw60JNNXHwOgBXaXcLsTdtyZczb7ctDxkvlu_bC4zkXapyP_HPua0Zx7gS-kvLbscgKG9oD2W9x1-iPH9CKY_I_oq5zjYAttCbgYpABtxac2NqnkI3xdJ9r1NlIGBpnXlVQ9oxAdw3dzuZgsR3wgqBEkZF_7-QO8xf0zBLnZ5eUjtAnROMXS8Bo_DIweUGNoAThjzzyyxFqg7lzGw_je2c3K_XgEGeOA09Abl3KLc_tt8daqTpGg3DAZIIjRbHhxP_jIXdYAR9XYjRLxo8M_KJjnVJMLFgZTWxnNOxqeGZG2ozcoQwOj01IpkgBH3OGPM=",
+      "summary": []
+    },
+    {
+      "id": "msg_0c12ca4213573a22016af91c8d761c87d2935821ef1a89e125",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0589\n\n## Episode annotation\n\n- Language task: Pick up the spoon and place it into the box.\n- Success label: failure\n- Outcome evidence: The right gripper repeatedly closes and withdraws empty while the spoon remains on the table (ceiling and wrist_left, frames 56\u201377, 99\u2013114, 159\u2013172, and 206\u2013221). The left gripper subsequently acquires and begins lifting the spoon (wrist_left and wrist_right, frames 285\u2013300), but placement into the blue box is not observed. Completion is unconfirmed at the recording end, in addition to the visibly failed earlier acquisitions.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 62 | No |\n| 62 | 78 | Yes |\n| 78 | 100 | No |\n| 100 | 115 | Yes |\n| 115 | 163 | No |\n| 163 | 173 | Yes |\n| 173 | 208 | No |\n| 208 | 222 | Yes |\n| 222 | 301 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 62-78\n- Categories: grasp\n- Explanation: After closing near the spoon, the right gripper lifts and withdraws without it; the spoon remains on the tabletop (wrist_left and ceiling, frames 62\u201377). The closed fingers visible in wrist_right do not retain the spoon.\n- Recovery: Reopen, align the fingers around the spoon at tabletop height, and verify acquisition with a small lift before transporting it; human intervention is not needed.\n- Severity: low\n- Severity evidence: The spoon remains on the table with no visible damage or disruptive displacement.\n- Resetability: immediate\n- Resetability evidence: The spoon remains accessible and the scene needs no physical reset before another grasp.\n\n### Failure 2\n\n- Frames: 100-115\n- Categories: grasp\n- Explanation: The right gripper completes another closure beside the spoon and retreats empty, leaving the spoon stationary (wrist_left and ceiling, frames 100\u2013114; closed fingers in wrist_right).\n- Recovery: Reopen and correct the grasp position rather than repeating the same offset closure; confirm that the spoon moves with the gripper before proceeding. No human intervention is needed.\n- Severity: low\n- Severity evidence: Only acquisition fails; no damage or meaningful environmental disruption is visible.\n- Resetability: immediate\n- Resetability evidence: The spoon and box remain in usable positions, allowing an autonomous reattempt without scene resetting.\n\n### Failure 3\n\n- Frames: 163-173\n- Categories: grasp\n- Explanation: Following another closure, the right gripper moves away from the spoon without lifting it (wrist_left and ceiling, frames 163\u2013172). The spoon remains visibly separate from the closed gripper.\n- Recovery: Reopen and adjust the approach or use the other gripper to obtain a better alignment, then verify a secure lift; human intervention is not needed.\n- Severity: low\n- Severity evidence: The failed grasp leaves the spoon intact on the tabletop; no harmful side effect is observed.\n- Resetability: immediate\n- Resetability evidence: No object restoration or cleanup is required to attempt acquisition again.\n\n### Failure 4\n\n- Frames: 208-222\n- Categories: grasp\n- Explanation: The right gripper again withdraws after closing near the spoon, but the spoon stays on the table (wrist_left and ceiling, frames 208\u2013221). This is another completed empty acquisition rather than an unfinished finger closure.\n- Recovery: Reopen and select a corrected grasp, potentially with the left gripper, then confirm possession before moving toward the box; no human intervention is needed.\n- Severity: low\n- Severity evidence: The consequence is another unsuccessful pickup, with no visible damage or meaningful risk of damage.\n- Resetability: immediate\n- Resetability evidence: The spoon remains accessible on the work surface and the environment requires no intervention for another attempt."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 63763,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 919,
+    "output_tokens_details": {
+      "reasoning_tokens": 77
+    },
+    "total_tokens": 64682
+  },
+  "user": null,
+  "metadata": {}
+}

@@ -1,0 +1,125 @@
+{
+  "episode_id": "C0936",
+  "language_task": "Pick up the spoon and place it into the box.",
+  "success_label": "failure",
+  "outcome_evidence": "Four acquisitions fail as the gripper rises empty while the spoon remains on the table (wrist_right, frames 58\u201362, 94\u201399, 139\u2013144, and 206\u2013213). The other gripper subsequently lifts the spoon (wrist_left and ceiling, frames 275\u2013286), but it falls back onto the tabletop beside the box during transport (frames 287\u2013291). At frame 300, ceiling and wrist_left show the spoon outside the box; this is a visibly failed attempt, not merely unconfirmed completion.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 53,
+      "failure": false
+    },
+    {
+      "start_frame": 53,
+      "end_frame": 63,
+      "failure": true
+    },
+    {
+      "start_frame": 63,
+      "end_frame": 90,
+      "failure": false
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 100,
+      "failure": true
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 135,
+      "failure": false
+    },
+    {
+      "start_frame": 135,
+      "end_frame": 145,
+      "failure": true
+    },
+    {
+      "start_frame": 145,
+      "end_frame": 202,
+      "failure": false
+    },
+    {
+      "start_frame": 202,
+      "end_frame": 214,
+      "failure": true
+    },
+    {
+      "start_frame": 214,
+      "end_frame": 287,
+      "failure": false
+    },
+    {
+      "start_frame": 287,
+      "end_frame": 301,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 53,
+      "end_frame": 63,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers finish closing without securing the spoon (wrist_left, frame 53); the gripper then rises empty while the spoon stays on the tabletop (wrist_right, frames 56\u201362), preventing pickup.",
+      "recovery": "Reopen, realign the fingers around a graspable part of the spoon at the correct height, and verify retention with a small lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains on the table, with no visible damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon remains accessible for another attempt without environmental intervention."
+    },
+    {
+      "start_frame": 90,
+      "end_frame": 100,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The second closure again fails to secure the spoon (wrist_left, frame 90), followed by an empty lift with the spoon still on the table (wrist_right and ceiling, frames 93\u201399).",
+      "recovery": "Adjust the grasp position and height rather than repeat the same closure, then confirm pickup before transport; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition fails; no damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The spoon and box remain available in the workspace without a required reset."
+    },
+    {
+      "start_frame": 135,
+      "end_frame": 145,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The gripper closes again without retaining the spoon (wrist_left, frame 135) and withdraws upward empty (wrist_right, frames 137\u2013144), leaving the target on the tabletop.",
+      "recovery": "Reassess the spoon's position and choose a different grasp alignment or the other gripper, verifying retention before moving toward the box; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition causes no visible damage or hazardous displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "Another grasp can be attempted directly with the spoon still accessible."
+    },
+    {
+      "start_frame": 202,
+      "end_frame": 214,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "A fourth closure fails to capture the spoon (wrist_left, frame 202); the gripper lifts away while the spoon remains stationary on the table (wrist_right, frames 205\u2013213).",
+      "recovery": "Use a revised grasp location or the other gripper and perform a short retention check before transport; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The consequence is another unsuccessful pickup, with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "No cleanup or object replacement is necessary for a new attempt."
+    },
+    {
+      "start_frame": 287,
+      "end_frame": 301,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After the other gripper visibly lifts and carries the spoon (wrist_left, frames 275\u2013286), the spoon slips downward and lands on the table outside the box (wrist_left and ceiling, frames 287\u2013291). The gripper continues toward the box without completing placement, and the spoon remains outside through frame 300.",
+      "recovery": "Return to the spoon's observed tabletop position, establish and verify a secure grasp, then carry it over the box and release inside; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls onto the tabletop and remains intact; no damage to the box, robot, or surrounding scene is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The dropped spoon remains accessible beside the box and can be reacquired without environmental resetting."
+    }
+  ]
+}

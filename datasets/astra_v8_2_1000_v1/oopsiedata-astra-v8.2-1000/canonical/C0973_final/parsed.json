@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0973",
+  "language_task": "Pick up the spoon and place it in the sink.",
+  "success_label": "success",
+  "outcome_evidence": "The spoon initially lies on the counter beside the sink (frame 0, wrist). The robot closes its fingers around the handle and lifts the spoon from the counter (frames 73\u201397, right and wrist), then carries it into the sink (frames 105\u2013160, right and wrist). The fingers open at frame 161 (wrist), and the robot withdraws while the spoon remains resting inside the basin (frames 177\u2013231, right and wrist). The spoon remains in the sink through frame 299; no failed acquisition or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 300,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

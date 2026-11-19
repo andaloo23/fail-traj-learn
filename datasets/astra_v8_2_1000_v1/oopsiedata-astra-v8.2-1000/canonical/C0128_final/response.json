@@ -1,0 +1,116 @@
+{
+  "id": "resp_0f65ace299778e33016af8ff97fc7c87d1b81ebb7c3d2e3434",
+  "object": "response",
+  "created_at": 1794703263,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703290,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0f65ace299778e33016af8ffb12de887d1a808014402e1ba00",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-P--0kXVp4jO2PbUR-xSt_vIMy4TFka2ZexitSE4GTccwIGgX9wkQpIMU28ELAjPmUaxJxV05YlZj1tz6WZL3C5oxO1llo2zA84yfY4ahlDElM6FPzRbZ6EkIK-SxQbSWgI2kj3mmUoZuBjBjSWwd-VaPwRcI06Qn0NVA55PzPfucV6w8qOE_-yVQj7b3KiQ8Xug2u9JGQ4aRiWSVUIqlgGyBGzDfp7wZaHhVFXwsIeYz4eE7jQNT6FL_xjgjXzdN4LplfSQuOhfegMGt2kg8SjqasDrNsMhQLgpJmYEcjnWZ23i5E-DFumVyDZGOBOtveZ9vo1GwE1aHXToeEKEcJcPxKKIGVwuqrwAx6EvpF_khoIs1AJ34x0T3l6vT_xwH9w-gBKy3LVRBbpBdAPqxnIHHM8RPOTMmKKj5SYHrQjiOnkwSxfRjHkcHVn2O4QHrcPqTanS7DLiS054PrbEz1aQiBveHnrMTPEAHoPGlA6cw7lsBnp3gY-oKb7_pJRxaYkIJbS4fMRzVVJx14HqcCGHBlLAcnHiOAs1yaXecUak5n1UlfQCCspN-tWkSUBwvhO_xBctXOD3GFU5NGUAkYbrZVSu-Npk4MXnfWfVl7hvyUxwROQivjCd4Q2eRREoM2OAyP9UDEP1RD8_wgQh_ceJEW_FSjZeKJoH-dKTO9XaoyRfol-8pFXEuYlxDb_y2NmCmG6IJqoKx_KoeXHppws9HsJgLOuMRJEnCYzBFvP_2N1LFQCk2i1xiB2jHvZLLm2nAagMGjJDz5ECw7AssOoXF7cjTu7kKq5j8kkuw0XY6QimY91-HN3-iEKX7O6zl1Nu5wZDf8ahdp168PRQ4EeXSwhnM36EVloPRx98VindoSsSBcTU8Vzw4-1uxBdxu9DktD3VIyOQs61IW_4T44qsgWU4V8sTRaejD24F5ccFjkC-EB7HC0wILphAk4IYnOKeuS9zL-W1F9JyA0g-KTR2E-wX_G1t7HVs89kfEqFh7-VCdmMfH5bUJJlR1nFNOul7635aK_kT0kaOlGSoByU5-aJA7Zn9ZVUFl8hjFTDwAqAdv4oC_EwZHQuB-a4Hpc1JKV7_gOxZ_lqiOgCb3Kfw_eIJ23iqEtEVpYhP7LdLJRG98wE7TaURCa1IFuw15h4Dx3hljq5AdIN47u17-PBL-156qVDY9g3F18JYgg7ON5rKpzSced6Znd4fSeB4vyZbxtdJV0F4j-jMl2S4v5wjHl9P9G8WUIY4BKIPcrIyCrb8sy3fVsfv5wkKcWMFRwisDwMFiSxeJor-QjuCLro-7cGdQab-WFVHz_aENV2rO7rqKqhwscjcyWdwXtgbMB5TNrkzA3eof7peRUjgeYJxqA5x7WBDuRX1uJgBTzrckKJyS-9WuCyfgpwjkk9VmGck4cIuUsiSqgfUPJb97IyK0AbZGPOiwDC1ky0RozrIIGLxrHazIOdKJwMRtfgTb5Xyz7EMNfI45XAS8e8u3bZWWFDH_rvBOA5uffApvcuhvjQulv0lMnJpw62cKuKOI0ZA6lL07fnCMy35zGgdDVKBhNxClilCeB4zDveyFNNF2Rttwx3fGCNywwq-V3LB53pC0Rh_Hffigs6nATExORU9hTS5Gdk52ATnk9UHFuIYSyMYG2p9BRfBMQsM33ThNcaBzZ3HlXICou2QZkPyha47GHK-vWACZIuuSAUes8CBQd3QtTlIE-2rcUze68w44VP21NXi55ziQUV5TUyZoXgydXQzPfNHpwOjNLtykVE5sCR7fGjMPZleKN85fOKhRoM3wlSBFee2DZSInsdJdkxkdU9n0E8NQjhobSZ5fHfU53Mc6K01BtIppGXRP4wErrQ5kDMz4ARQ8e73E6KhTAygJK-Nk3a3Pvv6nOYOIxKHeLclkpsrSyHos7UL5eBMvP8u16HtNB2psgXi1iJgD6GLAQ3aU1vDjuo7xXPcF5I-HeZuyHUxhiJwxZXVerAIHkhnGz27MppcCmbeIGrXFy-UspcICrQu_D7oiyutz4R_uicW7JKU07JrEz1r1qFwRde2_bY-Tzv4WcuiVUYOosLwSWCkAOKjJ4QpBWNJ26tVHY0R6zra1KLHDnNcB9fqpmEjUEDiKScfdjVOQPSq3yZEmAf5dESWW-r5hQn5amPsT17xnSaqpCh0Wn02QjFz4zsg6oEEb50nic3nPIniqfaTZxwuSGCN8dhVnilw8kH1VpWzps3PiP82ad9jgQxUqnWTKdwROHF4T0WX2Im3451Ikw71QwCjxwG7m-DK18VwJREbyI2BbD7C_osd_10C9MZBopHyswVpRPNW3malWfb9MMr3E6tiPpaQWjZBwtEogEl3EWXtJPdj708yatQUB1xpon64l0dRfJ75vcJ00La1eDaSrTg3V-OSSENouhiNseVJjGhMZHBMD9XVKVjCqn08GRLpQO7OWDfCz1zE-j0tRqH6SAcakngA225Cdc-TT-z45yCkPQk2eruNjLA8db_m_O-LGxIKcQS_9pxaCYPx_FBXMPQ-aUWB3cAka11IVRu8qiXjADm_DhSa7-7-FTnG5yzDJzOAppjhsxysSeen3HaRk6zIGoeUu5GUbs3wWZ5q688ws7hqgu5zrwqbnD8HxaN3pFh2c-c8VqyfZTNL1dGLsU7D1ff4sfNZ2Z4JMRNeCQ4Jg3GMCeSHIgs0JeL1Fhzj7WGQJlYtXZA9eYjODPNO0Us_UTuORwkENU6lqMgI0r9XaHIQ3JFUNxh8oy_tLCVpNpZpuk5IKhKQ20XzH0Q4vHTj2J6w0QmpcXuDfeYU6WCTJkSLaOMIPake7RLloCqfTuPawRBnEHnpFdEbaaJk9mG2hacxousi4ogZtWHE4SzNjuIxr69ZKQya6HxCQ9mPoHsAvEVHMPcsufvoklrYZe-2kLk5f_t3TBxNpIk=",
+      "summary": []
+    },
+    {
+      "id": "msg_0f65ace299778e33016af8ffb3fabc87d1a114c85c0e93a324",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0128\n\n## Episode annotation\n\n- Language task: pick up cup with one arm, hand over to the other arm, and place it on saucer\n- Success label: failure\n- Outcome evidence: The cup is lifted by the right arm (frames 285\u2013330, aria and right_wrist) and transferred to the left arm (frames 520\u2013600, aria, left_wrist and right_wrist). After a prolonged pause, it is released onto the table beside rather than on the saucer (frames 1183\u20131240, aria and left_wrist). At frame 1299, aria shows the upright cup and saucer remaining separate, visibly establishing failed placement rather than merely unconfirmed completion.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 830 | No |\n| 830 | 1159 | Yes |\n| 1159 | 1227 | Yes |\n| 1227 | 1300 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 830-1159\n- Categories: task_not_attempted\n- Explanation: The left arm holds the cup near the saucer with essentially unchanged object and gripper positions for approximately 11 seconds; frames 830, 950, 1050 and 1158 in aria and left_wrist show no meaningful progress toward placement during this sustained pause.\n- Recovery: Resume task-directed motion by aligning the cup's base with the saucer center, lowering it onto the saucer and then releasing it; no human intervention is visibly necessary.\n- Severity: low\n- Severity evidence: The pause delays completion; no damage, drop or meaningful damage risk is visible.\n- Resetability: immediate\n- Resetability evidence: The cup remains held and the saucer remains accessible, so work can resume without resetting the environment.\n\n### Failure 2\n\n- Frames: 1159-1227\n- Categories: manipulation\n- Explanation: The left gripper opens and withdraws while the cup is positioned away from the saucer; frames 1159\u20131190 in left_wrist show release, and frames 1205\u20131226 in aria show the cup left upright on the bare tabletop beyond the saucer instead of on it.\n- Recovery: Reacquire the upright cup, align its base over the saucer, lower it until supported and release; no human intervention is needed based on the visible state.\n- Severity: low\n- Severity evidence: The cup is misplaced but stays upright on the table, with no visible breakage or spillage.\n- Resetability: immediate\n- Resetability evidence: Both cup and saucer remain accessible and intact; the robot can directly reattempt placement without human resetting.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 267573,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 679,
+    "output_tokens_details": {
+      "reasoning_tokens": 104
+    },
+    "total_tokens": 268252
+  },
+  "user": null,
+  "metadata": {}
+}

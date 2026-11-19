@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0060",
+  "language_task": "Move the hammer to the plate. Then, grasp the mushroom.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "In image_primary, the gripper first closes near the hammer but lifts without it at frames 27\u201328. A subsequent attempt lifts the hammer at frames 40\u201343 and deposits it on the green plate at frames 56\u201360. The robot then closes around the mushroom at frames 83\u201384 and lifts it with the gripper at frame 85, visibly completing the ordered task after the earlier failed acquisition.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 27,
+      "failure": false
+    },
+    {
+      "start_frame": 27,
+      "end_frame": 29,
+      "failure": true
+    },
+    {
+      "start_frame": 29,
+      "end_frame": 86,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 27,
+      "end_frame": 29,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In image_primary, after closing near the hammer at frames 25\u201326, the gripper rises empty at frames 27\u201328 while the hammer remains on the table. This establishes an unsuccessful acquisition; renewed approach begins at frame 29.",
+      "recovery": "Reopen and realign the fingers around the hammer handle, close securely, and verify that the hammer follows a short lift before transferring it to the plate; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The hammer remains on the tabletop, with no visible damage or harmful disturbance to surrounding objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The hammer remains accessible for another grasp, so no environmental reset or human intervention is required."
+    }
+  ]
+}

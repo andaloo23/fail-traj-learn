@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0420_W05",
+  "language_task": "unstack the boxes and put them in straight line",
+  "success_label": "failure",
+  "outcome_evidence": "Throughout frames 1400\u20131749, top shows the boxes remaining separated in a scattered arrangement, not a straight line; left and right show no acquisition or placement. Completion is unconfirmed, and sustained inactivity is visible rather than a failed grasp attempt. Earlier unstacking cannot be assessed from this window. This outcome is provisional because earlier execution beyond context frames 1398\u20131399 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1400\u20131749, left and right show the grippers remaining clear of the boxes without a discernible task-directed approach, grasp, or placement, while top shows unchanged box positions. This approximately 11.7-second period of sustained inactivity does not advance the straight-line arrangement. Context frames 1398\u20131399 visibly show the same state, supporting continuity at the start independently of the prior prediction; the inactivity may continue beyond this window.",
+      "recovery": "Approach and grasp an accessible box, place it along a chosen straight line, and repeat for the remaining boxes, separating any remaining stacks first. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Frames 1400\u20131749 show lack of progress without visible damage, object disturbance, or meaningful risk of damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The boxes remain available on the tabletop with no visible environmental change requiring reset or human intervention before another attempt."
+    }
+  ]
+}

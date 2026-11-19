@@ -1,0 +1,176 @@
+{
+  "episode_id": "C0517",
+  "language_task": "fold the shorts",
+  "success_label": "failure",
+  "outcome_evidence": "The beige shorts are folded into overlapping layers at frames 300\u2013350 and subsequently compacted and set aside at frames 1650\u20131830 (left, right, top), despite repeated missed acquisitions. A person introduces a second, dark pair at frames 1890\u20132010 (top); the robot folds it lengthwise at frames 2190\u20132310 (left, right, top) and continues further folding adjustments. At frames 3360\u20133401 (right, top), the dark garment still has a raised edge under active handling, so completion of the whole observed sequence is unconfirmed, not visibly defeated. The task does not specify whether it refers only to the initial pair or both sequentially presented pairs; the initial pair reaches a folded, set-aside state, but the second pair's final completion is not established. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 140,
+      "failure": false
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 154,
+      "failure": true
+    },
+    {
+      "start_frame": 154,
+      "end_frame": 474,
+      "failure": false
+    },
+    {
+      "start_frame": 474,
+      "end_frame": 494,
+      "failure": true
+    },
+    {
+      "start_frame": 494,
+      "end_frame": 620,
+      "failure": false
+    },
+    {
+      "start_frame": 620,
+      "end_frame": 633,
+      "failure": true
+    },
+    {
+      "start_frame": 633,
+      "end_frame": 878,
+      "failure": false
+    },
+    {
+      "start_frame": 878,
+      "end_frame": 883,
+      "failure": true
+    },
+    {
+      "start_frame": 883,
+      "end_frame": 927,
+      "failure": false
+    },
+    {
+      "start_frame": 927,
+      "end_frame": 953,
+      "failure": true
+    },
+    {
+      "start_frame": 953,
+      "end_frame": 1222,
+      "failure": false
+    },
+    {
+      "start_frame": 1222,
+      "end_frame": 1239,
+      "failure": true
+    },
+    {
+      "start_frame": 1239,
+      "end_frame": 1322,
+      "failure": false
+    },
+    {
+      "start_frame": 1322,
+      "end_frame": 1354,
+      "failure": true
+    },
+    {
+      "start_frame": 1354,
+      "end_frame": 3402,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 140,
+      "end_frame": 154,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing beside the beige hem, the right gripper withdraws without carrying it during frames 140\u2013153 (right, top); the hem remains outside the fingertips while the left gripper retains the opposite corner (left). This unsuccessful acquisition prevents the coordinated fold from proceeding. Reopening at frame 154 begins recovery.",
+      "recovery": "Reopen and align the right fingers around the hem, then verify retention with a small lift before continuing; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The acquisition fails without visible garment damage, harmful collision, or displacement off the table.",
+      "resetability": "immediate",
+      "resetability_evidence": "The hem remains accessible and the opposite corner remains controlled, allowing a direct retry without environmental resetting."
+    },
+    {
+      "start_frame": 474,
+      "end_frame": 494,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following closure near the fabric edge, the right gripper withdraws empty during frames 474\u2013493; separation between the hem and closed fingertips is clear at frames 492\u2013493 (right), while the folded garment remains on the table (top). Reopening at frame 494 begins another approach.",
+      "recovery": "Reposition the open fingers to straddle an exposed edge and confirm that fabric follows a small test lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The failed acquisition delays adjustment but causes no visible damage or harmful side effect.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shorts remain accessible in their layered configuration, with no reset needed before retrying."
+    },
+    {
+      "start_frame": 620,
+      "end_frame": 633,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The right gripper moves away after closure during frames 620\u2013632 without retaining the fabric; a clear tabletop gap develops beside the closed fingertips by frames 630\u2013632 (right), while the garment remains supported on the table and near the other gripper (left, top). Reopening begins at frame 633.",
+      "recovery": "Realign around the hem, acquire it between the fingers, and verify retention before moving into the next fold; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Only acquisition is unsuccessful; no tearing, damaging contact, or loss of the garment from the workspace is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The garment remains within reach and can be approached again without human or environmental resetting."
+    },
+    {
+      "start_frame": 878,
+      "end_frame": 883,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closing against the fabric at frames 876\u2013877, the right gripper retreats without carrying the targeted edge during frames 878\u2013882 (right); the layered shorts remain supported on the table (top). This brief unsuccessful acquisition ends as the fingers reopen at frame 883.",
+      "recovery": "Reopen, align around an accessible edge rather than against the fabric surface, and confirm retention with a small lift; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The brief miss causes no visible damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The fabric remains accessible on the tabletop, so another acquisition can be attempted directly."
+    },
+    {
+      "start_frame": 927,
+      "end_frame": 953,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following another closure, the right gripper withdraws empty during frames 927\u2013952. The fabric recedes from the closed fingertips, with separation visible at frames 951\u2013952 (right), while the shorts remain in overlapping layers on the table (left, top). Reopening at frame 953 begins recovery.",
+      "recovery": "Approach a clearly exposed fabric edge with open fingers and verify that it moves with the gripper before continuing the fold; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The missed acquisition delays folding without visible garment damage or unrelated collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The layered garment remains within reach and requires no environmental resetting."
+    },
+    {
+      "start_frame": 1222,
+      "end_frame": 1239,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "During frames 1222\u20131238, the right gripper withdraws with closed fingertips but does not carry the fabric; the garment recedes in right while remaining beside the other gripper and supported on the table in left and top, particularly at frames 1230\u20131238. Renewed movement toward the garment begins around frame 1239.",
+      "recovery": "Open and realign around an exposed edge, then use a small test lift to establish retention before further folding; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The unsuccessful acquisition causes delay, with no visible damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The shorts remain accessible in the workspace, allowing a retry without an environmental reset."
+    },
+    {
+      "start_frame": 1322,
+      "end_frame": 1354,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After closure near the fabric at frames 1320\u20131321, the right gripper retreats empty during frames 1322\u20131353. Separation from the closed fingertips is visible at frames 1350\u20131353 (right), while the shorts stay on the table (left, top). Reopening at frame 1354 begins recovery.",
+      "recovery": "Reposition the open fingers around an accessible hem and confirm fabric retention before proceeding with adjustment or placement; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "Acquisition fails without visible tearing, damage, or harmful contact with unrelated objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The garment remains on the tabletop within reach and can be reacquired without human resetting."
+    }
+  ]
+}

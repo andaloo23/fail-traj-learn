@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0592_W02",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this window, rather than a visibly failed attempt. In base_image frames 350, 500 and 699, both bowls and both cans remain outside the empty trays. The gripper moves from near the blue bowl toward the green can and gradually aligns around it (frames 350\u2013699); no completed acquisition followed by empty withdrawal, dropping or harmful contact is established. The visible approach toward the green can does not support assuming that the blue bowl was the acquisition target, as suggested in the prior report. Earlier context is limited and later execution is absent, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

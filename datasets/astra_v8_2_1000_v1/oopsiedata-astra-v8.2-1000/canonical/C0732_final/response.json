@@ -1,0 +1,116 @@
+{
+  "id": "resp_094294aeba4ff083016af926103df887d1adbf05a913b14bf2",
+  "object": "response",
+  "created_at": 1794713104,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794713112,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_094294aeba4ff083016af926136a8887d1abae02dbd5cea6f8",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SYZ7UC4lmfmEfYeBudqZE2D_w5ZXL7IlFsapa8TNkwhjohkcmRAAWENZ0FaKAU3AVxA3Cs5E6kGErlQcecZRQN2HLpfBhG4zUFabk4NjYr3EDzCdCbMx7LlEp2wpz0n8gcqzQLbIuWi1d0L3UA5nzFLZUkwQ7rI0S1bc9KJi2JOEsRIdyP5vgXtDP6RJsT_3UU84LQsSFLsx3JocwBHkxeBgsDSiejTbievIJA9525ApLW2Q_kFEM3AdXKg4_exWppgggcF-7-rZYIqKqEF18KbME1QRnJduM-jr7tq8Wqbee9IfzDoR5Rqbk9jfNHNsKH1fvyJbNO-JR5asT86hHxDvI7HqjOJ0mJ9L0XjEBmrKmg4MN6zB3jACyWUi7j_4eroTpObnAt3zXhWr3BcKrn3SGUAHGj4O7HLZEB93NIl9k_1iBmSwQsC_l3MT3pYeHC0omGNkVpS_LGHi09W1m_5_ixtD_6WOyuCkizfiJcN2VKUbQ_XU29M3RLN1nxLd1oDW9ZG2Vg5Q1cx9yX4edVJgY5Rw_5QIYb08SYqwZq4ZwRb-o8jSLFGCLM__3YOvPvXDXrmOsaJAZTo6z-R5_x5fzVSHz3i15EllJG1awoHdmjytCZdnvJyfFiLpv4L6vcmL4aapMHZUNKQy731Eh5b-zrMQqxFhzrYrBcsWFvBij-NfA7Hz2633c7AxjexBd_39rwWP-cQ406dHfT2OsQaUrXMwK2miCmWBF28cnugmV__vOwmVquHkL0jvht11yNDGoG2L-Ik7W2JBgE9ny9DdPjMwBE_Mz2lJPW1gXD6ie-eQhAQs7_Ko7FIwrLHQNIvd-jFH2P-x6T0mq2ZyzZMlBLf4bBni2ARlEKRCxjbA-8a-juLTNIs18BQoFpCHkz8GHP2h5AOgOAOmqIlTQjzvSCoSOmRxnKfVJ1hrj6bhti0ww0x5h8pOG_OXvoKCu4ViVJ_WrnMKolK1Q3ac_itgVv5wKX_ufgU0XaHUFoxT8jMhkWogdkVhe3OBL4yJjT-TWQv3UB_RhBwVKoLxNqVp1wKi3g41TzjRvRumP1usEXEN2u0tO75_25CoBYAWvjkCYSwhHFCbNp_NfcK_sYTMpFFOO0PAzc8ZGeqH9h1lPiktZUhFZUHVGmtiLAIWLrVXSL9MyAV0oS8hdSX9E3KR3Dgbiy6oj3SRLTCcMkw01fqAK1M_L0e06jPMgcCeutBx12YgDwmg97sTajVqER4J5EWdOsA5cKwtQmz2v86dWrmix4nbN5eeISGBx5ME-09ij9z6971xM5QeVfZFPyh2s4rvGSd0J-CCvoBmGvnqEtFdYS1-EHNzxY5n-VceUpvgFY4TBuEfHDkK6WAKw7_7vhQe9IfBaRtRihYODunpig2gQrvmJuaid1_uJO7gxrRHT3HQJUxbzOeGr2rfZwURY23UUEYp8lK3sb2gQJkBrhtuF-3dsx2LDPBlnb41B4D0w5J0fGU2hqEI_JVVQMhKIl5_cbGcqoOKNG5NkFeYUkQczFSP5oQqEUHc6CNzjNUFVwSepAX6kb_40pwRYi-t2CM8tWwqg3Z8csqXWxEfazUeKBatZT_Cf0Az9qQjRxPmCvZsjptrJv0gq0RD_H3wDJlwxRm2hNer468S9qi3EDHnK4ha-EUaoEV0fkmgmC9p_JnurxamaRnwSLGA90idBbIsJwVtAY03vz6W9bLA2W83yFtNpIoRwMGibDXivkkChKg66Awk7VNx_IYI30Xq7A6PN9WBDHUGEIELgUAV_jo9z7C3I56rJX_XKaX7EWWbEvtnY7zCZqIVtt5oZaXDS5PUI4qzSlBTPCiyF5FP_aJncsCg4478GY9xfsjLnO6e1IiUkxYqCCeVGtEt1x6VqbWbXMyqnhIpEEl6UmDS_MpL3RpLwsUwPBOgDBKf-Sk1GcuvmucrIknVG_-iAL03UDrF3MTiTaeiWwlKRy73i2oa2KpPse8vN8AYs6SQrizREuiso4vi4IyiSEuKEbga5yfZIrd2jlMQS-rF93jlwvggfVN-MnvmjcVNZpRqkWvvIQ99IT94tjPBWEDRTlPmEQWgdTzyZMmDDSQJy9EtMPzqRN4QH2jvoohz58bGdEkTKd5nKw51BgKYb-Bomyb2yiPbRbFXdw_5ymUpylvLO51WdXFW8wzrtNgdaEkL1_O5NBwS1dfhT_KSvOY8At5twaAiP9O1wFUTUq-Z1lfFMJ9wwtNhIT6ICnXKhu_3Ok9XyUoJkxrnIRsGJxFl3967PBBBGKZt4G7r6dxhnJbraPoWHYi8S3Mkn-wWp3hVywULNYsQtz1XAy3dbJ69MsxLpq31kwdx3rU931KhELKahGd_evyCXu4QJHL4vmTTLUYc2wQ8zAAakcJuNNMcDjUCpKMkCLENXzde0-rWMSE2cHQYScxjr2YQTUmnaPYA6uYsEeqseD1b8KJohGboi29tLtybrL99K7nYzKn_W1ljOBVtezpLPxx22JMqXYfh1D-miBmWwL6_-fONwYxzmGw6gH-kD7jiZlgISZ9EiXpYPQVWgD3FTphiS8N8kf2GqpPU9v5mBSOz4-HbVEZIT6KclUzsuS7YtgSmgY7erYXNUAXpAfts0Ob_CIPHxqleF-e2Db4Yxs1NPUPWrO-W502McDfcElG2Qx6aVDAzmxMHHvvS4jFxXPRe_hRGxJlI33cSN_Qq8RYBtMd56xdfU-1ZA==",
+      "summary": []
+    },
+    {
+      "id": "msg_094294aeba4ff083016af92615813887d1a13c9cfc3c37f410",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0732\n\n## Episode annotation\n\n- Language task: carbon fiber layup on concave surface\n- Success label: success\n- Outcome evidence: In camera_0 and wrist_cam_0, the blue tool progresses along the carbon-fiber strip on the yellow concave mold, from the far-end region at frames 0\u201320 through the middle at frames 63\u2013120 to the near-end region at frames 163\u2013179. The strip remains aligned on the mold and visibly follows its contour without evident folds, displacement, or damage; frames 180\u2013189 show the tool moving back along the laid strip. This supports completion of the visible layup pass, though adhesion and internal laminate quality cannot be assessed from images. wrist_cam_1 shows mainly the tabletop and provides no additional layup detail.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 190 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 34938,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 79
+    },
+    "total_tokens": 35223
+  },
+  "user": null,
+  "metadata": {}
+}

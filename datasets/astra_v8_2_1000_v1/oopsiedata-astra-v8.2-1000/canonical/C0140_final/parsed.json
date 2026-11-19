@@ -1,0 +1,74 @@
+{
+  "episode_id": "C0140",
+  "language_task": "stack the bowls",
+  "success_label": "failure",
+  "outcome_evidence": "The bowls begin separate (top, frame 0) and remain separate at the end (left, right and top, frames 1980\u20131999). The robot places an unrelated orange, green-stemmed object into the turquoise bowl (left and right, frames 780\u2013880), then acquires and repositions that bowl without completing a stack (right and top, frames 990\u20131795). Completion is unconfirmed, with no visibly failed stacking contact, drop or damage; wrong-object handling and sustained stalls are observable local failures. The recording ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": true
+    },
+    {
+      "start_frame": 350,
+      "end_frame": 481,
+      "failure": false
+    },
+    {
+      "start_frame": 481,
+      "end_frame": 880,
+      "failure": true
+    },
+    {
+      "start_frame": 880,
+      "end_frame": 1795,
+      "failure": false
+    },
+    {
+      "start_frame": 1795,
+      "end_frame": 2000,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "The bowls and grippers remain essentially stationary without discernible stacking progress for approximately 11.6 seconds (left, right and top, frames 0, 150, 300 and 349). This is sustained inactivity rather than an ordinary brief pause. Approach movements follow (frames 350\u2013420); the precise transition from inactivity to movement is gradual.",
+      "recovery": "Begin a bowl-directed approach, securely acquire one bowl, and align it over the other for stacking; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The consequence is delayed task progress; no damage, spill or harmful displacement is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both bowls remain upright and accessible, with no environmental reset needed before attempting the task."
+    },
+    {
+      "start_frame": 481,
+      "end_frame": 880,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot repeatedly interacts with the unrelated orange, green-stemmed object rather than stacking bowls (right, frames 481\u2013690), then visibly carries it and deposits it in the turquoise bowl (left and right, frames 750\u2013880). The later transport clarifies this as one continuous wrong-object interaction across frame 700, not a new failure at that window boundary. Secure acquisition during the earlier contacts is uncertain, but controlled transport and placement are visible later. Bowl-directed handling follows the release.",
+      "recovery": "Set the held bowl down if necessary, remove the orange object to a clear tabletop location, then securely grasp and align the bowls for stacking; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "An unrelated object is relocated into a bowl, but no breakage, spill or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the clear-bowl state requires straightforward removal of the orange object; the object and bowls remain accessible."
+    },
+    {
+      "start_frame": 1795,
+      "end_frame": 2000,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following bowl-position adjustments, the robot holds essentially the same separated-bowl configuration for approximately 6.8 seconds without advancing stacking (right and top, frames 1795, 1830, 1920 and 1999). The left view changes gradually, but neither bowl moves into a completed stack. This supports sustained stalling, not a failed grasp or placement; the exact settling boundary is approximate and the hidden cause is unknown.",
+      "recovery": "Securely support the turquoise bowl, clear its unrelated contents as needed, and resume transport into unobstructed stacking alignment with the pale bowl; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "This stall delays completion without visible damage, dropping or harmful collision.",
+      "resetability": "immediate",
+      "resetability_evidence": "The stall itself introduces no additional environmental disturbance requiring reset; the robot can resume from its current configuration, with the earlier orange-object relocation accounted for separately."
+    }
+  ]
+}

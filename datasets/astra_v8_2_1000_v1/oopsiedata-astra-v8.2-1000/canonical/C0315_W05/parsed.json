@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0315_W05",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Sorting remains incomplete in this observed window. overhead_cam shows the orange fruit-shaped item outside both bowls at frames 1400, 1514, 1644 and 1749, without any transfer. wrist_cam shows repeated finger closing and reopening near that item rather than acquisition and transport. Completion is unconfirmed, while sustained unproductive behavior is visible; no completed lift followed by dropping is established. This outcome is provisional because earlier execution beyond the two context frames and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1750,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "overhead_cam shows the arm remaining at essentially the same tabletop location throughout frames 1400\u20131749. wrist_cam shows repeated closing/reopening cycles, including frames 1407\u20131433, 1489\u20131514, 1617\u20131644 and 1728\u20131749, with the orange item remaining outside the bowls and no meaningful sorting progress. This is sustained unproductive behavior, not merely a brief pause; finger motion and occlusion do not establish possession or a hardware fault. Context frames 1398\u20131399 show the same positioning, supporting continuity at the starting boundary, but the earlier onset is unseen. The behavior may continue beyond frame 1749; the window boundary does not establish termination.",
+      "recovery": "Stop repeating the same finger motion, reassess the item's position, and reposition the gripper to obtain a secure grasp; visually confirm acquisition before transporting it to the appropriate food bowl. No visible condition requires human intervention.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is delayed, incomplete sorting; neither overhead_cam nor wrist_cam establishes damage, spilling, or a meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The item remains accessible on the tabletop and both bowls remain upright, so another attempt needs no environmental reset or human intervention."
+    }
+  ]
+}

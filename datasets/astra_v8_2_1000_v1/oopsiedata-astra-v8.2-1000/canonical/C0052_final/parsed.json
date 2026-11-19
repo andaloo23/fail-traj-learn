@@ -1,0 +1,189 @@
+{
+  "episode_id": "C0052",
+  "language_task": "pik up one objet from the big bowl and put inside the small box that is empty",
+  "success_label": "failure",
+  "outcome_evidence": "The robot initially carries the loaded bowl rather than an individual object (right and top, frames 180-588), then extracts the spotted plush (left, right and top, frames 810-840). It repeatedly repositions that object and releases it onto the tabletop outside the boxes (for example, frames 1364-1375 and 1791-1799). At frame 1999, left, right and top show the plush still at the gripper beside the bowl, not inside a box. Thus unsuccessful transfers are visible and eventual completion remains unconfirmed; the recording ending does not establish abnormal termination. Both orange boxes appear empty in top, so the intended destination is not uniquely distinguishable, but neither receives the object.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 141,
+      "failure": false
+    },
+    {
+      "start_frame": 141,
+      "end_frame": 588,
+      "failure": true
+    },
+    {
+      "start_frame": 588,
+      "end_frame": 890,
+      "failure": false
+    },
+    {
+      "start_frame": 890,
+      "end_frame": 1354,
+      "failure": true
+    },
+    {
+      "start_frame": 1354,
+      "end_frame": 1364,
+      "failure": true
+    },
+    {
+      "start_frame": 1364,
+      "end_frame": 1376,
+      "failure": true
+    },
+    {
+      "start_frame": 1376,
+      "end_frame": 1475,
+      "failure": false
+    },
+    {
+      "start_frame": 1475,
+      "end_frame": 1485,
+      "failure": true
+    },
+    {
+      "start_frame": 1485,
+      "end_frame": 1499,
+      "failure": false
+    },
+    {
+      "start_frame": 1499,
+      "end_frame": 1512,
+      "failure": true
+    },
+    {
+      "start_frame": 1512,
+      "end_frame": 1674,
+      "failure": false
+    },
+    {
+      "start_frame": 1674,
+      "end_frame": 1684,
+      "failure": true
+    },
+    {
+      "start_frame": 1684,
+      "end_frame": 1791,
+      "failure": false
+    },
+    {
+      "start_frame": 1791,
+      "end_frame": 1800,
+      "failure": true
+    },
+    {
+      "start_frame": 1800,
+      "end_frame": 2000,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 141,
+      "end_frame": 588,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "The robot displaces the bowl from frame 141 and lifts and carries the entire loaded container instead of extracting one object (left, right and top, frames 180, 300, 350, 480 and 570). This is continuous wrong-object handling across the window boundary, ending when lowering and release recovery begin around frame 588.",
+      "recovery": "Set the bowl down stably, release its rim, and grasp an individual object inside before transporting it to an empty small box; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The contents remain contained, with no visible spill, damage or harmful impact; the consequence is an unsuccessful task detour.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "The held, displaced bowl needs straightforward lowering and release to restore a stable acquisition setup, without repair or human assistance."
+    },
+    {
+      "start_frame": 890,
+      "end_frame": 1354,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After extracting the spotted plush, the robot repeatedly carries it away from and back toward the bowl without progressing to either box (left and top, frames 890, 960, 990, 1050, 1110, 1200, 1260, 1290 and 1350). The sustained reversals establish unproductive post-acquisition transport rather than a brief pause or failed grasp.",
+      "recovery": "Maintain secure retention and transport the plush along a clear path over an empty small box, then lower and release it inside; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Placement is delayed, but the plush remains held and no damage or loss is visible during this interval.",
+      "resetability": "immediate",
+      "resetability_evidence": "The object is controlled and the boxes remain available, permitting placement without an environmental reset."
+    },
+    {
+      "start_frame": 1354,
+      "end_frame": 1364,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "As the held plush and gripper approach the bowl rim, the bowl shifts and rotates in top across frames 1354-1363; left shows the close rim interaction. This unintended displacement does not advance delivery, though the exact contacting component is obscured.",
+      "recovery": "Withdraw clear of the bowl, reassess its position, and transport the held object along a collision-free route to the empty box; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The bowl remains upright and its contents stay inside, with no visible damage or spill.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced bowl remains usable and accessible; restoring its exact previous position is unnecessary."
+    },
+    {
+      "start_frame": 1364,
+      "end_frame": 1376,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The fingers open and the previously held plush separates onto the tabletop during frames 1364-1375 in left; top confirms it is outside both boxes. Retention ends before delivery, although deliberate release versus accidental loss is not established.",
+      "recovery": "Reacquire the plush from the table, verify secure retention, and carry it into an empty small box before releasing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The soft object lands on the tabletop without visible damage or disruption to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plush remains accessible for autonomous reacquisition without environmental resetting."
+    },
+    {
+      "start_frame": 1475,
+      "end_frame": 1485,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "The gripper-held plush reaches the bowl rim in left at frames 1475-1476, and top shows the bowl sliding rightward through frame 1484. The interaction displaces the source container rather than advancing placement; the precise contacting component is partly obscured.",
+      "recovery": "Withdraw from the rim and use a clear route above the bowl to transport the securely held plush to an empty box; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The bowl stays upright with its contents contained, and no damage is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The bowl remains accessible and usable in its new position, so no environmental reset is required."
+    },
+    {
+      "start_frame": 1499,
+      "end_frame": 1512,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After retaining the plush through frame 1498, the gripper opens and the plush separates onto the table during frames 1499-1511 in left. Top confirms the release occurs left of the bowl, outside both boxes; whether it is deliberate or accidental is unclear.",
+      "recovery": "Reacquire the plush around a secure body section, verify retention with a small lift, and transport it over an empty box before releasing; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The soft plush lands on the table without visible damage or disturbance to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The object remains within the accessible tabletop workspace and can be reacquired without resetting the environment."
+    },
+    {
+      "start_frame": 1674,
+      "end_frame": 1684,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following visible retention at frames 1650-1673, the fingers open at frame 1674 and the plush separates onto the tabletop beside the bowl, remaining outside both boxes through frame 1683 (left, right and top). This interrupts delivery; release intent is not established.",
+      "recovery": "Reacquire the plush securely and move it over an empty small box before lowering and releasing it; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The plush remains on the tabletop, with no visible damage, spill or overturned container.",
+      "resetability": "immediate",
+      "resetability_evidence": "The plush is accessible beside the bowl, allowing another acquisition attempt without environmental intervention."
+    },
+    {
+      "start_frame": 1791,
+      "end_frame": 1800,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After carrying the plush through frame 1790, the gripper opens and the plush separates onto the tabletop at frames 1791-1799 in left, right and top, outside both boxes. Retention ends before delivery; deliberate release versus accidental loss remains unclear. Repositioning for reacquisition follows from frame 1800.",
+      "recovery": "Reacquire the plush, confirm a stable hold, and carry it over an empty box before lowering and releasing it inside; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The soft plush lands on the tabletop without visible damage or disruption to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The object remains accessible beside the robot, so reacquisition requires no environmental reset or human assistance."
+    }
+  ]
+}

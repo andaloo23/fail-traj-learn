@@ -1,0 +1,40 @@
+# Episode: C0112
+
+## Episode annotation
+
+- Language task: pick up the duckie next to the knife and place it onto the plate
+- Success label: success but side effects
+- Outcome evidence: The duck beside the knife in wrist frames 97–170 is eventually carried over the plate in frames 305–352 and released onto it in frames 353–377 (left and wrist); it remains on the plate at frame 1199 (left). An earlier acquisition fails, and after placement the robot repeatedly interacts with the unrelated knife, shifting it and the plate during frames 549–1199 (left and wrist). The other duck on the left side of the counter remains untouched.
+
+## Timeline
+
+| Start frame | End frame | Failure |
+| --- | --- | --- |
+| 0 | 182 | No |
+| 182 | 193 | Yes |
+| 193 | 441 | No |
+| 441 | 1200 | Yes |
+
+## Failure annotations
+
+### Failure 1
+
+- Frames: 182-193
+- Categories: grasp
+- Explanation: After closing around the duck in wrist frames 169–180, the gripper moves away without retaining it in frames 182–192; the duck remains on the counter and is visibly outside the reopened fingers by frame 193 (wrist). This acquisition does not accomplish the pickup.
+- Recovery: Reopen and realign the fingers around the duck's body, close securely, and verify retention with a small lift before transport; no human intervention is needed.
+- Severity: low
+- Severity evidence: The duck remains on the counter, with no visible damage or meaningful disruption in left and wrist frames 182–193.
+- Resetability: immediate
+- Resetability evidence: The duck is still accessible on the work surface; another grasp can be attempted without environmental resetting.
+
+### Failure 2
+
+- Frames: 441-1200
+- Categories: sequencing_semantic
+- Explanation: With the duck already on the plate, the arm moves toward the knife from frame 441 onward, closes around its handle in wrist frames 549–562, and repeatedly closes, opens, and repositions around it through frame 1199. The knife and plate shift in the left view, notably across frames 637–721 and 949–1153. Handling this unrelated utensil does not advance the completed duck-placement task.
+- Recovery: Stop manipulating the knife, release it only when supported stably on the counter, and withdraw with clearance from the knife and plate; no human intervention is visibly required.
+- Severity: low
+- Severity evidence: Visible consequences are displacement of tabletop objects; the duck stays on the plate, and no breakage, fall, injury, or other damage is shown.
+- Resetability: minor_reset
+- Resetability evidence: Returning the shifted knife and plate to their original arrangement requires straightforward repositioning on the counter, not repair or difficult retrieval.

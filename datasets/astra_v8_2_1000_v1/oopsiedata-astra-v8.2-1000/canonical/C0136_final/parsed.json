@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0136",
+  "language_task": "Open the drawer.",
+  "success_label": "success",
+  "outcome_evidence": "The robot approaches the drawer and aligns its fingers with the handle (frames 0\u201385, left_ego_image and wrist_image), then pulls the drawer outward (frames 97\u2013123, image and left_ego_image). The extended drawer and exposed interior remain visible after the gripper releases and withdraws (frames 126\u2013155, left_ego_image and wrist_image), confirming completion. No failed acquisition, harmful collision, or disturbance of unrelated objects is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 156,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

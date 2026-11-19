@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0592_W01",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion is unconfirmed in this initial window, not a visibly failed attempt. In base_image at frames 0 and 349, both cans and both bowls remain outside the empty trays. The gripper opens initially and moves toward the blue bowl during frames 211\u2013349; no completed acquisition or placement is visible. The brief initial pause and ongoing approach do not establish a local failure. Later episode context is not supplied, so this outcome is provisional.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 350,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

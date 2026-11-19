@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0874_W07",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisional for this window: base_image frames 2100 and 2193 show cans in the upper blue tray and a blue bowl in the right red tray, while the pink bowl remains on the table, so the task is visibly incomplete. The gripper makes small movements and opens above the right tray during frames 2100\u20132193, without visibly transporting an object. The supplied images do not show the acquisition underlying the previous report\u2019s grasp-failure claim, so continuity of that failure cannot be independently established. This brief interval does not establish sustained stalling or another local failed attempt; earlier context and any subsequent completion are unobserved.",
+  "segments": [
+    {
+      "start_frame": 2100,
+      "end_frame": 2194,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_0655905fc37ac68e016af901a40d3487d28fd62cf55350f560",
+  "object": "response",
+  "created_at": 1794703780,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794703787,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0655905fc37ac68e016af901a62b6087d2b4ca809d75f689d4",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QGrDb-UfBxQDXH_q9J8Epw3qlxNNc91vcWGjrzc9I3lyE4XtIRuWKr74BgeXTQq5NJN-uu_WyE5kP_CZy0Xv0-07LXQqnY5d4im88Ha1G1Gw0Ffq6VSJfe3ibnyhNUTwGqjDexLxVWCN-iz4bgz2mwtYXWWBz2BvovN6lVnRYv1EkMtjbLl4B8wCr5Xi6DGdlyMtS3w0J0JsL2DQlZzrhoP5DYveDdrryaNCQccLl-QC1wjKAAMwasWu9Mzw7onEZ07of-RLoucikSh5aFPglkcPXtxvvpZJ6rWQQtSDSrhzXZT25G-Q4fl75tQRBejuytCxPl3B9ox0nC6Jh-fazsQntV9VEI1CGyREa8Wz5s7YGFwAGVr2VHxmHwTLP6pC2YV7DuqwLAmQ3ismXMOfuLb03Z_Fa7iVvAXz_AK_M9dNUHaz5jm3urBqW1bo3Gi1PZ7hsV61BFYgeveC1ArjNolADMi7-Mjx3vyawxh2vy-mnVdmV15wvxiVN6EUeTLUqlmQeUDyD2culZedD6uyoCoKPCeZ84YyTaVkNqQVEj7z-VDvEw9ZVo9BW1zYqapGF0AK5lMKYhIIoxT_-_zynl2LeV8xlKaVLdOnxI8IfcCu9a4VRJRncyu8oImTewjFp6cuL-v9Q23uYEO4yEHp3vdFTVDUNSQzv4bR_ngLlBKZn2Hxxso5a37zLm7L6BSS_n95kaBMksqhw59i7nSaD9fa_QHTMHEodIK0QynSNNP3JrvQGyIh1UvhmnxuKJE-gZ-tqJLh8t02saiHnQHMTUBeRXegXG_ZDWGkUO6v4aTxIH_xl4UGHyVk4XHmrEsFmZzo21LdT1V5mw43OGw6zK_qNQH3eV9QrEXUbyHY8h9YRvAJxw-U-aaNqjrEWmX_1Mg4voujj0cY62i9xZCzqtk9pW1fZkiFmMSlE84qA9mrJx2C6HKaLUDHJXje8bVsnLZ7aoihD8l_esNgRiG8WTTnlBNYyeXIrt9pGoqWbWgRSU-9FtRNmTfDCXPQb3LaO2gu8NqQ3L9JMRptyH6a9BXEQM2_xz7xKgsRkpet4fZJrDSjZgaqS2Zj5DvwcyvAH-Jw6p5awUszDkUmCaWTxrKWiNJF6PGKjv3Ibp1IdDcsfy_2bWr8dBohk8WpwNit1z_WJIVNJO3MKzYEFtexPmARRYuVxfiudGK3Ks5XzJUrrFRamXh1-SjUr2j3m28oANnVm5_G4edw2We7jHbpSSyH_yL2kalplNs-JBSC1T_Frc7JZOuHcPJDMKp2wd6lHDaB_ERNCeTisRE21rbkI2qUd31P_gVKdTj9uQtzENSsafoFNfLJi9LA_ppyBuu2bR8LwcRKL4Vmgz1iWqPIq_Q3n2cKZ46CcVDSPJA2T0pd_nyuLacX7LPiC-6WQgXyQxw-IIPqfcbfGwWJizp9lGOgnaQDH7Fo1N8O9uQ85MNXTZfwsew_7PzK-qDjtUuh0p5iW-I4TcyFxdUd8hjK9U5it2bhSVct7x3Ib6qbl8obdqx_9byz6WYgTU_8flVO2QieA9-C4HChLu2QxlvUkugkr1Ik2Pp4gUNULy5d97oolMv1mbwfGfOtgZsEn-q3oE9dQhAnTcVdkoKZDJg21Oiuv8U4IiAlRQ3627ebPCLijRrhKJGGDSshLNFSjQjvO1V8AXb6EL8dN26aVGQrmoRiLzvxrKV2AmE24f6LmjSw8viymuGrEMNSdNqDbtoPWkWmknhWPiNRaEOTbhmzuGao0bb5b3HoenFgghggTC0B9esejyen_svIT20Kge1OL6ZCd9c5CJrCdEotrhiaZ_XJ2O8iwKrCvyosQ2QfhlvB8XSj9w4Wt1f9YtAl65_UsbG_Tb1ZFlNQBJ9iVhPtjvz7USa8zdm7jlhK_E-ZGK5MhvvEQhm1VwaiVTzsdGMnRZUAxkG-8jvKVs4nlV-fPUz2MASzO4uX2CWzYanbDj681ALtlsD-eU4yctMBtbYQSL9KAYnMwgFMxlDdcoYEuNJ73-CIfLGRDJThRMxl1XI6JoUIAJRHdS2svw0EFStRR9yHZIdPsG4rSV_DaL62OrvjsQ5faXaQaEmkgALusKP3VHZIp5Aj-unKRpgToT3ompD7Lt9J6V0DgP2ZJhpWKDoqKQAWiZKUxtAFYn4tJ27scjp8lQ2RLVsfBaJ8oLlN4pS42nIW_qwZyHwr0yso1VnwYYWX-YnIP9Odel-1u-80Cmgz1fk_vWr6n_c75TIsh1hjdoNhY-COib7HqPU2D6NmYw62r0YZOPEzwTE0B0NuAcAYfy8JLzT5m3rrUU23e53",
+      "summary": []
+    },
+    {
+      "id": "msg_0655905fc37ac68e016af901a6e68487d2980c8d1b5f16353c",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0169\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop outside the open drawer from frame 0 through frame 101 in image and left_ego_image. The robot repositions its empty gripper, then hovers with small adjustments without acquiring the spoon; wrist_image likewise shows no spoon possession. Placement is not completed, and the late sustained lack of progress is visible; no completed failed grasp or abnormal interruption is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 53 | No |\n| 53 | 102 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 53-102\n- Categories: task_not_attempted\n- Explanation: After the initial repositioning, the robot remains in approximately the same hovering configuration with only small adjustments during frames 53\u2013101 in image and left_ego_image. The spoon stays untouched on the table, and wrist_image shows the empty gripper without an acquisition attempt. This sustained interval makes no visible progress toward putting the spoon in the drawer; the underlying cause is not visible.\n- Recovery: Locate the spoon, approach and align the gripper for acquisition, verify a secure grasp, then transfer and release it inside the open drawer. No human intervention is visibly needed.\n- Severity: low\n- Severity evidence: The task remains incomplete, but frames 53\u2013101 show no damage, displaced objects, or concrete risk of damage.\n- Resetability: immediate\n- Resetability evidence: The spoon remains accessible on the tabletop and the drawer remains open; no environmental restoration or human reset is visibly required."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 21132,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 415,
+    "output_tokens_details": {
+      "reasoning_tokens": 52
+    },
+    "total_tokens": 21547
+  },
+  "user": null,
+  "metadata": {}
+}

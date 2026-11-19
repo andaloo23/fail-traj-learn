@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0249",
+  "language_task": "put the corn in the pot",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot grasps and lifts the corn from the table (frames 27\u201340), carries it over the pot (frames 41\u201371), and releases it (frame 72). Frames 73\u201374 show the corn resting inside the pot with the gripper empty above it. No failed attempt or unintended side effect is visible.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 75,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "C0878_W05",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "failure",
+  "outcome_evidence": "Completion remains unconfirmed in this provisional window outcome. In base_image, the robot acquires the pink can and carries it toward the upper tray (frames 1600\u20131749), but release is not shown. The green can remains in that tray, both bowls remain on the table, and the right tray remains empty at frame 1749. During acquisition, the nearby blue bowl is displaced and rocks (frames 1432\u20131590), establishing a local side effect rather than a failed can grasp. Earlier context is limited to frames 1398\u20131399; later completion is unavailable.",
+  "segments": [
+    {
+      "start_frame": 1400,
+      "end_frame": 1432,
+      "failure": false
+    },
+    {
+      "start_frame": 1432,
+      "end_frame": 1551,
+      "failure": true
+    },
+    {
+      "start_frame": 1551,
+      "end_frame": 1750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1432,
+      "end_frame": 1551,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "In base_image, the blue bowl beside the gripper progressively shifts upward as the robot acquires and reorients the pink can (frames 1432\u20131548), then rocks visibly (frames 1551\u20131590). This incidental displacement does not place the bowl in the right tray and is an unwanted contact side effect. The exact contacting robot surface is partly occluded. Subsequent bowl rocking is a consequence, not evidence that the later can transport is itself failing.",
+      "recovery": "Maintain clearance from the bowl while lifting and transporting the can, allow the bowl to settle, then acquire it deliberately for placement in the right tray; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The bowl remains on the tabletop without visible breakage, spilled contents, or other damage in base_image through frame 1749.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced bowl remains accessible and upright after settling; the robot can continue from its updated position without a human reset."
+    }
+  ]
+}

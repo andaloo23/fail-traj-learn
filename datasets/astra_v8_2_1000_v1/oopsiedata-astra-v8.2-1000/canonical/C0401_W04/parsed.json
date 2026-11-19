@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0401_W04",
+  "language_task": "stack the bowls",
+  "success_label": "success but side effects",
+  "outcome_evidence": "Provisionally for this window, the turquoise bowl is nested inside the pink/lavender bowl in left at frames 1050\u20131078; the arm withdraws at frames 1081\u20131100 while the bowls remain together on the table in top. The nested rims are clearly visible again in left at frame 1250. This resolves the preceding report's uncertainty about release, but earlier execution and later context remain unavailable. Subsequently the robot picks up an unrelated orange fruit-shaped object and deposits it inside the stack (left and top, frames 1200\u20131250 and 1375\u20131399), an unwanted scene change rather than bowl stacking.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1113,
+      "failure": false
+    },
+    {
+      "start_frame": 1113,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1113,
+      "end_frame": 1400,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "After withdrawing from the nested bowls, the robot approaches the unrelated orange fruit-shaped object (left and top, frames 1113\u20131175), closes around it, and transports it toward the bowls (frames 1200\u20131275). It holds it above the bowls for several seconds before releasing it into the turquoise bowl at frame 1375; it remains there through frame 1399 in left and top. Handling this non-bowl object does not advance stacking and causes an unwanted placement. No correction is visible before the window edge; subsequent behavior is unknown.",
+      "recovery": "Remove the orange object from the bowl and return it to its former table location, preserving the nested bowls, then withdraw; human intervention is not evidently necessary.",
+      "severity": "low",
+      "severity_evidence": "An unrelated object is relocated into the bowl, but the stack stays upright and no damage or meaningful damage risk is visible.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Returning the orange object to the table is a straightforward reset that the robot or a person could perform; no repair or substantial scene reconstruction is indicated."
+    }
+  ]
+}

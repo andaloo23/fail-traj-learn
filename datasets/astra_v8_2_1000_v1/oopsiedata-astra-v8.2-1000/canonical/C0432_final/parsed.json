@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0432",
+  "language_task": "Move the left stuffed toy to the largest bowl.",
+  "success_label": "failure",
+  "outcome_evidence": "In image_primary, frames 0\u201399, the blue-and-white left stuffed toy remains on the table and the largest, white bowl remains empty. The open, empty gripper slowly shifts rightward above the bowls without approaching or acquiring the toy. The task is visibly unachieved, with sustained nonproductive behavior rather than an unconfirmed placement or a failed grasp.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 100,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 100,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Throughout image_primary frames 0\u201399, the gripper remains open and empty above the bowls, gradually shifting from above the white bowl toward the brown bowl (frames 0, 40, 68, and 99). It never approaches the left stuffed toy, and all objects remain stationary. This sustained interval shows no discernible acquisition attempt or productive progress toward moving the toy.",
+      "recovery": "Approach the blue-and-white left toy, align and close the gripper around its body, verify acquisition, then lift and place it inside the largest white bowl. No human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "No object displacement, damage, or harmful contact is visible in image_primary frames 0\u201399; the consequence is lack of task progress.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy and bowls remain in their original usable positions, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

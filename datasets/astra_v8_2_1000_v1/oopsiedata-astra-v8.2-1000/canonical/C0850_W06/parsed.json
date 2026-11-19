@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0850_W06",
+  "language_task": "Seperate the food and the toys into the two bowls.",
+  "success_label": "failure",
+  "outcome_evidence": "Provisionally, sorting is not completed in this window: overhead_cam at frames 1750 and 1799 shows the orange fruit-shaped object and brown object still outside the bowls. wrist_cam at frames 1763\u20131784 shows an unsuccessful closing/reopening cycle beside the orange object without acquisition or transfer. Earlier execution beyond frames 1748\u20131749 is unavailable, so the previous report's extended failure interval cannot be independently confirmed. No subsequent completion is visible, and the window ending does not establish abnormal termination.",
+  "segments": [
+    {
+      "start_frame": 1750,
+      "end_frame": 1763,
+      "failure": false
+    },
+    {
+      "start_frame": 1763,
+      "end_frame": 1800,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1763,
+      "end_frame": 1800,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "In wrist_cam at frames 1763\u20131770, the fingers converge below the orange object's body, displacing or rotating it rather than enclosing it. They reopen at frames 1774\u20131784 with the object remaining outside the grasp; overhead_cam confirms that it stays on the tabletop through frame 1799. Subsequent nearby motion produces no acquisition. The initial pause and closing approach at frames 1750\u20131762 do not independently establish failure, despite the previous report's label. Whether this ineffective acquisition sequence continues beyond the window is unknown.",
+      "recovery": "Open and lift the gripper clear, realign the fingers on opposite sides of the object's body, and attempt a centered grasp; verify retention with a short lift before transferring it to the appropriate bowl. No human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The object remains on the tabletop with only local displacement; neither overhead_cam nor wrist_cam shows damage or a meaningful damage hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The object remains accessible for another attempt, with no visible need for cleanup, repair, or human resetting."
+    }
+  ]
+}

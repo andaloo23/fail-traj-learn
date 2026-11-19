@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0460",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success",
+  "outcome_evidence": "All three toys are transferred from the table onto the plate: the tan toy is released in frames 102\u2013110, the blue toy in frames 224\u2013234, and the pink toy in frames 432\u2013440, as visible in overhead_cam and wrist_cam. Frames 449\u2013455 show all three resting on the plate with the empty gripper withdrawn. No failed acquisition, unwanted robot/environment collision, or disruptive side effect is visibly established; contact with the plate during placement is task-required contact.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 456,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

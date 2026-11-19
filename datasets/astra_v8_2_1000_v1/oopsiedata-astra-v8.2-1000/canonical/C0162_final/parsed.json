@@ -1,0 +1,61 @@
+{
+  "episode_id": "C0162",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success but suboptimal",
+  "outcome_evidence": "All three toys are on the plate after the final release (frames 749\u2013767, wrist_cam and overhead_cam), and remain there as the arm withdraws through frame 843 (overhead_cam). Completion follows an empty grasp-and-transfer attempt and a tan-toy placement outside the plate that requires another pickup. No unwanted collision is clearly established by the images.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 192,
+      "failure": false
+    },
+    {
+      "start_frame": 192,
+      "end_frame": 350,
+      "failure": true
+    },
+    {
+      "start_frame": 350,
+      "end_frame": 438,
+      "failure": false
+    },
+    {
+      "start_frame": 438,
+      "end_frame": 447,
+      "failure": true
+    },
+    {
+      "start_frame": 447,
+      "end_frame": 844,
+      "failure": false
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 192,
+      "end_frame": 350,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "The gripper closes beside the tan toy rather than around it (frames 192\u2013205, wrist_cam), then travels toward the plate empty while both remaining toys stay on the table (frames 206\u2013233, overhead_cam and wrist_cam). It continues the empty transfer and opens near the plate (frames 334\u2013349, wrist_cam), adding no toy.",
+      "recovery": "Reopen, align the fingers around the toy's body, and verify that the toy lifts with the gripper before transferring it; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The attempt wastes motion but leaves the toys and scene usable, with no visible damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The missed toy remains accessible on the tabletop; another acquisition can be attempted without environmental resetting."
+    },
+    {
+      "start_frame": 438,
+      "end_frame": 447,
+      "categories": [
+        "manipulation"
+      ],
+      "explanation": "After acquiring and transporting the tan toy (frames 383\u2013430, overhead_cam), the robot opens its gripper short of the plate (frames 438\u2013446, wrist_cam). The released toy rests on the tabletop beside the rim rather than on the plate, clearly visible in frames 447\u2013455 in wrist_cam.",
+      "recovery": "Regrasp the tan toy, lift it clear of the rim and other toys, and release it over an unoccupied area inside the plate; human intervention is not needed.",
+      "severity": "low",
+      "severity_evidence": "The toy is misplaced on the table without visible damage or a meaningful damage hazard.",
+      "resetability": "immediate",
+      "resetability_evidence": "The toy remains accessible beside the plate, so the robot can retry directly without a human reset."
+    }
+  ]
+}

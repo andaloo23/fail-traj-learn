@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c21ab183cf22f60016af9113b559087d2b7f02764ddc7dcfa",
+  "object": "response",
+  "created_at": 1794707771,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794707782,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c21ab183cf22f60016af9113e5f6087d28562445a675347f1",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-RFHYirCPqyXwn9Zz6Gs5Qz0vlRGQDTt0Qvho21Uz7u0Pk7Sw6wXM0I0r-zv5Vgf2ftRNhyXkt2HMzrGbdiz12CqjGXPtPV4S4lRc53S_qonGCCfh85PaeumVuHj4v4c5UEUonm537klpaejJQu6kF63J3oSfkuSjP7lLyhvp4A04ZEKqE4PW9pIIrngwgizf1cG2rKKo7fetVSgxUBYI1jF8by1BkesKpm40mkJ44utXvkvKdCQ7wz8SLBmsMS7W0v4gOpoIWaclCYZEd17PBD6JaDbfbj6O94dE1iWsLCaaVwvdWudRZq9_mp88oUNR6FF2AgKKVHk54UIuiqlteMRDbN07sXfbWDCxJZliJVDthGEyoKuruFCJaHjq4EZ-MLPfnFFpzQUaJWPuyCsalLszXyX1ZprYmLyytSbUWLSU1poqKpdkagLjY1xbNhTeZp9z2glQi8zEAOWdMhCHiiT-H9ULYrZuuhu45X6PJ0q_8H8sZmQvyN56nIXeH3z4zH6FpcI65BI7cLJHi2mAOmp7mQx2XdWBHoOjT-om8i0__imjbrOiYK3sUH5bYdXE_vwvqDA9oTXS9uWq_snDu9KMVZfXZuasfZ2ULZg6wvJeTH3tnbP7FFarRMlaAErnSfmRM_lO6McUDk96ESqlZBwGOq90r8fG-y-Cp3sXVYIpLSlwYBd2y2u6Y8sd1aeET1nNXhlayAYNkClxZfURDbF0wtKTT-V5tlJo2ZWyPY0uRFVoBSP9GIDAbz78svUIoRAM4BtbdTJazBb8LCecXkjEn-Z6yS4MDUime3BgN7WAgRfYnl8qmAJZS9dilGBDHF5Ns1h5f5sXZCgtoQ22H-KtfiR9m-CaKnBygiOpxU9VvMgdXnDnGDOS57Wijc_c_gkUs1YAqrMi8NEF-b9JiRPndcwYBK3cx-8nYJNYphXhMinEdHh7TiYIJb28lZCAp0uyDJHjSG8hqlWUpyDkkyIHOCdjValxTiouRp0f2AyGh0fZIMD1uGtGjAyE9f-lVBxZXowycqY_kPDKQfslGpYfYcM4HjxD_vop7L_CwoiXnFyK2JKxqWIRKWg3YwohjDnHecXjNQOFabqbOkjdGBT3PTrJxSvx5dgC9u9CDlQNen6U5qApijVqVwpCoGY0QcVdsJRgm9kD9U4URSKbc-3vyUS7Odou-0uNjfR2MVc5rD5v3ioTvl_KN9PJqDYBG3rSXZK33B8VNgDM9_KcPyG2dKtCD0hokOBzo8CGa5VAEqPzMuOcSxVbik7_z63fbJj-vkIiZEDm9y88RSzNPHWuoLEByvq0V77wRnWKhmriDH9zy10OK_maZYwZ1XtaAz4tuq2A7VEvu2Vr1uT52mJ6By5MmOSAPV65NCDY2aqgYTAJZutlSbkafTDRi6JxNwbSrTVJrTfhWHKFF7lnXB5u4i2EyTunlDoBAHwP9K_32y1SvrLGVaJfvHo60IEjSC8PKiD5FTsarBJC6LA-qdqCO0Q7pYZoXls5nTZAGOZCxvPkfN4skj88X4VIwVA3kHU8CZEVoJiseAY8UXEeL4Rg-unOSSp_a6XBt5C0EZxy3ODxLBg0PxDpCQ71xmND9VXcvTkyGYJJgCOrMpBRdMVxpPpAqa_q9ol9U_sD_LHJdk9RQofQauY9TT47K06K0udKFk3gCHImwyMsfRiRRw9xFy1vNDoSSB8zhrXIfk5zT98OVASv3GzWWUopYYTTfRTKZv6jNR0lz4nTWlHMgwqFUPLhEZFO1U0OIyOB8ndITsax76ErFYIietkQqU5iGq1Mr6YW8cpDaLPTujpjmEx9BjPPJf2Vf8_uTXLpMD2_n8eMlHrl4mT6P6wysdLxcrTzjP3qxA1ds9HUt2Pye2TJJGXwGHpeB39jHDX093EM7JGLilNDueR7F3DGK_QT2Sa93AAjIzYyQySnDMhJOkYV4U1t2Fi0maJLOPCzN2VuYh4vAj9aAatkl2g8SbJu8_cV7QhRApYYP7bFh3T6ZV7Uvys2nrL2NrlOA5fNPLAHvMjoaTB3_IWJDDI7yB6MXJJ6Hh50uIpRZfFZfNxSYl8jhLf_--IWF0M2bmwKUVUUYEmD45bgavVymD7Wi4vpiRuPg69lQb-WDPXQ9QbJ35Bbe6An4oHLCUDYvsUOhIDIelubZcJ56Bk3hIWalxfbzU6EDYeuGFYKeQpbbvXkDeYfYhwp8Q9cOPTBSkYjm9lzbQ0y40G1w4LwbR-J6BqQclkFGDX5oN-lJAoU70jN0ZyadfMcrxznKhD-gkyKmPxReGZEJugpNz1qrY_cVfgs0jQCIRq_y0SHWrYQGrbMvAgQ18JEZWm6mzKyhisEOhm6hKvGglpghmEmYfptLfX50VhF9Ir7dx9aLcd45QnazFEfD33GFVtPPNVZWKQt1wxAAc60ktytwm3cb0fRTvi4pvx1X1HkTRTMsJU0J66v5ooPWbKIZa5EUAVXoPSaMhHvPSNZ1CPPuCcVbuYQOZ5hEpHsbcSPuttDEeRVZBQM1Wip4KKEWwqpsHKBamxCz0sfGzCnl-LBQb7U7lNt1gcbqmKhAULhtWErDa5osASxxihOFcQT-gT8aBhKgJdUYMnEufUhs5b-Tm3w3FZ0mSbYbkODrAQAjZ7s8hP7uNaaI2pIh_YqCL_-c6eHaV5FmBszJZbMQT6NAuuZHdeLpW-5Mi2-NNBTRNUzMZSuaubzELkobyOTzSwiOg1I3RkrT2GpOMryxdUESIrsLdtcJE2N5ShW_Ysa4ZXeI4oeyH_YEB9QJCe7VMz8S_ewfMmMCfTMfM1y4cG6egkXTYjOhKYgub_ZhvwmD28eGSyjZenijW0KycTVnJR0QfcC6nYnxMTxtRn8se6afmRMQ1mqyaOu6b7OQwVrKzu4knQK9yd9Wer2QJxuoHhnXuThNAiwljgbQ8=",
+      "summary": []
+    },
+    {
+      "id": "msg_0c21ab183cf22f60016af911405f7c87d29a4d89346f6ca8ca",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0377\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: success but side effects\n- Outcome evidence: The spoon is successfully lifted on the second attempt (frames 208\u2013240, image and left_ego_image), then released into the open drawer at frames 281\u2013283; it remains visibly inside as the empty gripper withdraws (frames 284\u2013307, image and wrist_image). Earlier, the gripper tips and shifts the unrelated yellow plate (frames 41\u201347, all three cameras), and the first spoon acquisition fails, followed by an empty trip to the drawer (frames 58\u2013135).\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 41 | No |\n| 41 | 48 | Yes |\n| 48 | 58 | No |\n| 58 | 136 | Yes |\n| 136 | 308 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 41-48\n- Categories: collision\n- Explanation: While approaching the spoon, the gripper contacts the unrelated yellow plate, visibly tipping it onto its edge and shifting it before it settles back down (frames 41\u201347, image, left_ego_image and wrist_image). This disturbs an object not required for the task.\n- Recovery: Clear the plate before realigning over the spoon and use an approach that avoids its rim; no human intervention is needed for the visible state.\n- Severity: low\n- Severity evidence: The empty plate settles on the tabletop without visible breakage, spill or other damage.\n- Resetability: immediate\n- Resetability evidence: The plate remains stable on the table and the spoon remains accessible; another attempt requires no environmental intervention.\n\n### Failure 2\n\n- Frames: 58-136\n- Categories: grasp, sequencing_semantic\n- Explanation: Following the first closing attempt, the gripper rises empty while the spoon remains on the tabletop (frames 58\u201364, image and left_ego_image, corroborated by wrist_image). It then travels to the already-open drawer and opens its empty fingers there rather than reacquiring the spoon (frames 80\u2013135, image and wrist_image). The return toward the spoon begins at frame 136.\n- Recovery: Return to the spoon, align the fingers around a secure grasp location, and verify that the spoon lifts with the gripper before transporting it to the drawer; no human intervention is needed.\n- Severity: low\n- Severity evidence: The failed acquisition and empty transfer waste an attempt, but the spoon remains on the table with no visible damage.\n- Resetability: immediate\n- Resetability evidence: The spoon is still accessible and the drawer remains open, so the robot can retry without a human reset.\n"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 59654,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 686,
+    "output_tokens_details": {
+      "reasoning_tokens": 99
+    },
+    "total_tokens": 60340
+  },
+  "user": null,
+  "metadata": {}
+}

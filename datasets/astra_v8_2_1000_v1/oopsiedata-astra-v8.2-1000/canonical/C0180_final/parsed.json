@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0180",
+  "language_task": "stack the yellow block on the blue blocks",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches and grasps the yellow block in frames 6\u201324, lifts it in frames 25\u201336, and carries it above the paired blue blocks in frames 37\u201343. It continues adjusting and lowering the held block through frame 57, but release and a stable, unsupported stack are not visible. Completion is unconfirmed at the recording's end, rather than a visibly failed placement; no local failure is established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 58,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

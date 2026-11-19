@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0159_W13",
+  "language_task": "Clean the table by placing the cans in the upper tray and the bowls in the tray on the right.",
+  "success_label": "success",
+  "outcome_evidence": "In base_image, frames 4200\u20134327 show the pink bowl settling into the blue bowl on the right red tray. The gripper withdraws empty in frames 4332\u20134400 while the bowls remain on that tray, confirming release. Frames 4500\u20134549 show both cans in the upper blue tray and both bowls stacked on the right tray, with the remaining tabletop clear. No local failure or unintended side effect is visible. This success judgment is provisional for the supplied window; earlier execution beyond the two context frames and later behavior are not observed.",
+  "segments": [
+    {
+      "start_frame": 4200,
+      "end_frame": 4550,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

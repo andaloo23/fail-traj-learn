@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0963",
+  "language_task": "put the sushi in the pot",
+  "success_label": "failure",
+  "outcome_evidence": "The orange-topped, white-based sushi remains on the table in left at frames 120\u2013173. Instead, the robot acquires the yellow waffle-patterned cone-shaped object, visible in wrist at frames 105\u2013127, and deposits it in the pot at frames 168\u2013173. This is visible wrong-object execution, not merely unconfirmed completion of the intended task.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 60,
+      "failure": false
+    },
+    {
+      "start_frame": 60,
+      "end_frame": 174,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 60,
+      "end_frame": 174,
+      "categories": [
+        "sequencing_semantic"
+      ],
+      "explanation": "Beginning at frames 60\u201365 in wrist, the gripper redirects and rotates the yellow cone-shaped object rather than acquiring the adjacent orange-and-white sushi. It continues aligning with that object through frames 73\u2013104, closes around it at frame 105, and carries it toward the pot at frames 120\u2013167. Frames 168\u2013173 in wrist show the wrong object released into the pot, while left shows the sushi still on the table. Successful physical handling of this unrelated object does not advance the requested task.",
+      "recovery": "Remove the cone-shaped object from the pot and return it to a clear tabletop location, then identify and grasp the orange-and-white sushi and place it in the pot; no human intervention appears necessary.",
+      "severity": "low",
+      "severity_evidence": "The wrong object is relocated into the pot, but neither camera shows damage, spillage, or a meaningful damage hazard.",
+      "resetability": "minor_reset",
+      "resetability_evidence": "Restoring the scene requires the straightforward removal and replacement of the cone-shaped object from the accessible pot; no repair or substantial rearrangement is visibly needed."
+    }
+  ]
+}

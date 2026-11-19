@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0890_W02",
+  "language_task": "tie the banana plug around the two screw drivers",
+  "success_label": "failure",
+  "outcome_evidence": "Interpreting \u201cbanana plug\u201d as its flexible lead, no wrapping or tying is visible: top at frames 350, 525 and 699 shows the two screwdrivers beside the separate coiled red lead. Across left, right and top, there is no discernible task-directed approach or acquisition during this window. This is a provisional window outcome based on sustained inactivity, not a failed physical tying attempt; eventual completion is unconfirmed because later context is absent.",
+  "segments": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 350,
+      "end_frame": 700,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 350-699 in left, right and top, the grippers remain essentially in place without discernible acquisition, arrangement or wrapping of the objects for approximately 11.6 seconds. Top at frames 350, 525 and 699 confirms the unchanged separation of the lead and screwdrivers. This sustained inactivity does not advance the task. Context frames 348-349 show the same state, supporting continuity across the starting boundary; the inactivity may continue beyond frame 699, but its cause and later duration are unseen.",
+      "recovery": "Begin a task-directed approach, acquire the lead, and position the two screwdrivers together for wrapping and tying; no human environmental intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The visible consequence is lack of task progress; no damage, object disturbance or meaningful damage risk is evident.",
+      "resetability": "immediate",
+      "resetability_evidence": "The lead and screwdrivers remain available on the table in an undisturbed arrangement, so another attempt needs no environmental reset."
+    }
+  ]
+}

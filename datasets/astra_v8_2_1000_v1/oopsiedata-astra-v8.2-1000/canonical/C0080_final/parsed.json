@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0080",
+  "language_task": "Pick up the block and place it on the cardboard.",
+  "success_label": "success",
+  "outcome_evidence": "At frame 0, camera_high shows the green block beside the cardboard. Frames 240\u2013285 in camera_wrist_right show the gripper securing and lifting the green block, and frames 300\u2013430 show it being positioned over the cardboard. During frames 590\u2013670, camera_wrist_right shows the fingers opening and withdrawing. In camera_high at frames 700\u2013749, the green block remains on the cardboard, separate from the retracted gripper. No failed acquisition, unwanted collision, or harmful side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 750,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

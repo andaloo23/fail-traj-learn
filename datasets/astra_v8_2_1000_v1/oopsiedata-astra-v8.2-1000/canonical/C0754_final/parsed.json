@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0754",
+  "language_task": "Pick up the red triangular block and put it onto the blue rectangle.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot approaches the red block, but after closing its fingers it withdraws empty while the block remains on the table (frames 112\u2013124, wrist_cam and right_base_cam). It reapproaches but then remains near the block without completing acquisition (frames 164\u2013240, wrist_cam and left_base_cam). At frame 240, right_base_cam still shows the red block separate from the blue rectangle. This is a visibly failed acquisition followed by an unfinished retry, not merely unconfirmed placement.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 68,
+      "failure": false
+    },
+    {
+      "start_frame": 68,
+      "end_frame": 109,
+      "failure": true
+    },
+    {
+      "start_frame": 109,
+      "end_frame": 119,
+      "failure": false
+    },
+    {
+      "start_frame": 119,
+      "end_frame": 125,
+      "failure": true
+    },
+    {
+      "start_frame": 125,
+      "end_frame": 164,
+      "failure": false
+    },
+    {
+      "start_frame": 164,
+      "end_frame": 241,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 68,
+      "end_frame": 109,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After approaching the red block, the robot holds essentially the same open-gripper pose without acquiring it or making meaningful alignment progress for about four seconds (frames 68, 88 and 108, wrist_cam and left_base_cam). This sustained pause delays the task; its underlying cause is not visible.",
+      "recovery": "Resume task-directed alignment and close the fingers around suitable opposing surfaces of the red block; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "Only progress is delayed; no damage or meaningful damage risk is visible.",
+      "resetability": "immediate",
+      "resetability_evidence": "The blocks remain accessible and unchanged on the table, so no environmental reset is needed."
+    },
+    {
+      "start_frame": 119,
+      "end_frame": 125,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "Following finger closure at frames 112\u2013118, the gripper starts withdrawing without the red block at frame 119; by frames 123\u2013124, wrist_cam clearly shows the block outside the fingers, while right_base_cam confirms it remains on the table. The attempted acquisition did not secure the target.",
+      "recovery": "Reopen, realign the fingers around the block at an appropriate height, and verify retention with a small lift before transporting it to the blue rectangle; no human intervention is needed.",
+      "severity": "low",
+      "severity_evidence": "The block remains on the tabletop, with no visible damage or harmful displacement.",
+      "resetability": "immediate",
+      "resetability_evidence": "The target remains reachable in a valid state for another grasp attempt; no manual reset is required."
+    },
+    {
+      "start_frame": 164,
+      "end_frame": 241,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After reopening and reapproaching, the robot remains essentially stationary with open fingers near the red block for the rest of the episode (frames 164, 200 and 240, wrist_cam and left_base_cam). There is no further acquisition or transfer, and right_base_cam shows the blocks remain separate. The sustained inactivity is visible, but the recording ending does not establish abnormal termination.",
+      "recovery": "Resume alignment and acquisition, verify that the red block is held, then transport and release it onto the blue rectangle; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The task remains incomplete, but no damage, collision consequence or meaningful damage risk is observed.",
+      "resetability": "immediate",
+      "resetability_evidence": "Both task objects remain accessible on the usable tabletop; another attempt requires no environmental intervention."
+    }
+  ]
+}

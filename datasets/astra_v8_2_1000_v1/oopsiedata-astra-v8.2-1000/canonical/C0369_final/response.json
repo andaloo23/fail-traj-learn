@@ -1,0 +1,116 @@
+{
+  "id": "resp_006cfdca9851abea016af91114d15487d199b3601c5ebb6524",
+  "object": "response",
+  "created_at": 1794707733,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794707738,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_006cfdca9851abea016af91117e79087d1bfdaa78bac9428a3",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-REaZcFoaimJopWKAf9JKpDOmmy8wgFTCpStgPfSXYSIScF4-Sr75GmJvNyzU5aEO5NabWVZvIcBvooQ83Z8WjU_NjuGjgZoW8zW3RBrmsGBIjLl0-Pc7KOx6yuni0MsvbRIOP1zNROu2pJrrabsKH0k9_5IfkGmMgtFW2ADK_koVdA4ryd0IeGI3jv79jW8G0xQqb_p9NA-uXuSnHtTe235whrCrgALGgVMZNKhk2LOPt-VkhrE-CrKlPhZb0xkC5NGd3fA9px3SYkv_HP0ZoO30KFhreE-tXolr-kYEODMogNLB62SbiIn69NdFTnK2VfLflnSQ0VJORliB2-xuCpWaxt5Z91ocwyQ9kSWYUPSvvQn_jvNyKEXNYvF_QvZ6LDinGjUHl2-ndWUxPr3rO7FSjeaCIN32-HCHm3Hzq8gAg0tRR6VVxSN4S-lQYktfBSF3ZGpsyn24oTbQoWo9OdMcwGdVwwsdQi75QXRtSomPL6OT509_hFd2Y6E9s38Q0xJS2Hn-aapHu8r5x7d4V9ME3GYl-8iiYRs8ixatuFy70kmsvF7bd-8-ANGP8Hxbd-5Zhm36CVjHhZ_MDpUk-NaiKlSFwMFCWPI1aTLdmxMUTOI8GeEODA_zYoPw8ddJ7sb6CNMkRJbpr6Ux40epKVXereHCyOS_Qd6ewkXcesYJpU3T4QhE3c9s1YbqyMyc3iZUbd-oXUNePbWAOVIGfvull8CEnKWL-oeydvNqR5aaLRBSGcNGB7CGXicXlVoWO8fjYmVysducxKCx9a8MDBYkhPJtHcyPhOtEE1tj9qTOwf2A4comB3e0j4w7jKXvuz_Vr1jXCz3ShZOrBmOLPP_BwRSKgwJ3vSl5WgBSFemqvRY0VdgfT4MlhaDxf55TI-HYwMkoZWY9WuUYzfuI98Rqax_U5Mm10ay1nKDf5m6V-Sjd6BYGlLR7k2wlPBDgkpW-q6J6XVxVd4KY4CrJxGUNFGqRXK8RFahdvq69TqOZUMMvuHVHNYfQL4l5mksknjgMOdoYLMTcKohlCf4ceXRB-io1qADc4k1QzxN4KQ-Ryj7M3wJx3QYcpO0UFweJyAfslaWKikg8OxsFeWJ4-eVtIkTbSU15uAyxR_RTaVl9wlEggV_kYKhRSAU8kKdvkoQXs7RuSARJOXRmy_Y1F4zSUiqnSECRQmi7OEdx7HMZn0NslPBmnT2wBS_aQ0B3-TRXSBR_GNhUmQp9LmggbLrAsMl08ZrDdFfdxZzWLNjqahLd-TjsXCc8givHJIlG01c6MZl6AAvIFdGzZw2W_6aUL46PqPUTk0_oQ8zX6IJ5zA-ax7DrKgVjCoH0HEizHFratjDhzdRXKzw08aGg8k0HU7wDHNQv_bXIraOkTFC5J-AgsMMJDdqQcTBMkOuKIxz8-vN_LmVdX1OPFYGHXpRyXrnSSsEcgx9SGz_vBUoZ80Ryx2abxgLQBpGwgoxb0MM3dpBmhqP2CW8N4XXG0QIEe2ajPi5ZrFwdWUpyOcYiQCT4tU21ZtyFWq9DLeAbyK2BUywxrkkc2UcaDnmWi7UTqEFnx56feSHNqhSZ5RMK0ufcOlsQAJ9Pc6jnavKs8bjca9v3wvEIZFroBtlPregu7Dd6lC6ZQV_kzSyaBBPIaeczz3XAqQBf-nB6TQS1LUcVPqTr2jPLyqvOkdWTsa-5sOCOTS6Xzhy9YjvEid76jEVOZUL_r58ju7EqD80lecyMo3Qiz2SO1rhiHAXip-9jNQyTc3P5U7_LnkJfIzqnbeRSw2biZqFBgkzLKLe8Z5vC1kDy93NLupoPjSDLPk8f0FYaFtSyYakX7yiGBrYSxFjMsojl9PLzzWmfUeSFhCnf-cq4YE660lsYavTJq4iyjC4PXL9i1QJ9flEPqcSD-E9XL8lsVMM2FXNefLR6U5kd1O7ISgplttFZ_pl_yQA2TlRQhlLhX9Xdz2imilrHIi0m-kZNvcZaCoI-15UD0dxB3obnanC6GPNbvFbdlxgMjqJJARgwQRDh8-9DlLV7UZLyDQpZzOmUevUmmHi73rLjvBFqpOaV1sMn-inNrnShkLRAj1DlF1Vx1HsN1eYpmsXT4jdZSNMBi9FkKuIn9OgK422KnN8tftOebC5y7yLYss-ta01gFYC2lZbnWCZlHQVmqr2WZ8W2nZneA8XQoqoFCl-OW3MypowzRrC8Kh3ixsV3MLSeRVqn9Jv6k7OU04JFTOIm-ULXjZiRtTtfHGJEI_s16YcrixzWEwJ7HEEaq5_QshXQnLZaUWmXEiHkWI0mIxeC1U8aED9Jt3Z5rWibIrP24-aLX0PL1-fAukYeGf773XGh5y3hS30Vcv6fp4DdH-BT6PwxDDICNWYRIsPMMu-lhsv-fJywP78ez0JhNiXTAFS2r8wjIbdLVBPaDpvvAqaYJG0Ih3UzdbhnrqUPdp4zKDswWSFPbVNubMsJ429hJwvyke2AEmDy4C5Lv2qOslB6yjFAnotNw1AqCyjAi4R13jS0oQPs2FtjDzNyqjIumIhSuob7D-99vZSvSlwGVkCeVfXH21VNr5z-veeP8JWEPDZkQHQcTNGTisPEJzwsnBclzoCq670j8CdlHk=",
+      "summary": []
+    },
+    {
+      "id": "msg_006cfdca9851abea016af9111853ec87d1824d0787260e1820",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0369\n\n## Episode annotation\n\n- Language task: push the button\n- Success label: failure\n- Outcome evidence: The robot repositions above the yellow button and lowers toward it (frames 95\u2013126, left and wrist), then lifts slightly (frames 127\u2013130, left) and makes further adjustments through frame 158. Neither left nor wrist clearly shows the button being depressed or an activation response. Completion is therefore unconfirmed, rather than a conclusively failed press; the visible alignment and approach movements do not independently establish a local failure.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 159 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 20953,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 231,
+    "output_tokens_details": {
+      "reasoning_tokens": 76
+    },
+    "total_tokens": 21184
+  },
+  "user": null,
+  "metadata": {}
+}

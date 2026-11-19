@@ -1,0 +1,79 @@
+{
+  "episode_id": "C0285",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot lifts the spoon in frames 74\u2013107 (left_ego_image and wrist_image), but drops it onto the tabletop in frames 108\u2013115 (all three cameras). The spoon remains outside the drawer at frame 278 (image and left_ego_image), establishing a visibly failed attempt rather than merely unconfirmed completion. The approach also displaces an unrelated white oval object.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 45,
+      "failure": false
+    },
+    {
+      "start_frame": 45,
+      "end_frame": 58,
+      "failure": true
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 108,
+      "failure": false
+    },
+    {
+      "start_frame": 108,
+      "end_frame": 117,
+      "failure": true
+    },
+    {
+      "start_frame": 117,
+      "end_frame": 170,
+      "failure": false
+    },
+    {
+      "start_frame": 170,
+      "end_frame": 279,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 45,
+      "end_frame": 58,
+      "categories": [
+        "collision"
+      ],
+      "explanation": "During the spoon approach, the gripper displaces the adjacent white oval object, which moves away across the tabletop; compare frames 44\u201348 in image and frames 53\u201358 in left_ego_image. This is unintended contact with an unrelated object, not required spoon handling.",
+      "recovery": "Adjust the approach to maintain clearance from the white object before grasping the spoon; human intervention is not needed while both objects remain accessible.",
+      "severity": "low",
+      "severity_evidence": "The white object rolls across the table but remains on it, with no visible breakage or other damage.",
+      "resetability": "immediate",
+      "resetability_evidence": "The displaced object does not visibly prevent another spoon attempt; restoring its exact original position is unnecessary for the task."
+    },
+    {
+      "start_frame": 108,
+      "end_frame": 117,
+      "categories": [
+        "grasp"
+      ],
+      "explanation": "After visibly carrying the spoon, the gripper loses possession in frames 108\u2013110 (wrist_image). The spoon falls and settles on the tabletop by frames 115\u2013116 (image and left_ego_image), undoing the pickup without placing it in the drawer; the images do not establish the underlying cause.",
+      "recovery": "Locate the spoon in its new pose, reacquire it securely, verify retention with a low lift, and transport it over the drawer before releasing; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The spoon falls onto the tabletop without visible damage, spilling, or damage to other objects.",
+      "resetability": "immediate",
+      "resetability_evidence": "The intact spoon remains accessible on the table and can be grasped again without an environmental reset."
+    },
+    {
+      "start_frame": 170,
+      "end_frame": 279,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Following some repositioning toward the spoon in frames 117\u2013169, the robot remains above the table with no meaningful acquisition or drawer-placement progress through frame 278 (image and left_ego_image). Late empty gripper opening and closing in frames 258\u2013278 (wrist_image) does not move the spoon, which stays on the tabletop.",
+      "recovery": "Resume a task-directed approach to the spoon\u2019s observed position, align the fingers around its handle, and verify a secure pickup before proceeding to the drawer; human intervention is not visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "This interval delays completion but causes no visible additional damage or meaningful damage risk.",
+      "resetability": "immediate",
+      "resetability_evidence": "The scene remains usable, with the spoon accessible and no cleanup, repair, or object replacement needed."
+    }
+  ]
+}

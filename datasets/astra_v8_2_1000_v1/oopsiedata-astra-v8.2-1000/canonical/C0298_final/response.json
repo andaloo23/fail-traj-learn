@@ -1,0 +1,116 @@
+{
+  "id": "resp_0c718963d24129bc016af90b4bb5f087d2802cdc4676d6148e",
+  "object": "response",
+  "created_at": 1794706252,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794706262,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0c718963d24129bc016af90b50148087d29b911a545d3e9ac1",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-QtXyxDDjvcCT0xrM72K30rnUile_z6MYVEjYeFyP1vYkr1q-qvvd9WYwowCIY9cM8VGDtKyOTcpND7r9OS-XYjbVYmkp9TzDNkgmsLL6zGcUqyKyPBgJ-DXolDwoPbPmRqgk4_ISRoYNRwDjKO9Im_aX04lZS6KtR0etWRweBZMDVlX7nR_7B6R0pILbg9oXEhTCUyUjczX_4IHP8KUljUkbjfdtmdFhNLmaazRgdSiXl3EyjcVRr2RNl_k70paLiUuboBJKkJ1iyNJOxh98mTjT9TOG31mBQDuPFaXHrEptp7HLcaBEEKs6crMsfTHjrA7APfPjjwbyygb2YJvYZHw9j0lsrG7AsJthhAItyxrDA-QyRb_WKu-caNMQpp1JtMFKuETeuwBqC0ngDRcW65IE7JW5agW3ETGjY46FklWENVBkxpyzLQkZnXUffaGoqwotOqL5D6fnazjUsgr6_erFJOhAhzOQt99AolDkgaT1l-Cs4PzF5cite8Yxe3A9k4ZuS-NNRxRnEQQdyJ0l8HGTa9EyFv0D5nrUuoolvtDNMBirskZU54FFsJzosizxk-q9haTsKw5YTw5ay9GQCx2b8qvav6Pqc7P3d_58VvFkYrv6NTnu6P2BSbGMqZetjYlHQEZ7hfpQ0UkW0nnqqbFVSjIXZ7BQHQMoxht-CDurs2vJvz-5TJhPapphrHmXikqhxvdtJwLucM-FGyoYRuM9Wy_ybiCXGf_T3HG7L52cjmYbK7p0zcXvAZsIKr8blIWreVt-qvXSr43j2voY-QTbfQW6PMo5ReqI1Takhr74HaeYBsjo344_qWLV2oIVzO6zErBXmR3STfKN14jzwb2-UaP1l5uoER6fIMkbZK7B1c8PGucmyFP9xMu6CRJh_cDfH46iD8pQ71USZJfKvvcY8mmZTLq8PxxGTALnedwlcTl60hfQ9UMQ_gpaKabt2gVHIcSrkjYzEmIPyc32VBeFFdApw7fT9wgtlcPZvilN7wmSEPpRb-xG5uK_MIHUqdoN5r5qVG29m0UgGx114BN4O7Q-AMelVIipNIzhB8xKaVqNous8YQ6MkAtfCRaBz8_AisSTKKAmLm40tLjAtPVlKK-vfnL0QbpdiJJ4cDMIjhbsODjsVOZoHeSwW5_0qZkSfXdRr8XhCfSZQYmMFD_Z28M5pRJ46iPYNgdzNPQMfkBHnZ7tNYGp_u64krU9OgDI0snhs8lbXqZp1Fr0DOhdM6-n7smykXCXLk6IBqp2iZt8oznjwj2o1mK7dhoXf--p2VA0FOh6HpXY1CXl-Vxbm9aUCEGqoAirE955n8ZTLd45h3mL71idkTYkwbjYiJMcc5-mYDh0XsoXSd5qEcVTl0WbADXb9cmHRqu1MoJyUpMYLSrCpibBJFdGOcO_tUec676gw6UTATcTkQfAIMci1bM58D7T5IfK9RobMeyZ7aG4FCOwSvv3cgzI9OGTX9ANOrHqkObR2FnF_pVAaHun9L7R-__xpEQDiQIkw6wowneSebXSufUDSFu6AAYNx1UVddIgX7BvGCUI4rxiA-e-u8fMExeoxu6wtaJ2etIqmXgXL4DHioPfrL-27ktmvSyrVJPwYPBiwhhYYnmH0UnwlikU0N-ThOC_7ODu9mo1GeCWW-gOSPwDLYAJuj1OVw4v3PEdpEmOXSmDDz7ocAvDNFu9IaBF2nHbkS7gY7H5NTb1bDaqVjv8xyAVz10F5gJO2SpA2_ETR9y9ZkP64btXVofua0m7mgh0AM8lm3xPqMh2FfV60iVij2I55jnlc6SAktTiB45fg2RlAXv4P3fZ26U_Tq35uBQFeQK03XvmlTZHLJjSXHajVgwVCvM5oDfDcJcBrlAzNcXMkKStqFKT3qIeGhS6Bqf-ycr4bZ6qraxL9QNmUJpYDNznp-ZJJ6CI0wnF8CNGeVsDDakhkku6WC5nPFhzhTqRVs04h6MstRKCDMyf9BFXkcIo_yadwaDpJH1DkXzl4lzMfKzUbxTMBc7hHfTshdHw2fdlo2ilM4im2XtUHKgNcEtVuHdNtvshgmsaUtQbX1krQOh1B3toPDG_qbROJAeqKXIlYn8gCbbm-1epHIBAjVd8gzCSXTOfXPCbbuZrNwDMm9J2Bh1PXUxRhMkOG2WRhpEiZYLBrr13nWP_QIKHPkuFmcxtHnm7gwa9_oO-8BLPoh2_28oZF7_u6hoYvssTaB65SMPPYBm4kVr2swKdYdO3L5TAngAVxA1SRiBDgl7LDc_1uRv6ptaOLroyFPR_lZMyxLDkCLHV-JwVZKXcMGfM5axtuDk",
+      "summary": []
+    },
+    {
+      "id": "msg_0c718963d24129bc016af90b51485087d2abd08ff045a516ae",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0298\n\n## Episode annotation\n\n- Language task: Pick green block and place on cardboard.\n- Success label: failure\n- Outcome evidence: In exterior_cam, the green block remains on the tabletop to the right of the cardboard at frames 0, 150, 300, 450 and 599. The empty gripper repeatedly moves above and to the left of the cardboard without acquiring the block. The task is visibly unachieved throughout the observed episode, with sustained unproductive movement rather than an unfinished near-object grasp; no abnormal termination is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 30 | No |\n| 30 | 600 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 30-600\n- Categories: task_not_attempted\n- Explanation: After initial positioning, the gripper moves leftward away from the green block beginning at frame 30 in exterior_cam, then repeatedly changes position and orientation over empty space near the left side of the table and cardboard (frames 65, 105, 217, 321, 401 and 473). This sustained activity never develops into an approach to or acquisition of the block, which remains unchanged through frame 599. No contact, failed retention or hidden mechanical cause is established.\n- Recovery: Locate the green block again, plan a clear approach above it, align and lower the open gripper, then grasp and verify possession before transferring it onto the cardboard; no human intervention is visibly required.\n- Severity: low\n- Severity evidence: The task makes no progress, but exterior_cam shows no displaced objects, damage or established harmful collision through frame 599.\n- Resetability: immediate\n- Resetability evidence: The block and cardboard remain in their original usable positions, so another task-directed attempt requires no environmental reset or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 41023,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 449,
+    "output_tokens_details": {
+      "reasoning_tokens": 53
+    },
+    "total_tokens": 41472
+  },
+  "user": null,
+  "metadata": {}
+}

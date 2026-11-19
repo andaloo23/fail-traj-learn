@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0577",
+  "language_task": "Pour a bowl of M&Ms into a bowl of skittles.",
+  "success_label": "failure",
+  "outcome_evidence": "The blue bowl contains yellow M&M packets (right_wrist, frames 60\u2013100), and the green bowl contains red Skittles packets (left_wrist, frames 39\u201360). The robot lifts the blue bowl, transfers its support between grippers, and brings it over the green bowl (head and wrist views, frames 117\u2013210). Tilting transfers at least one yellow packet into the green bowl (left_wrist, frames 224\u2013245), but yellow packets remain in the blue bowl at frame 280. Full completion is therefore unconfirmed in the observed episode; this is a partial, unfinished pour rather than an established failed acquisition or visibly abandoned attempt. The scene contains packaged candies rather than loose candies.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 281,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_097ec3c46b076388016af8f70ed17c87d2aa07c87303128951",
+  "object": "response",
+  "created_at": 1794701070,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794701076,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_097ec3c46b076388016af8f71027f487d29bcb6e5e3256415c",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-PcUEJwMx_15kR8XsL0w3pOpL_GAo8yZuDIPWk0lu2ulwRiJNzTXd7lVBxiQVRFHRHl2spDi4DVY3aZ6HBTqPBbBKkhpgu8U7luJwXhVlWFUzgr-7uMCbqYNz7i2WOYvn0cJSk3xdqVo-6mRVTYWv_Wv04GJybAkas99zlmWotWdZJr4YMkTQs54zB8s5kX_-rm5jjpZag3Gvc32n_tdrVxchHl5AdbwpnHyzpvXjPxORrCE0LEhq8jWkv7Q1gaHHKWYewm72PKHuBmUQPdlK2obj_mlYDt5yH4Azg4EtW3Qh-7VbrNKLeifS4cTmMTM6qyoUeeFjyXppo72CBBbgRvxYatQE9xpFWheWVFDxBB0D0W_Ltu2Ma8acArKTS12h7qOIz_uBuLhF-oWHF8JH9mj0KMEeq6gQTvh4qsnP9fXtRdkVbi4t215Uf2Xd9OYGl9Rsvd61InugwbYe39k5yd65Au7dTQcq8x9wzjeP12_i00hCU9aAH8eTMAyCjk11KeVHQ3OqxiNkiYPmpjRYp6y7AV1BJYPi4j1g1T_FhBAYDTP4faqFBt3W4Cm9LrG7XvjdUr31qOGE6JyF3v2ghwlB-y9RSS2tsTm4qmvy_ttqH8N3kWz29rqqW6Lti52dz4Jj6b7Ew060qRNDNaViOfRw55Iyja-UV-amgNusxavm0o8qwXknzHqnT3Qj7Hc2tKNHha9xuWZs175patuEDz_7HMIV2Q4ivuZYUBpFTqeXeWXiG9TWhskV5P4Dh9M12Kd_LXx0mdMYhqf7j-zgZb2GCR9UHB6_j2T35RP0zCQGarAUf_b_8QpmYGRvRvTpKcHt-F5mI74DniDWfDjBjzongg-L-wjT8rEce3b37mUjVnpow4W68iGeOW-L9pq9vJUeDGqN6_fdDRpjO1ngWyDtdDYAihiazuIvDwiIfiGjfcvT2WmkcD2DrlUJwUnbRd6DJiqIch_VxDt0-nLqOrVJTeGfCk7aqfciMWzmx_QHxJ5wwEX25noJJJ3flwxEnBoJe06Epu1i1xQ7PSVxXRUIQrtsj1JxXcnfZDJYNmpvyy5_so6LGzmWYSettBA1Cu1MtqKxeB_latglcZEY94uIGwIBehMxqB3PZa6mWU7Ztl5Qu6-1GMzyN_4eIeepJzCO__Kx6wcAcL5iRxs0h323jJz6tOM5F8E67ol4vFQ6qxbSLNJB16eF9ameX92wzTYuQxeo_kvyey1xHkY2gkCuZE_tQto6HVLlBQNZHJ1rtl00KQL-qYiQQSEPAjtt6dTGQSwUScluqdCwsa2NxddBuWVueLUPkWzMXbB-zDhmliLeHelKd5tr22iXepWNFksga1lb2N0npZphQxiZ6QuMQz6_hgbI_Lpf0e-nsfGPYNx8DzEj5qjOtYDoYCEASUc0V9fE3AA8tsyBH4HPpER0E91junaf22RSYtyTCbb33UPkpUbpRhJAnFshPrn-l1_5j7xlvgGyod8uBUDzuJ94LfuHGUdr_6YTei80825kZ0nYC02nD9__EkWcW8G8321VwMu6twSrZqh_p6tH_q88aL_kU0A0kpWbE4iuGEyITblIxrLHy0XR4B_7NclS-cLGjC6tODTsOU3C1I-g3qXjZVeA5AWF0nG6Vd51FbbJZBiWuD_obtbHIFkP5BApKrZRBwZLsxy9S1uvZiOg2Qe1m46rKf8ihHYAC72EhXrcL52UkQ6fWKyktVMd6HUbtWoqsrrhvfOviD4y5XXGpfY3niCIBbbt_b0kw3_qBHapEt43fUJUuocyNXNhFbpzLlvRluGw4epoaOhyLNCI9oiTDL3dOE9_QdIovpkW3c2ha8lYldm0rd7pvlPzIKdBEnV6wpE12hMSaCXCyapXwmKGaUIeI_0s0OJR4Pf4-w9AwsxmLhbd34j1PIOJYil6N0DfFUcryiyIT_Xmh4O1m52FAA0cvSkg8KmkE203U3hsBuzqHAY4WqrX6bcRm2kescgJzTEWY_5U-GniXAfQSN7ET_LoCYtTbQAHKfce1vA-2alJDakJFRcNsDa7w4hRD3w7JnEyOiEBsJaDs0LunfzkSDA9fyu9bVjWmyVw3PmCgQ=",
+      "summary": []
+    },
+    {
+      "id": "msg_097ec3c46b076388016af8f710cc9487d2b1869676ee20edca",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0048\n\n## Episode annotation\n\n- Language task: close the drawer\n- Success label: success but suboptimal\n- Outcome evidence: In right_shoulder_cam, the drawer is open at frame 0. The robot pauses beside it without visible progress during frames 6\u201318, then aligns with the front and pushes it inward during frames 34\u201338. At frame 38, the red drawer front is seated against the cabinet and the exposed interior gap has disappeared, supporting completion. No harmful side effects are visible.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 6 | No |\n| 6 | 19 | Yes |\n| 19 | 39 | No |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 6-19\n- Categories: task_not_attempted\n- Explanation: In right_shoulder_cam, frames 6\u201318 show the gripper remaining stationary beside the open drawer for approximately 2.6 seconds, with no visible alignment change or drawer movement. This is a sustained unproductive pause; task-directed movement resumes at frame 19. Its underlying cause is not visible.\n- Recovery: Resume alignment with the drawer front and apply a controlled inward push, checking that the drawer seats fully; no human intervention is indicated.\n- Severity: low\n- Severity evidence: The pause delays completion but causes no visible damage, displacement, or meaningful damage risk.\n- Resetability: immediate\n- Resetability evidence: The drawer and surrounding scene remain unchanged, so the robot can continue without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 5377,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 377,
+    "output_tokens_details": {
+      "reasoning_tokens": 39
+    },
+    "total_tokens": 5754
+  },
+  "user": null,
+  "metadata": {}
+}

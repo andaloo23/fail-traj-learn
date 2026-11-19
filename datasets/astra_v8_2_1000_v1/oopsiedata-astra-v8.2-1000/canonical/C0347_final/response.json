@@ -1,0 +1,116 @@
+{
+  "id": "resp_0a65e8dbacac2d40016af90fb4610887d297b45a721f86e494",
+  "object": "response",
+  "created_at": 1794707380,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794707386,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0a65e8dbacac2d40016af90fb6771c87d2b0aa44b7b5e2063a",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-Q-6YFNK6iyBIeaFToStHxsh6aUftsmtiNuR_E2NYpkp2S1Cx3d0YoLtKXg_NsfaawH_pq3HS8aPjm8g9ZF4CzdEooRA72yDCDz4Zhy-OoEQ4p-8yZ7iK6S-hbr7nqTzOh3TpfQzxXuqqNS37qapfDYzQ7xLjO846aSWxm8hJ2hIUobsu49DJD26_OqoGF21M4lC1_givjsDVoq81mJudqtjLhFM04cyJckUjhHjmdkfu_qErmheC6LgAYR3wG8tXzBVVncp9dpN1QCZCOYW6yJf3qX78WWImkSGJQ89aDh_OIjp0AsxhrPG-Hy4o0UoFbnCOO_sc9kIDXuZNSxiMIFzo8BhQRDIlfzpYZAIcDDSIAdZcNzcOGS1CGszjlUYJX-oEqFmDeab30DAJK3vvtS9hyIEvW0x8FjDgJUROnNunuzxiwOSPxJummH4sFs9GWlaCkfYk5jsNIGsh5O6sqx2IFm7dLiB-amyCtTt7-zzvcZmuLsFA5kJQ0cNJCc8legyKvkhd6b_0zkKUkyKmPQug7wUYtFVDAGGcgMYEeHsTfTMhC5LQM2WKv2-UeD2yMNd_-LXwNrl0T-XabwltJ8vUyU6pjxQveKAcGRfcG8F-Jt34PIPh7MsQnkCzKwo_c2ZRoCefUREtzVos3jVcHL4iVJaxl-rsTioMlxxUiS4lECgrks78QMch6I1x048erp8OhoNYcRjbwP_u4CytYiy4-3fuzCEcLjxpT-aI4EhGWwFLmCVQ1StXT8nVNasE0kwBwnfglwfY_5NsKOFkevYP5TKi-57tSCkxhH2ME2KWqAD5GXwwb4NCg_R06Sief5NF_i7W9jWzf_tkeySQN4oWh7zTQlQWbonpfcRLzaRjyrYDipIMnMm4Yi65hAaFwU-A1-ISv6zxfBMJYoIFLcUxTDY5p2RViDNR2ma7nkLlR6nugcCwPDiTzzngv_x_lpzmbVU9W0Ggta-6OgH5Td9aaMuXTpvFSSqV6rJ3EUW7WXhRZ6ATL_IShHRfCJRUxmmyco6xdK8oz8jGv30aANn9waXWHL1VHTMmTNA5HApfUk_xxeHeYTQaOyXaRtq2-sx9txleNXPexE7WzjspAFjBb76Yu3BlYBPPWQtgEYeAFJQzXZ1rZsDYnpNlrjlci3C-vWVh-Fx8J_ihmeD_8XygA_yhAGceDf8hTLggW0d4ItdMDm7l62YRhzVWS8sjF0nnQA1R-lEKJmwWRCB-5u5_G9tyw9U6M0H-d59C-7bbZCWX2Z7iGHj3dTp7VDsFDKKwq7y-wnhy6yu_XLP0K_Z1raD9cwSQ1MXDVLRiW0xw9C5fFn1K658LX4hlgRX1ovmw61u7BvxYVQt5qlJmEDXu0aHStjsAPMJFHmato9g6Oa6jdP5EY4_stZ02b3iGyYT5l6hsWtyY2whP0pzBfAczwRNNXgSwY5nB7F9uKcIJGpIp0N7YcQucAPDGM8yogKeI_V_Xol7B0ZhS7KihsPUM-Wt5wdSyImb-O2lJRkDtyLrBneSHgCjTLHWJ-1Rk07HxF_VRTV5bwEfZTMIDFbrN6YKSzPaksuZX5xAI--sbiIxbYqC4AaMXMycOB4os0GGy9ElEqn6W7K721lYrjdzQ2QV-lqcMTJEKZx7Wl64Cfq6HP5AS_0SxjhY6-ujPtfkDCu8PcYIf71eyo6iqky72jAqO3gMWi7kY7GywjRoBueQXstuCDRIeQycIb5_YrEE58twQ9MKw00TvkSDCZhgSWhY8XnUYeaa7f5l-5LfqbL5dH96wCtdruA2_LqnK_2FLbak2mIPUlXaA3I4v451M0ciQOGdY--ct1jp-i270p4NBrgc3X1TeDLV5ht2573-XSjphX5NSzXy8qNm8kftjaaKuTwVFDpLsCjcJNnpGTnxtoxoB2DU9kcpeIVVlad-QBMRff0LGMjAMwCqRyK4LKhb0lS0SWU7AI0ao7wIVxqMPXOBOxxk5PbAH9mWdaDKLpeQyoQDDkuGY2VFuFYuwSbzg78Fov-G0YfY0nkWswZpYyYxgAibX2Ffta7uGdwHIVwDwHPafm9-dyvATcgtJqQ2bQbAgEZXRwAuo_TMgWlcsKOM0oY_gWE7gkJ21vkbWvDELqpnPS3j19Z0Y8mun_zDMZ3CSfyNmeCQR27rvYnnYjgHRjH6EbNHywkcNy9KAFJg6u4GX6LA_KSqrHV8BZNIsYQvyc6wBZp4Y1ITcOwcUkYgujs81zjPjWcYVMl80f4Fxx1CHqJnZFc-R0wsNDvzrUPwDMpEOLzdIzu_DAzIovsVJiG0i7ZS_VKSyQQlDbWi4CwCQ-SJmqu5VpET8uVnI24GvIf5ZRSA3ZF_NrTrvGiz0GM-OCTB81xlIAKy1o8i-e8uvlyZyzpu5M77STVVYVRWUzJeba1Y_MVl62yccWm6DuB-VTu-ci090ualp9Mcj58QlaRAlf4X3U1oL1yDQt91n8kBGs38k0Lb7GK-zczOeoLjP_yyzV3pkm5VEBYOec2H8mPye4XKINKpRWKcg_8EjnSv6Kyf7p1Ilp0=",
+      "summary": []
+    },
+    {
+      "id": "msg_0a65e8dbacac2d40016af90fb81cb887d2ae5a73d3e5f47834",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0347\n\n## Episode annotation\n\n- Language task: Put the spoon in the drawer.\n- Success label: failure\n- Outcome evidence: The spoon remains on the tabletop outside the drawer in image and left_ego_image at frames 0, 76, and 114. The robot approaches and adjusts near the spoon, as shown in image and wrist_image across frames 24\u201388, but no completed grasp, transport, or drawer placement is visible. At frames 99\u2013114, wrist_image shows the spoon moving out of that camera\u2019s view while left_ego_image confirms it remains on the table. Completion is unconfirmed; the images do not clearly establish a completed failed acquisition rather than unfinished positioning.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 115 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 23563,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 252,
+    "output_tokens_details": {
+      "reasoning_tokens": 66
+    },
+    "total_tokens": 23815
+  },
+  "user": null,
+  "metadata": {}
+}

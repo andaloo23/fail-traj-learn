@@ -1,0 +1,33 @@
+{
+  "episode_id": "C0141",
+  "language_task": "Put the spoon in the drawer.",
+  "success_label": "failure",
+  "outcome_evidence": "The robot acquires and lifts the wooden spoon, visible in frames 90\u2013130 in image, left_ego_image and wrist_image, then moves it toward the drawer. At frames 209\u2013259, the spoon remains held outside the drawer and the robot stops making visible progress. No placement or release into the drawer is shown; completion is unconfirmed, rather than a visibly failed release or dropped spoon.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 209,
+      "failure": false
+    },
+    {
+      "start_frame": 209,
+      "end_frame": 260,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 209,
+      "end_frame": 260,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "After transporting the spoon toward the drawer, the robot remains essentially stationary with the spoon still gripped outside it for approximately four seconds, through the end of the episode (frames 209, 230 and 259, image, left_ego_image and wrist_image). This sustained stall does not advance placement; no visible cause or abnormal termination is established.",
+      "recovery": "Reassess the spoon\u2019s position relative to the drawer opening, then continue a collision-free placement and release after the spoon is inside; no human intervention is visibly required.",
+      "severity": "low",
+      "severity_evidence": "The spoon remains retained, with no visible damage, dropping or disruption to surrounding objects; the observed consequence is incomplete placement.",
+      "resetability": "immediate",
+      "resetability_evidence": "No environmental repair or object repositioning is visibly necessary; the robot can resume from the retained-spoon state without a human reset."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "resp_02f0a8143ca29760016afa2fcb088c87d29ea037861a9bd040",
+  "object": "response",
+  "created_at": 1794781139,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794781155,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_02f0a8143ca29760016afa2fdfe4a887d2ae62412f2da3dabc",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-i_meqkZDTlp52jjPhhRzbfluWSsFztureKiqoGvuyJo8ZYfM28HCw64gsQfl7lWg74UqArvc2l9RL0as_a4vF-mXZ_Mnl6oa9faK80ht9jw_bBfPywP6oHTPJF1MKZTQCXr2EXxYit_Fga6LCSucxI1Om5OjsFHPnCb6sEEEpHfG6XvMFrV8zKluwnYn5MG7l9SXMzB_uXr0sVJMKqBwrqP-5if-bOwSY6pwVfIvDF4xN1k25HdK6I0WLXsrQzyTHJKsimSqpZOB3FUIaSIBjjWGTrD4tBFz5Ac2lY3YIhCv6CsNty0_Evfb53fzvlE6cWvEVgPoT8wukMooDpm6vdqixgiLh6B-sbD2YY70W-fHyT1QWuLdTCeZd5Btiw5mQD-kg644gAPqQkKTm0Fln1oM05OoBhrrEJH7M9cmNSTvzj8hLlokHsMRX3CVQeIUOFbBq-oS6MDV55jjLBqvWRF1Zxaewj424ZxsZYKUQEGGpdu7YJDB5yN6QMRJRfGFTHhYPAsjzZH3i5SAkZsQiXMlV9kKUUMP4KmDviH23s7T5jROr1spcL6im6ygAmRl-90rZhC1jAIblHpSxzl2d2ACkZBqNU-x6ryrGXnXAUQNWunDbQvTjhAS4YeMfdOK4jey15Pu5H2wUGKTV9r-T8QOBBx9STvI-hlOmKRL07TSjkiI5mb192z9Eu1wWoROLH9kEissaFuosOJOyx3F9Q6ld3ts043z-3HJ0DlwzKxAQ5tbZIBfwhsm1kzyM27hRAw2sHHLTZFv1LRhGvwKPI_XTXfExB__Tjrid41ucBW95Ls7bXzqzUFZaYoAAuaYZVXBGMFDrCZ08QMTKDtKyZsR4GkmmFiU4YLlbw7mTCfATicUZHEVxOEDIMDitbi-O_BuAWmbST9OizGEMXqR5sPtam4E78NiTN5tFjhvxFrBBB0QeaOtFaUrSSxurcBIZN0bNgm4QJ6zv2QLVvjxmxQbtQo8R5MAPoc6hT3puroPHed70S_NYjd9Jevnq_L-A37yOwYP2gsIaWd3TJn6z5BAN3XH1xJVC45wChy0D3et8BQpHO6C-AFBT_mEF62QhWM3Y6x9iefPcaJA4WF3XM-rPPu8GAlGVbUHoJ4Dm2Qv8qu-WY_mnKYFZLhL6NKrX3GKaLwnrKSQXHT9nj5sFY6DLtg3ysiEkG_fzvHA9WcYn3mMR-sTkU7NhkurbZeYLFuOkdMzOdWdPkvFvWBJ-1zT9UMLJ9Mtr1TFbsHwQEC9LaNtBhVAy2450Qy37JzzT1xuwPIiCOjb8gzFb-U3eTVRaJ_GurIGkgMGR_AeFDoRn5KzFeZCfIDSq4z0_nVuUUgbTBYgKV7deg-DXVojP-_q2otmcyvputzhzIFvaYxRsRrnjiyRqbdhnvmLtW_et7HnJL0H6G00tnwYQ_5ubzSwrzClqNc6oYR2j9pIcToORIMQfESO6jL_3BSVhGgLT4iEyRL00IOe_Y6ucZnhQzfTMh4RpN5nZexmW0CyI1q_PVdd0A5Tuxi3PgGsjzmgw-gXoCldGukjPvu9nHN7026-qSRJcgB9MieJ49-PDWWygrOGIXYpJQd0RqoPfeCbaATfXILPGlZnjlVNXdn4QxWo5YoUmEb-VxVSz9c5lQUAbUho_92-6-5ywOdse4PeEiEejXCM5NA7lUDA9IfDsq8v_QbWGhDYjlIu-TcWpZ-Gnt6k3y47oJFA7mAT8aoPa3cRIgFEL1oTClWLpcFY0Vg0AEWtpo5SXsOm1TkX0JCVSWNfYP5lIFEzMDJ7iwO5rGkezSmQ8zJ3GVzRi_gNN4DxlF6foV1EdGw0eWcNoh1pZ7bxHLu9BoqCVQRyfQz1FRDXwfnE2Z36jn8rKKfRxcY8MfeIsVmYkFEw8us9hhirN48FjqyQe_TCUQQLvA-5bk6aLOouG_BOyDFcLSJ0iH2vqmHE2q1gWuKlRQOcam9RAhCp8e7shqCua9yheJNo7hilc2dvzLhqsmjaHjJ7m21q0Q8ZXIugUPt7bruzfsaId_nAFRfDpkEkFpUhUtGJHJr__pU024zVhphLKCJr0QZi0D488ifrhrI8xTpH3b__qobyJUhiB5iW2vlGGBTWhiJ8anNjM28_EEV2RkTXtgUDg==",
+      "summary": []
+    },
+    {
+      "id": "msg_02f0a8143ca29760016afa2fe0b87087d288344584d7f49717",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0276\n\n## Episode annotation\n\n- Language task: Pick up the pen with the right hand and the cap with the left hand, then insert the cap onto the pen.\n- Success label: success\n- Outcome evidence: The supplied task ambiguously says \u201cpen cap\u201d for the right-hand object as well as \u201ccap\u201d for the left; the visible episode supports the intended pen-and-cap assembly task stated above. The right_wrist view shows acquisition of the long pen at frames 177\u2013205, and left_wrist shows acquisition of the short dark cap at frames 279\u2013307. The hands bring the pieces together and insert them during frames 454\u2013704 (left_wrist, right_wrist). After the left hand opens and withdraws, the dark cap remains attached to the pen at frames 725\u2013773 in right_wrist, confirming assembly rather than mere contact. The assembled pen is subsequently released onto the table at frames 777\u2013807 and remains there through frame 1399 (left_wrist, top). No failed acquisition, damage, or unintended side effect is established.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 1400 | No |\n\n## Failure annotations\n\nNone"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 244674,
+    "input_tokens_details": {
+      "cache_write_tokens": 1912,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 1912
+      },
+      "cached_tokens": 0
+    },
+    "output_tokens": 303,
+    "output_tokens_details": {
+      "reasoning_tokens": 37
+    },
+    "total_tokens": 244977
+  },
+  "user": null,
+  "metadata": {}
+}

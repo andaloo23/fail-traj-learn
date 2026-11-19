@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0872",
+  "language_task": "pick up the corn",
+  "success_label": "failure",
+  "outcome_evidence": "In right_shoulder_cam, the corn remains on the tabletop throughout frames 0\u201349, while the gripper repeatedly opens and closes over the separate bowl behind it (for example, frames 2\u201310, 29\u201336 and 43\u201349). The robot never visibly approaches or lifts the corn; this is sustained non-task-directed behavior, not merely an unconfirmed lift at recording end.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 50,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 0,
+      "end_frame": 50,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "In right_shoulder_cam, the gripper stays over the bowl and repeatedly cycles its fingers throughout frames 0\u201349, rather than moving toward the clearly separate corn on the table. This continuous unproductive behavior makes no visible progress toward picking up the corn. The images do not establish possession of a bowl object or a mechanical malfunction.",
+      "recovery": "Stop cycling the gripper, move clear of the bowl, align the open fingers around the corn, then close and lift while checking retention; no human intervention is visibly necessary.",
+      "severity": "low",
+      "severity_evidence": "The corn remains undisturbed and no damage, spill or other meaningful harmful consequence is visible in right_shoulder_cam through frame 49.",
+      "resetability": "immediate",
+      "resetability_evidence": "The corn remains accessible in its original tabletop position, so another task-directed attempt requires no visible environmental reset or human intervention."
+    }
+  ]
+}

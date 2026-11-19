@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0959",
+  "language_task": "Place the toys on the plate with no collisions.",
+  "success_label": "success",
+  "outcome_evidence": "Initially, three toys lie beside the empty plate (frame 0, overhead_cam and wrist_cam). The robot transfers and releases the beige toy onto the plate (frames 257\u2013274), then the pink toy (frames 550\u2013570), and finally the blue toy (frames 830\u2013850), as shown in overhead_cam and wrist_cam. All three remain on the plate after the empty gripper withdraws (frames 870\u2013912, both cameras). No unwanted collision, failed acquisition, or unintended scene disturbance is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 913,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

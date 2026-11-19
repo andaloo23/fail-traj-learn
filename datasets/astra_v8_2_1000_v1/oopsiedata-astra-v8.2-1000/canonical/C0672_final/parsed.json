@@ -1,0 +1,14 @@
+{
+  "episode_id": "C0672",
+  "language_task": "remove the blue cloth from the yellow block",
+  "success_label": "success",
+  "outcome_evidence": "In right_shoulder_cam, the robot approaches the blue cloth in frames 0\u201319, gathers and moves it in frames 20\u201332, and pulls it away to reveal the yellow block in frames 34\u201337. Frame 37 shows the block fully uncovered and separate from the cloth. No failed acquisition or unintended side effect is visibly established.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 38,
+      "failure": false
+    }
+  ],
+  "failure_annotations": []
+}

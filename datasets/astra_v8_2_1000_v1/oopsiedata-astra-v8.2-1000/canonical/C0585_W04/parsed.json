@@ -1,0 +1,28 @@
+{
+  "episode_id": "C0585_W04",
+  "language_task": "put the orange from off the towel to on the table",
+  "success_label": "failure",
+  "outcome_evidence": "The awkward task wording most plausibly means moving the orange off the towel onto bare tabletop. In top frames 1050, 1150, 1250, 1350, and 1399, the orange remains at the towel\u2019s left edge. The left and right views show arm/viewpoint repositioning but no acquisition or transfer of the orange. Completion is unconfirmed in this window, with sustained unproductive behavior rather than a visibly failed grasp. This label is provisional; earlier context beyond frames 1048\u20131049 and later execution are unavailable.",
+  "segments": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "failure": true
+    }
+  ],
+  "failure_annotations": [
+    {
+      "start_frame": 1050,
+      "end_frame": 1400,
+      "categories": [
+        "task_not_attempted"
+      ],
+      "explanation": "Across frames 1050\u20131399, top shows the orange stationary while the grippers remain away from it. The right view changes orientation repeatedly, including frames 1067\u20131100 and 1275\u20131335, and left shows repositioning around frames 1135\u20131150 and 1225\u20131275, but neither arm visibly aligns with or acquires the orange. These movements and pauses produce no discernible task progress over approximately 11.7 seconds. Context frames 1048\u20131049 show the same disengaged configuration, consistent with continuity at the starting edge, though the earlier onset is unknown; the failure may continue beyond this window.",
+      "recovery": "Direct a gripper toward the orange, align around it without disturbing neighboring objects, secure it, and transfer and release it onto clear bare tabletop; no human intervention is visibly needed.",
+      "severity": "low",
+      "severity_evidence": "The observed consequence is lack of task progress; no damage, displaced objects, or meaningful risk of damage is established.",
+      "resetability": "immediate",
+      "resetability_evidence": "The orange and surrounding objects remain in their usable positions, so another attempt requires no environmental reset or human intervention."
+    }
+  ]
+}

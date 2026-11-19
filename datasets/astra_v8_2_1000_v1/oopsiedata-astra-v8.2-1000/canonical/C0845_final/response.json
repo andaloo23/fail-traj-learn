@@ -1,0 +1,116 @@
+{
+  "id": "resp_0e65781feadcaf24016af92bb7fd4887d287897c409e845be2",
+  "object": "response",
+  "created_at": 1794714552,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1794714562,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "input_transformations": [],
+  "instructions": null,
+  "max_output_tokens": 12000,
+  "max_tool_calls": null,
+  "model": "gpt-6-astra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0e65781feadcaf24016af92bbc27a487d284f46c1c98aa0be4",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq-SvDVNISalt3B2h2DEuieB1L36v-EpvFyfm2lNiSAFip5G56JXzn0nv-xcEc16P81h_3fwKdNERAo3oS8xzfOZTx4tWVAixZjdWWuTZ2ZKENiISTjaThwnp7-p_-TIYuJKSWFhaJx-oGQCluw9noHlK0si26Mz3iyPEJaSF4pH5rhk8xcxBvAl9MA1ud-kh1ovsN9EjRAOdJVT6SYmzRwFpqJeSs_A50CH-8HcqkBDhVIRI8EIwzyXdi4VI5NJEuGqG3kIzBuNdDeHGRHBgEl_3CUy3AwnTXFlrdDlq7BS08AB3TqI9ssq-RVtURqeZzb1lpWWI8kvX05DK5RheHZDb2dg0E5bS1k9x97Y-wmnklnwFUCqb4eD7D775SattgrYxvxP4NFaULG3otF3-1CXbyN5Wex43_kDm0RqpQA1v35j00LPrJPfO72g2MkmmSGLU6RwtxapINx9Yr-ZuhzhpBO74xbCLLF1oFjI23Edq5l9LiGGySRxM_nPlVxLSNS2D-1meBJjBWb4hp_1yJESL3US-HxVqQYP9PN2xOrLXOZ9j7moQY9jro-jlywulJZKZqTKB3wexjORcpIkxVCAE8352xvrwpYteKffHkj_nHy_JXtTorMu1ahu4mPpCHT2QINmapSV2hqVGDGErMfZ-kL8dn6lAgBGbMeBJXFiLpbtK72JLtGbM7Uq6fs5ApdyThlEPGdJvXafnR1nzEXFON_A047ciht5GWJMsR-zd1xepihCE5-lVGMBlRSYdKLY-HP8IVmd7dT4zVFN1fCFPiMVKer_674n3PQMoN53iaZt4kWdsj8DgzrJqFLNAymUHvHsHFj-zO2otDViMqfU-NrP8SFRT5xcVyvSrcfPtR0vzFLqiKX3Id8clGkeSNcEV-YlBwRQTl42Pq-VzMIq0hbwt2QYOy-whWmzjSyunxLBnXrky56SfwpdZ149zhtJQhHdLcXlvWFNGIIdtjarSDfx52OBb1AseQv2C76flgk0LHysEiwdM8YsEIjJupK_Iro20CB8Ulz8fWJ_FyrRUsdUp5wLmkMxLbI_og6ObawirWkc85p-u-w5xSW32yW05Gpac2C5XbOvGq1k0C6qFxC7SpAFYscfIY7YaRQ2W6dqj2R7M7wCA0JadWAT2PaSNtdCAP4ImfIrP-_cYBqDN4PDKsI7S9fsmpG_x2cpjTVaSCgCRmSlrIoA9H0P6NbDqV3wYTf5tWzEh0u3UDUpvX9LddzCu8MtDQ1qflZo1av_tX5J7j2xKuQ5X6cWBny4UluCECxjp_2PDSUtODAbUEcKvIhee1RYebrUY6F6atdn70zAdoXpPiQ0bwgDNnIk4557qFAeiEKlH0Nl6zcqHYxWkFszwW0OQdAnoEXEY8eh6p8SKBtqPYTiElNDo7DeYou7XMYQC01IbylNOWc_NTmGo7qG7X2qAYiqMvWYVJp-vc8acuUVQ0edTWfxyMr00IlOalKwJLR7gYKq9RxdoEIL0ENi3_uIONjFWgu6XhfbFnGyl7F0PIq2hzAxbbQUGyZAxIj3qUtEAwBAR0OjV670v9cJgIhpEgPCImk5osnPJp06UY5VhUnnhAjB21DwT2Zh8lile-Lj5DXs0A0TUslWGYgHSFYONDF15r2VQtYqX8EkeU_hVhJO3SIrBSQzL9vvUKTYGegjsroa6IpH9_l-TiUs24hjH_XO1QY-jMzrmoZ_QSsu3-njRvBEJI7oPApV9ZeqXwZm6oEhodG7RayrfFnviHz7u_Kf3z2m1GL-MmJKXfEo7-XqID1eLetyhm4ShreHWJc2ntc9DAe_UNhkzije5e-uM4e-mKvvkbDbpK-uCJyihAb9QPmir-xtULI9bZ6c0-xRkjisdrbxAaP4y7tSEVps24pCz9LTW0adHgAO744g8zntmLbOHcDmwB8MZ0dDyWpfpBJV4TLfAWNQuFhhwHthjTQA99m9dA8jq6xZPf7UafGqCKizatzis6D_H4y_ESCi0ygKgtt8q9WCFEdyp7MBXrCiq2aYdm9pAK-bMabJZVYb_A5ijJJe0UkSnvCS4DDDzvj6bw27j8Ug==",
+      "summary": []
+    },
+    {
+      "id": "msg_0e65781feadcaf24016af92bbcb6c087d289479df93ce8d2db",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "# Episode: C0845\n\n## Episode annotation\n\n- Language task: Open the oven.\n- Success label: failure\n- Outcome evidence: The oven door remains closed throughout the episode, including frames 0, 120, 240 and 399 in image and left_ego_image. The robot approaches the upper front of the oven but then hovers with small repeated movements without opening it. wrist_image at frames 61, 200 and 399 shows the fingers beside the oven rather than visibly securing its handle. This is observed noncompletion with sustained unproductive behavior, not merely an action whose completion falls outside the recording.\n\n## Timeline\n\n| Start frame | End frame | Failure |\n| --- | --- | --- |\n| 0 | 62 | No |\n| 62 | 400 | Yes |\n\n## Failure annotations\n\n### Failure 1\n\n- Frames: 62-400\n- Categories: task_not_attempted\n- Explanation: After the initial approach, the robot remains near the oven with prolonged pauses and small back-and-forth movements, without discernible progress toward handle acquisition or door opening. Frames 62\u2013114, 138\u2013179 and 270\u2013399 in image and left_ego_image show this sustained lack of progress; wrist_image at frames 100, 200 and 399 provides no evidence of a secured handle. The door stays closed. The visible failure is stalling, not an established failed grasp or hardware malfunction.\n- Recovery: Re-localize the oven handle, reposition the open fingers to straddle it, establish a secure grasp, and pull along the door\u2019s opening path while monitoring motion and clearance. No human intervention is visibly required.\n- Severity: low\n- Severity evidence: The task remains unfinished, but no damage, displaced objects or meaningful damage risk is visible in image or left_ego_image through frame 399.\n- Resetability: immediate\n- Resetability evidence: The oven and surrounding objects remain in their original usable state; another approach can be attempted without environmental resetting or human intervention."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "low",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 76855,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      },
+      "cached_tokens": 1912
+    },
+    "output_tokens": 452,
+    "output_tokens_details": {
+      "reasoning_tokens": 33
+    },
+    "total_tokens": 77307
+  },
+  "user": null,
+  "metadata": {}
+}
