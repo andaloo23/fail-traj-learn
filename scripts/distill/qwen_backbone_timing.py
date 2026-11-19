@@ -44,7 +44,7 @@ def save(path, value, exclusive=False):
         json.dump(value, stream, indent=2, ensure_ascii=False)
 
 
-def targets(parsed, start, stop):
+def targets(parsed, start, stop, *, require_details=True):
     """Keep the native event partition; explanations require wholly visible cites."""
     segments = [dict(start=max(start, s['start_frame']), end=min(stop, s['end_frame']),
                      failure=s['failure']) for s in parsed['segments']
@@ -61,7 +61,7 @@ def targets(parsed, start, stop):
         cites = [int(n) for n in re.findall(r'\d+', item['explanation'])]
         if cites and all(start <= n < stop for n in cites):
             details.append(item)
-    if not details:
+    if require_details and not details:
         raise ValueError('Select a probe window with a fully visible explanation')
     base = '# Failure segments\n\n| Start frame | End frame (exclusive) | Failure |\n|---|---|---|\n'
     base += ''.join(f"| {s['start']} | {s['end']} | {'Yes' if s['failure'] else 'No'} |\n" for s in segments)
@@ -239,7 +239,7 @@ def fetch_model(root, model, revision):
     return str(destination)
 
 
-def encode(processor, root, window, mode, model_type):
+def encode(processor, root, window, mode, model_type, *, include_target=True):
     import numpy as np
     from PIL import Image
     import torch
@@ -259,11 +259,11 @@ def encode(processor, root, window, mode, model_type):
         f"All {window['count']} consecutive frames and all camera panels are supplied. "
         'Do not label outside this interval. Include detailed categories/explanations only for wholly visible events. '
         'Use the headings Failure segments and Visible failure details as applicable, with frame-index tables.')
+    prompt = window.get('prompt', prompt)
     messages = [dict(role='user', content=[dict(type='video', video='native frames'), dict(type='text', text=prompt)])]
     prefix = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
-    target = window['targets'][mode]
-    full = prefix + target + processor.tokenizer.eos_token + '\n'
-    metadata = VideoMetadata(total_num_frames=window['episode_frames'], fps=window['fps'], frames_indices=indices)
+    full = prefix + window['targets'][mode] + processor.tokenizer.eos_token + '\n' if include_target else prefix
+    metadata = VideoMetadata(total_num_frames=window['episode_frames'], fps=window['fps'], frames_indices=indices.copy())
     # Qwen3-VL's longest_edge is a whole-video pixel budget, Qwen2.5's is per frame.
     budget = 313600 * window['count'] if model_type == 'qwen3_5' else 313600
     kwargs = dict(text=[full], videos=[np.stack(frames)], video_metadata=[metadata],
@@ -273,10 +273,13 @@ def encode(processor, root, window, mode, model_type):
         kwargs.update(cap_pixels_per_frame=True, max_video_tokens=307)
     batch = processor(**kwargs)
     returned = batch.pop('video_metadata', None)
-    if returned is not None and list(returned[0].frames_indices) != indices:
+    temporal_patch = processor.video_processor.temporal_patch_size
+    # Qwen's timestamp formatter may append the last frame to fill a temporal patch.
+    padded_indices = indices + [indices[-1]] * (-len(indices) % temporal_patch)
+    if returned is not None and list(returned[0].frames_indices) not in (indices, padded_indices):
         raise ValueError('Native frame indices were sampled or reordered')
     grid = batch['video_grid_thw'][0].tolist()
-    if grid[0] != math.ceil(window['count'] / 2):
+    if grid[0] != math.ceil(window['count'] / temporal_patch):
         raise ValueError('Unexpected native temporal patch count')
     patch_size = processor.video_processor.patch_size
     represented_pixels = grid[1] * grid[2] * patch_size ** 2
@@ -284,6 +287,10 @@ def encode(processor, root, window, mode, model_type):
     if represented_pixels < native_pixels * .82:
         raise ValueError('Processor unexpectedly downsized camera panels')
     ids = batch['input_ids'][0]
+    if len(ids) > 32768:
+        raise ValueError('Input exceeds declared 32768-token contract')
+    if not include_target:
+        return batch
     plain = processor.tokenizer(full, add_special_tokens=False, return_offsets_mapping=True)
     first = next(i for i, (a, b) in enumerate(plain['offset_mapping']) if a >= len(prefix) and b > a)
     tail = plain['input_ids'][first:]
@@ -296,8 +303,6 @@ def encode(processor, root, window, mode, model_type):
         source_frames=window['count'], frame_indices=indices, grid=grid,
         represented_pixels_per_frame=represented_pixels, native_pixels_per_frame=native_pixels,
         source_fps=window['fps'], do_sample_frames=False)
-    if len(ids) > 32768:
-        raise ValueError('Input exceeds declared 32768-token timing contract')
     return batch, audit
 
 
@@ -341,12 +346,47 @@ def loss_sum(model, batch):
     return torch.stack(losses).sum() / len(positions)
 
 
+def load_qlora(snapshot, *, require_linear_attention, adapter=None):
+    import torch
+    from peft import LoraConfig, PeftModel, get_peft_model, prepare_model_for_kbit_training
+    from transformers import AutoModelForImageTextToText, BitsAndBytesConfig
+    quantization = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type='nf4',
+        bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.bfloat16,
+        llm_int8_skip_modules=['lm_head', 'model.visual', 'in_proj_a', 'in_proj_b'])
+    model = AutoModelForImageTextToText.from_pretrained(snapshot, local_files_only=True,
+        dtype=torch.bfloat16, device_map={'': 0}, attn_implementation='sdpa', quantization_config=quantization)
+    model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True,
+        gradient_checkpointing_kwargs={'use_reentrant': False})
+    # PEFT promotes all unquantized weights to fp32. Keep norms/gates there,
+    # but restore frozen large tensors and convolution weights to bf16. The
+    # causal-conv1d CUDA kernel requires input and convolution weight dtypes to match.
+    for name, parameter in model.named_parameters():
+        if parameter.dtype == torch.float32 and any(part in name for part in
+                ['.visual.', 'embed_tokens.', 'lm_head.', '.conv1d.']):
+            parameter.data = parameter.data.to(torch.bfloat16)
+    model.config.use_cache = False
+    model.enable_input_require_grads()
+    suffixes = {'q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'up_proj', 'down_proj',
+                'in_proj_qkv', 'in_proj_z', 'in_proj_a', 'in_proj_b', 'out_proj'}
+    modules = [name for name, module in model.named_modules() if '.layers.' in name and
+               '.visual.' not in name and name.rsplit('.', 1)[-1] in suffixes]
+    if not modules or (require_linear_attention and not any('.linear_attn.in_proj_qkv' in name for name in modules)):
+        raise ValueError('Missing decoder attention adapters')
+    if adapter is None:
+        model = get_peft_model(model, LoraConfig(r=16, lora_alpha=32, lora_dropout=.05,
+            target_modules=modules, bias='none', task_type='CAUSAL_LM'))
+    else:
+        model = PeftModel.from_pretrained(model, adapter, is_trainable=True)
+    if any(p.requires_grad for name, p in model.named_parameters() if '.visual.' in name):
+        raise ValueError('Vision tower must remain frozen')
+    return model, modules
+
+
 def gpu(root, key):
     import os
     import signal
     import torch
-    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
-    from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndBytesConfig, set_seed
+    from transformers import AutoProcessor, set_seed
     ready = read(root / 'setup_ready.json')
     plan = verify(root)
     if ready['plan_sha256'] != digest(root / 'plan.json'):
@@ -371,32 +411,7 @@ def gpu(root, key):
     snapshot = ready['snapshots'][key]
     processor = AutoProcessor.from_pretrained(snapshot, local_files_only=True)
     started = time.monotonic()
-    quantization = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type='nf4',
-        bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.bfloat16,
-        llm_int8_skip_modules=['lm_head', 'model.visual', 'in_proj_a', 'in_proj_b'])
-    model = AutoModelForImageTextToText.from_pretrained(snapshot, local_files_only=True,
-        dtype=torch.bfloat16, device_map={'': 0}, attn_implementation='sdpa', quantization_config=quantization)
-    model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True,
-        gradient_checkpointing_kwargs={'use_reentrant': False})
-    # PEFT promotes all unquantized weights to fp32. Keep norms/gates there,
-    # but restore frozen large tensors and convolution weights to bf16. The
-    # causal-conv1d CUDA kernel requires input and convolution weight dtypes to match.
-    for name, parameter in model.named_parameters():
-        if parameter.dtype == torch.float32 and any(part in name for part in
-                ['.visual.', 'embed_tokens.', 'lm_head.', '.conv1d.']):
-            parameter.data = parameter.data.to(torch.bfloat16)
-    model.config.use_cache = False
-    model.enable_input_require_grads()
-    suffixes = {'q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'up_proj', 'down_proj',
-                'in_proj_qkv', 'in_proj_z', 'in_proj_a', 'in_proj_b', 'out_proj'}
-    modules = [name for name, module in model.named_modules() if '.layers.' in name and
-               '.visual.' not in name and name.rsplit('.', 1)[-1] in suffixes]
-    if not modules or (key == 'candidate' and not any('.linear_attn.in_proj_qkv' in name for name in modules)):
-        raise ValueError('Missing decoder attention adapters')
-    model = get_peft_model(model, LoraConfig(r=16, lora_alpha=32, lora_dropout=.05,
-        target_modules=modules, bias='none', task_type='CAUSAL_LM'))
-    if any(p.requires_grad for name, p in model.named_parameters() if '.visual.' in name):
-        raise ValueError('Vision tower must remain frozen')
+    model, modules = load_qlora(snapshot, require_linear_attention=key == 'candidate')
     result.update(model_load_seconds=time.monotonic() - started, lora_target_modules=modules,
         trainable_parameters=sum(p.numel() for p in model.parameters() if p.requires_grad))
     if key == 'candidate':
