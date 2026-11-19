@@ -479,6 +479,12 @@ def freeze_available(root, assigned):
 
 
 def submit_shard(root, shard, client):
+    hold_path=root/'contact_sheet_submission_hold.json'
+    if hold_path.exists():
+        hold=common.read(hold_path)
+        blocked=set(shard['episodes']).intersection(hold.get('episode_ids',[]))
+        if not hold.get('submission_allowed',False) and blocked:
+            raise ValueError('User review required before submitting contact-sheet episodes: '+', '.join(sorted(blocked)))
     plan=verify_plan(root)
     path=root/shard['path']; stem=path.stem
     journal=root/'batch_jobs'/(stem+'.json')

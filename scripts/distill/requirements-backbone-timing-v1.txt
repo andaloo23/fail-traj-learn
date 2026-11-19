@@ -1,0 +1,12 @@
+# Isolated timing environment; do not install into previous experiment venvs.
+numpy==2.3.5
+transformers==5.23.0
+peft==0.21.3
+accelerate==1.16.0
+bitsandbytes==0.50.2
+flash-linear-attention==0.6.0
+Pillow==12.1.1
+requests==2.34.2
+ninja==1.13.0
+setuptools==80.9.0
+wheel==0.46.3

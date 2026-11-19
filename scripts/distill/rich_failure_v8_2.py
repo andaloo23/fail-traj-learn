@@ -31,7 +31,12 @@ def evidence(text, episode):
         raise ValueError('Evidence must cite a native camera name')
 
 
-def parse(text, episode):
+def parse(text, episode, *, coverage_start=0, coverage_end=None):
+    # Windowed protocols retain global frame indices. Defaults preserve the
+    # historical full-episode contract and all frozen native outputs.
+    coverage_end = episode['n_frames'] if coverage_end is None else coverage_end
+    if not 0 <= coverage_start < coverage_end <= episode['n_frames']:
+        raise ValueError('Invalid requested timeline coverage')
     if '```' in text or not text.startswith('# Episode: ' + episode['id'] + '\n'):
         raise ValueError('Expected native Markdown with the matching episode heading')
     parts = re.split(r'^## (Episode annotation|Timeline|Failure annotations)\s*$', text, flags=re.M)
@@ -47,19 +52,19 @@ def parse(text, episode):
     if len(rows) < 3 or rows[0] != '| Start frame | End frame | Failure |' or not re.fullmatch(
             r'\|\s*:?-+:?\s*\|\s*:?-+:?\s*\|\s*:?-+:?\s*\|', rows[1]):
         raise ValueError('Expected the three-column timeline')
-    segments = []; cursor = 0
+    segments = []; cursor = coverage_start
     for row in rows[2:]:
         match = re.fullmatch(r'\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(Yes|No)\s*\|', row)
         if not match:
             raise ValueError('Invalid timeline row')
         start, end, failure = int(match[1]), int(match[2]), match[3] == 'Yes'
-        if start != cursor or not start < end <= episode['n_frames']:
+        if start != cursor or not start < end <= coverage_end:
             raise ValueError('Timeline gaps, overlaps or invalid boundaries')
         if segments and not failure and not segments[-1]['failure']:
             raise ValueError('Merge adjacent No rows')
         segments.append(dict(start_frame=start, end_frame=end, failure=failure)); cursor = end
-    if cursor != episode['n_frames']:
-        raise ValueError('Timeline must cover the full episode')
+    if cursor != coverage_end:
+        raise ValueError('Timeline must cover the requested interval')
     positives = [s for s in segments if s['failure']]
     annotations = []; details = parts[6]
     if not positives:

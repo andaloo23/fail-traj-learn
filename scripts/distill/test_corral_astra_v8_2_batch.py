@@ -88,6 +88,17 @@ class BatchTests(unittest.TestCase):
                     batch.submit_shard(root,dict(path='batch_inputs/batch_a.jsonl'),gateway)
                 gateway.upload.assert_not_called()
 
+    def test_user_review_hold_blocks_submission_before_upload_or_api(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d)
+            (root/'contact_sheet_submission_hold.json').write_text(json.dumps(dict(submission_allowed=False,episode_ids=['C0094'])))
+            with patch.object(batch,'verify_plan') as verify,patch.object(batch,'Gateway') as gateway:
+                with self.assertRaisesRegex(ValueError,'User review required'):
+                    batch.submit_shard(root,dict(episodes=['C0094']),gateway)
+                verify.assert_not_called()
+                gateway.upload.assert_not_called()
+                gateway.api.assert_not_called()
+
     def test_file_ids_preserve_every_exact_image_and_reuse_upload_receipts(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'images').mkdir()
